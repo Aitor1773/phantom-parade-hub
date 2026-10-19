@@ -1,6 +1,6 @@
 {
-  "_comment": "Tier list PROPIA. \"rank\" es el rango publicado; \"draftRank\" el del borrador automático. Para ajustar un personaje: cambia \"rank\", pon \"manual\": true y, si quieres, una \"note\". El borrador nunca toca las entradas manuales. Después: npm run data:tierdraft && npm run build",
-  "updatedAt": "2026-10-19T19:13:08.206Z",
+  "_comment": "Tier list PROPIA, con 7 listas (blue, red, green, yellow, damage, support, sp). Para ajustar: en lists.<lista>.entries.<id> cambia \"rank\", pon \"manual\": true y, si quieres, una \"note\". Para fijar la fecha de revisión de una lista: \"reviewed\": \"AAAA-MM-DD\" y \"reviewedManual\": true. Con \"curated\": true en una lista, solo salen en ella los personajes con \"manual\": true (para añadir uno nuevo: rank, manual y \"lastRank\": null). El borrador nunca toca lo manual y registra cada cambio en \"changelog\". Después: npm run data:tierdraft && npm run build",
+  "updatedAt": "2026-10-19T20:43:08.181Z",
   "criteria": {
     "roleWeights": {
       "attacker": {
@@ -48,31 +48,1661 @@
     },
     "thresholds": [
       [
-        "SS",
+        "S",
         0.12
       ],
       [
-        "S",
+        "A",
         0.35
       ],
       [
-        "A",
+        "B",
         0.65
       ],
       [
-        "B",
+        "C",
         0.85
       ],
       [
-        "C",
+        "D",
         1
       ]
     ]
   },
-  "entries": {
+  "lists": {
+    "blue": {
+      "reviewed": "2026-10-19",
+      "entries": {
+        "02-second-domain-expansion-satoru-gojo": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 92,
+          "lastRank": "S",
+          "manual": true
+        },
+        "smash-it-into-the-summer-sky-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 83,
+          "lastRank": "S",
+          "manual": true,
+          "note": "S con 3 dupes; con menos dupes baja a A."
+        },
+        "delayed-quota-miguel": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 75,
+          "lastRank": "A",
+          "manual": true
+        },
+        "queen-of-curses-yuta-okkotsu": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 75,
+          "lastRank": "S",
+          "manual": true
+        },
+        "pivotal-guardian-masamichi-yaga": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 72,
+          "lastRank": "S",
+          "manual": true
+        },
+        "effective-range-mai-zenin": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 66,
+          "lastRank": "S",
+          "manual": true
+        },
+        "with-takada-chan-aoi-todo": {
+          "rank": "C",
+          "draftRank": "A",
+          "score": 65,
+          "lastRank": "C",
+          "manual": true
+        },
+        "first-grade-sorcerers-skill-kento-nanami": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 64,
+          "lastRank": "S",
+          "manual": true
+        },
+        "genuine-jujutsu-ryomen-sukuna": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 64,
+          "lastRank": "B",
+          "manual": true
+        },
+        "dont-look-down-on-me-momo-nishimiya": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 62,
+          "lastRank": "A",
+          "manual": true
+        },
+        "blood-borne-resolve-noritoshi-kamo": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 52,
+          "lastRank": "A",
+          "manual": true
+        },
+        "this-is-justice-suguru-geto": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 51,
+          "lastRank": "S",
+          "manual": true
+        },
+        "infuse-your-cursed-energy-yuji-itadori": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 48,
+          "lastRank": "B",
+          "manual": true
+        },
+        "the-strongest-satoru-gojo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 48,
+          "lastRank": "B",
+          "manual": true
+        },
+        "reverse-cursed-technique-shoko-ieiri": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 47,
+          "lastRank": "C",
+          "manual": true
+        },
+        "crushed-with-speed-naobito-zenin": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 45,
+          "lastRank": "A",
+          "manual": true
+        },
+        "take-the-shortest-way-panda": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 45,
+          "lastRank": "C",
+          "manual": true
+        },
+        "pride-of-a-cursed-spirit-jogo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 43,
+          "lastRank": "B",
+          "manual": true
+        },
+        "inherited-cursed-technique-megumi-fushiguro": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 41,
+          "lastRank": "B",
+          "manual": true
+        },
+        "striking-eternal-summer-nobara-kugisaki": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 39,
+          "lastRank": "S",
+          "manual": true
+        },
+        "no-conceit-takuma-ino": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 36,
+          "lastRank": "C",
+          "manual": true
+        },
+        "shatter-to-pieces-toge-inumaki": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 35,
+          "lastRank": "A",
+          "manual": true
+        },
+        "sukunas-vessel-yuji-itadori": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 28,
+          "lastRank": "D",
+          "manual": true
+        },
+        "value-of-life-junpei-yoshino": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 26,
+          "lastRank": "D",
+          "manual": true
+        },
+        "early-morning-departure-maki-zenin": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 25,
+          "lastRank": "A",
+          "manual": true
+        },
+        "zanshin-kasumi-miwa": {
+          "rank": "S",
+          "draftRank": "D",
+          "score": 25,
+          "lastRank": "S",
+          "manual": true
+        },
+        "team-up-if-they-are-weak-maki-zenin": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 19,
+          "lastRank": "C",
+          "manual": true
+        },
+        "to-stay-true-to-myself-nobara-kugisaki": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 13,
+          "lastRank": "D",
+          "manual": true
+        },
+        "the-baton-of-counterattack-toge-inumaki": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 8,
+          "lastRank": "C",
+          "manual": true
+        },
+        "blood-of-the-big-three-families-noritoshi-kamo": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 6,
+          "lastRank": "D",
+          "manual": true
+        }
+      }
+    },
+    "red": {
+      "reviewed": "2026-10-19",
+      "entries": {
+        "the-sorcerer-killer-toji-fushiguro": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 78,
+          "lastRank": "A",
+          "manual": true
+        },
+        "tool-manipulation-momo-nishimiya": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 77,
+          "lastRank": "S",
+          "manual": true
+        },
+        "burning-passion-yu-haibara": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 74,
+          "lastRank": "A",
+          "manual": true
+        },
+        "promising-new-student-kento-nanami": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 74,
+          "lastRank": "S",
+          "manual": true
+        },
+        "nimble-body-yuji-itadori": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 73,
+          "lastRank": "B",
+          "manual": true
+        },
+        "lend-me-your-power-yuta-okkotsu": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "A",
+          "manual": true
+        },
+        "the-golden-age-of-jujutsu-noritoshi-kamo": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "S",
+          "manual": true
+        },
+        "the-thrill-of-the-fight-hanami": {
+          "rank": "C",
+          "draftRank": "A",
+          "score": 67,
+          "lastRank": "C",
+          "manual": true
+        },
+        "unbridled-soul-mahito": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 67,
+          "lastRank": "S",
+          "manual": true
+        },
+        "rabbits-disruption-megumi-fushiguro": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 66,
+          "lastRank": "S",
+          "manual": true
+        },
+        "cold-light-of-dusk-atsuya-kusakabe": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 65,
+          "lastRank": "B"
+        },
+        "crafty-rock-yoshinobu-gakuganji": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 62,
+          "lastRank": "S",
+          "manual": true
+        },
+        "a-bad-match-nobara-kugisaki": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 60,
+          "lastRank": "B",
+          "manual": true
+        },
+        "need-some-help-panda": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 60,
+          "lastRank": "C",
+          "manual": true
+        },
+        "meteor-of-fierceness-jogo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "B",
+          "manual": true
+        },
+        "night-lurking-sorcerer-toge-inumaki": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 57,
+          "lastRank": "B",
+          "manual": true
+        },
+        "the-final-bullet-mai-zenin": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 57,
+          "lastRank": "B",
+          "manual": true
+        },
+        "maximum-cursed-energy-output-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 52,
+          "lastRank": "S",
+          "manual": true
+        },
+        "maverick-outcast-maki-zenin": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 48,
+          "lastRank": "D",
+          "manual": true
+        },
+        "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 47,
+          "lastRank": "B",
+          "manual": true
+        },
+        "within-infinity-satoru-gojo": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 44,
+          "lastRank": "A",
+          "manual": true
+        },
+        "ariadnes-thread-educator-masamichi-yaga": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 38,
+          "lastRank": "A",
+          "manual": true
+        },
+        "blast-from-the-past-aoi-todo": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 32,
+          "lastRank": "C",
+          "manual": true
+        },
+        "night-of-dancing-crows-mei-mei": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 27,
+          "lastRank": "C",
+          "manual": true
+        },
+        "innate-talent-maki-zenin": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 16,
+          "lastRank": "D",
+          "manual": true
+        },
+        "determined-counter-kasumi-miwa": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 5,
+          "lastRank": "C",
+          "manual": true
+        },
+        "cursed-power-of-words-toge-inumaki": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 4,
+          "lastRank": "C",
+          "manual": true
+        }
+      }
+    },
+    "green": {
+      "reviewed": "2026-10-19",
+      "entries": {
+        "a-life-entrusted-to-me-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 88,
+          "lastRank": "S",
+          "manual": true
+        },
+        "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 86,
+          "lastRank": "S",
+          "manual": true
+        },
+        "indomitable-auspicious-beasts-takuma-ino": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 82,
+          "lastRank": "A",
+          "manual": true
+        },
+        "to-protect-non-sorcerers-suguru-geto": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 78,
+          "lastRank": "A",
+          "manual": true
+        },
+        "hollow-purple-satoru-gojo": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 76,
+          "lastRank": "B",
+          "manual": true
+        },
+        "fwoo-hyoi-shoko-ieiri": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "S",
+          "manual": true
+        },
+        "dance-of-the-beautiful-blades-mei-mei": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 69,
+          "lastRank": "A",
+          "manual": true
+        },
+        "cursed-energy-flashes-black-yuuji-itadori": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 66,
+          "lastRank": "A",
+          "manual": true
+        },
+        "are-you-satisfied-with-that-aoi-todo": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 63,
+          "lastRank": "S",
+          "manual": true
+        },
+        "ratio-technique-kento-nanami": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 63,
+          "lastRank": "B",
+          "manual": true
+        },
+        "bond-of-friendship-megumi-fushiguro": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 61,
+          "lastRank": "B",
+          "manual": true
+        },
+        "cursed-energy-melody-yoshinobu-gakuganji": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "B",
+          "manual": true
+        },
+        "keep-hammering-at-them-nobara-kugisaki": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "B",
+          "manual": true
+        },
+        "longsword-battle-maki-zenin": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "B",
+          "manual": true
+        },
+        "ive-seen-it-all-kokichi-muta": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 52,
+          "lastRank": "A",
+          "manual": true
+        },
+        "fulfilling-his-duty-as-the-older-brother-choso": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 46,
+          "lastRank": "S",
+          "manual": true
+        },
+        "hearts-resolve-saki-rindo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 45,
+          "lastRank": "B",
+          "manual": true
+        },
+        "inspiration-from-death-mahito": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 45,
+          "lastRank": "A",
+          "manual": true
+        },
+        "silent-suppression-kento-nanami": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 43,
+          "lastRank": "S",
+          "manual": true
+        },
+        "cursed-energy-catastrophe-saki-rindo": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 37,
+          "lastRank": "C",
+          "manual": true
+        },
+        "sprinting-kasumi-miwa": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 32,
+          "lastRank": "S",
+          "manual": true
+        },
+        "dont-underestimate-a-puppet-panda": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 30,
+          "lastRank": "C",
+          "manual": true
+        },
+        "mode-albatross-ultimate-mechamaru": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 26,
+          "lastRank": "C",
+          "manual": true
+        },
+        "the-resolve-of-being-a-sorcerer-kaito-yuuki": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 22,
+          "lastRank": "B",
+          "manual": true
+        },
+        "awakening-satoru-gojo": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 15,
+          "lastRank": "A",
+          "manual": true
+        },
+        "background-support-kiyotaka-ijichi": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 12,
+          "lastRank": "C",
+          "manual": true
+        },
+        "aerial-reconnaissance-momo-nishimiya": {
+          "rank": "B",
+          "draftRank": "D",
+          "score": 11,
+          "lastRank": "B",
+          "manual": true
+        },
+        "pick-up-after-hard-work-kiyotaka-ijichi": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 8,
+          "lastRank": "A",
+          "manual": true
+        },
+        "unfair-salvation-megumi-fushiguro": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 5,
+          "lastRank": "D",
+          "manual": true
+        }
+      }
+    },
+    "yellow": {
+      "reviewed": "2026-10-19",
+      "entries": {
+        "cursed-corpse-battle-masamichi-yaga": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 83,
+          "lastRank": "S",
+          "manual": true
+        },
+        "life-saver-shoko-ieiri": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 80,
+          "lastRank": "S",
+          "manual": true
+        },
+        "battle-of-firepower-ryomen-sukuna": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 76,
+          "lastRank": "S",
+          "manual": true
+        },
+        "what-lies-at-the-end-suguru-geto": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 76,
+          "lastRank": "A",
+          "manual": true
+        },
+        "executioner-yuta-okkotsu": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 71,
+          "lastRank": "S",
+          "manual": true
+        },
+        "ward-off-with-sharp-blade-atsuya-kusakabe": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 69,
+          "lastRank": "A",
+          "manual": true
+        },
+        "working-overtime-kento-nanami": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 67,
+          "lastRank": "B",
+          "manual": true
+        },
+        "incomplete-domain-megumi-fushiguro": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 66,
+          "lastRank": "A",
+          "manual": true
+        },
+        "the-strongest-blue-satoru-gojo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 66,
+          "lastRank": "B",
+          "manual": true
+        },
+        "zone-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 64,
+          "lastRank": "S",
+          "manual": true
+        },
+        "young-fish-and-reverse-punishment-junpei-yoshino": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 63,
+          "lastRank": "B",
+          "manual": true
+        },
+        "with-that-will-in-mind-kaito-yuki": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "B",
+          "manual": true
+        },
+        "step-back-third-rate-uraume": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 57,
+          "lastRank": "S",
+          "manual": true
+        },
+        "melting-sweet-summer-treats-satoru-gojo": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 56,
+          "lastRank": "S",
+          "manual": true,
+          "note": "S con cualquier número de dupes (0, 1 y 3)."
+        },
+        "sword-option-ultimate-mechamaru": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 55,
+          "lastRank": "B",
+          "manual": true
+        },
+        "seance-toji-fushiguro": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 49,
+          "lastRank": "B",
+          "manual": true
+        },
+        "resolved-cursed-speech-toge-inumaki": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 45,
+          "lastRank": "C",
+          "manual": true
+        },
+        "reckless-grade-1-aoi-todo": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 37,
+          "lastRank": "D",
+          "manual": true
+        },
+        "unlimited-shikigami-dagon": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 36,
+          "lastRank": "C",
+          "manual": true
+        },
+        "cursed-technique-boost-kaito-yuki": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 33,
+          "lastRank": "A",
+          "manual": true
+        },
+        "chain-mark-full-throttle-eiji-urushi": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 31,
+          "lastRank": "B",
+          "manual": true
+        },
+        "girl-of-steel-nobara-kugisaki": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 31,
+          "lastRank": "C",
+          "manual": true
+        },
+        "panda-is-not-a-panda-panda": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 30,
+          "lastRank": "D",
+          "manual": true
+        },
+        "a-clever-bullet-mai-zenin": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 16,
+          "lastRank": "D",
+          "manual": true
+        },
+        "just-bring-it-saki-rindo": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 15,
+          "lastRank": "D",
+          "manual": true
+        }
+      }
+    },
+    "damage": {
+      "reviewed": "2026-10-19",
+      "curated": true,
+      "entries": {
+        "02-second-domain-expansion-satoru-gojo": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 92,
+          "lastRank": "S",
+          "manual": true
+        },
+        "inherited-cursed-technique-megumi-fushiguro": {
+          "rank": "C",
+          "draftRank": "S",
+          "score": 87,
+          "lastRank": "C",
+          "manual": true
+        },
+        "to-protect-non-sorcerers-suguru-geto": {
+          "rank": "D",
+          "draftRank": "S",
+          "score": 84,
+          "lastRank": "D",
+          "manual": true
+        },
+        "hollow-purple-satoru-gojo": {
+          "rank": "C",
+          "draftRank": "S",
+          "score": 84,
+          "lastRank": "C",
+          "manual": true
+        },
+        "smash-it-into-the-summer-sky-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 83,
+          "lastRank": "S",
+          "manual": true,
+          "note": "S con 3 dupes; con menos dupes baja a A."
+        },
+        "a-life-entrusted-to-me-yuji-itadori": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 82,
+          "lastRank": "A",
+          "manual": true
+        },
+        "cursed-corpse-battle-masamichi-yaga": {
+          "rank": "C",
+          "draftRank": "A",
+          "score": 80,
+          "lastRank": "C",
+          "manual": true
+        },
+        "the-sorcerer-killer-toji-fushiguro": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 78,
+          "lastRank": "A",
+          "manual": true
+        },
+        "battle-of-firepower-ryomen-sukuna": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 76,
+          "lastRank": "S",
+          "manual": true
+        },
+        "what-lies-at-the-end-suguru-geto": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 76,
+          "lastRank": "A",
+          "manual": true
+        },
+        "queen-of-curses-yuta-okkotsu": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 75,
+          "lastRank": "S",
+          "manual": true
+        },
+        "burning-passion-yu-haibara": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 74,
+          "lastRank": "A",
+          "manual": true
+        },
+        "nimble-body-yuji-itadori": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 73,
+          "lastRank": "B",
+          "manual": true
+        },
+        "executioner-yuta-okkotsu": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 71,
+          "lastRank": "S",
+          "manual": true
+        },
+        "lend-me-your-power-yuta-okkotsu": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "A",
+          "manual": true
+        },
+        "the-golden-age-of-jujutsu-noritoshi-kamo": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "S",
+          "manual": true
+        },
+        "dance-of-the-beautiful-blades-mei-mei": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 69,
+          "lastRank": "A",
+          "manual": true
+        },
+        "working-overtime-kento-nanami": {
+          "rank": "C",
+          "draftRank": "A",
+          "score": 67,
+          "lastRank": "C",
+          "manual": true
+        },
+        "cursed-energy-flashes-black-yuuji-itadori": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 66,
+          "lastRank": "B",
+          "manual": true
+        },
+        "the-strongest-blue-satoru-gojo": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 66,
+          "lastRank": "A",
+          "manual": true
+        },
+        "shatter-to-pieces-toge-inumaki": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 66,
+          "lastRank": "C",
+          "manual": true
+        },
+        "first-grade-sorcerers-skill-kento-nanami": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 64,
+          "lastRank": "S",
+          "manual": true
+        },
+        "genuine-jujutsu-ryomen-sukuna": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 64,
+          "lastRank": "B",
+          "manual": true
+        },
+        "zone-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 64,
+          "lastRank": "S",
+          "manual": true
+        },
+        "are-you-satisfied-with-that-aoi-todo": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 63,
+          "lastRank": "S",
+          "manual": true
+        },
+        "ratio-technique-kento-nanami": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 63,
+          "lastRank": "C",
+          "manual": true
+        },
+        "a-bad-match-nobara-kugisaki": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 60,
+          "lastRank": "B",
+          "manual": true
+        },
+        "keep-hammering-at-them-nobara-kugisaki": {
+          "rank": "D",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "D",
+          "manual": true
+        },
+        "longsword-battle-maki-zenin": {
+          "rank": "D",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "D",
+          "manual": true
+        },
+        "meteor-of-fierceness-jogo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "B",
+          "manual": true
+        },
+        "sword-option-ultimate-mechamaru": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 55,
+          "lastRank": "B",
+          "manual": true
+        },
+        "blood-borne-resolve-noritoshi-kamo": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 52,
+          "lastRank": "C",
+          "manual": true
+        },
+        "ive-seen-it-all-kokichi-muta": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 52,
+          "lastRank": "B",
+          "manual": true
+        },
+        "maximum-cursed-energy-output-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 52,
+          "lastRank": "S",
+          "manual": true
+        },
+        "seance-toji-fushiguro": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 49,
+          "lastRank": "B",
+          "manual": true
+        },
+        "zanshin-kasumi-miwa": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 49,
+          "lastRank": "C",
+          "manual": true
+        },
+        "infuse-your-cursed-energy-yuji-itadori": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 48,
+          "lastRank": "C",
+          "manual": true
+        },
+        "the-strongest-satoru-gojo": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 48,
+          "lastRank": "C",
+          "manual": true
+        },
+        "fulfilling-his-duty-as-the-older-brother-choso": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 46,
+          "lastRank": "A",
+          "manual": true
+        },
+        "crushed-with-speed-naobito-zenin": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 45,
+          "lastRank": "B",
+          "manual": true
+        },
+        "hearts-resolve-saki-rindo": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 45,
+          "lastRank": "C",
+          "manual": true
+        },
+        "inspiration-from-death-mahito": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 45,
+          "lastRank": "D",
+          "manual": true
+        },
+        "within-infinity-satoru-gojo": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 44,
+          "lastRank": "C",
+          "manual": true
+        },
+        "pride-of-a-cursed-spirit-jogo": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 43,
+          "lastRank": "C",
+          "manual": true
+        },
+        "silent-suppression-kento-nanami": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 43,
+          "lastRank": "S",
+          "manual": true
+        },
+        "bond-of-friendship-megumi-fushiguro": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 39,
+          "lastRank": "C",
+          "manual": true
+        },
+        "striking-eternal-summer-nobara-kugisaki": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 39,
+          "lastRank": "S",
+          "manual": true
+        },
+        "promising-new-student-kento-nanami": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 38,
+          "lastRank": "D",
+          "manual": true
+        },
+        "no-conceit-takuma-ino": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 36,
+          "lastRank": "D",
+          "manual": true
+        },
+        "unlimited-shikigami-dagon": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 36,
+          "lastRank": "D",
+          "manual": true
+        },
+        "unbridled-soul-mahito": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 33,
+          "lastRank": "A",
+          "manual": true
+        },
+        "sprinting-kasumi-miwa": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 32,
+          "lastRank": "A",
+          "manual": true
+        },
+        "chain-mark-full-throttle-eiji-urushi": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 31,
+          "lastRank": "A",
+          "manual": true
+        },
+        "girl-of-steel-nobara-kugisaki": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 31,
+          "lastRank": "C",
+          "manual": true
+        },
+        "night-of-dancing-crows-mei-mei": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 27,
+          "lastRank": "C",
+          "manual": true
+        },
+        "early-morning-departure-maki-zenin": {
+          "rank": "B",
+          "draftRank": "D",
+          "score": 25,
+          "lastRank": "B",
+          "manual": true
+        },
+        "team-up-if-they-are-weak-maki-zenin": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 23,
+          "lastRank": "D",
+          "manual": true
+        },
+        "awakening-satoru-gojo": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 15,
+          "lastRank": "A",
+          "manual": true
+        }
+      }
+    },
+    "support": {
+      "reviewed": "2026-10-19",
+      "curated": true,
+      "entries": {
+        "a-life-entrusted-to-me-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 88,
+          "lastRank": "S",
+          "manual": true
+        },
+        "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 86,
+          "lastRank": "S",
+          "manual": true
+        },
+        "cursed-corpse-battle-masamichi-yaga": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 83,
+          "lastRank": "S",
+          "manual": true
+        },
+        "indomitable-auspicious-beasts-takuma-ino": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 82,
+          "lastRank": "A",
+          "manual": true
+        },
+        "life-saver-shoko-ieiri": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 80,
+          "lastRank": "S",
+          "manual": true
+        },
+        "to-protect-non-sorcerers-suguru-geto": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 78,
+          "lastRank": "A",
+          "manual": true
+        },
+        "tool-manipulation-momo-nishimiya": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 77,
+          "lastRank": "S",
+          "manual": true
+        },
+        "with-that-will-in-mind-kaito-yuki": {
+          "rank": "C",
+          "draftRank": "A",
+          "score": 77,
+          "lastRank": "C",
+          "manual": true
+        },
+        "delayed-quota-miguel": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 75,
+          "lastRank": "S",
+          "manual": true
+        },
+        "promising-new-student-kento-nanami": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 74,
+          "lastRank": "S",
+          "manual": true
+        },
+        "pivotal-guardian-masamichi-yaga": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 72,
+          "lastRank": "S",
+          "manual": true
+        },
+        "fwoo-hyoi-shoko-ieiri": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "S",
+          "manual": true
+        },
+        "first-grade-sorcerers-skill-kento-nanami": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 70,
+          "lastRank": "A",
+          "manual": true
+        },
+        "ward-off-with-sharp-blade-atsuya-kusakabe": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 69,
+          "lastRank": "A",
+          "manual": true
+        },
+        "effective-range-mai-zenin": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 66,
+          "lastRank": "S",
+          "manual": true
+        },
+        "rabbits-disruption-megumi-fushiguro": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 66,
+          "lastRank": "S",
+          "manual": true
+        },
+        "are-you-satisfied-with-that-aoi-todo": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 64,
+          "lastRank": "B",
+          "manual": true
+        },
+        "crafty-rock-yoshinobu-gakuganji": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 62,
+          "lastRank": "S",
+          "manual": true
+        },
+        "dont-look-down-on-me-momo-nishimiya": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 62,
+          "lastRank": "B",
+          "manual": true
+        },
+        "bond-of-friendship-megumi-fushiguro": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 61,
+          "lastRank": "C",
+          "manual": true
+        },
+        "cursed-energy-melody-yoshinobu-gakuganji": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 59,
+          "lastRank": "C",
+          "manual": true
+        },
+        "step-back-third-rate-uraume": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 57,
+          "lastRank": "S",
+          "manual": true
+        },
+        "the-final-bullet-mai-zenin": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 57,
+          "lastRank": "B",
+          "manual": true
+        },
+        "melting-sweet-summer-treats-satoru-gojo": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 56,
+          "lastRank": "S",
+          "manual": true,
+          "note": "S con cualquier número de dupes (0, 1 y 3)."
+        },
+        "fulfilling-his-duty-as-the-older-brother-choso": {
+          "rank": "S",
+          "draftRank": "C",
+          "score": 50,
+          "lastRank": "S",
+          "manual": true
+        },
+        "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 47,
+          "lastRank": "C",
+          "manual": true
+        },
+        "within-infinity-satoru-gojo": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 47,
+          "lastRank": "B",
+          "manual": true
+        },
+        "night-lurking-sorcerer-toge-inumaki": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 45,
+          "lastRank": "C",
+          "manual": true
+        },
+        "blood-borne-resolve-noritoshi-kamo": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 41,
+          "lastRank": "A",
+          "manual": true
+        },
+        "ariadnes-thread-educator-masamichi-yaga": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 38,
+          "lastRank": "A",
+          "manual": true
+        },
+        "shatter-to-pieces-toge-inumaki": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 35,
+          "lastRank": "A",
+          "manual": true
+        },
+        "incomplete-domain-megumi-fushiguro": {
+          "rank": "A",
+          "draftRank": "C",
+          "score": 34,
+          "lastRank": "A",
+          "manual": true
+        },
+        "cursed-technique-boost-kaito-yuki": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 33,
+          "lastRank": "D",
+          "manual": true
+        },
+        "sprinting-kasumi-miwa": {
+          "rank": "S",
+          "draftRank": "D",
+          "score": 29,
+          "lastRank": "S",
+          "manual": true
+        },
+        "zanshin-kasumi-miwa": {
+          "rank": "S",
+          "draftRank": "D",
+          "score": 25,
+          "lastRank": "S",
+          "manual": true
+        },
+        "background-support-kiyotaka-ijichi": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 12,
+          "lastRank": "D",
+          "manual": true
+        },
+        "aerial-reconnaissance-momo-nishimiya": {
+          "rank": "D",
+          "draftRank": "D",
+          "score": 11,
+          "lastRank": "D",
+          "manual": true
+        },
+        "pick-up-after-hard-work-kiyotaka-ijichi": {
+          "rank": "A",
+          "draftRank": "D",
+          "score": 8,
+          "lastRank": "A",
+          "manual": true
+        }
+      }
+    },
+    "sp": {
+      "reviewed": "2026-10-19",
+      "curated": true,
+      "entries": {
+        "delayed-quota-miguel": {
+          "rank": "S",
+          "draftRank": "S",
+          "score": 75,
+          "lastRank": "S",
+          "manual": true
+        },
+        "lend-me-your-power-yuta-okkotsu": {
+          "rank": "A",
+          "draftRank": "S",
+          "score": 70,
+          "lastRank": "A",
+          "manual": true
+        },
+        "cursed-energy-flashes-black-yuuji-itadori": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 66,
+          "lastRank": "A",
+          "manual": true
+        },
+        "with-takada-chan-aoi-todo": {
+          "rank": "D",
+          "draftRank": "A",
+          "score": 65,
+          "lastRank": "D",
+          "manual": true
+        },
+        "first-grade-sorcerers-skill-kento-nanami": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 64,
+          "lastRank": "S",
+          "manual": true
+        },
+        "ratio-technique-kento-nanami": {
+          "rank": "B",
+          "draftRank": "A",
+          "score": 63,
+          "lastRank": "B",
+          "manual": true
+        },
+        "young-fish-and-reverse-punishment-junpei-yoshino": {
+          "rank": "A",
+          "draftRank": "A",
+          "score": 63,
+          "lastRank": "A",
+          "manual": true
+        },
+        "a-bad-match-nobara-kugisaki": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 60,
+          "lastRank": "B",
+          "manual": true
+        },
+        "need-some-help-panda": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 60,
+          "lastRank": "C",
+          "manual": true
+        },
+        "sword-option-ultimate-mechamaru": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 55,
+          "lastRank": "A",
+          "manual": true
+        },
+        "blood-borne-resolve-noritoshi-kamo": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 52,
+          "lastRank": "S",
+          "manual": true
+        },
+        "this-is-justice-suguru-geto": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 51,
+          "lastRank": "S",
+          "manual": true
+        },
+        "infuse-your-cursed-energy-yuji-itadori": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 48,
+          "lastRank": "B",
+          "manual": true
+        },
+        "maverick-outcast-maki-zenin": {
+          "rank": "D",
+          "draftRank": "C",
+          "score": 48,
+          "lastRank": "D",
+          "manual": true
+        },
+        "hearts-resolve-saki-rindo": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 45,
+          "lastRank": "B",
+          "manual": true
+        },
+        "pride-of-a-cursed-spirit-jogo": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 43,
+          "lastRank": "C",
+          "manual": true
+        },
+        "inherited-cursed-technique-megumi-fushiguro": {
+          "rank": "B",
+          "draftRank": "C",
+          "score": 41,
+          "lastRank": "B",
+          "manual": true
+        },
+        "sprinting-kasumi-miwa": {
+          "rank": "S",
+          "draftRank": "D",
+          "score": 32,
+          "lastRank": "S",
+          "manual": true
+        },
+        "girl-of-steel-nobara-kugisaki": {
+          "rank": "C",
+          "draftRank": "D",
+          "score": 31,
+          "lastRank": "C",
+          "manual": true
+        },
+        "zanshin-kasumi-miwa": {
+          "rank": "S",
+          "draftRank": "D",
+          "score": 25,
+          "lastRank": "S",
+          "manual": true
+        }
+      }
+    }
+  },
+  "characters": {
     "02-second-domain-expansion-satoru-gojo": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 92,
       "group": "attacker",
       "metrics": {
@@ -83,8 +1713,6 @@
       }
     },
     "a-life-entrusted-to-me-yuji-itadori": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 88,
       "group": "support",
       "metrics": {
@@ -95,8 +1723,6 @@
       }
     },
     "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 86,
       "group": "debuffer",
       "metrics": {
@@ -107,8 +1733,6 @@
       }
     },
     "cursed-corpse-battle-masamichi-yaga": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 83,
       "group": "debuffer",
       "metrics": {
@@ -119,8 +1743,6 @@
       }
     },
     "smash-it-into-the-summer-sky-yuji-itadori": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 83,
       "group": "attacker",
       "metrics": {
@@ -131,8 +1753,6 @@
       }
     },
     "indomitable-auspicious-beasts-takuma-ino": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 82,
       "group": "debuffer",
       "metrics": {
@@ -143,8 +1763,6 @@
       }
     },
     "life-saver-shoko-ieiri": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 80,
       "group": "sustain",
       "metrics": {
@@ -155,8 +1773,6 @@
       }
     },
     "the-sorcerer-killer-toji-fushiguro": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 78,
       "group": "attacker",
       "metrics": {
@@ -167,8 +1783,6 @@
       }
     },
     "to-protect-non-sorcerers-suguru-geto": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 78,
       "group": "debuffer",
       "metrics": {
@@ -179,8 +1793,6 @@
       }
     },
     "tool-manipulation-momo-nishimiya": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 77,
       "group": "support",
       "metrics": {
@@ -191,8 +1803,6 @@
       }
     },
     "battle-of-firepower-ryomen-sukuna": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 76,
       "group": "attacker",
       "metrics": {
@@ -203,8 +1813,6 @@
       }
     },
     "hollow-purple-satoru-gojo": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 76,
       "group": "debuffer",
       "metrics": {
@@ -215,8 +1823,6 @@
       }
     },
     "what-lies-at-the-end-suguru-geto": {
-      "rank": "SS",
-      "draftRank": "SS",
       "score": 76,
       "group": "attacker",
       "metrics": {
@@ -227,8 +1833,6 @@
       }
     },
     "delayed-quota-miguel": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 75,
       "group": "debuffer",
       "metrics": {
@@ -239,8 +1843,6 @@
       }
     },
     "queen-of-curses-yuta-okkotsu": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 75,
       "group": "attacker",
       "metrics": {
@@ -251,8 +1853,6 @@
       }
     },
     "burning-passion-yu-haibara": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 74,
       "group": "attacker",
       "metrics": {
@@ -263,8 +1863,6 @@
       }
     },
     "promising-new-student-kento-nanami": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 74,
       "group": "support",
       "metrics": {
@@ -275,8 +1873,6 @@
       }
     },
     "nimble-body-yuji-itadori": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 73,
       "group": "attacker",
       "metrics": {
@@ -287,8 +1883,6 @@
       }
     },
     "pivotal-guardian-masamichi-yaga": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 72,
       "group": "support",
       "metrics": {
@@ -299,8 +1893,6 @@
       }
     },
     "executioner-yuta-okkotsu": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 71,
       "group": "attacker",
       "metrics": {
@@ -311,8 +1903,6 @@
       }
     },
     "fwoo-hyoi-shoko-ieiri": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 70,
       "group": "sustain",
       "metrics": {
@@ -323,8 +1913,6 @@
       }
     },
     "lend-me-your-power-yuta-okkotsu": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 70,
       "group": "attacker",
       "metrics": {
@@ -335,8 +1923,6 @@
       }
     },
     "the-golden-age-of-jujutsu-noritoshi-kamo": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 70,
       "group": "attacker",
       "metrics": {
@@ -347,8 +1933,6 @@
       }
     },
     "dance-of-the-beautiful-blades-mei-mei": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 69,
       "group": "attacker",
       "metrics": {
@@ -359,8 +1943,6 @@
       }
     },
     "ward-off-with-sharp-blade-atsuya-kusakabe": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 69,
       "group": "sustain",
       "metrics": {
@@ -371,8 +1953,6 @@
       }
     },
     "the-thrill-of-the-fight-hanami": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 67,
       "group": "debuffer",
       "metrics": {
@@ -383,8 +1963,6 @@
       }
     },
     "unbridled-soul-mahito": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 67,
       "group": "debuffer",
       "metrics": {
@@ -395,8 +1973,6 @@
       }
     },
     "working-overtime-kento-nanami": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 67,
       "group": "attacker",
       "metrics": {
@@ -407,8 +1983,6 @@
       }
     },
     "cursed-energy-flashes-black-yuuji-itadori": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 66,
       "group": "attacker",
       "metrics": {
@@ -419,8 +1993,6 @@
       }
     },
     "effective-range-mai-zenin": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 66,
       "group": "debuffer",
       "metrics": {
@@ -431,8 +2003,6 @@
       }
     },
     "incomplete-domain-megumi-fushiguro": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 66,
       "group": "attacker",
       "metrics": {
@@ -443,8 +2013,6 @@
       }
     },
     "rabbits-disruption-megumi-fushiguro": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 66,
       "group": "debuffer",
       "metrics": {
@@ -455,8 +2023,6 @@
       }
     },
     "the-strongest-blue-satoru-gojo": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 66,
       "group": "attacker",
       "metrics": {
@@ -467,8 +2033,6 @@
       }
     },
     "cold-light-of-dusk-atsuya-kusakabe": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 65,
       "group": "support",
       "metrics": {
@@ -479,8 +2043,6 @@
       }
     },
     "with-takada-chan-aoi-todo": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 65,
       "group": "attacker",
       "metrics": {
@@ -491,8 +2053,6 @@
       }
     },
     "first-grade-sorcerers-skill-kento-nanami": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 64,
       "group": "attacker",
       "metrics": {
@@ -503,8 +2063,6 @@
       }
     },
     "genuine-jujutsu-ryomen-sukuna": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 64,
       "group": "attacker",
       "metrics": {
@@ -515,8 +2073,6 @@
       }
     },
     "zone-yuji-itadori": {
-      "rank": "S",
-      "draftRank": "S",
       "score": 64,
       "group": "attacker",
       "metrics": {
@@ -527,8 +2083,6 @@
       }
     },
     "are-you-satisfied-with-that-aoi-todo": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 63,
       "group": "attacker",
       "metrics": {
@@ -539,8 +2093,6 @@
       }
     },
     "ratio-technique-kento-nanami": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 63,
       "group": "attacker",
       "metrics": {
@@ -551,8 +2103,6 @@
       }
     },
     "young-fish-and-reverse-punishment-junpei-yoshino": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 63,
       "group": "debuffer",
       "metrics": {
@@ -563,8 +2113,6 @@
       }
     },
     "crafty-rock-yoshinobu-gakuganji": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 62,
       "group": "debuffer",
       "metrics": {
@@ -575,8 +2123,6 @@
       }
     },
     "dont-look-down-on-me-momo-nishimiya": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 62,
       "group": "debuffer",
       "metrics": {
@@ -587,8 +2133,6 @@
       }
     },
     "bond-of-friendship-megumi-fushiguro": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 61,
       "group": "debuffer",
       "metrics": {
@@ -599,8 +2143,6 @@
       }
     },
     "a-bad-match-nobara-kugisaki": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 60,
       "group": "attacker",
       "metrics": {
@@ -611,8 +2153,6 @@
       }
     },
     "need-some-help-panda": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 60,
       "group": "sustain",
       "metrics": {
@@ -623,8 +2163,6 @@
       }
     },
     "cursed-energy-melody-yoshinobu-gakuganji": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 59,
       "group": "debuffer",
       "metrics": {
@@ -635,8 +2173,6 @@
       }
     },
     "keep-hammering-at-them-nobara-kugisaki": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 59,
       "group": "attacker",
       "metrics": {
@@ -647,8 +2183,6 @@
       }
     },
     "longsword-battle-maki-zenin": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 59,
       "group": "attacker",
       "metrics": {
@@ -659,8 +2193,6 @@
       }
     },
     "meteor-of-fierceness-jogo": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 59,
       "group": "attacker",
       "metrics": {
@@ -671,8 +2203,6 @@
       }
     },
     "with-that-will-in-mind-kaito-yuki": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 59,
       "group": "attacker",
       "metrics": {
@@ -683,8 +2213,6 @@
       }
     },
     "night-lurking-sorcerer-toge-inumaki": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 57,
       "group": "attacker",
       "metrics": {
@@ -695,8 +2223,6 @@
       }
     },
     "step-back-third-rate-uraume": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 57,
       "group": "debuffer",
       "metrics": {
@@ -707,8 +2233,6 @@
       }
     },
     "the-final-bullet-mai-zenin": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 57,
       "group": "debuffer",
       "metrics": {
@@ -719,8 +2243,6 @@
       }
     },
     "melting-sweet-summer-treats-satoru-gojo": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 56,
       "group": "support",
       "metrics": {
@@ -731,8 +2253,6 @@
       }
     },
     "sword-option-ultimate-mechamaru": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 55,
       "group": "attacker",
       "metrics": {
@@ -743,8 +2263,6 @@
       }
     },
     "blood-borne-resolve-noritoshi-kamo": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 52,
       "group": "attacker",
       "metrics": {
@@ -755,8 +2273,6 @@
       }
     },
     "ive-seen-it-all-kokichi-muta": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 52,
       "group": "attacker",
       "metrics": {
@@ -767,8 +2283,6 @@
       }
     },
     "maximum-cursed-energy-output-yuji-itadori": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 52,
       "group": "attacker",
       "metrics": {
@@ -779,8 +2293,6 @@
       }
     },
     "this-is-justice-suguru-geto": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 51,
       "group": "attacker",
       "metrics": {
@@ -791,8 +2303,6 @@
       }
     },
     "seance-toji-fushiguro": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 49,
       "group": "attacker",
       "metrics": {
@@ -803,8 +2313,6 @@
       }
     },
     "infuse-your-cursed-energy-yuji-itadori": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 48,
       "group": "attacker",
       "metrics": {
@@ -815,8 +2323,6 @@
       }
     },
     "maverick-outcast-maki-zenin": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 48,
       "group": "attacker",
       "metrics": {
@@ -827,8 +2333,6 @@
       }
     },
     "the-strongest-satoru-gojo": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 48,
       "group": "attacker",
       "metrics": {
@@ -839,8 +2343,6 @@
       }
     },
     "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 47,
       "group": "support",
       "metrics": {
@@ -851,8 +2353,6 @@
       }
     },
     "reverse-cursed-technique-shoko-ieiri": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 47,
       "group": "sustain",
       "metrics": {
@@ -863,8 +2363,6 @@
       }
     },
     "fulfilling-his-duty-as-the-older-brother-choso": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 46,
       "group": "attacker",
       "metrics": {
@@ -875,8 +2373,6 @@
       }
     },
     "crushed-with-speed-naobito-zenin": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 45,
       "group": "attacker",
       "metrics": {
@@ -887,8 +2383,6 @@
       }
     },
     "hearts-resolve-saki-rindo": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 45,
       "group": "attacker",
       "metrics": {
@@ -899,8 +2393,6 @@
       }
     },
     "inspiration-from-death-mahito": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 45,
       "group": "attacker",
       "metrics": {
@@ -911,8 +2403,6 @@
       }
     },
     "resolved-cursed-speech-toge-inumaki": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 45,
       "group": "support",
       "metrics": {
@@ -923,8 +2413,6 @@
       }
     },
     "take-the-shortest-way-panda": {
-      "rank": "A",
-      "draftRank": "A",
       "score": 45,
       "group": "attacker",
       "metrics": {
@@ -935,8 +2423,6 @@
       }
     },
     "within-infinity-satoru-gojo": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 44,
       "group": "attacker",
       "metrics": {
@@ -947,8 +2433,6 @@
       }
     },
     "pride-of-a-cursed-spirit-jogo": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 43,
       "group": "attacker",
       "metrics": {
@@ -959,8 +2443,6 @@
       }
     },
     "silent-suppression-kento-nanami": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 43,
       "group": "attacker",
       "metrics": {
@@ -971,8 +2453,6 @@
       }
     },
     "inherited-cursed-technique-megumi-fushiguro": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 41,
       "group": "sustain",
       "metrics": {
@@ -983,8 +2463,6 @@
       }
     },
     "striking-eternal-summer-nobara-kugisaki": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 39,
       "group": "attacker",
       "metrics": {
@@ -995,8 +2473,6 @@
       }
     },
     "ariadnes-thread-educator-masamichi-yaga": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 38,
       "group": "support",
       "metrics": {
@@ -1007,8 +2483,6 @@
       }
     },
     "cursed-energy-catastrophe-saki-rindo": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 37,
       "group": "sustain",
       "metrics": {
@@ -1019,8 +2493,6 @@
       }
     },
     "reckless-grade-1-aoi-todo": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 37,
       "group": "support",
       "metrics": {
@@ -1031,8 +2503,6 @@
       }
     },
     "no-conceit-takuma-ino": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 36,
       "group": "attacker",
       "metrics": {
@@ -1043,8 +2513,6 @@
       }
     },
     "unlimited-shikigami-dagon": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 36,
       "group": "attacker",
       "metrics": {
@@ -1055,8 +2523,6 @@
       }
     },
     "shatter-to-pieces-toge-inumaki": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 35,
       "group": "support",
       "metrics": {
@@ -1067,8 +2533,6 @@
       }
     },
     "cursed-technique-boost-kaito-yuki": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 33,
       "group": "support",
       "metrics": {
@@ -1079,8 +2543,6 @@
       }
     },
     "blast-from-the-past-aoi-todo": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 32,
       "group": "attacker",
       "metrics": {
@@ -1091,8 +2553,6 @@
       }
     },
     "sprinting-kasumi-miwa": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 32,
       "group": "attacker",
       "metrics": {
@@ -1103,8 +2563,6 @@
       }
     },
     "chain-mark-full-throttle-eiji-urushi": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 31,
       "group": "attacker",
       "metrics": {
@@ -1115,8 +2573,6 @@
       }
     },
     "girl-of-steel-nobara-kugisaki": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 31,
       "group": "attacker",
       "metrics": {
@@ -1127,8 +2583,6 @@
       }
     },
     "dont-underestimate-a-puppet-panda": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 30,
       "group": "sustain",
       "metrics": {
@@ -1139,8 +2593,6 @@
       }
     },
     "panda-is-not-a-panda-panda": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 30,
       "group": "sustain",
       "metrics": {
@@ -1151,8 +2603,6 @@
       }
     },
     "sukunas-vessel-yuji-itadori": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 28,
       "group": "sustain",
       "metrics": {
@@ -1163,8 +2613,6 @@
       }
     },
     "night-of-dancing-crows-mei-mei": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 27,
       "group": "attacker",
       "metrics": {
@@ -1175,8 +2623,6 @@
       }
     },
     "mode-albatross-ultimate-mechamaru": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 26,
       "group": "attacker",
       "metrics": {
@@ -1187,8 +2633,6 @@
       }
     },
     "value-of-life-junpei-yoshino": {
-      "rank": "B",
-      "draftRank": "B",
       "score": 26,
       "group": "attacker",
       "metrics": {
@@ -1199,8 +2643,6 @@
       }
     },
     "early-morning-departure-maki-zenin": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 25,
       "group": "attacker",
       "metrics": {
@@ -1211,8 +2653,6 @@
       }
     },
     "zanshin-kasumi-miwa": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 25,
       "group": "sustain",
       "metrics": {
@@ -1223,8 +2663,6 @@
       }
     },
     "the-resolve-of-being-a-sorcerer-kaito-yuuki": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 22,
       "group": "support",
       "metrics": {
@@ -1235,8 +2673,6 @@
       }
     },
     "team-up-if-they-are-weak-maki-zenin": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 19,
       "group": "sustain",
       "metrics": {
@@ -1247,8 +2683,6 @@
       }
     },
     "a-clever-bullet-mai-zenin": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 16,
       "group": "debuffer",
       "metrics": {
@@ -1259,8 +2693,6 @@
       }
     },
     "innate-talent-maki-zenin": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 16,
       "group": "attacker",
       "metrics": {
@@ -1271,8 +2703,6 @@
       }
     },
     "awakening-satoru-gojo": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 15,
       "group": "attacker",
       "metrics": {
@@ -1283,8 +2713,6 @@
       }
     },
     "just-bring-it-saki-rindo": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 15,
       "group": "sustain",
       "metrics": {
@@ -1295,8 +2723,6 @@
       }
     },
     "to-stay-true-to-myself-nobara-kugisaki": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 13,
       "group": "attacker",
       "metrics": {
@@ -1307,8 +2733,6 @@
       }
     },
     "background-support-kiyotaka-ijichi": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 12,
       "group": "support",
       "metrics": {
@@ -1319,8 +2743,6 @@
       }
     },
     "aerial-reconnaissance-momo-nishimiya": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 11,
       "group": "debuffer",
       "metrics": {
@@ -1331,8 +2753,6 @@
       }
     },
     "pick-up-after-hard-work-kiyotaka-ijichi": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 8,
       "group": "support",
       "metrics": {
@@ -1343,8 +2763,6 @@
       }
     },
     "the-baton-of-counterattack-toge-inumaki": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 8,
       "group": "sustain",
       "metrics": {
@@ -1355,8 +2773,6 @@
       }
     },
     "blood-of-the-big-three-families-noritoshi-kamo": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 6,
       "group": "attacker",
       "metrics": {
@@ -1367,8 +2783,6 @@
       }
     },
     "determined-counter-kasumi-miwa": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 5,
       "group": "sustain",
       "metrics": {
@@ -1379,8 +2793,6 @@
       }
     },
     "unfair-salvation-megumi-fushiguro": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 5,
       "group": "debuffer",
       "metrics": {
@@ -1391,8 +2803,6 @@
       }
     },
     "cursed-power-of-words-toge-inumaki": {
-      "rank": "C",
-      "draftRank": "C",
       "score": 4,
       "group": "support",
       "metrics": {
@@ -1402,5 +2812,1199 @@
         "sustain": 26
       }
     }
-  }
+  },
+  "changelog": [
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "delayed-quota-miguel",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "queen-of-curses-yuta-okkotsu",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "pivotal-guardian-masamichi-yaga",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "effective-range-mai-zenin",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "with-takada-chan-aoi-todo",
+      "from": "A",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "first-grade-sorcerers-skill-kento-nanami",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "genuine-jujutsu-ryomen-sukuna",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "blood-borne-resolve-noritoshi-kamo",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "this-is-justice-suguru-geto",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "reverse-cursed-technique-shoko-ieiri",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "crushed-with-speed-naobito-zenin",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "take-the-shortest-way-panda",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "striking-eternal-summer-nobara-kugisaki",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "shatter-to-pieces-toge-inumaki",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "sukunas-vessel-yuji-itadori",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "value-of-life-junpei-yoshino",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "early-morning-departure-maki-zenin",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "zanshin-kasumi-miwa",
+      "from": "D",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "team-up-if-they-are-weak-maki-zenin",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "blue",
+      "id": "the-baton-of-counterattack-toge-inumaki",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "the-sorcerer-killer-toji-fushiguro",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "burning-passion-yu-haibara",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "promising-new-student-kento-nanami",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "nimble-body-yuji-itadori",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "the-golden-age-of-jujutsu-noritoshi-kamo",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "the-thrill-of-the-fight-hanami",
+      "from": "A",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "unbridled-soul-mahito",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "rabbits-disruption-megumi-fushiguro",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "crafty-rock-yoshinobu-gakuganji",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "need-some-help-panda",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "maximum-cursed-energy-output-yuji-itadori",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "maverick-outcast-maki-zenin",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+      "from": "C",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "within-infinity-satoru-gojo",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "ariadnes-thread-educator-masamichi-yaga",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "blast-from-the-past-aoi-todo",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "night-of-dancing-crows-mei-mei",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "determined-counter-kasumi-miwa",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "red",
+      "id": "cursed-power-of-words-toge-inumaki",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "indomitable-auspicious-beasts-takuma-ino",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "hollow-purple-satoru-gojo",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "fwoo-hyoi-shoko-ieiri",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "are-you-satisfied-with-that-aoi-todo",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "ratio-technique-kento-nanami",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "ive-seen-it-all-kokichi-muta",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "fulfilling-his-duty-as-the-older-brother-choso",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "inspiration-from-death-mahito",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "silent-suppression-kento-nanami",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "sprinting-kasumi-miwa",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "the-resolve-of-being-a-sorcerer-kaito-yuuki",
+      "from": "C",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "awakening-satoru-gojo",
+      "from": "D",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "background-support-kiyotaka-ijichi",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "aerial-reconnaissance-momo-nishimiya",
+      "from": "D",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "green",
+      "id": "pick-up-after-hard-work-kiyotaka-ijichi",
+      "from": "D",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "executioner-yuta-okkotsu",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "working-overtime-kento-nanami",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "zone-yuji-itadori",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "step-back-third-rate-uraume",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "melting-sweet-summer-treats-satoru-gojo",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "reckless-grade-1-aoi-todo",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "cursed-technique-boost-kaito-yuki",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "chain-mark-full-throttle-eiji-urushi",
+      "from": "C",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "yellow",
+      "id": "girl-of-steel-nobara-kugisaki",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "inherited-cursed-technique-megumi-fushiguro",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "to-protect-non-sorcerers-suguru-geto",
+      "from": null,
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "hollow-purple-satoru-gojo",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "a-life-entrusted-to-me-yuji-itadori",
+      "from": null,
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "cursed-corpse-battle-masamichi-yaga",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "the-sorcerer-killer-toji-fushiguro",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "what-lies-at-the-end-suguru-geto",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "burning-passion-yu-haibara",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "nimble-body-yuji-itadori",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "executioner-yuta-okkotsu",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "the-golden-age-of-jujutsu-noritoshi-kamo",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "working-overtime-kento-nanami",
+      "from": "A",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "cursed-energy-flashes-black-yuuji-itadori",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "shatter-to-pieces-toge-inumaki",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "first-grade-sorcerers-skill-kento-nanami",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "genuine-jujutsu-ryomen-sukuna",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "zone-yuji-itadori",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "are-you-satisfied-with-that-aoi-todo",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "ratio-technique-kento-nanami",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "keep-hammering-at-them-nobara-kugisaki",
+      "from": "B",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "longsword-battle-maki-zenin",
+      "from": "B",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "blood-borne-resolve-noritoshi-kamo",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "maximum-cursed-energy-output-yuji-itadori",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "zanshin-kasumi-miwa",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "infuse-your-cursed-energy-yuji-itadori",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "the-strongest-satoru-gojo",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "fulfilling-his-duty-as-the-older-brother-choso",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "inspiration-from-death-mahito",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "silent-suppression-kento-nanami",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "bond-of-friendship-megumi-fushiguro",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "striking-eternal-summer-nobara-kugisaki",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "promising-new-student-kento-nanami",
+      "from": null,
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "no-conceit-takuma-ino",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "unlimited-shikigami-dagon",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "unbridled-soul-mahito",
+      "from": null,
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "sprinting-kasumi-miwa",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "chain-mark-full-throttle-eiji-urushi",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "girl-of-steel-nobara-kugisaki",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "night-of-dancing-crows-mei-mei",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "early-morning-departure-maki-zenin",
+      "from": "D",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "team-up-if-they-are-weak-maki-zenin",
+      "from": null,
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "damage",
+      "id": "awakening-satoru-gojo",
+      "from": "D",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "indomitable-auspicious-beasts-takuma-ino",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "to-protect-non-sorcerers-suguru-geto",
+      "from": "S",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "tool-manipulation-momo-nishimiya",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "with-that-will-in-mind-kaito-yuki",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "delayed-quota-miguel",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "promising-new-student-kento-nanami",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "pivotal-guardian-masamichi-yaga",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "fwoo-hyoi-shoko-ieiri",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "first-grade-sorcerers-skill-kento-nanami",
+      "from": null,
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "effective-range-mai-zenin",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "rabbits-disruption-megumi-fushiguro",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "are-you-satisfied-with-that-aoi-todo",
+      "from": null,
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "crafty-rock-yoshinobu-gakuganji",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "bond-of-friendship-megumi-fushiguro",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "cursed-energy-melody-yoshinobu-gakuganji",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "step-back-third-rate-uraume",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "melting-sweet-summer-treats-satoru-gojo",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "fulfilling-his-duty-as-the-older-brother-choso",
+      "from": null,
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "within-infinity-satoru-gojo",
+      "from": null,
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "night-lurking-sorcerer-toge-inumaki",
+      "from": null,
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "blood-borne-resolve-noritoshi-kamo",
+      "from": null,
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "ariadnes-thread-educator-masamichi-yaga",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "shatter-to-pieces-toge-inumaki",
+      "from": "C",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "incomplete-domain-megumi-fushiguro",
+      "from": null,
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "cursed-technique-boost-kaito-yuki",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "sprinting-kasumi-miwa",
+      "from": null,
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "zanshin-kasumi-miwa",
+      "from": "C",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "support",
+      "id": "pick-up-after-hard-work-kiyotaka-ijichi",
+      "from": "D",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "with-takada-chan-aoi-todo",
+      "from": "A",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "first-grade-sorcerers-skill-kento-nanami",
+      "from": "A",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "ratio-technique-kento-nanami",
+      "from": "A",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "young-fish-and-reverse-punishment-junpei-yoshino",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "need-some-help-panda",
+      "from": "B",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "sword-option-ultimate-mechamaru",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "blood-borne-resolve-noritoshi-kamo",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "this-is-justice-suguru-geto",
+      "from": "B",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "infuse-your-cursed-energy-yuji-itadori",
+      "from": "C",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "maverick-outcast-maki-zenin",
+      "from": "C",
+      "to": "D",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "hearts-resolve-saki-rindo",
+      "from": "C",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "inherited-cursed-technique-megumi-fushiguro",
+      "from": "D",
+      "to": "B",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "sprinting-kasumi-miwa",
+      "from": "D",
+      "to": "S",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "girl-of-steel-nobara-kugisaki",
+      "from": "D",
+      "to": "C",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-19",
+      "list": "sp",
+      "id": "zanshin-kasumi-miwa",
+      "from": "D",
+      "to": "S",
+      "by": "manual"
+    }
+  ]
 }

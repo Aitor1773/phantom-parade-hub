@@ -22,7 +22,7 @@ npm run build
 |---|---|
 | `data/manual/global-banners.json` | Banners del servidor **Global**. La wiki no tiene una cronología Global al día. Cada entrada lleva su fuente oficial (nota de prensa, @JJKPP_GL, aviso del juego). |
 | `data/manual/jp-names.json` | Nombre japonés oficial (「epíteto」nombre) → id de la web, para comparar con webs JP si alguna da permiso. |
-| `data/manual/tier-list.json` | Tier list **propia**. Los rangos con `"manual": true` son tus ajustes y el borrador nunca los toca. |
+| `data/manual/tier-list.json` | Tier list **propia** con 7 listas (blue, red, green, yellow, damage, support, sp). Para ajustar: en `lists.<lista>.entries.<id>` cambia `"rank"` y pon `"manual": true` (y una `"note"` si quieres). Fecha de revisión fija: `"reviewed"` + `"reviewedManual": true`. Con `"curated": true` (damage, support y sp) la lista solo muestra los personajes con `"manual": true`; para añadir uno nuevo pon `rank`, `"manual": true` y `"lastRank": null`. Cada cambio queda en `changelog`. |
 | `data/manual/codes.json` | Códigos **probados en el juego**. Tienen prioridad sobre lo que digan las webs. |
 | `scripts/data/link-jjkppdb.mjs` → `MANUAL` | Parejas de memorias wiki ↔ jjkppdb revisadas por significado. |
 | `scripts/images/import.mjs` → `artToId` | Arte de jjkppdb que no se asocia solo. |

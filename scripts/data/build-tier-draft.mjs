@@ -28,7 +28,7 @@ const CRITERIA = {
   selfBuffFactor: 0.5,
   rarityFactor: { SSR: 1, SR: 0.8, R: 0.6 },
   // Percentil acumulado desde arriba → rango
-  thresholds: [['SS', 0.12], ['S', 0.35], ['A', 0.65], ['B', 0.85], ['C', 1]],
+  thresholds: [['S', 0.12], ['A', 0.35], ['B', 0.65], ['C', 0.85], ['D', 1]],
 };
 
 const maxLevel = (sk) => sk?.levels?.[9] ?? [...(sk?.levels ?? [])].reverse().find(Boolean) ?? '';
@@ -96,38 +96,77 @@ const scored = metrics.map(({ c, total }) => {
   return { c, total, group, score };
 }).sort((a, b) => b.score - a.score);
 
-const prev = existsSync(OUT) ? JSON.parse(await readFile(OUT, 'utf8')) : { entries: {} };
-const entries = {};
+// ── Listas: una por elemento y tres por función ──────────────────
+// Cada lista ordena a sus miembros con su propia ponderación.
+const weighted = (x, w) => Math.round(100 * (w.dmg * P.dmg(x.total.dmg) + w.buff * P.buff(x.total.buff) + w.debuff * P.debuff(x.total.debuff) + w.sustain * P.sustain(x.total.sustain)) * (CRITERIA.rarityFactor[x.c.rarity] ?? 1));
+const W = CRITERIA.roleWeights;
+const LISTS = {
+  blue: { members: (x) => x.c.element === 'blue', score: (x) => x.score },
+  red: { members: (x) => x.c.element === 'red', score: (x) => x.score },
+  green: { members: (x) => x.c.element === 'green', score: (x) => x.score },
+  yellow: { members: (x) => x.c.element === 'yellow', score: (x) => x.score },
+  damage: { members: (x) => x.group === 'attacker', score: (x) => weighted(x, W.attacker) },
+  support: { members: (x) => x.group !== 'attacker', score: (x) => weighted(x, x.group === 'sustain' ? W.sustain : x.group === 'debuffer' ? W.debuffer : W.support) },
+  sp: { members: (x) => !!x.c.kits.sp, score: (x) => x.score },
+};
+
+const today = new Date().toISOString().slice(0, 10);
+const prev = existsSync(OUT) ? JSON.parse(await readFile(OUT, 'utf8')) : {};
+const changelog = [...(prev.changelog ?? [])];
+const lists = {};
 let kept = 0;
-scored.forEach((x, i) => {
-  const p = (i + 1) / scored.length;
-  const draft = CRITERIA.thresholds.find(([, t]) => p <= t)[0];
-  const old = prev.entries?.[x.c.id];
-  if (old?.manual) kept++;
-  entries[x.c.id] = {
-    rank: old?.manual ? old.rank : draft,
-    draftRank: draft,
-    score: x.score,
-    group: x.group,
-    metrics: {
-      ultDmg: Math.round(x.total.ultDmg),
-      maxBuff: Math.round(x.total.maxBuff),
-      maxDebuff: Math.round(x.total.maxDebuff),
-      sustain: Math.round(x.total.sustain),
-    },
-    ...(old?.manual ? { manual: true } : {}),
-    ...(old?.note ? { note: old.note } : {}),
+
+for (const [key, def] of Object.entries(LISTS)) {
+  const old = prev.lists?.[key];
+  // Lista curada ("curated": true): solo salen los que pusiste a mano. En las demás,
+  // los miembros por fórmula más cualquier ajuste manual que añadas fuera de ella.
+  const isManual = (x) => !!old?.entries?.[x.c.id]?.manual;
+  const members = scored.filter((x) => (old?.curated ? isManual(x) : def.members(x) || isManual(x)))
+    .map((x) => ({ x, s: def.score(x) })).sort((a, b) => b.s - a.s);
+  const entries = {};
+  let changed = false;
+  members.forEach(({ x, s }, i) => {
+    const draft = CRITERIA.thresholds.find(([, t]) => (i + 1) / members.length <= t)[0];
+    const o = old?.entries?.[x.c.id];
+    if (o?.manual) kept++;
+    const rank = o?.manual ? o.rank : draft;
+    // Historial: se compara con el rango publicado la última vez ("lastRank"), así también
+    // se registran los ajustes que hagas a mano en el archivo entre dos ejecuciones
+    // ("lastRank": null = añadido a mano a esta lista; cuenta como nuevo)
+    const before = o ? (o.lastRank !== undefined ? o.lastRank : o.rank) : null;
+    if (old && before !== rank) {
+      changelog.push({ date: today, list: key, id: x.c.id, from: before, to: rank, by: o?.manual ? 'manual' : 'draft' });
+      changed = true;
+    }
+    entries[x.c.id] = { rank, draftRank: draft, score: s, lastRank: rank, ...(o?.manual ? { manual: true } : {}), ...(o?.note ? { note: o.note } : {}) };
+  });
+  lists[key] = {
+    // Fecha de revisión: la que pongas a mano, o hoy si el borrador cambió algo
+    reviewed: old?.reviewedManual ? old.reviewed : changed || !old ? today : old.reviewed,
+    ...(old?.reviewedManual ? { reviewedManual: true } : {}),
+    ...(old?.curated ? { curated: true } : {}),
+    entries,
   };
-});
+}
+
+// Métricas por personaje (comunes a todas las listas)
+const characters = Object.fromEntries(scored.map((x) => [x.c.id, {
+  score: x.score,
+  group: x.group,
+  metrics: { ultDmg: Math.round(x.total.ultDmg), maxBuff: Math.round(x.total.maxBuff), maxDebuff: Math.round(x.total.maxDebuff), sustain: Math.round(x.total.sustain) },
+}]));
 
 await writeFile(OUT, JSON.stringify({
-  _comment: 'Tier list PROPIA. "rank" es el rango publicado; "draftRank" el del borrador automático. Para ajustar un personaje: cambia "rank", pon "manual": true y, si quieres, una "note". El borrador nunca toca las entradas manuales. Después: npm run data:tierdraft && npm run build',
+  _comment: 'Tier list PROPIA, con 7 listas (blue, red, green, yellow, damage, support, sp). Para ajustar: en lists.<lista>.entries.<id> cambia "rank", pon "manual": true y, si quieres, una "note". Para fijar la fecha de revisión de una lista: "reviewed": "AAAA-MM-DD" y "reviewedManual": true. Con "curated": true en una lista, solo salen en ella los personajes con "manual": true (para añadir uno nuevo: rank, manual y "lastRank": null). El borrador nunca toca lo manual y registra cada cambio en "changelog". Después: npm run data:tierdraft && npm run build',
   updatedAt: new Date().toISOString(),
   criteria: CRITERIA,
-  entries,
+  lists,
+  characters,
+  changelog: changelog.slice(-500),
 }, null, 2) + '\n', 'utf8');
 
-const count = Object.values(entries).reduce((a, e) => ((a[e.rank] = (a[e.rank] ?? 0) + 1), a), {});
-console.log('Rangos:', count, `· ajustes manuales conservados: ${kept}`);
-console.log('Top 12:', scored.slice(0, 12).map((x) => `${x.c.epithet} ${x.c.name} (${x.score})`).join(' | '));
-console.log('Últimos 5:', scored.slice(-5).map((x) => `${x.c.epithet} ${x.c.name} (${x.score})`).join(' | '));
+for (const [k, l] of Object.entries(lists)) {
+  const count = Object.values(l.entries).reduce((a, e) => ((a[e.rank] = (a[e.rank] ?? 0) + 1), a), {});
+  console.log(`${k.padEnd(8)} ${Object.keys(l.entries).length} personajes`, JSON.stringify(count), `revisada ${l.reviewed}`);
+}
+console.log(`Ajustes manuales conservados: ${kept} · cambios registrados hoy: ${changelog.filter((c) => c.date === today).length}`);

@@ -23,20 +23,20 @@ interface Props {
   labels: Record<string, string>;
 }
 
-// Rangos de la tier list propia: SS y S cuentan como "alto"
-const HIGH = new Set(['SS', 'S']);
+// Rangos de la tier list propia: S y A cuentan como "alto"
+const HIGH = new Set(['S', 'A']);
 const RANK_CLASS: Record<string, string> = {
-  SS: 'border-flame/60 bg-flame/15 text-flame',
-  S: 'border-ember/60 bg-ember/10 text-ember',
-  A: 'border-line-strong bg-cinder text-bone',
-  B: 'border-line bg-cinder text-dust',
-  C: 'border-line bg-cinder text-smoke',
+  S: 'border-flame/60 bg-flame/15 text-flame',
+  A: 'border-ember/60 bg-ember/10 text-ember',
+  B: 'border-line-strong bg-cinder text-bone',
+  C: 'border-line bg-cinder text-dust',
+  D: 'border-line bg-cinder text-smoke',
 };
 const fill = (s: string, v: Record<string, string | number>) => Object.entries(v).reduce((t, [k, x]) => t.replace(`{${k}}`, String(x)), s);
 
 function Rank({ rank }: { rank: string | null }) {
   if (!rank) return <span className="rounded border border-line px-1.5 text-[10px] text-smoke">—</span>;
-  return <span className={`rounded border px-1.5 text-[10px] font-bold ${RANK_CLASS[rank] ?? RANK_CLASS.A}`}>{rank}</span>;
+  return <span className={`rounded border px-1.5 text-[10px] font-bold ${RANK_CLASS[rank] ?? RANK_CLASS.C}`}>{rank}</span>;
 }
 
 function Card({ title, hint, children }: { title: string; hint?: string; children: ReactNode }) {

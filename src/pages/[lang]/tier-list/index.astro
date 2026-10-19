@@ -2,8 +2,8 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
-import { CHARACTERS, thumb } from '@/data/characters';
-import { TIER_CRITERIA, TIER_RANKS, TIER_UPDATED, tierEntry } from '@/data/gacha';
+import { CHARACTERS, getCharacter, thumb } from '@/data/characters';
+import { TIER_CHANGELOG, TIER_CRITERIA, TIER_LISTS, TIER_LIST_KEYS, TIER_RANKS, type TierListKey } from '@/data/gacha';
 import { useG, type GameKey } from '@/i18n/game';
 import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
@@ -13,23 +13,32 @@ const lang = Astro.params.lang as Locale;
 const t = useT(lang);
 const g = useG(lang);
 
-const rows = TIER_RANKS.map((rank) => ({
-  rank,
-  chars: CHARACTERS.map((c) => ({ c, e: tierEntry(c.id) }))
-    .filter((x) => x.e?.rank === rank)
-    .sort((a, b) => b.e!.score - a.e!.score),
-}));
-const pending = CHARACTERS.filter((c) => !tierEntry(c.id)?.manual).length;
-const elements = [...new Set(CHARACTERS.map((c) => c.element))];
-const GROUPS = ['attacker', 'support', 'debuffer', 'sustain'] as const;
+const ELEMENT_KEYS = ['blue', 'red', 'green', 'yellow'];
+const tabLabel = (k: TierListKey) => g((ELEMENT_KEYS.includes(k) ? `el.${k}` : `tl.tab.${k}`) as GameKey);
 const ROW_STYLE: Record<string, string> = {
-  SS: 'from-flame to-ember text-ash',
-  S: 'from-ember to-ember-deep text-ash',
-  A: 'from-crimson to-blood text-bone',
-  B: 'from-char to-cinder text-bone',
-  C: 'from-cinder to-coal text-dust',
+  S: 'from-flame to-ember text-ash',
+  A: 'from-ember to-ember-deep text-ash',
+  B: 'from-crimson to-blood text-bone',
+  C: 'from-char to-cinder text-bone',
+  D: 'from-cinder to-coal text-dust',
 };
-const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long' }).format(new Date(TIER_UPDATED));
+const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${iso}T00:00:00Z`));
+const byId = new Map(CHARACTERS.map((c) => [c.id, c]));
+
+const lists = TIER_LIST_KEYS.map((key) => {
+  const list = TIER_LISTS[key];
+  const rows = TIER_RANKS.map((rank) => ({
+    rank,
+    items: Object.entries(list.entries)
+      .filter(([, e]) => e.rank === rank)
+      .sort((a, b) => b[1].score - a[1].score)
+      .map(([id, e]) => ({ c: byId.get(id)!, e }))
+      .filter((x) => x.c),
+  }));
+  const pending = Object.values(list.entries).filter((e) => !e.manual).length;
+  const changes = TIER_CHANGELOG.filter((ch) => ch.list === key).slice(0, 40);
+  return { key, list, rows, pending, changes };
+});
 const ssPct = Math.round(TIER_CRITERIA.thresholds[0][1] * 100);
 const OTHER = [
   { name: 'jjkppdb', url: 'https://www.jjkppdb.com/tierlists' },
@@ -44,67 +53,86 @@ const OTHER = [
       <p class="eyebrow">{t('nav.guides')}</p>
       <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{g('tl.title')}</h1>
       <p class="mt-3 max-w-2xl text-dust">{g('tl.intro')}</p>
-      <p class="mt-3 flex flex-wrap items-center gap-2 text-xs text-smoke">
-        <span>{g('tl.updated')}: {updated}</span>
-        {pending > 0 && <span class="badge-unverified">{g('tl.draft', { n: pending })}</span>}
-        <a href="#criteria" class="underline underline-offset-2 hover:text-dust">{g('tl.criteria')}</a>
-      </p>
+      <a href="#criteria" class="mt-2 inline-block text-xs text-smoke underline underline-offset-2 hover:text-dust">{g('tl.criteria')}</a>
     </header>
 
-    <!-- Filtros -->
-    <div class="card mb-6 grid gap-2.5 p-4">
-      <div class="flex flex-wrap items-center gap-1.5">
-        <span class="w-full text-[11px] font-bold tracking-[0.15em] text-smoke uppercase sm:w-28">{g('db.element')}</span>
-        <button type="button" class="tl-chip" data-f="el" data-v="all" aria-pressed="true">{g('tl.all')}</button>
-        {elements.map((el) => (
-          <button type="button" class="tl-chip" data-f="el" data-v={el} aria-pressed="false">
-            <span class="size-2.5 rounded-full" style={`background:${ELEMENT_COLOR[el]}`}></span>{g(`el.${el}` as GameKey)}
+    <!-- Pestañas: elementos | funciones -->
+    <div role="tablist" class="tl-tabs mb-5 flex gap-1 overflow-x-auto border-b border-line">
+      {lists.map(({ key }, i) => (
+        <>
+          {i === 4 && <span class="mx-1 my-2 w-px shrink-0 bg-line" aria-hidden="true"></span>}
+          <button type="button" role="tab" data-tab={key} aria-selected={i === 0 ? 'true' : 'false'}
+            class="relative flex shrink-0 items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-dust transition hover:text-bone aria-selected:text-bone">
+            {ELEMENT_KEYS.includes(key) && <span class="size-2.5 rounded-full" style={`background:${ELEMENT_COLOR[key]}`}></span>}
+            {tabLabel(key)}
+            <span class="tab-line absolute inset-x-2 -bottom-px hidden h-0.5 rounded-full bg-gradient-to-r from-ember to-flame"></span>
           </button>
-        ))}
-      </div>
-      <div class="flex flex-wrap items-center gap-1.5">
-        <span class="w-full text-[11px] font-bold tracking-[0.15em] text-smoke uppercase sm:w-28">{g('db.role')}</span>
-        <button type="button" class="tl-chip" data-f="group" data-v="all" aria-pressed="true">{g('tl.all')}</button>
-        {GROUPS.map((gr) => <button type="button" class="tl-chip" data-f="group" data-v={gr} aria-pressed="false">{g(`tl.g.${gr}` as GameKey)}</button>)}
-      </div>
-      <div class="flex flex-wrap items-center gap-1.5">
-        <span class="w-full text-[11px] font-bold tracking-[0.15em] text-smoke uppercase sm:w-28">{g('db.rarity')}</span>
-        <button type="button" class="tl-chip" data-f="rarity" data-v="all" aria-pressed="true">{g('tl.all')}</button>
-        {['SSR', 'SR', 'R'].map((r) => <button type="button" class="tl-chip" data-f="rarity" data-v={r} aria-pressed="false">{r}</button>)}
-      </div>
-    </div>
-
-    <!-- Filas -->
-    <div class="space-y-2">
-      {rows.map((row) => (
-        <section class="flex overflow-hidden rounded-xl border border-line bg-coal/70">
-          <div class:list={['grid w-14 shrink-0 place-items-center bg-gradient-to-b font-display text-2xl font-black sm:w-20 sm:text-3xl', ROW_STYLE[row.rank]]}>{row.rank}</div>
-          <ul class="flex min-h-24 flex-1 flex-wrap content-start gap-2 p-2.5">
-            {row.chars.map(({ c, e }) => (
-              <li class="tl-item" data-el={c.element} data-group={e!.group} data-rarity={c.rarity} style={`--el:${ELEMENT_COLOR[c.element] ?? '#ff5a1f'}`}>
-                <a
-                  href={localePath(lang, `/characters/${c.id}`)}
-                  class="group relative block w-[68px] overflow-hidden rounded-lg border-2 border-line transition hover:-translate-y-0.5 hover:border-[color:var(--el)] sm:w-20"
-                  title={`${c.epithet ?? ''} ${c.name} · ${e!.score}/100${e!.note ? ` · ${e!.note}` : ''}`}
-                >
-                  <span class="relative block aspect-[3/4] bg-cinder">
-                    {c.art ? <img src={thumb(c.art, 320)} alt="" loading="lazy" class="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
-                    <span class="absolute inset-0 bg-gradient-to-t from-ash/90 via-transparent to-transparent"></span>
-                    <span class="absolute top-1 left-1 size-2 rounded-full ring-1 ring-ash" style="background: var(--el)"></span>
-                    {e!.manual && <span class="absolute top-0.5 right-1 text-[10px] text-flame" title={g('tl.manual')}>✎</span>}
-                    <span class="absolute inset-x-0 bottom-0 truncate px-1 pb-0.5 text-center text-[9px] font-semibold text-bone sm:text-[10px]">{c.name.split(' ').at(-1)}</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
+        </>
       ))}
     </div>
 
+    {lists.map(({ key, list, rows, pending, changes }, i) => (
+      <section class="tl-panel" data-panel={key} hidden={i !== 0}>
+        <div class="mb-3 flex flex-wrap items-center justify-between gap-2 text-xs">
+          <p class="text-smoke">{g('tl.reviewed')}: <span class="font-semibold text-dust">{day(list.reviewed)}</span>
+            {pending > 0 && <span class="badge-unverified ml-2">{g('tl.draft', { n: pending })}</span>}
+          </p>
+          <details class="group relative">
+            <summary class="btn-secondary h-8 cursor-pointer list-none px-3 text-xs">
+              <Icon name="calendar" size={14} /> {tabLabel(key)} · {g('tl.changelog')}
+            </summary>
+            <div class="absolute right-0 z-20 mt-2 max-h-80 w-80 overflow-y-auto rounded-xl border border-line-strong bg-coal p-3 shadow-2xl shadow-black/60">
+              {changes.length ? (
+                <ul class="space-y-1.5">
+                  {changes.map((ch) => {
+                    const c = getCharacter(ch.id);
+                    return (
+                      <li class="text-[11px] leading-snug text-dust">
+                        <span class="text-smoke">{day(ch.date)}</span> · <span class="text-bone">{c ? `${c.epithet ?? ''} ${c.name}` : ch.id}</span>{' '}
+                        {ch.from ? <span>{ch.from} → <b class="text-flame">{ch.to}</b></span> : <span><b class="text-flame">{ch.to}</b> ({g('tl.new')})</span>}
+                        <span class="text-smoke"> · {g(ch.by === 'manual' ? 'tl.by.manual' : 'tl.by.draft')}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p class="text-xs text-smoke">{g('tl.changelog.empty')}</p>
+              )}
+            </div>
+          </details>
+        </div>
+
+        <div class="space-y-2">
+          {rows.map((row) => (
+            <div class="flex overflow-hidden rounded-xl border border-line bg-coal/70">
+              <div class:list={['grid w-14 shrink-0 place-items-center bg-gradient-to-b font-display text-2xl font-black sm:w-20 sm:text-3xl', ROW_STYLE[row.rank]]}>{row.rank}</div>
+              <ul class="flex min-h-24 flex-1 flex-wrap content-start gap-2 p-2.5">
+                {row.items.map(({ c, e }) => (
+                  <li style={`--el:${ELEMENT_COLOR[c.element] ?? '#ff5a1f'}`}>
+                    <a
+                      href={localePath(lang, `/characters/${c.id}`)}
+                      class="relative block w-[68px] overflow-hidden rounded-lg border-2 border-line transition hover:-translate-y-0.5 hover:border-[color:var(--el)] sm:w-20"
+                      title={`${c.epithet ?? ''} ${c.name}${e.note ? ` · ${e.note}` : ''}`}
+                    >
+                      <span class="relative block aspect-[3/4] bg-cinder">
+                        {c.art ? <img src={thumb(c.art, 320)} alt="" loading="lazy" class="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
+                        <span class="absolute inset-0 bg-gradient-to-t from-ash/90 via-transparent to-transparent"></span>
+                        <span class="absolute top-1 left-1 size-2 rounded-full ring-1 ring-ash" style="background: var(--el)"></span>
+                        {e.manual && <span class="absolute top-0.5 right-1 text-[10px] text-flame" title={g('tl.manual')}>✎</span>}
+                        <span class="absolute inset-x-0 bottom-0 truncate px-1 pb-0.5 text-center text-[9px] font-semibold text-bone sm:text-[10px]">{c.name.split(' ').at(-1)}</span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
     <div class="mt-12 grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
-      <!-- Criterios -->
-      <section id="criteria" class="card scroll-mt-24 p-6">
+      <section id="criteria" class="card min-w-0 scroll-mt-24 p-6">
         <h2 class="text-2xl font-bold text-bone">{g('tl.criteria')}</h2>
         <ol class="mt-4 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-dust marker:text-ember">
           <li>{g('tl.c1')}</li>
@@ -116,10 +144,10 @@ const OTHER = [
         <div class="overflow-x-auto">
           <table class="w-full min-w-[420px] text-left text-xs">
             <thead class="text-smoke">
-              <tr><th class="py-1.5 pr-3 font-semibold"></th><th class="px-2">{g('tl.m.dmg')}</th><th class="px-2">{g('tl.m.buff')}</th><th class="px-2">{g('tl.m.debuff')}</th><th class="px-2">{g('tl.m.sustain')}</th></tr>
+              <tr><th class="py-1.5 pr-3"></th><th class="px-2">{g('tl.m.dmg')}</th><th class="px-2">{g('tl.m.buff')}</th><th class="px-2">{g('tl.m.debuff')}</th><th class="px-2">{g('tl.m.sustain')}</th></tr>
             </thead>
             <tbody>
-              {GROUPS.map((gr) => {
+              {(['attacker', 'support', 'debuffer', 'sustain'] as const).map((gr) => {
                 const w = TIER_CRITERIA.roleWeights[gr];
                 return (
                   <tr class="border-t border-line">
@@ -134,7 +162,6 @@ const OTHER = [
         <p class="mt-4 text-[11px] text-smoke">{t('footer.license')}</p>
       </section>
 
-      <!-- Comparar -->
       <aside class="card self-start p-6">
         <h2 class="font-sans text-base font-bold text-bone">{g('tl.compare')}</h2>
         <p class="mt-1 text-xs text-smoke">{g('tl.compare.desc')}</p>
@@ -154,32 +181,21 @@ const OTHER = [
 </BaseLayout>
 
 <style>
-  .tl-chip {
-    display: inline-flex; align-items: center; gap: 0.375rem; height: 2rem; padding: 0 0.75rem;
-    border-radius: 999px; border: 1px solid var(--color-line); background: var(--color-coal);
-    font-size: 0.75rem; font-weight: 500; color: var(--color-dust); transition: all 0.15s;
-  }
-  .tl-chip:hover { color: var(--color-bone); border-color: var(--color-line-strong); }
-  .tl-chip[aria-pressed='true'] { border-color: color-mix(in srgb, var(--color-ember) 70%, transparent); background: color-mix(in srgb, var(--color-ember) 15%, transparent); color: var(--color-bone); }
+  .tl-tabs button[aria-selected='true'] .tab-line { display: block; }
+  summary::-webkit-details-marker { display: none; }
 </style>
 
 <script>
-  // Filtros (uno activo por grupo)
-  const state: Record<string, string> = { el: 'all', group: 'all', rarity: 'all' };
-  const items = [...document.querySelectorAll<HTMLElement>('.tl-item')];
-  const apply = () => {
-    for (const it of items) {
-      it.hidden = (state.el !== 'all' && it.dataset.el !== state.el) ||
-        (state.group !== 'all' && it.dataset.group !== state.group) ||
-        (state.rarity !== 'all' && it.dataset.rarity !== state.rarity);
-    }
+  // Pestañas enlazables (#blue, #damage…)
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('.tl-tabs [data-tab]')];
+  const panels = [...document.querySelectorAll<HTMLElement>('.tl-panel')];
+  const show = (key: string, push = true) => {
+    if (!panels.some((p) => p.dataset.panel === key)) return;
+    tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === key)));
+    panels.forEach((p) => (p.hidden = p.dataset.panel !== key));
+    if (push) history.replaceState(null, '', `#${key}`);
   };
-  document.querySelectorAll<HTMLButtonElement>('.tl-chip').forEach((b) =>
-    b.addEventListener('click', () => {
-      const f = b.dataset.f!;
-      state[f] = b.dataset.v!;
-      document.querySelectorAll<HTMLButtonElement>(`.tl-chip[data-f="${f}"]`).forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-      apply();
-    }),
-  );
+  tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab!)));
+  show(location.hash.slice(1), false);
+  window.addEventListener('hashchange', () => show(location.hash.slice(1), false));
 </script>
