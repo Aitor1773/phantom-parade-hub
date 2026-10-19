@@ -1,0 +1,1406 @@
+{
+  "_comment": "Tier list PROPIA. \"rank\" es el rango publicado; \"draftRank\" el del borrador automático. Para ajustar un personaje: cambia \"rank\", pon \"manual\": true y, si quieres, una \"note\". El borrador nunca toca las entradas manuales. Después: npm run data:tierdraft && npm run build",
+  "updatedAt": "2026-10-19T19:13:08.206Z",
+  "criteria": {
+    "roleWeights": {
+      "attacker": {
+        "dmg": 0.6,
+        "buff": 0.2,
+        "debuff": 0.2,
+        "sustain": 0
+      },
+      "support": {
+        "dmg": 0.2,
+        "buff": 0.6,
+        "debuff": 0.2,
+        "sustain": 0
+      },
+      "debuffer": {
+        "dmg": 0.2,
+        "buff": 0.2,
+        "debuff": 0.6,
+        "sustain": 0
+      },
+      "sustain": {
+        "dmg": 0.1,
+        "buff": 0.25,
+        "debuff": 0.15,
+        "sustain": 0.5
+      }
+    },
+    "roleGroup": {
+      "Attacker": "attacker",
+      "Support": "support",
+      "Enhancer": "support",
+      "Debuffer": "debuffer",
+      "Obstructor": "debuffer",
+      "Healer": "sustain",
+      "Defender": "sustain",
+      "Agitator": "sustain"
+    },
+    "aoeFactor": 1.2,
+    "autoFactor": 0.5,
+    "selfBuffFactor": 0.5,
+    "rarityFactor": {
+      "SSR": 1,
+      "SR": 0.8,
+      "R": 0.6
+    },
+    "thresholds": [
+      [
+        "SS",
+        0.12
+      ],
+      [
+        "S",
+        0.35
+      ],
+      [
+        "A",
+        0.65
+      ],
+      [
+        "B",
+        0.85
+      ],
+      [
+        "C",
+        1
+      ]
+    ]
+  },
+  "entries": {
+    "02-second-domain-expansion-satoru-gojo": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 92,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 2040,
+        "maxBuff": 0,
+        "maxDebuff": 150,
+        "sustain": 10
+      }
+    },
+    "a-life-entrusted-to-me-yuji-itadori": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 88,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 1500,
+        "maxBuff": 50,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 86,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 50,
+        "sustain": 0
+      }
+    },
+    "cursed-corpse-battle-masamichi-yaga": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 83,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1871,
+        "maxBuff": 30,
+        "maxDebuff": 53,
+        "sustain": 0
+      }
+    },
+    "smash-it-into-the-summer-sky-yuji-itadori": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 83,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1900,
+        "maxBuff": 0,
+        "maxDebuff": 20,
+        "sustain": 0
+      }
+    },
+    "indomitable-auspicious-beasts-takuma-ino": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 82,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1400,
+        "maxBuff": 0,
+        "maxDebuff": 105,
+        "sustain": 0
+      }
+    },
+    "life-saver-shoko-ieiri": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 80,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 1023,
+        "maxBuff": 62,
+        "maxDebuff": 15,
+        "sustain": 56
+      }
+    },
+    "the-sorcerer-killer-toji-fushiguro": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 78,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1919,
+        "maxBuff": 0,
+        "maxDebuff": 23,
+        "sustain": 2
+      }
+    },
+    "to-protect-non-sorcerers-suguru-geto": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 78,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 2016,
+        "maxBuff": 0,
+        "maxDebuff": 20,
+        "sustain": 0
+      }
+    },
+    "tool-manipulation-momo-nishimiya": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 77,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 1080,
+        "maxBuff": 65,
+        "maxDebuff": 25,
+        "sustain": 0
+      }
+    },
+    "battle-of-firepower-ryomen-sukuna": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 76,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 2100,
+        "maxBuff": 0,
+        "maxDebuff": 15,
+        "sustain": 35
+      }
+    },
+    "hollow-purple-satoru-gojo": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 76,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 2399,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "what-lies-at-the-end-suguru-geto": {
+      "rank": "SS",
+      "draftRank": "SS",
+      "score": 76,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 35,
+        "sustain": 0
+      }
+    },
+    "delayed-quota-miguel": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 75,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1460,
+        "maxBuff": 0,
+        "maxDebuff": 50,
+        "sustain": 8
+      }
+    },
+    "queen-of-curses-yuta-okkotsu": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 75,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 20,
+        "sustain": 23
+      }
+    },
+    "burning-passion-yu-haibara": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 74,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 20,
+        "sustain": 5
+      }
+    },
+    "promising-new-student-kento-nanami": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 74,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 90,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "nimble-body-yuji-itadori": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 73,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1479,
+        "maxBuff": 48,
+        "maxDebuff": 45,
+        "sustain": 0
+      }
+    },
+    "pivotal-guardian-masamichi-yaga": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 72,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 600,
+        "maxBuff": 65,
+        "maxDebuff": 15,
+        "sustain": 0
+      }
+    },
+    "executioner-yuta-okkotsu": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 71,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 5
+      }
+    },
+    "fwoo-hyoi-shoko-ieiri": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 70,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 65,
+        "maxDebuff": 0,
+        "sustain": 70
+      }
+    },
+    "lend-me-your-power-yuta-okkotsu": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 70,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 2399,
+        "maxBuff": 0,
+        "maxDebuff": 14,
+        "sustain": 0
+      }
+    },
+    "the-golden-age-of-jujutsu-noritoshi-kamo": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 70,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 2280,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 8
+      }
+    },
+    "dance-of-the-beautiful-blades-mei-mei": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 69,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1500,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "ward-off-with-sharp-blade-atsuya-kusakabe": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 69,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 1200,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 49
+      }
+    },
+    "the-thrill-of-the-fight-hanami": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 67,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1103,
+        "maxBuff": 0,
+        "maxDebuff": 33,
+        "sustain": 7
+      }
+    },
+    "unbridled-soul-mahito": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 67,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 50,
+        "sustain": 60
+      }
+    },
+    "working-overtime-kento-nanami": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 67,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1177,
+        "maxBuff": 0,
+        "maxDebuff": 23,
+        "sustain": 0
+      }
+    },
+    "cursed-energy-flashes-black-yuuji-itadori": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 66,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1201,
+        "maxBuff": 0,
+        "maxDebuff": 52,
+        "sustain": 0
+      }
+    },
+    "effective-range-mai-zenin": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 66,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 850,
+        "maxBuff": 0,
+        "maxDebuff": 35,
+        "sustain": 0
+      }
+    },
+    "incomplete-domain-megumi-fushiguro": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 66,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1615,
+        "maxBuff": 0,
+        "maxDebuff": 45,
+        "sustain": 0
+      }
+    },
+    "rabbits-disruption-megumi-fushiguro": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 66,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1000,
+        "maxBuff": 0,
+        "maxDebuff": 100,
+        "sustain": 0
+      }
+    },
+    "the-strongest-blue-satoru-gojo": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 66,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1804,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "cold-light-of-dusk-atsuya-kusakabe": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 65,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 20,
+        "sustain": 45
+      }
+    },
+    "with-takada-chan-aoi-todo": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 65,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 2579,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 39
+      }
+    },
+    "first-grade-sorcerers-skill-kento-nanami": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 64,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1120,
+        "maxBuff": 0,
+        "maxDebuff": 45,
+        "sustain": 0
+      }
+    },
+    "genuine-jujutsu-ryomen-sukuna": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 64,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 2021,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "zone-yuji-itadori": {
+      "rank": "S",
+      "draftRank": "S",
+      "score": 64,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1500,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 9
+      }
+    },
+    "are-you-satisfied-with-that-aoi-todo": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 63,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1610,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 10
+      }
+    },
+    "ratio-technique-kento-nanami": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 63,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1532,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "young-fish-and-reverse-punishment-junpei-yoshino": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 63,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 950,
+        "maxBuff": 0,
+        "maxDebuff": 48,
+        "sustain": 12
+      }
+    },
+    "crafty-rock-yoshinobu-gakuganji": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 62,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1020,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "dont-look-down-on-me-momo-nishimiya": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 62,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 958,
+        "maxBuff": 69,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "bond-of-friendship-megumi-fushiguro": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 61,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 500,
+        "maxBuff": 0,
+        "maxDebuff": 45,
+        "sustain": 0
+      }
+    },
+    "a-bad-match-nobara-kugisaki": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 60,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1370,
+        "maxBuff": 0,
+        "maxDebuff": 23,
+        "sustain": 0
+      }
+    },
+    "need-some-help-panda": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 60,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 1173,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 25
+      }
+    },
+    "cursed-energy-melody-yoshinobu-gakuganji": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 59,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 2015,
+        "maxBuff": 0,
+        "maxDebuff": 50,
+        "sustain": 0
+      }
+    },
+    "keep-hammering-at-them-nobara-kugisaki": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 59,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1318,
+        "maxBuff": 0,
+        "maxDebuff": 17,
+        "sustain": 0
+      }
+    },
+    "longsword-battle-maki-zenin": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 59,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 959,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 8
+      }
+    },
+    "meteor-of-fierceness-jogo": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 59,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1920,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 10
+      }
+    },
+    "with-that-will-in-mind-kaito-yuki": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 59,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1005,
+        "maxBuff": 80,
+        "maxDebuff": 27,
+        "sustain": 26
+      }
+    },
+    "night-lurking-sorcerer-toge-inumaki": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 57,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1300,
+        "maxBuff": 0,
+        "maxDebuff": 40,
+        "sustain": 5
+      }
+    },
+    "step-back-third-rate-uraume": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 57,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1020,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 10
+      }
+    },
+    "the-final-bullet-mai-zenin": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 57,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 80,
+        "sustain": 0
+      }
+    },
+    "melting-sweet-summer-treats-satoru-gojo": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 56,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 50,
+        "maxDebuff": 0,
+        "sustain": 3
+      }
+    },
+    "sword-option-ultimate-mechamaru": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 55,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1166,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "blood-borne-resolve-noritoshi-kamo": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 52,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1353,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 3
+      }
+    },
+    "ive-seen-it-all-kokichi-muta": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 52,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1201,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "maximum-cursed-energy-output-yuji-itadori": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 52,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1050,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 6
+      }
+    },
+    "this-is-justice-suguru-geto": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 51,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 912,
+        "maxBuff": 0,
+        "maxDebuff": 28,
+        "sustain": 0
+      }
+    },
+    "seance-toji-fushiguro": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 49,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1300,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 9
+      }
+    },
+    "infuse-your-cursed-energy-yuji-itadori": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 48,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 931,
+        "maxBuff": 10,
+        "maxDebuff": 23,
+        "sustain": 0
+      }
+    },
+    "maverick-outcast-maki-zenin": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 48,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1100,
+        "maxBuff": 0,
+        "maxDebuff": 45,
+        "sustain": 1
+      }
+    },
+    "the-strongest-satoru-gojo": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 48,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1259,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 47,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 999,
+        "maxBuff": 34,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "reverse-cursed-technique-shoko-ieiri": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 47,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 16,
+        "sustain": 382
+      }
+    },
+    "fulfilling-his-duty-as-the-older-brother-choso": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 46,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 900,
+        "maxBuff": 0,
+        "maxDebuff": 50,
+        "sustain": 60
+      }
+    },
+    "crushed-with-speed-naobito-zenin": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 45,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 100,
+        "maxBuff": 0,
+        "maxDebuff": 150,
+        "sustain": 20
+      }
+    },
+    "hearts-resolve-saki-rindo": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 45,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1109,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 30
+      }
+    },
+    "inspiration-from-death-mahito": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 45,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1331,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 40
+      }
+    },
+    "resolved-cursed-speech-toge-inumaki": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 45,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 1200,
+        "maxBuff": 0,
+        "maxDebuff": 23,
+        "sustain": 20
+      }
+    },
+    "take-the-shortest-way-panda": {
+      "rank": "A",
+      "draftRank": "A",
+      "score": 45,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1200,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "within-infinity-satoru-gojo": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 44,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 100,
+        "sustain": 0
+      }
+    },
+    "pride-of-a-cursed-spirit-jogo": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 43,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 912,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "silent-suppression-kento-nanami": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 43,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 720,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 20
+      }
+    },
+    "inherited-cursed-technique-megumi-fushiguro": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 41,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 2083,
+        "maxBuff": 0,
+        "maxDebuff": 15,
+        "sustain": 0
+      }
+    },
+    "striking-eternal-summer-nobara-kugisaki": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 39,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 480,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "ariadnes-thread-educator-masamichi-yaga": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 38,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 808,
+        "maxBuff": 46,
+        "maxDebuff": 50,
+        "sustain": 0
+      }
+    },
+    "cursed-energy-catastrophe-saki-rindo": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 37,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 394,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 36
+      }
+    },
+    "reckless-grade-1-aoi-todo": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 37,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 667,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "no-conceit-takuma-ino": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 36,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 900,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "unlimited-shikigami-dagon": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 36,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 960,
+        "maxBuff": 0,
+        "maxDebuff": 10,
+        "sustain": 27
+      }
+    },
+    "shatter-to-pieces-toge-inumaki": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 35,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 1800,
+        "maxBuff": 0,
+        "maxDebuff": 40,
+        "sustain": 18
+      }
+    },
+    "cursed-technique-boost-kaito-yuki": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 33,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 129,
+        "maxDebuff": 0,
+        "sustain": 24
+      }
+    },
+    "blast-from-the-past-aoi-todo": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 32,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1049,
+        "maxBuff": 24,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "sprinting-kasumi-miwa": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 32,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 900,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "chain-mark-full-throttle-eiji-urushi": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 31,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "girl-of-steel-nobara-kugisaki": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 31,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 600,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "dont-underestimate-a-puppet-panda": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 30,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 1000,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "panda-is-not-a-panda-panda": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 30,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 697,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 53
+      }
+    },
+    "sukunas-vessel-yuji-itadori": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 28,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 699,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 29
+      }
+    },
+    "night-of-dancing-crows-mei-mei": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 27,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 10,
+        "sustain": 0
+      }
+    },
+    "mode-albatross-ultimate-mechamaru": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 26,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1076,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "value-of-life-junpei-yoshino": {
+      "rank": "B",
+      "draftRank": "B",
+      "score": 26,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 600,
+        "maxBuff": 0,
+        "maxDebuff": 12,
+        "sustain": 0
+      }
+    },
+    "early-morning-departure-maki-zenin": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 25,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 150,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 10
+      }
+    },
+    "zanshin-kasumi-miwa": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 25,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 1187,
+        "maxBuff": 0,
+        "maxDebuff": 22,
+        "sustain": 0
+      }
+    },
+    "the-resolve-of-being-a-sorcerer-kaito-yuuki": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 22,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 579,
+        "maxBuff": 26,
+        "maxDebuff": 22,
+        "sustain": 21
+      }
+    },
+    "team-up-if-they-are-weak-maki-zenin": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 19,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 570,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "a-clever-bullet-mai-zenin": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 16,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 687,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "innate-talent-maki-zenin": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 16,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 699,
+        "maxBuff": 0,
+        "maxDebuff": 30,
+        "sustain": 0
+      }
+    },
+    "awakening-satoru-gojo": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 15,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "just-bring-it-saki-rindo": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 15,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 399,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "to-stay-true-to-myself-nobara-kugisaki": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 13,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 599,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "background-support-kiyotaka-ijichi": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 12,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 39,
+        "maxDebuff": 0,
+        "sustain": 16
+      }
+    },
+    "aerial-reconnaissance-momo-nishimiya": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 11,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 700,
+        "maxBuff": 69,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "pick-up-after-hard-work-kiyotaka-ijichi": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 8,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 8,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "the-baton-of-counterattack-toge-inumaki": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 8,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 900,
+        "maxBuff": 0,
+        "maxDebuff": 10,
+        "sustain": 0
+      }
+    },
+    "blood-of-the-big-three-families-noritoshi-kamo": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 6,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "determined-counter-kasumi-miwa": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 5,
+      "group": "sustain",
+      "metrics": {
+        "ultDmg": 0,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "unfair-salvation-megumi-fushiguro": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 5,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 619,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "cursed-power-of-words-toge-inumaki": {
+      "rank": "C",
+      "draftRank": "C",
+      "score": 4,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 959,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 26
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
-// Reglas del gacha y tier list para las recomendaciones.
+// Reglas del gacha y tier list PROPIA para las recomendaciones.
 // Datos del gacha: JJK Phantom Parade Wiki, "Beginner's Guide" (pendiente de confirmar en Global).
-import tiers from '../../data/normalized/tiers.json';
+import tierList from '../../data/manual/tier-list.json';
 
 export const GACHA = {
   cubesPerPull: 300,
@@ -13,20 +13,34 @@ export const GACHA = {
   source: { label: "JJK Phantom Parade Wiki · Beginner's Guide", url: "https://jjk-phantom-parade.fandom.com/wiki/Beginner%27s_Guide" },
 } as const;
 
-type TierFile = {
-  fetchedAt: string;
-  sources: { id: string; name: string; url: string; status: string; note?: string; updated?: string | null; count?: number }[];
-  ranks: Record<string, Record<string, string>>;
-  scores: Record<string, { score: number; sources: number }>;
+export type TierRank = 'SS' | 'S' | 'A' | 'B' | 'C';
+export interface TierEntry {
+  rank: TierRank;
+  draftRank: TierRank;
+  score: number;
+  group: 'attacker' | 'support' | 'debuffer' | 'sustain';
+  metrics: { ultDmg: number; maxBuff: number; maxDebuff: number; sustain: number };
+  manual?: boolean;
+  note?: string;
+}
+
+const TL = tierList as unknown as { updatedAt: string; criteria: Record<string, unknown>; entries: Record<string, TierEntry> };
+
+export const TIER_RANKS: TierRank[] = ['SS', 'S', 'A', 'B', 'C'];
+export const TIER_UPDATED = TL.updatedAt;
+export const TIER_CRITERIA = TL.criteria as {
+  roleWeights: Record<string, { dmg: number; buff: number; debuff: number; sustain: number }>;
+  thresholds: [TierRank, number][];
+  aoeFactor: number;
+  autoFactor: number;
+  selfBuffFactor: number;
+  rarityFactor: Record<string, number>;
 };
-const T = tiers as unknown as TierFile;
 
-export const TIER_SOURCES = T.sources;
-export const TIER_FETCHED = T.fetchedAt;
+export const tierEntry = (id: string): TierEntry | null => TL.entries[id] ?? null;
 
-/** Rango principal (de la primera fuente utilizable) y puntuación 0–100 de un personaje. */
+/** Rango y puntuación de un personaje en la tier list propia. */
 export function tierOf(id: string): { rank: string | null; score: number | null } {
-  const r = T.ranks[id];
-  const main = T.sources.find((s) => s.status === 'ok' && r?.[s.id]);
-  return { rank: main ? r[main.id] : null, score: T.scores[id]?.score ?? null };
+  const e = TL.entries[id];
+  return { rank: e?.rank ?? null, score: e?.score ?? null };
 }

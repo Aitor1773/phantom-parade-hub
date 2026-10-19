@@ -23,12 +23,14 @@ interface Props {
   labels: Record<string, string>;
 }
 
-const HIGH = new Set(['SSS', 'SS']);
+// Rangos de la tier list propia: SS y S cuentan como "alto"
+const HIGH = new Set(['SS', 'S']);
 const RANK_CLASS: Record<string, string> = {
-  SSS: 'border-flame/60 bg-flame/15 text-flame',
-  SS: 'border-ember/60 bg-ember/10 text-ember',
-  S: 'border-line-strong bg-cinder text-bone',
-  A: 'border-line bg-cinder text-dust',
+  SS: 'border-flame/60 bg-flame/15 text-flame',
+  S: 'border-ember/60 bg-ember/10 text-ember',
+  A: 'border-line-strong bg-cinder text-bone',
+  B: 'border-line bg-cinder text-dust',
+  C: 'border-line bg-cinder text-smoke',
 };
 const fill = (s: string, v: Record<string, string | number>) => Object.entries(v).reduce((t, [k, x]) => t.replace(`{${k}}`, String(x)), s);
 
@@ -119,7 +121,7 @@ export default function Advice({ inv, chars, banners, estimates, gacha, tierSour
     <div className="space-y-5">
       <p className="flex flex-wrap items-center gap-x-2 rounded-lg border border-line bg-coal/70 px-3 py-2 text-xs text-smoke">
         {fill(labels['adv.basis'], { src: tierSource.name })}
-        <a href={tierSource.url} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-dust">{tierSource.name}</a>
+        <a href={tierSource.url} className="underline underline-offset-2 hover:text-dust">{tierSource.name}</a>
         {tierSource.updated && <span>· {fmtDay(tierSource.updated)}</span>}
       </p>
 

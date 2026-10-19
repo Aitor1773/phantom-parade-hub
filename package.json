@@ -15,7 +15,7 @@
     "data:link": "node scripts/data/link-jjkppdb.mjs",
     "data:codes": "node scripts/data/fetch-codes.mjs",
     "data:banners": "node scripts/data/fetch-banners.mjs",
-    "data:tiers": "node scripts/data/fetch-tiers.mjs"
+    "data:tierdraft": "node scripts/data/build-tier-draft.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.0",

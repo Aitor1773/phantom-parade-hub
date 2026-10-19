@@ -1,6 +1,11 @@
 {
-  "_comment": "Nombre oficial japonés (「二つ名」名前) → id de la web. Lo usan las webs JP (Game8, AppMedia, GameWith, Kamigame). Emparejado a mano traduciendo el epíteto; si una web usa un nombre que no está aquí, npm run data:tiers lo avisa para añadirlo.",
-  "elements": { "幻": "red", "影": "blue", "夜": "green", "行": "yellow" },
+  "_comment": "Nombre oficial japonés (「二つ名」名前) → id de la web. Emparejado a mano traduciendo el epíteto. Sirve para cruzar datos con webs JP si alguna da permiso; no se usa ningún contenido suyo.",
+  "elements": {
+    "幻": "red",
+    "影": "blue",
+    "夜": "green",
+    "行": "yellow"
+  },
   "names": {
     "「最大呪力出力」虎杖悠仁": "maximum-cursed-energy-output-yuji-itadori",
     "「0.2秒の領域展開」五条悟": "02-second-domain-expansion-satoru-gojo",
