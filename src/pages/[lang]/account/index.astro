@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import AccountApp, { type AccChar, type AccMem } from '@/components/account/AccountApp';
+import { CHARACTERS, thumb } from '@/data/characters';
+import { MEMORIES } from '@/data/memories';
+import { gameDict, type GameKey } from '@/i18n/game';
+import { staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+
+const characters: AccChar[] = CHARACTERS.map((c) => ({
+  id: c.id,
+  name: c.name,
+  epithet: c.epithet,
+  rarity: c.rarity,
+  element: c.element,
+  img: thumb(c.art, 320),
+  hasSP: !!c.kits.sp,
+}));
+const memories: AccMem[] = MEMORIES.map((m) => ({ id: m.id, name: m.name, rarity: m.rarity, img: m.icon }));
+
+const KEYS = [
+  'acc.intro', 'acc.privacy', 'acc.tab.characters', 'acc.tab.memories', 'acc.tab.resources', 'acc.tab.data',
+  'acc.all', 'acc.owned', 'acc.missing', 'acc.quick', 'acc.edit', 'acc.level', 'acc.dupes', 'acc.skills', 'acc.sp', 'acc.note',
+  'acc.remove', 'acc.add', 'acc.copies', 'acc.markall', 'acc.unmarkall', 'acc.progress',
+  'acc.res.cubes', 'acc.res.tickets', 'acc.res.featured', 'acc.res.add', 'acc.res.name', 'acc.res.hint', 'acc.delete',
+  'acc.saved', 'acc.notsaved', 'acc.undo', 'acc.export', 'acc.import', 'acc.import.ok', 'acc.import.bad',
+  'acc.reset', 'acc.reset.confirm', 'acc.data.desc', 'acc.empty', 'acc.search',
+  'ch.normal', 'ch.s1', 'ch.s2', 'ch.ult', 'el.red', 'el.blue', 'el.green', 'el.yellow', 'el.purple',
+] as const satisfies readonly GameKey[];
+const labels = gameDict(lang, KEYS);
+---
+
+<BaseLayout lang={lang} title={t('nav.account')} description={t('nav.account.desc')}>
+  <meta name="robots" content="noindex" slot="head" />
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8">
+      <p class="eyebrow flex items-center gap-1.5"><Icon name="user" size={13} /> {t('nav.account')}</p>
+      <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.account')}</h1>
+      <p class="mt-3 max-w-2xl text-dust">{labels['acc.intro']}</p>
+    </header>
+    <AccountApp client:only="react" characters={characters} memories={memories} labels={labels} />
+  </div>
+</BaseLayout>
