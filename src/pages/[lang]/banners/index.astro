@@ -18,7 +18,7 @@ const NO_END_GRACE = 14 * 864e5; // entradas sin fecha de fin (p. ej. actualizac
 const split = (list: Banner[]) => {
   const now: Banner[] = [], upcoming: Banner[] = [], past: Banner[] = [];
   for (const b of list) {
-    const s = +new Date(b.start), e = b.end ? +new Date(b.end) : s + NO_END_GRACE;
+    const s = +new Date(b.start), e = b.permanent ? Infinity : b.end ? +new Date(b.end) : s + NO_END_GRACE;
     (s > NOW ? upcoming : e > NOW ? now : past).push(b);
   }
   upcoming.reverse(); // el más cercano primero
@@ -163,7 +163,9 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
       const start = +new Date(card.dataset.start!), end = card.dataset.end ? +new Date(card.dataset.end) : null;
       const cd = card.querySelector<HTMLElement>('.countdown')!;
       const badge = card.querySelector<HTMLElement>('.status-badge')!;
-      if (now < start) {
+      if (card.dataset.permanent) {
+        badge.textContent = '● ' + cd.dataset.lNow;
+      } else if (now < start && !card.dataset.startUnknown) {
         cd.textContent = `${cd.dataset.lStarts} ${span(start - now, cd.dataset.lDays!)}`;
         badge.textContent = cd.dataset.lStarts!;
       } else if (end && now < end) {

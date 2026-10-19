@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
+import Advice, { type AdvBanner, type AdvChar, type AdvEstimate } from './Advice';
 import {
   emptyInventory, exportInventory, loadInventory, sanitize, saveInventory,
   type Inventory, type OwnedCharacter, type SkillKey,
@@ -12,11 +13,19 @@ interface Props {
   characters: AccChar[];
   memories: AccMem[];
   labels: Record<string, string>;
+  advice: {
+    chars: AdvChar[];
+    banners: AdvBanner[];
+    estimates: AdvEstimate[];
+    gacha: { cubesPerPull: number; pity: number; sourceUrl: string };
+    tierSource: { name: string; url: string; updated: string | null };
+    basePath: string;
+  };
 }
 
-type Tab = 'characters' | 'memories' | 'resources' | 'data';
+type Tab = 'advice' | 'characters' | 'memories' | 'resources' | 'data';
 type OwnFilter = 'all' | 'owned' | 'missing';
-const TABS: Tab[] = ['characters', 'memories', 'resources', 'data'];
+const TABS: Tab[] = ['characters', 'memories', 'resources', 'advice', 'data'];
 const RARITIES = ['SSR', 'SR', 'R'];
 const RARITY_CLASS: Record<string, string> = { SSR: 'badge-ssr', SR: 'badge-sr', R: 'badge-r' };
 const SKILLS: SkillKey[] = ['normal', 's1', 's2', 'ult'];
@@ -127,7 +136,7 @@ function EditPanel({ char, owned, labels, onChange, onToggle, onClose }: {
               </div>
               <div>
                 <span className="mb-1.5 block text-xs font-semibold text-dust">{labels['acc.dupes']}</span>
-                <Stepper value={c.dupes ?? 0} max={99} onChange={(v) => set({ dupes: v })} label={labels['acc.dupes']} />
+                <Stepper value={c.dupes ?? 0} max={5} onChange={(v) => set({ dupes: v })} label={labels['acc.dupes']} />
               </div>
             </div>
 
@@ -173,7 +182,7 @@ function EditPanel({ char, owned, labels, onChange, onToggle, onClose }: {
 
 // ── Aplicación ──────────────────────────────────────────────────
 
-export default function AccountApp({ characters, memories, labels }: Props) {
+export default function AccountApp({ characters, memories, labels, advice }: Props) {
   const valid = useMemo(() => ({ characters: new Set(characters.map((c) => c.id)), memories: new Set(memories.map((m) => m.id)) }), [characters, memories]);
   const [inv, setInv] = useState<Inventory>(emptyInventory);
   const [ready, setReady] = useState(false);
@@ -341,7 +350,7 @@ export default function AccountApp({ characters, memories, labels }: Props) {
   const elements = [...new Set(characters.map((c) => c.element))];
 
   const tabLabel: Record<Tab, string> = {
-    characters: labels['acc.tab.characters'], memories: labels['acc.tab.memories'], resources: labels['acc.tab.resources'], data: labels['acc.tab.data'],
+    characters: labels['acc.tab.characters'], memories: labels['acc.tab.memories'], resources: labels['acc.tab.resources'], advice: labels['adv.tab'], data: labels['acc.tab.data'],
   };
 
   // Función (no componente) para no perder el foco del buscador al teclear
@@ -489,6 +498,8 @@ export default function AccountApp({ characters, memories, labels }: Props) {
           <p className="text-xs text-smoke">{labels['acc.res.hint']}</p>
         </section>
       )}
+
+      {tab === 'advice' && <Advice inv={inv} labels={labels} {...advice} />}
 
       {tab === 'data' && (
         <section className="card max-w-xl space-y-4 p-5">

@@ -17,8 +17,14 @@ export interface Banner {
   characters: string[];
   epithetsGlobal?: Record<string, string>;
   limited?: boolean;
+  /** Se conoce el fin pero no el inicio (p. ej. captura del juego con cuenta atrás) */
+  startUnknown?: boolean;
+  /** Banner sin fecha de fin (gacha estándar) */
+  permanent?: boolean;
+  /** Banner JP equivalente, cuando el nombre Global es otra traducción */
+  jpEquivalent?: { title: string; start: string };
   notes?: string;
-  source: { label: string; url: string; official: boolean };
+  source: { label: string; url: string | null; official: boolean };
 }
 
 const JST = '+09:00';
@@ -27,7 +33,8 @@ const dayStart = (d: string) => `${d}T15:00:00${JST}`;
 const dayEnd = (d: string) => `${d}T14:59:00${JST}`;
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-type ManualBanner = Omit<Banner, 'approx' | 'source'> & { startApprox?: boolean; source: { label: string; url: string } };
+// Fuente de una entrada manual: nota de prensa, aviso/captura del juego (ambas oficiales)
+type ManualBanner = Omit<Banner, 'approx' | 'source'> & { startApprox?: boolean; source: { label: string; url?: string | null; kind?: 'press' | 'ingame' } };
 type WikiBanner = { id: string; name: string; global: { start: string; end: string | null } | null; characters: string[]; _source: { url: string } };
 type WikiDay = { date: string; items: { title: string; kind: BannerKind; end: string | null; characters: string[] }[] };
 
@@ -38,8 +45,8 @@ const byStart = (a: Banner, b: Banner) => b.start.localeCompare(a.start);
 export const GLOBAL_BANNERS: Banner[] = [
   ...(manual.banners as unknown as ManualBanner[]).map((b) => ({
     ...b,
-    approx: !!b.startApprox,
-    source: { ...b.source, official: true },
+    approx: !!b.startApprox || !!b.startUnknown,
+    source: { label: b.source.label, url: b.source.url ?? null, official: true },
   })),
   // Fechas Global que recoge la wiki (solo día: hora aproximada)
   ...W.banners
@@ -90,6 +97,8 @@ export const GLOBAL_LAG = (() => {
 
 /** Banner Global verificado que ya incluye a algún personaje de este banner JP. */
 export function globalConfirmed(b: Banner): Banner | null {
+  const byJP = GLOBAL_BANNERS.find((gb) => gb.jpEquivalent && gb.jpEquivalent.title === b.name && b.start.startsWith(gb.jpEquivalent.start));
+  if (byJP) return byJP;
   if (!b.characters.length) return null;
   return GLOBAL_BANNERS.find((gb) => gb.characters.some((id) => b.characters.includes(id))) ?? null;
 }
@@ -101,8 +110,22 @@ export function globalConfirmed(b: Banner): Banner | null {
  */
 export function globalEstimate(b: Banner, now = Date.now()) {
   if (!GLOBAL_LAG || b.kind !== 'gacha' || globalConfirmed(b)) return null;
-  const start = +new Date(b.start);
-  const from = start + GLOBAL_LAG.min * 864e5, to = start + GLOBAL_LAG.max * 864e5;
-  if (to < now - 30 * 864e5) return null;
+  // Las reediciones de personajes antiguos no se estiman: lo que llega a Global es el
+  // personaje, así que la referencia es su salida en JP, no la del banner
+  const releases = b.characters.map((id) => getCharacter(id)?.releaseDateJP).filter((d): d is string => !!d);
+  const base = releases.length ? Math.max(...releases.map((d) => +new Date(`${d}T15:00:00+09:00`))) : +new Date(b.start);
+  return windowFrom(base, now);
+}
+
+/** Ventana estimada de llegada a Global de un personaje (desde su salida en JP). */
+export function characterGlobalEstimate(id: string, now = Date.now()) {
+  const d = getCharacter(id)?.releaseDateJP;
+  if (!GLOBAL_LAG || !d || GLOBAL_BANNERS.some((gb) => gb.characters.includes(id))) return null;
+  return windowFrom(+new Date(`${d}T15:00:00+09:00`), now);
+}
+
+function windowFrom(base: number, now: number) {
+  const from = base + GLOBAL_LAG!.min * 864e5, to = base + GLOBAL_LAG!.max * 864e5;
+  if (to < now - 30 * 864e5) return null; // ya debería estar en Global: no se estima
   return { from: new Date(from).toISOString(), to: new Date(to).toISOString() };
 }

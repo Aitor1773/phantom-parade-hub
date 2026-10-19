@@ -1,6 +1,53 @@
 {
-  "_comment": "Banners del servidor Global curados a mano. Cada entrada DEBE llevar 'source' (URL oficial: nota de prensa, X @JJKPP_GL, aviso del juego). Fechas en ISO con zona horaria (el juego usa UTC+9). 'characters' usa los id de la web (ver docs/IMAGENES.md); 'epithetsGlobal' guarda el nombre oficial en Global cuando difiere del de la wiki.",
+  "_comment": "Banners del servidor Global curados a mano. Cada entrada DEBE llevar 'source' (nota de prensa con URL, o captura/aviso del juego con kind 'ingame'). Fechas en ISO con zona horaria (el juego usa UTC+9; los banners cierran a las 14:59). 'characters' usa los id de la web (ver docs/IMAGENES.md); 'epithetsGlobal' guarda el nombre oficial en Global. Opcionales: 'startUnknown' (solo se conoce el fin), 'permanent' (sin fin), 'jpEquivalent' {title, start} para enlazarlo con su banner JP.",
   "banners": [
+    {
+      "id": "gl-2026-10-illusory-tower-anomalous",
+      "name": "Featured Gacha: Illusory Tower \"Anomalous Form\"",
+      "kind": "gacha",
+      "start": "2026-10-20T03:20:00+09:00",
+      "startUnknown": true,
+      "end": "2026-10-22T14:59:00+09:00",
+      "characters": [],
+      "jpEquivalent": { "title": "Featured Gacha: Illusory Tower: Diverse", "start": "2026-07-27" },
+      "notes": "Personajes destacados por confirmar (en la imagen: Megumi Fushiguro y Yoshinobu Gakuganji). Equivalente JP probable.",
+      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+    },
+    {
+      "id": "gl-2026-10-step-up",
+      "name": "STEP UP Gacha",
+      "kind": "gacha",
+      "start": "2026-10-20T03:20:00+09:00",
+      "startUnknown": true,
+      "end": "2026-10-26T14:59:00+09:00",
+      "characters": [],
+      "notes": "Personajes destacados por confirmar (en la imagen: Satoru Gojo y Yuji Itadori).",
+      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+    },
+    {
+      "id": "gl-2026-10-summer-daily-free",
+      "name": "Summer Vacation: Once Daily Free Gacha (up to 31)",
+      "kind": "gacha",
+      "start": "2026-10-20T03:20:00+09:00",
+      "startUnknown": true,
+      "end": "2026-11-16T14:59:00+09:00",
+      "characters": [],
+      "jpEquivalent": { "title": "Summer Vacation Gacha: Daily Free Pull (31 Total)", "start": "2026-08-01" },
+      "notes": "Una tirada gratis al día, hasta 31.",
+      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+    },
+    {
+      "id": "gl-standard-phantom-parade",
+      "name": "Phantom Parade Gacha",
+      "kind": "gacha",
+      "start": "2024-11-07T15:00:00+09:00",
+      "startUnknown": true,
+      "permanent": true,
+      "end": null,
+      "characters": [],
+      "notes": "Gacha estándar (permanente).",
+      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+    },
     {
       "id": "gl-2025-12-anni-sukuna",
       "name": "Anniversary Featured Gacha: Ryomen Sukuna",

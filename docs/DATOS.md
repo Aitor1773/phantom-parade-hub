@@ -8,6 +8,7 @@ Todo se genera con scripts. Los resultados van a `data/` y la web los lee al com
 npm run data:fetch      # Wiki: personajes y memorias        → data/normalized/wiki/
 npm run data:banners    # Wiki: banners y cronología JP       → data/normalized/wiki/banners.json
 npm run data:codes      # Códigos Global de 7 webs, cruzados  → data/normalized/codes.json
+npm run data:tiers      # Rangos de la tier list de Game8 (JP) → data/normalized/tiers.json
 npm run images:fetch    # Imágenes de jjkppdb (solo si hay nuevas; salta lo ya descargado)
 npm run data:link       # Empareja memorias wiki ↔ jjkppdb    → data/links/
 npm run images          # Convierte imágenes a WebP           → public/img/
@@ -20,6 +21,7 @@ npm run build
 | Archivo | Para qué |
 |---|---|
 | `data/manual/global-banners.json` | Banners del servidor **Global**. La wiki no tiene una cronología Global al día. Cada entrada lleva su fuente oficial (nota de prensa, @JJKPP_GL, aviso del juego). |
+| `data/manual/jp-names.json` | Nombre japonés oficial (「epíteto」nombre) → id de la web. Si `data:tiers` avisa de un nombre nuevo, se añade aquí. |
 | `data/manual/codes.json` | Códigos **probados en el juego**. Tienen prioridad sobre lo que digan las webs. |
 | `scripts/data/link-jjkppdb.mjs` → `MANUAL` | Parejas de memorias wiki ↔ jjkppdb revisadas por significado. |
 | `scripts/images/import.mjs` → `artToId` | Arte de jjkppdb que no se asocia solo. |
@@ -38,3 +40,10 @@ npm run build
 - Datos de la JJK Phantom Parade Wiki: CC BY-SA 3.0, con atribución en cada ficha.
 - De jjkppdb solo se usan imágenes del juego, y nombres, rareza y stats para emparejar. Nunca se usa su contenido propio.
 - De las webs de códigos solo se extraen hechos: el código, la recompensa y si está activo. Siempre respetando su robots.txt.
+
+## Tier lists JP (para las recomendaciones)
+
+- **Game8**: es la única fuente utilizable. Se toma solo el rango de cada personaje (SSS, SS, S o A), nunca sus textos.
+- **AppMedia**: excluida, porque su wiki indica que ha dejado de actualizarse.
+- **GameWith y Kamigame**: excluidas por ahora, porque solo nombran al personaje base y no la versión.
+- Los rangos son del servidor **JP**; la web avisa de que en Global pueden variar.

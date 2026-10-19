@@ -9,7 +9,7 @@ export type SkillKey = 'normal' | 's1' | 's2' | 'ult';
 
 export interface OwnedCharacter {
   level?: number;
-  /** Copias extra (dupes) usadas para subir el límite */
+  /** Límite de rotura por copias extra (dupes): 0–5 según la wiki */
   dupes?: number;
   skills?: Partial<Record<SkillKey, number>>; // 1–10
   sp?: boolean; // despertar SP (solo personajes que lo tienen)
@@ -62,7 +62,7 @@ export function sanitize(raw: unknown, valid: { characters: Set<string>; memorie
     for (const [id, c] of Object.entries(raw.characters)) {
       if (!valid.characters.has(id) || !isObj(c)) continue;
       const out: OwnedCharacter = {};
-      const level = num(c.level, 1, 999), dupes = num(c.dupes, 0, 99);
+      const level = num(c.level, 1, 999), dupes = num(c.dupes, 0, 5);
       if (level) out.level = level;
       if (dupes != null) out.dupes = dupes;
       if (isObj(c.skills)) {

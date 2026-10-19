@@ -34,7 +34,7 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
     <span class="min-w-0 flex-1">
       <span class="block truncate text-sm text-bone">{b.name}</span>
       {confirmed && (
-        <span class="mt-0.5 block text-[11px] text-[#5fd39b]">✓ {g('bn.inglobal')} · <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time></span>
+        <span class="mt-0.5 block text-[11px] text-[#5fd39b]">✓ {g('bn.inglobal')} · {confirmed.startUnknown && confirmed.end ? <>{g('bn.until')} <time class="local-date" datetime={confirmed.end} data-approx="1">{dayFmt(confirmed.end)}</time></> : <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time>}</span>
       )}
       {estimate && (
         <span class="mt-0.5 block text-[11px] text-flame" title={estHelp}>
@@ -55,7 +55,7 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
     <time class="local-date shrink-0 text-xs text-smoke tabular-nums" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>
   </li>
 ) : (
-  <article class="banner group card overflow-hidden" data-banner data-kind={b.kind} data-start={b.start} data-end={b.end ?? ''}>
+  <article class="banner group card overflow-hidden" data-banner data-kind={b.kind} data-start={b.start} data-end={b.end ?? ''} data-permanent={b.permanent ? '1' : undefined} data-start-unknown={b.startUnknown ? '1' : undefined}>
     <div class="relative flex h-40 overflow-hidden bg-gradient-to-br from-blood/40 via-coal to-coal">
       {chars.length > 0 ? (
         chars.slice(0, 3).map((c) => (
@@ -81,15 +81,16 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
         </p>
       )}
       <p class="mt-3 flex flex-wrap items-center gap-x-2 text-xs text-dust">
-        <time class="local-date" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>
+        {b.startUnknown ? <span class="text-smoke">{g('bn.startunknown')}</span> : <time class="local-date" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>}
+        {b.permanent && <span class="text-smoke">· {g('bn.permanent')}</span>}
         {b.end && <span class="text-smoke">→</span>}
-        {b.end && <time class="local-date" datetime={b.end} data-approx={b.approx ? '1' : ''}>{fmt(b.end)}</time>}
+        {b.end && <time class="local-date" datetime={b.end} data-approx={b.approx && !b.startUnknown ? '1' : ''}>{fmt(b.end)}</time>}
       </p>
       <p class="countdown mt-2 text-sm font-semibold text-bone tabular-nums empty:hidden" data-l-now={g('bn.now')} data-l-ends={g('bn.ends')} data-l-starts={g('bn.starts')} data-l-ended={g('bn.ended')} data-l-days={g('bn.days')}></p>
-      {b.approx && <p class="mt-1 text-[11px] text-smoke">{g('bn.approx')}</p>}
+      {b.approx && !b.startUnknown && <p class="mt-1 text-[11px] text-smoke">{g('bn.approx')}</p>}
       {confirmed && (
         <p class="mt-3 rounded-lg border border-[#3fb27f]/40 bg-[#3fb27f]/10 px-3 py-2 text-xs text-[#5fd39b]">
-          ✓ {g('bn.inglobal')} · <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time>
+          ✓ {g('bn.inglobal')} · {confirmed.startUnknown && confirmed.end ? <>{g('bn.until')} <time class="local-date" datetime={confirmed.end} data-approx="1">{dayFmt(confirmed.end)}</time></> : <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time>}
         </p>
       )}
       {estimate && (
@@ -105,10 +106,14 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
         </div>
       )}
       {b.notes && <p class="mt-2 text-xs text-smoke">{b.notes}</p>}
-      <a href={b.source.url} target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-[11px] text-smoke underline decoration-line-strong underline-offset-2 hover:text-dust">
-        {b.source.official ? g('bn.official') : b.source.label}
-        <Icon name="arrowRight" size={11} class="-rotate-45" />
-      </a>
+      {b.source.url ? (
+        <a href={b.source.url} target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-[11px] text-smoke underline decoration-line-strong underline-offset-2 hover:text-dust">
+          {b.source.official ? g('bn.official') : b.source.label}
+          <Icon name="arrowRight" size={11} class="-rotate-45" />
+        </a>
+      ) : (
+        <p class="mt-3 text-[11px] text-smoke">{g('bn.official')} · {b.source.label}</p>
+      )}
     </div>
   </article>
 )}

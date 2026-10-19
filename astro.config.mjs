@@ -16,5 +16,10 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    // Precompila siempre el runtime de React: evita el error "_jsxDEV is not a function"
+    // en desarrollo cuando se añade un componente nuevo con el servidor arrancado
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime'],
+    },
   },
 });
