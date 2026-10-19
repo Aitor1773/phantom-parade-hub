@@ -1,0 +1,30 @@
+// Iconos de trazo (24×24, stroke = currentColor). Se pintan con <Icon name="…" />.
+export const ICONS = {
+  search: '<circle cx="11" cy="11" r="7.5"/><path d="m20.5 20.5-4.2-4.2"/>',
+  chevronDown: '<path d="m6 9 6 6 6-6"/>',
+  arrowRight: '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>',
+  x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  menu: '<path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/>',
+  home: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h5v-6h4v6h5V9.5"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  users: '<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4.1a4 4 0 0 1 0 7.8"/><path d="M22 21a7 7 0 0 0-4.5-6.5"/>',
+  globe: '<circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19"/><path d="M12 2.5a14.5 14.5 0 0 1 0 19 14.5 14.5 0 0 1 0-19"/>',
+  database: '<ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+  layers: '<path d="m12 2.5 9.5 5L12 12.5 2.5 7.5z"/><path d="m2.5 12 9.5 5 9.5-5"/><path d="m2.5 16.5 9.5 5 9.5-5"/>',
+  chart: '<path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/>',
+  book: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/>',
+  trophy: '<path d="M8 21h8"/><path d="M12 16.5V21"/><path d="M7 3.5h10V9a5 5 0 0 1-10 0z"/><path d="M17 5h3v1.5A3.5 3.5 0 0 1 16.6 10"/><path d="M7 5H4v1.5A3.5 3.5 0 0 0 7.4 10"/>',
+  swords: '<path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 4.5 4.5"/><path d="M9.5 6.5 13 3h3v3l-3.5 3.5"/><path d="m5 14 4 4"/><path d="m7 17-3 3"/>',
+  grid: '<rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><path d="M17.25 14v6.5"/><path d="M14 17.25h6.5"/>',
+  calendar: '<rect x="3" y="4.5" width="18" height="17" rx="2.5"/><path d="M16 2.5v4"/><path d="M8 2.5v4"/><path d="M3 10h18"/>',
+  cube: '<path d="M21 7.5 12 2.5 3 7.5v9l9 5 9-5z"/><path d="m3 7.5 9 5 9-5"/><path d="M12 12.5v9"/>',
+  target: '<circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.5"/>',
+  sparkles: '<path d="m11 3 1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="m19 14 .8 2.2 2.2.8-2.2.8L19 20l-.8-2.2L16 17l2.2-.8z"/>',
+  gift: '<rect x="3" y="8" width="18" height="4.5" rx="1"/><path d="M12 8v13"/><path d="M5 12.5V21h14v-8.5"/><path d="M12 8S10.5 3 7.8 4.2C6 5 7 8 12 8"/><path d="M12 8s1.5-5 4.2-3.8C18 5 17 8 12 8"/>',
+  flame: '<path d="M12 2.5c.8 3.6 5.5 5.6 5.5 11a5.5 5.5 0 0 1-11 0c0-2.3 1-3.9 2.2-5 0 2 .9 3.2 2.1 3.2 0-3.2-1-6 1.2-9.2"/>',
+  command: '<path d="M9 6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3z"/>',
+  check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
+  copy: '<rect x="8" y="8" width="13" height="13" rx="2.5"/><path d="M16 8V5.5A2.5 2.5 0 0 0 13.5 3h-8A2.5 2.5 0 0 0 3 5.5v8A2.5 2.5 0 0 0 5.5 16H8"/>',
+} as const;
+
+export type IconName = keyof typeof ICONS;

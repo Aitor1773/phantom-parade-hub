@@ -1,0 +1,62 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import CharacterBrowser, { type BrowserItem } from '@/components/characters/CharacterBrowser';
+import { CHARACTERS, thumb } from '@/data/characters';
+import { gameDict, useG, type GameKey } from '@/i18n/game';
+import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const g = useG(lang);
+
+const items: BrowserItem[] = CHARACTERS.map((c) => ({
+  id: c.id,
+  name: c.name,
+  epithet: c.epithet,
+  rarity: c.rarity,
+  element: c.element,
+  role: c.role,
+  focus: c.focus,
+  availability: c.availability,
+  date: c.releaseDateJP,
+  img: thumb(c.art, 320),
+}));
+
+// Opciones de filtro: solo los valores que existen en los datos, en un orden fijo
+const present = (key: keyof BrowserItem, order: string[]) => order.filter((v) => items.some((i) => i[key] === v));
+const opt = (prefix: string, values: string[]) => values.map((v) => ({ value: v, label: prefix ? g(`${prefix}.${v}` as GameKey) : v }));
+
+const options = {
+  rarity: opt('', present('rarity', ['SSR', 'SR', 'R'])),
+  element: opt('el', present('element', ['red', 'blue', 'green', 'yellow', 'purple'])),
+  role: opt('role', present('role', ['Attacker', 'Support', 'Enhancer', 'Debuffer', 'Obstructor', 'Defender', 'Healer', 'Agitator'])),
+  focus: opt('focus', present('focus', ['Taijutsu', 'Jujutsu', 'Mixed', 'Balanced', 'HP'])),
+  availability: opt('av', present('availability', ['standard', 'limited', 'event', 'collab', 'f2p'])),
+};
+
+const labels = gameDict(lang, [
+  'db.count', 'db.search', 'db.rarity', 'db.element', 'db.role', 'db.focus', 'db.availability',
+  'db.sort', 'db.sort.newest', 'db.sort.oldest', 'db.sort.name', 'db.sort.rarity', 'db.clear', 'db.empty', 'db.filters',
+] as const);
+---
+
+<BaseLayout lang={lang} title={g('db.title')} description={t('nav.characters.desc')}>
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="eyebrow">{t('nav.database')}</p>
+        <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{g('db.title')}</h1>
+        <p class="mt-3 max-w-xl text-dust">{t('nav.characters.desc')}</p>
+      </div>
+      <p class="flex max-w-sm items-start gap-2 rounded-lg border border-line bg-coal/70 px-3 py-2 text-xs text-smoke">
+        <Icon name="globe" size={14} class="mt-0.5 shrink-0 text-flame" />
+        {g('db.jpnote')}
+      </p>
+    </header>
+
+    <CharacterBrowser client:load items={items} basePath={localePath(lang, '/characters')} labels={labels} options={options} />
+  </div>
+</BaseLayout>

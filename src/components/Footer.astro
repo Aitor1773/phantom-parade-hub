@@ -1,0 +1,47 @@
+---
+import Icon from '@/components/Icon.astro';
+import { NAV, type NavLink } from '@/config/nav';
+import { SITE } from '@/config/site';
+import { localePath, useT, type Locale } from '@/i18n/utils';
+
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<footer class="relative mt-24 border-t border-line bg-coal/40 pb-24 lg:pb-0">
+  <div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-ember/60 to-transparent" aria-hidden="true"></div>
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 lg:grid-cols-[1.4fr_repeat(4,1fr)] lg:px-6">
+    <div>
+      <a href={localePath(lang)} class="flex items-center gap-2.5 font-display font-bold tracking-wider">
+        <Icon name="flame" size={20} class="text-ember" strokeWidth={2} />
+        {SITE.name}
+      </a>
+      <p class="mt-4 max-w-sm text-xs leading-relaxed text-smoke">{t('footer.disclaimer')}</p>
+      <p class="mt-3 max-w-sm text-xs leading-relaxed text-smoke">
+        <a href={SITE.wikiUrl} class="underline decoration-line-strong underline-offset-2 hover:text-dust" rel="noopener" target="_blank">{t('footer.license')}</a>
+      </p>
+      <p class="mt-2 max-w-sm text-xs leading-relaxed text-smoke">
+        <a href="https://www.jjkppdb.com/" class="underline decoration-line-strong underline-offset-2 hover:text-dust" rel="noopener" target="_blank">{t('footer.images')}</a>
+      </p>
+    </div>
+    {NAV.map((entry) => (
+      <div>
+        <p class="eyebrow mb-3">{t(entry.label)}</p>
+        <ul class="space-y-2 text-sm">
+          {(entry.items ?? [entry as NavLink]).map((item) => (
+            <li><a href={localePath(lang, item.path)} class="text-dust transition-colors hover:text-bone">{t(item.label)}</a></li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+  <div class="border-t border-line">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 text-xs text-smoke lg:px-6">
+      <span>© {new Date().getFullYear()} {SITE.name}</span>
+      <a href={localePath(lang, '/design-system')} class="hover:text-dust">{t('footer.designsystem')}</a>
+    </div>
+  </div>
+</footer>

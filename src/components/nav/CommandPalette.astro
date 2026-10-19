@@ -1,0 +1,137 @@
+---
+import Icon from '@/components/Icon.astro';
+import { NAV, ACCOUNT_LINK, type NavLink } from '@/config/nav';
+import { localePath, useT, type Locale } from '@/i18n/utils';
+import type { UIKey } from '@/i18n/ui';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+
+// Cada página con el grupo al que pertenece (para mostrarlo como contexto)
+const entries: { link: NavLink; group?: UIKey }[] = [
+  ...NAV.flatMap((e) =>
+    e.items ? e.items.map((link) => ({ link, group: e.label })) : [{ link: e as NavLink }],
+  ),
+  { link: ACCOUNT_LINK },
+];
+const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+---
+
+<dialog
+  id="cmdk"
+  class="m-0 h-full max-h-none w-full max-w-none bg-transparent p-0 backdrop:bg-ash/70 backdrop:backdrop-blur-sm"
+  aria-label={t('nav.search')}
+>
+  <div class="flex min-h-full items-start justify-center px-4 pt-[12vh]" data-cmdk-backdrop>
+    <div class="cmdk-box w-full max-w-xl overflow-hidden rounded-2xl border border-line-strong bg-coal shadow-2xl shadow-black/70">
+      <label class="flex items-center gap-3 border-b border-line px-4">
+        <Icon name="search" size={18} class="text-ember" />
+        <input
+          id="cmdk-input"
+          type="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder={t('nav.search.placeholder')}
+          class="h-14 w-full bg-transparent text-[15px] text-bone placeholder:text-smoke focus:outline-none"
+          role="combobox"
+          aria-expanded="true"
+          aria-controls="cmdk-list"
+        />
+        <kbd class="rounded border border-line bg-cinder px-1.5 py-0.5 text-[10px] font-semibold text-dust">Esc</kbd>
+      </label>
+      <ul id="cmdk-list" role="listbox" class="max-h-[50vh] overflow-y-auto p-2">
+        {entries.map(({ link, group }) => (
+          <li role="option" aria-selected="false" data-search={normalize(`${t(link.label)} ${t(link.desc)} ${group ? t(group) : ''} ${link.id}`)}>
+            <a href={localePath(lang, link.path)} class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dust" tabindex="-1">
+              <span class="grid size-8 shrink-0 place-items-center rounded-md border border-line bg-cinder text-ember">
+                <Icon name={link.icon} size={16} />
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block truncate text-sm font-medium text-bone">{t(link.label)}</span>
+                <span class="block truncate text-xs text-smoke">{t(link.desc)}</span>
+              </span>
+              {group && <span class="text-[11px] text-smoke">{t(group)}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p id="cmdk-empty" class="hidden px-4 py-8 text-center text-sm text-smoke">{t('nav.search.empty')}</p>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  #cmdk[open] .cmdk-box {
+    animation: cmdk-in 0.25s var(--ease-out-expo);
+  }
+  @keyframes cmdk-in {
+    from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  }
+  #cmdk li[aria-selected='true'] a {
+    background: var(--color-cinder);
+    box-shadow: inset 2px 0 0 var(--color-ember);
+  }
+</style>
+
+<script>
+  const dialog = document.getElementById('cmdk') as HTMLDialogElement;
+  const input = document.getElementById('cmdk-input') as HTMLInputElement;
+  const items = [...dialog.querySelectorAll<HTMLLIElement>('#cmdk-list li')];
+  const empty = document.getElementById('cmdk-empty')!;
+  let active = 0;
+
+  const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const visible = () => items.filter((li) => !li.hidden);
+
+  const select = (i: number) => {
+    const v = visible();
+    if (!v.length) return;
+    active = (i + v.length) % v.length;
+    items.forEach((li) => li.setAttribute('aria-selected', 'false'));
+    v[active].setAttribute('aria-selected', 'true');
+    v[active].scrollIntoView({ block: 'nearest' });
+  };
+
+  const filter = () => {
+    const terms = normalize(input.value.trim()).split(/\s+/).filter(Boolean);
+    items.forEach((li) => (li.hidden = !terms.every((term) => li.dataset.search!.includes(term))));
+    empty.classList.toggle('hidden', visible().length > 0);
+    select(0);
+  };
+
+  const open = () => {
+    if (dialog.open) return;
+    input.value = '';
+    filter();
+    dialog.showModal();
+    input.focus();
+  };
+
+  document.querySelectorAll('[data-open-search]').forEach((b) => b.addEventListener('click', open));
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      dialog.open ? dialog.close() : open();
+    }
+  });
+
+  input.addEventListener('input', filter);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') { e.preventDefault(); select(active + 1); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); select(active - 1); }
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      visible()[active]?.querySelector('a')?.click();
+    }
+  });
+  items.forEach((li) =>
+    li.addEventListener('pointermove', () => select(visible().indexOf(li))),
+  );
+  dialog.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).hasAttribute('data-cmdk-backdrop')) dialog.close();
+  });
+</script>

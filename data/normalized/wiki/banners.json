@@ -1,0 +1,5770 @@
+{
+  "source": "wiki",
+  "license": "CC BY-SA 3.0",
+  "attribution": "JJK Phantom Parade Wiki (Fandom)",
+  "fetchedAt": "2026-10-19T18:10:13.480Z",
+  "timelineJP": {
+    "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
+    "updated": "2026-10-19T11:17:01Z",
+    "days": [
+      {
+        "date": "2023-11-21",
+        "items": [
+          {
+            "title": "1.5 Million Pre-Registrations Rewards",
+            "kind": "campaign",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: A Homesick Horizon",
+            "kind": "gacha",
+            "end": "2023-12-05",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2023-11-24",
+        "items": [
+          {
+            "title": "Story Event: A Homesick Horizon",
+            "kind": "event",
+            "end": "2023-12-05",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Though the Future May Differ"
+        ]
+      },
+      {
+        "date": "2023-11-27",
+        "items": [
+          {
+            "title": "2 Million Players Achieved: SSR Guaranteed Paid Summon",
+            "kind": "gacha",
+            "end": "2023-12-05",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2023-11-29",
+        "items": [
+          {
+            "title": "1 Million Players Achieved: SSR Guaranteed Ticket",
+            "kind": "event",
+            "end": "2023-12-05",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2023-11-30",
+        "items": [
+          {
+            "title": "Pickup Gacha: Small Fry and Reverse Retribution",
+            "kind": "gacha",
+            "end": "2023-12-09",
+            "characters": [
+              "young-fish-and-reverse-punishment-junpei-yoshino"
+            ],
+            "link": null
+          },
+          {
+            "title": "Grand Exorcism Battle -Spiritual Mountain Range Arc-",
+            "kind": "event",
+            "end": "2023-12-09",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "young-fish-and-reverse-punishment-junpei-yoshino"
+        ],
+        "newMemories": [
+          "Imaginary Youth",
+          "Satoru Gojo's Solo Camping"
+        ]
+      },
+      {
+        "date": "2023-12-06",
+        "items": [
+          {
+            "title": "Login Event: Jujutsu Kaisen 0 - Part 1",
+            "kind": "campaign",
+            "end": "2023-12-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Jujutsu Kaisen 0 - Part 1",
+            "kind": "event",
+            "end": "2023-12-27",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0 - Part 1",
+            "kind": "gacha",
+            "end": "2023-12-27",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "take-the-shortest-way-panda",
+          "the-baton-of-counterattack-toge-inumaki",
+          "team-up-if-they-are-weak-maki-zenin"
+        ],
+        "newMemories": [
+          "Curse Each Other And Put Everything On The Line",
+          "Childhood Promise"
+        ]
+      },
+      {
+        "date": "2023-12-15",
+        "items": [
+          {
+            "title": "Login Event: 10 Tickets for Pickup Gacha: Jujutsu Kaisen 0 - Part 2",
+            "kind": "gacha",
+            "end": "2023-12-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Map Event: Jujutsu Kaisen 0 - Part 2",
+            "kind": "event",
+            "end": "2023-12-27",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0 - Part 2",
+            "kind": "gacha",
+            "end": "2024-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "lend-me-your-power-yuta-okkotsu"
+        ],
+        "newMemories": [
+          "Winter, A New Beginning",
+          "Take Care"
+        ]
+      },
+      {
+        "date": "2023-12-18",
+        "items": [
+          {
+            "title": "3 Million Players Achieved: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2024-01-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Login Event: 10 Tickets for Pickup Gacha: Jujutsu Kaisen 0 - Part 3",
+            "kind": "gacha",
+            "end": "2024-01-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0 - Part 3",
+            "kind": "gacha",
+            "end": "2024-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "this-is-justice-suguru-geto"
+        ],
+        "newMemories": [
+          "The Two Strongest",
+          "\"You Are Late\""
+        ]
+      },
+      {
+        "date": "2023-12-24",
+        "items": [
+          {
+            "title": "Night Parade of 100 Demons Gift: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2024-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2023-12-28",
+        "items": [
+          {
+            "title": "Story Event: The Land Where Shadows Fall",
+            "kind": "event",
+            "end": "2024-01-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: The Land Where Shadows Fall",
+            "kind": "gacha",
+            "end": "2024-01-10",
+            "characters": [
+              "incomplete-domain-megumi-fushiguro"
+            ],
+            "link": null
+          },
+          {
+            "title": "New Year Paid Gacha: SSR Character Guaranteed (1 Time Only)",
+            "kind": "gacha",
+            "end": "2024-01-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Year Paid Gacha: SSR Memory Guaranteed (1 Time Only)",
+            "kind": "gacha",
+            "end": "2024-01-10",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "incomplete-domain-megumi-fushiguro"
+        ],
+        "newMemories": [
+          "Rest For The Adults",
+          "Offering To The Serpent"
+        ]
+      },
+      {
+        "date": "2024-01-11",
+        "items": [
+          {
+            "title": "Character Grade Update: Grade 9 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Update: Chapter 10 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Strengthening Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2024-01-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Nimble Body",
+            "kind": "gacha",
+            "end": "2024-01-28",
+            "characters": [
+              "nimble-body-yuji-itadori"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "nimble-body-yuji-itadori"
+        ],
+        "newMemories": []
+      },
+      {
+        "date": "2024-01-19",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Sacred Mountain Edition - 2",
+            "kind": "event",
+            "end": "2024-01-28",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: I Will Follow You, Nanami-san",
+            "kind": "gacha",
+            "end": "2024-01-28",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "No Mountain Disaster!",
+          "I Will Follow You, Mr. Nanami"
+        ]
+      },
+      {
+        "date": "2024-01-29",
+        "items": [
+          {
+            "title": "Story Event: Gojo Satoru's Memorable Holiday?",
+            "kind": "event",
+            "end": "2024-02-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Gojo Satoru's Memorable Holiday?",
+            "kind": "gacha",
+            "end": "2024-02-19",
+            "characters": [
+              "hollow-purple-satoru-gojo"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "hollow-purple-satoru-gojo"
+        ],
+        "newMemories": [
+          "Shopping & Eating Tour",
+          "The Lively Stamp Rally"
+        ]
+      },
+      {
+        "date": "2024-02-06",
+        "items": [
+          {
+            "title": "4 Million Players Achieved: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2024-02-28",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-02-13",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Eso & Kechizu",
+            "kind": "event",
+            "end": "2024-02-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Fraternal Bond",
+            "kind": "gacha",
+            "end": "2024-02-19",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-02-20",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Sacred Mountain Edition - 3",
+            "kind": "event",
+            "end": "2024-02-28",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Determination Of The Bloodline",
+            "kind": "gacha",
+            "end": "2024-03-04",
+            "characters": [
+              "blood-borne-resolve-noritoshi-kamo",
+              "dont-look-down-on-me-momo-nishimiya"
+            ],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Don't Underestimate Me",
+            "kind": "gacha",
+            "end": "2024-03-04",
+            "characters": [
+              "blood-borne-resolve-noritoshi-kamo",
+              "dont-look-down-on-me-momo-nishimiya"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "blood-borne-resolve-noritoshi-kamo",
+          "dont-look-down-on-me-momo-nishimiya"
+        ],
+        "newMemories": [
+          "Curses And Bubbles",
+          "We are same?"
+        ]
+      },
+      {
+        "date": "2024-02-29",
+        "items": [
+          {
+            "title": "100 Days Since Release Campaign: 3,000 Kaiju",
+            "kind": "campaign",
+            "end": "2024-03-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: For Whom Does The Heart Cry",
+            "kind": "event",
+            "end": "2024-03-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: For Whom Does The Heart Cry",
+            "kind": "gacha",
+            "end": "2024-03-21",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Fashion dress up plan",
+          "Make some cutie stuff!"
+        ]
+      },
+      {
+        "date": "2024-03-14",
+        "items": [
+          {
+            "title": "Character Grade Update: Grade 10 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Update: Chapter 11 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Chapter 11 Release Campaign",
+            "kind": "campaign",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Fomidable Battle: VS Hanami",
+            "kind": "event",
+            "end": "2024-03-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Desperate Struggle",
+            "kind": "gacha",
+            "end": "2024-03-21",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-03-22",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Dead Mall Edition - 1",
+            "kind": "event",
+            "end": "2024-03-31",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Sword Option",
+            "kind": "gacha",
+            "end": "2024-04-04",
+            "characters": [
+              "sword-option-ultimate-mechamaru"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "sword-option-ultimate-mechamaru"
+        ],
+        "newMemories": [
+          "The archery teaching from Noritoshi Kamo",
+          "The encounter in the mall of death"
+        ]
+      },
+      {
+        "date": "2024-03-25",
+        "items": [
+          {
+            "title": "5 Million Players Achieved: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2024-05-06",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "5 Million Player Paid Gacha: Featured SSR Guaranteed",
+            "kind": "gacha",
+            "end": "2024-05-06",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-04-01",
+        "items": [
+          {
+            "title": "Story Event: Aoi Todo's Passionate Baseball Career",
+            "kind": "event",
+            "end": "2024-04-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Brothers",
+            "kind": "gacha",
+            "end": "2024-04-18",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Aoi Todo ( Fight Together with Takada-chan )",
+          "The spectator in midsummer",
+          "My best batter"
+        ]
+      },
+      {
+        "date": "2024-04-12",
+        "items": [
+          {
+            "title": ";5 Million Players Achieved: 2,000 Kaiju & 500 Phantom Medals",
+            "kind": "event",
+            "end": "2024-05-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Fomidable Battle: VS Mahito",
+            "kind": "event",
+            "end": "2024-04-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Phantom Medal Exchange Update: Mahito Released",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Cursed Energy Infusion",
+            "kind": "gacha",
+            "end": "2024-05-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-04-16",
+        "items": [
+          {
+            "title": "PC Version Release Campaign: SSR Guaranteed Ticket",
+            "kind": "campaign",
+            "end": "2024-05-16",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-04-19",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Dead Mall Edition - 2",
+            "kind": "event",
+            "end": "2024-04-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Need Help?",
+            "kind": "gacha",
+            "end": "2024-05-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Liar...I hate you so much",
+          "COOL eyeglasses"
+        ]
+      },
+      {
+        "date": "2024-04-30",
+        "items": [
+          {
+            "title": "Golden Week Campaign: 1,200 Kaiju",
+            "kind": "campaign",
+            "end": "2024-05-06",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Rain And Foosteps",
+            "kind": "event",
+            "end": "2024-05-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Rain And Foosteps",
+            "kind": "gacha",
+            "end": "2024-05-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Meet again, after the raining",
+          "Searching in the raining"
+        ]
+      },
+      {
+        "date": "2024-05-01",
+        "items": [
+          {
+            "title": "New Feature Released: Phantom Parade Pass",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-05-14",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Jogo",
+            "kind": "event",
+            "end": "2024-05-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Believe in Each Other",
+            "kind": "gacha",
+            "end": "2024-05-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-05-17",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Dead Mall Edition - 3",
+            "kind": "event",
+            "end": "2024-05-27",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Doctor's Pride",
+            "kind": "gacha",
+            "end": "2024-06-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "The pride of doctor",
+          "Panda, the fashionista"
+        ]
+      },
+      {
+        "date": "2024-05-21",
+        "items": [
+          {
+            "title": "Character Grade Update: Grade 11 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Half Anniversary Campaign: Login Bonus (Free Memory)",
+            "kind": "campaign",
+            "end": "2024-11-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Half Anniversary Celebration: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2024-07-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature Released: Referral Codes",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Update: Chapter 12 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Memory Quest: Hidden Inventory / Premature Death 1",
+            "kind": "event",
+            "end": "2024-11-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Hidden Inventory / Premature Death 1",
+            "kind": "gacha",
+            "end": "2024-07-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Half Anniversary Paid Gacha: Featured SSR Guaranteed",
+            "kind": "gacha",
+            "end": "2024-06-27",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "For now, Cola",
+          "The Youth that can't go back",
+          "You Cryin'?"
+        ]
+      },
+      {
+        "date": "2024-05-27",
+        "items": [
+          {
+            "title": "Strengthening Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2024-05-31",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-05-31",
+        "items": [
+          {
+            "title": "Story Event: The Evanescence Of Blue",
+            "kind": "event",
+            "end": "2024-06-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Hidden Inventory / Premature Death 2",
+            "kind": "gacha",
+            "end": "2024-07-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Strawberry Parfait of Youth",
+          "The Strongest Quarrel"
+        ]
+      },
+      {
+        "date": "2024-06-03",
+        "items": [
+          {
+            "title": "Pickup Gacha: Hidden Inventory / Premature Death 3",
+            "kind": "gacha",
+            "end": "2024-07-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-06-04",
+        "items": [
+          {
+            "title": "Top Grossing Rewards: 3,000 Kaiju",
+            "kind": "campaign",
+            "end": "2024-07-04",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-06-06",
+        "items": [
+          {
+            "title": "New Feature Released: Dreamy Stairwell",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-06-12",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Eso & Kechizu Rerun",
+            "kind": "event",
+            "end": "2024-06-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: The Worst Match / Nimble Body",
+            "kind": "gacha",
+            "end": "2024-06-24",
+            "characters": [
+              "nimble-body-yuji-itadori"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "The bond of sibling"
+        ]
+      },
+      {
+        "date": "2024-06-20",
+        "items": [
+          {
+            "title": "New Feature Released: Memory Stories",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Map Event: Great Sorcerer Battle - Art Museum Edition - 1",
+            "kind": "event",
+            "end": "2024-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Tokyo Fukuoka Exchange",
+            "kind": "gacha",
+            "end": "2024-07-04",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Tokyo Fukuoka Exchange",
+          "Art Museum in night"
+        ]
+      },
+      {
+        "date": "2024-06-24",
+        "items": [
+          {
+            "title": "Memory Quest: Hidden Inventory / Premature Death 2",
+            "kind": "event",
+            "end": "2024-11-21",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Mensore!"
+        ]
+      },
+      {
+        "date": "2024-06-28",
+        "items": [
+          {
+            "title": "Story Event: A Sorcerer's Balance",
+            "kind": "event",
+            "end": "2024-07-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: A Sorcerer's Balance",
+            "kind": "gacha",
+            "end": "2024-07-18",
+            "characters": [
+              "zanshin-kasumi-miwa"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "zanshin-kasumi-miwa"
+        ],
+        "newMemories": [
+          "Ignoring Orders",
+          "Our Priorities"
+        ]
+      },
+      {
+        "date": "2024-07-08",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Hanami Rerun",
+            "kind": "event",
+            "end": "2024-07-15",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Determination In The Blood / Don't Underestimate Me",
+            "kind": "gacha",
+            "end": "2024-07-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Die and become a sage"
+        ]
+      },
+      {
+        "date": "2024-07-12",
+        "items": [
+          {
+            "title": "Character Grade Update: Grade 12 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Update: Chapters 13 & 14 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-07-16",
+        "items": [
+          {
+            "title": "Pickup Gacha: Heart's Resolve",
+            "kind": "gacha",
+            "end": "2024-08-03",
+            "characters": [
+              "hearts-resolve-saki-rindo"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Your path to move forward"
+        ]
+      },
+      {
+        "date": "2024-07-19",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Art Museum Edition - 2",
+            "kind": "event",
+            "end": "2024-07-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Kept waiting"
+        ]
+      },
+      {
+        "date": "2024-07-21",
+        "items": [
+          {
+            "title": "Pickup Gacha: Hollow Technique: Purple",
+            "kind": "gacha",
+            "end": "2024-08-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-07-30",
+        "items": [
+          {
+            "title": "Story Event: Principals' Tribulations",
+            "kind": "event",
+            "end": "2024-08-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Principals' Tribulations",
+            "kind": "gacha",
+            "end": "2024-08-19",
+            "characters": [
+              "cursed-corpse-battle-masamichi-yaga",
+              "cursed-energy-melody-yoshinobu-gakuganji"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "cursed-corpse-battle-masamichi-yaga",
+          "cursed-energy-melody-yoshinobu-gakuganji"
+        ],
+        "newMemories": [
+          "Night on the Sacred Mountain",
+          "Source of Stress"
+        ]
+      },
+      {
+        "date": "2024-08-09",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Mahito Rerun",
+            "kind": "event",
+            "end": "2024-08-15",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Small Fry and Reverse Retribution / Incomplete Domain",
+            "kind": "gacha",
+            "end": "2024-08-20",
+            "characters": [
+              "incomplete-domain-megumi-fushiguro"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Instincts of a Curse"
+        ]
+      },
+      {
+        "date": "2024-08-16",
+        "items": [
+          {
+            "title": "6 Million Players Achieved: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2024-09-16",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Memory Quest: Hidden Inventory / Premature Death 3",
+            "kind": "event",
+            "end": "2024-11-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Hidden Inventory / Premature Death 1 Rerun",
+            "kind": "gacha",
+            "end": "2024-09-02",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "I See, Then Die"
+        ]
+      },
+      {
+        "date": "2024-08-20",
+        "items": [
+          {
+            "title": "Map Event: Great Sorcerer Battle - Art Museum Edition - 3",
+            "kind": "event",
+            "end": "2024-08-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: First-Grade Sorcerer's Skill",
+            "kind": "gacha",
+            "end": "2024-09-03",
+            "characters": [
+              "first-grade-sorcerers-skill-kento-nanami"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Divine Dogs' Short Break",
+          "Doctor's Turn"
+        ]
+      },
+      {
+        "date": "2024-08-30",
+        "items": [
+          {
+            "title": "Event Marathon Campaign",
+            "kind": "campaign",
+            "end": "2024-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Dancing Amongst The Flowers",
+            "kind": "event",
+            "end": "2024-09-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Dancing Amongst The Flowers",
+            "kind": "gacha",
+            "end": "2024-09-19",
+            "characters": [
+              "longsword-battle-maki-zenin"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "longsword-battle-maki-zenin"
+        ],
+        "newMemories": [
+          "Nimble Cursed Speech User",
+          "Girls School Sorcerer"
+        ]
+      },
+      {
+        "date": "2024-09-10",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Jogo Rerun",
+            "kind": "event",
+            "end": "2024-09-16",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Hidden Inventory / Premature Death 2 Rerun",
+            "kind": "gacha",
+            "end": "2024-09-19",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Curse Born From The Land"
+        ]
+      },
+      {
+        "date": "2024-09-17",
+        "items": [
+          {
+            "title": "Character Grade Update: Grade 13 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Update: Chapter 15 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Strengthening Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2024-09-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "300 Days Since Release Campaign: 3,000 Kaiju",
+            "kind": "campaign",
+            "end": "2024-09-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "PC Login Gift: 500 Kaiju",
+            "kind": "campaign",
+            "end": "2024-09-30",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Night In Hakata"
+        ]
+      },
+      {
+        "date": "2024-09-20",
+        "items": [
+          {
+            "title": "Standard Pool Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Gacha Point Cards",
+            "kind": "gacha",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Map Event: Great Exorcism Battle - Valley Edition - 1",
+            "kind": "event",
+            "end": "2024-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "14 Days Only! Start Dash Select Gacha (Non-Paid)",
+            "kind": "gacha",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "72 Hours Only! Start Dash Select Gacha (Paid)",
+            "kind": "gacha",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: The Final Bullet",
+            "kind": "gacha",
+            "end": "2024-10-04",
+            "characters": [
+              "the-final-bullet-mai-zenin"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "the-final-bullet-mai-zenin"
+        ],
+        "newMemories": [
+          "Student's Duty",
+          "Tea Party"
+        ]
+      },
+      {
+        "date": "2024-09-30",
+        "items": [
+          {
+            "title": "\"Jujutsu Kaisen\" Manga Ending: SSR Character Guaranteed Ticket",
+            "kind": "event",
+            "end": "2024-10-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Words Beget Curses",
+            "kind": "event",
+            "end": "2024-10-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Words Beget Curses",
+            "kind": "gacha",
+            "end": "2024-10-21",
+            "characters": [
+              "shatter-to-pieces-toge-inumaki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "shatter-to-pieces-toge-inumaki"
+        ],
+        "newMemories": [
+          "Fleeting Moments",
+          "Louder Than Words"
+        ]
+      },
+      {
+        "date": "2024-10-04",
+        "items": [
+          {
+            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 1",
+            "kind": "event",
+            "end": "2024-10-17",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-10-10",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Eso & Kechizu Rerun; New Content Released: SP Battle",
+            "kind": "event",
+            "end": "2024-10-16",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-10-17",
+        "items": [
+          {
+            "title": "Memory Quest: Hidden Inventory / Premature Death 4",
+            "kind": "event",
+            "end": "2024-11-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Hidden Inventory / Premature Death 3 Rerun",
+            "kind": "gacha",
+            "end": "2024-11-02",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Day of Awakening"
+        ]
+      },
+      {
+        "date": "2024-10-22",
+        "items": [
+          {
+            "title": "Map Event: Great Exorcism Battle - Valley Edition - 2",
+            "kind": "event",
+            "end": "2024-10-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Keep Hammering At Them",
+            "kind": "gacha",
+            "end": "2024-11-07",
+            "characters": [
+              "keep-hammering-at-them-nobara-kugisaki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "keep-hammering-at-them-nobara-kugisaki"
+        ],
+        "newMemories": [
+          "Cursed Spirit Beach",
+          "Aoi Todo's Youth Minerals"
+        ]
+      },
+      {
+        "date": "2024-10-31",
+        "items": [
+          {
+            "title": "Side Story: Dawn Of Fukuoka Branch Campus",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Ijichi's Report - Kyushu Records",
+            "kind": "event",
+            "end": "2024-11-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Kyushu Records",
+            "kind": "gacha",
+            "end": "2024-11-20",
+            "characters": [
+              "bond-of-friendship-megumi-fushiguro"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "bond-of-friendship-megumi-fushiguro"
+        ],
+        "newMemories": [
+          "Before The Battle For Kyushu"
+        ]
+      },
+      {
+        "date": "2024-11-06",
+        "items": [
+          {
+            "title": "Fomidable Battle VS -Hanami- Rerun",
+            "kind": "event",
+            "end": "2024-11-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Hollow Technique: Purple, Heart's Resolve",
+            "kind": "gacha",
+            "end": "2024-11-20",
+            "characters": [
+              "hearts-resolve-saki-rindo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Cursed Object Collection 2x Drop",
+            "kind": "event",
+            "end": "2024-11-09",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-11-12",
+        "items": [
+          {
+            "title": "Map Event: Great Exorcism Battle - Valley Edition - 3",
+            "kind": "event",
+            "end": "2024-11-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: Overtime Work / Sword Option",
+            "kind": "gacha",
+            "end": "2024-11-20",
+            "characters": [
+              "sword-option-ultimate-mechamaru"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-11-17",
+        "items": [
+          {
+            "title": "Main Story Update: Chapter 16 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Character Grade Update: Grade 14-15 Release",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Chapter 16 Campaign: Login Bonus",
+            "kind": "campaign",
+            "end": "2024-11-23",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story 0 AP Cost Campaign",
+            "kind": "campaign",
+            "end": "2024-12-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Main Story Pass",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: With That Will In Mind",
+            "kind": "gacha",
+            "end": "2024-12-03",
+            "characters": [
+              "with-that-will-in-mind-kaito-yuki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "with-that-will-in-mind-kaito-yuki"
+        ],
+        "newMemories": [
+          "Each On Their Own Path"
+        ]
+      },
+      {
+        "date": "2024-11-17",
+        "items": [
+          {
+            "title": "Free Multi Summon Gacha: 1st Year Anniversary",
+            "kind": "gacha",
+            "end": "2024-12-19",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-11-21",
+        "items": [
+          {
+            "title": "Story Event: Magnificent Phantom Ship",
+            "kind": "event",
+            "end": "2024-12-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Skin",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Event Marathon 2",
+            "kind": "event",
+            "end": "2024-12-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1st Year Anniversary Campaign: Login Bonus",
+            "kind": "campaign",
+            "end": "2024-12-06",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1st Year Anniversary Campaign: Free 3K Cubes",
+            "kind": "campaign",
+            "end": "2024-12-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Enhancement Support Mission",
+            "kind": "event",
+            "end": "2024-12-12",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Free AP Recovery Campaign",
+            "kind": "campaign",
+            "end": "2024-12-05",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Player Rank Update: Max Rank 130",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Friend Invitation Reset",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Magnificent Phantom Ship, Part 1",
+            "kind": "gacha",
+            "end": "2024-12-19",
+            "characters": [
+              "zone-yuji-itadori"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "zone-yuji-itadori"
+        ],
+        "newMemories": [
+          "What Was Inherited",
+          "To The Ultra-Luxury Dinner Cruise",
+          "Phantom Trails"
+        ]
+      },
+      {
+        "date": "2024-11-25",
+        "items": [
+          {
+            "title": "Illusory Tower Update: Floor 51-60",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-11-29",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Magnificent Phantom Ship, Part 2",
+            "kind": "gacha",
+            "end": "2024-12-19",
+            "characters": [
+              "within-infinity-satoru-gojo"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "within-infinity-satoru-gojo"
+        ],
+        "newMemories": [
+          "Detainee Party",
+          "Firework Show Aboard"
+        ]
+      },
+      {
+        "date": "2024-12-06",
+        "items": [
+          {
+            "title": "Enhancement Quest Update: New Stage",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "15 Million Combined Players Achieved: 3,000 Kaiju & New Memory",
+            "kind": "event",
+            "end": "2024-12-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Fomidable Battle VS -Mahito- Rerun",
+            "kind": "event",
+            "end": "2024-12-19",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "The Sky Is Connected"
+        ]
+      },
+      {
+        "date": "2024-12-13",
+        "items": [
+          {
+            "title": "Character Balance Update 2",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Jujutsu Kaisen 0 - Part 1 Rerun",
+            "kind": "event",
+            "end": "2024-12-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0 - Part 1",
+            "kind": "gacha",
+            "end": "2025-01-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0 - Part 2",
+            "kind": "gacha",
+            "end": "2025-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "delayed-quota-miguel"
+        ],
+        "newMemories": [
+          "Yeah, Nice Job!"
+        ]
+      },
+      {
+        "date": "2024-12-20",
+        "items": [
+          {
+            "title": "Map Event: Jujutsu Kaisen 0 - Part 2 Rerun",
+            "kind": "event",
+            "end": "2024-12-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0 - Part 3",
+            "kind": "gacha",
+            "end": "2025-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-12-24",
+        "items": [
+          {
+            "title": "Night Parade of 100 Demons Gift: 3,000 Kaiju",
+            "kind": "event",
+            "end": "2025-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2024-12-30",
+        "items": [
+          {
+            "title": "New Year Paid Gacha: Selective SSR Character Guaranteed (1 Time Only)",
+            "kind": "gacha",
+            "end": "2025-01-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Year Paid Gacha: Selective SSR Memory Guaranteed (1 Time Only)",
+            "kind": "gacha",
+            "end": "2025-01-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Ijichi's Report: Sukuna's Finger",
+            "kind": "event",
+            "end": "2025-01-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Ijichi's Report: Sukuna's Finger",
+            "kind": "gacha",
+            "end": "2025-01-20",
+            "characters": [
+              "genuine-jujutsu-ryomen-sukuna"
+            ],
+            "link": null
+          },
+          {
+            "title": "Domain Investigation Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-01-05",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "genuine-jujutsu-ryomen-sukuna"
+        ],
+        "newMemories": [
+          "Difference In Level",
+          "King of Curses"
+        ]
+      },
+      {
+        "date": "2025-01-01",
+        "items": [
+          {
+            "title": "New Year Free Gacha(2025): SSR Guaranteed",
+            "kind": "gacha",
+            "end": "2025-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Sorcerers' Resolutions"
+        ]
+      },
+      {
+        "date": "2025-01-07",
+        "items": [
+          {
+            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 2",
+            "kind": "event",
+            "end": "2025-01-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-01-14",
+        "items": [
+          {
+            "title": "PickUp Gacha: Zanshin & Shatter To Pieces & First-Grade Sorcerer's Skill",
+            "kind": "gacha",
+            "end": "2025-01-25",
+            "characters": [
+              "first-grade-sorcerers-skill-kento-nanami",
+              "shatter-to-pieces-toge-inumaki",
+              "zanshin-kasumi-miwa"
+            ],
+            "link": null
+          },
+          {
+            "title": "Fomidable Battle: VS Jogo Rerun",
+            "kind": "event",
+            "end": "2025-01-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Strengthening Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2024-01-17",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-01-21",
+        "items": [
+          {
+            "title": "New Feature: Hidden Potential System",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Hidden Potential Unleashed: Patch 1",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Content: Curse Sweeping Battle",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story: Shibuya Incident -Prelude-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story, Shibuya Incident Release Gift: 3,000 Cubes",
+            "kind": "event",
+            "end": "2025-02-21",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Humans Or Curses, Who Will Have The Last Laugh"
+        ]
+      },
+      {
+        "date": "2025-01-23",
+        "items": [
+          {
+            "title": "Map Event: Great Exorcism Battle - Abandoned Village Arc - 1",
+            "kind": "event",
+            "end": "2025-01-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Sprinting",
+            "kind": "gacha",
+            "end": "2025-02-04",
+            "characters": [
+              "sprinting-kasumi-miwa"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "sprinting-kasumi-miwa"
+        ],
+        "newMemories": [
+          "Morning Practice With The Principal",
+          "Walk In Shibuya"
+        ]
+      },
+      {
+        "date": "2025-01-31",
+        "items": [
+          {
+            "title": "Story Event: The False Hero",
+            "kind": "event",
+            "end": "2025-02-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: The False Hero",
+            "kind": "gacha",
+            "end": "2025-02-18",
+            "characters": [
+              "ive-seen-it-all-kokichi-muta"
+            ],
+            "link": null
+          },
+          {
+            "title": "Event Marathon Campaign 3",
+            "kind": "campaign",
+            "end": "2025-02-27",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "ive-seen-it-all-kokichi-muta"
+        ],
+        "newMemories": [
+          "Encounter And Anticipation",
+          "Hero's Conditions"
+        ]
+      },
+      {
+        "date": "2025-02-12",
+        "items": [
+          {
+            "title": "Imaginary Realm: VS Eso & Kechizu Rerun",
+            "kind": "event",
+            "end": "2025-02-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Cursed Object Collection: Double Drops Campaign",
+            "kind": "campaign",
+            "end": "2025-02-15",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: To Protect Non-Sorcerers / Longsword Battle",
+            "kind": "gacha",
+            "end": "2025-02-23",
+            "characters": [
+              "longsword-battle-maki-zenin",
+              "to-protect-non-sorcerers-suguru-geto"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-02-19",
+        "items": [
+          {
+            "title": "Map Event: Grand Exorcism Battle - Abandoned Village Arc - 2",
+            "kind": "event",
+            "end": "2025-02-27",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Night-Lurking Sorcerer",
+            "kind": "gacha",
+            "end": "2025-03-04",
+            "characters": [
+              "night-lurking-sorcerer-toge-inumaki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "night-lurking-sorcerer-toge-inumaki"
+        ],
+        "newMemories": [
+          "Cat Rescue",
+          "Bonds Of Cooperation"
+        ]
+      },
+      {
+        "date": "2025-02-28",
+        "items": [
+          {
+            "title": "Story Event: Shoko Ieiri's Longest Day",
+            "kind": "event",
+            "end": "2025-03-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Shoko Ieiri's Longest Day",
+            "kind": "gacha",
+            "end": "2025-03-20",
+            "characters": [
+              "life-saver-shoko-ieiri"
+            ],
+            "link": null
+          },
+          {
+            "title": "Character Rank Update: Cap Raised to 80",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "life-saver-shoko-ieiri"
+        ],
+        "newMemories": [
+          "Souvenir Pondering",
+          "Utahime's Stress Relief Method"
+        ]
+      },
+      {
+        "date": "2025-03-14",
+        "items": [
+          {
+            "title": "Featured Gacha: The Strongest Blue&Cursed Corpse Battle",
+            "kind": "gacha",
+            "end": "2025-03-25",
+            "characters": [
+              "cursed-corpse-battle-masamichi-yaga",
+              "the-strongest-blue-satoru-gojo",
+              "the-strongest-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Fomidable Battle VS -Hanami- Rerun: SP Battle",
+            "kind": "event",
+            "end": "2025-03-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Strengthening Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-05-17",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-03-21",
+        "items": [
+          {
+            "title": "Featured Gacha: Early Morning Departure",
+            "kind": "gacha",
+            "end": "2025-04-05",
+            "characters": [
+              "early-morning-departure-maki-zenin"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Abandoned Village Part 3",
+            "kind": "event",
+            "end": "2025-03-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Domain Investigation Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-03-25",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Material Conversion/Synthesis",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Auto Play Feature: Domain Investigation",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Battle Report",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Monthly Pass: Cube Bonus (30 Days)",
+            "kind": "campaign",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "early-morning-departure-maki-zenin"
+        ],
+        "newMemories": [
+          "Gold Rush"
+        ]
+      },
+      {
+        "date": "2025-03-26",
+        "items": [
+          {
+            "title": "Main Story: Shibuya Incident -Gate Open-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Shibuya Incident New Chapter Celebration Campaign: Free 100 Tickets Pull",
+            "kind": "campaign",
+            "end": "2025-04-09",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 3",
+            "kind": "event",
+            "end": "2025-04-01",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Shibuya Incident New Chapter Celebration GSSR Gacha (Character&Memory)",
+            "kind": "gacha",
+            "end": "2025-04-01",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-03-31",
+        "items": [
+          {
+            "title": "Featured Gacha: Time= Money + Lie",
+            "kind": "gacha",
+            "end": "2025-04-20",
+            "characters": [
+              "night-of-dancing-crows-mei-mei"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Time= Money + Lie",
+            "kind": "event",
+            "end": "2025-04-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Hidden Potential: Second Batch",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "night-of-dancing-crows-mei-mei"
+        ],
+        "newMemories": [
+          "Price for applauding",
+          "Defeat Cursed Spirits, Rescue Non-Sorcerers",
+          "Siblings' Vacation"
+        ]
+      },
+      {
+        "date": "2025-04-03",
+        "items": [
+          {
+            "title": "500 Days Celebration Login Bonus",
+            "kind": "campaign",
+            "end": "2025-04-16",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "500 Days Celebration Paid Gacha",
+            "kind": "gacha",
+            "end": "2025-04-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-04-14",
+        "items": [
+          {
+            "title": "Formidable Battle VS -Mahito- Rerun: SP Battle",
+            "kind": "event",
+            "end": "2025-04-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Sorcerer Killer & The Final Bullet",
+            "kind": "gacha",
+            "end": "2025-04-25",
+            "characters": [
+              "the-final-bullet-mai-zenin"
+            ],
+            "link": null
+          },
+          {
+            "title": "Cursed Object Collection 2x Drop",
+            "kind": "event",
+            "end": "2025-04-18",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-04-21",
+        "items": [
+          {
+            "title": "Main Story: Shibuya Incident: -Seance-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Enhancement Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-04-24",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Illusory Tower Update: Floor 61-80",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Profile Icon",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-04-23",
+        "items": [
+          {
+            "title": "Map Event: Grand Exorcism Battle - Ghost Town Arc - 1",
+            "kind": "event",
+            "end": "2025-05-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Pickup Gacha: \"Let's Rescue Satoru Gojo!\"",
+            "kind": "gacha",
+            "end": "2025-05-07",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Following The Clue",
+          "\"Let's Rescue Satoru Gojo!\""
+        ]
+      },
+      {
+        "date": "2025-04-28",
+        "items": [
+          {
+            "title": "Featured Gacha: No Conceit",
+            "kind": "gacha",
+            "end": "2025-05-20",
+            "characters": [
+              "no-conceit-takuma-ino"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: \"Ino&Nanami\" and \"Nanami&Ino\"",
+            "kind": "event",
+            "end": "2025-05-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Official Web Shop",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Golden Week Campaign",
+            "kind": "campaign",
+            "end": "2025-05-11",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "no-conceit-takuma-ino"
+        ],
+        "newMemories": [
+          "Fake or Real?",
+          "Coffee Break in The Afternoon"
+        ]
+      },
+      {
+        "date": "2025-05-03",
+        "items": [
+          {
+            "title": "Domain Investigation Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-05-09",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-05-07",
+        "items": [
+          {
+            "title": "Fomidable Battle: VS Jogo Rerun",
+            "kind": "event",
+            "end": "2025-05-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Blue Type PickUp Gacha: Shatter To Pieces",
+            "kind": "gacha",
+            "end": "2025-05-18",
+            "characters": [
+              "shatter-to-pieces-toge-inumaki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-05-14",
+        "items": [
+          {
+            "title": "Map Event: Grand Exorcism Battle - Ghost Town Arc - 2",
+            "kind": "event",
+            "end": "2025-05-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "PickUp Gacha: With That Will In Mind",
+            "kind": "gacha",
+            "end": "2025-05-20",
+            "characters": [
+              "with-that-will-in-mind-kaito-yuki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Reflection of Trust"
+        ]
+      },
+      {
+        "date": "2025-05-21",
+        "items": [
+          {
+            "title": "Story Event: Mystic of Hundred and Blue",
+            "kind": "event",
+            "end": "2025-06-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Awakening",
+            "kind": "gacha",
+            "end": "2025-07-03",
+            "characters": [
+              "awakening-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "1.5th Anniversary Login Bonus(Part 1)",
+            "kind": "campaign",
+            "end": "2025-06-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Standard Update 2",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1.5th Anniversary Free Multi Gacha (10 Multi)",
+            "kind": "gacha",
+            "end": "2025-07-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Free AP Recovery: 3 Times Per Day",
+            "kind": "event",
+            "end": "2025-06-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story: 0 AP Cost",
+            "kind": "event",
+            "end": "2025-06-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Cursed Corpse Walk Update 1: Lvl 8->10",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Player Rank Update 2: Rank 130->150",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Scene Replay",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1.5th Anniversary Paid Gacha: SSR Character/Memory Guaranteed",
+            "kind": "gacha",
+            "end": "2025-07-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Zone",
+            "kind": "gacha",
+            "end": "2025-06-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Pass: Phanpara Pass",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Code: SSR Guaranteed Ticket",
+            "kind": "event",
+            "end": "2025-07-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Event Marathon 4",
+            "kind": "event",
+            "end": "2025-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1.5th Anniversary: Free 3K Cubes",
+            "kind": "event",
+            "end": "2025-07-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Who is Millionaire?",
+          "Blue Spring, Set Off The Firework",
+          "Wish summer would never end"
+        ]
+      },
+      {
+        "date": "2025-05-26",
+        "items": [
+          {
+            "title": "Curse Sweep Battle Update 1: New Cursed Spirit",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-05-30",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: \"Fwoo\", \"Hyoi\"",
+            "kind": "gacha",
+            "end": "2025-07-03",
+            "characters": [
+              "fwoo-hyoi-shoko-ieiri"
+            ],
+            "link": null
+          },
+          {
+            "title": "Memory Quest: Hidden Inventory / Premature Death Rerun",
+            "kind": "event",
+            "end": "2025-07-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "PickUp Gacha: 0.5th Anniversary Rerun",
+            "kind": "gacha",
+            "end": "2025-07-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Customary Task: Game Center"
+        ]
+      },
+      {
+        "date": "2025-06-11",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Toji Fushiguro-",
+            "kind": "event",
+            "end": "2025-06-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Within Infinity",
+            "kind": "gacha",
+            "end": "2025-07-03",
+            "characters": [
+              "within-infinity-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Enhancement Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-06-17",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1.5th Anniversary Login Bonus(Part 2)",
+            "kind": "campaign",
+            "end": "2025-06-24",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Two Shadows Reflected in The Evening"
+        ]
+      },
+      {
+        "date": "2025-06-20",
+        "items": [
+          {
+            "title": "Featured Gacha: Early Morning Departure",
+            "kind": "gacha",
+            "end": "2025-07-04",
+            "characters": [
+              "early-morning-departure-maki-zenin"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Grand Exorcism Battle - Ghost Town Arc - 3",
+            "kind": "event",
+            "end": "2025-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Score Attack Statistic",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Battle Content Statistic",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Story Reminiscence",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Jujutsu Sorcerers' Arrival"
+        ]
+      },
+      {
+        "date": "2025-06-30",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Promising New Student",
+            "kind": "gacha",
+            "end": "2025-07-30",
+            "characters": [
+              "promising-new-student-kento-nanami"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: The Mystery is In The Book",
+            "kind": "event",
+            "end": "2025-07-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Free AP Recovery: 3 Times Per Day",
+            "kind": "event",
+            "end": "2025-07-06",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1.5th Anniversary Login Bonus(Part 3)",
+            "kind": "campaign",
+            "end": "2025-07-30",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Super Freshman Welcoming Party",
+          "The Mystery is In The Book"
+        ]
+      },
+      {
+        "date": "2025-07-04",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Genuine Jujutsu",
+            "kind": "gacha",
+            "end": "2025-08-02",
+            "characters": [
+              "genuine-jujutsu-ryomen-sukuna"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-07-14",
+        "items": [
+          {
+            "title": "Formidable Battle VS -Mahito- Rerun",
+            "kind": "event",
+            "end": "2025-07-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Red Type PickUp Gacha: Night Of Dancing Crows & Night-Lurking Sorcerer",
+            "kind": "gacha",
+            "end": "2025-07-26",
+            "characters": [
+              "night-lurking-sorcerer-toge-inumaki",
+              "night-of-dancing-crows-mei-mei"
+            ],
+            "link": null
+          },
+          {
+            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 4",
+            "kind": "event",
+            "end": "2025-07-27",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-07-22",
+        "items": [
+          {
+            "title": "Map Event: Ijichi's Struggle Part 1",
+            "kind": "event",
+            "end": "2025-07-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Cursed Spirit School Group",
+            "kind": "gacha",
+            "end": "2025-08-04",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Intermediate & Advanced Missions",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Hidden Potential: Third Batch",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Skill Details UI Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Tension in the Grass Shade",
+          "Cursed Spirit School Group"
+        ]
+      },
+      {
+        "date": "2025-07-24",
+        "items": [
+          {
+            "title": "Main Story: Shibuya Incident: -Red Scale & Fluctuations-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Phantom Medal Exchange Update: Dagon Released",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "unlimited-shikigami-dagon"
+        ],
+        "newMemories": []
+      },
+      {
+        "date": "2025-07-31",
+        "items": [
+          {
+            "title": "Featured Gacha: The Days of Cursed Spirits",
+            "kind": "gacha",
+            "end": "2025-08-20",
+            "characters": [
+              "fulfilling-his-duty-as-the-older-brother-choso"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: The Days of Cursed Spirits",
+            "kind": "event",
+            "end": "2025-08-13",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "fulfilling-his-duty-as-the-older-brother-choso"
+        ],
+        "newMemories": [
+          "A Brief Moment Between Brothers",
+          "The Memories of Days Gone By"
+        ]
+      },
+      {
+        "date": "2025-08-12",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Choso-",
+            "kind": "event",
+            "end": "2025-08-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Yellow Type PickUp Gacha: Cursed Corpse Battle & With That Will In Mind",
+            "kind": "gacha",
+            "end": "2025-08-23",
+            "characters": [
+              "cursed-corpse-battle-masamichi-yaga",
+              "with-that-will-in-mind-kaito-yuki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-08-14",
+        "items": [
+          {
+            "title": "Cursed Object Collection 2x Drop",
+            "kind": "event",
+            "end": "2025-08-18",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-08-19",
+        "items": [
+          {
+            "title": "Featured Gacha: Seance",
+            "kind": "gacha",
+            "end": "2025-09-18",
+            "characters": [
+              "seance-toji-fushiguro"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Ijichi's Struggle Part 2",
+            "kind": "event",
+            "end": "2025-08-28",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story: Shibuya Incident: -Thunderclap-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "seance-toji-fushiguro"
+        ],
+        "newMemories": [
+          "Fleeting Warmth",
+          "A Bear is Approaching!"
+        ]
+      },
+      {
+        "date": "2025-08-29",
+        "items": [
+          {
+            "title": "Featured Gacha: As Fast as a Fleeing Rabbit",
+            "kind": "gacha",
+            "end": "2025-09-22",
+            "characters": [
+              "crushed-with-speed-naobito-zenin"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: As Fast as a Fleeing Rabbit",
+            "kind": "event",
+            "end": "2025-09-15",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Reminiscence Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "crushed-with-speed-naobito-zenin"
+        ],
+        "newMemories": [
+          "Sake for Blossom-Viewing on the Engawa",
+          "The Fastest Game of Tag"
+        ]
+      },
+      {
+        "date": "2025-09-06",
+        "items": [
+          {
+            "title": "Domain Investigation Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2025-09-10",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-09-12",
+        "items": [
+          {
+            "title": "Featured Gacha: Rabbit's Disruption",
+            "kind": "gacha",
+            "end": "2025-09-29",
+            "characters": [
+              "rabbits-disruption-megumi-fushiguro"
+            ],
+            "link": null
+          },
+          {
+            "title": "Formidable Battle: VS -Toji Fushiguro (Seance)-",
+            "kind": "event",
+            "end": "2025-09-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Battle Update (Rework)",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "rabbits-disruption-megumi-fushiguro"
+        ],
+        "newMemories": []
+      },
+      {
+        "date": "2025-09-19",
+        "items": [
+          {
+            "title": "Featured Gacha: Meteor of Fierceness",
+            "kind": "gacha",
+            "end": "2025-10-04",
+            "characters": [
+              "meteor-of-fierceness-jogo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Ijichi's Struggle Part 3",
+            "kind": "event",
+            "end": "2025-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "25 Million Milestone SSR-Character-Guaranteed Paid Gacha",
+            "kind": "gacha",
+            "end": "2025-10-16",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "25 Million Milestone SSR-Memory-Guaranteed Paid Gacha",
+            "kind": "gacha",
+            "end": "2025-10-16",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Hidden Potential System Update: Stage 2 Added",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "meteor-of-fierceness-jogo"
+        ],
+        "newMemories": [
+          "Ordinary Time",
+          "Archers of The Forest"
+        ]
+      },
+      {
+        "date": "2025-09-22",
+        "items": [
+          {
+            "title": "Curse Sweep Battle Update: Hard Difficulty Added",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-09-25",
+        "items": [
+          {
+            "title": "Domain Investigation Event: \"Demonic Land Trailblazing\"",
+            "kind": "event",
+            "end": "2025-10-06",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-09-30",
+        "items": [
+          {
+            "title": "Featured Gacha: Slob around...",
+            "kind": "gacha",
+            "end": "2025-10-24",
+            "characters": [
+              "ward-off-with-sharp-blade-atsuya-kusakabe"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Slob around...",
+            "kind": "event",
+            "end": "2025-10-17",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "ward-off-with-sharp-blade-atsuya-kusakabe"
+        ],
+        "newMemories": [
+          "Grade 1 Jujutsu Sorcerer of Breakwater",
+          "So, nice to meet you"
+        ]
+      },
+      {
+        "date": "2025-10-08",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Jogo-",
+            "kind": "event",
+            "end": "2025-10-17",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Yellow Type PickUp Gacha: Cursed Corpse Battle & Life Saver",
+            "kind": "gacha",
+            "end": "2025-10-22",
+            "characters": [
+              "cursed-corpse-battle-masamichi-yaga",
+              "life-saver-shoko-ieiri"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-10-18",
+        "items": [
+          {
+            "title": "Movie-Limited Gacha: Arrived! Gourmet Boom!",
+            "kind": "gacha",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Arrived! Gourmet Boom!",
+            "kind": "event",
+            "end": "2025-10-30",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "queen-of-curses-yuta-okkotsu"
+        ],
+        "newMemories": [
+          "Crêpes on Takeshita Street",
+          "Knowledge on Exorcising",
+          "Unprecedented Gourmet Boom"
+        ]
+      },
+      {
+        "date": "2025-10-24",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Suguru Geto-",
+            "kind": "event",
+            "end": "2025-11-04",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Blue Type PickUp Gacha: Early Morning Departure & No Conceit",
+            "kind": "gacha",
+            "end": "2025-11-09",
+            "characters": [
+              "early-morning-departure-maki-zenin",
+              "no-conceit-takuma-ino"
+            ],
+            "link": null
+          },
+          {
+            "title": "Illusory Tower Update: Floors 81-90",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-10-31",
+        "items": [
+          {
+            "title": "Story Event: Jujutsu Kaisen 0 - Part 1 Rerun",
+            "kind": "event",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0",
+            "kind": "gacha",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Hidden Potential: Fourth Batch",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Paid Gacha: Selective SSR Character Guaranteed",
+            "kind": "gacha",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Paid Gacha: Selective SSR Memory Guaranteed",
+            "kind": "gacha",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-11-05",
+        "items": [
+          {
+            "title": "Phanpara of the Year Login Bonus",
+            "kind": "campaign",
+            "end": "2025-12-28",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Phanpara of the Year"
+        ]
+      },
+      {
+        "date": "2025-11-07",
+        "items": [
+          {
+            "title": "\"Jujutsu Kaisen: Execution\" Movie Release Login Bonus",
+            "kind": "campaign",
+            "end": "2025-11-21",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story 0 AP Cost Campaign",
+            "kind": "campaign",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-11-11",
+        "items": [
+          {
+            "title": "Map Event: Jujutsu Kaisen 0 - Part 2 Rerun",
+            "kind": "event",
+            "end": "2025-11-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-11-17",
+        "items": [
+          {
+            "title": "2nd Anniversary Free Gacha: Daily Free 10 Pull",
+            "kind": "gacha",
+            "end": "2025-12-25",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-11-21",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: 2nd Anniversary Part 1 & 2",
+            "kind": "gacha",
+            "end": "2025-12-25",
+            "characters": [
+              "maximum-cursed-energy-output-yuji-itadori",
+              "are-you-satisfied-with-that-aoi-todo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Part 1 Tickets: Login Bonus & Serial Code\nPart 2 Tickets: Story Event & Limited-Time Missions",
+            "kind": "campaign",
+            "end": "2025-12-25",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story: Shibuya Incident: \n-Right & Wrong-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: The End of Illusory Dream Part 1",
+            "kind": "event",
+            "end": "2025-12-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2nd Anniversary Login Bonus",
+            "kind": "campaign",
+            "end": "2025-12-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2nd Anniversary Gift: 3000 Cubes",
+            "kind": "event",
+            "end": "2025-12-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Standard Banner Update 3",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2nd Anniversary Paid Gachas: SSR Character/Memory Guaranteed",
+            "kind": "gacha",
+            "end": "2025-12-25",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2nd Anniversary Character/Memory Selectable Ticket Pack",
+            "kind": "event",
+            "end": "2025-12-25",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Cube Exchange Store",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Reminiscence Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Free AP Recovery: 3 Times Per Day",
+            "kind": "event",
+            "end": "2025-12-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Event Marathon 5",
+            "kind": "event",
+            "end": "2025-12-25",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Friend Invitation Reset",
+            "kind": "event",
+            "end": "2026-05-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "maximum-cursed-energy-output-yuji-itadori",
+          "are-you-satisfied-with-that-aoi-todo"
+        ],
+        "newMemories": [
+          "Irreplaceable Moments",
+          "Phantom Journey",
+          "Illusory Alliance Battle - Young Fish And Reverse Punishment"
+        ]
+      },
+      {
+        "date": "2025-11-28",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: 2nd Anniversary Part 3",
+            "kind": "gacha",
+            "end": "2026-01-08",
+            "characters": [
+              "battle-of-firepower-ryomen-sukuna"
+            ],
+            "link": null
+          },
+          {
+            "title": "Part 3 Tickets: Limited-Time Missions & Serial Code",
+            "kind": "event",
+            "end": "2026-01-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: The End of Illusory Dream Part 2",
+            "kind": "event",
+            "end": "2025-12-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story: Shibuya Incident: -Gate Closed-",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story Pass: Shibuya Incident",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "battle-of-firepower-ryomen-sukuna"
+        ],
+        "newMemories": [
+          "Illusory Alliance Battle - Hidden Inventory",
+          "120% Of Their Potential"
+        ]
+      },
+      {
+        "date": "2025-11-29",
+        "items": [
+          {
+            "title": "Top Grossing Rewards: 3000 Cubes",
+            "kind": "campaign",
+            "end": "2025-12-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-12-04",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: 2nd Anniversary Part 4",
+            "kind": "gacha",
+            "end": "2026-01-08",
+            "characters": [
+              "unbridled-soul-mahito"
+            ],
+            "link": null
+          },
+          {
+            "title": "Part 4 Tickets: Login Bonus & Limited-Time Missions",
+            "kind": "campaign",
+            "end": "2026-01-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Raid Battle Event: VS -Mahoraga-",
+            "kind": "event",
+            "end": "2025-12-14",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "unbridled-soul-mahito"
+        ],
+        "newMemories": [
+          "Eight-Handled Sword Divergent Sila Divine General Mahoraga"
+        ]
+      },
+      {
+        "date": "2025-12-11",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Zone, Within Infinity & Genuine Jujutsu",
+            "kind": "gacha",
+            "end": "2025-01-13",
+            "characters": [
+              "genuine-jujutsu-ryomen-sukuna",
+              "within-infinity-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Formidable Battle: VS -Choso- Rerun",
+            "kind": "event",
+            "end": "2025-12-18",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Irreconcilable Red Scale",
+          "Isolated Cursed Prison Island"
+        ]
+      },
+      {
+        "date": "2025-12-19",
+        "items": [
+          {
+            "title": "Featured Gacha: Rushing to a Mission on a Holy Night",
+            "kind": "gacha",
+            "end": "2025-12-30",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Map Event: Cursed Object Exhibition Part 1",
+            "kind": "event",
+            "end": "2025-12-25",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Year! Phantom Parade Grand Lottery Campaign",
+            "kind": "campaign",
+            "end": "2026-01-15",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Rushing to a Mission on a Holy Night",
+          "The Intention Behind Charity"
+        ]
+      },
+      {
+        "date": "2025-12-24",
+        "items": [
+          {
+            "title": "Night Parade of 100 Demons Gift: 3,000 Cubes",
+            "kind": "event",
+            "end": "2026-01-03",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2025-12-26",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: GTG Style: How to Spend Your Day Off",
+            "kind": "gacha",
+            "end": "2026-01-29",
+            "characters": [
+              "02-second-domain-expansion-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: GTG Style: How to Spend Your Day Off",
+            "kind": "event",
+            "end": "2026-01-08",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "02-second-domain-expansion-satoru-gojo"
+        ],
+        "newMemories": [
+          "Bedeviled Solicitation, Refused",
+          "A Drink After The Onsen"
+        ]
+      },
+      {
+        "date": "2025-12-29",
+        "items": [
+          {
+            "title": "New Year Paid Gacha: Selective SSR Character Guaranteed",
+            "kind": "gacha",
+            "end": "2026-01-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Year Paid Gacha: Selective SSR Memory Guaranteed",
+            "kind": "gacha",
+            "end": "2026-01-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-01-01",
+        "items": [
+          {
+            "title": "New Year Gift(2026): 3,000 Cubes & Login Bonus",
+            "kind": "campaign",
+            "end": "2026-01-31",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Year Free Gacha(2026): SSR Guaranteed",
+            "kind": "gacha",
+            "end": "2026-01-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Serious! Shuttlecock Competition"
+        ]
+      },
+      {
+        "date": "2026-01-03",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Toji Fushiguro (Seance)- Rerun",
+            "kind": "event",
+            "end": "2026-01-15",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Blue Type PickUp Gacha: Crushed With Speed & No Conceit",
+            "kind": "gacha",
+            "end": "2026-01-20",
+            "characters": [
+              "crushed-with-speed-naobito-zenin",
+              "no-conceit-takuma-ino"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Killing Puppet"
+        ]
+      },
+      {
+        "date": "2026-01-09",
+        "items": [
+          {
+            "title": "End Date: 28/1/2026",
+            "kind": "event",
+            "end": "2026-02-19",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Campaign Gift: (A Life Entrusted to Me) Yuji Itadori",
+            "kind": "campaign",
+            "end": "2026-04-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Missions Part 1",
+            "kind": "event",
+            "end": "2026-02-05",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Free Gacha: 120 Pulls Total & Character Exchange",
+            "kind": "gacha",
+            "end": "2026-04-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Free Yuji Itadori Gacha: SSR Guaranteed",
+            "kind": "gacha",
+            "end": "2026-02-05",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Growth Campaign: Weekly Rotating Double Drops",
+            "kind": "campaign",
+            "end": "2026-04-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 5",
+            "kind": "event",
+            "end": "2026-01-28",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "a-life-entrusted-to-me-yuji-itadori"
+        ],
+        "newMemories": [
+          "Nameless Spring",
+          "Resolve in The Midst of a Storm"
+        ]
+      },
+      {
+        "date": "2026-01-16",
+        "items": [
+          {
+            "title": "Limited-Time Gacha Part 1: Awakening",
+            "kind": "gacha",
+            "end": "2026-02-19",
+            "characters": [
+              "awakening-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 2: \"Fwoo Hyoi\"",
+            "kind": "gacha",
+            "end": "2026-02-19",
+            "characters": [
+              "fwoo-hyoi-shoko-ieiri"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-01-22",
+        "items": [
+          {
+            "title": "New Feature: Phantom Orb & SP Release Phantom Book",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-01-23",
+        "items": [
+          {
+            "title": "Domain Investigation Event: \"Ominous Land Reclamation\" Rerun",
+            "kind": "event",
+            "end": "2026-02-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Ominous Land Reclamation Part 1",
+            "kind": "gacha",
+            "end": "2026-02-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Ominous Land Reclamation Part 2",
+            "kind": "gacha",
+            "end": "2026-02-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 3: Promising New Student",
+            "kind": "gacha",
+            "end": "2026-02-19",
+            "characters": [
+              "promising-new-student-kento-nanami"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-01-30",
+        "items": [
+          {
+            "title": "Featured Gacha: Step back, third-rate",
+            "kind": "gacha",
+            "end": "2026-02-19",
+            "characters": [
+              "step-back-third-rate-uraume"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Cursed Object Exhibition Part 2",
+            "kind": "event",
+            "end": "2026-02-08",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "step-back-third-rate-uraume"
+        ],
+        "newMemories": [
+          "Thousand-Year Master & Follower Relation",
+          "Desire Behind The Display"
+        ]
+      },
+      {
+        "date": "2026-02-06",
+        "items": [
+          {
+            "title": "End Date: 23/2/2026",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Story Chapter Release Campaign Missions: 10 \"New Story Chapter Release Gacha: Selectable Rate-Up\" Tickets",
+            "kind": "gacha",
+            "end": "2026-02-23",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "What Will You Choose!? Strike While Passion Is Hot Gacha",
+            "kind": "gacha",
+            "end": "2026-03-05",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Missions Part 2",
+            "kind": "event",
+            "end": "2026-03-06",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story 0 AP Cost Campaign",
+            "kind": "campaign",
+            "end": "2026-02-23",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-02-09",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Mahito (Awakened)-",
+            "kind": "event",
+            "end": "2026-02-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Yellow Type PickUp Gacha: Incomplete Domain & The Strongest Blue",
+            "kind": "gacha",
+            "end": "2026-02-23",
+            "characters": [
+              "incomplete-domain-megumi-fushiguro",
+              "the-strongest-blue-satoru-gojo",
+              "the-strongest-satoru-gojo"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "True Essence Of The Soul"
+        ]
+      },
+      {
+        "date": "2026-02-20",
+        "items": [
+          {
+            "title": "Featured Gacha: Tool Manipulation",
+            "kind": "gacha",
+            "end": "2026-03-19",
+            "characters": [
+              "tool-manipulation-momo-nishimiya"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Cursed Object Exhibition Part 3",
+            "kind": "event",
+            "end": "2026-02-26",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "tool-manipulation-momo-nishimiya"
+        ],
+        "newMemories": [
+          "Morning Unraveling in The Mirror",
+          "White Waves and White Breath",
+          "A Stingy Extra Bill"
+        ]
+      },
+      {
+        "date": "2026-02-27",
+        "items": [
+          {
+            "title": "Featured Gacha: The Quiet Cursed Holiday",
+            "kind": "gacha",
+            "end": "2026-03-26",
+            "characters": [
+              "silent-suppression-kento-nanami"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: The Quiet Cursed Holiday",
+            "kind": "event",
+            "end": "2026-03-16",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Reminiscence Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Event Marathon 6",
+            "kind": "event",
+            "end": "2026-03-26",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "silent-suppression-kento-nanami"
+        ],
+        "newMemories": [
+          "Restored Silence",
+          "With Wings in Hand"
+        ]
+      },
+      {
+        "date": "2026-03-06",
+        "items": [
+          {
+            "title": "I Want a Retrial, One More Time!! Gacha",
+            "kind": "gacha",
+            "end": "2026-04-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Broadcast Collaboration Missions Part 3",
+            "kind": "event",
+            "end": "2026-04-02",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-03-12",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Uraume-",
+            "kind": "event",
+            "end": "2026-03-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Green Type PickUp Gacha: To Protect Non-Sorcerers & Bond of Friendship",
+            "kind": "gacha",
+            "end": "2026-03-23",
+            "characters": [
+              "bond-of-friendship-megumi-fushiguro",
+              "to-protect-non-sorcerers-suguru-geto"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Ice Sorcerer"
+        ]
+      },
+      {
+        "date": "2026-03-19",
+        "items": [
+          {
+            "title": "Featured Gacha: Pivotal Guardian",
+            "kind": "gacha",
+            "end": "2026-04-13",
+            "characters": [
+              "pivotal-guardian-masamichi-yaga"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Tokyo Fukuoka: Dogs Vs Cats Battle Arc Part 1",
+            "kind": "event",
+            "end": "2026-03-26",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "pivotal-guardian-masamichi-yaga"
+        ],
+        "newMemories": [
+          "The Panda and the Scarred Pillar",
+          "Nice Mid-Air Catch"
+        ]
+      },
+      {
+        "date": "2026-03-23",
+        "items": [
+          {
+            "title": "Before Anime Final Episode Broadcast Gift: 3 Day Login Bonus",
+            "kind": "campaign",
+            "end": "2026-04-02",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-03-27",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Garden of Echoes",
+            "kind": "gacha",
+            "end": "2026-04-23",
+            "characters": [
+              "executioner-yuta-okkotsu"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Garden of Echoes",
+            "kind": "event",
+            "end": "2026-04-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Final Episode Broadcast SSR-Character-Guaranteed Paid Gacha",
+            "kind": "gacha",
+            "end": "2026-04-23",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Anime Final Episode Broadcast SSR-Memory-Guaranteed Paid Gacha",
+            "kind": "gacha",
+            "end": "2026-04-23",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "executioner-yuta-okkotsu"
+        ],
+        "newMemories": [
+          "Leaving Japan",
+          "The City Where the Lights Went Out"
+        ]
+      },
+      {
+        "date": "2026-04-01",
+        "items": [
+          {
+            "title": "Story Reminiscence Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-04-06",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Jogo- Rerun",
+            "kind": "event",
+            "end": "2026-04-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Yellow Type PickUp Gacha: Cursed Corpse Battle & With That Will In Mind",
+            "kind": "gacha",
+            "end": "2026-04-18",
+            "characters": [
+              "cursed-corpse-battle-masamichi-yaga",
+              "with-that-will-in-mind-kaito-yuki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Blazing Magma"
+        ]
+      },
+      {
+        "date": "2026-04-14",
+        "items": [
+          {
+            "title": "Featured Gacha: Chain Mark: Full Throttle",
+            "kind": "gacha",
+            "end": "2026-04-28",
+            "characters": [
+              "chain-mark-full-throttle-eiji-urushi"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Tokyo Fukuoka: Dogs Vs Cats Battle Arc Part 2",
+            "kind": "event",
+            "end": "2026-04-23",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "chain-mark-full-throttle-eiji-urushi"
+        ],
+        "newMemories": [
+          "Annihilating Cross-Counter",
+          "Mad Dog & Divine Dog"
+        ]
+      },
+      {
+        "date": "2026-04-24",
+        "items": [
+          {
+            "title": "Featured Gacha: Peering into the Dim Abyss",
+            "kind": "gacha",
+            "end": "2026-05-20",
+            "characters": [
+              "the-golden-age-of-jujutsu-noritoshi-kamo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Peering into the Dim Abyss",
+            "kind": "event",
+            "end": "2026-05-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Hidden Potential: Fifth Batch",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "the-golden-age-of-jujutsu-noritoshi-kamo"
+        ],
+        "newMemories": [
+          "This is the World of the Future",
+          "The Footage Left Behind"
+        ]
+      },
+      {
+        "date": "2026-04-27",
+        "items": [
+          {
+            "title": "Domain Investigation Event: \"Ominous Land Reclamation\" Rerun",
+            "kind": "event",
+            "end": "2026-05-13",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Ominous Land Reclamation",
+            "kind": "gacha",
+            "end": "2026-05-13",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-05-01",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Choso- Rerun",
+            "kind": "event",
+            "end": "2026-05-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Red Type PickUp Gacha: Night-Lurking Sorcerer & Meteor of Fierceness",
+            "kind": "gacha",
+            "end": "2026-05-16",
+            "characters": [
+              "meteor-of-fierceness-jogo",
+              "night-lurking-sorcerer-toge-inumaki"
+            ],
+            "link": null
+          },
+          {
+            "title": "Golden Week Campaign",
+            "kind": "campaign",
+            "end": "2026-05-15",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-05-12",
+        "items": [
+          {
+            "title": "Map Event: Tokyo Fukuoka: Dogs Vs Cats Battle Arc Part 3",
+            "kind": "event",
+            "end": "2026-05-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Zone, Within Infinity & Genuine Jujutsu",
+            "kind": "gacha",
+            "end": "2026-05-28",
+            "characters": [
+              "genuine-jujutsu-ryomen-sukuna",
+              "within-infinity-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Exploration Event: Cursed Corpse Explorers!",
+            "kind": "event",
+            "end": "2026-05-28",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "The Kanto Dogs Vs Cats Battle"
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "items": [
+          {
+            "title": "2.5th Anniversary Gacha: Daily Free 10 Pull",
+            "kind": "gacha",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-05-21",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Blue Splashing by the Shore Part 1",
+            "kind": "gacha",
+            "end": "2026-06-29",
+            "characters": [
+              "smash-it-into-the-summer-sky-yuji-itadori"
+            ],
+            "link": null
+          },
+          {
+            "title": "Part 1 Tickets: Login Bonus & Story Event",
+            "kind": "campaign",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: SP Awakened Characters",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Blue Splashing by the Shore",
+            "kind": "event",
+            "end": "2026-06-17",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2.5th Anniversary Login Bonus",
+            "kind": "campaign",
+            "end": "2026-06-08",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2.5th Anniversary Gift: 3000 Cubes",
+            "kind": "event",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2.5th Anniversary Missions Part 1",
+            "kind": "event",
+            "end": "2026-06-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2.5th Anniversary Paid Gachas: SSR Character/Memory Guaranteed",
+            "kind": "gacha",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Standard Banner Update 4",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Certificate of Curse Sweep Battle Reward",
+            "kind": "campaign",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "New Feature: Character Commentary",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Free AP Recovery: 3 Times Per Day",
+            "kind": "event",
+            "end": "2026-06-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Event Marathon 7",
+            "kind": "event",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Friend Invitation Reset",
+            "kind": "event",
+            "end": "2026-11-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "smash-it-into-the-summer-sky-yuji-itadori"
+        ],
+        "newMemories": [
+          "Hey, Shisa!",
+          "Behold, Okinawa",
+          "Lingering Summer Heat and Blue Springtime"
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Blue Splashing by the Shore Part 2",
+            "kind": "gacha",
+            "end": "2026-06-29",
+            "characters": [
+              "melting-sweet-summer-treats-satoru-gojo"
+            ],
+            "link": null
+          },
+          {
+            "title": "Part 2 Tickets: Login Bonus & Serial Code",
+            "kind": "campaign",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "2.5th Anniversary Character/Memory Selectable Ticket Pack",
+            "kind": "event",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "melting-sweet-summer-treats-satoru-gojo"
+        ],
+        "newMemories": []
+      },
+      {
+        "date": "2026-05-29",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Awakening, \"Fwoo Hyoi\" & Promising New Student",
+            "kind": "gacha",
+            "end": "2026-06-23",
+            "characters": [
+              "awakening-satoru-gojo",
+              "fwoo-hyoi-shoko-ieiri",
+              "promising-new-student-kento-nanami"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-05-31",
+        "items": [
+          {
+            "title": "2.5th Anniversary Missions Part 2",
+            "kind": "event",
+            "end": "2026-06-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-06-01",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: Blue Splashing by the Shore Part 3",
+            "kind": "gacha",
+            "end": "2026-07-09",
+            "characters": [
+              "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+              "striking-eternal-summer-nobara-kugisaki"
+            ],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha: Blue Splashing by the Shore Part 4",
+            "kind": "gacha",
+            "end": "2026-07-09",
+            "characters": [
+              "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+              "striking-eternal-summer-nobara-kugisaki"
+            ],
+            "link": null
+          },
+          {
+            "title": "Part 3 Tickets: Login Bonus & Serial Code",
+            "kind": "campaign",
+            "end": "2026-07-09",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Part 4 Tickets: Login Bonus & All-Out Battle Event Mission",
+            "kind": "campaign",
+            "end": "2026-07-09",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "End Date: 8/6/2026",
+            "kind": "event",
+            "end": "2026-06-08",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+          "striking-eternal-summer-nobara-kugisaki"
+        ],
+        "newMemories": [
+          "Innocence Seen in the Past",
+          "Intercept the Calamity"
+        ]
+      },
+      {
+        "date": "2026-06-09",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Toji Fushiguro (Seance)- Rerun",
+            "kind": "event",
+            "end": "2026-06-17",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Blue Type PickUp Gacha: Zanshin & First-Grade Sorcerer's Skill",
+            "kind": "gacha",
+            "end": "2026-06-22",
+            "characters": [
+              "first-grade-sorcerers-skill-kento-nanami",
+              "zanshin-kasumi-miwa"
+            ],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 1: Maximum Cursed Energy Output",
+            "kind": "gacha",
+            "end": "2026-07-09",
+            "characters": [
+              "maximum-cursed-energy-output-yuji-itadori"
+            ],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 2: Are you satisfied with that?",
+            "kind": "gacha",
+            "end": "2026-07-09",
+            "characters": [
+              "are-you-satisfied-with-that-aoi-todo"
+            ],
+            "link": null
+          },
+          {
+            "title": "2.5th Anniversary Login Bonus Part 2",
+            "kind": "campaign",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Enhancement Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2026-06-17",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-06-10",
+        "items": [
+          {
+            "title": "2.5th Anniversary Missions Part 3",
+            "kind": "event",
+            "end": "2026-06-30",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-06-18",
+        "items": [
+          {
+            "title": "Map Event: Kyoto Dead School Part 1",
+            "kind": "event",
+            "end": "2026-06-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Green Type PickUp Gacha: Sprinting",
+            "kind": "gacha",
+            "end": "2026-07-04",
+            "characters": [
+              "sprinting-kasumi-miwa"
+            ],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 3: Battle of Firepower",
+            "kind": "gacha",
+            "end": "2026-07-20",
+            "characters": [
+              "battle-of-firepower-ryomen-sukuna"
+            ],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 4: Unbridled Soul",
+            "kind": "gacha",
+            "end": "2026-07-20",
+            "characters": [
+              "unbridled-soul-mahito"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "Nameless Cherry Blossom Blizzard"
+        ]
+      },
+      {
+        "date": "2026-06-20",
+        "items": [
+          {
+            "title": "2.5th Anniversary Missions Part 4",
+            "kind": "event",
+            "end": "2026-07-09",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-06-24",
+        "items": [
+          {
+            "title": "Raid Battle Event: VS -Mahoraga- Rerun",
+            "kind": "event",
+            "end": "2026-07-02",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 5: 0.2-Second Domain Expansion",
+            "kind": "gacha",
+            "end": "2026-07-20",
+            "characters": [
+              "02-second-domain-expansion-satoru-gojo"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-06-30",
+        "items": [
+          {
+            "title": "Featured Gacha: Ijichi's Unrelenting Vacation",
+            "kind": "gacha",
+            "end": "2026-07-26",
+            "characters": [
+              "pick-up-after-hard-work-kiyotaka-ijichi"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Ijichi's Unrelenting Vacation",
+            "kind": "event",
+            "end": "2026-07-16",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "pick-up-after-hard-work-kiyotaka-ijichi"
+        ],
+        "newMemories": [
+          "Surrounded by Amazing Seniors",
+          "Workaholic Holiday"
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "items": [
+          {
+            "title": "New Content: Formidable Foe: Back",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-07-13",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Mahito (Awakened)- Rerun",
+            "kind": "event",
+            "end": "2026-07-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Green Type PickUp Gacha: Silent Suppression & Fulfilling His Duty as the Older Brother",
+            "kind": "gacha",
+            "end": "2026-07-25",
+            "characters": [
+              "fulfilling-his-duty-as-the-older-brother-choso",
+              "silent-suppression-kento-nanami"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-07-17",
+        "items": [],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-07-21",
+        "items": [
+          {
+            "title": "Featured Gacha: Crafty Rock",
+            "kind": "gacha",
+            "end": "2026-08-11",
+            "characters": [
+              "crafty-rock-yoshinobu-gakuganji"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Kyoto Dead School Part 2",
+            "kind": "event",
+            "end": "2026-07-31",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "crafty-rock-yoshinobu-gakuganji"
+        ],
+        "newMemories": [
+          "Play a Catchy Tune",
+          "Poolside Helper"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "items": [
+          {
+            "title": "New Content: Illusory Tower: Diverse",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Illusory Tower: Diverse",
+            "kind": "gacha",
+            "end": "2026-08-09",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-07-31",
+        "items": [
+          {
+            "title": "Featured Gacha: Ephemeral Family",
+            "kind": "gacha",
+            "end": "2026-08-25",
+            "characters": [
+              "effective-range-mai-zenin"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Ephemeral Family",
+            "kind": "event",
+            "end": "2026-08-18",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "effective-range-mai-zenin"
+        ],
+        "newMemories": [
+          "\"I'm glad I gave birth to you...\"",
+          "Weaving Fantasies"
+        ]
+      },
+      {
+        "date": "2026-08-01",
+        "items": [
+          {
+            "title": "Summer Vacation Gacha: Daily Free Pull (31 Total)",
+            "kind": "gacha",
+            "end": "2026-08-31",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Domain Investigation Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2026-08-07",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-08",
+        "items": [
+          {
+            "title": "Enhancement Quest Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2026-08-14",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-10",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Uraume- Rerun",
+            "kind": "event",
+            "end": "2026-08-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Blue Type PickUp Gacha: Blood Borne Resolve & Shatter To Pieces",
+            "kind": "gacha",
+            "end": "2026-08-23",
+            "characters": [
+              "blood-borne-resolve-noritoshi-kamo",
+              "shatter-to-pieces-toge-inumaki"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-15",
+        "items": [
+          {
+            "title": "Cursed Object Collection Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2026-08-21",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-17",
+        "items": [
+          {
+            "title": "1000 Days Campaign: Login Bonus, Missions & Twitter Campaign",
+            "kind": "campaign",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1000 Days Commemoration Selective Gacha",
+            "kind": "gacha",
+            "end": "2026-09-10",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "1000 Days Commemoration SSR Guaranteed Paid Gacha",
+            "kind": "gacha",
+            "end": "2026-09-10",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-19",
+        "items": [
+          {
+            "title": "Featured Gacha: Indomitable Auspicious Beasts",
+            "kind": "gacha",
+            "end": "2026-09-06",
+            "characters": [
+              "indomitable-auspicious-beasts-takuma-ino"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Kyoto Dead School Part 3",
+            "kind": "event",
+            "end": "2026-08-30",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "indomitable-auspicious-beasts-takuma-ino"
+        ],
+        "newMemories": [
+          "Laundry Time After the Mission",
+          "Under the Cherry Tree"
+        ]
+      },
+      {
+        "date": "2026-08-22",
+        "items": [
+          {
+            "title": "Domain Investigation Campaign: Double Drops",
+            "kind": "campaign",
+            "end": "2026-08-31",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-25",
+        "items": [
+          {
+            "title": "All-Out Battle Event: VS\n-Phantom Calamity: Thunder Beast-",
+            "kind": "event",
+            "end": "2026-09-01",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-08-31",
+        "items": [
+          {
+            "title": "Featured Gacha: The Steam Sorcerer",
+            "kind": "gacha",
+            "end": "2026-10-09",
+            "characters": [
+              "burning-passion-yu-haibara"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: The Steam Sorcerer",
+            "kind": "event",
+            "end": "2026-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Hidden Inventory/Premature Death Panel Missions",
+            "kind": "event",
+            "end": "2026-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Hidden Inventory/Premature Death Guaranteed SSR Character Paid Gacha",
+            "kind": "gacha",
+            "end": "2026-09-10",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "burning-passion-yu-haibara"
+        ],
+        "newMemories": [
+          "Youth Graffiti",
+          "The Super Classmate’s Debut Battle"
+        ]
+      },
+      {
+        "date": "2026-09-07",
+        "items": [
+          {
+            "title": "Formidable Battle: Suguru Geto's Special Training",
+            "kind": "event",
+            "end": "2026-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Red Type PickUp Gacha: Tool Manipulation & The Final Bullet",
+            "kind": "gacha",
+            "end": "2026-10-04",
+            "characters": [
+              "the-final-bullet-mai-zenin",
+              "tool-manipulation-momo-nishimiya"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-09-11",
+        "items": [
+          {
+            "title": "Featured Gacha: What Lies at the End",
+            "kind": "gacha",
+            "end": "2026-10-12",
+            "characters": [
+              "what-lies-at-the-end-suguru-geto"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Blue Footprints Part 1",
+            "kind": "event",
+            "end": "2026-09-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": [
+          "\"Watch Closely\"",
+          "Something to Satisfy a Light Hunger"
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "items": [
+          {
+            "title": "Domain Investigation Event: \"Ominous Land Reclamation\"",
+            "kind": "event",
+            "end": "2026-09-29",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Ominous Land Reclamation",
+            "kind": "gacha",
+            "end": "2026-10-04",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Silver Week Guaranteed SSR Character Paid Gacha",
+            "kind": "gacha",
+            "end": "2026-10-18",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-09-30",
+        "items": [
+          {
+            "title": "Featured Gacha: With Love From The Depths Of Darkness",
+            "kind": "gacha",
+            "end": "2026-10-25",
+            "characters": [
+              "dance-of-the-beautiful-blades-mei-mei"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: With Love From The Depths Of Darkness",
+            "kind": "event",
+            "end": "2026-10-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Event Marathon 8",
+            "kind": "event",
+            "end": "2026-10-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "dance-of-the-beautiful-blades-mei-mei"
+        ],
+        "newMemories": [
+          "Ping Pong!!",
+          "The World Seen Through Ui Ui’s Eyes"
+        ]
+      },
+      {
+        "date": "2026-10-05",
+        "items": [
+          {
+            "title": "Hidden Potential System Update: Stage 3 Added",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Curse Sweep Battle Update: Very Hard Difficulty Added",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-10-09",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Jogo- Rerun",
+            "kind": "event",
+            "end": "2026-10-18",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Green Type PickUp Gacha: Pick Up After Hard Work & Sprinting",
+            "kind": "gacha",
+            "end": "2026-10-23",
+            "characters": [
+              "pick-up-after-hard-work-kiyotaka-ijichi",
+              "sprinting-kasumi-miwa"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-10-14",
+        "items": [
+          {
+            "title": "Illusory Tower: Diverse Stage Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Featured Gacha: Illusory Tower: Diverse",
+            "kind": "gacha",
+            "end": "2026-10-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-10-19",
+        "items": [
+          {
+            "title": "Featured Gacha: Cold Light of Dusk",
+            "kind": "gacha",
+            "end": "2026-11-20",
+            "characters": [
+              "cold-light-of-dusk-atsuya-kusakabe"
+            ],
+            "link": null
+          },
+          {
+            "title": "Map Event: Blue Footprints Part 2",
+            "kind": "event",
+            "end": "2026-10-29",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "cold-light-of-dusk-atsuya-kusakabe"
+        ],
+        "newMemories": [
+          "Adults' Afternoon",
+          "The Clear Stream Duo"
+        ]
+      }
+    ]
+  },
+  "banners": [
+    {
+      "id": "pickup-gacha-first-grade-sorcerers-skill",
+      "name": "Pickup Gacha: First-Grade Sorcerer's Skill",
+      "type": "Limited-Time (Non-Paid)",
+      "jp": {
+        "start": "2024-08-20",
+        "end": "2024-09-03"
+      },
+      "global": null,
+      "characters": [
+        "first-grade-sorcerers-skill-kento-nanami"
+      ],
+      "memories": [
+        "Divine Dogs' Short Break"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_First-Grade_Sorcerer's_Skill",
+        "updated": "2024-08-26T14:21:59Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-hidden-inventory-premature-death-1",
+      "name": "Pickup Gacha: Hidden Inventory / Premature Death 1",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-05-21",
+        "end": "2024-07-03"
+      },
+      "global": null,
+      "characters": [],
+      "memories": [
+        "For Now, Cola"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Hidden_Inventory_%2F_Premature_Death_1",
+        "updated": "2024-08-26T15:30:20Z"
+      }
+    },
+    {
+      "id": "dancing-amongst-the-flowers",
+      "name": "Dancing Amongst The Flowers",
+      "type": "Limited-Time (Non-Paid)",
+      "jp": {
+        "start": "2024-08-30",
+        "end": "2024-09-19"
+      },
+      "global": null,
+      "characters": [
+        "longsword-battle-maki-zenin"
+      ],
+      "memories": [
+        "Nimble Cursed Speech User"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Dancing_Amongst_The_Flowers",
+        "updated": "2024-08-30T11:08:47Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-hidden-inventory-premature-death-2",
+      "name": "Pickup Gacha: Hidden Inventory / Premature Death 2",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-05-31",
+        "end": "2024-07-03"
+      },
+      "global": null,
+      "characters": [],
+      "memories": [
+        "Strawberry Parfait of Youth"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Hidden_Inventory_%2F_Premature_Death_2",
+        "updated": "2024-09-10T12:38:50Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-cursed-energy-focusing-together-with-takada-chan",
+      "name": "Pickup Gacha: Cursed Energy Focusing & Together With Takada-chan",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-10-10",
+        "end": "2024-10-21"
+      },
+      "global": null,
+      "characters": [
+        "with-takada-chan-aoi-todo"
+      ],
+      "memories": [
+        "The spectator in midsummer"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Cursed_Energy_Focusing_%26_Together_With_Takada-chan",
+        "updated": "2024-10-11T13:56:19Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-hidden-inventory-premature-death-3",
+      "name": "Pickup Gacha: Hidden Inventory / Premature Death 3",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-06-03",
+        "end": "2024-07-03"
+      },
+      "global": null,
+      "characters": [
+        "the-sorcerer-killer-toji-fushiguro"
+      ],
+      "memories": [],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Hidden_Inventory_%2F_Premature_Death_3",
+        "updated": "2024-10-19T17:25:02Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-keep-hammering-at-them",
+      "name": "Pickup Gacha: Keep Hammering At Them",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-10-22",
+        "end": "2024-11-07"
+      },
+      "global": null,
+      "characters": [
+        "keep-hammering-at-them-nobara-kugisaki"
+      ],
+      "memories": [
+        "Cursed Spirit Beach"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Keep_Hammering_At_Them",
+        "updated": "2024-10-22T12:35:41Z"
+      }
+    },
+    {
+      "id": "ijichis-report-kyushu-records",
+      "name": "Ijichi's Report: Kyushu Records",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-10-31",
+        "end": "2024-11-20"
+      },
+      "global": null,
+      "characters": [
+        "bond-of-friendship-megumi-fushiguro"
+      ],
+      "memories": [],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Ijichi's_Report%2C_Kyushu_Records",
+        "updated": "2024-10-31T09:33:13Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-hollow-echnique-purple-hearts-resolve",
+      "name": "Pickup Gacha: Hollow echnique: Purple, Heart's Resolve",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-11-06",
+        "end": "2024-11-20"
+      },
+      "global": null,
+      "characters": [
+        "hearts-resolve-saki-rindo"
+      ],
+      "memories": [
+        "City Shop And Eat Tour",
+        "Your Path Forward"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Hollow_Technique%3A_Purple%2C_Heart's_Resolve",
+        "updated": "2024-11-06T09:08:06Z"
+      }
+    },
+    {
+      "id": "featured-gacha-a-homesick-horizon",
+      "name": "Featured Gacha: A Homesick Horizon",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2023-11-21",
+        "end": "2023-12-05"
+      },
+      "global": {
+        "start": "2024-11-07",
+        "end": "2024-11-21"
+      },
+      "characters": [],
+      "memories": [
+        "I Bought Local Souvenirs"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_A_Homesick_Horizon",
+        "updated": "2024-11-06T13:29:00Z"
+      }
+    },
+    {
+      "id": "pickup-gacha-small-fry-and-reverse-retribution",
+      "name": "Pickup Gacha: Small Fry and Reverse Retribution",
+      "type": "Limited-Time (Not-Paid)",
+      "jp": {
+        "start": "2023-11-30",
+        "end": "2023-12-09"
+      },
+      "global": {
+        "start": "2024-11-12",
+        "end": "2024-11-21"
+      },
+      "characters": [],
+      "memories": [
+        "What-if Youth"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Pickup_Gacha%3A_Small_Fry_and_Reverse_Retribution",
+        "updated": "2024-11-11T12:05:35Z"
+      }
+    },
+    {
+      "id": "featured-gacha-overtime-work-sword-option",
+      "name": "Featured Gacha: Overtime Work / Sword Option",
+      "type": "Limited-Time (Not Paid)",
+      "jp": {
+        "start": "2024-11-12",
+        "end": "2024-11-20"
+      },
+      "global": null,
+      "characters": [
+        "sword-option-ultimate-mechamaru"
+      ],
+      "memories": [
+        "Reunited After The Rain",
+        "Noritoshi Kamo's Archery Lessons"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_Overtime_Work_%2F_Sword_Option",
+        "updated": "2024-11-11T18:25:23Z"
+      }
+    },
+    {
+      "id": "featured-gacha-where-shadows-fall",
+      "name": "Featured Gacha: Where Shadows Fall",
+      "type": "Limited-Time (Not-Paid)",
+      "jp": {
+        "start": "2023-12-28",
+        "end": "2024-01-10"
+      },
+      "global": {
+        "start": "2024-11-15",
+        "end": "2024-11-28"
+      },
+      "characters": [
+        "incomplete-domain-megumi-fushiguro"
+      ],
+      "memories": [
+        "Respite For Adults"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_Where_Shadows_Fall",
+        "updated": "2024-11-14T13:17:20Z"
+      }
+    },
+    {
+      "id": "featured-gacha-jujutsu-kaisen-0-part-1",
+      "name": "Featured Gacha: Jujutsu Kaisen 0 - Part 1",
+      "type": "Limited-Time (Not-Paid)",
+      "jp": {
+        "start": "2023-12-06",
+        "end": "2023-12-27"
+      },
+      "global": null,
+      "characters": [
+        "take-the-shortest-way-panda",
+        "the-baton-of-counterattack-toge-inumaki"
+      ],
+      "memories": [],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_Jujutsu_Kaisen_0_1",
+        "updated": "2024-11-24T21:32:24Z"
+      }
+    },
+    {
+      "id": "featured-gacha-jujutsu-kaisen-0-part-2",
+      "name": "Featured Gacha: Jujutsu Kaisen 0 - Part 2",
+      "type": "Limited-Time (Not-Paid)",
+      "jp": {
+        "start": "2023-12-15",
+        "end": "2024-01-03"
+      },
+      "global": null,
+      "characters": [
+        "lend-me-your-power-yuta-okkotsu"
+      ],
+      "memories": [
+        "Winter, A New Beginning"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_Jujutsu_Kaisen_0_2",
+        "updated": "2024-11-24T21:35:36Z"
+      }
+    },
+    {
+      "id": "featured-gacha-jujutsu-kaisen-0-part-3",
+      "name": "Featured Gacha: Jujutsu Kaisen 0 - Part 3",
+      "type": "Limited-Time (Not-Paid)",
+      "jp": {
+        "start": "2023-12-18",
+        "end": "2024-01-03"
+      },
+      "global": null,
+      "characters": [],
+      "memories": [
+        "\"You're Late\"",
+        "The Strongest Duo"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_Jujutsu_Kaisen_0_3",
+        "updated": "2024-11-24T21:39:49Z"
+      }
+    },
+    {
+      "id": "featured-gacha-with-that-will-in-mind",
+      "name": "Featured Gacha: With That Will In Mind",
+      "type": "Limited Time (Non-Paid)",
+      "jp": {
+        "start": "2024-11-18",
+        "end": "2024-12-03"
+      },
+      "global": null,
+      "characters": [
+        "with-that-will-in-mind-kaito-yuki"
+      ],
+      "memories": [],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_With_That_Will_In_Mind",
+        "updated": "2024-11-30T18:43:42Z"
+      }
+    },
+    {
+      "id": "featured-gacha-the-magnificent-haunted-ship-part-1",
+      "name": "Featured Gacha: The Magnificent Haunted Ship - Part 1",
+      "type": "Limited Time (Non-Paid)",
+      "jp": {
+        "start": "2024-11-21",
+        "end": "2024-12-19"
+      },
+      "global": null,
+      "characters": [
+        "zone-yuji-itadori"
+      ],
+      "memories": [
+        "What Was Inherited"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_The_Magnificent_Haunted_Ship_-_Part_1",
+        "updated": "2024-11-30T18:45:36Z"
+      }
+    },
+    {
+      "id": "featured-gacha-the-magnificent-haunted-ship-part-2",
+      "name": "Featured Gacha: The Magnificent Haunted Ship - Part 2",
+      "type": "Limited Time (Non-Paid)",
+      "jp": {
+        "start": "2024-11-29",
+        "end": "2024-12-19"
+      },
+      "global": null,
+      "characters": [
+        "within-infinity-satoru-gojo"
+      ],
+      "memories": [
+        "Detainee Party"
+      ],
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Featured_Gacha%3A_The_Magnificent_Haunted_Ship_-_Part_2",
+        "updated": "2024-11-30T18:47:00Z"
+      }
+    }
+  ]
+}

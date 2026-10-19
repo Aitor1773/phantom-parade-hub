@@ -1,0 +1,197 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/cinzel';
+
+/* ─── Design system "Fuga" ─────────────────────────────────────────
+   Inspirado en el Fuga de Sukuna: ceniza casi negra, brasas naranjas,
+   llama dorada y rojo carmesí. Los tokens viven aquí y Tailwind los
+   expone como utilidades (bg-ember, text-flame, border-line…). */
+@theme {
+  --color-ash: #0b0605;
+  --color-coal: #160c09;
+  --color-cinder: #22130e;
+  --color-char: #2d1a12;
+  --color-line: #3a1f16;
+  --color-line-strong: #5a3121;
+
+  --color-ember: #ff5a1f;
+  --color-ember-deep: #d9420f;
+  --color-flame: #ffb627;
+  --color-spark: #ffe27a;
+  --color-crimson: #c8102e;
+  --color-blood: #7a0f1c;
+
+  --color-bone: #f5e9e0;
+  --color-dust: #b89a8a;
+  --color-smoke: #7d6458;
+
+  /* Rarezas del juego */
+  --color-rarity-ssr: #ffb627;
+  --color-rarity-sr: #c77dff;
+  --color-rarity-r: #5fa8ff;
+
+  --font-sans: 'Inter Variable', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', system-ui, sans-serif;
+  --font-display: 'Cinzel Variable', 'Noto Serif JP', 'Noto Serif KR', 'Noto Serif SC', serif;
+
+  --radius-card: 14px;
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.25, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-flicker: flicker 3.2s ease-in-out infinite;
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    45% { opacity: 0.82; }
+    55% { opacity: 0.95; }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --nav-h: 64px;
+  }
+
+  html {
+    background: var(--color-ash);
+    color: var(--color-bone);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    scroll-padding-top: calc(var(--nav-h) + 16px);
+  }
+
+  body {
+    min-height: 100dvh;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgb(255 90 31 / 0.10), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgb(200 16 46 / 0.08), transparent 60%),
+      var(--color-ash);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgb(255 90 31 / 0.35);
+    color: var(--color-bone);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-spark);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+
+  /* Los idiomas CJK no tienen Cinzel: usar serif propia y sin espaciado extra */
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) h3,
+  :lang(ko) h1, :lang(ko) h2, :lang(ko) h3,
+  :lang(zh-Hans) h1, :lang(zh-Hans) h2, :lang(zh-Hans) h3 {
+    letter-spacing: 0;
+  }
+}
+
+@layer components {
+  /* Botones (las utilidades de Tailwind en el HTML pueden sobrescribir tamaños) */
+  .btn, .btn-primary, .btn-secondary, .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-2.5 text-sm font-semibold transition duration-200 select-none;
+    transition-timing-function: var(--ease-snap);
+  }
+  :is(.btn, .btn-primary, .btn-secondary, .btn-ghost):active { transform: scale(0.97); }
+  .btn-primary {
+    @apply text-ash;
+    background: linear-gradient(135deg, var(--color-ember) 0%, var(--color-flame) 100%);
+    box-shadow: 0 0 0 1px rgb(255 182 39 / 0.25) inset, 0 8px 24px -10px rgb(255 90 31 / 0.7);
+  }
+  .btn-primary:hover { filter: brightness(1.08); box-shadow: 0 0 0 1px rgb(255 226 122 / 0.4) inset, 0 10px 30px -8px rgb(255 90 31 / 0.85); }
+  .btn-secondary { @apply border border-line bg-coal text-bone; }
+  .btn-secondary:hover { @apply border-line-strong bg-cinder; }
+  .btn-ghost { @apply text-dust; }
+  .btn-ghost:hover { @apply bg-cinder text-bone; }
+
+  /* Tarjetas */
+  .card, .card-hover {
+    @apply rounded-[var(--radius-card)] border border-line bg-coal/80;
+  }
+  .card-hover { @apply transition duration-300; }
+  .card-hover:hover {
+    @apply border-line-strong bg-cinder/80;
+    box-shadow: 0 0 0 1px rgb(255 90 31 / 0.15), 0 20px 40px -20px rgb(255 90 31 / 0.35);
+  }
+
+  /* Insignias */
+  .badge, [class^='badge-'], [class*=' badge-'] {
+    @apply inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-semibold tracking-wide uppercase;
+  }
+  .badge-ssr { @apply border-rarity-ssr/40 bg-rarity-ssr/10 text-rarity-ssr; }
+  .badge-sr { @apply border-rarity-sr/40 bg-rarity-sr/10 text-rarity-sr; }
+  .badge-r { @apply border-rarity-r/40 bg-rarity-r/10 text-rarity-r; }
+  .badge-limited { @apply border-crimson/50 bg-crimson/15 text-[#ff6b7f]; }
+  .badge-global { @apply border-ember/40 bg-ember/10 text-ember; }
+  .badge-jp { @apply border-line-strong bg-cinder text-dust; }
+  .badge-verified { @apply border-[#3fb27f]/40 bg-[#3fb27f]/10 text-[#5fd39b]; }
+  .badge-unverified { @apply border-flame/40 bg-flame/10 text-flame; }
+
+  /* Texto con degradado de fuego */
+  .text-fire {
+    background: linear-gradient(100deg, var(--color-spark) 0%, var(--color-flame) 35%, var(--color-ember) 70%, var(--color-crimson) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Corte diagonal decorativo (el "tajo" del Fuga) */
+  .slash {
+    position: relative;
+    isolation: isolate;
+  }
+  .slash::before {
+    content: '';
+    position: absolute;
+    inset: -20% -10%;
+    z-index: -1;
+    background: linear-gradient(115deg, transparent 46%, rgb(255 90 31 / 0.55) 49.6%, rgb(255 226 122 / 0.9) 50%, rgb(255 90 31 / 0.55) 50.4%, transparent 54%);
+    filter: blur(0.5px);
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-bold tracking-[0.2em] text-flame uppercase;
+  }
+}
+
+/* Deslizador de rango con estilo Fuga */
+.fuga-range {
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-cinder);
+  cursor: pointer;
+}
+.fuga-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-spark), var(--color-ember));
+  box-shadow: 0 0 0 3px rgb(255 90 31 / 0.25), 0 0 14px rgb(255 90 31 / 0.6);
+}
+.fuga-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-spark), var(--color-ember));
+  box-shadow: 0 0 0 3px rgb(255 90 31 / 0.25), 0 0 14px rgb(255 90 31 / 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

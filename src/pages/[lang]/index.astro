@@ -1,0 +1,111 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Embers from '@/components/Embers.astro';
+import Icon from '@/components/Icon.astro';
+import { ALL_LINKS, ACCOUNT_LINK } from '@/config/nav';
+import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+import type { IconName } from '@/components/icons';
+import type { UIKey } from '@/i18n/ui';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+
+// Resalta la última palabra del título (en CJK no hay espacios: se resalta entero)
+const title = t('home.title');
+const cut = title.lastIndexOf(' ');
+const [titleA, titleB] = cut > 0 ? [title.slice(0, cut), title.slice(cut + 1)] : ['', title];
+
+const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
+  { icon: 'check', title: 'home.trust.title', desc: 'home.trust.desc' },
+  { icon: 'globe', title: 'home.global.title', desc: 'home.global.desc' },
+  { icon: 'user', title: 'home.personal.title', desc: 'home.personal.desc' },
+];
+---
+
+<BaseLayout lang={lang} description={t('home.subtitle')}>
+  <!-- Hero -->
+  <section class="relative isolate overflow-hidden">
+    <Embers density={70} />
+    <!-- Tajo del Fuga -->
+    <div class="fuga-slash pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[2px] w-[160vw] -translate-x-1/2 -translate-y-1/2 -rotate-[18deg]" aria-hidden="true"></div>
+    <!-- 開 (Fuga) decorativo -->
+    <span class="pointer-events-none absolute top-1/2 right-[4%] -z-10 hidden -translate-y-1/2 font-display text-[clamp(8rem,16vw,15rem)] leading-none font-black text-crimson/[0.08] select-none lg:block" aria-hidden="true">開</span>
+
+    <div class="mx-auto flex min-h-[calc(92dvh-var(--nav-h))] max-w-7xl flex-col justify-center px-4 py-20 lg:px-6">
+      <p class="hero-in eyebrow flex items-center gap-2" style="--d:0">
+        <span class="h-px w-8 bg-gradient-to-r from-transparent to-flame"></span>
+        {t('home.eyebrow')}
+      </p>
+      <h1 class="hero-in mt-5 max-w-4xl text-[clamp(2.4rem,6.5vw,5.2rem)] leading-[1.02] font-black text-bone" style="--d:1">
+        {titleA} <span class="text-fire">{titleB}</span>
+      </h1>
+      <p class="hero-in mt-6 max-w-2xl text-base leading-relaxed text-dust sm:text-lg" style="--d:2">{t('home.subtitle')}</p>
+      <div class="hero-in mt-9 flex flex-wrap gap-3" style="--d:3">
+        <a href={localePath(lang, '/characters')} class="btn-primary px-6 py-3 text-[15px]">
+          {t('home.cta.primary')}
+          <Icon name="arrowRight" size={18} strokeWidth={2} />
+        </a>
+        <a href={localePath(lang, ACCOUNT_LINK.path)} class="btn-secondary px-6 py-3 text-[15px]">
+          <Icon name="user" size={18} />
+          {t('home.cta.secondary')}
+        </a>
+      </div>
+    </div>
+    <div class="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-ash" aria-hidden="true"></div>
+  </section>
+
+  <!-- Pilares -->
+  <section class="mx-auto max-w-7xl px-4 lg:px-6">
+    <div class="grid gap-4 md:grid-cols-3">
+      {PILLARS.map((p) => (
+        <div class="card p-6">
+          <span class="grid size-11 place-items-center rounded-xl border border-ember/30 bg-ember/10 text-ember">
+            <Icon name={p.icon} size={22} />
+          </span>
+          <h2 class="mt-5 text-lg font-bold text-bone">{t(p.title)}</h2>
+          <p class="mt-2 text-sm leading-relaxed text-dust">{t(p.desc)}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Secciones -->
+  <section class="mx-auto mt-24 max-w-7xl px-4 lg:px-6">
+    <h2 class="text-2xl font-bold text-bone sm:text-3xl">{t('home.sections')}</h2>
+    <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {ALL_LINKS.map((link) => (
+        <a href={localePath(lang, link.path)} class="card-hover group flex flex-col p-5">
+          <span class="flex items-center justify-between">
+            <span class="grid size-10 place-items-center rounded-lg border border-line bg-cinder text-ember transition group-hover:border-ember/50 group-hover:text-flame">
+              <Icon name={link.icon} size={20} />
+            </span>
+            <Icon name="arrowRight" size={16} class="text-smoke transition group-hover:translate-x-1 group-hover:text-ember" />
+          </span>
+          <span class="mt-4 text-[15px] font-semibold text-bone">{t(link.label)}</span>
+          <span class="mt-1 text-[13px] leading-snug text-dust">{t(link.desc)}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .fuga-slash {
+    background: linear-gradient(90deg, transparent 0%, rgb(200 16 46 / 0.5) 25%, var(--color-ember) 45%, var(--color-spark) 50%, var(--color-ember) 55%, rgb(200 16 46 / 0.5) 75%, transparent 100%);
+    box-shadow: 0 0 24px 4px rgb(255 90 31 / 0.45), 0 0 80px 20px rgb(200 16 46 / 0.25);
+    animation: slash-in 1.1s var(--ease-out-expo) 0.15s both;
+  }
+  @keyframes slash-in {
+    from { clip-path: inset(0 100% 0 0); opacity: 0; }
+    to { clip-path: inset(0 0 0 0); opacity: 0.9; }
+  }
+  .hero-in {
+    animation: hero-in 0.9s var(--ease-out-expo) both;
+    animation-delay: calc(0.35s + var(--d) * 0.09s);
+  }
+  @keyframes hero-in {
+    from { opacity: 0; transform: translateY(14px); filter: blur(4px); }
+  }
+</style>

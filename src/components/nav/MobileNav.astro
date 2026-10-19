@@ -1,0 +1,163 @@
+---
+import Icon from '@/components/Icon.astro';
+import { NAV, ACCOUNT_LINK, type NavLink } from '@/config/nav';
+import { LOCALES, LOCALE_META, localePath, stripLocale, useT, type Locale } from '@/i18n/utils';
+import type { IconName } from '@/components/icons';
+import type { UIKey } from '@/i18n/ui';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+const current = stripLocale(Astro.url.pathname);
+const isActive = (path: string) => (path === '/' ? current === '/' : current === path || current.startsWith(path + '/'));
+
+const TABS: { path: string; label: UIKey; icon: IconName }[] = [
+  { path: '/', label: 'nav.home', icon: 'home' },
+  { path: '/characters', label: 'nav.characters', icon: 'users' },
+  { path: '/tier-list', label: 'nav.tierlist', icon: 'trophy' },
+  { path: '/banners', label: 'nav.banners', icon: 'calendar' },
+  { path: ACCOUNT_LINK.path, label: 'nav.account', icon: 'user' },
+];
+---
+
+<!-- Hoja de menú a pantalla completa -->
+<div
+  id="mobile-menu"
+  class="invisible fixed inset-0 z-40 overflow-y-auto bg-ash/98 pt-[var(--nav-h)] pb-24 opacity-0 backdrop-blur-xl transition duration-300 data-[open=true]:visible data-[open=true]:opacity-100 lg:hidden"
+  data-open="false"
+>
+  <div class="mx-auto max-w-lg px-4 py-4">
+    <!-- Servidor -->
+    <div class="server-toggle-m mb-5 grid grid-cols-2 gap-1 rounded-xl border border-line bg-coal p-1 text-xs font-bold tracking-wider" role="radiogroup" aria-label={t('nav.server')}>
+      <button type="button" role="radio" aria-checked="true" data-server="global" class="rounded-lg py-2.5 transition-colors">GLOBAL</button>
+      <button type="button" role="radio" aria-checked="false" data-server="jp" class="rounded-lg py-2.5 transition-colors">JP</button>
+    </div>
+
+    <ul class="space-y-2">
+      {NAV.map((entry, gi) =>
+        entry.items ? (
+          <li class="m-item overflow-hidden rounded-xl border border-line bg-coal/60" style={`--i:${gi}`}>
+            <details class="group" open={entry.items.some((i: NavLink) => isActive(i.path))}>
+              <summary class="flex cursor-pointer list-none items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-bone">
+                <Icon name={entry.icon} size={20} class="text-ember" />
+                {t(entry.label)}
+                <Icon name="chevronDown" size={16} class="ml-auto text-dust transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <ul class="border-t border-line px-2 py-2">
+                {entry.items.map((item: NavLink) => (
+                  <li>
+                    <a
+                      href={localePath(lang, item.path)}
+                      class:list={[
+                        'flex items-center gap-3 rounded-lg px-3 py-2.5',
+                        isActive(item.path) ? 'bg-ember/10 text-bone' : 'text-dust active:bg-cinder',
+                      ]}
+                    >
+                      <Icon name={item.icon} size={18} class="text-ember/80" />
+                      <span>
+                        <span class="block text-sm font-medium text-bone">{t(item.label)}</span>
+                        <span class="block text-xs text-smoke">{t(item.desc)}</span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
+        ) : (
+          <li class="m-item" style={`--i:${gi}`}>
+            <a
+              href={localePath(lang, entry.path)}
+              class="flex items-center gap-3 rounded-xl border border-line bg-coal/60 px-4 py-3.5 text-[15px] font-semibold text-bone"
+            >
+              <Icon name={entry.icon} size={20} class="text-ember" />
+              {t(entry.label)}
+            </a>
+          </li>
+        ),
+      )}
+    </ul>
+
+    <a href={localePath(lang, ACCOUNT_LINK.path)} class="btn-primary mt-4 w-full py-3">
+      <Icon name="user" size={18} strokeWidth={2} />
+      {t('nav.account')}
+    </a>
+
+    <!-- Idiomas -->
+    <p class="eyebrow mt-8 mb-3">{t('nav.language')}</p>
+    <div class="grid grid-cols-2 gap-2">
+      {LOCALES.map((l) => (
+        <a
+          href={localePath(l as Locale, current)}
+          lang={LOCALE_META[l as Locale].htmlLang}
+          class:list={[
+            'rounded-lg border px-3 py-2.5 text-sm',
+            l === lang ? 'border-ember/50 bg-ember/10 text-bone' : 'border-line text-dust',
+          ]}
+        >
+          {LOCALE_META[l as Locale].label}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Barra inferior -->
+<nav
+  class="fixed inset-x-0 bottom-0 z-50 border-t border-line bg-ash/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden"
+  aria-label="Quick"
+>
+  <ul class="mx-auto grid max-w-lg grid-cols-5">
+    {TABS.map((tab) => (
+      <li>
+        <a
+          href={localePath(lang, tab.path)}
+          class:list={[
+            'relative flex flex-col items-center gap-1 py-2.5 text-[10px] font-medium transition-colors',
+            isActive(tab.path) ? 'text-ember' : 'text-smoke active:text-dust',
+          ]}
+          aria-current={isActive(tab.path) ? 'page' : undefined}
+        >
+          {isActive(tab.path) && <span class="absolute top-0 h-0.5 w-8 rounded-full bg-gradient-to-r from-ember to-flame"></span>}
+          <Icon name={tab.icon} size={22} />
+          <span class="max-w-full truncate px-1">{t(tab.label)}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  #mobile-menu .m-item {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s var(--ease-out-expo), transform 0.4s var(--ease-out-expo);
+    transition-delay: calc(var(--i) * 40ms);
+  }
+  #mobile-menu[data-open='true'] .m-item {
+    opacity: 1;
+    transform: none;
+  }
+  .server-toggle-m button[aria-checked='true'] {
+    background: linear-gradient(135deg, var(--color-ember), var(--color-ember-deep));
+    color: var(--color-ash);
+  }
+  .server-toggle-m button[aria-checked='false'] { color: var(--color-dust); }
+  summary::-webkit-details-marker { display: none; }
+</style>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu')!;
+  const setOpen = (open: boolean) => {
+    menu.dataset.open = String(open);
+    btn?.setAttribute('aria-expanded', String(open));
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+  };
+  btn?.addEventListener('click', () => setOpen(menu.dataset.open !== 'true'));
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false));
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => e.matches && setOpen(false));
+</script>

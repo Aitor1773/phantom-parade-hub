@@ -1,0 +1,8858 @@
+{
+  "kind": "characters",
+  "generatedAt": "2026-10-19T16:41:24.399Z",
+  "sources": [
+    "wiki"
+  ],
+  "summary": {
+    "verified": 0,
+    "conflict": 0,
+    "single": 884
+  },
+  "items": [
+    {
+      "id": "02-second-domain-expansion-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "0.2-Second Domain Expansion"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-12-26"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 2334
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-bad-match-nobara-kugisaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nobara Kugisaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Bad Match"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-02-29"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 5
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 50
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-clever-bullet-mai-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mai Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Clever Bullet"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-life-entrusted-to-me-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Life Entrusted to Me"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-01-09"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "aerial-reconnaissance-momo-nishimiya",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Momo Nishimiya"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Aerial Reconnaissance"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "are-you-satisfied-with-that-aoi-todo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Aoi Todo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Are you satisfied with that?"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ariadnes-thread-educator-masamichi-yaga",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Masamichi Yaga"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ariadne's Thread Educator"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "awakening-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Awakening"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-05-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "background-support-kiyotaka-ijichi",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kiyotaka Ijichi"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Background Support"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1338
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "battle-of-firepower-ryomen-sukuna",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ryomen Sukuna"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Battle of firepower"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-11-28"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blast-from-the-past-aoi-todo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Aoi Todo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Blast From The Past"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blood-borne-resolve-noritoshi-kamo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Noritoshi Kamo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Blood Borne Resolve"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-02-20"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blood-of-the-big-three-families-noritoshi-kamo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Noritoshi Kamo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Blood of the Big Three Families"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bond-of-friendship-megumi-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Megumi Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Bond of Friendship"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-10-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "burning-passion-yu-haibara",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yu Haibara"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Burning Passion"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-08-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chain-mark-full-throttle-eiji-urushi",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Eiji Urushi"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Chain Mark: Full Throttle"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-04-14"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cold-light-of-dusk-atsuya-kusakabe",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Atsuya Kusakabe"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cold Light of Dusk"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-10-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1460
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "crafty-rock-yoshinobu-gakuganji",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yoshinobu Gakuganji"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Crafty Rock"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-07-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "crushed-with-speed-naobito-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Naobito Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Crushed With Speed"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-08-29"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-corpse-battle-masamichi-yaga",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Masamichi Yaga"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Corpse Battle"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-07-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-energy-catastrophe-saki-rindo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Saki Rindo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Energy Catastrophe"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-energy-flashes-black-yuuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Energy Flashes Black"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-energy-melody-yoshinobu-gakuganji",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yoshinobu Gakuganji"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Energy Melody"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-07-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 5
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-power-of-words-toge-inumaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toge Inumaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Power of Words"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-technique-boost-kaito-yuki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kaito Yuki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Technique Boost"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dance-of-the-beautiful-blades-mei-mei",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mei Mei"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Dance of the Beautiful Blades"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-09-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "delayed-quota-miguel",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Miguel"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Delayed Quota"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-12-13"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "determined-counter-kasumi-miwa",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kasumi Miwa"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Determined Counter"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dont-look-down-on-me-momo-nishimiya",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Momo Nishimiya"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Don't Look Down On Me"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-02-20"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dont-underestimate-a-puppet-panda",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Panda"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Don't Underestimate A Puppet"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "early-morning-departure-maki-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maki Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Early Morning Departure"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-03-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "effective-range-mai-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mai Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Effective Range"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-07-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Megumi Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Enjoying The Cool Summer Breeze"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-06-01"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1655
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kento Nanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ex-Office Worker Turned Jujutsu Sorcerer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "executioner-yuta-okkotsu",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuta Okkotsu"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Executioner"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-03-27"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "first-grade-sorcerers-skill-kento-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kento Nanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "First-Grade Sorcerer's Skill"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-08-20"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fulfilling-his-duty-as-the-older-brother-choso",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Choso"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Fulfilling His Duty as the Older Brother"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-07-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 5
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fwoo-hyoi-shoko-ieiri",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Shoko Ieiri"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"Fwoo Hyoi\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-05-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "genuine-jujutsu-ryomen-sukuna",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ryomen Sukuna"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Genuine Jujutsu"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-12-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "girl-of-steel-nobara-kugisaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nobara Kugisaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Girl Of Steel"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hearts-resolve-saki-rindo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Saki Rindo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Heart's Resolve"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-07-16"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hollow-purple-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Hollow Purple"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-01-29"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "incomplete-domain-megumi-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Megumi Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Incomplete Domain"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-12-28"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "indomitable-auspicious-beasts-takuma-ino",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Takuma Ino"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Indomitable Auspicious Beasts"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-08-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 75
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "infuse-your-cursed-energy-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Infuse Your Cursed Energy"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-04-12"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inherited-cursed-technique-megumi-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Megumi Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Inherited Cursed Technique"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "innate-talent-maki-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maki Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Innate Talent"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inspiration-from-death-mahito",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mahito"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Inspiration From “Death”"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-04-12"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1876
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ive-seen-it-all-kokichi-muta",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kokichi Muta"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "I've Seen It All"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-01-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1069
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "just-bring-it-saki-rindo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Saki Rindo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Just Bring It"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "keep-hammering-at-them-nobara-kugisaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nobara Kugisaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Keep Hammering At Them"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-10-22"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lend-me-your-power-yuta-okkotsu",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuta Okkotsu"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Lend Me Your Power"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-12-15"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "life-saver-shoko-ieiri",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Shoko Ieiri"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Life Saver"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-02-28"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "longsword-battle-maki-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maki Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Longsword Battle"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-08-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "maverick-outcast-maki-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maki Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maverick Outcast"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "maximum-cursed-energy-output-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maximum Cursed Energy Output"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "melting-sweet-summer-treats-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Melting Sweet Summer Treats"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-05-25"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "meteor-of-fierceness-jogo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Jogo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Meteor of Fierceness"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-09-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1946
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mode-albatross-ultimate-mechamaru",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ultimate Mechamaru"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mode: Albatross"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "need-some-help-panda",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Panda"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Need Some Help?"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-04-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "night-lurking-sorcerer-toge-inumaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toge Inumaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Night-Lurking Sorcerer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-02-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "night-of-dancing-crows-mei-mei",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mei Mei"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Night Of Dancing Crows"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-03-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nimble-body-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nimble Body"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-01-11"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "no-conceit-takuma-ino",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Takuma Ino"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "No Conceit"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-04-28"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "panda-is-not-a-panda-panda",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Panda"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Panda Is Not A Panda"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pick-up-after-hard-work-kiyotaka-ijichi",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kiyotaka Ijichi"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Pick Up After Hard Work"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-06-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pivotal-guardian-masamichi-yaga",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Masamichi Yaga"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Pivotal Guardian"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-03-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pride-of-a-cursed-spirit-jogo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Jogo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Pride Of A Cursed Spirit"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "promising-new-student-kento-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kento Nanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Promising New Student"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-06-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "queen-of-curses-yuta-okkotsu",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuta Okkotsu"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Queen of Curses"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-10-18"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rabbits-disruption-megumi-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Megumi Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Rabbit's Disruption"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-09-12"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ratio-technique-kento-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kento Nanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ratio Technique"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reckless-grade-1-aoi-todo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Aoi Todo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Reckless Grade 1"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resolved-cursed-speech-toge-inumaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toge Inumaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Resolved Cursed Speech"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reverse-cursed-technique-shoko-ieiri",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Shoko Ieiri"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Reverse Cursed Technique"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 5
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "seance-toji-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toji Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Seance"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-08-19"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shatter-to-pieces-toge-inumaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toge Inumaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Shatter To Pieces"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-09-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "silent-suppression-kento-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kento Nanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Silent Suppression"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-02-27"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "smash-it-into-the-summer-sky-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Smash It Into the Summer Sky"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-05-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sprinting-kasumi-miwa",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kasumi Miwa"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Sprinting"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-01-23"
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "step-back-third-rate-uraume",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Uraume"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Step back, third-rate"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-01-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "striking-eternal-summer-nobara-kugisaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nobara Kugisaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Striking Eternal Summer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-06-01"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sukunas-vessel-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Sukuna’s Vessel"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 978
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sword-option-ultimate-mechamaru",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ultimate Mechamaru"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Sword Option"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-03-22"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1069
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "take-the-shortest-way-panda",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Panda"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Take The Shortest Way"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-12-06"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "team-up-if-they-are-weak-maki-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Maki Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Team Up If They Are Weak"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-12-06"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-baton-of-counterattack-toge-inumaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toge Inumaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Baton Of Counterattack"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-12-06"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-final-bullet-mai-zenin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mai Zen'in"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Final Bullet"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-09-20"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-golden-age-of-jujutsu-noritoshi-kamo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Noritoshi Kamo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Golden Age of Jujutsu"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-04-24"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-resolve-of-being-a-sorcerer-kaito-yuuki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kaito Yuuki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Resolve Of Being A Sorcerer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-sorcerer-killer-toji-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Toji Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Sorcerer Killer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-06-03"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-strongest-blue-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Strongest Blue"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-05-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-strongest-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Strongest"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 973
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-thrill-of-the-fight-hanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Hanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Thrill Of The Fight"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "this-is-justice-suguru-geto",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Suguru Geto"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "This Is Justice"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-12-18"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "to-protect-non-sorcerers-suguru-geto",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Suguru Geto"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "To Protect Non-Sorcerers"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-05-31"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "to-stay-true-to-myself-nobara-kugisaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nobara Kugisaki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "To Stay True To Myself"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 10
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tool-manipulation-momo-nishimiya",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Momo Nishimiya"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Tool Manipulation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-02-20"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "unbridled-soul-mahito",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mahito"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Unbridled Soul"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-12-04"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1752
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "unfair-salvation-megumi-fushiguro",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Megumi Fushiguro"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Unfair Salvation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "green"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "unlimited-shikigami-dagon",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Dagon"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Unlimited Shikigami"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-07-24"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1946
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "value-of-life-junpei-yoshino",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Junpei Yoshino"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Value Of Life"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 40
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ward-off-with-sharp-blade-atsuya-kusakabe",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Atsuya Kusakabe"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ward off with Sharp Blade"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2025-09-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "what-lies-at-the-end-suguru-geto",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Suguru Geto"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "What Lies at the End"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2026-09-11"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "with-takada-chan-aoi-todo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Aoi Todo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "With Takada-Chan"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-04-01"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "with-that-will-in-mind-kaito-yuki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kaito Yuki"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "With That Will In Mind"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-11-17"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1168
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "within-infinity-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Within Infinity"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "red"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-11-29"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "working-overtime-kento-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kento Nanami"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Working Overtime"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-04-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 15
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "young-fish-and-reverse-punishment-junpei-yoshino",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Junpei Yoshino"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Young Fish And Reverse Punishment"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2023-11-30"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "zanshin-kasumi-miwa",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kasumi Miwa"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Zanshin"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "blue"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-06-28"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1363
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 20
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "zone-yuji-itadori",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yuji Itadori"
+            }
+          ]
+        },
+        "epithet": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Zone"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        },
+        "element": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "yellow"
+            }
+          ]
+        },
+        "releaseDateJP": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2024-11-21"
+            }
+          ]
+        },
+        "specialGauge": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 1558
+            }
+          ]
+        },
+        "skills.s1.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 30
+            }
+          ]
+        },
+        "skills.s2.cost": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": 25
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

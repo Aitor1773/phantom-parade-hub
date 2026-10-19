@@ -1,0 +1,115 @@
+---
+// Catálogo vivo del design system Fuga (uso interno, no indexado).
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import { ICONS, type IconName } from '@/components/icons';
+import { staticLocalePaths, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+const lang = Astro.params.lang as Locale;
+
+const COLORS = [
+  { group: 'Superficies', items: [['ash', '#0B0605'], ['coal', '#160C09'], ['cinder', '#22130E'], ['char', '#2D1A12'], ['line', '#3A1F16'], ['line-strong', '#5A3121']] },
+  { group: 'Fuego', items: [['ember', '#FF5A1F'], ['ember-deep', '#D9420F'], ['flame', '#FFB627'], ['spark', '#FFE27A'], ['crimson', '#C8102E'], ['blood', '#7A0F1C']] },
+  { group: 'Texto', items: [['bone', '#F5E9E0'], ['dust', '#B89A8A'], ['smoke', '#7D6458']] },
+  { group: 'Rareza', items: [['rarity-ssr', '#FFB627'], ['rarity-sr', '#C77DFF'], ['rarity-r', '#5FA8FF']] },
+];
+---
+
+<BaseLayout lang={lang} title="Design system">
+  <meta name="robots" content="noindex" slot="head" />
+  <div class="mx-auto max-w-7xl space-y-16 px-4 py-16 lg:px-6">
+    <header>
+      <p class="eyebrow">Design system</p>
+      <h1 class="mt-3 text-5xl font-black"><span class="text-fire">Fuga</span></h1>
+      <p class="mt-3 max-w-2xl text-dust">Tokens, tipografía y componentes base. Todo sale de <code class="rounded bg-cinder px-1.5 py-0.5 text-flame">src/styles/global.css</code>.</p>
+    </header>
+
+    <section>
+      <h2 class="mb-6 text-2xl font-bold">Color</h2>
+      <div class="space-y-8">
+        {COLORS.map((g) => (
+          <div>
+            <p class="eyebrow mb-3">{g.group}</p>
+            <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+              {g.items.map(([name, hex]) => (
+                <div class="card overflow-hidden">
+                  <div class="h-20 border-b border-line" style={`background:${hex}`}></div>
+                  <div class="p-3">
+                    <p class="text-sm font-semibold">{name}</p>
+                    <p class="font-mono text-xs text-smoke">{hex}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-6 text-2xl font-bold">Tipografía</h2>
+      <div class="card space-y-5 p-6">
+        <p class="font-display text-5xl font-black">Ryomen Sukuna <span class="text-fire">開</span></p>
+        <p class="font-display text-3xl font-bold">Display · Cinzel</p>
+        <p class="text-xl font-semibold">Interfaz · Inter — títulos de tarjetas y botones</p>
+        <p class="max-w-2xl text-dust">Texto de cuerpo en Inter. Para japonés, coreano y chino se usa la fuente Noto del sistema: 呪術廻戦 ファントムパレード · 주술회전 · 咒术回战</p>
+        <p class="eyebrow">Eyebrow · Etiqueta superior</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-6 text-2xl font-bold">Botones</h2>
+      <div class="card flex flex-wrap items-center gap-3 p-6">
+        <button class="btn-primary">Primario <Icon name="arrowRight" size={16} strokeWidth={2} /></button>
+        <button class="btn-secondary"><Icon name="user" size={16} /> Secundario</button>
+        <button class="btn-ghost">Fantasma</button>
+        <button class="btn-secondary size-10 p-0" aria-label="Buscar"><Icon name="search" size={18} /></button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-6 text-2xl font-bold">Insignias</h2>
+      <div class="card flex flex-wrap gap-2 p-6">
+        <span class="badge-ssr">SSR</span>
+        <span class="badge-sr">SR</span>
+        <span class="badge-r">R</span>
+        <span class="badge-limited">Limitado</span>
+        <span class="badge-global">Global</span>
+        <span class="badge-jp">JP</span>
+        <span class="badge-verified"><Icon name="check" size={12} strokeWidth={2.5} /> Verificado</span>
+        <span class="badge-unverified">Sin verificar</span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-6 text-2xl font-bold">Tarjetas</h2>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="card p-6">
+          <p class="font-semibold">card</p>
+          <p class="mt-1 text-sm text-dust">Contenedor estático.</p>
+        </div>
+        <a href="#" class="card-hover p-6">
+          <p class="font-semibold">card-hover</p>
+          <p class="mt-1 text-sm text-dust">Pasa el ratón: brillo de brasa.</p>
+        </a>
+        <div class="card slash overflow-hidden p-6">
+          <p class="font-semibold">slash</p>
+          <p class="mt-1 text-sm text-dust">El tajo diagonal del Fuga como recurso gráfico.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-6 text-2xl font-bold">Iconos</h2>
+      <div class="card grid grid-cols-4 gap-2 p-6 sm:grid-cols-8 lg:grid-cols-12">
+        {(Object.keys(ICONS) as IconName[]).map((name) => (
+          <div class="flex flex-col items-center gap-2 rounded-lg p-3 text-dust hover:bg-cinder hover:text-ember" title={name}>
+            <Icon name={name} size={22} />
+            <span class="w-full truncate text-center text-[10px] text-smoke">{name}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>

@@ -1,0 +1,64 @@
+{
+  "_comment": "Banners del servidor Global curados a mano. Cada entrada DEBE llevar 'source' (URL oficial: nota de prensa, X @JJKPP_GL, aviso del juego). Fechas en ISO con zona horaria (el juego usa UTC+9). 'characters' usa los id de la web (ver docs/IMAGENES.md); 'epithetsGlobal' guarda el nombre oficial en Global cuando difiere del de la wiki.",
+  "banners": [
+    {
+      "id": "gl-2025-12-anni-sukuna",
+      "name": "Anniversary Featured Gacha: Ryomen Sukuna",
+      "kind": "gacha",
+      "start": "2025-12-24T15:00:00+09:00",
+      "end": "2026-01-22T14:59:00+09:00",
+      "characters": ["battle-of-firepower-ryomen-sukuna"],
+      "epithetsGlobal": { "battle-of-firepower-ryomen-sukuna": "Firepower Battle" },
+      "limited": true,
+      "source": { "label": "Nota de prensa oficial (Bilibili, 24/12/2025)", "url": "https://www.gamespress.com/Jujutsu-Kaisen-Phantom-Parade-Global-Edition-Anniversary-Celebration-T" }
+    },
+    {
+      "id": "gl-2026-01-anni-mahito",
+      "name": "Anniversary Featured Gacha: Mahito",
+      "kind": "gacha",
+      "start": "2026-01-04T15:00:00+09:00",
+      "end": "2026-01-22T14:59:00+09:00",
+      "characters": ["unbridled-soul-mahito"],
+      "epithetsGlobal": { "unbridled-soul-mahito": "Bare Soul" },
+      "limited": true,
+      "source": { "label": "Nota de prensa oficial (Bilibili, 24/12/2025)", "url": "https://www.gamespress.com/Jujutsu-Kaisen-Phantom-Parade-Global-Edition-Anniversary-Celebration-T" }
+    },
+    {
+      "id": "gl-2026-07-15anni-yuji",
+      "name": "1.5th Anniversary Featured Gacha: Yuji Itadori",
+      "kind": "gacha",
+      "start": "2026-07-23T15:00:00+09:00",
+      "startApprox": true,
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": ["smash-it-into-the-summer-sky-yuji-itadori"],
+      "epithetsGlobal": { "smash-it-into-the-summer-sky-yuji-itadori": "Heaven-Piercing Strike" },
+      "limited": true,
+      "notes": "Empieza tras el mantenimiento del 23/07 (hora exacta no publicada).",
+      "source": { "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)", "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-" }
+    },
+    {
+      "id": "gl-2026-07-15anni-gojo",
+      "name": "1.5th Anniversary Featured Gacha: Satoru Gojo",
+      "kind": "gacha",
+      "start": "2026-07-31T15:00:00+09:00",
+      "startApprox": true,
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": ["melting-sweet-summer-treats-satoru-gojo"],
+      "epithetsGlobal": { "melting-sweet-summer-treats-satoru-gojo": "Savor the Melt" },
+      "limited": true,
+      "notes": "Hora de inicio no publicada.",
+      "source": { "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)", "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-" }
+    },
+    {
+      "id": "gl-2026-07-azure-pulse",
+      "name": "Story Event: Azure Pulse by the Shore",
+      "kind": "event",
+      "start": "2026-07-23T19:00:00+09:00",
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": [],
+      "memoriesGlobal": ["Okinawa Awaits", "The Lingering Heat of Youth"],
+      "notes": "Recompensas: memorias SSR limitadas gratuitas y 10 tickets del gacha de Yuji Itadori.",
+      "source": { "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)", "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-" }
+    }
+  ]
+}

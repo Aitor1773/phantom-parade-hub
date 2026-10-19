@@ -1,0 +1,61 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import MemoryBrowser, { type MemoryItem } from '@/components/memories/MemoryBrowser';
+import { MEMORIES, MEMORY_TAGS, illustSrc } from '@/data/memories';
+import { gameDict, useG, type GameKey } from '@/i18n/game';
+import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const g = useG(lang);
+
+const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+const items: MemoryItem[] = MEMORIES.map((m) => ({
+  id: m.id,
+  name: m.name,
+  rarity: m.rarity,
+  orientation: m.orientation,
+  availability: m.availability,
+  tags: m.tags,
+  date: m.releaseDateJP,
+  img: illustSrc(m, 640),
+  search: normalize(`${m.name} ${m.effects.map((e) => e.text).join(' ')}`),
+}));
+
+const present = <K extends keyof MemoryItem>(key: K, order: string[]) => order.filter((v) => items.some((i) => i[key] === v));
+const opt = (prefix: string, values: string[]) => values.map((v) => ({ value: v, label: prefix ? g(`${prefix}.${v}` as GameKey) : v }));
+
+const options = {
+  rarity: opt('', present('rarity', ['SSR', 'SR', 'R'])),
+  orientation: opt('or', present('orientation', ['taijutsu', 'jujutsu', 'mixed', 'balanced', 'hp'])),
+  tags: opt('tag', MEMORY_TAGS.filter((tag) => items.some((i) => i.tags.includes(tag)))),
+  availability: opt('av', present('availability', ['gacha', 'f2p', 'collab', 'bluray'])),
+};
+const tagLabels = Object.fromEntries(MEMORY_TAGS.map((tag) => [tag, g(`tag.${tag}` as GameKey)]));
+
+const labels = gameDict(lang, [
+  'mem.count', 'mem.search', 'mem.effect', 'mem.orientation', 'mem.noimage', 'db.rarity', 'db.availability',
+  'db.sort', 'db.sort.newest', 'db.sort.oldest', 'db.sort.name', 'db.sort.rarity', 'db.clear', 'db.empty', 'db.filters',
+] as const);
+---
+
+<BaseLayout lang={lang} title={g('mem.title')} description={t('nav.memories.desc')}>
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="eyebrow">{t('nav.database')}</p>
+        <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{g('mem.title')}</h1>
+        <p class="mt-3 max-w-xl text-dust">{t('nav.memories.desc')}</p>
+      </div>
+      <p class="flex max-w-sm items-start gap-2 rounded-lg border border-line bg-coal/70 px-3 py-2 text-xs text-smoke">
+        <Icon name="globe" size={14} class="mt-0.5 shrink-0 text-flame" />
+        {g('db.jpnote')}
+      </p>
+    </header>
+
+    <MemoryBrowser client:load items={items} basePath={localePath(lang, '/memories')} labels={labels} tagLabels={tagLabels} options={options} />
+  </div>
+</BaseLayout>

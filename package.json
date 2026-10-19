@@ -1,0 +1,37 @@
+{
+  "name": "jjk-phantom-web",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "data:fetch": "node scripts/data/fetch-wiki.mjs",
+    "data:compare": "node scripts/data/compare.mjs",
+    "images": "node scripts/images/import.mjs",
+    "images:fetch": "node scripts/images/fetch-jjkppdb.mjs",
+    "data:link": "node scripts/data/link-jjkppdb.mjs",
+    "data:codes": "node scripts/data/fetch-codes.mjs",
+    "data:banners": "node scripts/data/fetch-banners.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "^7.1.0",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/cinzel": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.11",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "typescript": "^6.0.3"
+  }
+}

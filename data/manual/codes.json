@@ -1,0 +1,4 @@
+{
+  "_comment": "Códigos probados en el juego (servidor Global). Tienen prioridad sobre lo que digan las webs. Formato: \"CODIGO\": { \"works\": true|false, \"tested\": \"AAAA-MM-DD\", \"reward\": \"opcional\", \"note\": \"opcional\" }. Después ejecuta: npm run data:codes",
+  "codes": {}
+}

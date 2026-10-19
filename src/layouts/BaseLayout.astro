@@ -1,0 +1,53 @@
+---
+import '@/styles/global.css';
+import TopNav from '@/components/nav/TopNav.astro';
+import MobileNav from '@/components/nav/MobileNav.astro';
+import CommandPalette from '@/components/nav/CommandPalette.astro';
+import Footer from '@/components/Footer.astro';
+import { SITE } from '@/config/site';
+import { LOCALES, LOCALE_META, localePath, stripLocale, type Locale } from '@/i18n/utils';
+
+interface Props {
+  lang: Locale;
+  title?: string;
+  description?: string;
+}
+
+const { lang, title, description = '' } = Astro.props;
+const pageTitle = title ? `${title} · ${SITE.name}` : SITE.name;
+const path = stripLocale(Astro.url.pathname);
+---
+
+<!doctype html>
+<html lang={LOCALE_META[lang].htmlLang} data-server="global">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0605" />
+    <title>{pageTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <slot name="head" />
+    {Astro.site && LOCALES.map((l) => (
+      <link rel="alternate" hreflang={LOCALE_META[l as Locale].htmlLang} href={new URL(localePath(l as Locale, path), Astro.site).href} />
+    ))}
+    {Astro.site && <link rel="alternate" hreflang="x-default" href={new URL(localePath('en', path), Astro.site).href} />}
+    <!-- Aplica el servidor guardado antes de pintar, para evitar parpadeo -->
+    <script is:inline>
+      try {
+        const s = localStorage.getItem('pp-server');
+        if (s === 'jp' || s === 'global') document.documentElement.dataset.server = s;
+      } catch {}
+    </script>
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:rounded-lg focus:bg-ember focus:px-3 focus:py-2 focus:text-ash">Skip to content</a>
+    <TopNav lang={lang} />
+    <MobileNav lang={lang} />
+    <CommandPalette lang={lang} />
+    <main id="main" class="flex-1 pt-[var(--nav-h)]">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

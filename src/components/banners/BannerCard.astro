@@ -1,0 +1,114 @@
+---
+// Tarjeta de banner (activos y próximos) o fila compacta (historial).
+import Icon from '@/components/Icon.astro';
+import { getCharacter, thumb } from '@/data/characters';
+import { GLOBAL_LAG, globalConfirmed, globalEstimate, type Banner } from '@/data/banners';
+import { useG } from '@/i18n/game';
+import { LOCALE_META, localePath, type Locale } from '@/i18n/utils';
+
+interface Props {
+  banner: Banner;
+  lang: Locale;
+  compact?: boolean;
+}
+
+const { banner: b, lang, compact = false } = Astro.props;
+const g = useG(lang);
+const chars = b.characters.map(getCharacter).filter((c): c is NonNullable<typeof c> => !!c);
+// Fecha en horario del juego (UTC+9) para el HTML; el script la pasa a la zona del usuario
+const fmt = (iso: string) =>
+  new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'medium', timeStyle: b.approx ? undefined : 'short', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+const kindLabel = g(b.kind === 'gacha' ? 'bn.gacha' : b.kind === 'campaign' ? 'bn.campaign' : 'bn.event');
+
+// Solo para banners JP: llegada confirmada a Global o, si no, ventana estimada
+const isJP = b.id.startsWith('jp-');
+const confirmed = isJP ? globalConfirmed(b) : null;
+const estimate = isJP ? globalEstimate(b) : null;
+const estHelp = GLOBAL_LAG ? g('bn.est.help', { min: GLOBAL_LAG.min, max: GLOBAL_LAG.max }) : '';
+const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'medium', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+---
+
+{compact ? (
+  <li class="banner flex items-center gap-3 border-b border-line/60 py-2.5 last:border-0" data-banner data-kind={b.kind} data-start={b.start} data-end={b.end ?? ''}>
+    <span class:list={['shrink-0 rounded-md border px-1.5 py-0.5 text-[10px] font-bold tracking-wide uppercase', b.kind === 'gacha' ? 'border-ember/40 text-ember' : 'border-line text-smoke']}>{kindLabel}</span>
+    <span class="min-w-0 flex-1">
+      <span class="block truncate text-sm text-bone">{b.name}</span>
+      {confirmed && (
+        <span class="mt-0.5 block text-[11px] text-[#5fd39b]">✓ {g('bn.inglobal')} · <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time></span>
+      )}
+      {estimate && (
+        <span class="mt-0.5 block text-[11px] text-flame" title={estHelp}>
+          ≈ {g('bn.est.label')}: <time class="local-date" datetime={estimate.from} data-approx="1">{dayFmt(estimate.from)}</time> – <time class="local-date" datetime={estimate.to} data-approx="1">{dayFmt(estimate.to)}</time>
+          <span class="ml-1 rounded border border-dashed border-flame/60 px-1 text-[10px] font-bold uppercase">{g('bn.est')}</span>
+        </span>
+      )}
+    </span>
+    {chars.length > 0 && (
+      <span class="hidden shrink-0 -space-x-2 sm:flex">
+        {chars.slice(0, 3).map((c) => (
+          <a href={localePath(lang, `/characters/${c.id}`)} title={c.name} class="block size-7 overflow-hidden rounded-full border-2 border-ash bg-cinder">
+            {c.art && <img src={thumb(c.art, 320)} alt="" loading="lazy" class="size-full object-cover object-top" />}
+          </a>
+        ))}
+      </span>
+    )}
+    <time class="local-date shrink-0 text-xs text-smoke tabular-nums" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>
+  </li>
+) : (
+  <article class="banner group card overflow-hidden" data-banner data-kind={b.kind} data-start={b.start} data-end={b.end ?? ''}>
+    <div class="relative flex h-40 overflow-hidden bg-gradient-to-br from-blood/40 via-coal to-coal">
+      {chars.length > 0 ? (
+        chars.slice(0, 3).map((c) => (
+          <a href={localePath(lang, `/characters/${c.id}`)} class="relative min-w-0 flex-1 overflow-hidden" title={c.name}>
+            {c.art && <img src={thumb(c.art, 640)} alt={c.name} loading="lazy" class="h-full w-full object-cover object-[50%_20%] transition duration-500 group-hover:scale-105" />}
+          </a>
+        ))
+      ) : (
+        <div class="slash grid w-full place-items-center">
+          <Icon name={b.kind === 'gacha' ? 'sparkles' : 'calendar'} size={36} class="text-line-strong" />
+        </div>
+      )}
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-coal via-coal/10 to-transparent"></div>
+      <span class="status-badge absolute top-3 left-3 rounded-md border border-ember/50 bg-ash/80 px-2 py-1 text-[11px] font-bold text-ember backdrop-blur-sm empty:hidden"></span>
+      {b.limited && <span class="badge-limited absolute top-3 right-3 backdrop-blur-sm">{g('bn.limited')}</span>}
+    </div>
+    <div class="p-4">
+      <p class="text-[11px] font-bold tracking-[0.15em] text-smoke uppercase">{kindLabel}</p>
+      <h3 class="mt-1 font-sans text-base leading-snug font-semibold text-bone">{b.name}</h3>
+      {chars.length > 0 && (
+        <p class="mt-1 text-xs text-flame">
+          {chars.map((c) => `${b.epithetsGlobal?.[c.id] ?? c.epithet ?? ''} ${c.name}`.trim()).join(' · ')}
+        </p>
+      )}
+      <p class="mt-3 flex flex-wrap items-center gap-x-2 text-xs text-dust">
+        <time class="local-date" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>
+        {b.end && <span class="text-smoke">→</span>}
+        {b.end && <time class="local-date" datetime={b.end} data-approx={b.approx ? '1' : ''}>{fmt(b.end)}</time>}
+      </p>
+      <p class="countdown mt-2 text-sm font-semibold text-bone tabular-nums empty:hidden" data-l-now={g('bn.now')} data-l-ends={g('bn.ends')} data-l-starts={g('bn.starts')} data-l-ended={g('bn.ended')} data-l-days={g('bn.days')}></p>
+      {b.approx && <p class="mt-1 text-[11px] text-smoke">{g('bn.approx')}</p>}
+      {confirmed && (
+        <p class="mt-3 rounded-lg border border-[#3fb27f]/40 bg-[#3fb27f]/10 px-3 py-2 text-xs text-[#5fd39b]">
+          ✓ {g('bn.inglobal')} · <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time>
+        </p>
+      )}
+      {estimate && (
+        <div class="mt-3 rounded-lg border border-dashed border-flame/60 bg-flame/[0.06] px-3 py-2">
+          <p class="flex items-center justify-between gap-2 text-xs font-semibold text-flame">
+            <span>≈ {g('bn.est.label')}</span>
+            <span class="rounded border border-flame/60 px-1.5 py-0.5 text-[10px] font-bold tracking-wide uppercase">{g('bn.est')}</span>
+          </p>
+          <p class="mt-1 text-sm font-semibold text-bone">
+            <time class="local-date" datetime={estimate.from} data-approx="1">{dayFmt(estimate.from)}</time> – <time class="local-date" datetime={estimate.to} data-approx="1">{dayFmt(estimate.to)}</time>
+          </p>
+          <p class="mt-1 text-[11px] leading-snug text-smoke">{estHelp}</p>
+        </div>
+      )}
+      {b.notes && <p class="mt-2 text-xs text-smoke">{b.notes}</p>}
+      <a href={b.source.url} target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-[11px] text-smoke underline decoration-line-strong underline-offset-2 hover:text-dust">
+        {b.source.official ? g('bn.official') : b.source.label}
+        <Icon name="arrowRight" size={11} class="-rotate-45" />
+      </a>
+    </div>
+  </article>
+)}

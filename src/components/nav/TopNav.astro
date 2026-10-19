@@ -1,0 +1,379 @@
+---
+import Icon from '@/components/Icon.astro';
+import { NAV, ACCOUNT_LINK, type NavGroup } from '@/config/nav';
+import { SITE } from '@/config/site';
+import { LOCALES, LOCALE_META, localePath, stripLocale, useT, type Locale } from '@/i18n/utils';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = useT(lang);
+const current = stripLocale(Astro.url.pathname);
+const isActive = (path: string) => current === path || current.startsWith(path + '/');
+const groupActive = (g: NavGroup) => g.items.some((i) => isActive(i.path));
+const nameWords = SITE.name.split(' ');
+---
+
+<header
+  id="topnav"
+  class="fixed inset-x-0 top-0 z-50 h-[var(--nav-h)] border-b border-transparent transition-[background-color,border-color,backdrop-filter] duration-300 data-[scrolled=true]:border-line/80 data-[scrolled=true]:bg-ash/75 data-[scrolled=true]:backdrop-blur-xl data-[open=true]:border-line/80 data-[open=true]:bg-ash/95 data-[open=true]:backdrop-blur-xl"
+>
+  <!-- Línea de fuego: progreso de scroll -->
+  <div
+    id="nav-progress"
+    class="pointer-events-none absolute inset-x-0 -bottom-px h-px origin-left scale-x-0 bg-gradient-to-r from-crimson via-ember to-spark"
+    aria-hidden="true"
+  ></div>
+
+  <div class="mx-auto flex h-full max-w-7xl items-center gap-4 px-4 lg:px-6">
+    <!-- Logo -->
+    <a href={localePath(lang)} class="group/logo flex shrink-0 items-center gap-2.5" aria-label={SITE.name}>
+      <span class="relative grid size-9 place-items-center overflow-hidden rounded-lg border border-line-strong bg-coal">
+        <span class="absolute inset-0 bg-gradient-to-br from-ember/30 via-transparent to-crimson/30 opacity-0 transition-opacity duration-500 group-hover/logo:opacity-100"></span>
+        <Icon name="flame" size={20} class="relative animate-flicker text-ember" strokeWidth={2} />
+      </span>
+      <span class="hidden font-display text-[15px] font-bold tracking-wider text-bone sm:block">
+        {nameWords.slice(0, -1).join(' ')} <span class="text-fire">{nameWords.at(-1)}</span>
+      </span>
+    </a>
+
+    <!-- Navegación de escritorio -->
+    <nav class="relative ml-4 hidden h-full lg:block" aria-label="Main">
+      <ul id="nav-list" class="relative flex h-full items-center gap-1">
+        <li
+          id="nav-indicator"
+          class="pointer-events-none absolute top-1/2 h-9 -translate-y-1/2 rounded-lg bg-cinder opacity-0 transition-[left,width,opacity] duration-300 ease-[var(--ease-snap)]"
+          aria-hidden="true"
+        ></li>
+        {NAV.map((entry) =>
+          entry.items ? (
+            <li class="relative h-full">
+              <button
+                type="button"
+                class:list={[
+                  'nav-trigger relative z-10 flex h-full items-center gap-1.5 whitespace-nowrap px-3 text-sm font-medium transition-colors aria-expanded:text-bone',
+                  groupActive(entry) ? 'text-bone' : 'text-dust hover:text-bone',
+                ]}
+                aria-expanded="false"
+                aria-controls={`panel-${entry.id}`}
+                data-panel={entry.id}
+              >
+                {t(entry.label)}
+                <Icon name="chevronDown" size={14} class="chev transition-transform duration-300" />
+                {groupActive(entry) && <span class="absolute inset-x-3 bottom-0 h-0.5 rounded-full bg-ember"></span>}
+              </button>
+            </li>
+          ) : (
+            <li class="relative h-full">
+              <a
+                href={localePath(lang, entry.path)}
+                class:list={[
+                  'nav-link relative z-10 flex h-full items-center whitespace-nowrap px-3 text-sm font-medium transition-colors',
+                  isActive(entry.path) ? 'text-bone' : 'text-dust hover:text-bone',
+                ]}
+                aria-current={isActive(entry.path) ? 'page' : undefined}
+              >
+                {t(entry.label)}
+                {isActive(entry.path) && <span class="absolute inset-x-3 bottom-0 h-0.5 rounded-full bg-ember"></span>}
+              </a>
+            </li>
+          ),
+        )}
+      </ul>
+    </nav>
+
+    <div class="ml-auto flex items-center gap-2">
+      <!-- Buscador -->
+      <button
+        type="button"
+        data-open-search
+        class="hidden h-9 items-center gap-2 rounded-lg border border-line bg-coal/70 pr-1.5 pl-3 text-sm text-smoke transition hover:border-line-strong hover:text-dust md:flex"
+      >
+        <Icon name="search" size={16} />
+        <span class="hidden w-36 text-left xl:inline">{t('nav.search')}</span>
+        <kbd class="whitespace-nowrap rounded border border-line bg-cinder px-1.5 py-0.5 font-sans text-[10px] font-semibold text-dust">Ctrl K</kbd>
+      </button>
+      <button type="button" data-open-search class="btn-ghost size-9 p-0 md:hidden" aria-label={t('nav.search')}>
+        <Icon name="search" size={18} />
+      </button>
+
+      <!-- Servidor Global / JP -->
+      <div
+        class="server-toggle relative hidden h-9 items-center rounded-lg border border-line bg-coal/70 p-0.5 text-[11px] font-bold tracking-wider sm:flex"
+        role="radiogroup"
+        aria-label={t('nav.server')}
+      >
+        <span class="server-thumb absolute top-0.5 bottom-0.5 left-0.5 w-14 rounded-md bg-gradient-to-br from-ember to-ember-deep transition-transform duration-300 ease-[var(--ease-snap)]" aria-hidden="true"></span>
+        <button type="button" role="radio" aria-checked="true" data-server="global" class="relative z-10 h-full w-14 rounded-md transition-colors">GLOBAL</button>
+        <button type="button" role="radio" aria-checked="false" data-server="jp" class="relative z-10 h-full w-14 rounded-md transition-colors">JP</button>
+      </div>
+
+      <!-- Idioma -->
+      <div class="relative hidden lg:block" data-dropdown>
+        <button
+          type="button"
+          class="btn-ghost h-9 gap-1.5 px-2.5 text-xs"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-label={t('nav.language')}
+          data-dropdown-trigger
+        >
+          <Icon name="globe" size={16} />
+          {LOCALE_META[lang].short}
+          <Icon name="chevronDown" size={12} />
+        </button>
+        <div
+          class="invisible absolute top-full right-0 mt-2 w-48 origin-top-right scale-95 rounded-xl border border-line bg-coal p-1.5 opacity-0 shadow-2xl shadow-black/60 transition duration-200 data-[open=true]:visible data-[open=true]:scale-100 data-[open=true]:opacity-100"
+          data-dropdown-menu
+        >
+          {LOCALES.map((l) => (
+            <a
+              href={localePath(l as Locale, current)}
+              hreflang={LOCALE_META[l as Locale].htmlLang}
+              lang={LOCALE_META[l as Locale].htmlLang}
+              class:list={[
+                'flex items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors',
+                l === lang ? 'bg-cinder text-bone' : 'text-dust hover:bg-cinder hover:text-bone',
+              ]}
+            >
+              {LOCALE_META[l as Locale].label}
+              {l === lang && <Icon name="check" size={14} class="text-ember" />}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Cuenta -->
+      <a href={localePath(lang, ACCOUNT_LINK.path)} class="btn-primary hidden h-9 px-3.5 lg:inline-flex">
+        <Icon name="user" size={16} strokeWidth={2} />
+        {t('nav.account')}
+      </a>
+
+      <!-- Botón menú móvil -->
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        class="btn-ghost size-9 p-0 lg:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label={t('nav.menu')}
+      >
+        <Icon name="menu" size={20} />
+      </button>
+    </div>
+  </div>
+
+  <!-- Mega-menús (escritorio) -->
+  {NAV.filter((e): e is NavGroup => !!e.items).map((group) => (
+    <div
+      id={`panel-${group.id}`}
+      class="mega-panel invisible absolute inset-x-0 top-full hidden -translate-y-2 border-b border-line bg-ash/95 opacity-0 backdrop-blur-xl transition duration-300 ease-[var(--ease-out-expo)] data-[open=true]:visible data-[open=true]:translate-y-0 data-[open=true]:opacity-100 lg:block"
+      data-panel-id={group.id}
+    >
+      <div class:list={['mx-auto grid max-w-7xl gap-6 px-6 py-6', group.feature && 'grid-cols-[1fr_320px]']}>
+        <ul class="grid content-start gap-1.5 sm:grid-cols-2">
+          {group.items.map((item, i) => (
+            <li class="mega-item" style={`--i:${i}`}>
+              <a
+                href={localePath(lang, item.path)}
+                class:list={[
+                  'group/item flex items-start gap-3.5 rounded-xl border p-3.5 transition duration-200',
+                  isActive(item.path) ? 'border-ember/40 bg-ember/5' : 'border-transparent hover:border-line hover:bg-coal',
+                ]}
+              >
+                <span class="grid size-10 shrink-0 place-items-center rounded-lg border border-line bg-coal text-ember transition duration-300 group-hover/item:border-ember/50 group-hover/item:bg-ember/10 group-hover/item:text-flame">
+                  <Icon name={item.icon} size={20} />
+                </span>
+                <span class="min-w-0">
+                  <span class="flex items-center gap-2 text-sm font-semibold text-bone">
+                    {t(item.label)}
+                    <Icon name="arrowRight" size={14} class="-translate-x-1 text-ember opacity-0 transition duration-200 group-hover/item:translate-x-0 group-hover/item:opacity-100" />
+                  </span>
+                  <span class="mt-0.5 block text-[13px] leading-snug text-dust">{t(item.desc)}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        {group.feature && (
+          <a
+            href={localePath(lang, group.feature.path)}
+            class="mega-item group/feat slash relative flex min-h-40 flex-col justify-end overflow-hidden rounded-xl border border-line-strong bg-gradient-to-br from-blood/60 via-coal to-coal p-5"
+            style={`--i:${group.items.length}`}
+          >
+            <span class="eyebrow">{t(group.label)}</span>
+            <span class="mt-2 font-display text-lg font-bold text-bone">{t(group.feature.title)}</span>
+            <span class="mt-1 text-[13px] leading-snug text-dust">{t(group.feature.desc)}</span>
+            <Icon name="arrowRight" size={18} class="mt-4 text-flame transition-transform duration-300 group-hover/feat:translate-x-1" />
+          </a>
+        )}
+      </div>
+    </div>
+  ))}
+</header>
+
+<style>
+  .mega-panel .mega-item {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.35s var(--ease-out-expo), transform 0.35s var(--ease-out-expo);
+    transition-delay: calc(var(--i) * 35ms);
+  }
+  .mega-panel[data-open='true'] .mega-item {
+    opacity: 1;
+    transform: none;
+  }
+  .nav-trigger[aria-expanded='true'] .chev {
+    transform: rotate(180deg);
+  }
+  .server-toggle button[aria-checked='true'] { color: var(--color-ash); }
+  .server-toggle button[aria-checked='false'] { color: var(--color-dust); }
+  .server-toggle button[aria-checked='false']:hover { color: var(--color-bone); }
+  :global(html[data-server='jp']) .server-thumb { transform: translateX(100%); }
+</style>
+
+<script>
+  const header = document.getElementById('topnav')!;
+  const progress = document.getElementById('nav-progress')!;
+  const list = document.getElementById('nav-list')!;
+  const indicator = document.getElementById('nav-indicator')!;
+  const triggers = [...header.querySelectorAll<HTMLButtonElement>('.nav-trigger')];
+  const panels = new Map(
+    [...header.querySelectorAll<HTMLElement>('.mega-panel')].map((p) => [p.dataset.panelId!, p]),
+  );
+
+  // ── Scroll: fondo + línea de progreso ─────────────────────────
+  const onScroll = () => {
+    const y = window.scrollY;
+    header.dataset.scrolled = String(y > 8);
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.transform = `scaleX(${max > 0 ? Math.min(y / max, 1) : 0})`;
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ── Indicador que sigue al elemento bajo el ratón ─────────────
+  const moveIndicator = (el: HTMLElement | null) => {
+    if (!el) {
+      indicator.style.opacity = '0';
+      return;
+    }
+    const li = el.closest('li')!;
+    indicator.style.left = `${li.offsetLeft + 4}px`;
+    indicator.style.width = `${li.offsetWidth - 8}px`;
+    indicator.style.opacity = '1';
+  };
+
+  // ── Mega-menús con "hover intent" ─────────────────────────────
+  let openId: string | null = null;
+  let openTimer: number | undefined;
+  let closeTimer: number | undefined;
+
+  const setOpen = (id: string | null) => {
+    openId = id;
+    header.dataset.open = String(!!id);
+    triggers.forEach((t) => t.setAttribute('aria-expanded', String(t.dataset.panel === id)));
+    panels.forEach((p, pid) => (p.dataset.open = String(pid === id)));
+    if (id) moveIndicator(triggers.find((t) => t.dataset.panel === id) ?? null);
+  };
+
+  const canHover = window.matchMedia('(hover: hover)').matches;
+
+  triggers.forEach((trigger) => {
+    const id = trigger.dataset.panel!;
+    trigger.addEventListener('click', () => setOpen(openId === id ? null : id));
+    trigger.addEventListener('focus', () => moveIndicator(trigger));
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setOpen(id);
+        panels.get(id)?.querySelector<HTMLElement>('a')?.focus();
+      }
+    });
+    if (canHover) {
+      trigger.addEventListener('pointerenter', () => {
+        moveIndicator(trigger);
+        clearTimeout(closeTimer);
+        clearTimeout(openTimer);
+        // Si ya hay uno abierto, cambia al instante; si no, espera un poco
+        openTimer = window.setTimeout(() => setOpen(id), openId ? 0 : 90);
+      });
+    }
+  });
+
+  list.querySelectorAll<HTMLElement>('.nav-link').forEach((link) => {
+    link.addEventListener('focus', () => moveIndicator(link));
+    link.addEventListener('pointerenter', () => {
+      clearTimeout(openTimer);
+      if (openId) setOpen(null);
+      moveIndicator(link);
+    });
+  });
+
+  if (canHover) {
+    header.addEventListener('pointerleave', () => {
+      clearTimeout(openTimer);
+      closeTimer = window.setTimeout(() => {
+        setOpen(null);
+        moveIndicator(null);
+      }, 180);
+    });
+    header.addEventListener('pointerenter', () => clearTimeout(closeTimer));
+    list.addEventListener('pointerleave', () => {
+      clearTimeout(openTimer);
+      if (!openId) moveIndicator(null);
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && openId) {
+      const trigger = triggers.find((t) => t.dataset.panel === openId);
+      setOpen(null);
+      trigger?.focus();
+    }
+  });
+  document.addEventListener('click', (e) => {
+    if (openId && !header.contains(e.target as Node)) {
+      setOpen(null);
+      moveIndicator(null);
+    }
+  });
+  header.addEventListener('focusout', (e) => {
+    if (openId && !header.contains(e.relatedTarget as Node)) setOpen(null);
+  });
+
+  // ── Desplegable de idioma ─────────────────────────────────────
+  header.querySelectorAll<HTMLElement>('[data-dropdown]').forEach((dd) => {
+    const btn = dd.querySelector<HTMLButtonElement>('[data-dropdown-trigger]')!;
+    const menu = dd.querySelector<HTMLElement>('[data-dropdown-menu]')!;
+    const toggle = (open: boolean) => {
+      btn.setAttribute('aria-expanded', String(open));
+      menu.dataset.open = String(open);
+    };
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggle(menu.dataset.open !== 'true');
+    });
+    document.addEventListener('click', (e) => {
+      if (!dd.contains(e.target as Node)) toggle(false);
+    });
+    document.addEventListener('keydown', (e) => e.key === 'Escape' && toggle(false));
+  });
+
+  // ── Servidor Global / JP (compartido con el menú móvil) ───────
+  const applyServer = (server: string) => {
+    document.documentElement.dataset.server = server;
+    document.querySelectorAll<HTMLButtonElement>('[data-server]').forEach((b) =>
+      b.setAttribute('aria-checked', String(b.dataset.server === server)),
+    );
+    try {
+      localStorage.setItem('pp-server', server);
+    } catch {}
+  };
+  document.querySelectorAll<HTMLButtonElement>('[data-server]').forEach((b) =>
+    b.addEventListener('click', () => applyServer(b.dataset.server!)),
+  );
+  applyServer(document.documentElement.dataset.server || 'global');
+</script>

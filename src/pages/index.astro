@@ -1,0 +1,22 @@
+---
+// Raíz: redirige al idioma del navegador (o inglés si no lo soportamos).
+import { LOCALES, DEFAULT_LOCALE } from '@/i18n/utils';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content={`2;url=/${DEFAULT_LOCALE}/`} />
+    <title>Phantom Parade Hub</title>
+    <script is:inline define:vars={{ LOCALES, DEFAULT_LOCALE }}>
+      const prefs = navigator.languages || [navigator.language || ''];
+      const match = prefs.map((l) => l.toLowerCase().split('-')[0]).find((l) => LOCALES.includes(l));
+      location.replace('/' + (match || DEFAULT_LOCALE) + '/');
+    </script>
+  </head>
+  <body style="background:#0b0605;color:#f5e9e0;font-family:system-ui">
+    <a href={`/${DEFAULT_LOCALE}/`} style="color:#ff5a1f">Continue</a>
+  </body>
+</html>

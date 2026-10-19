@@ -1,0 +1,6540 @@
+{
+  "kind": "memories",
+  "generatedAt": "2026-10-19T16:41:24.413Z",
+  "sources": [
+    "wiki"
+  ],
+  "summary": {
+    "verified": 0,
+    "conflict": 0,
+    "single": 502
+  },
+  "items": [
+    {
+      "id": "120-of-their-potential",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "120% Of Their Potential"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2-problem-children-however-the-strongest",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "2 Problem Children, However The Strongest"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-bear-is-approaching",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Bear is Approaching!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-brief-moment-between-brothers",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Brief Moment Between Brothers"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-drink-after-the-onsen",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Drink After The Onsen"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-girl-called-nobara-kugisaki",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Girl Called Nobara Kugisaki"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-magnificent-stride-forward",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Magnificent Stride Forward"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-slight-gap",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Slight Gap"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-stingy-extra-bill",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Stingy Extra Bill"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a-wish-from-the-past",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "A Wish From The Past"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "activities-begin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Activities Begin"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "adult-time",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Adult Time"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "adults-afternoon",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Adults' Afternoon"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "after-school-activities",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "After-School Activities"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "annihilating-cross-counter",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Annihilating Cross-Counter"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "aoi-todos-youth-minerals",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Aoi Todo's Youth Minerals"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "archers-of-the-forest",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Archers of The Forest"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "arrival-of-kyoto-school",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Arrival Of Kyoto School"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "art-museum-at-night",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Art Museum At Night"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "battle-for-second-place",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Battle For Second Place"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bedeviled-solicitation-refused",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Bedeviled Solicitation, Refused"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "before-the-battle-for-kyushu",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Before The Battle For Kyushu"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "behold-okinawa",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Behold, Okinawa"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "beware-of-the-dog",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Beware Of The Dog"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bewildered",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Bewildered"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bewildering-dream",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Bewildering Dream"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blazing-magma",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Blazing Magma"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "blue-spring-set-off-the-firework",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Blue Spring, Set Off The Firework"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bonds-of-cooperation",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Bonds Of Cooperation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "brother-and-sister",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Brother And Sister"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "business-call",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Business Call"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "casual-video-watching",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Casual Video Watching"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cat-rescue",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cat Rescue"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "childhood-promise",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Childhood Promise"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chit-chat",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Chit-chat"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "clinical-record",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Clinical Record"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coffee-break-in-the-afternoon",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Coffee Break in The Afternoon"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cool-glasses",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "COOL Glasses"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "crepes-on-takeshita-street",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Crêpes on Takeshita Street"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "curse-born-from-the-land",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Curse Born From The Land"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "curse-each-other-and-put-everything-on-the-line",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Curse Each Other And Put Everything On The Line"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-nature",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Nature"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-spirit-beach",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Spirit Beach"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cursed-spirit-school-group",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cursed Spirit School Group"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "curses-and-bubbles",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Curses And Bubbles"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "customary-task-game-center",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Customary Task: Game Center"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cuteness-can-be-cultivated",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Cuteness Can Be Cultivated!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "day-of-awakening",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Day of Awakening"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dead-mall-encounter",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Dead Mall Encounter"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "death-by-wasp",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Death By Wasp"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "deep-in-thought",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Deep In Thought"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "defeat-cursed-spirits-rescue-non-sorcerers",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Defeat Cursed Spirits, Rescue Non-Sorcerers"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "desire-behind-the-display",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Desire Behind The Display"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "desperate-resistance",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Desperate Resistance"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "detainee-party",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Detainee Party"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "die-and-become-a-sage",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Die And Become A Sage"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "difference-in-level",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Difference In Level"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "divine-dogs-short-break",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Divine Dogs' Short Break"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "doctors-pride",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Doctor's Pride"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "doctors-turn",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Doctor's Turn"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "each-on-their-own-path",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Each On Their Own Path"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "educator",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Educator"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "eight-handled-sword-divergent-sila-divine-general-mahoraga",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Eight-Handled Sword Divergent Sila Divine General Mahoraga"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "encounter-and-anticipation",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Encounter And Anticipation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "encounter-at-dusk",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Encounter At Dusk"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "end-of-the-scenery",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "End Of The Scenery"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "everyday-life",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Everyday Life"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fake-or-real",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Fake or Real?"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "favorite-toy",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Favorite Toy"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "firework-show-aboard",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Firework Show Aboard"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fleeting-moments",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Fleeting Moments"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fleeting-warmth",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Fleeting Warmth"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "following-the-clue",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Following The Clue"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "for-myself",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "For Myself"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "for-now-a-cola",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "For Now, A Cola"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "girls-school-sorcerer",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Girls School Sorcerer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gold-rush",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Gold Rush"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "good-mood",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Good Mood"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "grade-1-jujutsu-sorcerer-of-breakwater",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Grade 1 Jujutsu Sorcerer of Breakwater"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "grand-exorcism",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Grand \"Exorcism\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "grand-stage",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Grand Stage"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "grandfathers-words",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Grandfather's Words"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "heros-conditions",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Hero's Conditions"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hey-shisa",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Hey, Shisa!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hidden-gem",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Hidden Gem"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "home-run",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Home Run!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hot-pot-party",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Hot Pot Party"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "humans-or-curses-who-will-have-the-last-laugh",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Humans Or Curses, Who Will Have The Last Laugh"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "i-bought-local-souvenirs",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "I Bought Local Souvenirs"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "i-see-then-die",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "I See, Then Die"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "i-will-follow-you-mr-nanami",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "I Will Follow You, Mr. Nanami"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ice-sorcerer",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ice Sorcerer"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ignoring-orders",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ignoring Orders"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "illusory-alliance-battle-hidden-inventory",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Illusory Alliance Battle - Hidden Inventory"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "illusory-alliance-battle-young-fish-and-reverse-punishment",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Illusory Alliance Battle - Young Fish And Reverse Punishment"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "im-glad-i-gave-birth-to-you",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"I'm glad I gave birth to you...\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "imaginary-youth",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Imaginary Youth"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "in-excellent-shape",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "In Excellent Shape"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "innocence-seen-in-the-past",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Innocence Seen in the Past"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "instincts-of-a-curse",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Instincts Of A Curse"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "intercept-the-calamity",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Intercept the Calamity"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "irreconcilable-red-scale",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Irreconcilable Red Scale"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "irreplaceable-moments",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Irreplaceable Moments"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "irretrievable-innocence",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Irretrievable Innocence"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "isolated-cursed-prison-island",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Isolated Cursed Prison Island"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "jujutsu-sorcerers-arrival",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Jujutsu Sorcerers' Arrival"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "kai",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kai"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "kept-waiting",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kept Waiting"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "kigurumi",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Kigurumi"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "killing-puppet",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Killing Puppet"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "killing-time",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Killing Time"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "king-of-curses",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "King of Curses"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "knowledge-on-exorcising",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Knowledge on Exorcising"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lamentation",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Lamentation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "laundry-time-after-the-mission",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Laundry Time After the Mission"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "leaving-japan",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Leaving Japan"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lets-have-a-game-of-endurance",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"Let’s Have A Game Of Endurance\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lets-rescue-satoru-gojo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"Let's Rescue Satoru Gojo!\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "liar-i-hate-you",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Liar... I Hate You"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "like-minded-sisters",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Like-Minded Sisters"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lingering-summer-heat-and-blue-springtime",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Lingering Summer Heat and Blue Springtime"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "live-a-long-life",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"Live A Long Life\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "louder-than-words",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Louder Than Words"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mad-dog-divine-dog",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mad Dog & Divine Dog"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "malevolent-shrine",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Malevolent Shrine"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "meet-up",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Meet Up"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "memories-in-a-nook",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Memories In A Nook"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mensore",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mensore!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "midsummer-spectators",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Midsummer Spectators"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mission-start",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mission Start"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "morning-practice-with-the-principal",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Morning Practice With The Principal"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "morning-unraveling-in-the-mirror",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Morning Unraveling in The Mirror"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mutual-trust",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Mutual Trust"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "my-best-battery",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "My Best Battery"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nameless-cherry-blossom-blizzard",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nameless Cherry Blossom Blizzard"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nameless-spring",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nameless Spring"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nameless-youth",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nameless Youth"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "narrow-escape-from-death",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Narrow Escape From Death"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nice-mid-air-catch",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nice Mid-Air Catch"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "night-in-hakata",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Night In Hakata"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "night-of-jujutsu-sorcerers",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Night Of Jujutsu Sorcerers"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "night-on-the-sacred-mountain",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Night On The Sacred Mountain"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nimble-cursed-speech-user",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nimble Cursed Speech User"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "no-mountain-disaster",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "No Mountain Disaster!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "nonstandard",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Nonstandard"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "noritoshi-kamos-archery-lessons",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Noritoshi Kamo's Archery Lessons"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "offering-to-the-serpent",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Offering To The Serpent"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ordinary-time",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ordinary Time"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "our-priorities",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Our Priorities"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "panda-the-fashionista",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Panda The Fashionista"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "perfect-synchronization",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Perfect Synchronization"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "phanpara-of-the-year",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Phanpara of the Year"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "phantom-journey",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Phantom Journey"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "phantom-trails",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Phantom Trails"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ping-pong",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Ping Pong!!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "play-a-catchy-tune",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Play a Catchy Tune"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "play-of-the-strong",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Play Of The Strong"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "poolside-helper",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Poolside Helper"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "preparation-activities",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Preparation Activities"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "price-for-applauding",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Price for applauding"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pride",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Pride"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "quietness",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Quietness"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reflection-of-trust",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Reflection of Trust"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reminiscence",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Reminiscence"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resolve-and-curse-within-the-game-of-death",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Resolve and Curse, Within the Game of Death"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resolve-in-the-midst-of-a-storm",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Resolve in The Midst of a Storm"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rest-for-the-adults",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Rest For The Adults"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "restored-silence",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Restored Silence"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reunion-after-the-rain",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Reunion After The Rain"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rushing-to-a-mission-on-a-holy-night",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Rushing to a Mission on a Holy Night"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sake-for-blossom-viewing-on-the-engawa",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Sake for Blossom-Viewing on the Engawa"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "satoru-gojos-solo-camping",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Satoru Gojo's Solo Camping"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "scales-of-unfairness",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Scales Of Unfairness"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "search",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Search"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "search-in-the-rain",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Search In The Rain"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "serious-shuttlecock-competition",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Serious! Shuttlecock Competition"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shopping",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Shopping"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shopping-eating-tour",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Shopping & Eating Tour"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "siblings-bond",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Siblings' Bond"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "siblings-vacation",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Siblings' Vacation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "simple-pleasure",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Simple Pleasure"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "so-nice-to-meet-you",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "So, nice to meet you"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "solo-mission",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Solo Mission"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "someday-i-want-to-be-with-everyone",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Someday, I Want To Be With Everyone"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "someone-like-me",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Someone Like Me?"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "something-to-satisfy-a-light-hunger",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Something to Satisfy a Light Hunger"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sorcerers-resolutions",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Sorcerers' Resolutions"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "source-of-stress",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Source Of Stress"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "souvenir-pondering",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Souvenir Pondering"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strawberry-parfait-of-youth",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Strawberry Parfait of Youth"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strong-lineup",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Strong Lineup"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "students-duty",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Student's Duty"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "style-upgrade-plan",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Style Upgrade Plan"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sukunas-vessel",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Sukuna’s Vessel"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "super-freshman-welcoming-party",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Super Freshman Welcoming Party"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "surrounded-by-amazing-seniors",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Surrounded by Amazing Seniors"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "takadas-quiz-beginners-edition",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Takada's Quiz: Beginner's Edition"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "take-a-break",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Take A Break"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "take-care",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Take Care"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tea-party",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Tea Party"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tension-in-the-grass-shade",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Tension in the Grass Shade"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-city-where-the-lights-went-out",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The City Where the Lights Went Out"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-clear-stream-duo",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Clear Stream Duo"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-famous-coffee-shop",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Famous Coffee Shop"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-fastest-game-of-tag",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Fastest Game of Tag"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-footage-left-behind",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Footage Left Behind"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-intention-behind-charity",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Intention Behind Charity"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-kanto-dogs-vs-cats-battle",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Kanto Dogs Vs Cats Battle"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-last-of-my-cursed-energy",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Last of My Cursed Energy"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-lively-stamp-rally",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Lively Stamp Rally"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-memories-of-days-gone-by",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Memories of Days Gone By"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-mystery-is-in-the-book",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Mystery is In The Book"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-panda-and-the-scarred-pillar",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Panda and the Scarred Pillar"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-sky-is-connected",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Sky Is Connected"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-strongest-quarrel",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Strongest Quarrel"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-super-classmates-debut-battle",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Super Classmate’s Debut Battle"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-two-strongest",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The Two Strongest"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "the-world-seen-through-ui-uis-eyes",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "The World Seen Through Ui Ui’s Eyes"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "this-is-the-world-of-the-future",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "This is the World of the Future"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "though-the-future-may-differ",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Though the Future May Differ"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "thousand-year-master-follower-relation",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Thousand-Year Master & Follower Relation"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "to-the-ultra-luxury-dinner-cruise",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "To The Ultra-Luxury Dinner Cruise"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "to-victory",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"To Victory!\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tokyo-fukuoka-exchange",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Tokyo Fukuoka Exchange"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "true-essence-of-the-soul",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "True Essence Of The Soul"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "two-shadows-reflected-in-the-evening",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Two Shadows Reflected in The Evening"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "two-who-do-not-mesh",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Two Who Do Not Mesh"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "under-the-cherry-tree",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Under the Cherry Tree"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "unity-from-top-to-bottom",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Unity From Top To Bottom"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "unprecedented-gourmet-boom",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Unprecedented Gourmet Boom"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "utahimes-stress-relief-method",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Utahime's Stress Relief Method"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "visit-fukuoka",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Visit Fukuoka"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "walk-in-shibuya",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Walk In Shibuya"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "watch-closely",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"Watch Closely\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wavering",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Wavering"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "weaving-fantasies",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Weaving Fantasies"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "web-of-schemes",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Web Of Schemes"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "were-sisters",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"We’re Sisters!\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "what-was-inherited",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "What Was Inherited"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "white-waves-and-white-breath",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "White Waves and White Breath"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "who-is-tycoon",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Who is Tycoon?"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "winter-a-new-beginning",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Winter, A New Beginning"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wish-summer-would-never-end",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Wish summer would never end"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "with-wings-in-hand",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "With Wings in Hand"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "workaholic-holiday",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Workaholic Holiday"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "yeah-nice-job",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Yeah, Nice Job!"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "you-always-die-alone",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"You Always Die Alone\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "you-are-late",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "\"You Are Late\""
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "you-cryin",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "You Cryin'?"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "your-path-forward",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Your Path Forward"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "youth-graffiti",
+      "presentIn": [
+        "wiki"
+      ],
+      "fields": {
+        "name": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "Youth Graffiti"
+            }
+          ]
+        },
+        "rarity": {
+          "status": "single",
+          "values": [
+            {
+              "source": "wiki",
+              "value": "SSR"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

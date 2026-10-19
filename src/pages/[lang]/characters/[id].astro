@@ -1,0 +1,229 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import KitViewer from '@/components/characters/KitViewer';
+import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
+import { CHARACTERS, kitVersions, resolveKit, thumb, type Character, type KitVersion, type ResolvedKit } from '@/data/characters';
+import { gameDict, useG, type GameKey } from '@/i18n/game';
+import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) =>
+    CHARACTERS.map((c, i) => ({
+      params: { lang, id: c.id },
+      props: { c, prev: CHARACTERS[i - 1] ?? null, next: CHARACTERS[i + 1] ?? null },
+    })),
+  );
+}
+
+const lang = Astro.params.lang as Locale;
+const { c, prev, next } = Astro.props as { c: Character; prev: Character | null; next: Character | null };
+const t = useT(lang);
+const g = useG(lang);
+const el = ELEMENT_COLOR[c.element] ?? '#ff5a1f';
+
+const versions = kitVersions(c);
+const kits = Object.fromEntries(versions.map((v) => [v, resolveKit(c, v)])) as Partial<Record<KitVersion, ResolvedKit>>;
+
+const fmt = new Intl.NumberFormat(LOCALE_META[lang].htmlLang);
+const date = (iso: string | null) =>
+  iso ? new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(iso + 'T00:00:00Z')) : '—';
+
+const STATS = [
+  { label: g('ch.hp'), value: c.stats.hp },
+  { label: g('ch.attack'), value: c.stats.attack },
+  { label: g('ch.jujutsu'), value: c.stats.jujutsu },
+  { label: g('ch.gauge'), value: c.stats.specialGauge },
+];
+const maxStat = Math.max(...CHARACTERS.map((x) => x.stats.hp ?? 0));
+const maxAtk = Math.max(...CHARACTERS.flatMap((x) => [x.stats.attack ?? 0, x.stats.jujutsu ?? 0]));
+const barMax = (label: string) => (label === g('ch.hp') ? maxStat : label === g('ch.gauge') ? Math.max(...CHARACTERS.map((x) => x.stats.specialGauge ?? 0)) : maxAtk);
+
+const rarityClass = { SSR: 'badge-ssr', SR: 'badge-sr', R: 'badge-r' }[c.rarity] ?? 'badge';
+const title = `${c.epithet ? `${c.epithet} · ` : ''}${c.name}`;
+const description = `${c.name}${c.epithet ? ` (${c.epithet})` : ''} — ${c.rarity} ${g(`el.${c.element}` as GameKey)}${c.role ? ` · ${g(`role.${c.role}` as GameKey)}` : ''}. ${t('nav.characters.desc')}`;
+
+const labels = gameDict(lang, [
+  'ch.version', 'ch.v.base', 'ch.v.adjusted', 'ch.v.adjustedV2', 'ch.v.sp', 'ch.v.altered', 'ch.v.note',
+  'ch.level', 'ch.normal', 'ch.s1', 'ch.s2', 'ch.ult', 'ch.combo', 'ch.combo.buffed', 'ch.autos',
+  'ch.cost', 'ch.crit', 'ch.critdmg', 'ch.bf', 'ch.changed',
+] as const);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Thing',
+  name: title,
+  description,
+  image: c.art ?? undefined,
+  isPartOf: { '@type': 'VideoGame', name: 'Jujutsu Kaisen: Phantom Parade' },
+};
+---
+
+<BaseLayout lang={lang} title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Cabecera -->
+  <section class="relative isolate overflow-hidden border-b border-line" style={`--el:${el}`}>
+    <div class="absolute inset-0 -z-10" style="background: radial-gradient(800px 500px at 75% 40%, color-mix(in srgb, var(--el) 22%, transparent), transparent 70%)"></div>
+    {c.art && (
+      <img
+        src={thumb(c.art, 900)}
+        alt=""
+        aria-hidden="true"
+        referrerpolicy="no-referrer"
+        class="absolute inset-0 -z-20 h-full w-full scale-110 object-cover opacity-15 blur-2xl"
+      />
+    )}
+    <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 lg:grid-cols-[1fr_minmax(0,440px)] lg:px-6 lg:py-14">
+      <div class="order-2 lg:order-1">
+        <a href={localePath(lang, '/characters')} class="inline-flex items-center gap-1.5 text-sm text-dust transition hover:text-bone">
+          <Icon name="arrowRight" size={14} class="rotate-180" />
+          {g('ch.back')}
+        </a>
+        {c.epithet && <p class="mt-6 font-display text-lg font-semibold" style="color: var(--el)">{c.epithet}</p>}
+        <h1 class="mt-1 text-4xl leading-tight font-black text-bone sm:text-6xl">{c.name}</h1>
+
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class={rarityClass}>{c.rarity}</span>
+          <span class="badge border-line-strong bg-cinder text-bone">
+            <span class="size-2 rounded-full" style="background: var(--el)"></span>
+            {g(`el.${c.element}` as GameKey)}
+          </span>
+          {c.role && <span class="badge border-line-strong bg-cinder text-dust">{g(`role.${c.role}` as GameKey)}</span>}
+          {c.focus && <span class="badge border-line-strong bg-cinder text-dust">{g(`focus.${c.focus}` as GameKey)}</span>}
+          {c.availability && <span class={c.availability === 'limited' || c.availability === 'collab' ? 'badge-limited' : 'badge-jp'}>{g(`av.${c.availability}` as GameKey)}</span>}
+          {c.blackFlash && <span class="badge border-crimson/50 bg-crimson/10 text-[#ff6b7f]">{g('ch.bf.yes')}</span>}
+        </div>
+
+        <dl class="mt-7 grid max-w-xl grid-cols-2 gap-x-6 gap-y-4 text-sm">
+          <div>
+            <dt class="text-xs text-smoke">{g('ch.released')}</dt>
+            <dd class="mt-0.5 font-medium text-bone">{date(c.releaseDateJP)}</dd>
+          </div>
+          {c.affiliation && (
+            <div>
+              <dt class="text-xs text-smoke">{g('ch.affiliation')}</dt>
+              <dd class="mt-0.5 font-medium text-bone">{c.affiliation}</dd>
+            </div>
+          )}
+          {c.stats.ceInitial != null && (
+            <div>
+              <dt class="text-xs text-smoke">{g('ch.ce')}</dt>
+              <dd class="mt-0.5 font-medium text-bone">{g('ch.ce.value', { a: c.stats.ceInitial ?? '—', b: c.stats.ceMax ?? '—' })}</dd>
+            </div>
+          )}
+          {c.characteristic && (
+            <div class="col-span-2">
+              <dt class="text-xs text-smoke">{g('ch.characteristic')}</dt>
+              <dd class="mt-0.5 font-medium text-bone">{c.characteristic}</dd>
+            </div>
+          )}
+        </dl>
+      </div>
+
+      <div class="relative order-1 mx-auto w-full max-w-[340px] lg:order-2 lg:max-w-none">
+        <div class="absolute -inset-6 -z-10 rounded-[2rem] opacity-60 blur-3xl" style="background: color-mix(in srgb, var(--el) 35%, transparent)"></div>
+        <div class="overflow-hidden rounded-2xl border border-line-strong bg-coal shadow-2xl shadow-black/60" style="box-shadow: 0 0 0 1px color-mix(in srgb, var(--el) 40%, transparent), 0 30px 80px -30px color-mix(in srgb, var(--el) 60%, black)">
+          {c.art ? (
+            <img src={thumb(c.art, 720)} alt={title} referrerpolicy="no-referrer" class="aspect-[3/4] w-full object-cover object-top" />
+          ) : (
+            <div class="aspect-[3/4] w-full"><Placeholder name={c.name} size="lg" /></div>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-6">
+    <!-- Habilidades -->
+    <section>
+      <h2 class="mb-5 text-2xl font-bold text-bone">{g('ch.skills')}</h2>
+      <KitViewer client:visible kits={kits} versions={versions} labels={labels} textLangNote={lang === 'en' ? null : g('ch.textlang')} />
+    </section>
+
+    <!-- Lateral -->
+    <aside class="space-y-6 lg:sticky lg:top-[calc(var(--nav-h)+24px)] lg:self-start">
+      <section class="card p-5">
+        <h2 class="font-sans text-sm font-bold text-bone">{g('ch.stats')}</h2>
+        <p class="text-xs text-smoke">{g('ch.stats.note')}</p>
+        <ul class="mt-4 space-y-3.5">
+          {STATS.filter((s) => s.value != null).map((s) => (
+            <li>
+              <div class="flex items-baseline justify-between text-sm">
+                <span class="text-dust">{s.label}</span>
+                <span class="font-semibold text-bone tabular-nums">{fmt.format(s.value as number)}</span>
+              </div>
+              <div class="mt-1.5 h-1.5 overflow-hidden rounded-full bg-cinder">
+                <div class="h-full rounded-full bg-gradient-to-r from-ember to-flame" style={`width:${Math.round(((s.value as number) / barMax(s.label)) * 100)}%`}></div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {c.memories.length > 0 && (
+        <section class="card p-5">
+          <h2 class="font-sans text-sm font-bold text-bone">{g('ch.memories')}</h2>
+          <p class="text-xs text-smoke">{g('ch.memories.source')}</p>
+          <ul class="mt-4 space-y-2">
+            {c.memories.map((m) => {
+              const Tag = m.id ? 'a' : 'div';
+              return (
+                <li>
+                  <Tag
+                    href={m.id ? localePath(lang, `/memories/${m.id}`) : undefined}
+                    class:list={['flex items-center gap-3 rounded-lg border border-line bg-cinder/60 p-2', m.id && 'group transition hover:border-line-strong hover:bg-cinder']}
+                  >
+                    <span class="grid size-10 shrink-0 place-items-center overflow-hidden rounded-md bg-coal">
+                      {m.img ? <img src={thumb(m.img, 80)} alt="" loading="lazy" class="size-full object-cover" /> : <Icon name="layers" size={16} class="text-smoke" />}
+                    </span>
+                    <span class="flex-1 text-sm text-bone">{m.name}</span>
+                    {m.id && <Icon name="arrowRight" size={14} class="text-smoke transition group-hover:translate-x-0.5 group-hover:text-ember" />}
+                  </Tag>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
+      <section class="card p-5">
+        <h2 class="font-sans text-sm font-bold text-bone">{g('ch.source')}</h2>
+        <p class="mt-3"><span class="badge-unverified">{g('ch.source.single')}</span></p>
+        <dl class="mt-4 space-y-2 text-xs">
+          <div class="flex justify-between gap-3">
+            <dt class="text-smoke">{g('ch.source.updated')}</dt>
+            <dd class="text-dust">{date(c._source.updated.slice(0, 10))}</dd>
+          </div>
+        </dl>
+        <a href={c._source.url} target="_blank" rel="noopener" class="btn-secondary mt-4 w-full text-xs">
+          {g('ch.source.view')}
+          <Icon name="arrowRight" size={14} class="-rotate-45" />
+        </a>
+        <p class="mt-3 text-[11px] leading-relaxed text-smoke">{t('footer.license')}</p>
+      </section>
+    </aside>
+  </div>
+
+  <!-- Anterior / siguiente -->
+  <nav class="mx-auto grid max-w-7xl gap-3 px-4 sm:grid-cols-2 lg:px-6" aria-label="Characters">
+    {prev ? (
+      <a href={localePath(lang, `/characters/${prev.id}`)} class="card-hover group flex items-center gap-3 p-4">
+        <Icon name="arrowRight" size={18} class="rotate-180 text-smoke transition group-hover:-translate-x-1 group-hover:text-ember" />
+        <span class="min-w-0">
+          <span class="block text-xs text-smoke">{g('ch.prev')}</span>
+          <span class="block truncate text-sm font-semibold text-bone">{prev.epithet ? `${prev.epithet} · ` : ''}{prev.name}</span>
+        </span>
+      </a>
+    ) : <span></span>}
+    {next && (
+      <a href={localePath(lang, `/characters/${next.id}`)} class="card-hover group flex items-center justify-end gap-3 p-4 text-right">
+        <span class="min-w-0">
+          <span class="block text-xs text-smoke">{g('ch.next')}</span>
+          <span class="block truncate text-sm font-semibold text-bone">{next.epithet ? `${next.epithet} · ` : ''}{next.name}</span>
+        </span>
+        <Icon name="arrowRight" size={18} class="text-smoke transition group-hover:translate-x-1 group-hover:text-ember" />
+      </a>
+    )}
+  </nav>
+</BaseLayout>

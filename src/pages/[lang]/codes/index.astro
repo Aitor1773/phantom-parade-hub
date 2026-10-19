@@ -1,0 +1,139 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import data from '../../../../data/normalized/codes.json';
+import { useG } from '@/i18n/game';
+import { LOCALE_META, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+type Src = { source: string; name: string; url: string; modified: string | null };
+type Code = { code: string; reward: string | null; status: string; activeIn: Src[]; expiredIn: Src[]; tested: { tested?: string; note?: string } | null };
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const g = useG(lang);
+const codes = data.codes as Code[];
+
+const active = codes.filter((c) => ['tested', 'verified', 'single'].includes(c.status));
+const conflict = codes.filter((c) => c.status === 'conflict');
+const expired = codes.filter((c) => c.status === 'expired');
+const checked = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long' }).format(new Date(data.fetchedAt));
+---
+
+<BaseLayout lang={lang} title={g('cd.title')} description={g('cd.intro')}>
+  <div class="mx-auto max-w-4xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8">
+      <p class="eyebrow">{t('nav.tools')} · Global</p>
+      <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{g('cd.title')}</h1>
+      <p class="mt-3 max-w-2xl text-dust">{g('cd.intro')}</p>
+      <p class="mt-2 text-xs text-smoke">{g('cd.checked', { d: checked })}</p>
+    </header>
+
+    <!-- Activos -->
+    <h2 class="mb-4 flex items-center gap-2 text-2xl font-bold text-bone">
+      <span class="size-2.5 animate-pulse rounded-full bg-[#5fd39b]"></span>
+      {g('cd.active')}
+      <span class="text-base font-normal text-smoke">({active.length})</span>
+    </h2>
+    <ul class="grid gap-3">
+      {active.map((c) => (
+        <li class="card flex flex-wrap items-center gap-x-4 gap-y-2 p-4">
+          <code class="font-mono text-lg font-bold tracking-wide text-flame select-all">{c.code}</code>
+          <span class="min-w-0 flex-1 text-sm text-bone">{c.reward ?? '—'}</span>
+          <button type="button" class="btn-primary h-9 px-3 text-xs" data-copy={c.code} data-copied={g('cd.copied')}>
+            <Icon name="copy" size={14} strokeWidth={2} />
+            <span>{g('cd.copy')}</span>
+          </button>
+          <div class="flex w-full flex-wrap items-center gap-1.5 text-[11px] text-smoke">
+            {c.status === 'tested' ? (
+              <span class="badge-verified"><Icon name="check" size={12} strokeWidth={2.5} /> {g('cd.tested')}{c.tested?.tested ? ` · ${c.tested.tested}` : ''}</span>
+            ) : (
+              <span class={c.activeIn.length >= 2 ? 'badge-verified' : 'badge-unverified'}>{g('cd.sources', { n: c.activeIn.length })}</span>
+            )}
+            {c.activeIn.map((s) => (
+              <a href={s.url} target="_blank" rel="noopener" class="rounded border border-line px-1.5 py-0.5 hover:text-dust">{s.name}</a>
+            ))}
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Cómo canjear -->
+    <section class="card mt-8 p-5">
+      <h2 class="flex items-center gap-2 font-sans text-base font-bold text-bone">
+        <Icon name="gift" size={18} class="text-ember" />
+        {g('cd.howto')}
+      </h2>
+      <ol class="mt-3 list-decimal space-y-1.5 pl-5 text-sm text-dust marker:text-ember">
+        <li>{g('cd.howto.1')}</li>
+        <li>{g('cd.howto.2')}</li>
+        <li>{g('cd.howto.3')}</li>
+      </ol>
+    </section>
+
+    <!-- Dudosos -->
+    {conflict.length > 0 && (
+      <details class="card group mt-8 px-5">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-4">
+          <span>
+            <span class="block font-semibold text-bone">{g('cd.conflict')} ({conflict.length})</span>
+            <span class="block text-xs text-smoke">{g('cd.conflict.desc')}</span>
+          </span>
+          <Icon name="chevronDown" size={18} class="text-smoke transition-transform group-open:rotate-180" />
+        </summary>
+        <ul class="border-t border-line py-2">
+          {conflict.map((c) => (
+            <li class="flex flex-wrap items-center gap-x-3 gap-y-1 border-b border-line/50 py-2.5 last:border-0">
+              <code class="font-mono text-sm font-semibold text-dust">{c.code}</code>
+              <span class="min-w-0 flex-1 text-xs text-smoke">{c.reward}</span>
+              <span class="text-[11px] text-smoke">
+                <span class="text-[#5fd39b]">✓ {c.activeIn.map((s) => s.name).join(', ')}</span>
+                {' · '}
+                <span class="text-[#ff6b7f]">✗ {c.expiredIn.map((s) => s.name).join(', ')}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </details>
+    )}
+
+    <!-- Caducados -->
+    {expired.length > 0 && (
+      <details class="card group mt-3 px-5">
+        <summary class="flex cursor-pointer list-none items-center justify-between py-4 font-semibold text-bone">
+          {g('cd.expired')} ({expired.length})
+          <Icon name="chevronDown" size={18} class="text-smoke transition-transform group-open:rotate-180" />
+        </summary>
+        <ul class="flex flex-wrap gap-2 border-t border-line py-4">
+          {expired.map((c) => (
+            <li><code class="rounded-md border border-line bg-cinder px-2 py-1 font-mono text-xs text-smoke line-through" title={c.reward ?? ''}>{c.code}</code></li>
+          ))}
+        </ul>
+      </details>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  summary::-webkit-details-marker { display: none; }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+    const label = btn.querySelector('span')!;
+    const original = label.textContent;
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy!);
+      } catch {
+        // Sin permiso de portapapeles: seleccionar el código para copiarlo a mano
+        const code = btn.parentElement?.querySelector('code');
+        if (code) getSelection()?.selectAllChildren(code);
+        return;
+      }
+      label.textContent = btn.dataset.copied!;
+      setTimeout(() => (label.textContent = original), 1600);
+    });
+  });
+</script>
