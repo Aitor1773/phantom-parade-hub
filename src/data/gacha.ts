@@ -10,6 +10,15 @@ export const GACHA = {
   ssrCharRate: 0.025,
   /** Cada 20 puntos se pueden cambiar por 10 tarjetas para banners futuros (máx. 100 por banner) */
   pointCards: { per: 20, gives: 10, maxPerBanner: 100 },
+  /** Tasas habituales (%). La 10.ª tirada de una 10x no da R: sube el SR. El SSR no cambia. */
+  rates: [
+    { rarity: 'SSR', type: 'character', rate: 2.5, tenth: 2.5 },
+    { rarity: 'SSR', type: 'memory', rate: 5, tenth: 5 },
+    { rarity: 'SR', type: 'character', rate: 10, tenth: 47.5 },
+    { rarity: 'SR', type: 'memory', rate: 20, tenth: 45 },
+    { rarity: 'R', type: 'character', rate: 37.5, tenth: 0 },
+    { rarity: 'R', type: 'memory', rate: 25, tenth: 0 },
+  ],
   source: { label: "JJK Phantom Parade Wiki · Beginner's Guide", url: "https://jjk-phantom-parade.fandom.com/wiki/Beginner%27s_Guide" },
 } as const;
 

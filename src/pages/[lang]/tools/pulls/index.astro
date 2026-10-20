@@ -1,0 +1,52 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import PullPlanner, { type PlannerTarget } from '@/components/tools/PullPlanner';
+import { CHARACTERS } from '@/data/characters';
+import { GLOBAL_BANNERS, characterGlobalEstimate } from '@/data/banners';
+import { GACHA } from '@/data/gacha';
+import { gameDict, type GameKey } from '@/i18n/game';
+import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const day = (iso: string) => new Date(iso).toISOString().slice(0, 10);
+
+// Fechas objetivo: próximos banners Global confirmados y ventanas estimadas (JP → Global)
+const globalTargets: PlannerTarget[] = GLOBAL_BANNERS
+  .filter((b) => b.kind === 'gacha' && !b.startUnknown && !b.permanent && +new Date(b.start) > Date.now())
+  .map((b) => ({ id: b.id, label: b.name, date: day(b.start), group: 'global' }));
+const estimateTargets: PlannerTarget[] = CHARACTERS.flatMap((c) => {
+  const e = characterGlobalEstimate(c.id);
+  return e ? [{ id: c.id, label: `${c.epithet ? `${c.epithet} · ` : ''}${c.name}`, date: day(e.from), group: 'estimate' as const }] : [];
+}).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 40);
+
+const KEYS = [
+  'pl.inputs', 'pl.load', 'pl.loaded', 'pl.noinv', 'pl.reset', 'pl.cubes', 'pl.tickets', 'pl.points', 'pl.points.hint', 'pl.cards',
+  'pl.daily', 'pl.daily.hint', 'pl.target', 'pl.target.pick', 'pl.target.hint', 'pl.global', 'pl.estimates', 'pl.featured', 'pl.featured.hint',
+  'pl.pulls', 'pl.pulls.now', 'pl.pulls.target', 'pl.pity', 'pl.pity.ok', 'pl.pity.missing', 'pl.pity.days',
+  'pl.ssr', 'pl.ssr.expected', 'pl.feat', 'pl.feat.need', 'pl.feat.none', 'pl.note',
+] as const satisfies readonly GameKey[];
+const labels = gameDict(lang, KEYS);
+const gacha = {
+  cubesPerPull: GACHA.cubesPerPull,
+  pity: GACHA.pity,
+  ssrCharRate: GACHA.ssrCharRate,
+  maxCards: GACHA.pointCards.maxPerBanner,
+  sourceLabel: GACHA.source.label,
+  sourceUrl: GACHA.source.url,
+};
+---
+
+<BaseLayout lang={lang} title={t('nav.pulls')} description={t('nav.pulls.desc')}>
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8">
+      <p class="eyebrow flex items-center gap-1.5"><Icon name="target" size={13} /> {t('nav.tools')}</p>
+      <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.pulls')}</h1>
+      <p class="mt-3 max-w-2xl text-dust">{t('nav.pulls.desc')}. <a href={localePath(lang, '/tools/simulator')} class="text-flame underline underline-offset-2">{t('nav.simulator')}</a></p>
+    </header>
+    <PullPlanner client:only="react" gacha={gacha} targets={[...globalTargets, ...estimateTargets]} labels={labels} locale={LOCALE_META[lang].htmlLang} />
+  </div>
+</BaseLayout>
