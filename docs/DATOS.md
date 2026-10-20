@@ -2,6 +2,8 @@
 
 Todo se genera con scripts. Los resultados van a `data/` y la web los lee al compilar (`npm run build`).
 
+**Una vez publicada, todo esto lo hace solo cada día** el proceso `.github/workflows/daily.yml` (`npm run data:daily` + imágenes los lunes + compilar + publicar). Cómo activarlo: [PUBLICAR.md](PUBLICAR.md). `npm run data:community` lee el foro (Giscus) y genera `data/community.json`.
+
 ## Orden recomendado
 
 ```

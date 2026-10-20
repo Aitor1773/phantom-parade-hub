@@ -56,7 +56,6 @@ Fan site no oficial de *Jujutsu Kaisen: Phantom Parade*: base de datos, guías, 
 /herramientas/tiradas     Planificador de tiradas / pity / gemas
 /herramientas/simulador   Simulador de gacha
 /codigos                  Códigos activos y caducados
-/buffs                    Rankings de buff/debuff
 /mi-cuenta                Colección, recursos, importación por capturas
 /mi-cuenta/recomendaciones  Qué tirar, en qué gastar, qué equipos puedes montar
 ```
@@ -139,7 +138,7 @@ Efectos: brasas animadas sutiles en el hero, degradado ember→flame en CTAs, "c
 |---|---|
 | **0. Base** | Repo, design system Fuga, navegación superior, i18n, pipeline de datos de la wiki + comparador |
 | **1. MVP** | Personajes + fichas, memorias, banners Global, códigos, tier list, equipos |
-| **2. Herramientas** | Calculadora de cubos, planificador de tiradas, simulador, team builder, buffs |
+| **2. Herramientas** | Calculadora de cubos, planificador de tiradas, simulador, team builder |
 | **3. Cuenta** | Login, inventario manual, recomendaciones |
 | **4. Capturas** | Importación por capturas (beta → estable cuando pase el listón) |
 | **5. Extra** | Tier list comunitaria, creadores de contenido, notificaciones de banners |

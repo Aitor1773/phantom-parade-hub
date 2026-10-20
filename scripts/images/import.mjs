@@ -117,7 +117,7 @@ await writeFile(ART_MANIFEST, JSON.stringify(Object.fromEntries(Object.entries(a
 console.log(`Arte: ${Object.keys(art).length}/${ids.size} personajes (${artNew} nuevos)`);
 
 // ── Iconos ──────────────────────────────────────────────────────
-const icons = { skills: {}, characters: {}, memories: {} };
+const icons = { skills: {}, characters: {}, memories: {}, byCharacter: {} };
 const ICON_DIRS = { skills: 'skill_icons', characters: 'character_icons' };
 for (const [kind, dir] of Object.entries(ICON_DIRS)) {
   for (const f of await list(join(JJK, dir))) {
@@ -130,7 +130,6 @@ for (const [kind, dir] of Object.entries(ICON_DIRS)) {
 // Iconos por personaje según jjkppdb (respaldo cuando el nombre de archivo de la wiki no coincide):
 // cada página de jjkppdb lista sus iconos de habilidad ("BlueSSRMiwaS21") y de ahí sale el
 // icono del personaje ("BlueSSRMiwaIcon1").
-icons.byCharacter = {};
 if (existsSync(jjkIndexFile)) {
   const jjkIndex = JSON.parse(await readFile(jjkIndexFile, 'utf8'));
   const SLOT = [[/normalattack(\d*)$/, 'normal'], [/ult(\d*)$/, 'ult'], [/s1(\d*)$/, 's1'], [/s2(\d*)$/, 's2']];

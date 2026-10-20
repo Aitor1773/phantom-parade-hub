@@ -6,8 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 import { LOCALES, DEFAULT_LOCALE } from './src/i18n/locales.mjs';
 
 export default defineConfig({
-  // TODO: cambiar por el dominio definitivo
-  site: 'https://example.com',
+  // Dominio público (para el sitemap y las URL canónicas). En la publicación diaria
+  // se toma de la variable SITE_URL del repositorio (ver docs/PUBLICAR.md).
+  site: process.env.SITE_URL || 'https://example.com',
   integrations: [react(), sitemap()],
   i18n: {
     locales: LOCALES,

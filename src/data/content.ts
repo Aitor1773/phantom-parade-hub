@@ -2,12 +2,14 @@
 // pisos de la Torre ilusoria y eventos de combate (cronología JP de la wiki + eventos Global curados).
 // Las debilidades/resistencias vienen de data/manual/content.json (a mano, desde el juego).
 import manual from '../../data/manual/content.json';
+import community from '../../data/community.json';
 import { GLOBAL_BANNERS, JP_BANNERS } from './banners';
 import type { ElementKey } from '@/lib/team-recs';
 
 export type ContentKind = 'mode' | 'event';
-export type EventCategory = 'story' | 'map' | 'formidable' | 'raid' | 'domain' | 'allout' | 'exploration' | 'memory' | 'exorcism' | 'corpse';
-export interface AffinityData { weak?: ElementKey[]; resist?: ElementKey[]; note?: string; checked?: string }
+export type EventCategory = 'story' | 'map' | 'formidable' | 'raid' | 'domain' | 'allout' | 'exploration' | 'memory' | 'exorcism' | 'corpse'
+  | 'imaginary' | 'side' | 'marathon' | 'main';
+export interface AffinityData { weak?: ElementKey[]; resist?: ElementKey[]; note?: string; checked?: string; /** usuarios del foro que lo confirman */ community?: number }
 
 export interface Content {
   id: string;
@@ -26,15 +28,31 @@ export interface Content {
 const WIKI_GUIDE = { label: "JJK Phantom Parade Wiki · Beginner's Guide", url: 'https://jjk-phantom-parade.fandom.com/wiki/Beginner%27s_Guide' };
 const M = manual as unknown as { towerFloors: number; affinity: Record<string, AffinityData> };
 
-// Modos con combates (la wiki describe también Dispatch, que no tiene combates)
-export const MODE_IDS = ['illusory-tower', 'domain-investigation', 'formidable-foes', 'main-quest', 'cursed-object-collection', 'strengthening-quest'] as const;
-export type ModeId = (typeof MODE_IDS)[number];
-export const MODES: Content[] = MODE_IDS.map((id) => ({
+// Modos con combates (la wiki describe también Dispatch, que no tiene combates).
+// Los últimos salen de la cronología JP de la wiki ("New Content", "New Feature"…), con su fecha.
+const TIMELINE = { label: 'JJK Phantom Parade Wiki · Timeline Of Events (JP)', url: 'https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)' };
+const MODE_DEFS: { id: string; since?: string; source?: typeof WIKI_GUIDE }[] = [
+  { id: 'illusory-tower' },
+  { id: 'illusory-tower-diverse', since: '2026-07-27' },
+  { id: 'domain-investigation' },
+  { id: 'formidable-foes' },
+  { id: 'formidable-foe-back', since: '2026-07-07' },
+  { id: 'curse-sweep-battle', since: '2025-01-21' },
+  { id: 'sp-battle', since: '2025-09-12' },
+  { id: 'cursed-corpse-walk', since: '2025-05-21' },
+  { id: 'dreamy-stairwell', since: '2024-06-06' },
+  { id: 'main-quest' },
+  { id: 'cursed-object-collection' },
+  { id: 'strengthening-quest' },
+];
+export const MODE_IDS = MODE_DEFS.map((m) => m.id);
+export const MODES: Content[] = MODE_DEFS.map(({ id, since }) => ({
   id,
   kind: 'mode',
   name: id,
   ...(id === 'illusory-tower' ? { floors: M.towerFloors } : {}),
-  source: WIKI_GUIDE,
+  ...(since ? { start: `${since}T15:00:00+09:00`, server: 'jp' as const } : {}),
+  source: since ? TIMELINE : WIKI_GUIDE,
 }));
 
 // Eventos con combates, por el prefijo del título en la cronología de la wiki
@@ -49,6 +67,10 @@ const CATEGORY: [RegExp, EventCategory][] = [
   [/^Memory Quest/i, 'memory'],
   [/^Grand Exorcism/i, 'exorcism'],
   [/^Chiki Chiki/i, 'corpse'],
+  [/^Imaginary Realm/i, 'imaginary'],
+  [/^Side Story/i, 'side'],
+  [/^Event Marathon/i, 'marathon'],
+  [/^Main Story(?: Update)?:/i, 'main'],
 ];
 export const EVENT_CATEGORIES = CATEGORY.map(([, c]) => c);
 const categoryOf = (title: string) => CATEGORY.find(([re]) => re.test(title))?.[1];
@@ -75,6 +97,20 @@ export const EVENTS: Content[] = [...new Map(
 export const CONTENT: Content[] = [...MODES, ...EVENTS];
 export const getContent = (id: string) => CONTENT.find((c) => c.id === id) ?? null;
 
-/** Datos de un contenido: la entrada propia y, en la torre, una por piso ("illusory-tower/12"). */
-export const affinityEntries = (id: string): Record<string, AffinityData> =>
-  Object.fromEntries(Object.entries(M.affinity).filter(([k]) => k === id || k.startsWith(`${id}/`)));
+// ── Comunidad (foro con Giscus, leído a diario por npm run data:community) ──
+export interface CommunityTeam { main: (string | null)[]; sub: string | null; helper: string | null; mems: (string | null)[]; floor: number | null; votes: number; author: string; url: string; date: string }
+type Thread = { url: string; comments: number; teams: CommunityTeam[]; affinity: Record<string, { weak: ElementKey[]; resist: ElementKey[]; reports: number }> };
+const C = community as unknown as { updatedAt: string | null; threads: Record<string, Thread> };
+export const COMMUNITY_UPDATED = C.updatedAt;
+export const communityThread = (id: string): Thread | null => C.threads[id] ?? null;
+
+/**
+ * Datos de un contenido: la entrada propia y, en la torre, una por piso ("illusory-tower/12").
+ * Lo que guardas a mano manda; si no hay, se usa lo que confirma la comunidad.
+ */
+export const affinityEntries = (id: string): Record<string, AffinityData> => {
+  const fromCommunity = Object.fromEntries(Object.entries(communityThread(id)?.affinity ?? {})
+    .map(([k, v]) => [k, { weak: v.weak, resist: v.resist, community: v.reports } as AffinityData]));
+  const manual = Object.fromEntries(Object.entries(M.affinity).filter(([k]) => k === id || k.startsWith(`${id}/`)));
+  return { ...fromCommunity, ...manual };
+};

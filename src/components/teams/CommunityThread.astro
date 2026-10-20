@@ -1,0 +1,40 @@
+---
+// Hilo de la comunidad de un contenido (Giscus · GitHub Discussions).
+// Un hilo por contenido, compartido por todos los idiomas (mapping "specific" con el id).
+import { GISCUS, GISCUS_ENABLED } from '@/config/site';
+import type { Locale } from '@/i18n/utils';
+
+interface Props { term: string; lang: Locale; labels: { title: string; desc: string; pending: string; how: string } }
+const { term, lang, labels } = Astro.props;
+const GISCUS_LANG: Record<Locale, string> = { en: 'en', es: 'es', pt: 'pt', fr: 'fr', de: 'de', ja: 'ja', ko: 'ko', zh: 'zh-CN' };
+---
+
+<section id="community" class="card mt-8 scroll-mt-24 p-5 sm:p-6">
+  <h2 class="text-2xl font-bold text-bone">{labels.title}</h2>
+  <p class="mt-1 max-w-3xl text-sm text-dust">{labels.desc}</p>
+  <p class="mt-1 max-w-3xl text-xs text-smoke">{labels.how}</p>
+  {GISCUS_ENABLED ? (
+    <div class="giscus mt-5"
+      data-repo={GISCUS.repo} data-repo-id={GISCUS.repoId} data-category={GISCUS.category} data-category-id={GISCUS.categoryId}
+      data-mapping="specific" data-term={term} data-strict="1" data-reactions-enabled="1" data-emit-metadata="0"
+      data-input-position="top" data-theme="transparent_dark" data-lang={GISCUS_LANG[lang]} data-loading="lazy"></div>
+  ) : (
+    <p class="mt-4 rounded-xl border border-dashed border-line px-4 py-6 text-center text-sm text-smoke">{labels.pending}</p>
+  )}
+</section>
+
+{GISCUS_ENABLED && (
+  <script is:inline>
+    (() => {
+      const box = document.querySelector('.giscus');
+      if (!box || box.dataset.loaded) return;
+      box.dataset.loaded = '1';
+      const s = document.createElement('script');
+      s.src = 'https://giscus.app/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      for (const [k, v] of Object.entries(box.dataset)) if (k !== 'loaded') s.setAttribute(`data-${k.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`)}`, v);
+      box.appendChild(s);
+    })();
+  </script>
+)}

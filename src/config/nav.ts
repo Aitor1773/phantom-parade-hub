@@ -28,7 +28,6 @@ export const NAV: NavEntry[] = [
     items: [
       { id: 'characters', path: '/characters', label: 'nav.characters', desc: 'nav.characters.desc', icon: 'users', phase: 1 },
       { id: 'memories', path: '/memories', label: 'nav.memories', desc: 'nav.memories.desc', icon: 'layers', phase: 1 },
-      { id: 'buffs', path: '/buffs', label: 'nav.buffs', desc: 'nav.buffs.desc', icon: 'chart', phase: 2 },
     ],
     feature: { title: 'nav.feature.latest', desc: 'nav.feature.latest.desc', path: '/characters' },
   },

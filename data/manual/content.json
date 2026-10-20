@@ -1,5 +1,5 @@
 {
-  "_comment": "Debilidades y resistencias por contenido, rellenadas a mano desde el juego (no se copian de webs de guías). Claves: id del contenido (ver /teams) o 'illusory-tower/<piso>'. Valores: {\"weak\": [elementos], \"resist\": [elementos], \"note\": opcional, \"checked\": \"AAAA-MM-DD\"}. Elementos: red, blue, green, yellow. towerFloors: pisos de la Torre ilusoria (la wiki indicaba 80 al escribir su guía).",
-  "towerFloors": 80,
+  "_comment": "Debilidades y resistencias por contenido, rellenadas a mano desde el juego (no se copian de webs de guías). Claves: id del contenido (ver /teams) o 'illusory-tower/<piso>'. Valores: {\"weak\": [elementos], \"resist\": [elementos], \"note\": opcional, \"checked\": \"AAAA-MM-DD\"}. Elementos: red, blue, green, yellow. towerFloors: pisos de la Torre ilusoria (90 desde la actualización JP del 24-10-2025, según la cronología de la wiki).",
+  "towerFloors": 90,
   "affinity": {}
 }

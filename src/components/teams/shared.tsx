@@ -1,39 +1,41 @@
 // Piezas comunes del creador de equipos y de los equipos por contenido.
 import { useEffect, useState } from 'react';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
-import type { Affinity, ElementKey, Team, TeamChar, TeamSlot } from '@/lib/team-recs';
+import type { Account, Affinity, ElementKey, Team, TeamChar, TeamMemory, TeamSlot } from '@/lib/team-recs';
 
 export const ELEMENTS: ElementKey[] = ['red', 'blue', 'green', 'yellow'];
 export type Labels = Record<string, string>;
 export type AffinityMap = Partial<Record<ElementKey, Affinity>>;
 export const fill = (s: string, v: Record<string, string | number>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
 
-/** Personajes con rangos (archivo estático compartido). */
-export function useTeamChars() {
-  const [chars, setChars] = useState<TeamChar[] | null>(null);
+/** Personajes con rangos y memorias (archivos estáticos compartidos). */
+export function useTeamData() {
+  const [data, setData] = useState<{ chars: TeamChar[]; memories: TeamMemory[] } | null>(null);
   useEffect(() => {
     let alive = true;
-    fetch('/data/team-chars.json').then((r) => r.json()).then((d) => alive && setChars(d)).catch(() => alive && setChars([]));
+    const get = (u: string) => fetch(u).then((r) => r.json()).catch(() => []);
+    Promise.all([get('/data/team-chars.json'), get('/data/team-memories.json')]).then(([chars, memories]) => alive && setData({ chars, memories }));
     return () => { alive = false; };
   }, []);
-  return chars;
+  return data;
 }
 
-/** Personajes de Mi cuenta (localStorage "pp-inventory"); null si no hay ninguno. */
-export function useOwned() {
-  const [owned, setOwned] = useState<Set<string> | null | undefined>(undefined);
+/** Tu cuenta (localStorage "pp-inventory"): personajes con su inversión y memorias. null si no hay personajes. */
+export function useAccount() {
+  const [acc, setAcc] = useState<Account | null | undefined>(undefined);
   useEffect(() => {
     const read = () => {
       try {
-        const ids = Object.keys(JSON.parse(localStorage.getItem('pp-inventory') ?? 'null')?.characters ?? {});
-        setOwned(ids.length ? new Set(ids) : null);
-      } catch { setOwned(null); }
+        const inv = JSON.parse(localStorage.getItem('pp-inventory') ?? 'null');
+        const chars = inv?.characters ?? {};
+        setAcc(Object.keys(chars).length ? { chars, mems: inv?.memories ?? {} } : null);
+      } catch { setAcc(null); }
     };
     read();
     window.addEventListener('storage', read);
     return () => window.removeEventListener('storage', read);
   }, []);
-  return owned; // undefined = aún leyendo
+  return acc; // undefined = aún leyendo
 }
 
 /** Marca por elemento: normal → débil → resiste → normal. */
@@ -65,12 +67,13 @@ const RANK_CLS: Record<string, string> = { S: 'bg-flame text-ash', A: 'bg-ember 
 
 /** Un hueco del equipo. */
 export function SlotCard({ slot, label, labels: L, affinity, basePath, onClick, onRemove }: {
-  slot: TeamSlot | { c: TeamChar; as?: 'dmg' | 'sup' } | null; label: string; labels: Labels; affinity?: AffinityMap; basePath?: string;
+  slot: TeamSlot | { c: TeamChar; as?: 'dmg' | 'sup'; mem?: TeamMemory | null } | null; label: string; labels: Labels; affinity?: AffinityMap; basePath?: string;
   onClick?: () => void; onRemove?: () => void;
 }) {
   const c = slot?.c;
   const as = slot && 'as' in slot ? slot.as : undefined;
-  const rank = c && as ? (as === 'dmg' ? c.dmg : c.sup) : null;
+  const rank = slot && 'rank' in slot ? slot.rank : c && as ? (as === 'dmg' ? c.dmg : c.sup) : null;
+  const mem = slot && 'mem' in slot ? slot.mem : undefined;
   const a = c ? affinity?.[c.element as ElementKey] : undefined;
   const body = (
     <>
@@ -84,6 +87,12 @@ export function SlotCard({ slot, label, labels: L, affinity, basePath, onClick, 
       <span className="mt-1 block truncate text-[11px] font-semibold text-bone">{c ? c.name : L['tm.empty']}</span>
       <span className="block truncate text-[10px] text-smoke">{c ? (c.epithet ?? '') : label}</span>
       {c && <span className="block truncate text-[10px] text-dust">{label}{as ? ` · ${L[as === 'dmg' ? 'tm.dmg' : 'tm.sup']}` : ''}</span>}
+      {mem !== undefined && c && (
+        <span className="mt-1 flex items-center gap-1 rounded-md border border-line bg-ash/50 p-0.5 pr-1" title={mem ? `${L['tm.memory']}: ${mem.name}` : L['tm.nomem']}>
+          {mem?.img ? <img src={mem.img} alt="" loading="lazy" className="size-6 shrink-0 rounded object-cover" /> : <span className="grid size-6 shrink-0 place-items-center rounded bg-cinder text-[9px] text-smoke">—</span>}
+          <span className="min-w-0 truncate text-[9px] leading-tight text-dust">{mem ? mem.name : L['tm.nomem']}</span>
+        </span>
+      )}
     </>
   );
   return (
@@ -97,6 +106,44 @@ export function SlotCard({ slot, label, labels: L, affinity, basePath, onClick, 
         <button type="button" onClick={onRemove} className="absolute -top-1.5 -right-1.5 grid size-6 place-items-center rounded-full border border-line bg-coal text-xs text-dust hover:text-bone" aria-label={`${L['tb.remove']}: ${c.name}`}>✕</button>
       )}
     </div>
+  );
+}
+
+/**
+ * Texto para publicar un equipo en el foro. Las líneas "pp-…" las lee el proceso diario
+ * (scripts/data/fetch-community.mjs) para mostrar los equipos más votados y las debilidades.
+ */
+export function teamPost(team: Team, affinity: AffinityMap, L: Labels, opts: { content?: string; floor?: number } = {}) {
+  const line = (s: TeamSlot | null) => (s ? `${s.c.name}${s.c.epithet ? ` (${s.c.epithet})` : ''} · ${L[s.as === 'dmg' ? 'tm.dmg' : 'tm.sup']}${s.mem ? ` · ${s.mem.name}` : ''}` : '—');
+  const aff = ELEMENTS.filter((e) => affinity[e]).map((e) => `${L[`el.${e}`]} ${affinity[e] === 'weak' ? '▲' : '▼'}`).join(', ');
+  const ids = (xs: (TeamSlot | null)[]) => xs.map((s) => s?.c.id ?? '-').join(',');
+  return [
+    opts.content ? `**${opts.content}${opts.floor ? ` · ${L['tm.floor']} ${opts.floor}` : ''}**` : '',
+    ...team.main.map((s) => `- ${L['tm.main']}: ${line(s)}`),
+    `- ${L['tm.sub']}: ${line(team.sub)}`,
+    `- ${L['tm.helper']}: ${line(team.helper)}`,
+    aff ? `${L['tm.affinity']}: ${aff}` : '',
+    '',
+    `${L['tb.strategy']}: `,
+    '',
+    '```',
+    `pp-team: main=${ids(team.main)} sub=${team.sub?.c.id ?? '-'} helper=${team.helper?.c.id ?? '-'} mem=${[...team.main, team.sub].map((s) => s?.mem?.id ?? '-').join(',')}`,
+    ...(aff ? [`pp-affinity: ${ELEMENTS.filter((e) => affinity[e]).map((e) => `${e}=${affinity[e]}`).join(' ')}`] : []),
+    ...(opts.floor ? [`pp-floor: ${opts.floor}`] : []),
+    '```',
+  ].filter((x, i, a) => x !== '' || a[i - 1] !== '').join('\n').trim();
+}
+
+/** Copia el equipo al portapapeles y lleva al hilo del foro de la página (si lo hay). */
+export function CopyTeamButton({ text, labels: L }: { text: string; labels: Labels }) {
+  const [done, setDone] = useState(false);
+  return (
+    <button type="button" className="btn-secondary h-8 px-3 text-xs" onClick={async () => {
+      try { await navigator.clipboard.writeText(text); setDone(true); setTimeout(() => setDone(false), 2500); } catch { window.prompt(L['tb.copy'], text); }
+      document.getElementById('community')?.scrollIntoView({ behavior: 'smooth' });
+    }}>
+      {done ? L['tb.copied'] : L['tb.copy']}
+    </button>
   );
 }
 
