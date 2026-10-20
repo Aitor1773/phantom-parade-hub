@@ -52,7 +52,6 @@ Fan site no oficial de *Jujutsu Kaisen: Phantom Parade*: base de datos, guías, 
 /equipos                  Equipos recomendados por elemento con sustitutos
 /team-builder             Constructor con sinergias (usa tu colección si estás registrado)
 /banners                  Calendario Global (y JP como predicción), cuenta atrás
-/herramientas/cubos       Calculadora de cubos (se especifica aparte)
 /herramientas/tiradas     Planificador de tiradas / pity / gemas
 /herramientas/simulador   Simulador de gacha
 /codigos                  Códigos activos y caducados
@@ -138,7 +137,7 @@ Efectos: brasas animadas sutiles en el hero, degradado ember→flame en CTAs, "c
 |---|---|
 | **0. Base** | Repo, design system Fuga, navegación superior, i18n, pipeline de datos de la wiki + comparador |
 | **1. MVP** | Personajes + fichas, memorias, banners Global, códigos, tier list, equipos |
-| **2. Herramientas** | Calculadora de cubos, planificador de tiradas, simulador, team builder |
+| **2. Herramientas** | Planificador de tiradas, simulador, team builder |
 | **3. Cuenta** | Login, inventario manual, recomendaciones |
 | **4. Capturas** | Importación por capturas (beta → estable cuando pase el listón) |
 | **5. Extra** | Tier list comunitaria, creadores de contenido, notificaciones de banners |
@@ -148,7 +147,6 @@ Efectos: brasas animadas sutiles en el hero, degradado ember→flame en CTAs, "c
 ## 8. Pendiente de decidir
 - [ ] Nombre del sitio y dominio
 - [ ] Fuentes oficiales Global (fechas de banners/eventos)
-- [ ] Especificación de la calculadora de cubos
 - [ ] Capturas reales para la importación
 - [ ] ¿Monetización? (anuncios / Ko-fi / ninguna) — afecta al tratamiento del arte oficial
 - [ ] Tier list propia: ¿quién la redacta y con qué criterio?
