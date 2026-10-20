@@ -7,7 +7,7 @@ import { TEAM_KEYS } from '@/components/teams/keys';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, thumb } from '@/data/characters';
 import { MEMORIES } from '@/data/memories';
-import { CONTENT, affinityEntries, communityThread, type Content } from '@/data/content';
+import { CONTENT, affinityEntries, communityThread, stagesOf, type Content } from '@/data/content';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
 import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
 
@@ -52,7 +52,7 @@ const commTeams = (thread?.teams ?? []).slice(0, 6).map((tm) => ({
     </header>
 
     <ContentTeams client:only="react" labels={labels} contentName={title} basePath={localePath(lang)} accountPath={localePath(lang, '/account')}
-      data={affinityEntries(c.id)} contentId={c.id} floors={c.floors} locale={LOCALE_META[lang].htmlLang} />
+      data={affinityEntries(c.id)} stages={stagesOf(c.id)} contentId={c.id} floors={c.floors} locale={LOCALE_META[lang].htmlLang} />
 
     <section class="card mt-8 p-5 sm:p-6">
       <h2 class="text-2xl font-bold text-bone">{L['cm.teams']}</h2>

@@ -8,6 +8,12 @@ export const TEAM_KEYS = [
   'el.red', 'el.blue', 'el.green', 'el.yellow', 'tm.memory', 'tm.nomem',
   'ta.ready', 'ta.ready.hint', 'ta.todo', 'ta.todo.none', 'ta.pulls', 'ta.level', 'ta.skills', 'ta.sp', 'ta.dupes', 'ta.memory', 'ta.missing',
   'ta.hint.data', 'ta.why', 'tm.affinity.community', 'tb.copy', 'tb.copied', 'tb.strategy',
+  'sh.title', 'sh.none', 'sh.phase', 'sh.power', 'sh.weak', 'sh.resist', 'sh.rules', 'sh.boss', 'sh.wave', 'sh.cut', 'sh.taunt',
+  'sh.cutpick', 'sh.cutpick.hint', 'sh.kind.aoe', 'sh.kind.single', 'sh.kind.debuff', 'sh.kind.buff', 'sh.kind.heal', 'sh.kind.taunt',
+  'sh.kind.summon', 'sh.kind.counter', 'sh.kind.enrage', 'sh.kind.other',
+  'st.title', 'st.type.taijutsu', 'st.type.jujutsu', 'st.type.mixed', 'st.only', 'st.banned', 'st.note', 'st.cut.warn', 'st.cut.ok',
+  'st.weak', 'st.weak.none', 'st.resist', 'st.aoe', 'st.aoe.none', 'st.taunt', 'st.debuff', 'st.debuff.none', 'st.sustain',
+  'st.sustain.none', 'st.counter', 'st.summon', 'st.enrage', 'st.order', 'st.break', 'st.coop', 'st.why',
 ] as const satisfies readonly GameKey[];
 
 export const BUILDER_KEYS = [

@@ -1,0 +1,4 @@
+{
+  "_comment": "Fichas de cada fase (piso, jefe, combate de evento), transcritas a mano de capturas del juego (pantalla de detalles del combate). No se copian datos de webs de guías. Ver docs/CAPTURAS-FASES.md para el formato completo. Clave: id del contenido + '/' + fase (piso 12 de la torre: 'illusory-tower/12'; 'domain-investigation/hard-3'). Elementos: red, blue, green, yellow. Tipos de daño: taijutsu (físico), jujutsu (ritual), mixed (híbrido). Tipos de habilidad: aoe, single, debuff, buff, heal, taunt, summon, counter, enrage, other.",
+  "stages": {}
+}

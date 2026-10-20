@@ -3,6 +3,8 @@
 // Las debilidades/resistencias vienen de data/manual/content.json (a mano, desde el juego).
 import manual from '../../data/manual/content.json';
 import community from '../../data/community.json';
+import stagesFile from '../../data/manual/stages.json';
+import type { Stage } from '@/lib/stage';
 import { GLOBAL_BANNERS, JP_BANNERS } from './banners';
 import type { ElementKey } from '@/lib/team-recs';
 
@@ -31,9 +33,10 @@ const M = manual as unknown as { towerFloors: number; affinity: Record<string, A
 // Modos con combates (la wiki describe también Dispatch, que no tiene combates).
 // Los últimos salen de la cronología JP de la wiki ("New Content", "New Feature"…), con su fecha.
 const TIMELINE = { label: 'JJK Phantom Parade Wiki · Timeline Of Events (JP)', url: 'https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)' };
-const MODE_DEFS: { id: string; since?: string; source?: typeof WIKI_GUIDE }[] = [
+const MODE_DEFS: { id: string; since?: string; floors?: number }[] = [
   { id: 'illusory-tower' },
-  { id: 'illusory-tower-diverse', since: '2026-07-27' },
+  // Global: «Anomalous Form» · JP: 夢幻廻楼・異相 (20 pisos por temporada)
+  { id: 'illusory-tower-diverse', since: '2026-07-27', floors: 20 },
   { id: 'domain-investigation' },
   { id: 'formidable-foes' },
   { id: 'formidable-foe-back', since: '2026-07-07' },
@@ -46,11 +49,11 @@ const MODE_DEFS: { id: string; since?: string; source?: typeof WIKI_GUIDE }[] = 
   { id: 'strengthening-quest' },
 ];
 export const MODE_IDS = MODE_DEFS.map((m) => m.id);
-export const MODES: Content[] = MODE_DEFS.map(({ id, since }) => ({
+export const MODES: Content[] = MODE_DEFS.map(({ id, since, floors }) => ({
   id,
   kind: 'mode',
   name: id,
-  ...(id === 'illusory-tower' ? { floors: M.towerFloors } : {}),
+  ...(id === 'illusory-tower' ? { floors: M.towerFloors } : floors ? { floors } : {}),
   ...(since ? { start: `${since}T15:00:00+09:00`, server: 'jp' as const } : {}),
   source: since ? TIMELINE : WIKI_GUIDE,
 }));
@@ -96,6 +99,12 @@ export const EVENTS: Content[] = [...new Map(
 ).values()].sort((a, b) => (b.start ?? '').localeCompare(a.start ?? ''));
 export const CONTENT: Content[] = [...MODES, ...EVENTS];
 export const getContent = (id: string) => CONTENT.find((c) => c.id === id) ?? null;
+
+// ── Fichas de fases (transcritas de capturas del juego) ──
+const STAGES = (stagesFile as unknown as { stages: Record<string, Stage> }).stages;
+/** Fichas de un contenido: la propia ("<id>") y las de sus fases ("<id>/<fase>"). */
+export const stagesOf = (id: string): Record<string, Stage> =>
+  Object.fromEntries(Object.entries(STAGES).filter(([k]) => k === id || k.startsWith(`${id}/`)));
 
 // ── Comunidad (foro con Giscus, leído a diario por npm run data:community) ──
 export interface CommunityTeam { main: (string | null)[]; sub: string | null; helper: string | null; mems: (string | null)[]; floor: number | null; votes: number; author: string; url: string; date: string }

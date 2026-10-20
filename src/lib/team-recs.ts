@@ -4,6 +4,8 @@
 // Con tu cuenta, además: nivel, dupes, habilidades, SP y las memorias que tienes.
 // Equipo del juego (wiki): 4 titulares, 1 suplente y 1 de apoyo (de otro jugador).
 
+import type { StageNeeds } from './stage';
+
 export type Rank = 'S' | 'A' | 'B' | 'C' | 'D';
 export type ElementKey = 'red' | 'blue' | 'green' | 'yellow';
 export type Affinity = 'weak' | 'resist';
@@ -26,6 +28,8 @@ export interface TeamChar {
   /** Memorias recomendadas (ids), en el orden de la wiki */
   mems: string[];
   rules: Partial<Record<Role | 'el', DupeRule>>;
+  /** Rasgos del kit: daño en área, provocar, curar, proteger, limpiar debilitamientos */
+  traits?: { aoe: boolean; taunt: boolean; heal: boolean; guard: boolean; cleanse: boolean };
 }
 
 export interface TeamMemory { id: string; name: string; rarity: 'SSR' | 'SR' | 'R'; img: string | null; tags: string[]; orientation: string }
@@ -44,6 +48,8 @@ export interface RecOptions {
   /** Titulares atacantes (el resto, apoyo). El juego aconseja al menos 2 de apoyo. */
   dealers?: 1 | 2;
   memories?: TeamMemory[];
+  /** Lo que exige la fase (reglas, reducción por tipo de daño, número de enemigos…) */
+  needs?: StageNeeds | null;
 }
 
 export const RP: Record<Rank, number> = { S: 5, A: 4, B: 3, C: 2, D: 1 };
@@ -72,11 +78,37 @@ export function investment(c: TeamChar, own: OwnedChar | null | undefined, maxLe
   return b;
 }
 
-export function slotScore(c: TeamChar, as: Role, affinity: RecOptions['affinity'] = {}, own?: OwnedChar | null, maxLevel = 0): number | null {
+/** Si las reglas de la fase permiten usar al personaje. */
+export const allowed = (c: TeamChar, needs?: StageNeeds | null) =>
+  !needs || ((!needs.only || needs.only.includes(c.element as ElementKey)) && !needs.banned?.includes(c.element as ElementKey));
+
+/** Reducción que sufre el daño del personaje en esta fase (0–1), según su tipo de daño. */
+export function damageCut(c: TeamChar, needs?: StageNeeds | null) {
+  if (!needs) return 0;
+  const { taijutsu: t, jujutsu: j, mixed: m } = needs.cut;
+  const f = (c.focus ?? '').toLowerCase();
+  const cut = f === 'taijutsu' ? t : f === 'jujutsu' ? j : m || (t + j) / 2;
+  return Math.min(100, cut) / 100;
+}
+
+/** Ajuste por lo que pide la fase: tipo de daño, área, provocación, debilitamientos. */
+export function needsBonus(c: TeamChar, as: Role, needs?: StageNeeds | null) {
+  if (!needs) return 0;
+  const tr = c.traits;
+  let b = -damageCut(c, needs) * (as === 'dmg' ? 4 : 1);
+  if (tr?.aoe && as === 'dmg' && (needs.enemies >= 3 || needs.taunt)) b += 0.8;
+  if (as === 'sup') {
+    if (needs.debuffs && tr?.cleanse) b += 0.5;
+    if (needs.aoeDamage && (tr?.heal || tr?.guard)) b += 0.4;
+  }
+  return b;
+}
+
+export function slotScore(c: TeamChar, as: Role, affinity: RecOptions['affinity'] = {}, own?: OwnedChar | null, maxLevel = 0, needs?: StageNeeds | null): number | null {
   const r = effectiveRank(c, as, own);
-  if (!r) return null;
+  if (!r || !allowed(c, needs)) return null;
   const a = affinity[c.element as ElementKey];
-  return RP[r] + (a ? BONUS[as][a] : 0) + (c.el ? RP[c.el] * 0.1 : 0) + investment(c, own, maxLevel);
+  return RP[r] + (a ? BONUS[as][a] : 0) + (c.el ? RP[c.el] * 0.1 : 0) + investment(c, own, maxLevel) + needsBonus(c, as, needs);
 }
 
 // ── Memorias ────────────────────────────────────────────────────
@@ -128,13 +160,13 @@ export function assignMemories(slots: (TeamSlot | null)[], memories: TeamMemory[
  * llevar dos veces al mismo personaje. El apoyo sale de otro jugador, así que se elige entre todos.
  */
 export function recommendTeam(all: TeamChar[], opts: RecOptions = {}): Team {
-  const { affinity = {}, account, dealers = 2, memories } = opts;
+  const { affinity = {}, account, dealers = 2, memories, needs } = opts;
   const maxLevel = maxLevelOf(account);
   const pool = account ? all.filter((c) => account.chars[c.id]) : all;
   const used = new Set<string>();
   const slot = (c: TeamChar, as: Role, withAccount: boolean): TeamSlot | null => {
     const own = withAccount ? account?.chars[c.id] : null;
-    const score = slotScore(c, as, affinity, own, maxLevel);
+    const score = slotScore(c, as, affinity, own, maxLevel, needs);
     const rank = effectiveRank(c, as, own);
     return score == null || !rank ? null : { c, as, score, rank };
   };
