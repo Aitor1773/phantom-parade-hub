@@ -8,7 +8,7 @@ import { LOCALES, DEFAULT_LOCALE } from './src/i18n/locales.mjs';
 export default defineConfig({
   // Dominio público (para el sitemap y las URL canónicas). En la publicación diaria
   // se toma de la variable SITE_URL del repositorio (ver docs/PUBLICAR.md).
-  site: process.env.SITE_URL || 'https://example.com',
+  site: process.env.SITE_URL || 'https://phantom-parade-hub.pages.dev',
   integrations: [react(), sitemap()],
   i18n: {
     locales: LOCALES,

@@ -1,41 +1,28 @@
 # Publicar la web, activar el foro y la actualización diaria
 
 Todo es **gratis**: GitHub (código, foro y proceso diario) y Cloudflare Pages (alojamiento).
-Solo hay que hacerlo una vez. Donde pone «pásame…», me lo das y lo configuro yo.
+**Ya está hecho** (20/10/2026); esta guía queda como referencia.
 
 ## 1. GitHub: el repositorio
-1. Crea una cuenta gratuita en <https://github.com> (si no tienes).
-2. Crea un repositorio **público** (Giscus solo funciona con repositorios públicos), por ejemplo `phantom-parade-hub`. Sin README ni licencia.
-3. **Pásame la URL del repositorio** y lo subo (`git remote add origin …` y `git push`). La primera vez GitHub te pedirá iniciar sesión.
+- Repositorio público: <https://github.com/Aitor1773/phantom-parade-hub> (rama `main`). Giscus solo funciona con repositorios públicos.
+- `gh` tiene sesión iniciada como Aitor1773 con el permiso `workflow` (necesario para subir cambios en `.github/workflows`).
 
 > Lo que se publica es el código y los datos de la web, nada privado: `.env`, `assets-src/` y `node_modules/` están excluidos en `.gitignore`.
 
 ## 2. Foro de la comunidad (Giscus)
-1. En el repositorio: **Settings → General → Features → Discussions** (actívalo).
-2. En la pestaña **Discussions**, crea una categoría llamada **`Equipos y estrategias`** de tipo **Announcement** (así solo Giscus crea los hilos y los usuarios responden en ellos).
-3. Instala la app de Giscus en el repositorio: <https://github.com/apps/giscus> → *Install* → elige solo ese repositorio.
-4. Entra en <https://giscus.app>, escribe `usuario/repositorio`, elige la categoría `Equipos y estrategias` y baja hasta el bloque de código. **Pásame `data-repo-id` y `data-category-id`** (o pégalos tú en `src/config/site.ts`, en `GISCUS`).
+- Discussions activado, categoría **`Equipos y estrategias`** (formato Announcement: solo Giscus crea los hilos y los usuarios responden en ellos).
+- App de Giscus instalada en el repositorio. Los IDs están en `src/config/site.ts` (`GISCUS`).
 
 Moderación: desde GitHub puedes ocultar, borrar o bloquear comentarios, y cerrar un hilo (*Lock conversation*).
 
 ## 3. Cloudflare Pages: el alojamiento
-1. Crea una cuenta gratuita en <https://dash.cloudflare.com>.
-2. **Workers & Pages → Create → Pages → Upload assets**, ponle nombre (por ejemplo `phantom-parade-hub`) y sube cualquier archivo para crearlo; el proceso diario lo sustituirá.
-3. Tu web quedará en `https://<nombre>.pages.dev` (luego puedes añadir un dominio propio).
-4. **My Profile → API Tokens → Create Token → plantilla «Edit Cloudflare Workers»** (o un token personalizado con permiso *Cloudflare Pages: Edit*). Copia el token.
-5. Copia tu **Account ID** (aparece en la portada de *Workers & Pages*, a la derecha).
+- Proyecto `phantom-parade-hub` conectado al repositorio de GitHub (app «Cloudflare Workers and Pages», solo con acceso a este repositorio).
+- Compilación: `npm run build`, carpeta `dist`, variables `NODE_VERSION=24` y `SITE_URL=https://phantom-parade-hub.pages.dev`.
+- La web está en <https://phantom-parade-hub.pages.dev>. **Cada subida a `main` se publica sola**; no hacen falta tokens ni secretos.
+- Dominio propio (opcional): en el proyecto, *Custom domains*. Cambia entonces `SITE_URL` en Cloudflare y en `.github/workflows/daily.yml`.
 
-## 4. Conectar GitHub con Cloudflare
-En el repositorio: **Settings → Secrets and variables → Actions**.
-
-| Tipo | Nombre | Valor |
-|---|---|---|
-| Secret | `CLOUDFLARE_API_TOKEN` | el token del paso 3.4 |
-| Secret | `CLOUDFLARE_ACCOUNT_ID` | el Account ID del paso 3.5 |
-| Variable | `CF_PAGES_PROJECT` | el nombre del proyecto (`phantom-parade-hub`) |
-| Variable | `SITE_URL` | `https://phantom-parade-hub.pages.dev` (o tu dominio) |
-
-Los secretos los escribes tú directamente en GitHub: **no hace falta que me los pases**.
+## 4. Actualización diaria
+El proceso de GitHub Actions actualiza los datos, compila para comprobar que todo va bien y sube los cambios. Siempre sube al menos `data/last-run.txt`, así que Cloudflare vuelve a publicar la web cada día aunque no haya datos nuevos.
 
 ## 5. Primera ejecución
 **Actions → Actualización diaria → Run workflow.** La primera vez tarda más (descarga todas las imágenes, unos 20 minutos). Después se ejecuta solo **cada día a las 15:30 (hora de Japón)**, justo tras el cambio de banners.
