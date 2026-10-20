@@ -235,6 +235,84 @@ function StageSheet({ stage, labels: L, fmt }: { stage: Stage; labels: Labels; f
   );
 }
 
+/** Equipo con el que se superó la fase y guía de la fuente (con su permiso, siempre enlazada). */
+function ProvenPanels({ stage, chars, memories, labels: L, basePath }: { stage: Stage; chars: TeamChar[]; memories: TeamMemory[]; labels: Labels; basePath: string }) {
+  const byId = new Map(chars.map((c) => [c.id, c]));
+  const memById = new Map(memories.map((m) => [m.id, m]));
+  const c = stage.cleared, g = stage.guide;
+  if (!c && !g?.points.length) return null;
+  const Credit = ({ src, url }: { src: string; url: string }) => (
+    <a href={url} target="_blank" rel="noopener" className="text-[11px] font-normal text-smoke underline underline-offset-2 hover:text-dust">{src} ↗</a>
+  );
+  const Chip = ({ id }: { id: string }) => {
+    const ch = byId.get(id);
+    if (!ch) return null;
+    return (
+      <a href={`${basePath}/characters/${id}`} className="flex items-center gap-1.5 rounded-full border border-line bg-coal py-0.5 pr-2 pl-0.5 text-[11px] text-bone hover:border-line-strong" style={{ borderColor: `${ELEMENT_COLOR[ch.element]}66` }}>
+        {ch.img && <img src={ch.img} alt="" loading="lazy" className="size-5 rounded-full object-cover object-top" />}{ch.name}<span className="text-smoke">{ch.epithet ? ` · ${ch.epithet}` : ''}</span>
+      </a>
+    );
+  };
+  return (
+    <div className="space-y-5">
+      {c && (
+        <section className="card p-4 sm:p-5">
+          <h3 className="mb-3 flex flex-wrap items-baseline justify-between gap-2 font-sans text-sm font-bold text-bone">{L['pv.cleared']} <Credit src={c.source} url={c.url} /></h3>
+          <ul className="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">
+            {c.chars.map((x, i) => {
+              const ch = x.id ? byId.get(x.id) : undefined;
+              const mem = c.mems[i];
+              const m = mem?.id ? memById.get(mem.id) : undefined;
+              return (
+                <li key={i} className="min-w-0 text-[10px]">
+                  {ch ? (
+                    <a href={`${basePath}/characters/${ch.id}`} className="block">
+                      <span className="relative block aspect-square overflow-hidden rounded-lg border-2 bg-cinder" style={{ borderColor: `${ELEMENT_COLOR[ch.element]}80` }}>
+                        {ch.img && <img src={ch.img} alt="" loading="lazy" className="size-full object-cover object-top" />}
+                        {x.dupes != null && <span className="absolute top-1 left-1 rounded bg-ash/85 px-1 font-bold text-flame">{x.dupes}★</span>}
+                      </span>
+                      <span className="mt-1 block truncate text-[11px] font-semibold text-bone">{ch.name}</span>
+                      <span className="block truncate text-smoke">{ch.epithet}</span>
+                    </a>
+                  ) : <span className="block aspect-square rounded-lg border border-dashed border-line p-1 text-smoke">{x.name}</span>}
+                  <span className="block text-dust">{[x.role, x.level ? `Lv ${x.level}` : ''].filter(Boolean).join(' · ')}</span>
+                  {mem && (
+                    <span className="mt-1 flex items-center gap-1 rounded-md border border-line bg-ash/50 p-0.5 pr-1" title={m?.name ?? mem.name}>
+                      {m?.img ? <img src={m.img} alt="" loading="lazy" className="size-6 shrink-0 rounded object-cover" /> : <span className="size-6 shrink-0 rounded bg-cinder" />}
+                      <span className="min-w-0 truncate text-[9px] text-dust">{m?.name ?? mem.name}</span>
+                    </span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          {c.note && <p className="mt-3 text-xs leading-relaxed whitespace-pre-line text-dust">{c.note}</p>}
+        </section>
+      )}
+      {g?.points.length ? (
+        <section className="card p-4 sm:p-5">
+          <h3 className="mb-3 flex flex-wrap items-baseline justify-between gap-2 font-sans text-sm font-bold text-bone">{L['pv.guide']} <Credit src={g.source} url={g.url} /></h3>
+          <ol className="space-y-3">
+            {g.points.map((p, i) => (
+              <li key={i} className="text-xs">
+                <p className="font-bold text-flame">{i + 1}. {p.title}</p>
+                {p.text && <p className="mt-1 leading-relaxed whitespace-pre-line text-dust">{p.text}</p>}
+                {p.chars.length ? <div className="mt-1.5 flex flex-wrap gap-1.5">{p.chars.map((id) => <Chip key={id} id={id} />)}</div> : null}
+              </li>
+            ))}
+          </ol>
+          {stage.picks?.length ? (
+            <div className="mt-4 border-t border-line pt-3">
+              <p className="mb-1.5 text-xs font-bold text-bone">{L['pv.picks']}</p>
+              <div className="flex flex-wrap gap-1.5">{stage.picks.map((id) => <Chip key={id} id={id} />)}</div>
+            </div>
+          ) : null}
+        </section>
+      ) : null}
+    </div>
+  );
+}
+
 /** Marca a mano qué tipo de daño reduce el enemigo (cuando no hay ficha). */
 function CutPicker({ value, onChange, labels: L }: { value: Partial<Record<DamageType, number>>; onChange: (v: Partial<Record<DamageType, number>>) => void; labels: Labels }) {
   return (
@@ -332,6 +410,7 @@ export default function ContentTeams({ labels: L, contentName, basePath, account
           <CutPicker value={{ ...(stage ? stageNeeds(stage)?.cut : {}), ...cut }} onChange={setCut} labels={L} />
         </div>
       </section>
+      {team && stage ? <ProvenPanels stage={stage} chars={team.chars} memories={team.memories} labels={L} basePath={basePath} /> : null}
       {team ? <Recommendations chars={team.chars} memories={team.memories} affinity={affinity} labels={L} basePath={basePath} accountPath={accountPath}
         post={{ content: contentName, floor: floors ? Number(phase.split('/')[1]) : undefined }} needs={needs} stage={stage} /> : <p className="text-sm text-smoke">{L['tm.loading']}</p>}
     </div>

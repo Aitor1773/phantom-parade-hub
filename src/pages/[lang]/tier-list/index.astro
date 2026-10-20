@@ -5,6 +5,7 @@ import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBro
 import { CHARACTERS, getCharacter, thumb } from '@/data/characters';
 import { TIER_CHANGELOG, TIER_CRITERIA, TIER_LISTS, TIER_LIST_KEYS, TIER_RANKS, type TierListKey } from '@/data/gacha';
 import { useG, type GameKey } from '@/i18n/game';
+import tierSources from '../../../../data/normalized/tier-sources.json';
 import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
 export const getStaticPaths = staticLocalePaths;
@@ -40,6 +41,13 @@ const lists = TIER_LIST_KEYS.map((key) => {
   return { key, list, rows, pending, changes };
 });
 const ssPct = Math.round(TIER_CRITERIA.thresholds[0][1] * 100);
+// Rangos de otras webs para comparar (con permiso): por lista (jjkppdb) o generales (Game8, GameWith)
+type Src = { name: string; url: string; lists?: Record<string, Record<string, string>>; overall?: Record<string, string> };
+const SOURCES = Object.entries((tierSources as unknown as { sources: Record<string, Src> }).sources).map(([key, s]) => ({
+  key, name: s.name, url: s.url,
+  rank: (list: string, id: string) => s.lists?.[list]?.[id] ?? s.overall?.[id] ?? null,
+  perList: !!s.lists,
+}));
 const OTHER = [
   { name: 'jjkppdb', url: 'https://www.jjkppdb.com/tierlists' },
   { name: 'Game8', url: 'https://game8.jp/jujutsuphanpara/573071' },
@@ -55,6 +63,19 @@ const OTHER = [
       <p class="mt-3 max-w-2xl text-dust">{g('tl.intro')}</p>
       <a href="#criteria" class="mt-2 inline-block text-xs text-smoke underline underline-offset-2 hover:text-dust">{g('tl.criteria')}</a>
     </header>
+
+    <!-- Comparar con otras webs -->
+    {SOURCES.length > 0 && (
+      <div class="tl-cmp mb-4 flex flex-wrap items-center gap-2 text-xs" role="group" aria-label={g('tl.cmp')}>
+        <span class="text-smoke">{g('tl.cmp')}:</span>
+        <button type="button" data-cmp="" aria-pressed="true" class="rounded-full border border-line px-3 py-1 font-semibold text-dust aria-pressed:border-ember/70 aria-pressed:bg-ember/15 aria-pressed:text-bone">{g('tl.cmp.none')}</button>
+        {SOURCES.map((s) => (
+          <button type="button" data-cmp={s.key} aria-pressed="false" class="rounded-full border border-line px-3 py-1 font-semibold text-dust aria-pressed:border-ember/70 aria-pressed:bg-ember/15 aria-pressed:text-bone">{s.name}</button>
+        ))}
+        <span class="tl-cmp-note hidden text-smoke">{g('tl.cmp.hint')}</span>
+        {SOURCES.map((s) => <a data-cmp-link={s.key} href={s.url} target="_blank" rel="noopener" class="hidden underline underline-offset-2 text-smoke hover:text-dust">{s.name} ↗</a>)}
+      </div>
+    )}
 
     <!-- Pestañas: elementos | funciones -->
     <div role="tablist" class="tl-tabs mb-5 flex gap-1 overflow-x-auto border-b border-line">
@@ -119,6 +140,10 @@ const OTHER = [
                         <span class="absolute inset-0 bg-gradient-to-t from-ash/90 via-transparent to-transparent"></span>
                         <span class="absolute top-1 left-1 size-2 rounded-full ring-1 ring-ash" style="background: var(--el)"></span>
                         {e.manual && <span class="absolute top-0.5 right-1 text-[10px] text-flame" title={g('tl.manual')}>✎</span>}
+                        {SOURCES.map((s) => {
+                          const r = s.rank(key, c.id);
+                          return r ? <span class={`cmp cmp-${s.key} absolute right-1 bottom-4 rounded bg-ash/90 px-1 text-[10px] font-black text-flame ring-1 ring-flame/40`} title={`${s.name}: ${r}`}>{r}</span> : null;
+                        })}
                         <span class="absolute inset-x-0 bottom-0 truncate px-1 pb-0.5 text-center text-[9px] font-semibold text-bone sm:text-[10px]">{c.name.split(' ').at(-1)}</span>
                       </span>
                     </a>
@@ -183,6 +208,9 @@ const OTHER = [
 <style>
   .tl-tabs button[aria-selected='true'] .tab-line { display: block; }
   summary::-webkit-details-marker { display: none; }
+  .cmp { display: none; }
+  /* El selector depende del atributo de <html>: fuera del ámbito del componente */
+  :global(html[data-cmp='jjkppdb']) .cmp-jjkppdb, :global(html[data-cmp='game8']) .cmp-game8, :global(html[data-cmp='gamewith']) .cmp-gamewith { display: inline-block; }
 </style>
 
 <script>
@@ -198,4 +226,14 @@ const OTHER = [
   tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab!)));
   show(location.hash.slice(1), false);
   window.addEventListener('hashchange', () => show(location.hash.slice(1), false));
+
+  // Comparar con otras webs: muestra su rango sobre cada personaje
+  const cmpBtns = [...document.querySelectorAll<HTMLButtonElement>('.tl-cmp [data-cmp]')];
+  cmpBtns.forEach((b) => b.addEventListener('click', () => {
+    const k = b.dataset.cmp ?? '';
+    document.documentElement.dataset.cmp = k;
+    cmpBtns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    document.querySelector('.tl-cmp-note')?.classList.toggle('hidden', !k);
+    document.querySelectorAll<HTMLElement>('[data-cmp-link]').forEach((a) => a.classList.toggle('hidden', a.dataset.cmpLink !== k));
+  }));
 </script>

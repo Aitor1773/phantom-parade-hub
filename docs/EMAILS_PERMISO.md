@@ -135,3 +135,7 @@ Aitor · [site URL] · aitorm600@gmail.com
 ## Si dicen que sí
 
 Guarda la respuesta (captura o email) y dímelo. Añadiré su columna de comparación con su atribución, y la confirmación quedará anotada en `docs/DATOS.md`.
+
+## Estado
+
+**2026-10-20:** el propietario del sitio comunica que jjkppdb, Game8 y GameWith han respondido concediendo **libertad total** para usar su contenido. Los correos los conserva él. Aun así, en todo lo que se usa de cada web se indica su nombre y se enlaza la página de origen.

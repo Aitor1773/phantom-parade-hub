@@ -1,5 +1,5 @@
 {
-  "_comment": "Nombre oficial japonés (「二つ名」名前) → id de la web. Emparejado a mano traduciendo el epíteto. Sirve para cruzar datos con webs JP si alguna da permiso; no se usa ningún contenido suyo.",
+  "_comment": "Nombre oficial japonés (「二つ名」名前) → id de la web. Emparejado a mano traduciendo el epíteto. Sirve para cruzar datos con webs JP (Game8, GameWith), que han dado permiso (ver docs/EMAILS_PERMISO.md).",
   "elements": {
     "幻": "red",
     "影": "blue",
@@ -90,6 +90,23 @@
     "「時間外労働」七海建人": "working-overtime-kento-nanami",
     "「無尽蔵の式神」陀艮": "unlimited-shikigami-dagon",
     "「術師としての覚悟」結木海斗": "the-resolve-of-being-a-sorcerer-kaito-yuuki",
-    "「空中偵察」西宮桃": "aerial-reconnaissance-momo-nishimiya"
+    "「空中偵察」西宮桃": "aerial-reconnaissance-momo-nishimiya",
+    "「宿儺の器」虎杖悠仁": "sukunas-vessel-yuji-itadori",
+    "「反転術式」家入硝子": "reverse-cursed-technique-shoko-ieiri",
+    "「人形ナメんな」パンダ": "dont-underestimate-a-puppet-panda",
+    "「虚式「茈」」五条悟": "hollow-purple-satoru-gojo",
+    "「怜悧なる弾丸」禪院真依": "a-clever-bullet-mai-zenin",
+    "「砲呪強化形態」究極メカ丸": "mode-albatross-ultimate-mechamaru",
+    "「友情の記憶」東堂葵": "blast-from-the-past-aoi-todo",
+    "「喧嘩上等」竜胆サキ": "just-bring-it-saki-rindo",
+    "「覚悟の呪言」狗巻棘": "resolved-cursed-speech-toge-inumaki",
+    "「最短で」パンダ": "take-the-shortest-way-panda",
+    "「弱い奴程よく群れる」禪院真希": "team-up-if-they-are-weak-maki-zenin",
+    "「決意の迎撃」三輪霞": "determined-counter-kasumi-miwa",
+    "「足止めのノルマ」ミゲル": "delayed-quota-miguel",
+    "「有効射程」禪院真依": "effective-range-mai-zenin",
+    "「労いの送迎」伊地知潔高": "pick-up-after-hard-work-kiyotaka-ijichi",
+    "「御三家の血」加茂憲紀": "blood-of-the-big-three-families-noritoshi-kamo",
+    "「連鎖紋「全開速」」漆英司": "chain-mark-full-throttle-eiji-urushi"
   }
 }

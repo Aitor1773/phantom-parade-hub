@@ -48,6 +48,16 @@ export interface Stage {
   enemies?: Enemy[];
   /** Estrategia escrita a mano (se muestra antes que la generada) */
   strategy?: string;
+  /** Equipo con el que se superó la fase (fuente con permiso) */
+  cleared?: {
+    source: string; url: string; note?: string;
+    chars: { id: string | null; name: string; dupes?: number | null; level?: number | null; role?: string }[];
+    mems: { id: string | null; name: string }[];
+  };
+  /** Guía de la fase: puntos clave con los personajes que proponen para cada uno */
+  guide?: { source: string; url: string; points: { title: string; text: string; chars: string[] }[] };
+  /** Personajes que la fuente considera adecuados para esta fase (ids) */
+  picks?: string[];
   source?: string;
   /** Página de la fuente (se enlaza siempre que se usen sus datos) */
   url?: string;
@@ -66,6 +76,8 @@ export interface StageNeeds {
   taunt: boolean;
   debuffs: boolean;
   aoeDamage: boolean;
+  /** Personajes probados en esta fase (equipo de victoria y recomendados de la guía) */
+  picks?: string[];
 }
 
 const uniq = <T,>(xs: T[]) => [...new Set(xs)];
@@ -92,5 +104,6 @@ export function stageNeeds(s: Stage | null | undefined): StageNeeds | null {
     taunt: enemies.some((e) => e.taunt || e.skills?.some((k) => k.kind === 'taunt')),
     debuffs: skills.some((k) => k.kind === 'debuff'),
     aoeDamage: skills.some((k) => k.kind === 'aoe'),
+    picks: uniq([...(s.cleared?.chars.map((c) => c.id).filter((x): x is string => !!x) ?? []), ...(s.picks ?? [])]),
   };
 }

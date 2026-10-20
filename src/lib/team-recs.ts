@@ -96,6 +96,8 @@ export function needsBonus(c: TeamChar, as: Role, needs?: StageNeeds | null) {
   if (!needs) return 0;
   const tr = c.traits;
   let b = -damageCut(c, needs) * (as === 'dmg' ? 4 : 1);
+  // Probado en esta fase (equipo de victoria o recomendado por la guía)
+  if (needs.picks?.includes(c.id)) b += 0.6;
   if (tr?.aoe && as === 'dmg' && (needs.enemies >= 3 || needs.taunt)) b += 0.8;
   if (as === 'sup') {
     if (needs.debuffs && tr?.cleanse) b += 0.5;
