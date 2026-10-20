@@ -1,0 +1,43 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import ContentTeams from '@/components/teams/ContentTeams';
+import { TEAM_KEYS } from '@/components/teams/keys';
+import { CONTENT, affinityEntries, type Content } from '@/data/content';
+import { gameDict, useG, type GameKey } from '@/i18n/game';
+import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) => CONTENT.map((c) => ({ params: { lang, id: c.id }, props: { content: c } })));
+}
+
+const lang = Astro.params.lang as Locale;
+const { content: c } = Astro.props as { content: Content };
+const t = useT(lang);
+const g = useG(lang);
+const labels = gameDict(lang, TEAM_KEYS);
+const L = gameDict(lang, ['ct.back', 'ct.source', 'ct.floors', 'ct.permanent', 'ct.title'] as const);
+const title = c.kind === 'mode' ? g(`ct.m.${c.id}` as GameKey) : c.name;
+const desc = c.kind === 'mode' ? g(`ct.m.${c.id}.d` as GameKey) : g(`ct.cat.${c.category}` as GameKey);
+const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+---
+
+<BaseLayout lang={lang} title={`${title} · ${L['ct.title']}`} description={desc}>
+  <div class="mx-auto max-w-7xl px-4 pt-10 pb-8 lg:px-6">
+    <a href={localePath(lang, '/teams')} class="mb-4 inline-flex items-center gap-1 text-xs text-smoke hover:text-dust"><Icon name="arrowRight" size={12} class="rotate-180" /> {L['ct.back']}</a>
+    <header class="mb-6">
+      <p class="eyebrow">{c.kind === 'mode' ? L['ct.permanent'] : g(`ct.cat.${c.category}` as GameKey)}</p>
+      <h1 class="mt-2 text-3xl font-black text-bone sm:text-4xl">{title}</h1>
+      <p class="mt-2 max-w-2xl text-sm text-dust">{c.kind === 'mode' ? desc : ''}</p>
+      <p class="mt-2 flex flex-wrap items-center gap-2 text-xs text-smoke">
+        {c.server && <span class={c.server === 'jp' ? 'badge-jp' : 'badge-global'}>{c.server === 'jp' ? 'JP' : 'Global'}</span>}
+        {c.start && <span>{day(c.start)}{c.end ? ` – ${day(c.end)}` : ''}</span>}
+        {c.floors && <span>{L['ct.floors'].replace('{n}', String(c.floors))}</span>}
+        <span>· {L['ct.source']}: <a href={c.source.url} target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-dust">{c.source.label}</a></span>
+      </p>
+    </header>
+    <ContentTeams client:only="react" labels={labels} basePath={localePath(lang)} accountPath={localePath(lang, '/account')}
+      data={affinityEntries(c.id)} contentId={c.id} floors={c.floors} locale={LOCALE_META[lang].htmlLang} />
+    <p class="mt-8 text-[11px] text-smoke">{t('footer.license')}</p>
+  </div>
+</BaseLayout>
