@@ -18,10 +18,10 @@ export const REMOTE_IMAGES = false;
  * (ver docs/PUBLICAR.md). Mientras esté vacío, la web muestra "foro pendiente".
  */
 export const GISCUS = {
-  repo: '', // "usuario/repositorio"
-  repoId: '',
+  repo: 'Aitor1773/phantom-parade-hub',
+  repoId: 'R_kgDOVRMxSg',
   category: 'Equipos y estrategias',
-  categoryId: '',
+  categoryId: 'DIC_kwDOVRMxSs4DJLzz',
 };
 export const GISCUS_ENABLED = !!(GISCUS.repo && GISCUS.repoId && GISCUS.categoryId);
 
