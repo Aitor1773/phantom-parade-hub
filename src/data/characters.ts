@@ -11,6 +11,12 @@ const LOCAL = localImages as Record<string, LocalImage>;
 const ICONS = localIcons as unknown as {
   skills: Record<string, number[]>;
   characters: Record<string, number[]>;
+  /** Respaldo por personaje (jjkppdb) cuando el nombre de archivo de la wiki no coincide */
+  byCharacter?: Record<string, { icon?: string; skills: Partial<Record<'normal' | 's1' | 's2' | 'ult', string>> }>;
+};
+const iconUrl = (kind: 'skills' | 'characters', k: string | undefined, width: number) => {
+  const widths = k ? ICONS[kind][k] : undefined;
+  return widths ? `/img/icons/${kind}/${k}-${widths.find((w) => w >= width) ?? widths.at(-1)}.webp` : null;
 };
 const LOCAL_PREFIX = '/img/characters/';
 
@@ -92,7 +98,26 @@ function localizeImages(c: Character): Character {
     if (k === 'art' || k === 'art2') return null;
     return v;
   });
-  out.icon = icon;
+  // Lo que no se encuentra por el nombre de archivo de la wiki se completa con jjkppdb
+  const fb = ICONS.byCharacter?.[c.id];
+  out.icon = icon ?? iconUrl('characters', fb?.icon, 96);
+  if (fb) {
+    for (const kit of Object.values(out.kits)) {
+      if (!kit) continue;
+      for (const slot of ['normal', 's1', 's2', 'ult'] as const) {
+        const sk = kit[slot];
+        if (sk && !sk.img) sk.img = iconUrl('skills', fb.skills[slot], 128);
+      }
+    }
+  }
+  // Versiones ajustadas/SP sin icono propio: el de la misma habilidad en otra versión del kit
+  const kits = Object.values(out.kits).filter((k): k is Kit => !!k);
+  for (const kit of kits) {
+    for (const slot of ['normal', 's1', 's2', 'ult'] as const) {
+      const sk = kit[slot];
+      if (sk && !sk.img) sk.img = kits.map((k) => k[slot]?.img).find(Boolean) ?? null;
+    }
+  }
   out.memories = out.memories
     .filter((m) => !/^placeholder/i.test(m.name)) // huecos vacíos de la plantilla de la wiki
     .map((m) => {

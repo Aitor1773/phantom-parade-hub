@@ -127,6 +127,66 @@ for (const [kind, dir] of Object.entries(ICON_DIRS)) {
   console.log(`Iconos de ${kind}: ${Object.keys(icons[kind]).length}`);
 }
 
+// Iconos por personaje según jjkppdb (respaldo cuando el nombre de archivo de la wiki no coincide):
+// cada página de jjkppdb lista sus iconos de habilidad ("BlueSSRMiwaS21") y de ahí sale el
+// icono del personaje ("BlueSSRMiwaIcon1").
+icons.byCharacter = {};
+if (existsSync(jjkIndexFile)) {
+  const jjkIndex = JSON.parse(await readFile(jjkIndexFile, 'utf8'));
+  const SLOT = [[/normalattack(\d*)$/, 'normal'], [/ult(\d*)$/, 'ult'], [/s1(\d*)$/, 's1'], [/s2(\d*)$/, 's2']];
+  for (const page of Object.values(jjkIndex.characters)) {
+    const id = page.hdArt && artToId.get(basename(decodeURIComponent(page.hdArt)));
+    if (!id) continue;
+    const entry = { skills: {} };
+    for (const k of page.skillIcons.map((u) => key(decodeURIComponent(u)))) {
+      if (!icons.skills[k]) continue;
+      for (const [re, slot] of SLOT) {
+        const m = k.match(re);
+        if (!m) continue;
+        entry.skills[slot] ??= k;
+        const prefix = k.slice(0, m.index), v = m[1] || '1';
+        entry.icon ??= [`${prefix}icon${v}`, `${prefix}icon1`, `${prefix}icon`].find((c) => icons.characters[c]);
+        break;
+      }
+    }
+    if (entry.icon || Object.keys(entry.skills).length) icons.byCharacter[id] = entry;
+  }
+  // Iconos de jjkppdb con un nombre que no sigue el patrón (comprobados a mano)
+  const MANUAL_ICONS = {
+    'early-morning-departure-maki-zenin': { icon: 'bluessrmakiicon1' },
+    'mode-albatross-ultimate-mechamaru': { icon: 'greenmechamarusricon1' },
+    'the-resolve-of-being-a-sorcerer-kaito-yuuki': { icon: 'greenyuukisricon1' },
+    'bond-of-friendship-megumi-fushiguro': { icon: 'greenssrmegumiicon1' },
+    'effective-range-mai-zenin': { skills: { s1: 'bluessrmaiskill1', s2: 'bluessrmaiskill2' } },
+    'melting-sweet-summer-treats-satoru-gojo': { skills: { ult: 'yellogojossrult2sp' } },
+  };
+  for (const [id, m] of Object.entries(MANUAL_ICONS)) {
+    const e = (icons.byCharacter[id] ??= { skills: {} });
+    if (m.icon && icons.characters[m.icon]) e.icon = m.icon;
+    for (const [slot, k] of Object.entries(m.skills ?? {})) if (icons.skills[k]) e.skills[slot] = k;
+  }
+}
+
+// Personajes sin icono en ninguna fuente: se recorta uno cuadrado de su arte HD
+// (recorte automático por la zona más llamativa, normalmente la cara).
+let generated = 0;
+for (const c of chars) {
+  const wikiIcon = wikiKey(c.art?.replace(/Art(\d+)\./, 'Icon$1.'));
+  if (icons.characters[wikiIcon] || icons.byCharacter[c.id]?.icon || !art[c.id]) continue;
+  const src = join(PUB, 'characters', `${c.id}-${art[c.id].widths.at(-1)}.webp`);
+  if (!existsSync(src)) continue;
+  const k = `gen-${c.id}`;
+  await mkdir(join(PUB, 'icons', 'characters'), { recursive: true });
+  for (const w of ICON_WIDTHS.characters) {
+    await sharp(src).resize(w, w, { fit: 'cover', position: sharp.strategy.attention }).webp({ quality: 85 }).toFile(join(PUB, 'icons', 'characters', `${k}-${w}.webp`));
+  }
+  icons.characters[k] = ICON_WIDTHS.characters;
+  (icons.byCharacter[c.id] ??= { skills: {} }).icon = k;
+  generated++;
+}
+if (generated) console.log(`Iconos generados desde el arte: ${generated}`);
+console.log(`Iconos asociados por personaje: ${Object.keys(icons.byCharacter).length} (con icono: ${Object.values(icons.byCharacter).filter((e) => e.icon).length})`);
+
 // ── Memorias (icono + ilustración, por id de jjkppdb y nombre) ──
 const idxFile = join(JJK, 'index.json');
 if (existsSync(idxFile)) {

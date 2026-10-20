@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T17:37:13.380Z",
+  "generatedAt": "2026-10-20T07:35:28.954Z",
   "links": {
     "2-problem-children-however-the-strongest": {
       "jjkppdb": 40251,
@@ -58,6 +58,11 @@
     },
     "strong-lineup": {
       "jjkppdb": 30109,
+      "method": "manual",
+      "similarity": 1
+    },
+    "someone-like-me": {
+      "jjkppdb": 20096,
       "method": "manual",
       "similarity": 1
     },
@@ -1200,7 +1205,6 @@
     "Laundry Time After the Mission [SSR]",
     "Ping Pong!! [SSR]",
     "Resolve and Curse, Within the Game of Death [SSR]",
-    "Someone Like Me? [SSR]",
     "Something to Satisfy a Light Hunger [SSR]",
     "The Clear Stream Duo [SSR]",
     "The Super Classmate’s Debut Battle [SSR]",
@@ -1210,7 +1214,5 @@
     "Weaving Fantasies [SSR]",
     "Youth Graffiti [SSR]"
   ],
-  "unmatchedJJ": [
-    "The Same? [SSR] #20096"
-  ]
+  "unmatchedJJ": []
 }

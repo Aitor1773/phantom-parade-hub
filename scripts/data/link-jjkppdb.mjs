@@ -67,6 +67,7 @@ const MANUAL = [
   ['Ignoring Orders', 'Ignore Commands'],
   ['Mensore!', 'Okinawa Welcomes You!!'], // "mensore" = "bienvenido" en okinawense
   ['Strong Lineup', 'Rock-Solid Formation'],
+  ['Someone Like Me?', 'The Same?'], // mismo efecto (Jujutsu a todos, 4 turnos) y perfil de stats
   ["Student's Duty", 'Student Duties'],
   ['Super Freshman Welcoming Party', 'Mega New Student Welcome Party'],
   ['The City Where the Lights Went Out', 'Unlit City'],
