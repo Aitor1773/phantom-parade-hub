@@ -2,7 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import CharacterBrowser, { type BrowserItem } from '@/components/characters/CharacterBrowser';
-import { CHARACTERS, thumb } from '@/data/characters';
+import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
 import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
@@ -23,6 +23,7 @@ const items: BrowserItem[] = CHARACTERS.map((c) => ({
   availability: c.availability,
   date: c.releaseDateJP,
   img: thumb(c.art, 320),
+  srcset: srcsetOf(c.art, 640),
 }));
 
 // Opciones de filtro: solo los valores que existen en los datos, en un orden fijo

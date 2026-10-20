@@ -53,7 +53,7 @@ const all: Memory[] = (wiki.items as unknown as RawMemory[]).map((m) => {
   return {
     ...m,
     orientation: orientation(m.stats),
-    icon: link && local?.icon ? `/img/icons/memories/${link.jjkppdb}-${local.icon[0]}.webp` : null,
+    icon: link && local?.icon ? `/img/icons/memories/${link.jjkppdb}-${local.icon.at(-1)}.webp` : null, // la mayor: nítida en pantallas HD
     illust: link && local?.illust ? `/img/memories/${link.jjkppdb}` : null,
     illustWidths: local?.illust ?? [],
     imageReview: !!link?.review,
@@ -93,6 +93,11 @@ export function illustSrc(m: Memory, width: number) {
   if (!m.illust) return null;
   const w = m.illustWidths.find((x) => x >= width) ?? m.illustWidths.at(-1);
   return `${m.illust}-${w}.webp`;
+}
+
+/** Todas las versiones de la ilustración para `srcset`. */
+export function illustSrcset(m: Memory) {
+  return m.illust ? m.illustWidths.map((w) => `${m.illust}-${w}.webp ${w}w`).join(', ') : undefined;
 }
 
 export const MEMORY_TAGS: MemoryTag[] = ['damage', 'crit', 'break', 'taijutsu', 'jujutsu', 'ce', 'gauge', 'heal', 'defense', 'taunt', 'evade', 'revive', 'debuff'];

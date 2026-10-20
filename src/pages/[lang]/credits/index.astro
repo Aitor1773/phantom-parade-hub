@@ -1,0 +1,72 @@
+---
+// Créditos y licencias: la única página que nombra y enlaza otras webs.
+// La licencia CC BY-SA 3.0 de la wiki exige citarla y enlazar la licencia.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import { useG, type GameKey } from '@/i18n/game';
+import { staticLocalePaths, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const g = useG(lang);
+
+type Link = { name: string; url: string };
+const ITEMS: { desc: GameKey; note?: GameKey; links: Link[] }[] = [
+  {
+    desc: 'cr.wiki', note: 'cr.cc',
+    links: [
+      { name: 'JJK Phantom Parade Wiki (Fandom)', url: 'https://jjk-phantom-parade.fandom.com/wiki/JJK-Phantom-Parade-Wiki' },
+      { name: 'CC BY-SA 3.0', url: 'https://creativecommons.org/licenses/by-sa/3.0/' },
+    ],
+  },
+  { desc: 'cr.images', note: 'cr.permission', links: [{ name: 'jjkppdb', url: 'https://www.jjkppdb.com/' }] },
+  { desc: 'cr.guides', note: 'cr.permission', links: [{ name: 'Game8', url: 'https://game8.jp/jujutsuphanpara' }] },
+  {
+    desc: 'cr.codes',
+    links: [
+      { name: 'Beebom', url: 'https://beebom.com/' },
+      { name: 'Game.guide', url: 'https://www.game.guide/' },
+      { name: 'UrGameTips', url: 'https://urgametips.com/' },
+      { name: 'Pocket Gamer', url: 'https://www.pocketgamer.com/' },
+      { name: 'BlueStacks', url: 'https://www.bluestacks.com/' },
+    ],
+  },
+  {
+    desc: 'cr.press',
+    links: [
+      { name: 'Game Developer', url: 'https://www.gamedeveloper.com/' },
+      { name: 'Gamespress', url: 'https://www.gamespress.com/' },
+    ],
+  },
+  { desc: 'cr.official', links: [{ name: 'Bilibili Game', url: 'https://jujutsuphanpara.biligames.com/' }] },
+];
+---
+
+<BaseLayout lang={lang} title={g('cr.title')} description={g('cr.intro')}>
+  <div class="mx-auto max-w-3xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8">
+      <h1 class="text-4xl font-black text-bone sm:text-5xl">{g('cr.title')}</h1>
+      <p class="mt-3 text-dust">{g('cr.intro')}</p>
+    </header>
+
+    <ul class="grid gap-3">
+      {ITEMS.map((it) => (
+        <li class="card p-5">
+          <p class="text-sm text-bone">{g(it.desc)}</p>
+          <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            {it.links.map((l) => (
+              <a href={l.url} target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-ember underline underline-offset-2 hover:text-flame">
+                {l.name}
+                <Icon name="arrowRight" size={12} class="-rotate-45" />
+              </a>
+            ))}
+          </p>
+          {it.note && <p class="mt-2 text-xs text-smoke">{g(it.note)}</p>}
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-8 text-[11px] leading-relaxed text-smoke">© Gege Akutami/Shueisha, JUJUTSU KAISEN Production Committee © Sumzap, Inc./TOHO CO., LTD.</p>
+  </div>
+</BaseLayout>

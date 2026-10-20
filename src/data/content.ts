@@ -4,6 +4,7 @@
 import manual from '../../data/manual/content.json';
 import community from '../../data/community.json';
 import stagesFile from '../../data/manual/stages.json';
+import eventGuides from '../../data/normalized/event-guides.json';
 import type { Stage } from '@/lib/stage';
 import { GLOBAL_BANNERS, JP_BANNERS } from './banners';
 import type { ElementKey } from '@/lib/team-recs';
@@ -37,16 +38,9 @@ const MODE_DEFS: { id: string; since?: string; floors?: number }[] = [
   { id: 'illusory-tower' },
   // Global: «Anomalous Form» · JP: 夢幻廻楼・異相 (20 pisos por temporada)
   { id: 'illusory-tower-diverse', since: '2026-07-27', floors: 20 },
-  { id: 'domain-investigation' },
-  { id: 'formidable-foes' },
   { id: 'formidable-foe-back', since: '2026-07-07' },
-  { id: 'curse-sweep-battle', since: '2025-01-21' },
   { id: 'sp-battle', since: '2025-09-12' },
-  { id: 'cursed-corpse-walk', since: '2025-05-21' },
-  { id: 'dreamy-stairwell', since: '2024-06-06' },
   { id: 'main-quest' },
-  { id: 'cursed-object-collection' },
-  { id: 'strengthening-quest' },
 ];
 export const MODE_IDS = MODE_DEFS.map((m) => m.id);
 export const MODES: Content[] = MODE_DEFS.map(({ id, since, floors }) => ({
@@ -102,9 +96,50 @@ export const getContent = (id: string) => CONTENT.find((c) => c.id === id) ?? nu
 
 // ── Fichas de fases (transcritas de capturas del juego) ──
 const STAGES = (stagesFile as unknown as { stages: Record<string, Stage> }).stages;
-/** Fichas de un contenido: la propia ("<id>") y las de sus fases ("<id>/<fase>"). */
-export const stagesOf = (id: string): Record<string, Stage> =>
-  Object.fromEntries(Object.entries(STAGES).filter(([k]) => k === id || k.startsWith(`${id}/`)));
+/**
+ * Fichas de un contenido: la propia ("<id>") y las de sus fases ("<id>/<fase>").
+ * Sin fuente ni enlace: la web no nombra ni enlaza otras webs (las fuentes están en Créditos).
+ */
+export const stagesOf = (id: string): Record<string, Stage> => {
+  const own = Object.fromEntries(Object.entries(STAGES).filter(([k]) => k === id || k.startsWith(`${id}/`)).map(([k, s]) => {
+    const { source: _s, url: _u, cleared, guide, ...rest } = s;
+    return [k, {
+      ...rest,
+      ...(cleared ? { cleared: { ...cleared, source: undefined, url: undefined } } : {}),
+      ...(guide ? { guide: { ...guide, source: undefined, url: undefined } } : {}),
+    }];
+  }));
+  const ev = eventStage(id);
+  return ev && !own[id] ? { [id]: ev, ...own } : own;
+};
+
+// ── Eventos en curso (npm run data:events, a diario): equipo recomendado y elemento ──
+type EventGuide = {
+  start: string | null; end: string | null;
+  parties: { chars: { id: string | null }[]; memories: { id: string | null; jp: string }[]; elements: ElementKey[]; auto: boolean }[];
+  bonusMemories: { id: string | null }[];
+};
+const EVENT_GUIDES = (eventGuides as unknown as { fetchedAt: string | null; events: EventGuide[] });
+/** Ficha generada para un evento JP que coincide (por fecha de inicio) con uno de la lista diaria. */
+function eventStage(id: string): Stage | null {
+  const c = EVENTS.find((e) => e.id === id);
+  if (!c || c.server !== 'jp' || !c.start) return null;
+  const day = (iso: string) => new Date(Date.parse(iso) + 9 * 3600e3).toISOString().slice(0, 10); // fecha en Japón
+  const g = EVENT_GUIDES.events.find((x) => x.start && day(x.start) === day(c.start!));
+  const p = g?.parties.find((x) => x.chars.filter((ch) => ch.id).length >= 2);
+  if (!g || !p) return null;
+  return {
+    server: 'jp',
+    checked: EVENT_GUIDES.fetchedAt?.slice(0, 10),
+    ...(p.elements.length ? { recommended: p.elements } : {}),
+    picks: [...new Set(g.parties.flatMap((x) => x.chars.map((ch) => ch.id).filter((v): v is string => !!v)))],
+    cleared: {
+      kind: p.auto ? 'farm' : 'recommended',
+      chars: p.chars.map((ch) => ({ id: ch.id, name: '' })),
+      mems: p.memories.map((m) => ({ id: m.id, name: m.id ? '' : m.jp })),
+    },
+  } as Stage;
+}
 
 // ── Comunidad (foro con Giscus, leído a diario por npm run data:community) ──
 export interface CommunityTeam { main: (string | null)[]; sub: string | null; helper: string | null; mems: (string | null)[]; floor: number | null; votes: number; author: string; url: string; date: string }

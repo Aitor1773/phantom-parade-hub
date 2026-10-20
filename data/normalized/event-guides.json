@@ -1,0 +1,72 @@
+{
+  "fetchedAt": "2026-10-20T18:02:32.858Z",
+  "events": [
+    {
+      "id": "833319",
+      "listTitle": "マップイベ青の足跡編弐&幻日下部ガチャ開幕",
+      "start": "2026-10-19T15:00:00+09:00",
+      "end": "2026-10-29T14:59:00+09:00",
+      "url": "https://game8.jp/jujutsuphanpara/833319",
+      "title": "【ファンパレ】イベント大討祓戦「青の足跡編弐」の攻略と報酬【呪術廻戦ファントムパレード】",
+      "parties": [
+        {
+          "label": "EXフルオート1ターン周回パーティ",
+          "chars": [
+            {
+              "jp": "「最後の弾丸」禪院真依",
+              "id": "the-final-bullet-mai-zenin"
+            },
+            {
+              "jp": "「術師殺し」伏黒甚爾",
+              "id": "the-sorcerer-killer-toji-fushiguro"
+            },
+            {
+              "jp": "「烏の舞う夜に」冥冥",
+              "id": "night-of-dancing-crows-mei-mei"
+            },
+            {
+              "jp": "「気づきを与える教育者」夜蛾正道",
+              "id": "ariadnes-thread-educator-masamichi-yaga"
+            }
+          ],
+          "memories": [
+            {
+              "jp": "加茂憲紀の弓道指南",
+              "id": "noritoshi-kamos-archery-lessons"
+            },
+            {
+              "jp": "夕焼けの双影",
+              "id": "two-shadows-reflected-in-the-evening"
+            },
+            {
+              "jp": "強者の戯れ",
+              "id": "play-of-the-strong"
+            },
+            {
+              "jp": "清流の2人",
+              "id": "the-clear-stream-duo"
+            }
+          ],
+          "elements": [
+            "red"
+          ],
+          "auto": true
+        }
+      ],
+      "bonusMemories": [
+        {
+          "jp": "清流の2人",
+          "id": "the-clear-stream-duo"
+        },
+        {
+          "jp": "大人達の午後",
+          "id": "adults-afternoon"
+        }
+      ],
+      "eventMemory": {
+        "jp": "清流の2人",
+        "id": "the-clear-stream-duo"
+      }
+    }
+  ]
+}

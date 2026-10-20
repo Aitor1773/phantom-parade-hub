@@ -50,16 +50,18 @@ export interface Stage {
   strategy?: string;
   /** Equipo con el que se superó la fase (fuente con permiso) */
   cleared?: {
-    source: string; url: string; note?: string;
+    source?: string; url?: string; note?: string;
+    /** Eventos: equipo para repetir en automático o equipo recomendado (en vez de «con el que se superó») */
+    kind?: 'farm' | 'recommended';
     chars: { id: string | null; name: string; dupes?: number | null; level?: number | null; role?: string }[];
     mems: { id: string | null; name: string }[];
   };
   /** Guía de la fase: puntos clave con los personajes que proponen para cada uno */
-  guide?: { source: string; url: string; points: { title: string; text: string; chars: string[] }[] };
+  guide?: { source?: string; url?: string; points: { title: string; text: string; chars: string[] }[] };
   /** Personajes que la fuente considera adecuados para esta fase (ids) */
   picks?: string[];
   source?: string;
-  /** Página de la fuente (se enlaza siempre que se usen sus datos) */
+  /** Página de la fuente (solo en los datos; la web la cita en Créditos) */
   url?: string;
 }
 

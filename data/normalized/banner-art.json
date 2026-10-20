@@ -1,0 +1,104 @@
+{
+ "fetchedAt": "2026-10-20T18:27:29.647Z",
+ "items": [
+  {
+   "key": "f3d7301b8b5d",
+   "title": "大討祓戦青の足跡編弐",
+   "kind": "event",
+   "start": "2026-10-19T15:00:00+09:00",
+   "end": "2026-10-29T14:59:00+09:00",
+   "chars": [
+    "cold-light-of-dusk-atsuya-kusakabe"
+   ],
+   "widths": [
+    400,
+    600
+   ]
+  },
+  {
+   "key": "d8be7bbe4be4",
+   "title": "強敵連戦",
+   "kind": "event",
+   "start": "2026-10-19T15:00:00+09:00",
+   "end": "2026-10-29T14:59:00+09:00",
+   "chars": [
+    "cold-light-of-dusk-atsuya-kusakabe"
+   ],
+   "widths": [
+    400,
+    960
+   ]
+  },
+  {
+   "key": "1a10b417f1f9",
+   "title": "ファンパレガチャ",
+   "kind": "gacha",
+   "start": "2026-10-19T15:00:00+09:00",
+   "end": "2026-11-20T14:59:00+09:00",
+   "chars": [],
+   "standard": true,
+   "widths": [
+    400,
+    900
+   ]
+  },
+  {
+   "key": "2cb985d2b6fd",
+   "title": "幻影夜行ピックアップ48",
+   "kind": "gacha",
+   "start": "2026-10-19T15:00:00+09:00",
+   "end": "2026-11-20T14:59:00+09:00",
+   "chars": [
+    "cold-light-of-dusk-atsuya-kusakabe"
+   ],
+   "widths": [
+    400,
+    960
+   ]
+  },
+  {
+   "key": "f0716fc20578",
+   "title": "夜特性ピックアップ",
+   "kind": "gacha",
+   "start": "2026-10-09T15:00:00+09:00",
+   "end": "2026-10-23T14:59:00+09:00",
+   "chars": [
+    "sprinting-kasumi-miwa",
+    "pick-up-after-hard-work-kiyotaka-ijichi"
+   ],
+   "widths": [
+    400,
+    960
+   ]
+  },
+  {
+   "key": "5056c0f6fb08",
+   "title": "暗冥より愛をこめてガチャ",
+   "kind": "gacha",
+   "start": "2026-09-30T15:00:00+09:00",
+   "end": "2026-10-25T14:59:00+09:00",
+   "chars": [
+    "dance-of-the-beautiful-blades-mei-mei"
+   ],
+   "widths": [
+    400,
+    960
+   ]
+  },
+  {
+   "key": "0c1cb965f1c0",
+   "title": "夢幻廻楼異相ガチャ",
+   "kind": "gacha",
+   "start": null,
+   "end": null,
+   "chars": [
+    "life-saver-shoko-ieiri",
+    "longsword-battle-maki-zenin"
+   ],
+   "widths": [
+    400,
+    880
+   ]
+  }
+ ]
+}

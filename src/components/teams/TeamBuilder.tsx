@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import { assignMemories, effectiveRank, recommendTeam, slotScore, type Account, type ElementKey, type Role, type Team, type TeamChar, type TeamSlot } from '@/lib/team-recs';
 import { Readiness, Recommendations } from './ContentTeams';
-import { AffinityPicker, CopyTeamButton, SlotCard, fill, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
+import { AffinityPicker, CopyTeamButton, ELEMENTS, SlotCard, fill, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
 
 const KEY = 'pp-teams';
 const SLOTS = 6; // 0–3 titulares, 4 suplente, 5 apoyo
@@ -39,6 +39,7 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   const [picking, setPicking] = useState<number | null>(null);
   const [q, setQ] = useState('');
   const [onlyOwned, setOnlyOwned] = useState(false);
+  const [color, setColor] = useState<ElementKey | null>(null);
   const [saved, setSaved] = useState<Saved[]>([]);
   const [name, setName] = useState('');
   useEffect(() => setSaved(loadSaved()), []);
@@ -97,10 +98,10 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
     return (chars ?? [])
-      .filter((c) => (!onlyOwned || owned?.has(c.id)) && (!s || `${c.name} ${c.epithet ?? ''}`.toLowerCase().includes(s)))
+      .filter((c) => (!onlyOwned || owned?.has(c.id)) && (!color || c.element === color) && (!s || `${c.name} ${c.epithet ?? ''}`.toLowerCase().includes(s)))
       .map((c) => ({ c, score: Math.max(slotScore(c, 'dmg', affinity) ?? 0, slotScore(c, 'sup', affinity) ?? 0) }))
       .sort((a, b) => b.score - a.score);
-  }, [chars, q, onlyOwned, owned, affinity]);
+  }, [chars, q, onlyOwned, color, owned, affinity]);
 
   if (!chars) return <p className="text-sm text-smoke">{L['tm.loading']}</p>;
 
@@ -209,6 +210,16 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
               <button type="button" className="btn-ghost size-8 p-0" onClick={() => setPicking(null)} aria-label={L['tb.close']}>✕</button>
               <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder={L['tb.search']} aria-label={L['tb.search']}
                 className="h-9 w-full rounded-lg border border-line bg-ash px-3 text-sm text-bone placeholder:text-smoke focus:border-ember/60 focus:outline-none" />
+              {/* Filtro por color */}
+              <div className="flex w-full flex-wrap gap-1.5" role="group" aria-label={L['tb.allcolors']}>
+                {[null, ...ELEMENTS].map((el) => (
+                  <button key={el ?? 'all'} type="button" aria-pressed={color === el} onClick={() => setColor(el)}
+                    className="flex h-8 items-center gap-1.5 rounded-full border border-line px-3 text-xs font-semibold text-dust transition aria-pressed:border-ember/70 aria-pressed:bg-ember/15 aria-pressed:text-bone">
+                    {el && <span className="size-2.5 rounded-full" style={{ background: ELEMENT_COLOR[el] }} />}
+                    {el ? L[`el.${el}`] : L['tb.allcolors']}
+                  </button>
+                ))}
+              </div>
             </div>
             <ul className="grid grid-cols-4 gap-2 overflow-y-auto p-3 sm:grid-cols-6">
               {list.map(({ c }) => (

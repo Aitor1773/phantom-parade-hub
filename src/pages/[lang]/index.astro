@@ -32,8 +32,7 @@ const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
   <!-- Hero: Sukuna desatando el fuego (Fuga) y el logo oficial del juego -->
   <section class="relative isolate overflow-hidden">
     <picture class="pointer-events-none absolute inset-0 -z-20" aria-hidden="true">
-      <source media="(min-width: 960px)" srcset={`${HERO}-1440.webp`} />
-      <img src={`${HERO}-960.webp`} alt="" fetchpriority="high" class="hero-art size-full object-cover object-[72%_35%]" />
+      <img src={`${HERO}-960.webp`} srcset={`${HERO}-960.webp 960w, ${HERO}-1440.webp 1440w`} sizes="100vw" alt="" fetchpriority="high" class="hero-art size-full object-cover object-[72%_35%]" />
     </picture>
     <!-- Oscurece el lado del texto para que se lea sobre el fuego -->
     <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-ash via-ash/70 to-transparent lg:from-ash/95 lg:via-ash/35" aria-hidden="true"></div>

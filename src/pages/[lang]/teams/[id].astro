@@ -5,7 +5,7 @@ import ContentTeams from '@/components/teams/ContentTeams';
 import CommunityThread from '@/components/teams/CommunityThread.astro';
 import { TEAM_KEYS } from '@/components/teams/keys';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
-import { CHARACTERS, thumb } from '@/data/characters';
+import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { MEMORIES } from '@/data/memories';
 import { CONTENT, affinityEntries, communityThread, stagesOf, type Content } from '@/data/content';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
@@ -20,7 +20,7 @@ const { content: c } = Astro.props as { content: Content };
 const t = useT(lang);
 const g = useG(lang);
 const labels = gameDict(lang, TEAM_KEYS);
-const L = gameDict(lang, ['ct.back', 'ct.source', 'ct.floors', 'ct.permanent', 'ct.title', 'cm.title', 'cm.desc', 'cm.pending', 'cm.how', 'cm.teams', 'cm.teams.none', 'cm.votes', 'cm.by', 'tm.floor'] as const);
+const L = gameDict(lang, ['ct.back', 'ct.floors', 'ct.permanent', 'ct.title', 'cm.title', 'cm.desc', 'cm.pending', 'cm.how', 'cm.teams', 'cm.teams.none', 'cm.votes', 'cm.by', 'tm.floor'] as const);
 const title = c.kind === 'mode' ? g(`ct.m.${c.id}` as GameKey) : c.name;
 const desc = c.kind === 'mode' ? g(`ct.m.${c.id}.d` as GameKey) : g(`ct.cat.${c.category}` as GameKey);
 const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
@@ -46,7 +46,6 @@ const commTeams = (thread?.teams ?? []).slice(0, 6).map((tm) => ({
         {c.server && <span class={c.server === 'jp' ? 'badge-jp' : 'badge-global'}>{c.server === 'jp' ? 'JP' : 'Global'}</span>}
         {c.start && <span>{day(c.start)}{c.end ? ` – ${day(c.end)}` : ''}</span>}
         {c.floors && <span>{L['ct.floors'].replace('{n}', String(c.floors))}</span>}
-        <span>· {L['ct.source']}: <a href={c.source.url} target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-dust">{c.source.label}</a></span>
         <a href="#community" class="ml-auto text-flame underline underline-offset-2">{L['cm.title']}{thread ? ` (${thread.comments})` : ''}</a>
       </p>
     </header>
@@ -64,7 +63,6 @@ const commTeams = (thread?.teams ?? []).slice(0, 6).map((tm) => ({
                 <span class="font-bold text-flame">👍 {tm.votes} {L['cm.votes']}</span>
                 {tm.floor && <span>{L['tm.floor']} {tm.floor}</span>}
                 <span>{L['cm.by']} {tm.author} · {tm.date}</span>
-                <a href={tm.url} target="_blank" rel="noopener nofollow ugc" class="ml-auto underline underline-offset-2 hover:text-dust">GitHub ↗</a>
               </div>
               <ul class="grid grid-cols-3 gap-2 sm:grid-cols-6">
                 {tm.slots.map((s, i) => (
@@ -72,7 +70,7 @@ const commTeams = (thread?.teams ?? []).slice(0, 6).map((tm) => ({
                     {s.c ? (
                       <a href={localePath(lang, `/characters/${s.c.id}`)} class="block">
                         <span class="block aspect-square overflow-hidden rounded-lg border-2 bg-cinder" style={`border-color:${ELEMENT_COLOR[s.c.element]}80`}>
-                          {(s.c.icon ?? thumb(s.c.art, 320)) && <img src={s.c.icon ?? thumb(s.c.art, 320)!} alt="" loading="lazy" class="size-full object-cover object-top" />}
+                          {thumb(s.c.art, 320) && <img src={thumb(s.c.art, 320)!} srcset={srcsetOf(s.c.art, 640)} sizes="(min-width: 640px) 120px, 30vw" alt="" loading="lazy" decoding="async" class="size-full object-cover object-top" />}
                         </span>
                         <span class="mt-1 block truncate text-[11px] font-semibold text-bone">{s.c.name}</span>
                         <span class="block truncate text-[10px] text-smoke">{labels[i < 4 ? 'tm.main' : i === 4 ? 'tm.sub' : 'tm.helper']}</span>
@@ -94,6 +92,5 @@ const commTeams = (thread?.teams ?? []).slice(0, 6).map((tm) => ({
     </section>
 
     <CommunityThread term={c.id} lang={lang} labels={{ title: L['cm.title'], desc: L['cm.desc'], pending: L['cm.pending'], how: L['cm.how'] }} />
-    <p class="mt-8 text-[11px] text-smoke">{t('footer.license')}</p>
   </div>
 </BaseLayout>

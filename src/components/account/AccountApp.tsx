@@ -6,7 +6,7 @@ import {
   type Inventory, type OwnedCharacter, type SkillKey,
 } from '@/lib/inventory';
 
-export interface AccChar { id: string; name: string; epithet: string | null; rarity: string; element: string; img: string | null; hasSP: boolean }
+export interface AccChar { id: string; name: string; epithet: string | null; rarity: string; element: string; img: string | null; srcset?: string; hasSP: boolean }
 export interface AccMem { id: string; name: string; rarity: string; img: string | null }
 
 interface Props {
@@ -17,7 +17,7 @@ interface Props {
     chars: AdvChar[];
     banners: AdvBanner[];
     estimates: AdvEstimate[];
-    gacha: { cubesPerPull: number; pity: number; sourceUrl: string };
+    gacha: { cubesPerPull: number; pity: number };
     tierSource: { name: string; url: string; updated: string | null };
     basePath: string;
   };
@@ -113,7 +113,7 @@ function EditPanel({ char, owned, labels, onChange, onToggle, onClose }: {
       >
         <header className="flex items-center gap-3 border-b border-line p-4">
           <span className="size-14 shrink-0 overflow-hidden rounded-lg bg-cinder">
-            {char.img ? <img src={char.img} alt="" className="size-full object-cover object-top" /> : <Placeholder name={char.name} />}
+            {char.img ? <img src={char.img} srcSet={char.srcset} sizes="160px" alt="" className="size-full object-cover object-top" /> : <Placeholder name={char.name} />}
           </span>
           <div className="min-w-0 flex-1">
             {char.epithet && <p className="truncate text-xs text-flame">{char.epithet}</p>}
@@ -414,7 +414,7 @@ export default function AccountApp({ characters, memories, labels, advice }: Pro
                     <button type="button" aria-pressed={!!o} onClick={() => toggleChar(c.id)} title={`${c.epithet ?? ''} ${c.name}`}
                       className={`group block w-full overflow-hidden rounded-xl border-2 text-left transition duration-200 ${o ? 'border-[color:var(--el)] shadow-[0_0_18px_-6px_var(--el)]' : 'border-line opacity-50 grayscale hover:opacity-80 hover:grayscale-0'}`}>
                       <span className="relative block aspect-[3/4] bg-cinder">
-                        {c.img ? <img src={c.img} alt="" loading="lazy" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
+                        {c.img ? <img src={c.img} srcSet={c.srcset} sizes="(min-width: 640px) 120px, 30vw" alt="" loading="lazy" decoding="async" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
                         <span className="absolute inset-0 bg-gradient-to-t from-ash via-transparent to-transparent" />
                         <span className={`${RARITY_CLASS[c.rarity] ?? 'badge'} absolute top-1.5 left-1.5 px-1.5 text-[9px]`}>{c.rarity}</span>
                         {o && <span className="absolute top-1.5 right-1.5 grid size-5 place-items-center rounded-full bg-[color:var(--el)] text-[11px] font-bold text-ash">✓</span>}

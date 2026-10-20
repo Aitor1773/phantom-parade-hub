@@ -2,10 +2,19 @@
 import { useState } from 'react';
 import { drawOne, drawTen, type PullResult, type Rate } from '@/lib/gacha-math';
 
+export interface SimItem { id: string; name: string; img: string | null; srcset?: string }
+export interface SimBanner { id: string; name: string; server: 'global' | 'jp'; featured: SimItem[] }
 export interface SimulatorProps {
-  gacha: { cubesPerPull: number; cubesPer10: number; pity: number; rates: Rate[]; sourceLabel: string; sourceUrl: string };
+  gacha: { cubesPerPull: number; cubesPer10: number; pity: number; rates: Rate[] };
   labels: Record<string, string>;
+  /** Qué puede salir en cada rareza y tipo («SSR-character»…), con imagen */
+  pools: Record<string, SimItem[]>;
+  banners: SimBanner[];
 }
+/** Parte de los SSR de personaje que se lleva el destacado: estimación (el juego no la publica por banner) */
+const FEATURED_SHARE = 0.5;
+type Pull = PullResult & { item?: SimItem; featured?: boolean };
+const pick = <T,>(a: T[]) => a[Math.floor(Math.random() * a.length)];
 
 const fill = (s: string, v: Record<string, string | number>) => s.replace(/\{(\w+)\}/g, (_, k) => String(v[k] ?? ''));
 const CARD: Record<string, string> = {
@@ -20,8 +29,16 @@ const AUTO_LIMIT = 2000; // tope de seguridad para "tirar hasta un SSR"
 interface Stats { pulls: number; counts: Record<string, number>; since: number; firstSsrAt: number | null }
 const EMPTY: Stats = { pulls: 0, counts: {}, since: 0, firstSsrAt: null };
 
-export default function GachaSimulator({ gacha, labels: L }: SimulatorProps) {
-  const [last, setLast] = useState<PullResult[]>([]);
+export default function GachaSimulator({ gacha, labels: L, pools, banners }: SimulatorProps) {
+  const [last, setLast] = useState<Pull[]>([]);
+  const [bannerId, setBannerId] = useState('');
+  const banner = banners.find((b) => b.id === bannerId) ?? null;
+  /** Personaje o memoria concretos de cada tirada (el destacado del banner elegido, a veces) */
+  const resolve = (p: PullResult): Pull => {
+    if (p.rarity === 'SSR' && p.type === 'character' && banner?.featured.length && Math.random() < FEATURED_SHARE) return { ...p, item: pick(banner.featured), featured: true };
+    const pool = pools[`${p.rarity}-${p.type}`] ?? [];
+    return { ...p, item: pool.length ? pick(pool) : undefined };
+  };
   const [st, setSt] = useState<Stats>(EMPTY);
   const [round, setRound] = useState(0); // fuerza la animación de entrada en cada tirada
 
@@ -36,7 +53,7 @@ export default function GachaSimulator({ gacha, labels: L }: SimulatorProps) {
       });
       return { pulls: o.pulls + res.length, counts, since, firstSsrAt };
     });
-    setLast(res.slice(-10));
+    setLast(res.slice(-10).map(resolve));
     setRound((r) => r + 1);
   };
 
@@ -56,6 +73,28 @@ export default function GachaSimulator({ gacha, labels: L }: SimulatorProps) {
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
       <section className="card min-w-0 p-5 sm:p-6">
+        {banners.length > 0 && (
+          <div className="mb-5">
+            <label className="flex flex-wrap items-center gap-3">
+              <span className="text-sm font-bold text-bone">{L['sim.banner']}</span>
+              <select value={bannerId} onChange={(e) => setBannerId(e.target.value)}
+                className="h-9 w-full max-w-full min-w-0 truncate rounded-lg border border-line bg-ash px-2 text-sm text-bone focus:border-ember/60 focus:outline-none sm:w-auto sm:max-w-md">
+                <option value="">{L['sim.standard']}</option>
+                {banners.map((b) => <option key={b.id} value={b.id}>{b.server === 'jp' ? 'JP · ' : 'Global · '}{b.name}</option>)}
+              </select>
+            </label>
+            {banner && (
+              <div className="mt-3 flex items-center gap-3">
+                <span className="flex -space-x-3">
+                  {banner.featured.map((f) => f.img && (
+                    <img key={f.id} src={f.img} srcSet={f.srcset} sizes="56px" alt="" className="size-14 rounded-full border-2 border-flame bg-cinder object-cover object-top" />
+                  ))}
+                </span>
+                <p className="text-xs text-dust"><b className="text-flame">{L['sim.featured']}:</b> {banner.featured.map((f) => f.name).join(', ')}<br /><span className="text-smoke">{L['sim.featured.note']}</span></p>
+              </div>
+            )}
+          </div>
+        )}
         <div className="flex flex-wrap gap-2">
           <button type="button" className="btn-secondary h-10 px-4 text-sm" onClick={() => apply([drawOne(gacha.rates)])}>
             {fill(L['sim.x1'], { c: gacha.cubesPerPull.toLocaleString() })}
@@ -71,10 +110,16 @@ export default function GachaSimulator({ gacha, labels: L }: SimulatorProps) {
         {last.length ? (
           <ul key={round} className="grid grid-cols-5 gap-2 sm:gap-3" aria-live="polite">
             {last.map((p, i) => (
-              <li key={i} className={`sim-card grid aspect-[3/4] place-items-center rounded-xl border-2 text-center ${CARD[p.rarity]}`} style={{ animationDelay: `${i * 45}ms` }}>
-                <span>
-                  <span className="block font-display text-xl font-black sm:text-2xl">{p.rarity}</span>
-                  <span className="block text-[10px] font-semibold tracking-wide text-bone/80 uppercase sm:text-xs">{typeLabel(p)}</span>
+              <li key={i} className={`sim-card relative aspect-[3/4] overflow-hidden rounded-xl border-2 text-center ${CARD[p.rarity]}`} style={{ animationDelay: `${i * 45}ms` }} title={p.item?.name}>
+                {p.item?.img && (
+                  <img src={p.item.img} srcSet={p.item.srcset} sizes="(min-width: 1024px) 130px, 20vw" alt="" decoding="async"
+                    className={`absolute inset-0 size-full object-cover ${p.type === 'character' ? 'object-top' : 'object-center'}`} />
+                )}
+                <span className="absolute inset-0 bg-gradient-to-t from-ash via-ash/20 to-transparent" />
+                {p.featured && <span className="absolute top-1 right-1 rounded bg-flame px-1 text-[9px] font-black text-ash">★</span>}
+                <span className="absolute inset-x-0 bottom-0 p-1">
+                  <span className="block font-display text-base leading-none font-black sm:text-xl">{p.rarity}</span>
+                  <span className="block truncate text-[9px] font-semibold text-bone/90 sm:text-[11px]">{p.item?.name ?? typeLabel(p)}</span>
                 </span>
               </li>
             ))}
@@ -83,8 +128,7 @@ export default function GachaSimulator({ gacha, labels: L }: SimulatorProps) {
           <p className="rounded-xl border border-dashed border-line px-4 py-10 text-center text-sm text-smoke">{L['sim.empty']}</p>
         )}
         <p className="mt-4 text-[11px] leading-relaxed text-smoke">
-          {L['sim.disclaimer']}{' '}
-          <a href={gacha.sourceUrl} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-dust">{gacha.sourceLabel}</a>
+          {L['sim.disclaimer']}
         </p>
       </section>
 

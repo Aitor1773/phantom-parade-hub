@@ -92,7 +92,7 @@ function localIcon(kind: 'skills' | 'characters', wikiUrl: string | null | undef
  * Lo que no exista en local queda en null y la web muestra un marcador.
  */
 function localizeImages(c: Character): Character {
-  const icon = localIcon('characters', c.art?.replace(/Art(\d+)\./, 'Icon$1.'), 96);
+  const icon = localIcon('characters', c.art?.replace(/Art(\d+)\./, 'Icon$1.'), 192);
   const out: Character = JSON.parse(JSON.stringify(c), (k, v) => {
     if (k === 'img' && typeof v === 'string') return localIcon('skills', v, 128);
     if (k === 'art' || k === 'art2') return null;
@@ -153,6 +153,17 @@ export function thumb(url: string | null | undefined, width: number) {
   if (url.startsWith('/img/')) return url; // iconos locales: ya vienen con su tamaño
   if (!REMOTE_IMAGES) return null;
   return url.replace(/\/revision\/latest(\/[^?]*)?/, `/revision/latest/scale-to-width-down/${width}`);
+}
+
+/**
+ * Todas las versiones de una ilustración local para `srcset` (hasta `max` px): el navegador
+ * elige la que necesita según el tamaño en pantalla y la densidad (HD en móviles, ligera en 1x).
+ */
+export function srcsetOf(url: string | null | undefined, max = Infinity) {
+  if (!url?.startsWith(LOCAL_PREFIX)) return undefined;
+  const img = LOCAL[url.slice(LOCAL_PREFIX.length)];
+  const ws = img.widths.filter((w) => w <= max);
+  return (ws.length ? ws : img.widths.slice(0, 1)).map((w) => `${url}-${w}.webp ${w}w`).join(', ');
 }
 
 /** Versiones disponibles del kit de un personaje, en orden. */

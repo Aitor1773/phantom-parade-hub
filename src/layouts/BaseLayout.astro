@@ -6,6 +6,9 @@ import CommandPalette from '@/components/nav/CommandPalette.astro';
 import Footer from '@/components/Footer.astro';
 import { SITE } from '@/config/site';
 import { LOCALES, LOCALE_META, localePath, stripLocale, type Locale } from '@/i18n/utils';
+// Fuentes principales (alfabeto latino): se precargan para que el texto salga antes y sin saltos
+import interLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import cinzelLatin from '@fontsource-variable/cinzel/files/cinzel-latin-wght-normal.woff2?url';
 
 interface Props {
   lang: Locale;
@@ -27,6 +30,8 @@ const path = stripLocale(Astro.url.pathname);
     <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={cinzelLatin} as="font" type="font/woff2" crossorigin />
     <!-- Vista previa al compartir (redes, Discord): key visual oficial del juego -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />

@@ -57,6 +57,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Eventos en curso (equipo recomendado)
+        run: npm run data:events
+        continue-on-error: true # si la fuente falla, se conservan los datos de ayer
+
+      - name: Imágenes oficiales de los banners abiertos
+        run: npm run data:banner-art
+        continue-on-error: true
+
       - name: Día de la semana
         id: dow
         run: echo "n=$(date -u +%u)" >> "$GITHUB_OUTPUT"

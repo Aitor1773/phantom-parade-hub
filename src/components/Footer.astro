@@ -20,14 +20,12 @@ const t = useT(lang);
         {SITE.name}
       </a>
       <p class="mt-4 max-w-sm text-xs leading-relaxed text-smoke">{t('footer.disclaimer')}</p>
+      {/* Las fuentes y licencias (CC BY-SA incluida) están solo en la página de créditos */}
       <p class="mt-3 max-w-sm text-xs leading-relaxed text-smoke">
-        <a href={SITE.wikiUrl} class="underline decoration-line-strong underline-offset-2 hover:text-dust" rel="noopener" target="_blank">{t('footer.license')}</a>
+        <a href={localePath(lang, '/credits')} class="underline decoration-line-strong underline-offset-2 hover:text-dust">{t('footer.credits')}</a>
       </p>
-      <p class="mt-2 max-w-sm text-xs leading-relaxed text-smoke">
-        <a href="https://www.jjkppdb.com/" class="underline decoration-line-strong underline-offset-2 hover:text-dust" rel="noopener" target="_blank">{t('footer.images')}</a>
-      </p>
-      <!-- Crédito oficial (logo y arte del juego) -->
-      <p class="mt-2 max-w-sm text-[11px] leading-relaxed text-smoke">© Gege Akutami/Shueisha, JUJUTSU KAISEN Production Committee © Sumzap, Inc./TOHO CO., LTD. · Logo: <a href="https://jujutsuphanpara.biligames.com/" class="underline decoration-line-strong underline-offset-2 hover:text-dust" rel="noopener" target="_blank">Bilibili Game</a></p>
+      <!-- Copyright oficial del juego (logo y arte) -->
+      <p class="mt-2 max-w-sm text-[11px] leading-relaxed text-smoke">© Gege Akutami/Shueisha, JUJUTSU KAISEN Production Committee © Sumzap, Inc./TOHO CO., LTD.</p>
     </div>
     {NAV.map((entry) => (
       <div>

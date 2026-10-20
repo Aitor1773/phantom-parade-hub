@@ -51,9 +51,6 @@ const checked = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
             ) : (
               <span class={c.activeIn.length >= 2 ? 'badge-verified' : 'badge-unverified'}>{g('cd.sources', { n: c.activeIn.length })}</span>
             )}
-            {c.activeIn.map((s) => (
-              <a href={s.url} target="_blank" rel="noopener" class="rounded border border-line px-1.5 py-0.5 hover:text-dust">{s.name}</a>
-            ))}
           </div>
         </li>
       ))}
@@ -88,9 +85,9 @@ const checked = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
               <code class="font-mono text-sm font-semibold text-dust">{c.code}</code>
               <span class="min-w-0 flex-1 text-xs text-smoke">{c.reward}</span>
               <span class="text-[11px] text-smoke">
-                <span class="text-[#5fd39b]">✓ {c.activeIn.map((s) => s.name).join(', ')}</span>
+                <span class="text-[#5fd39b]">✓ {c.activeIn.length}</span>
                 {' · '}
-                <span class="text-[#ff6b7f]">✗ {c.expiredIn.map((s) => s.name).join(', ')}</span>
+                <span class="text-[#ff6b7f]">✗ {c.expiredIn.length}</span>
               </span>
             </li>
           ))}

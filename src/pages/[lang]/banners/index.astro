@@ -63,8 +63,7 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
         <div class="card flex items-start gap-3 p-5 text-sm text-dust">
           <Icon name="calendar" size={20} class="mt-0.5 shrink-0 text-flame" />
           <p>
-            {g('bn.globalempty')}{' '}
-            <a href="https://x.com/JJKPP_GL" target="_blank" rel="noopener" class="text-ember underline underline-offset-2">x.com/JJKPP_GL</a>
+            {g('bn.globalempty')}
           </p>
         </div>
       )}
@@ -86,7 +85,7 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
         <Icon name="globe" size={14} class="mt-0.5 shrink-0 text-flame" />
         <span>
           {g('bn.jpnote')}{' '}
-          <a href={JP_TIMELINE_META.url} target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-dust">{g('bn.jpsource')}</a> · {updated}
+          {g('bn.jpsource')} · {updated}
           {GLOBAL_LAG && <span class="mt-1 block text-dust">{g('bn.lag', { min: GLOBAL_LAG.min, max: GLOBAL_LAG.max, n: GLOBAL_LAG.samples })}</span>}
         </span>
       </p>

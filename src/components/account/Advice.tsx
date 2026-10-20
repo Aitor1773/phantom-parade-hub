@@ -5,7 +5,7 @@ import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBro
 import type { Inventory } from '@/lib/inventory';
 
 export interface AdvChar {
-  id: string; name: string; epithet: string | null; rarity: string; element: string; img: string | null;
+  id: string; name: string; epithet: string | null; rarity: string; element: string; img: string | null; srcset?: string;
   rank: string | null; score: number | null;
   memories: { id: string; name: string; img: string | null }[];
 }
@@ -17,7 +17,7 @@ interface Props {
   chars: AdvChar[];
   banners: AdvBanner[];
   estimates: AdvEstimate[];
-  gacha: { cubesPerPull: number; pity: number; sourceUrl: string };
+  gacha: { cubesPerPull: number; pity: number };
   tierSource: { name: string; url: string; updated: string | null };
   basePath: string; // "/es"
   labels: Record<string, string>;
@@ -54,7 +54,7 @@ function Mini({ c, base, owned, extra }: { c: AdvChar; base: string; owned?: boo
     <a href={`${base}/characters/${c.id}`} className="group flex items-center gap-3 rounded-lg border border-line bg-cinder/40 p-2 transition hover:border-line-strong"
       style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#ff5a1f' }}>
       <span className={`size-11 shrink-0 overflow-hidden rounded-md bg-cinder ${owned === false ? 'opacity-60 grayscale' : ''}`}>
-        {c.img ? <img src={c.img} alt="" loading="lazy" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
+        {c.img ? <img src={c.img} srcSet={c.srcset} sizes="(min-width: 640px) 120px, 30vw" alt="" loading="lazy" decoding="async" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
       </span>
       <span className="min-w-0 flex-1">
         <span className="block truncate text-[11px] text-flame/90">{c.epithet}</span>
@@ -137,7 +137,7 @@ export default function Advice({ inv, chars, banners, estimates, gacha, tierSour
           <p className="mt-2 text-xs text-dust">
             {pulls >= gacha.pity ? labels['adv.pity.ok'] : fill(labels['adv.pity.missing'], { p: pityPct, c: cubesToPity.toLocaleString(), n: gacha.pity })}
           </p>
-          <a href={gacha.sourceUrl} target="_blank" rel="noopener" className="mt-2 inline-block text-[11px] text-smoke underline underline-offset-2">{labels['adv.pulls.source']}</a>
+          <p className="mt-2 text-[11px] text-smoke">{labels['adv.pulls.source']}</p>
         </Card>
 
         <Card title={labels['adv.banners']} hint={labels['adv.banners.hint']}>

@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import MemoryEffects from '@/components/memories/MemoryEffects';
 import { MEMORIES, illustSrc, type Memory } from '@/data/memories';
-import { CHARACTERS, thumb } from '@/data/characters';
+import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
 import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
 
@@ -39,7 +39,7 @@ const description = `${m.name} — ${m.rarity} ${g('mem.title')}. ${m.effects[0]
 <BaseLayout lang={lang} title={m.name} description={description}>
   <!-- Cabecera -->
   <section class="relative isolate overflow-hidden border-b border-line">
-    {hero && <img src={illustSrc(m, 640)} alt="" aria-hidden="true" class="absolute inset-0 -z-20 h-full w-full scale-110 object-cover opacity-20 blur-2xl" />}
+    {hero && <img src={illustSrc(m, 320)} alt="" aria-hidden="true" class="absolute inset-0 -z-20 h-full w-full scale-110 object-cover opacity-20 blur-2xl" />}
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-ash/40 via-ash/70 to-ash"></div>
     <div class="mx-auto max-w-6xl px-4 py-10 lg:px-6 lg:py-14">
       <a href={localePath(lang, '/memories')} class="inline-flex items-center gap-1.5 text-sm text-dust transition hover:text-bone">
@@ -84,7 +84,7 @@ const description = `${m.name} — ${m.rarity} ${g('mem.title')}. ${m.effects[0]
               <li>
                 <a href={localePath(lang, `/characters/${c.id}`)} class="group block overflow-hidden rounded-xl border border-line bg-coal transition hover:border-line-strong">
                   {c.art ? (
-                    <img src={thumb(c.art, 320)} alt="" loading="lazy" class="aspect-[3/4] w-full object-cover object-top transition duration-500 group-hover:scale-105" />
+                    <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="(min-width: 640px) 140px, 30vw" alt="" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover object-top transition duration-500 group-hover:scale-105" />
                   ) : (
                     <div class="aspect-[3/4] bg-cinder"></div>
                   )}
@@ -118,18 +118,12 @@ const description = `${m.name} — ${m.rarity} ${g('mem.title')}. ${m.effects[0]
 
       <section class="card p-5">
         <h2 class="font-sans text-sm font-bold text-bone">{g('ch.source')}</h2>
-        <p class="mt-3"><span class="badge-unverified">{g('ch.source.single')}</span></p>
-        <dl class="mt-4 space-y-2 text-xs">
+        <dl class="mt-3 space-y-2 text-xs">
           <div class="flex justify-between gap-3">
             <dt class="text-smoke">{g('ch.source.updated')}</dt>
             <dd class="text-dust">{date(m._source.updated.slice(0, 10))}</dd>
           </div>
         </dl>
-        <a href={m._source.url} target="_blank" rel="noopener" class="btn-secondary mt-4 w-full text-xs">
-          {g('ch.source.view')}
-          <Icon name="arrowRight" size={14} class="-rotate-45" />
-        </a>
-        <p class="mt-3 text-[11px] leading-relaxed text-smoke">{t('footer.license')}</p>
       </section>
     </aside>
   </div>

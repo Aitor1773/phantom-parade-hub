@@ -9,6 +9,7 @@ export interface MemoryItem {
   tags: string[];
   date: string | null;
   img: string | null;
+  srcset?: string;
   search: string; // nombre + texto de efectos, en minúsculas y sin tildes
 }
 
@@ -158,7 +159,7 @@ export default function MemoryBrowser({ items, basePath, labels, tagLabels, opti
               <a href={`${basePath}/${m.id}`} className="group block overflow-hidden rounded-xl border border-line bg-coal transition duration-300 hover:-translate-y-1 hover:border-line-strong">
                 <div className="relative aspect-[2/1] overflow-hidden bg-cinder">
                   {m.img ? (
-                    <img src={m.img} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={m.img} srcSet={m.srcset} sizes="(min-width: 1280px) 300px, (min-width: 640px) 50vw, 100vw" alt="" loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                   ) : (
                     <div className="grid h-full place-items-center bg-gradient-to-br from-blood/40 to-coal text-xs text-smoke">{labels['mem.noimage']}</div>
                   )}

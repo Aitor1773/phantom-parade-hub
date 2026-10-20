@@ -2,7 +2,7 @@
 
 Todo se genera con scripts. Los resultados van a `data/` y la web los lee al compilar (`npm run build`).
 
-**Una vez publicada, todo esto lo hace solo cada día** el proceso `.github/workflows/daily.yml` (`npm run data:daily` + imágenes los lunes + compilar + publicar). Cómo activarlo: [PUBLICAR.md](PUBLICAR.md). `npm run data:community` lee el foro (Giscus) y genera `data/community.json`.
+**Una vez publicada, todo esto lo hace solo cada día** el proceso `.github/workflows/daily.yml` (`npm run data:daily` + imágenes los lunes + compilar + publicar). Cómo activarlo: [PUBLICAR.md](PUBLICAR.md). `npm run data:community` lee el foro (Giscus) y genera `data/community.json`. `npm run data:events` lee los eventos abiertos (JP) y guarda su equipo recomendado, elemento y memorias en `data/normalized/event-guides.json`; las memorias nuevas se emparejan por fecha y se aprenden en `data/manual/jp-memories.json`. `npm run data:banner-art` descarga las imágenes oficiales de los banners abiertos (WebP de 400 px y tamaño real) en `public/img/banners/` con su índice `data/normalized/banner-art.json`; las que ya estaban se conservan. Modos con fichas: Torre ilusoria (y Anomalous Form), Enemigo poderoso enmascarado (強敵邂逅・裏), Batalla SP y Modo historia EX (`data/manual/stages.json`).
 
 ## Orden recomendado
 

@@ -5,7 +5,7 @@ import { atLeastOne, pullsForChance, pullsFrom } from '@/lib/gacha-math';
 
 export interface PlannerTarget { id: string; label: string; date: string; group: 'global' | 'estimate' }
 export interface PlannerProps {
-  gacha: { cubesPerPull: number; pity: number; ssrCharRate: number; maxCards: number; sourceLabel: string; sourceUrl: string };
+  gacha: { cubesPerPull: number; pity: number; ssrCharRate: number; maxCards: number };
   targets: PlannerTarget[];
   labels: Record<string, string>;
   locale: string;
@@ -194,8 +194,7 @@ export default function PullPlanner({ gacha, targets, labels: L, locale }: Plann
         </div>
 
         <p className="text-[11px] leading-relaxed text-smoke">
-          {L['pl.note']}{' '}
-          <a href={gacha.sourceUrl} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-dust">{gacha.sourceLabel}</a>
+          {L['pl.note']}
         </p>
       </section>
     </div>

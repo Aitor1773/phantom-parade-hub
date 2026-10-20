@@ -1,8 +1,7 @@
 ---
 // Tarjeta de banner (activos y próximos) o fila compacta (historial).
-import Icon from '@/components/Icon.astro';
-import { getCharacter, thumb } from '@/data/characters';
-import { GLOBAL_LAG, globalConfirmed, globalEstimate, type Banner } from '@/data/banners';
+import { getCharacter, srcsetOf, thumb } from '@/data/characters';
+import { BANNER_FALLBACK, GLOBAL_LAG, bannerArt, globalConfirmed, globalEstimate, type Banner } from '@/data/banners';
 import { useG } from '@/i18n/game';
 import { LOCALE_META, localePath, type Locale } from '@/i18n/utils';
 
@@ -15,6 +14,7 @@ interface Props {
 const { banner: b, lang, compact = false } = Astro.props;
 const g = useG(lang);
 const chars = b.characters.map(getCharacter).filter((c): c is NonNullable<typeof c> => !!c);
+const art = chars.length ? null : bannerArt(b);
 // Fecha en horario del juego (UTC+9) para el HTML; el script la pasa a la zona del usuario
 const fmt = (iso: string) =>
   new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'medium', timeStyle: b.approx ? undefined : 'short', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
@@ -47,7 +47,7 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
       <span class="hidden shrink-0 -space-x-2 sm:flex">
         {chars.slice(0, 3).map((c) => (
           <a href={localePath(lang, `/characters/${c.id}`)} title={c.name} class="block size-7 overflow-hidden rounded-full border-2 border-ash bg-cinder">
-            {c.art && <img src={thumb(c.art, 320)} alt="" loading="lazy" class="size-full object-cover object-top" />}
+            {c.art && <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="96px" alt="" loading="lazy" decoding="async" class="size-full object-cover object-top" />}
           </a>
         ))}
       </span>
@@ -60,13 +60,14 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
       {chars.length > 0 ? (
         chars.slice(0, 3).map((c) => (
           <a href={localePath(lang, `/characters/${c.id}`)} class="relative min-w-0 flex-1 overflow-hidden" title={c.name}>
-            {c.art && <img src={thumb(c.art, 640)} alt={c.name} loading="lazy" class="h-full w-full object-cover object-[50%_20%] transition duration-500 group-hover:scale-105" />}
+            {c.art && <img src={thumb(c.art, 640)} srcset={srcsetOf(c.art)} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" alt={c.name} loading="lazy" decoding="async" class="h-full w-full object-cover object-[50%_20%] transition duration-500 group-hover:scale-105" />}
           </a>
         ))
       ) : (
-        <div class="slash grid w-full place-items-center">
-          <Icon name={b.kind === 'gacha' ? 'sparkles' : 'calendar'} size={36} class="text-line-strong" />
-        </div>
+        // Sin personajes: imagen oficial del banner o, si no hay, la ilustración oficial del juego
+        <img src={(art ?? BANNER_FALLBACK).src} srcset={(art ?? BANNER_FALLBACK).srcset} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
+          alt="" loading="lazy" decoding="async"
+          class:list={['h-full w-full object-cover transition duration-500 group-hover:scale-105', art ? 'object-center' : 'object-[70%_30%] opacity-70']} />
       )}
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-coal via-coal/10 to-transparent"></div>
       <span class="status-badge absolute top-3 left-3 rounded-md border border-ember/50 bg-ash/80 px-2 py-1 text-[11px] font-bold text-ember backdrop-blur-sm empty:hidden"></span>
@@ -106,14 +107,6 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
         </div>
       )}
       {b.notes && <p class="mt-2 text-xs text-smoke">{b.notes}</p>}
-      {b.source.url ? (
-        <a href={b.source.url} target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-[11px] text-smoke underline decoration-line-strong underline-offset-2 hover:text-dust">
-          {b.source.official ? g('bn.official') : b.source.label}
-          <Icon name="arrowRight" size={11} class="-rotate-45" />
-        </a>
-      ) : (
-        <p class="mt-3 text-[11px] text-smoke">{g('bn.official')} · {b.source.label}</p>
-      )}
     </div>
   </article>
 )}

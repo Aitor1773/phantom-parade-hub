@@ -11,6 +11,7 @@ export interface BrowserItem {
   availability: string | null;
   date: string | null;
   img: string | null;
+  srcset?: string;
 }
 
 interface Option { value: string; label: string }
@@ -212,6 +213,8 @@ export default function CharacterBrowser({ items, basePath, labels, options }: P
                   {c.img ? (
                     <img
                       src={c.img}
+                      srcSet={c.srcset}
+                      sizes="(min-width: 1280px) 200px, (min-width: 640px) 25vw, 45vw"
                       alt=""
                       loading="lazy"
                       decoding="async"

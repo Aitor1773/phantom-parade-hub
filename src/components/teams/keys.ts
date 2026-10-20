@@ -11,7 +11,7 @@ export const TEAM_KEYS = [
   'sh.title', 'sh.none', 'sh.phase', 'sh.power', 'sh.weak', 'sh.resist', 'sh.rules', 'sh.boss', 'sh.wave', 'sh.cut', 'sh.taunt',
   'sh.cutpick', 'sh.cutpick.hint', 'sh.kind.aoe', 'sh.kind.single', 'sh.kind.debuff', 'sh.kind.buff', 'sh.kind.heal', 'sh.kind.taunt',
   'sh.kind.summon', 'sh.kind.counter', 'sh.kind.enrage', 'sh.kind.other',
-  'sh.actions', 'sh.ult', 'sh.immune', 'ct.source', 'sh.updated', 'pv.cleared', 'pv.guide', 'pv.picks', 'sh.st.stun', 'sh.st.confusion', 'sh.st.blind', 'sh.st.bind', 'sh.st.poison', 'sh.st.burn',
+  'sh.actions', 'sh.ult', 'sh.immune', 'sh.updated', 'pv.cleared', 'pv.farm', 'pv.recommended', 'pv.guide', 'pv.picks', 'sh.st.stun', 'sh.st.confusion', 'sh.st.blind', 'sh.st.bind', 'sh.st.poison', 'sh.st.burn',
   'sh.st.bleed', 'sh.st.seal', 'sh.st.silence',
   'st.title', 'st.type.taijutsu', 'st.type.jujutsu', 'st.type.mixed', 'st.only', 'st.banned', 'st.note', 'st.cut.warn', 'st.cut.ok',
   'st.weak', 'st.weak.none', 'st.resist', 'st.aoe', 'st.aoe.none', 'st.taunt', 'st.debuff', 'st.debuff.none', 'st.sustain',
@@ -20,7 +20,7 @@ export const TEAM_KEYS = [
 
 export const BUILDER_KEYS = [
   ...TEAM_KEYS,
-  'tb.pick', 'tb.search', 'tb.onlyowned', 'tb.fillAccount', 'tb.fillGeneral', 'tb.clear', 'tb.save', 'tb.name', 'tb.team', 'tb.saved',
+  'tb.pick', 'tb.search', 'tb.onlyowned', 'tb.allcolors', 'tb.fillAccount', 'tb.fillGeneral', 'tb.clear', 'tb.save', 'tb.name', 'tb.team', 'tb.saved',
   'tb.load', 'tb.delete', 'tb.analysis', 'tb.roles', 'tb.avg', 'tb.warn.sup', 'tb.warn.dup', 'tb.warn.resist', 'tb.remove', 'tb.unranked',
   'tb.close', 'tb.recs', 'tb.recs.desc', 'tb.copy.hint', 'tb.copy.where',
 ] as const satisfies readonly GameKey[];

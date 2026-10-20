@@ -1,0 +1,16 @@
+# Caché en Cloudflare Pages (lo lee al publicar dist/).
+# JS y CSS de Astro llevan un hash en el nombre: no cambian nunca, caché de un año.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Imágenes del juego: casi nunca cambian; una semana en el navegador y,
+# pasada, se sirve la guardada mientras se comprueba si hay una nueva.
+/img/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+# Datos de equipos: se regeneran a diario.
+/data/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/favicon.svg
+  Cache-Control: public, max-age=604800

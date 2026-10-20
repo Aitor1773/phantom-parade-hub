@@ -2,7 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import AccountApp, { type AccChar, type AccMem } from '@/components/account/AccountApp';
-import { CHARACTERS, thumb } from '@/data/characters';
+import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { MEMORIES } from '@/data/memories';
 import { GLOBAL_BANNERS, characterGlobalEstimate } from '@/data/banners';
 import { GACHA, TIER_UPDATED, tierOf } from '@/data/gacha';
@@ -22,13 +22,14 @@ const characters: AccChar[] = CHARACTERS.map((c) => ({
   rarity: c.rarity,
   element: c.element,
   img: thumb(c.art, 320),
+  srcset: srcsetOf(c.art, 640),
   hasSP: !!c.kits.sp,
 }));
 const memories: AccMem[] = MEMORIES.map((m) => ({ id: m.id, name: m.name, rarity: m.rarity, img: m.icon }));
 
 // Datos para las recomendaciones (se calculan en el navegador con el inventario)
 const advChars: AdvChar[] = CHARACTERS.map((c) => ({
-  id: c.id, name: c.name, epithet: c.epithet, rarity: c.rarity, element: c.element, img: thumb(c.art, 320),
+  id: c.id, name: c.name, epithet: c.epithet, rarity: c.rarity, element: c.element, img: thumb(c.art, 320), srcset: srcsetOf(c.art, 640),
   ...tierOf(c.id),
   memories: c.memories.filter((m) => m.id).map((m) => ({ id: m.id!, name: m.name, img: m.img })),
 }));
@@ -43,7 +44,7 @@ const advice = {
   chars: advChars,
   banners: advBanners,
   estimates: advEstimates,
-  gacha: { cubesPerPull: GACHA.cubesPerPull, pity: GACHA.pity, sourceUrl: GACHA.source.url },
+  gacha: { cubesPerPull: GACHA.cubesPerPull, pity: GACHA.pity },
   tierSource: { name: t('nav.tierlist'), url: localePath(lang, '/tier-list'), updated: TIER_UPDATED },
   basePath: localePath(lang),
 };

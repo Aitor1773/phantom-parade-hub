@@ -227,23 +227,19 @@ function StageSheet({ stage, labels: L, fmt }: { stage: Stage; labels: Labels; f
         ))}
       </ul>
       <p className="text-[11px] text-smoke">
-        {stage.checked ? fill(L[stage.url ? 'sh.updated' : 'tm.affinity.saved'], { d: fmt(stage.checked) }) : L['tm.affinity.saved.nodate']}
+        {stage.checked ? fill(L['sh.updated'], { d: fmt(stage.checked) }) : L['tm.affinity.saved.nodate']}
         {stage.server ? ` · ${stage.server === 'jp' ? 'JP' : 'Global'}` : ''}
-        {stage.source ? ` · ${L['ct.source']}: ` : ''}{stage.url ? <a href={stage.url} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-dust">{stage.source ?? stage.url}</a> : stage.source}
       </p>
     </div>
   );
 }
 
-/** Equipo con el que se superó la fase y guía de la fuente (con su permiso, siempre enlazada). */
+/** Equipo con el que se superó la fase y guía de estrategia. */
 function ProvenPanels({ stage, chars, memories, labels: L, basePath }: { stage: Stage; chars: TeamChar[]; memories: TeamMemory[]; labels: Labels; basePath: string }) {
   const byId = new Map(chars.map((c) => [c.id, c]));
   const memById = new Map(memories.map((m) => [m.id, m]));
   const c = stage.cleared, g = stage.guide;
   if (!c && !g?.points.length) return null;
-  const Credit = ({ src, url }: { src: string; url: string }) => (
-    <a href={url} target="_blank" rel="noopener" className="text-[11px] font-normal text-smoke underline underline-offset-2 hover:text-dust">{src} ↗</a>
-  );
   const Chip = ({ id }: { id: string }) => {
     const ch = byId.get(id);
     if (!ch) return null;
@@ -257,7 +253,7 @@ function ProvenPanels({ stage, chars, memories, labels: L, basePath }: { stage: 
     <div className="space-y-5">
       {c && (
         <section className="card p-4 sm:p-5">
-          <h3 className="mb-3 flex flex-wrap items-baseline justify-between gap-2 font-sans text-sm font-bold text-bone">{L['pv.cleared']} <Credit src={c.source} url={c.url} /></h3>
+          <h3 className="mb-3 flex flex-wrap items-baseline justify-between gap-2 font-sans text-sm font-bold text-bone">{L[c.kind === 'farm' ? 'pv.farm' : c.kind === 'recommended' ? 'pv.recommended' : 'pv.cleared']}</h3>
           <ul className="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">
             {c.chars.map((x, i) => {
               const ch = x.id ? byId.get(x.id) : undefined;
@@ -268,7 +264,7 @@ function ProvenPanels({ stage, chars, memories, labels: L, basePath }: { stage: 
                   {ch ? (
                     <a href={`${basePath}/characters/${ch.id}`} className="block">
                       <span className="relative block aspect-square overflow-hidden rounded-lg border-2 bg-cinder" style={{ borderColor: `${ELEMENT_COLOR[ch.element]}80` }}>
-                        {ch.img && <img src={ch.img} alt="" loading="lazy" className="size-full object-cover object-top" />}
+                        {ch.img && <img src={ch.img} srcSet={ch.srcset} sizes="120px" alt="" loading="lazy" decoding="async" className="size-full object-cover object-top" />}
                         {x.dupes != null && <span className="absolute top-1 left-1 rounded bg-ash/85 px-1 font-bold text-flame">{x.dupes}★</span>}
                       </span>
                       <span className="mt-1 block truncate text-[11px] font-semibold text-bone">{ch.name}</span>
@@ -291,7 +287,7 @@ function ProvenPanels({ stage, chars, memories, labels: L, basePath }: { stage: 
       )}
       {g?.points.length ? (
         <section className="card p-4 sm:p-5">
-          <h3 className="mb-3 flex flex-wrap items-baseline justify-between gap-2 font-sans text-sm font-bold text-bone">{L['pv.guide']} <Credit src={g.source} url={g.url} /></h3>
+          <h3 className="mb-3 flex flex-wrap items-baseline justify-between gap-2 font-sans text-sm font-bold text-bone">{L['pv.guide']}</h3>
           <ol className="space-y-3">
             {g.points.map((p, i) => (
               <li key={i} className="text-xs">
@@ -348,7 +344,11 @@ export interface ContentTeamsProps {
 export default function ContentTeams({ labels: L, contentName, basePath, accountPath, data, stages, contentId, floors, locale }: ContentTeamsProps) {
   const team = useTeamData();
   // Fases: pisos numerados (torre) o las fases con ficha ("id/hard-3"…)
-  const phaseKeys = useMemo(() => Object.keys(stages).filter((k) => k.startsWith(`${contentId}/`)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })), [stages, contentId]);
+  // Pisos y fases numeradas (torre, EX1…EX22) en orden numérico; el resto (jefe y dificultad) en el orden de los datos
+  const phaseKeys = useMemo(() => {
+    const ks = Object.keys(stages).filter((k) => k.startsWith(`${contentId}/`));
+    return ks.every((k) => /\d+$/.test(k)) ? ks.sort((a, b) => a.localeCompare(b, undefined, { numeric: true })) : ks;
+  }, [stages, contentId]);
   // La torre abre en el primer piso con ficha (los primeros pisos no tienen datos)
   const [phase, setPhase] = useState<string>(phaseKeys[0] ?? (floors ? `${contentId}/1` : contentId));
   const key = phase;
@@ -386,7 +386,7 @@ export default function ContentTeams({ labels: L, contentName, basePath, account
           <label className="flex flex-wrap items-center gap-3">
             <span className="text-sm font-bold text-bone">{floors ? L['tm.floor'] : L['sh.phase']}</span>
             <select value={phase} onChange={(e) => setPhase(e.target.value)}
-              className="h-9 rounded-lg border border-line bg-ash px-2 text-sm text-bone focus:border-ember/60 focus:outline-none">
+              className="h-9 w-full max-w-full min-w-0 truncate rounded-lg border border-line bg-ash px-2 text-sm text-bone focus:border-ember/60 focus:outline-none sm:w-auto sm:max-w-md">
               {options.map((o) => <option key={o.k} value={o.k}>{o.label}{stages[o.k] || data[o.k] ? ' ✓' : ''}</option>)}
             </select>
           </label>

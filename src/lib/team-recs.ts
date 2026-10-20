@@ -19,6 +19,8 @@ export interface TeamChar {
   epithet: string | null;
   element: string;
   img: string | null;
+  /** Versiones HD de la ilustración (srcset) */
+  srcset?: string;
   /** Rangos en las listas de función y de elemento (null = no está en esa lista) */
   dmg: Rank | null;
   sup: Rank | null;

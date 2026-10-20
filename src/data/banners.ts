@@ -3,6 +3,7 @@
 //   JP:     cronología completa de la wiki (npm run data:banners).
 import wiki from '../../data/normalized/wiki/banners.json';
 import manual from '../../data/manual/global-banners.json';
+import bannerArtFile from '../../data/normalized/banner-art.json';
 import { getCharacter } from './characters';
 
 export type BannerKind = 'gacha' | 'event' | 'campaign';
@@ -79,6 +80,49 @@ export const JP_BANNERS: Banner[] = W.timelineJP.days
   .sort(byStart);
 
 export const JP_TIMELINE_META = { url: W.timelineJP.url, updated: W.timelineJP.updated };
+
+// ── Imagen oficial de cada banner (npm run data:banner-art, a diario) ──
+type Art = { key: string; title: string; kind: 'gacha' | 'event'; start: string | null; chars: string[]; standard?: boolean; widths: number[] };
+const ARTS = (bannerArtFile as unknown as { items: Art[] }).items;
+/** Palabras del nombre (inglés) → palabra del título japonés de la imagen */
+const ART_WORDS: [RegExp, string][] = [
+  [/Phantom Parade Gacha/i, 'ファンパレガチャ'], [/Illusory Tower|Anomalous/i, '夢幻廻楼'], [/Map Event|Great Sorcerer/i, '大討祓'],
+  [/Formidable/i, '強敵'], [/Imaginary|Illusory Realm/i, '幻境'],
+];
+const jpDay = (iso: string) => new Date(Date.parse(iso) + 9 * 3600e3).toISOString().slice(0, 10);
+const artSrc = (a: Art) => ({
+  src: `/img/banners/${a.key}-${a.widths[0]}.webp`,
+  srcset: a.widths.map((w) => `/img/banners/${a.key}-${w}.webp ${w}w`).join(', '),
+});
+/** Ilustración oficial del juego para los banners que no tienen imagen propia */
+export const BANNER_FALLBACK = { src: '/img/brand/kv-960.webp', srcset: '/img/brand/kv-960.webp 960w, /img/brand/kv-1920.webp 1920w' };
+
+/**
+ * Imagen oficial de un banner: por personajes destacados en común, por palabra clave del nombre
+ * y por día de inicio (en JP; en Global, el del banner JP equivalente si se conoce).
+ */
+export function bannerArt(b: Banner): { src: string; srcset: string } | null {
+  const kind = b.kind === 'gacha' ? 'gacha' : 'event';
+  const isJP = b.id.startsWith('jp-');
+  const day = isJP ? jpDay(b.start) : b.jpEquivalent ? jpDay(b.jpEquivalent.start) : null;
+  const word = ART_WORDS.find(([re]) => re.test(b.name))?.[1];
+  let best: Art | null = null, score = 0;
+  for (const a of ARTS) {
+    if (a.kind !== kind) continue;
+    let s = 0;
+    if (b.characters.some((c) => a.chars.includes(c))) s += 3;
+    if (word && a.title.includes(word)) s += 2;
+    if (day && a.start && jpDay(a.start) === day) s += 2;
+    if (a.standard && /Phantom Parade Gacha/i.test(b.name)) s += 5;
+    // Un banner JP solo se acepta con su mismo día (o sus mismos personajes); en Global basta el nombre o los personajes
+    const sameChars = b.characters.some((c) => a.chars.includes(c));
+    if (isJP && day && a.start && jpDay(a.start) !== day && !sameChars) s = 0;
+    // En Global las ilustraciones de pickup muestran a sus personajes: sin coincidencia, no vale (salvo la estándar)
+    if (!isJP && kind === 'gacha' && !sameChars && !a.standard) s = 0;
+    if (s > score) [best, score] = [a, s];
+  }
+  return best && score >= 2 ? artSrc(best) : null;
+}
 
 /**
  * Retraso real JP → Global medido con los banners Global oficiales del último año

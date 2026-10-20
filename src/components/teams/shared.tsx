@@ -78,7 +78,7 @@ export function SlotCard({ slot, label, labels: L, affinity, basePath, onClick, 
   const body = (
     <>
       <span className="relative block aspect-square overflow-hidden rounded-lg border-2 border-line bg-cinder" style={{ ['--el' as string]: c ? ELEMENT_COLOR[c.element] : undefined, borderColor: c ? `${ELEMENT_COLOR[c.element]}80` : undefined }}>
-        {c ? (c.img ? <img src={c.img} alt="" loading="lazy" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />) : (
+        {c ? (c.img ? <img src={c.img} srcSet={c.srcset} sizes="120px" alt="" loading="lazy" decoding="async" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />) : (
           <span className="grid size-full place-items-center text-2xl text-smoke">+</span>
         )}
         {rank && <span className={`absolute top-1 left-1 rounded px-1 text-[10px] font-black ${RANK_CLS[rank]}`}>{rank}</span>}

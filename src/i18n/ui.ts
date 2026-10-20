@@ -52,8 +52,7 @@ const en = {
   'soon.desc': 'This section is being built. It ships in phase {phase} of the roadmap.',
   'soon.back': 'Back to home',
   'footer.disclaimer': 'Unofficial fan site. Not affiliated with Sumzap, Bilibili, TOHO or Gege Akutami. All game assets and trademarks belong to their respective owners.',
-  'footer.license': 'Part of the game data comes from the JJK Phantom Parade Wiki (CC BY-SA 3.0).',
-  'footer.images': 'Game images mirrored from jjkppdb.com, with thanks to its team.',
+  'footer.credits': 'Credits and licenses',
   'footer.designsystem': 'Design system',
 };
 
@@ -111,12 +110,12 @@ const es: Dict = {
   'soon.desc': 'Esta sección está en construcción. Llega en la fase {phase} del roadmap.',
   'soon.back': 'Volver al inicio',
   'footer.disclaimer': 'Fan site no oficial. Sin relación con Sumzap, Bilibili, TOHO ni Gege Akutami. Los recursos del juego y las marcas pertenecen a sus propietarios.',
-  'footer.license': 'Parte de los datos del juego procede de la JJK Phantom Parade Wiki (CC BY-SA 3.0).',
-  'footer.images': 'Imágenes del juego obtenidas de jjkppdb.com, con agradecimiento a su equipo.',
+  'footer.credits': 'Créditos y licencias',
   'footer.designsystem': 'Design system',
 };
 
 const pt: Dict = {
+  'footer.credits': 'Créditos e licenças',
   'nav.home': 'Início',
   'nav.database': 'Banco de dados',
   'nav.characters': 'Personagens',
@@ -161,6 +160,7 @@ const pt: Dict = {
 };
 
 const fr: Dict = {
+  'footer.credits': 'Crédits et licences',
   'nav.home': 'Accueil',
   'nav.database': 'Base de données',
   'nav.characters': 'Personnages',
@@ -205,6 +205,7 @@ const fr: Dict = {
 };
 
 const de: Dict = {
+  'footer.credits': 'Credits und Lizenzen',
   'nav.home': 'Start',
   'nav.database': 'Datenbank',
   'nav.characters': 'Charaktere',
@@ -249,6 +250,7 @@ const de: Dict = {
 };
 
 const ja: Dict = {
+  'footer.credits': 'クレジットとライセンス',
   'nav.home': 'ホーム',
   'nav.database': 'データベース',
   'nav.characters': 'キャラクター',
@@ -295,6 +297,7 @@ const ja: Dict = {
 };
 
 const ko: Dict = {
+  'footer.credits': '크레딧 및 라이선스',
   'nav.home': '홈',
   'nav.database': '데이터베이스',
   'nav.characters': '캐릭터',
@@ -341,6 +344,7 @@ const ko: Dict = {
 };
 
 const zh: Dict = {
+  'footer.credits': '致谢与许可',
   'nav.home': '首页',
   'nav.database': '数据库',
   'nav.characters': '角色',

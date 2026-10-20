@@ -15,9 +15,9 @@ const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang,
 const now = Date.now();
 const usedCats = EVENT_CATEGORIES.filter((c) => EVENTS.some((e) => e.category === c));
 const MODE_ICON: Record<string, string> = {
-  'illusory-tower': 'layers', 'illusory-tower-diverse': 'layers', 'domain-investigation': 'target', 'formidable-foes': 'swords',
-  'formidable-foe-back': 'swords', 'curse-sweep-battle': 'swords', 'sp-battle': 'sparkles', 'cursed-corpse-walk': 'target',
-  'dreamy-stairwell': 'layers', 'main-quest': 'book', 'cursed-object-collection': 'gift', 'strengthening-quest': 'sparkles',
+  'illusory-tower': 'layers', 'illusory-tower-diverse': 'layers',
+  'formidable-foe-back': 'swords', 'sp-battle': 'sparkles',
+  'main-quest': 'book',
 };
 // Disponibles ahora (según las fechas de la última compilación; el navegador lo vuelve a comprobar)
 const ACTIVE = EVENTS.filter((e) => e.start && +new Date(e.start) <= now && (!e.end || +new Date(e.end) >= now) && e.end);

@@ -1,7 +1,7 @@
 // Personajes con sus rangos de la tier list, para el creador de equipos y los equipos por contenido.
 // Un solo archivo estático (/data/team-chars.json) que comparten todas las páginas.
 import type { APIRoute } from 'astro';
-import { CHARACTERS, thumb } from '@/data/characters';
+import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { TIER_LISTS, type TierListKey } from '@/data/gacha';
 import type { DupeRule, Rank, TeamChar } from '@/lib/team-recs';
 
@@ -45,7 +45,8 @@ export const GET: APIRoute = () => {
       name: c.name,
       epithet: c.epithet,
       element: c.element,
-      img: c.icon ?? thumb(c.art, 320),
+      img: thumb(c.art, 320) ?? c.icon ?? null,
+      srcset: srcsetOf(c.art, 640),
       dmg: rankIn('damage', c.id),
       sup: rankIn('support', c.id),
       el: rankIn(c.element as TierListKey, c.id),
