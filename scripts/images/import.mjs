@@ -186,6 +186,26 @@ for (const c of chars) {
 if (generated) console.log(`Iconos generados desde el arte: ${generated}`);
 console.log(`Iconos asociados por personaje: ${Object.keys(icons.byCharacter).length} (con icono: ${Object.values(icons.byCharacter).filter((e) => e.icon).length})`);
 
+// ── Marca oficial (web Global de Bilibili, descargada con permiso del usuario) ──
+// assets-src/official/logo-<idioma>.png → public/img/brand/logo-<idioma>-<ancho>.webp
+// assets-src/official/kv_pc_bg.png      → public/img/brand/kv-<ancho>.webp (+ kv-1200.jpg para compartir)
+const OFFICIAL = join(ROOT, 'assets-src', 'official');
+if (existsSync(OFFICIAL)) {
+  const BRAND = join(PUB, 'brand');
+  await mkdir(BRAND, { recursive: true });
+  let n = 0;
+  for (const f of await list(OFFICIAL)) {
+    const src = join(OFFICIAL, f);
+    if (f.startsWith('logo-')) { await toWebp(src, join(BRAND, key(f)), [320, 500], 90); n++; }
+    if (f.startsWith('kv_pc_bg')) {
+      await toWebp(src, join(BRAND, 'kv'), [960, 1920], 80);
+      await sharp(src).resize({ width: 1200 }).jpeg({ quality: 82 }).toFile(join(BRAND, 'kv-1200.jpg'));
+      n++;
+    }
+  }
+  console.log(`Marca oficial: ${n} imágenes`);
+}
+
 // ── Memorias (icono + ilustración, por id de jjkppdb y nombre) ──
 const idxFile = join(JJK, 'index.json');
 if (existsSync(idxFile)) {

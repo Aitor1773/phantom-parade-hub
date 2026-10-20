@@ -27,6 +27,14 @@ const path = stripLocale(Astro.url.pathname);
     <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Vista previa al compartir (redes, Discord): key visual oficial del juego -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={pageTitle} />
+    {description && <meta property="og:description" content={description} />}
+    {Astro.site && <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site).href} />}
+    {Astro.site && <meta property="og:image" content={new URL('/img/brand/kv-1200.jpg', Astro.site).href} />}
+    <meta name="twitter:card" content="summary_large_image" />
     <slot name="head" />
     {Astro.site && LOCALES.map((l) => (
       <link rel="alternate" hreflang={LOCALE_META[l as Locale].htmlLang} href={new URL(localePath(l as Locale, path), Astro.site).href} />

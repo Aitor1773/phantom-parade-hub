@@ -17,6 +17,10 @@ const title = t('home.title');
 const cut = title.lastIndexOf(' ');
 const [titleA, titleB] = cut > 0 ? [title.slice(0, cut), title.slice(cut + 1)] : ['', title];
 
+// Logo oficial (web Global): inglés para los idiomas latinos y japonés, propio en coreano y chino
+const LOGO = `/img/brand/logo-${lang === 'ko' ? 'ko-kr' : lang === 'zh' ? 'zh-cn' : 'en-us'}`;
+const HERO = '/img/characters/battle-of-firepower-ryomen-sukuna';
+
 const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
   { icon: 'check', title: 'home.trust.title', desc: 'home.trust.desc' },
   { icon: 'globe', title: 'home.global.title', desc: 'home.global.desc' },
@@ -25,22 +29,27 @@ const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
 ---
 
 <BaseLayout lang={lang} description={t('home.subtitle')}>
-  <!-- Hero -->
+  <!-- Hero: Sukuna desatando el fuego (Fuga) y el logo oficial del juego -->
   <section class="relative isolate overflow-hidden">
+    <picture class="pointer-events-none absolute inset-0 -z-20" aria-hidden="true">
+      <source media="(min-width: 960px)" srcset={`${HERO}-1440.webp`} />
+      <img src={`${HERO}-960.webp`} alt="" fetchpriority="high" class="hero-art size-full object-cover object-[72%_35%]" />
+    </picture>
+    <!-- Oscurece el lado del texto para que se lea sobre el fuego -->
+    <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-ash via-ash/70 to-transparent lg:from-ash/95 lg:via-ash/35" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-ash via-transparent to-ash/20" aria-hidden="true"></div>
     <Embers density={70} />
     <!-- Tajo del Fuga -->
     <div class="fuga-slash pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[2px] w-[160vw] -translate-x-1/2 -translate-y-1/2 -rotate-[18deg]" aria-hidden="true"></div>
-    <!-- 開 (Fuga) decorativo -->
-    <span class="pointer-events-none absolute top-1/2 right-[4%] -z-10 hidden -translate-y-1/2 font-display text-[clamp(8rem,16vw,15rem)] leading-none font-black text-crimson/[0.08] select-none lg:block" aria-hidden="true">開</span>
 
-    <div class="mx-auto flex min-h-[calc(92dvh-var(--nav-h))] max-w-7xl flex-col justify-center px-4 py-20 lg:px-6">
-      <p class="hero-in eyebrow flex items-center gap-2" style="--d:0">
-        <span class="h-px w-8 bg-gradient-to-r from-transparent to-flame"></span>
-        {t('home.eyebrow')}
-      </p>
-      <h1 class="hero-in mt-5 max-w-4xl text-[clamp(2.4rem,6.5vw,5.2rem)] leading-[1.02] font-black text-bone" style="--d:1">
-        {titleA} <span class="text-fire">{titleB}</span>
+    <div class="mx-auto flex min-h-[calc(92dvh-var(--nav-h))] max-w-7xl flex-col justify-center px-4 py-16 lg:px-6">
+      <h1 class="hero-in" style="--d:0">
+        <img src={`${LOGO}-500.webp`} srcset={`${LOGO}-320.webp 320w, ${LOGO}-500.webp 500w`} sizes="(min-width: 640px) 420px, 72vw"
+          alt={t('home.eyebrow')} width="500" height="296" class="h-auto w-[72vw] max-w-[420px] drop-shadow-[0_8px_30px_rgba(0,0,0,0.65)]" />
       </h1>
+      <p class="hero-in mt-6 max-w-3xl text-[clamp(1.6rem,4vw,3rem)] leading-[1.05] font-black text-bone" style="--d:1">
+        {titleA} <span class="text-fire">{titleB}</span>
+      </p>
       <p class="hero-in mt-6 max-w-2xl text-base leading-relaxed text-dust sm:text-lg" style="--d:2">{t('home.subtitle')}</p>
       <div class="hero-in mt-9 flex flex-wrap gap-3" style="--d:3">
         <a href={localePath(lang, '/characters')} class="btn-primary px-6 py-3 text-[15px]">
