@@ -1,4 +1,6907 @@
 {
-  "_comment": "Fichas de cada fase (piso, jefe, combate de evento), transcritas a mano de capturas del juego (pantalla de detalles del combate). No se copian datos de webs de guías. Ver docs/CAPTURAS-FASES.md para el formato completo. Clave: id del contenido + '/' + fase (piso 12 de la torre: 'illusory-tower/12'; 'domain-investigation/hard-3'). Elementos: red, blue, green, yellow. Tipos de daño: taijutsu (físico), jujutsu (ritual), mixed (híbrido). Tipos de habilidad: aoe, single, debuff, buff, heal, taunt, summon, counter, enrage, other.",
-  "stages": {}
+  "_comment": "Fichas de cada fase (piso, jefe, combate de evento), con HECHOS (enemigos, vida, debilidades, reducciones de daño, reglas) sacados de Game8 y redactados con nuestras palabras, con enlace a la fuente (url); nunca sus equipos, estrategias, textos ni imágenes. También se pueden transcribir de capturas del juego. Datos del servidor JP (torre: temporada 2). Ver docs/CAPTURAS-FASES.md para el formato completo. Clave: id del contenido + '/' + fase (piso 12 de la torre: 'illusory-tower/12'; 'domain-investigation/hard-3'). Elementos: red, blue, green, yellow. Tipos de daño: taijutsu (físico), jujutsu (ritual), mixed (híbrido). Tipos de habilidad: aoe, single, debuff, buff, heal, taunt, summon, counter, enrage, other.",
+  "stages": {
+    "curse-sweep-battle/blue": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Batalla de barrido de maldiciones (Azul)",
+      "power": 60000,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 60.000 · Difícil 100.000 · Muy difícil 140.000",
+          "Vida total: Normal 68,2 M · Difícil 200 M · Muy difícil 450 M",
+          "La vida del jefe depende del rango (1 a 9). Normal: 0,3 M · 0,9 M · 1,5 M · 3 M · 5 M · 7 M · 7,5 M · 15 M · 28 M. Difícil: 3 M · 7 M · 9 M · 15 M · 20 M · 25 M · 28 M · 38 M · 55 M. Muy difícil: 6 M · 15 M · 19 M · 34 M · 46 M · 50 M · 60 M · 70 M · 150 M.",
+          "El jefe tiene tres fases."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición árbol de rostros humanos (Dodoguchi)",
+          "boss": true,
+          "ultCount": 6,
+          "skills": [
+            {
+              "name": "Al pasar a la fase 2 y a la fase 3 reduce la energía maldita de tu equipo y le aplica una reducción de daño infligido.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aplica veneno y reducción de Jujutsu (ritual).",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su ataque normal reduce el Taijutsu (físico) o el Jujutsu (ritual) del objetivo.",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/664495"
+    },
+    "curse-sweep-battle/green": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Batalla de barrido de maldiciones (Verde)",
+      "power": 60000,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 60.000 · Difícil 100.000 · Muy difícil 140.000",
+          "Vida total: Normal 68,2 M · Difícil 200 M · Muy difícil 450 M",
+          "La vida del jefe depende del rango (1 a 9). Normal: 0,3 M · 0,9 M · 1,5 M · 3 M · 5 M · 7 M · 7,5 M · 15 M · 28 M. Difícil: 3 M · 7 M · 9 M · 15 M · 20 M · 25 M · 28 M · 38 M · 55 M. Muy difícil: 6 M · 15 M · 19 M · 34 M · 46 M · 50 M · 60 M · 70 M · 150 M.",
+          "El jefe tiene tres fases."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición jabalí gigante (Kobu)",
+          "boss": true,
+          "ultCount": 6,
+          "skills": [
+            {
+              "name": "En el primer turno de la fase 2 y de la fase 3 tiene la barra de definitiva al máximo.",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Aplica una reducción de Taijutsu (físico) del 30 % durante 3 turnos.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Se aplica una reducción del daño recibido del 30 %.",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/664625"
+    },
+    "curse-sweep-battle/red": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Batalla de barrido de maldiciones (Rojo)",
+      "power": 60000,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 60.000 · Difícil 100.000",
+          "Vida total: Normal 68,2 M · Difícil 200 M · Muy difícil 450 M",
+          "La vida del jefe depende del rango (1 a 9). Normal: 0,3 M · 0,9 M · 1,5 M · 3 M · 5 M · 7 M · 7,5 M · 15 M · 28 M. Difícil: 3 M · 7 M · 9 M · 15 M · 20 M · 25 M · 28 M · 38 M · 55 M. Muy difícil: 6 M · 15 M · 19 M · 34 M · 46 M · 50 M · 60 M · 70 M · 150 M.",
+          "El jefe tiene tres fases."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición sapo gigante (carmesí)",
+          "boss": true,
+          "ultCount": 6,
+          "skills": [
+            {
+              "name": "Tras pasar a la fase 2 y a la fase 3, su definitiva reduce la barra de definitiva de todo tu equipo.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Cada cierto tiempo se aplica una reducción del daño recibido.",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/664620"
+    },
+    "curse-sweep-battle/yellow": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Batalla de barrido de maldiciones (Amarillo)",
+      "power": 60000,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 60.000 · Difícil 100.000 · Muy difícil 140.000",
+          "Vida total: Normal 68,2 M · Difícil 200 M · Muy difícil 450 M",
+          "La vida del jefe depende del rango (1 a 9). Normal: 0,3 M · 0,9 M · 1,5 M · 3 M · 5 M · 7 M · 7,5 M · 15 M · 28 M. Difícil: 3 M · 7 M · 9 M · 15 M · 20 M · 25 M · 28 M · 38 M · 55 M. Muy difícil: 6 M · 15 M · 19 M · 34 M · 46 M · 50 M · 60 M · 70 M · 150 M.",
+          "El jefe tiene tres fases."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición asceta (carmesí)",
+          "boss": true,
+          "ultCount": 6,
+          "skills": [
+            {
+              "name": "Al pasar a la fase 2 y a la fase 3 reduce el daño infligido de todo tu equipo y aumenta su propio daño infligido.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce la barra de definitiva y la energía maldita de tus personajes.",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/664626"
+    },
+    "domain-investigation/hard-5": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Mansión de la ilusión · Etapa 5 (jefes)",
+      "power": 31500,
+      "recommended": [
+        "green",
+        "yellow",
+        "blue"
+      ],
+      "rules": {
+        "notes": [
+          "Combate contra tres enemigos a la vez, cada uno de un color distinto.",
+          "Ningún color reduce tu daño infligido aquí, pero algunos aumentan el daño que recibes; el Verde es el único que no sufre ese aumento."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Objeto maldito de grado especial A",
+          "boss": true,
+          "weak": [
+            "yellow"
+          ],
+          "skills": [
+            {
+              "name": "Sus ataques infligen más daño a los personajes Azules.",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición mujer monstruosa",
+          "boss": true,
+          "weak": [
+            "green"
+          ],
+          "skills": [
+            {
+              "name": "Sus ataques infligen más daño a los personajes Rojos.",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Tiene una acción que aturde.",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición enmascarada",
+          "boss": true,
+          "weak": [
+            "blue"
+          ],
+          "skills": [
+            {
+              "name": "Sus ataques infligen más daño a los personajes Amarillos.",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579048"
+    },
+    "domain-investigation/normal-5": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Fábrica abandonada de la niebla púrpura · Etapa 5 (jefes)",
+      "power": 22300,
+      "recommended": [
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Combate contra tres enemigos a la vez.",
+          "Dos de los enemigos son débiles al Verde y uno al Amarillo."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Enemigo débil al Verde",
+          "boss": true,
+          "count": 2,
+          "weak": [
+            "green"
+          ],
+          "skills": []
+        },
+        {
+          "name": "Enemigo débil al Amarillo",
+          "boss": true,
+          "weak": [
+            "yellow"
+          ],
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/578859"
+    },
+    "domain-investigation/very-hard-5": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Santuario del caos · Etapa 5 (jefes)",
+      "power": 44900,
+      "recommended": [
+        "green",
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Combate contra tres enemigos a la vez, cada uno con su propio color.",
+          "Hay enemigos débiles al Verde (desfavorables para el Rojo) y enemigos débiles al Rojo (desfavorables para el Verde): con el color desfavorable infliges menos daño y recibes más."
+        ]
+      },
+      "enemies": [],
+      "url": "https://game8.jp/jujutsuphanpara/579050"
+    },
+    "formidable-foe-back/blue-haired-ape": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Enemigo formidable: Back · Maldición simio de pelo azul",
+      "power": 40800,
+      "recommended": [
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 40.800 · Difícil 67.000 · Muy difícil 87.600 · Extrema 100.600",
+          "Cada vez que completas las misiones de un jefe, la dificultad de este modo sube un nivel (Normal, Difícil, Muy difícil, Extrema)."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición simio de pelo azul",
+          "boss": true,
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/795601"
+    },
+    "formidable-foe-back/carnivorous-plant": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Enemigo formidable: Back · Maldición planta carnívora",
+      "power": 40800,
+      "recommended": [
+        "blue"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 40.800 · Difícil 67.000 · Muy difícil 87.600 · Extrema 100.600",
+          "Cada vez que completas las misiones de un jefe, la dificultad de este modo sube un nivel (Normal, Difícil, Muy difícil, Extrema)."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición planta carnívora",
+          "boss": true,
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/795601"
+    },
+    "formidable-foe-back/hososhin": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Batalla contra superenemigo: Hososhin",
+      "recommended": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Se desbloquea al completar las misiones de desafío de los cuatro jefes de Enemigo formidable: Back.",
+          "Tiene 3 fases y más de 300 M de vida en total.",
+          "Todos los colores son recomendados.",
+          "Regla especial: no se puede usar la expansión de dominio."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Hososhin",
+          "boss": true,
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/795601"
+    },
+    "formidable-foe-back/sea-slug": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Enemigo formidable: Back · Maldición babosa marina",
+      "power": 40800,
+      "recommended": [
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 40.800 · Difícil 67.000 · Muy difícil 87.600 · Extrema 100.600",
+          "Cada vez que completas las misiones de un jefe, la dificultad de este modo sube un nivel (Normal, Difícil, Muy difícil, Extrema).",
+          "Se desbloquea al completar todas las misiones de desafío de Enemigos formidables normales. Disponible desde el 07/07/2026."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición babosa marina",
+          "boss": true,
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/795601"
+    },
+    "formidable-foe-back/sludge-shikigami": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Enemigo formidable: Back · Shikigami de lodo",
+      "power": 40800,
+      "recommended": [
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Poder recomendado: Normal 40.800 · Difícil 67.000 · Muy difícil 87.600 · Extrema 100.600",
+          "Cada vez que completas las misiones de un jefe, la dificultad de este modo sube un nivel (Normal, Difícil, Muy difícil, Extrema)."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Shikigami de lodo",
+          "boss": true,
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/795601"
+    },
+    "formidable-foes/jogo-extreme1": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Jogo (Extrema 1)",
+      "power": 30500,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar llevando a Maki Zenin y Nobara Kugisaki; terminar sin caídos; terminar en 10 turnos o menos. No hace falta cumplirlas todas en el mismo intento."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Jogo",
+          "boss": true,
+          "skills": [
+            {
+              "name": "Despliega una expansión de dominio que dura 4 turnos y durante ella Jogo recibe menos daño.",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579296"
+    },
+    "formidable-foes/jogo-extreme2": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Jogo (Extrema 2)",
+      "power": 75000,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar con 2 o menos personajes caídos; terminar sin caídos; terminar en 10 turnos o menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Jogo",
+          "boss": true,
+          "skills": [
+            {
+              "name": "En el primer turno despliega siempre su expansión de dominio con un ataque de gran daño.",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Durante la expansión de dominio aumenta su daño infligido.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Al bajar su vida por debajo de cierto umbral aumenta mucho su daño infligido.",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Entra en Break tras recibir aprox. 1,2 M de daño desde el inicio del combate.",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579288"
+    },
+    "formidable-foes/jogo-hard": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Jogo (Difícil)",
+      "power": 30500,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar con 2 o menos personajes caídos; terminar sin caídos; terminar en 8 turnos o menos. No hace falta cumplirlas todas en el mismo intento."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Jogo",
+          "boss": true,
+          "skills": [
+            {
+              "name": "Despliega su expansión de dominio al inicio del combate, con aprox. 4.000-6.000 de daño por personaje si no hay mejoras defensivas.",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "La expansión de dominio dura 4 turnos y durante ella Jogo recibe menos daño.",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579115"
+    },
+    "formidable-foes/kyoto-hard": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Escuela de Kioto (Difícil)",
+      "power": 30500,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "blue"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar llevando a Saki Rindo y Kaito Yuki; terminar sin caídos; terminar en 8 turnos o menos. No hace falta cumplirlas todas en el mismo intento.",
+          "Tres enemigos a la vez."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Mechamaru",
+          "boss": true,
+          "hp": 284744,
+          "ultCount": 5,
+          "skills": [
+            {
+              "name": "Ataque normal que inflige aprox. 2.500 de daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque normal que inflige aprox. 2.000 de daño a todo el equipo.",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Definitiva que inflige aprox. 4.500 de daño a todo el equipo.",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Kasumi Miwa",
+          "boss": true,
+          "hp": 319237,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Ataque normal que inflige aprox. 2.400 de daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Se pone en estado de contraataque durante 2 turnos.",
+              "kind": "counter",
+              "text": ""
+            },
+            {
+              "name": "Definitiva que inflige aprox. 8.500 de daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Mai Zenin",
+          "boss": true,
+          "hp": 226329,
+          "ultCount": 3,
+          "skills": [
+            {
+              "name": "Ataque de aprox. 3.000 de daño a un objetivo con probabilidad de aturdir.",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Aumenta su Taijutsu (físico) un 100 % y se pone en estado de evasión.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva que inflige aprox. 7.000 de daño a un objetivo (con el aumento de Taijutsu incluido).",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579114"
+    },
+    "formidable-foes/special-grade-extreme1": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Maldición de grado especial A (Extrema 1)",
+      "power": 45900,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar llevando a Toge Inumaki y Panda; terminar sin caídos; terminar en 10 turnos o menos. No hace falta cumplirlas todas en el mismo intento.",
+          "El combate tiene una oleada previa antes del jefe."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de grado especial A",
+          "boss": true,
+          "skills": []
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/580731"
+    },
+    "formidable-foes/special-grade-extreme2": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Maldición de grado especial A (Extrema 2)",
+      "power": 75000,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar con 2 o menos personajes caídos; terminar sin caídos; terminar en 10 turnos o menos.",
+          "El combate tiene una oleada previa antes del jefe."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de grado especial A",
+          "boss": true,
+          "skills": [
+            {
+              "name": "Tiene barra de Break.",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldiciones menores",
+          "skills": [
+            {
+              "name": "Aparecen junto al jefe.",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/580699"
+    },
+    "formidable-foes/special-grade-hard": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Maldición de grado especial A (Difícil)",
+      "power": 30500,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar con 2 o menos personajes caídos; terminar sin caídos; terminar en 8 turnos o menos. No hace falta cumplirlas todas en el mismo intento."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de grado especial A",
+          "boss": true,
+          "skills": [
+            {
+              "name": "Usa un único tipo de ataque normal.",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva que inflige aprox. 7.000 de daño a todo el equipo.",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición de una pierna",
+          "skills": [
+            {
+              "name": "Acompaña al jefe y tiene menos vida que él.",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579087"
+    },
+    "formidable-foes/tokyo-2nd-extreme1": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Segundo año de Tokio (Extrema 1)",
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "La fuente solo publica los datos de la dificultad Difícil; aquí se recogen los comportamientos comunes y se omiten el poder recomendado y la vida, que pueden variar en Extrema 1.",
+          "Ambos enemigos lanzan su definitiva a la vez en un ciclo de 4 turnos, salvo que se les aturda o se les provoque Break (dato de Difícil)."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Panda",
+          "boss": true,
+          "skills": [
+            {
+              "name": "Ataque normal a un objetivo.",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 25 % el daño que recibe durante 2 turnos.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Atrae los ataques durante 1 turno y aumenta en 1 su barra de definitiva.",
+              "kind": "taunt",
+              "text": ""
+            },
+            {
+              "name": "Definitiva de gran daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maki Zenin",
+          "boss": true,
+          "skills": [
+            {
+              "name": "Ataque normal a todo el equipo.",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Ataque a distancia a un objetivo que además aumenta el daño de Taijutsu (físico) que recibe.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 25 % el daño que recibe durante 2 turnos.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva de gran daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579116"
+    },
+    "formidable-foes/tokyo-2nd-hard": {
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "name": "Segundo año de Tokio (Difícil)",
+      "power": 30500,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Misiones de desafío: terminar con 2 o menos personajes caídos; terminar sin caídos; terminar en 8 turnos o menos. No hace falta cumplirlas todas en el mismo intento.",
+          "Ambos enemigos lanzan su definitiva a la vez en un ciclo de 4 turnos, salvo que se les aturda o se les provoque Break."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Panda",
+          "boss": true,
+          "hp": 512590,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Ataque normal que inflige aprox. 1.400 de daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 25 % el daño que recibe durante 2 turnos.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Atrae los ataques durante 1 turno y aumenta en 1 su barra de definitiva.",
+              "kind": "taunt",
+              "text": ""
+            },
+            {
+              "name": "Definitiva que inflige aprox. 6.000 de daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maki Zenin",
+          "boss": true,
+          "hp": 370764,
+          "ultCount": 3,
+          "skills": [
+            {
+              "name": "Ataque normal que inflige aprox. 1.600 de daño a todo el equipo.",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Ataque a distancia de aprox. 2.000 de daño a un objetivo que además aumenta el daño de Taijutsu (físico) que recibe.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 25 % el daño que recibe durante 2 turnos.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva que inflige aprox. 9.000 de daño a un objetivo.",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/579116"
+    },
+    "illusory-tower-diverse/1": {
+      "name": "Anomalous Form · fase 1",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 78300,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición postrada",
+          "level": 120,
+          "hp": 2044571,
+          "ultCount": 2,
+          "taunt": true,
+          "skills": [
+            {
+              "name": "Atrae los ataques hacia sí mismo",
+              "kind": "taunt",
+              "text": ""
+            },
+            {
+              "name": "Hace ataques a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de una pierna",
+          "level": 120,
+          "hp": 1336835,
+          "ultCount": 3,
+          "count": 2,
+          "skills": [
+            {
+              "name": "Sus ataques reducen el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aparecen 2 al empezar el combate",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801936"
+    },
+    "illusory-tower-diverse/2": {
+      "name": "Anomalous Form · fase 2",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 83300,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "blue"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición de cuatro patas (centro)",
+          "level": 125,
+          "hp": 1872322,
+          "ultCount": 3,
+          "skills": [
+            {
+              "name": "Hace ataques de área a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de cuatro patas (laterales)",
+          "level": 125,
+          "hp": 1337373,
+          "ultCount": 3,
+          "skills": [
+            {
+              "name": "Hace ataques de área a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801941"
+    },
+    "illusory-tower-diverse/3": {
+      "name": "Anomalous Form · fase 3",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 88400,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Elemento recomendado",
+          "Elemento desfavorable"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición hongo (centro)",
+          "level": 130,
+          "hp": 5279539,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Esparce esporas que aplican daño continuo por veneno y confusión",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Jefe con más PV que los enemigos de los lados",
+              "kind": "other",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición hongo (laterales)",
+          "level": 130,
+          "hp": 2639770,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Esparce esporas que aplican daño continuo por veneno y confusión",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Tiene menos PV que el enemigo central y cae con facilidad",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801943"
+    },
+    "illusory-tower-diverse/4": {
+      "name": "Anomalous Form · fase 4",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 93400,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición araña",
+          "level": 135,
+          "hp": 4678496,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Maldición que aturde con hilo pegajoso",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición rana",
+          "level": 135,
+          "hp": 5609707,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Maldición que reduce la energía maldita",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición probóscide",
+          "level": 135,
+          "hp": 2860951,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Maldición que absorbe energía maldita y recupera PV",
+              "kind": "heal",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801951"
+    },
+    "illusory-tower-diverse/5": {
+      "name": "Anomalous Form · fase 5",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 98500,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición reptil con cabeza humana",
+          "level": 140,
+          "hp": 38091314,
+          "ultCount": 2,
+          "actions": 2,
+          "immune": [
+            "スタン✗",
+            "暗闇✗",
+            "足止め✗",
+            "撹乱✗"
+          ],
+          "skills": [
+            {
+              "name": "Ataca con veneno, aturdimiento y confusión",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Potencia a sus aliados",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801952"
+    },
+    "illusory-tower-diverse/6": {
+      "name": "Anomalous Form · fase 6",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 103600,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición rata gigante",
+          "level": 145,
+          "hp": 32452536,
+          "ultCount": 5,
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Reduce su daño recibido durante varios turnos",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Hace ataques de área y ataques que envenenan",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801959"
+    },
+    "illusory-tower-diverse/7": {
+      "name": "Anomalous Form · fase 7",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 108600,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "blue"
+      ],
+      "rules": {
+        "only": [
+          "green"
+        ],
+        "notes": [
+          "Más daño recibido para los aliados que no son Verdes",
+          "(Los personajes que no son Verdes reciben un 400 % más de daño)"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de alas negras",
+          "level": 150,
+          "hp": 97355823,
+          "ultCount": 4,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Taijutsu y aumenta el daño recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el daño que reciben sus aliados y los cura",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Es resistente a ciertos ataques (a distancia o cuerpo a cuerpo)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801964"
+    },
+    "illusory-tower-diverse/8": {
+      "name": "Anomalous Form · fase 8",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 113700,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son Amarillos reciben un 100 % más de daño"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición araña gigante",
+          "level": 155,
+          "hp": 105617232,
+          "ultCount": 4,
+          "immune": [
+            "夜不利"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Hace ataques potentes y ataques que absorben PV",
+              "kind": "heal",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801969"
+    },
+    "illusory-tower-diverse/9": {
+      "name": "Anomalous Form · fase 9",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 118800,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [],
+      "rules": {
+        "notes": [
+          "Más daño recibido para los aliados que no son Azules",
+          "Los personajes que no son Azules reciben un 100 % más de daño"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de grado especial · A",
+          "level": 160,
+          "hp": 137166911,
+          "ultCount": 5,
+          "actions": 2,
+          "immune": [
+            "スタン✗",
+            "暗闇✗",
+            "足止め✗",
+            "撹乱✗"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu y se potencia a sí mismo",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Se pone un escudo que reduce el daño recibido",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "A partir del turno 30 sus atributos suben muchísimo",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801977"
+    },
+    "illusory-tower-diverse/10": {
+      "name": "Anomalous Form · fase 10",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 128900,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "blue"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son Verdes reciben un 100 % más de daño"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición rana gigante",
+          "level": 170,
+          "hp": 124806748,
+          "ultCount": 6,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aplica a tus personajes aturdimiento, reducción del daño infligido y aumento del daño recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Se aplica aumento del daño infligido y reducción del daño recibido",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva ataca a todo el equipo y aplica aturdimiento",
+              "kind": "aoe",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Cabeza de mosca · Anillo",
+          "level": 170,
+          "hp": 24403947,
+          "ultCount": 5,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Sus ataques aumentan el daño recibido y aplican confusión",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801981"
+    },
+    "illusory-tower-diverse/11": {
+      "name": "Anomalous Form · fase 11",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 133900,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los aliados que no son Rojos reciben un 100 % más de daño",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición asceta",
+          "level": 175,
+          "hp": 135878523,
+          "ultCount": 5,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Taijutsu y el Jujutsu",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataca reduciendo la barra de definitiva y la energía maldita",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Se sube el Jujutsu y el daño infligido",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Con la definitiva aumenta el daño de Jujutsu recibido y aturde",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Al usar la definitiva reduce la barra de definitiva de todo el equipo",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801991"
+    },
+    "illusory-tower-diverse/12": {
+      "name": "Anomalous Form · fase 12",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 139000,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los aliados que no son Amarillos reciben un 100 % más de daño",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición hormiga",
+          "level": 180,
+          "hp": 79221718,
+          "ultCount": 7,
+          "immune": [
+            "スタン✗",
+            "暗闇✗",
+            "足止め✗",
+            "撹乱✗"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Se sube el Jujutsu y reduce su daño recibido",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataca aplicando aturdimiento, veneno y aumento del daño de Jujutsu recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la definitiva ataca a los envenenados reduciendo su daño infligido y aumentando su daño recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Al inicio del turno, con un 50 % de PV o menos, recupera 1 su contador de definitiva",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición seta",
+          "level": 180,
+          "hp": 27339820,
+          "ultCount": 4,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Aparecen 2 (a izquierda y derecha del jefe)",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Esparce esporas que causan daño continuo por veneno y confusión",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/801994"
+    },
+    "illusory-tower-diverse/13": {
+      "name": "Anomalous Form · fase 13",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 141000,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Los aliados que no son Azules reciben un 100 % más de daño",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición jabalí gigante · Joroba",
+          "level": 185,
+          "hp": 164489659,
+          "ultCount": 4,
+          "actions": 2,
+          "immune": [
+            "スタン✗",
+            "暗闇✗",
+            "足止め✗",
+            "撹乱✗"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataca reduciendo el Taijutsu y reduce su propio daño recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Al usar la definitiva reduce la energía maldita de todo el equipo",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de un cuerno y dos colas",
+          "level": 185,
+          "hp": 30495083,
+          "ultCount": 2,
+          "taunt": true,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Atrae los ataques hacia sí",
+              "kind": "taunt",
+              "text": ""
+            },
+            {
+              "name": "Ataca reduciendo el Jujutsu",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802001"
+    },
+    "illusory-tower-diverse/14": {
+      "name": "Anomalous Form · fase 14",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 143000,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los aliados que no son Rojos reciben un 100 % más de daño",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición bestia alada · Plumas mojadas",
+          "level": 190,
+          "hp": 166160683,
+          "ultCount": 7,
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90,
+            "jujutsu": 50
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Al inicio del turno, con un 50 % de PV o menos, reduce un 40 % el daño de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Expulsa del combate durante unos turnos a tus personajes y sube su propia resistencia a crítico",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Hace ataques potentes a un objetivo y a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de una pierna",
+          "level": 190,
+          "hp": 40952925,
+          "ultCount": 3,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802004"
+    },
+    "illusory-tower-diverse/15": {
+      "name": "Anomalous Form · fase 15",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 152000,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [],
+      "rules": {
+        "notes": [
+          "Elemento recomendado",
+          "Elemento desfavorable",
+          "Restricción de elemento: solo se pueden usar personajes Amarillos",
+          "Menos efecto de debuffs: los debuffs que reciben los enemigos tienen un 90 % menos de efecto (no afecta a los que no tienen límite de usos ni de turnos)",
+          "Reducción de daño por % de PV: todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición araña gigante · Veneno índigo",
+          "level": 195,
+          "hp": 117789719,
+          "ultCount": 5,
+          "actions": 2,
+          "immune": [
+            "スタン✗",
+            "暗闇✗",
+            "足止め✗",
+            "撹乱✗"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aplica aturdimiento, reducción de Jujutsu y veneno",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Sus ataques son más fuertes contra objetivos aturdidos",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Al usar la definitiva reduce la barra de definitiva de todo el equipo",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de mandíbula ancha",
+          "level": 195,
+          "hp": 27966315,
+          "ultCount": 3,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Solo hace ataques a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802006"
+    },
+    "illusory-tower-diverse/16": {
+      "name": "Anomalous Form · fase 16",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 161000,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [],
+      "rules": {
+        "notes": [
+          "Solo se pueden usar personajes Azules",
+          "Las mejoras que reciben tus personajes tienen un 90 % menos de efecto (no afecta a las que no tienen límite de usos ni de turnos)",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición babosa marina",
+          "level": 200,
+          "hp": 109204098,
+          "ultCount": 6,
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90,
+            "taijutsu": 30
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataca reduciendo la energía maldita y el Taijutsu, y envenena",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Se sube el daño infligido y la resistencia a crítico (30 %) y reduce un 15 % el daño de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Al usar ciertas habilidades se aplica «Marca» (cuantas más marcas, más daño de veneno)",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Al usar la definitiva reduce su daño recibido",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición probóscide",
+          "level": 200,
+          "hp": 28247102,
+          "ultCount": 3,
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Absorbe energía maldita y se cura",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802017"
+    },
+    "illusory-tower-diverse/17": {
+      "name": "Anomalous Form · fase 17",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 176000,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [],
+      "rules": {
+        "notes": [
+          "Solo se pueden usar personajes Verdes",
+          "Los debuffs que reciben los enemigos tienen un 90 % menos de efecto (no afecta a los que no tienen límite especificado)",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición ardilla voladora",
+          "level": 210,
+          "ultCount": 5,
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce el daño de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataca aumentando el daño de Taijutsu recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Se sube el Taijutsu y obtiene probabilidad de esquiva",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Al usar la definitiva causa confusión y reduce la energía maldita de todos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición de barriga de tambor",
+          "level": 210,
+          "ultCount": 4,
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce el daño de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Hace ataques de área potentes",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802019"
+    },
+    "illusory-tower-diverse/18": {
+      "name": "Anomalous Form · fase 18",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 192400,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [],
+      "rules": {
+        "notes": [
+          "Todos los enemigos reciben un 90 % menos de daño de Taijutsu (físico)",
+          "Todos los enemigos reciben un 90 % menos de daño de Jujutsu (ritual)"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición shamisen",
+          "level": 220,
+          "hp": 22877637,
+          "ultCount": 5,
+          "cut": {
+            "taijutsu": 90,
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu y Jujutsu que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataques de Jujutsu a todos y daño continuo (quemadura)",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva «Llamas del Rencor» hace mucho daño a todos y aplica quemadura",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "A partir del turno 30 sus atributos suben muchísimo",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición peluda",
+          "level": 220,
+          "ultCount": 3,
+          "cut": {
+            "taijutsu": 90,
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu y Jujutsu que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su habilidad «Burla» aplica debuffs a todo el equipo",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataca a un objetivo con mordiscos",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "A partir del turno 30 sus atributos suben muchísimo",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802020"
+    },
+    "illusory-tower-diverse/20": {
+      "name": "Anomalous Form · fase 20",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 213500,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [],
+      "rules": {
+        "notes": [
+          "Solo se pueden usar personajes Verdes",
+          "Las mejoras que reciben tus personajes tienen un 90 % menos de efecto (no afecta a las que no tienen límite de usos ni de turnos)",
+          "Todos los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de tijeras escarlata · Caparazón negro",
+          "level": 240,
+          "hp": 96746401,
+          "ultCount": 5,
+          "actions": 3,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu y causa ceguera; se sube el Taijutsu",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Al inicio del turno, si tiene un 50 % de PV o menos, sube su Taijutsu (una vez por combate)",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición erizo de mar",
+          "level": 240,
+          "hp": 109668886,
+          "ultCount": 4,
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate se aplica una reducción del 90,00 % del daño total de Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Se sube el Jujutsu y aplica veneno y ceguera",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Al usar la definitiva se aplica «Marca» (con ella, si recibe ciertos ataques cuerpo a cuerpo, envenena al atacante)",
+              "kind": "counter",
+              "text": ""
+            },
+            {
+              "name": "Al inicio del turno, si tiene un 50 % de PV o menos, sube su Jujutsu (una vez por combate)",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Cuando la maldición Tijeras Rojas · Caparazón Negro queda fuera de combate, su definitiva impide usar habilidades de recuerdo 2 turnos y reduce la energía maldita y la barra de definitiva de todo el equipo",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802022"
+    },
+    "illusory-tower/20": {
+      "name": "Piso 20",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 85338,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Mahito",
+          "hp": 3535853,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "«Transfiguración Inerte» expulsa del combate al objetivo si tras el daño le queda la vida por debajo de cierto umbral",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su ataque normal hace aprox. 9.000 de daño",
+              "kind": "single",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Humano transfigurado B",
+          "count": 2,
+          "hp": 895715,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Ataque con veneno",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su ataque normal golpea varias veces y, con el veneno, suma aprox. 4.000 de daño",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/613972"
+    },
+    "illusory-tower/21": {
+      "name": "Piso 21",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 80275,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición de una pierna",
+          "count": 4,
+          "hp": 424336,
+          "ultCount": 2,
+          "immune": [
+            "術式低下",
+            "confusion",
+            "stun"
+          ],
+          "cut": {
+            "jujutsu": 80,
+            "taijutsu": 10
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 80 % el daño Jujutsu (ritual) que recibe (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Taijutsu (físico) recibido por tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque normal de aprox. 4.000 de daño",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614007"
+    },
+    "illusory-tower/22": {
+      "name": "Piso 22",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 90400,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición de alas negras",
+          "hp": 3190818,
+          "ultCount": 3,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△毒"
+          ],
+          "skills": [
+            {
+              "name": "Reduce un 20 % el Taijutsu (físico) y aumenta el daño recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 20 % el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Recupera aprox. 35.000 de vida",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo de aprox. 7.000 de daño",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque a todo el equipo de aprox. 3.000 de daño",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Definitiva de aprox. 10.000 ×2",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614054"
+    },
+    "illusory-tower/23": {
+      "name": "Piso 23",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 90400,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición rata gigante",
+          "hp": 4242900,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△毒"
+          ],
+          "skills": [
+            {
+              "name": "Reduce un 15 % el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataque con veneno",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Ataque fuerte a un objetivo de 10.000 ×2",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo de aprox. 7.000 de daño que reduce la energía maldita",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614053"
+    },
+    "illusory-tower/24": {
+      "name": "Piso 24",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 90400,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición babosa",
+          "hp": 4683187,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△毒"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo de aprox. 5.000 de daño",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo de aprox. 2.000 de daño que reduce un 25 % el Taijutsu (físico)",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a todo el equipo de aprox. 18.000 de daño",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Al perder cierta vida, reduce un 100 % el daño recibido (1 turno) y aumenta un 100 % su resistencia a críticos (3 turnos)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614052"
+    },
+    "illusory-tower/25": {
+      "name": "Piso 25",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 93438,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición león",
+          "hp": 4657022,
+          "ultCount": 3,
+          "immune": [
+            "体術低下",
+            "stun",
+            "confusion"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 80,
+            "jujutsu": 10
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 80 % el daño Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Jujutsu (ritual) recibido por tus personajes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición rana",
+          "hp": 355412,
+          "ultCount": 2,
+          "immune": [
+            "体術低下",
+            "stun",
+            "confusion"
+          ],
+          "cut": {
+            "taijutsu": 80,
+            "jujutsu": 10
+          },
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 80 % el daño Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Jujutsu (ritual) recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva reduce la energía maldita",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/613987"
+    },
+    "illusory-tower/26": {
+      "name": "Piso 26",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 90400,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición insecto melenudo",
+          "hp": 4631580,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo de aprox. 7.500 de daño con aturdimiento",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 30 % su Taijutsu (físico)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a un objetivo de 10.000 ×2",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614051"
+    },
+    "illusory-tower/27": {
+      "name": "Piso 27",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 91413,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición simio",
+          "hp": 5039062,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Inmune a perjuicios (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataque Taijutsu (físico) a todo el equipo de aprox. 1.500 de daño",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Obtiene esquiva (no le afectan las técnicas a un objetivo)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta su contador de definitiva",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Definitiva de 3.000 ×4",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614050"
+    },
+    "illusory-tower/28": {
+      "name": "Piso 28",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 92425,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición serpiente de tres cabezas",
+          "hp": 5594849,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo de aprox. 5.500 de daño",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque con veneno a todo el equipo (veneno de aprox. 2.500 ×2)",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 15 % el daño Jujutsu (ritual) recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva de 4.000 ×3 más veneno (400 ×3 durante 2 turnos)",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614049"
+    },
+    "illusory-tower/29": {
+      "name": "Piso 29",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 94450,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición rata gigante · Ojo podrido",
+          "hp": 5691711,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a todo el equipo de 3.000 de daño que aumenta un 10 % el daño recibido",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo de 2.000 ×2 más veneno de 500 (2 turnos)",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a todo el equipo de 5.000 de daño",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614048"
+    },
+    "illusory-tower/30": {
+      "name": "Piso 30",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 99513,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición babosa",
+          "hp": 6346094,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño que recibe.",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición rana",
+          "hp": 268920,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/613992"
+    },
+    "illusory-tower/31": {
+      "name": "Piso 31",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 96475,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición reptil",
+          "hp": 5416782,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Ataque que aturde",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de una pierna",
+          "hp": 515506,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614038"
+    },
+    "illusory-tower/32": {
+      "name": "Piso 32",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 96475,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición araña gigante · Grotesca",
+          "hp": 5781399,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Aturde a un objetivo y reduce el Jujutsu (ritual) de todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva hace aprox. 9.000 de daño a todos más aprox. 8.000 de veneno (1 turno)",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614037"
+    },
+    "illusory-tower/33": {
+      "name": "Piso 33",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 97488,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición Boogie Woogie",
+          "hp": 6028210,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Puede causar confusión a todos y aumenta el daño Taijutsu (físico) que reciben",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la definitiva, aumenta un 50 % el daño recibido por todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 60 % o menos, aumenta un 10 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 30 % o menos, aumenta un 10 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614036"
+    },
+    "illusory-tower/34": {
+      "name": "Piso 34",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 99513,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición tijeras bermellón",
+          "hp": 2172807,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Con la definitiva, aumenta un 20 % el daño recibido por todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce en 5.340 el daño que recibe (2 turnos)",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición postrada",
+          "hp": 806749,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "taunt": true,
+          "skills": [
+            {
+              "name": "Se cura y atrae los ataques",
+              "kind": "heal",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614035"
+    },
+    "illusory-tower/35": {
+      "name": "Piso 35",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 104575,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "El monstruo oculto del torneo nacional",
+          "hp": 7814736,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Con confusión, el daño recibido aumenta un 30 %",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a todo el equipo que puede aturdir",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614001"
+    },
+    "illusory-tower/36": {
+      "name": "Piso 36",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 101538,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición simio · Pelo azul",
+          "hp": 6278456,
+          "ultCount": 5,
+          "skills": [
+            {
+              "name": "Inmune a todos los perjuicios (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce la energía maldita del personaje que más tiene",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la definitiva, aumenta un 50 % el daño recibido por todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 60 % o menos, aumenta un 5 % su Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 30 % o menos, aumenta un 10 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Obtiene esquiva y aumenta su contador de definitiva",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614034"
+    },
+    "illusory-tower/37": {
+      "name": "Piso 37",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 101538,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición niño gigante",
+          "hp": 6426403,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Absorbe la energía maldita de un objetivo y recupera aprox. 1.000.000 de vida",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva hace aprox. 5.000 de daño a todos y reduce un 25 % su Jujutsu (ritual)",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614033"
+    },
+    "illusory-tower/38": {
+      "name": "Piso 38",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 102550,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición alas negras",
+          "hp": 6211813,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Reduce el Taijutsu (físico) de todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la definitiva, aumenta un 25 % el daño recibido por todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 60 % o menos, aumenta un 5 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 30 % o menos, aumenta un 10 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición peluda",
+          "hp": 761644,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva reduce la energía maldita de todos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614032"
+    },
+    "illusory-tower/39": {
+      "name": "Piso 39",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 104575,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición serpiente de tres cabezas",
+          "hp": 6698345,
+          "ultCount": 4,
+          "immune": [
+            "体術ダウン",
+            "術式ダウン",
+            "stun"
+          ],
+          "skills": [
+            {
+              "name": "Con la vida al 60 % o menos, actúa dos veces por turno",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Envenena a todos (2 turnos)",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614031"
+    },
+    "illusory-tower/40": {
+      "name": "Piso 40",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 109638,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Jogo",
+          "hp": 7024164,
+          "ultCount": 7,
+          "immune": [
+            "体術",
+            "術式デバフ無効",
+            "stun"
+          ],
+          "skills": [
+            {
+              "name": "Con la vida al 50 % o menos, aumenta su potencia de ataque.",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Mientras su vida esté entre el 70 % y el 30 %, se cura cada turno.",
+              "kind": "heal",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Insecto de ascuas",
+          "hp": 704719,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Aumenta su daño Jujutsu (ritual)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614012"
+    },
+    "illusory-tower/41": {
+      "name": "Piso 41",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 106600,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición Teru teru bōzu",
+          "hp": 6853074,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "skills": [
+            {
+              "name": "Mientras no está en Break, recupera un 3 % de vida cada turno y tiene un 15 % de probabilidad de obtener esquiva",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Ataque que expulsa del combate",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de melena abundante",
+          "hp": 1698024,
+          "ultCount": 2,
+          "skills": [
+            {
+              "name": "Solo ataca a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614027"
+    },
+    "illusory-tower/42": {
+      "name": "Piso 42",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 106600,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición enmascarada",
+          "hp": 8421806,
+          "ultCount": 2,
+          "immune": [
+            "✗体術ダウン",
+            "△撹乱",
+            "△スタン"
+          ],
+          "cut": {
+            "taijutsu": 80
+          },
+          "skills": [
+            {
+              "name": "Reduce un 80 % el daño Taijutsu (físico) que recibe (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Jujutsu (ritual) recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva: ataque a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de una pierna",
+          "hp": 854603,
+          "ultCount": 2,
+          "immune": [
+            "✗体術ダウン",
+            "△撹乱",
+            "△スタン"
+          ],
+          "cut": {
+            "taijutsu": 80
+          },
+          "skills": [
+            {
+              "name": "Reduce un 80 % el daño Taijutsu (físico) que recibe (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Jujutsu (ritual) recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva: ataque a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614150"
+    },
+    "illusory-tower/43": {
+      "name": "Piso 43",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 107613,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición trematodo",
+          "hp": 7985782,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△毒"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo de aprox. 4.000 de daño",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque explosivo a un objetivo de 10.000 de daño",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a todo el equipo de aprox. 8.000 de daño que quita 25 de energía maldita",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614270"
+    },
+    "illusory-tower/44": {
+      "name": "Piso 44",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 109638,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición insecto alado",
+          "hp": 9564874,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "skills": [
+            {
+              "name": "Mientras no esté en Break, reduce un 90 % el daño que recibe.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Durante el Break recibe un 200 % más de daño",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Cada 2 turnos causa ceguera a todos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición postrada",
+          "hp": 1335236,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "taunt": true,
+          "skills": [
+            {
+              "name": "Recupera vida y atrae los ataques",
+              "kind": "heal",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614268"
+    },
+    "illusory-tower/45": {
+      "name": "Piso 45",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 114700,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición señuelo",
+          "hp": 8512266,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "skills": [
+            {
+              "name": "Es inmune a los efectos negativos.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva aturde a todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Mientras siga en combate la maldición de probóscide, reduce un 10 % el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición probóscide",
+          "hp": 900787,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "skills": [
+            {
+              "name": "Reduce la energía maldita y recupera vida",
+              "kind": "heal",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614271"
+    },
+    "illusory-tower/46": {
+      "name": "Piso 46",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 115713,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición seta gigante",
+          "hp": 11155974,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△暗闇"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Envenena a todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición seta",
+          "hp": 1056033,
+          "ultCount": 3,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△暗闇"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva con veneno",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614355"
+    },
+    "illusory-tower/47": {
+      "name": "Piso 47",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 116725,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición babosa",
+          "hp": 10154272,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△暗闇"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Aumenta un 100 % su resistencia a críticos",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 100 % el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a todo el equipo (aprox. 20.000 de daño) que reduce el daño infligido",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo que reduce el Taijutsu (físico)",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Al bajar de cierta vida, aumentan sus estadísticas",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición peluda",
+          "hp": 2276462,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△暗闇"
+          ],
+          "skills": [
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva: reduce la energía maldita",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo (aprox. 2.500 de daño)",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614354"
+    },
+    "illusory-tower/48": {
+      "name": "Piso 48",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 117738,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición insecto melenudo",
+          "hp": 5729223,
+          "ultCount": 4,
+          "immune": [
+            "✗術式",
+            "△撹乱",
+            "△スタン"
+          ],
+          "cut": {
+            "jujutsu": 80
+          },
+          "skills": [
+            {
+              "name": "Causa aturdimiento",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta su Taijutsu (físico)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Taijutsu (físico)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 80 % el daño Jujutsu (ritual) que recibe (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Taijutsu (físico) recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "A partir del turno 40 aumenta un 4000 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición de alas negras",
+          "hp": 6048403,
+          "ultCount": 4,
+          "immune": [
+            "✗術式",
+            "△撹乱",
+            "△スタン"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 80
+          },
+          "skills": [
+            {
+              "name": "Reduce el Taijutsu (físico) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a todo el equipo que aumenta el daño recibido",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Se cura",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Reduce el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Cura a sus aliados",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Resistente a los ataques cuerpo a cuerpo",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Obtiene sigilo cada turno",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 80 % el daño Jujutsu (ritual) que recibe (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 10 % el daño Taijutsu (físico) recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "A partir del turno 40 aumenta un 4000 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614353"
+    },
+    "illusory-tower/49": {
+      "name": "Piso 49",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 119763,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición insecto alado",
+          "hp": 7458160,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Sigilo",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Veneno y ceguera a todos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva de fuego a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Escupe veneno a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Maldición tijeras bermellón",
+          "hp": 8055273,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Escudo (valor: 4.359)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ],
+          "boss": true
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614352"
+    },
+    "illusory-tower/50": {
+      "name": "Piso 50",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 124825,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "enemies": [
+        {
+          "name": "Maldición Teru teru bōzu",
+          "hp": 14184556,
+          "ultCount": 4,
+          "immune": [
+            "△撹乱",
+            "△スタン",
+            "△暗闇"
+          ],
+          "skills": [
+            {
+              "name": "Aumenta el daño Jujutsu (ritual) recibido por tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Causa ceguera",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Expulsa del combate durante varios turnos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a todo el equipo que además expulsa del combate durante varios turnos",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 20 %/30 % el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 20 % el daño que inflige",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "El Break dura 4 turnos",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "En Break recibe un 200 % más de daño",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Recupera un 3 % de vida cada turno (425.537)",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Causa ceguera cada 2 turnos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Resistente a los ataques a distancia",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de melena abundante",
+          "hp": 1851918,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind"
+          ],
+          "skills": [
+            {
+              "name": "Solo ataca a un objetivo (aprox. 4.000 de daño)",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva (aprox. 6.500 de daño)",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/614351"
+    },
+    "illusory-tower/51": {
+      "name": "Piso 51",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 121788,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición",
+          "hp": 11840069,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 20
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 20 % el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Los personajes que no son Rojos reciben un 150 % más de daño",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 60 % su Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Obtiene esquiva contra ataques a un objetivo",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654968"
+    },
+    "illusory-tower/52": {
+      "name": "Piso 52",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 122800,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición pintura",
+          "hp": 9188997,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Aplica ceguera.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva reduce tu energía maldita y tu barra de definitiva.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Cada 2 turnos, con la vida al 51 % o más, reduce un 80 % el daño que recibe (2 turnos); con la vida al 50 % o menos, en su lugar aumenta su daño infligido (2 turnos).",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición enmascarada",
+          "hp": 1666468,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta el daño recibido de tus personajes.",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654967"
+    },
+    "illusory-tower/53": {
+      "name": "Piso 53",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 124825,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición árbol de rostro humano",
+          "hp": 10037263,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Debilita efectos (reduce un 80 % la potencia de las mejoras)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Contagio de perjuicios (al mejorar o curar a un aliado, le contagia hasta 2 perjuicios que tenga)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Envenena a un objetivo",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654966"
+    },
+    "illusory-tower/54": {
+      "name": "Piso 54",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 126850,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición trematodo · Azul frenético",
+          "hp": 12125434,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Reduce un 200 % el daño a distancia que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataque explosivo que estalla al turno siguiente y aturde",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Absorbe la barra de definitiva",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque Taijutsu (físico) a un objetivo de 6.000-7.000 de daño",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654965"
+    },
+    "illusory-tower/55": {
+      "name": "Piso 55",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 131913,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición labios grandes",
+          "hp": 8218317,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Inmune a perjuicios (si provocas 3 Black Flash en un turno, pierde la inmunidad durante 3 turnos)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 99 % todo el daño que recibe (baja según los Black Flash del turno anterior)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataca a un aliado para recuperarle energía maldita",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Definitiva a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654964"
+    },
+    "illusory-tower/56": {
+      "name": "Piso 56",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 130900,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición Boogie Woogie",
+          "hp": 9470300,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Inmune a contraataques",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 70 % el daño que recibe (se quita al derrotar a los secundarios)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Daño Taijutsu (físico) a un objetivo de aprox. 10.000",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "«Boogie Woogie» causa confusión a todos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de producción en serie",
+          "hp": 1062696,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Reduce la energía maldita",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque Taijutsu (físico) a un objetivo de aprox. 6.000 de daño",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654963"
+    },
+    "illusory-tower/57": {
+      "name": "Piso 57",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 132925,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición jabalí gigante",
+          "hp": 9446435,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque en área que provoca aturdimiento.",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654962"
+    },
+    "illusory-tower/58": {
+      "name": "Piso 58",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 135963,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición bestia alada",
+          "hp": 8303756,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Alterna cada turno una reducción del 150 % del daño a distancia y del 150 % del daño cuerpo a cuerpo que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Alterna cada 2 turnos una reducción del 200 % del Taijutsu (físico) y del 200 % del Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654961"
+    },
+    "illusory-tower/59": {
+      "name": "Piso 59",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 137988,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de técnica de sombras",
+          "hp": 9464482,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Es inmune a los efectos negativos.",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aplica un efecto que contagia los efectos negativos a otros aliados.",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 80 % el daño infligido del primer y segundo personaje de tu equipo.",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654960"
+    },
+    "illusory-tower/60": {
+      "name": "Piso 60",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 140600,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Rozetsu",
+          "hp": 9726692,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Resurrección (si su vida llega a 0, revive con un 60 %)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 50 % todo el daño que recibe (no se puede quitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "└ Se anula al derrotar a las maldiciones en serie.",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Ataque Taijutsu (físico) a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Definitiva Taijutsu (físico) a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Crea maldiciones (solo 2 veces)",
+              "kind": "summon",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de producción en serie",
+          "hp": 919130,
+          "ultCount": 3,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Ataque a un objetivo de 7.000 o más de daño",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Ataque que absorbe energía maldita",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/654959"
+    },
+    "illusory-tower/61": {
+      "name": "Piso 61",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 144800,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de alas negras",
+          "hp": 40090054,
+          "ultCount": 3,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Reduce el Taijutsu (físico) y aumenta el daño recibido",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Débil al fuego",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Resistente a los ataques cuerpo a cuerpo",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición insecto alado",
+          "hp": 25117793,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Causa veneno y ceguera",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Obtiene esquiva",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Resistente a los ataques cuerpo a cuerpo",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva lanza un ataque de fuego a todos y deja daño de quemadura continuo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684066"
+    },
+    "illusory-tower/62": {
+      "name": "Piso 62",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 146600,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición árbol de rostro humano · Cien ojos",
+          "hp": 44544549,
+          "ultCount": 3,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 20
+          },
+          "skills": [
+            {
+              "name": "Reduce un 20 % todo el daño Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta el daño recibido, reduce el Jujutsu (ritual) y envenena",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Débil a los ataques de fuego",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva reduce un 35 % la vida máxima de todos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de una pierna",
+          "hp": 23865182,
+          "ultCount": 2,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "cut": {
+            "jujutsu": 20
+          },
+          "skills": [
+            {
+              "name": "Reduce un 20 % todo el daño Jujutsu (ritual) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Jujutsu (ritual) de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva ataca a un objetivo con 5.000-6.000 de daño",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684065"
+    },
+    "illusory-tower/63": {
+      "name": "Piso 63",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 148400,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición Teru teru bōzu",
+          "hp": 41299078,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Resistente a los ataques a distancia",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta el daño Jujutsu (ritual) recibido y causa ceguera",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Expulsa del combate durante varios turnos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición enmascarada",
+          "hp": 16588927,
+          "ultCount": 2,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Reduce el Jujutsu (ritual) y aumenta el daño recibido",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684064"
+    },
+    "illusory-tower/64": {
+      "name": "Piso 64",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 150200,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "green",
+        "yellow",
+        "red"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición señuelo · Glotona",
+          "hp": 38583997,
+          "ultCount": 4,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Aplica contagio de perjuicios",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce el Taijutsu (físico) y aumenta el daño recibido",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición probóscide",
+          "hp": 14178709,
+          "ultCount": 2,
+          "immune": [
+            "撹乱△",
+            "スタン△",
+            "暗闇△",
+            "足止め△"
+          ],
+          "skills": [
+            {
+              "name": "Absorbe energía maldita y recupera vida",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Cuando la maldición señuelo sale del combate, aumenta su daño infligido",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684063"
+    },
+    "illusory-tower/65": {
+      "name": "Piso 65",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 153800,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición rata gigante · Ojo podrido",
+          "hp": 50997624,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Su definitiva a todo el equipo aplica reducción del daño recibido",
+              "kind": "aoe",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición maniquí",
+          "hp": 29677866,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "skills": [
+            {
+              "name": "Aumenta el daño recibido por tus personajes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684062"
+    },
+    "illusory-tower/66": {
+      "name": "Piso 66",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 155600,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición jabalí gigante · Gran cuerno",
+          "hp": 45212555,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "skills": [
+            {
+              "name": "Su ataque normal puede aturdir",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Cuanta menos vida le queda, más potente es su definitiva",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684061"
+    },
+    "illusory-tower/67": {
+      "name": "Piso 67",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 159200,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición simio",
+          "hp": 61102309,
+          "ultCount": 5,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "skills": [
+            {
+              "name": "Reduce un 65 % la potencia de los perjuicios que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Tras la definitiva, reduce un 90 % el Taijutsu (físico) (4 turnos)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce la energía maldita del personaje que más tiene",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Sus acciones normales aumentan su contador de definitiva y su Jujutsu (ritual)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684060"
+    },
+    "illusory-tower/68": {
+      "name": "Piso 68",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 162500,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición asceta",
+          "hp": 57897502,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Se potencia y luego su definitiva hace daño casi letal",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 75 % la potencia de los perjuicios que recibe",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684059"
+    },
+    "illusory-tower/69": {
+      "name": "Piso 69",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 165500,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Gosei Katsuragi",
+          "hp": 73733347,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "bind"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Su ataque a todo el equipo puede aturdir",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684058"
+    },
+    "illusory-tower/70": {
+      "name": "Piso 70",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 171500,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Mahito",
+          "hp": 48119010,
+          "ultCount": 5,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "skills": [
+            {
+              "name": "Cuando caen todos los humanos transfigurados, aumenta su daño infligido",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "«Transfiguración Inerte» puede matar al instante",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Humano transfigurado",
+          "hp": 9480862,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "skills": [
+            {
+              "name": "Recupera vida cada turno",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Usa veneno con frecuencia",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684057"
+    },
+    "illusory-tower/71": {
+      "name": "Piso 71",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 171500,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición insecto alado",
+          "hp": 28543098,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Los personajes que no son Verdes pierden barra de definitiva",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Obtiene mejora de esquiva",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición probóscide",
+          "hp": 12344059,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "skills": [
+            {
+              "name": "Reduce la energía maldita y recupera vida",
+              "kind": "heal",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684056"
+    },
+    "illusory-tower/72": {
+      "name": "Piso 72",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 174500,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Shikigami de lodo",
+          "hp": 45859201,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Cada 5 turnos reduce el daño total que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Cada 5 turnos aplica reducción del daño infligido",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684055"
+    },
+    "illusory-tower/73": {
+      "name": "Piso 73",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 177600,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición araña gigante",
+          "hp": 39862296,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su aturdimiento y su daño por veneno son muy potentes",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición araña",
+          "hp": 15000533,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva aturde a todos",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684054"
+    },
+    "illusory-tower/74": {
+      "name": "Piso 74",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 180900,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición pintura",
+          "hp": 20064718,
+          "ultCount": 6,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva aplica ceguera y reduce la energía maldita",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición maniquí",
+          "hp": 11676584,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Solo ataca a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684053"
+    },
+    "illusory-tower/75": {
+      "name": "Piso 75",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 184200,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición Umibōzu",
+          "hp": 40207581,
+          "ultCount": 5,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición de melena abundante",
+          "hp": 12320055,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Solo ataca a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684052"
+    },
+    "illusory-tower/76": {
+      "name": "Piso 76",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 187500,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición gusano",
+          "hp": 47259080,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 80 % la potencia de los perjuicios que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Sus ataques de daño aplican veneno",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684051"
+    },
+    "illusory-tower/77": {
+      "name": "Piso 77",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 190800,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de alas emplumadas",
+          "hp": 37684230,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Cabeza de mosca",
+          "hp": 11259758,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Solo hace ataques de Taijutsu (físico) a un objetivo",
+              "kind": "single",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684050"
+    },
+    "illusory-tower/78": {
+      "name": "Piso 78",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 194100,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición trematodo",
+          "hp": 50182003,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Ataque con aturdimiento contra enemigos en estado de detonación en cadena",
+              "kind": "debuff",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición cuadrúpeda",
+          "hp": 20562376,
+          "ultCount": 3,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Usa con frecuencia ataques a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684049"
+    },
+    "illusory-tower/79": {
+      "name": "Piso 79",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 197400,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición de grado especial · A",
+          "hp": 49862197,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Cada 4 turnos aumenta un 10 % su daño infligido",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición enmascarada",
+          "hp": 18676618,
+          "ultCount": 2,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684048"
+    },
+    "illusory-tower/80": {
+      "name": "Piso 80",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 200700,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos.",
+          "Los personajes que no son del elemento recomendado no pueden usar la definitiva."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Jogo",
+          "hp": 67048427,
+          "ultCount": 5,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva es una Expansión de Dominio",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Al bajar del 50 % y del 30 % de PV aumenta su Jujutsu (ritual)",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Insecto de ascuas",
+          "hp": 4911600,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Si sale del combate por un ataque cuerpo a cuerpo, causa daño de autodestrucción",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Revive gracias a las acciones de Jogo",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/684047"
+    },
+    "illusory-tower/81": {
+      "name": "Piso 81",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 202400,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "blue"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición mineral",
+          "hp": 112469535,
+          "ultCount": 5,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Recupera PV al recibir daño continuo",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Con el contador de definitiva al máximo, aumenta su Taijutsu (físico)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Cada vez que sufre Break, se aplica a sí mismo aumento del daño recibido",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/733618"
+    },
+    "illusory-tower/82": {
+      "name": "Piso 82",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 204100,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "green"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición tijeras rojas · Sangre viva",
+          "hp": 124255171,
+          "ultCount": 5,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "bind"
+          ],
+          "actions": 4,
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Al inicio del turno, si tiene un 50 % de PV o menos, su contador de definitiva sube 1",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Es resistente a los ataques a distancia",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/733732"
+    },
+    "illusory-tower/83": {
+      "name": "Piso 83",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 205800,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "red"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición camaleón · Amarillo dorado",
+          "hp": 155427312,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison",
+            "bind"
+          ],
+          "skills": [
+            {
+              "name": "Ataques que reducen el daño infligido (40 %) o la energía maldita (-10)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Mimetismo: anula los ataques y actúa 3 veces",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Reducción del daño recibido (40 %)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Por norma actúa 2 veces",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/733791"
+    },
+    "illusory-tower/84": {
+      "name": "Piso 84",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 207500,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "only": [
+          "yellow"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición rana gigante",
+          "hp": 127168836,
+          "ultCount": 4,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison",
+            "bind"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño de Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su ataque a todos (lengua) reduce un 30 % el daño infligido",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Su ataque a todos «aplastamiento» aumenta el daño recibido",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva golpea a todo el equipo y a veces aturde",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Al golpearse la barriga vuelve a invocar maldiciones con forma de rana",
+              "kind": "summon",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Maldición rana",
+          "hp": 2487577,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison",
+            "bind"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño de Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva reduce 40 o más de energía maldita a uno de tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Tras su definitiva, da +25 % de Taijutsu (físico) a todos sus aliados (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Si cae derrotado, se anula la mejora de Taijutsu (físico)",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/733792"
+    },
+    "illusory-tower/85": {
+      "name": "Piso 85",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 209200,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "blue"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición planta carnívora",
+          "hp": 158219418,
+          "ultCount": 6,
+          "immune": [
+            "confusion",
+            "stun",
+            "blind",
+            "poison",
+            "bind"
+          ],
+          "cut": {
+            "jujutsu": 20,
+            "taijutsu": 20
+          },
+          "skills": [
+            {
+              "name": "Reduce un 20 % el daño total de Taijutsu (físico) y Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aplica reducción de Taijutsu (físico) y de Jujutsu (ritual)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta su propio Taijutsu (físico) y Jujutsu (ritual)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Daño a todo el equipo y absorción de energía maldita",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva daña a todos, aplica veneno y aumenta el daño recibido",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Al recibir daño híbrido, todos los enemigos recuperan 5 de energía maldita",
+              "kind": "other",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/733793"
+    },
+    "illusory-tower/86": {
+      "name": "Piso 86",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 210900,
+      "recommended": [
+        "red"
+      ],
+      "unfavorable": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "red"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Shikigami molusco",
+          "hp": 158634866,
+          "ultCount": 4,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "足止め✗",
+            "毒✗"
+          ],
+          "cut": {
+            "jujutsu": 50,
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Se aplica reducción del daño recibido (50 %) y +30 % de Jujutsu (ritual)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aplica reducción de Taijutsu (físico) a tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva es más fuerte cuanto menos PV tiene",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Absorbe energía maldita y recupera un 1 % de PV (1,58 millones)",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Con un 70 % de PV o menos, se aplica reducción del daño recibido del 50 % (especial) durante 5 turnos (solo una vez por combate)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Con un 50 % de PV o menos, se aplica reducción del daño recibido del 20 % (solo una vez por combate)",
+              "kind": "buff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/745927"
+    },
+    "illusory-tower/87": {
+      "name": "Piso 87",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 212600,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "only": [
+          "yellow"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición labios grandes · Maquillada",
+          "hp": 14565261,
+          "ultCount": 4,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "毒✗",
+            "足止め✗"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Aplica marca y confusión",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Cuantas más marcas haya, más daño hace",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva aumenta el daño de Jujutsu (ritual) recibido y quita 10 de energía maldita",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Normalmente actúa 2 veces; con un 30 % de PV o menos pasa a 3",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/746037"
+    },
+    "illusory-tower/88": {
+      "name": "Piso 88",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 214300,
+      "recommended": [
+        "green"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "green"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición biwa",
+          "hp": 123421893,
+          "ultCount": 4,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "毒✗",
+            "足止め✗"
+          ],
+          "cut": {
+            "jujutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % todo el daño Jujutsu (ritual) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta un 20 % el daño de Jujutsu (ritual) que reciben tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aplica daño continuo de fuego",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque a todo el equipo con aturdimiento",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Definitiva más 3 efectos de daño continuo de fuego",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/746087"
+    },
+    "illusory-tower/89": {
+      "name": "Piso 89",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 216000,
+      "recommended": [
+        "blue"
+      ],
+      "unfavorable": [
+        "red",
+        "green",
+        "yellow"
+      ],
+      "rules": {
+        "only": [
+          "blue"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Maldición enredadera",
+          "hp": 125998361,
+          "ultCount": 4,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "毒✗",
+            "足止め✗"
+          ],
+          "cut": {
+            "jujutsu": 20
+          },
+          "skills": [
+            {
+              "name": "Aumenta un 20 % el daño de Jujutsu (ritual) que reciben tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Aplica una reducción del 20 % de Taijutsu (físico)",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Ataque que reduce un 20 % los PV máximos",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva daña a todos y quita 10 de energía maldita",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Con un 50 % de PV o menos, al inicio del turno su contador de definitiva sube 1",
+              "kind": "enrage",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/746086"
+    },
+    "illusory-tower/90": {
+      "name": "Piso 90",
+      "server": "jp",
+      "checked": "2026-10-20",
+      "source": "Game8 — solo hechos, redactados por nosotros",
+      "power": 217700,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "only": [
+          "yellow"
+        ],
+        "notes": [
+          "Los personajes que no son del elemento recomendado reciben más daño.",
+          "El daño basado en un % de la vida está reducido.",
+          "Las mejoras y los debilitamientos rinden menos."
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Hanami",
+          "hp": 106228316,
+          "ultCount": 5,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "毒✗",
+            "足止め✗"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aplica reducción de Taijutsu (físico) e impide recuperar energía maldita",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Recupera PV cada turno (aprox. 10.000)",
+              "kind": "heal",
+              "text": ""
+            },
+            {
+              "name": "Débil a los ataques de fuego",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Actúa 2 veces; 4 veces cuando Mahito y Jogo salen del combate",
+              "kind": "enrage",
+              "text": ""
+            }
+          ],
+          "boss": true
+        },
+        {
+          "name": "Mahito",
+          "hp": 40907030,
+          "ultCount": 3,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "毒✗",
+            "足止め✗"
+          ],
+          "skills": [
+            {
+              "name": "Actúa 2 veces por turno",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Solo ataca a un objetivo",
+              "kind": "single",
+              "text": ""
+            },
+            {
+              "name": "Acción que sube el contador de definitiva y se potencia (+50 % de Jujutsu (ritual))",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva, Transfiguración Inerte, mata al instante si los PV están por debajo de cierto valor",
+              "kind": "debuff",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Jogo",
+          "hp": 54652192,
+          "ultCount": 6,
+          "actions": 2,
+          "immune": [
+            "撹乱✗",
+            "スタン✗",
+            "暗闇✗",
+            "毒✗",
+            "足止め✗"
+          ],
+          "cut": {
+            "taijutsu": 90
+          },
+          "skills": [
+            {
+              "name": "Reduce un 90 % el daño total de Taijutsu (físico) que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Daño continuo de fuego",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Hace muchos ataques a todo el equipo",
+              "kind": "aoe",
+              "text": ""
+            },
+            {
+              "name": "Su definitiva es un ataque a todos con probabilidad de aturdimiento",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/746085"
+    }
+  }
 }

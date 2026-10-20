@@ -207,14 +207,17 @@ function StageSheet({ stage, labels: L, fmt }: { stage: Stage; labels: Labels; f
                 <span key={t} className="rounded-full border border-[#ff6b7f]/50 px-2 py-0.5 text-[#ff8a9a]">{fill(L['sh.cut'], { type: L[`st.type.${t}`], pct: e.cut![t]! })}</span>
               ))}
               {e.taunt && <span className="rounded-full border border-flame/50 px-2 py-0.5 text-flame">{L['sh.taunt']}</span>}
+              {e.actions && e.actions > 1 ? <span className="rounded-full border border-[#ff6b7f]/50 px-2 py-0.5 text-[#ff8a9a]">{fill(L['sh.actions'], { n: e.actions })}</span> : null}
+              {e.ultCount ? <span className="rounded-full border border-line px-2 py-0.5 text-dust">{fill(L['sh.ult'], { n: e.ultCount })}</span> : null}
             </div>
+            {e.immune?.length ? <p className="mt-2 text-smoke">{L['sh.immune']}: {e.immune.map((x) => L[`sh.st.${x}`] ?? x).join(', ')}</p> : null}
             {e.skills?.length ? (
               <ul className="mt-2 space-y-1.5">
                 {e.skills.map((k, j) => (
                   <li key={j}>
                     <span className="font-semibold text-bone">{k.name}</span>
                     {k.kind && <span className={`ml-1.5 rounded border px-1 text-[10px] ${KIND_CLS[k.kind] ?? KIND_CLS.other}`}>{L[`sh.kind.${k.kind}`] ?? k.kind}</span>}
-                    <p className="mt-0.5 leading-relaxed whitespace-pre-line text-dust">{k.text}</p>
+                    {k.text && <p className="mt-0.5 leading-relaxed whitespace-pre-line text-dust">{k.text}</p>}
                   </li>
                 ))}
               </ul>
@@ -224,8 +227,9 @@ function StageSheet({ stage, labels: L, fmt }: { stage: Stage; labels: Labels; f
         ))}
       </ul>
       <p className="text-[11px] text-smoke">
-        {stage.checked ? fill(L['tm.affinity.saved'], { d: fmt(stage.checked) }) : L['tm.affinity.saved.nodate']}
-        {stage.server ? ` · ${stage.server === 'jp' ? 'JP' : 'Global'}` : ''}{stage.source ? ` · ${stage.source}` : ''}
+        {stage.checked ? fill(L[stage.url ? 'sh.updated' : 'tm.affinity.saved'], { d: fmt(stage.checked) }) : L['tm.affinity.saved.nodate']}
+        {stage.server ? ` · ${stage.server === 'jp' ? 'JP' : 'Global'}` : ''}
+        {stage.source ? ` · ${L['ct.source']}: ` : ''}{stage.url ? <a href={stage.url} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-dust">{stage.source ?? stage.url}</a> : stage.source}
       </p>
     </div>
   );
@@ -267,7 +271,8 @@ export default function ContentTeams({ labels: L, contentName, basePath, account
   const team = useTeamData();
   // Fases: pisos numerados (torre) o las fases con ficha ("id/hard-3"…)
   const phaseKeys = useMemo(() => Object.keys(stages).filter((k) => k.startsWith(`${contentId}/`)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })), [stages, contentId]);
-  const [phase, setPhase] = useState<string>(floors ? `${contentId}/1` : phaseKeys[0] ?? contentId);
+  // La torre abre en el primer piso con ficha (los primeros pisos no tienen datos)
+  const [phase, setPhase] = useState<string>(phaseKeys[0] ?? (floors ? `${contentId}/1` : contentId));
   const key = phase;
   const stage = stages[key] ?? null;
   const saved = data[key] ?? null;

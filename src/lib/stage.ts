@@ -20,6 +20,12 @@ export interface Enemy {
   cut?: Partial<Record<DamageType, number>>;
   /** Atrae los ataques individuales (hay que quitarlo de en medio o usar área) */
   taunt?: boolean;
+  /** Turnos que tarda en lanzar su definitiva (contador del juego) */
+  ultCount?: number;
+  /** Acciones por turno (2 = actúa dos veces) */
+  actions?: number;
+  /** Estados alterados a los que es inmune: stun, confusion, blind, bind, poison… */
+  immune?: string[];
   skills?: EnemySkill[];
   note?: string;
 }
@@ -43,6 +49,8 @@ export interface Stage {
   /** Estrategia escrita a mano (se muestra antes que la generada) */
   strategy?: string;
   source?: string;
+  /** Página de la fuente (se enlaza siempre que se usen sus datos) */
+  url?: string;
 }
 
 /** Lo que el motor de equipos necesita saber de una fase. */

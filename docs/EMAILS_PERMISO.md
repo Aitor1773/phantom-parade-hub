@@ -90,6 +90,48 @@ Kind regards,
 
 ---
 
+## 3. Game8 y GameWith: datos de 夢幻廻楼 (torre), 異相 y jefes
+
+Para que la sección **Equipos por contenido** pueda mostrar la descripción completa de las habilidades de cada enemigo. Mientras no respondan, la web solo muestra **hechos** (nombre del enemigo, HP, debilidades, % de reducción de daño, reglas) redactados por nosotros y con enlace a su página.
+
+- **Game8:** formulario お問い合わせ del pie de game8.jp.
+- **GameWith:** formulario de contacto del pie de gamewith.jp (お問い合わせ).
+
+### 日本語
+
+**件名：** 「呪術廻戦 ファントムパレード」夢幻廻楼・異相のステージ情報の掲載許可について
+
+[Game8 / GameWith] ご担当者様
+
+突然のご連絡失礼いたします。Aitorと申します。
+「呪術廻戦 ファントムパレード」のグローバル版向け非営利ファンサイト（[サイト名・URL]）を運営しております。
+
+当サイトでは、各ステージの攻略に役立つよう、敵の名前・HP・特性・ダメージカットなどの**事実情報のみ**を、当サイト独自の表現で記載し、出典として貴サイトの該当ページへのリンクを明記しております（攻略文・編成・画像・表は一切転載しておりません）。
+
+つきましては、以下についてご許可をいただけないかお伺いいたします。
+
+1. 夢幻廻楼・夢幻廻楼・異相・呪霊掃討戦などの「ステージ情報」（出現する敵、推奨特性、敵の特徴・行動）を、出典とリンクを明記した上で当サイトに掲載すること。
+2. 上記の事実情報の掲載に問題がある場合は、ご指摘いただければ速やかに修正・削除いたします。
+
+ご検討のほど、よろしくお願い申し上げます。
+
+Aitor
+[サイトURL]
+aitorm600@gmail.com
+
+### English (adjunto)
+
+Dear [Game8 / GameWith] team,
+
+I run [site name / URL], a non-commercial fan site for the Global version of Jujutsu Kaisen: Phantom Parade. To help players with each stage, the site lists only **factual information** (enemy names, HP, traits, damage cuts, stage rules) written in our own words, always credited to your site with a link to the relevant page; we do not copy your guides, teams, images or tables.
+
+I'd like to ask for your permission to show the "stage information" of 夢幻廻楼, 夢幻廻楼・異相 and 呪霊掃討戦 (enemies, recommended traits, enemy features and actions) with that credit and link. If our current use of factual information is a problem for you, please let us know and we will fix or remove it right away.
+
+Kind regards,
+Aitor · [site URL] · aitorm600@gmail.com
+
+---
+
 ## Si dicen que sí
 
 Guarda la respuesta (captura o email) y dímelo. Añadiré su columna de comparación con su atribución, y la confirmación quedará anotada en `docs/DATOS.md`.
