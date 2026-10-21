@@ -1,1217 +1,257 @@
 {
-  "generatedAt": "2026-10-20T07:35:28.954Z",
-  "links": {
-    "2-problem-children-however-the-strongest": {
-      "jjkppdb": 40251,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-strongest-quarrel": {
-      "jjkppdb": 40116,
-      "method": "manual",
-      "similarity": 1
-    },
-    "difference-in-level": {
-      "jjkppdb": 40140,
-      "method": "manual",
-      "similarity": 1
-    },
-    "each-on-their-own-path": {
-      "jjkppdb": 40146,
-      "method": "manual",
-      "similarity": 1
-    },
-    "favorite-toy": {
-      "jjkppdb": 10058,
-      "method": "manual",
-      "similarity": 1
-    },
-    "bewildered": {
-      "jjkppdb": 10052,
-      "method": "manual",
-      "similarity": 1
-    },
-    "killing-time": {
-      "jjkppdb": 10062,
-      "method": "manual",
-      "similarity": 1
-    },
-    "fleeting-moments": {
-      "jjkppdb": 40129,
-      "method": "manual",
-      "similarity": 1
-    },
-    "louder-than-words": {
-      "jjkppdb": 40128,
-      "method": "manual",
-      "similarity": 1
-    },
-    "ignoring-orders": {
-      "jjkppdb": 40084,
-      "method": "manual",
-      "similarity": 1
-    },
-    "mensore": {
-      "jjkppdb": 40174,
-      "method": "manual",
-      "similarity": 1
-    },
-    "strong-lineup": {
-      "jjkppdb": 30109,
-      "method": "manual",
-      "similarity": 1
-    },
-    "someone-like-me": {
-      "jjkppdb": 20096,
-      "method": "manual",
-      "similarity": 1
-    },
-    "students-duty": {
-      "jjkppdb": 40135,
-      "method": "manual",
-      "similarity": 1
-    },
-    "super-freshman-welcoming-party": {
-      "jjkppdb": 40181,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-city-where-the-lights-went-out": {
-      "jjkppdb": 40223,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-intention-behind-charity": {
-      "jjkppdb": 40196,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-kanto-dogs-vs-cats-battle": {
-      "jjkppdb": 40221,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-memories-of-days-gone-by": {
-      "jjkppdb": 40190,
-      "method": "manual",
-      "similarity": 1
-    },
-    "thousand-year-master-follower-relation": {
-      "jjkppdb": 40214,
-      "method": "manual",
-      "similarity": 1
-    },
-    "two-shadows-reflected-in-the-evening": {
-      "jjkppdb": 40179,
-      "method": "manual",
-      "similarity": 1
-    },
-    "rushing-to-a-mission-on-a-holy-night": {
-      "jjkppdb": 40206,
-      "method": "manual",
-      "similarity": 1
-    },
-    "sake-for-blossom-viewing-on-the-engawa": {
-      "jjkppdb": 40187,
-      "method": "manual",
-      "similarity": 1
-    },
-    "wish-summer-would-never-end": {
-      "jjkppdb": 40169,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-footage-left-behind": {
-      "jjkppdb": 40227,
-      "method": "manual",
-      "similarity": 1
-    },
-    "narrow-escape-from-death": {
-      "jjkppdb": 30105,
-      "method": "manual",
-      "similarity": 1
-    },
-    "irretrievable-innocence": {
-      "jjkppdb": 40149,
-      "method": "manual",
-      "similarity": 1
-    },
-    "grand-exorcism": {
-      "jjkppdb": 30001,
-      "method": "manual",
-      "similarity": 1
-    },
-    "the-mystery-is-in-the-book": {
-      "jjkppdb": 40180,
-      "method": "manual",
-      "similarity": 1
-    },
-    "phantom-trails": {
-      "jjkppdb": 40182,
-      "method": "manual",
-      "similarity": 1
-    },
-    "your-path-forward": {
-      "jjkppdb": 40123,
-      "method": "manual",
-      "similarity": 1
-    },
-    "a-girl-called-nobara-kugisaki": {
-      "jjkppdb": 20026,
-      "method": "name",
-      "similarity": 1
-    },
-    "a-magnificent-stride-forward": {
-      "jjkppdb": 30005,
-      "method": "name",
-      "similarity": 1
-    },
-    "a-slight-gap": {
-      "jjkppdb": 30015,
-      "method": "name",
-      "similarity": 1
-    },
-    "a-wish-from-the-past": {
-      "jjkppdb": 30003,
-      "method": "name",
-      "similarity": 1
-    },
-    "adult-time": {
-      "jjkppdb": 30004,
-      "method": "name",
-      "similarity": 1
-    },
-    "after-school-activities": {
-      "jjkppdb": 20032,
-      "method": "name",
-      "similarity": 1
-    },
-    "arrival-of-kyoto-school": {
-      "jjkppdb": 20024,
-      "method": "name",
-      "similarity": 1
-    },
-    "battle-for-second-place": {
-      "jjkppdb": 20031,
-      "method": "name",
-      "similarity": 1
-    },
-    "beware-of-the-dog": {
-      "jjkppdb": 10063,
-      "method": "name",
-      "similarity": 1
-    },
-    "bewildering-dream": {
-      "jjkppdb": 10061,
-      "method": "name",
-      "similarity": 1
-    },
-    "brother-and-sister": {
-      "jjkppdb": 20018,
-      "method": "name",
-      "similarity": 1
-    },
-    "casual-video-watching": {
-      "jjkppdb": 20035,
-      "method": "name",
-      "similarity": 1
-    },
-    "cat-rescue": {
-      "jjkppdb": 40157,
-      "method": "name",
-      "similarity": 1
-    },
-    "childhood-promise": {
-      "jjkppdb": 20085,
-      "method": "name",
-      "similarity": 1
-    },
-    "chit-chat": {
-      "jjkppdb": 10044,
-      "method": "name",
-      "similarity": 1
-    },
-    "cool-glasses": {
-      "jjkppdb": 40121,
-      "method": "name",
-      "similarity": 1
-    },
-    "curse-each-other-and-put-everything-on-the-line": {
-      "jjkppdb": 40112,
-      "method": "name",
-      "similarity": 1
-    },
-    "cursed-nature": {
-      "jjkppdb": 20023,
-      "method": "name",
-      "similarity": 1
-    },
-    "death-by-wasp": {
-      "jjkppdb": 20075,
-      "method": "name",
-      "similarity": 1
-    },
-    "deep-in-thought": {
-      "jjkppdb": 10042,
-      "method": "name",
-      "similarity": 1
-    },
-    "desperate-resistance": {
-      "jjkppdb": 30007,
-      "method": "name",
-      "similarity": 1
-    },
-    "die-and-become-a-sage": {
-      "jjkppdb": 30107,
-      "method": "name",
-      "similarity": 1
-    },
-    "educator": {
-      "jjkppdb": 10056,
-      "method": "name",
-      "similarity": 1
-    },
-    "eight-handled-sword-divergent-sila-divine-general-mahoraga": {
-      "jjkppdb": 40245,
-      "method": "name",
-      "similarity": 1
-    },
-    "encounter-at-dusk": {
-      "jjkppdb": 20022,
-      "method": "name",
-      "similarity": 1
-    },
-    "end-of-the-scenery": {
-      "jjkppdb": 20030,
-      "method": "name",
-      "similarity": 1
-    },
-    "everyday-life": {
-      "jjkppdb": 20040,
-      "method": "name",
-      "similarity": 1
-    },
-    "exciting-stamp-rally": {
-      "jjkppdb": 20094,
-      "method": "name",
-      "similarity": 1
-    },
-    "fake-or-real": {
-      "jjkppdb": 40166,
-      "method": "name",
-      "similarity": 1
-    },
-    "for-myself": {
-      "jjkppdb": 20017,
-      "method": "name",
-      "similarity": 1
-    },
-    "gold-rush": {
-      "jjkppdb": 40160,
-      "method": "name",
-      "similarity": 1
-    },
-    "good-mood": {
-      "jjkppdb": 10053,
-      "method": "name",
-      "similarity": 1
-    },
-    "goodbye-take-care": {
-      "jjkppdb": 20086,
-      "method": "name",
-      "similarity": 1
-    },
-    "grand-stage": {
-      "jjkppdb": 10047,
-      "method": "name",
-      "similarity": 1
-    },
-    "grandfathers-words": {
-      "jjkppdb": 20076,
-      "method": "name",
-      "similarity": 1
-    },
-    "hidden-gem": {
-      "jjkppdb": 20033,
-      "method": "name",
-      "similarity": 1
-    },
-    "home-run": {
-      "jjkppdb": 20070,
-      "method": "name",
-      "similarity": 1
-    },
-    "hot-pot-party": {
-      "jjkppdb": 30012,
-      "method": "name",
-      "similarity": 1
-    },
-    "i-bought-local-souvenirs": {
-      "jjkppdb": 30078,
-      "method": "name",
-      "similarity": 1
-    },
-    "i-see-then-die": {
-      "jjkppdb": 40175,
-      "method": "name",
-      "similarity": 1
-    },
-    "i-will-follow-you-nanami-san": {
-      "jjkppdb": 30082,
-      "method": "name",
-      "similarity": 1
-    },
-    "imaginary-youth": {
-      "jjkppdb": 30102,
-      "method": "name",
-      "similarity": 1
-    },
-    "in-excellent-shape": {
-      "jjkppdb": 30108,
-      "method": "name",
-      "similarity": 1
-    },
-    "investigation-in-the-rain": {
-      "jjkppdb": 20098,
-      "method": "name",
-      "similarity": 1
-    },
-    "kigurumi": {
-      "jjkppdb": 10046,
-      "method": "name",
-      "similarity": 1
-    },
-    "lamentation": {
-      "jjkppdb": 10059,
-      "method": "name",
-      "similarity": 1
-    },
-    "leaving-japan": {
-      "jjkppdb": 40224,
-      "method": "name",
-      "similarity": 1
-    },
-    "lets-have-a-game-of-endurance": {
-      "jjkppdb": 20037,
-      "method": "name",
-      "similarity": 1
-    },
-    "liar-i-hate-you": {
-      "jjkppdb": 40101,
-      "method": "name",
-      "similarity": 1
-    },
-    "like-minded-sisters": {
-      "jjkppdb": 30010,
-      "method": "name",
-      "similarity": 1
-    },
-    "live-a-long-life": {
-      "jjkppdb": 20021,
-      "method": "name",
-      "similarity": 1
-    },
-    "mad-dog-divine-dog": {
-      "jjkppdb": 40217,
-      "method": "name",
-      "similarity": 1
-    },
-    "malevolent-shrine": {
-      "jjkppdb": 20019,
-      "method": "name",
-      "similarity": 1
-    },
-    "meet-up": {
-      "jjkppdb": 10054,
-      "method": "name",
-      "similarity": 1
-    },
-    "memories-in-a-nook": {
-      "jjkppdb": 30013,
-      "method": "name",
-      "similarity": 1
-    },
-    "mission-start": {
-      "jjkppdb": 30016,
-      "method": "name",
-      "similarity": 1
-    },
-    "mutual-trust": {
-      "jjkppdb": 30006,
-      "method": "name",
-      "similarity": 1
-    },
-    "nameless-youth": {
-      "jjkppdb": 30002,
-      "method": "name",
-      "similarity": 1
-    },
-    "night-of-jujutsu-sorcerers": {
-      "jjkppdb": 20034,
-      "method": "name",
-      "similarity": 1
-    },
-    "night-of-spiritual-mountain-range": {
-      "jjkppdb": 40133,
-      "method": "name",
-      "similarity": 1
-    },
-    "nonstandard": {
-      "jjkppdb": 30011,
-      "method": "name",
-      "similarity": 1
-    },
-    "perfect-synchronization": {
-      "jjkppdb": 20038,
-      "method": "name",
-      "similarity": 1
-    },
-    "play-of-the-strong": {
-      "jjkppdb": 30008,
-      "method": "name",
-      "similarity": 1
-    },
-    "poolside-helper": {
-      "jjkppdb": 40247,
-      "method": "name",
-      "similarity": 1
-    },
-    "preparation-activities": {
-      "jjkppdb": 10041,
-      "method": "name",
-      "similarity": 1
-    },
-    "pride": {
-      "jjkppdb": 30106,
-      "method": "name",
-      "similarity": 1
-    },
-    "quietness": {
-      "jjkppdb": 10050,
-      "method": "name",
-      "similarity": 1
-    },
-    "reminiscence": {
-      "jjkppdb": 10048,
-      "method": "name",
-      "similarity": 1
-    },
-    "respite-for-adults": {
-      "jjkppdb": 30114,
-      "method": "name",
-      "similarity": 1
-    },
-    "restored-silence": {
-      "jjkppdb": 40220,
-      "method": "name",
-      "similarity": 1
-    },
-    "reunited-after-the-rain": {
-      "jjkppdb": 30099,
-      "method": "name",
-      "similarity": 1
-    },
-    "satoru-gojos-solo-camping": {
-      "jjkppdb": 20080,
-      "method": "name",
-      "similarity": 1
-    },
-    "scales-of-unfairness": {
-      "jjkppdb": 20020,
-      "method": "name",
-      "similarity": 1
-    },
-    "search": {
-      "jjkppdb": 10051,
-      "method": "name",
-      "similarity": 1
-    },
-    "shopping": {
-      "jjkppdb": 10043,
-      "method": "name",
-      "similarity": 1
-    },
-    "shopping-eating-tour": {
-      "jjkppdb": 30095,
-      "method": "name",
-      "similarity": 1
-    },
-    "snake-gods-sacrifice": {
-      "jjkppdb": 20113,
-      "method": "name",
-      "similarity": 1
-    },
-    "solo-mission": {
-      "jjkppdb": 10045,
-      "method": "name",
-      "similarity": 1
-    },
-    "someday-i-want-to-be-with-everyone": {
-      "jjkppdb": 20073,
-      "method": "name",
-      "similarity": 1
-    },
-    "source-of-stress": {
-      "jjkppdb": 40132,
-      "method": "name",
-      "similarity": 1
-    },
-    "strawberry-parfait-of-youth": {
-      "jjkppdb": 40115,
-      "method": "name",
-      "similarity": 1
-    },
-    "stylish-dress-up-plan": {
-      "jjkppdb": 30104,
-      "method": "name",
-      "similarity": 1
-    },
-    "sukunas-vessel": {
-      "jjkppdb": 20067,
-      "method": "name",
-      "similarity": 1
-    },
-    "takadas-quiz-beginners-edition": {
-      "jjkppdb": 20039,
-      "method": "name",
-      "similarity": 1
-    },
-    "take-a-break": {
-      "jjkppdb": 10049,
-      "method": "name",
-      "similarity": 1
-    },
-    "tension-in-the-grass-shade": {
-      "jjkppdb": 40184,
-      "method": "name",
-      "similarity": 1
-    },
-    "the-famous-coffee-shop": {
-      "jjkppdb": 20036,
-      "method": "name",
-      "similarity": 1
-    },
-    "the-last-of-my-cursed-energy": {
-      "jjkppdb": 20074,
-      "method": "name",
-      "similarity": 1
-    },
-    "the-sky-is-connected": {
-      "jjkppdb": 40183,
-      "method": "name",
-      "similarity": 1
-    },
-    "the-strongest-duo": {
-      "jjkppdb": 30088,
-      "method": "name",
-      "similarity": 1
-    },
-    "though-the-future-may-differ": {
-      "jjkppdb": 20077,
-      "method": "name",
-      "similarity": 1
-    },
-    "to-victory": {
-      "jjkppdb": 20025,
-      "method": "name",
-      "similarity": 1
-    },
-    "unity-from-top-to-bottom": {
-      "jjkppdb": 30009,
-      "method": "name",
-      "similarity": 1
-    },
-    "unprecedented-gourmet-boom": {
-      "jjkppdb": 40198,
-      "method": "name",
-      "similarity": 1
-    },
-    "utahimes-stress-relief-method": {
-      "jjkppdb": 40158,
-      "method": "name",
-      "similarity": 1
-    },
-    "visit-fukuoka": {
-      "jjkppdb": 30065,
-      "method": "name",
-      "similarity": 1
-    },
-    "wavering": {
-      "jjkppdb": 10064,
-      "method": "name",
-      "similarity": 1
-    },
-    "web-of-schemes": {
-      "jjkppdb": 30014,
-      "method": "name",
-      "similarity": 1
-    },
-    "were-sisters": {
-      "jjkppdb": 20027,
-      "method": "name",
-      "similarity": 1
-    },
-    "winter-new-step": {
-      "jjkppdb": 30087,
-      "method": "name",
-      "similarity": 1
-    },
-    "with-wings-in-hand": {
-      "jjkppdb": 40219,
-      "method": "name",
-      "similarity": 1
-    },
-    "wont-admit-to-being-in-trouble": {
-      "jjkppdb": 20092,
-      "method": "name",
-      "similarity": 1
-    },
-    "workaholic-holiday": {
-      "jjkppdb": 40235,
-      "method": "name",
-      "similarity": 1
-    },
-    "you-always-die-alone": {
-      "jjkppdb": 20028,
-      "method": "name",
-      "similarity": 1
-    },
-    "you-can-be-pretty": {
-      "jjkppdb": 20103,
-      "method": "name",
-      "similarity": 1
-    },
-    "you-cryin": {
-      "jjkppdb": 40173,
-      "method": "name",
-      "similarity": 1
-    },
-    "youre-late": {
-      "jjkppdb": 30090,
-      "method": "name",
-      "similarity": 1
-    },
-    "aoi-todos-youth-minerals": {
-      "jjkppdb": 40138,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "art-museum-at-night": {
-      "jjkppdb": 40122,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "coffee-break-in-the-afternoon": {
-      "jjkppdb": 40167,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "cursed-spirit-beach": {
-      "jjkppdb": 40139,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "divine-dogs-short-break": {
-      "jjkppdb": 40131,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "heros-conditions": {
-      "jjkppdb": 40154,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "humans-or-curses-who-will-have-the-last-laugh": {
-      "jjkppdb": 40210,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "instincts-of-a-curse": {
-      "jjkppdb": 40145,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "irreplaceable-moments": {
-      "jjkppdb": 40201,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "king-of-curses": {
-      "jjkppdb": 30066,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "nameless-spring": {
-      "jjkppdb": 40216,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "panda-the-fashionista": {
-      "jjkppdb": 40119,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "phantom-journey": {
-      "jjkppdb": 40202,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "the-panda-and-the-scarred-pillar": {
-      "jjkppdb": 40222,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "white-waves-and-white-breath": {
-      "jjkppdb": 40269,
-      "method": "stats+name",
-      "similarity": 1
-    },
-    "grade-1-jujutsu-sorcerer-of-breakwater": {
-      "jjkppdb": 40195,
-      "method": "stats+name",
-      "similarity": 0.89
-    },
-    "illusory-alliance-battle-young-fish-and-reverse-punishment": {
-      "jjkppdb": 40203,
-      "method": "stats+name",
-      "similarity": 0.86
-    },
-    "crepes-on-takeshita-street": {
-      "jjkppdb": 40197,
-      "method": "stats+name",
-      "similarity": 0.86
-    },
-    "girls-school-sorcerer": {
-      "jjkppdb": 40124,
-      "method": "stats+name",
-      "similarity": 0.86
-    },
-    "true-essence-of-the-soul": {
-      "jjkppdb": 40243,
-      "method": "stats+name",
-      "similarity": 0.83
-    },
-    "kept-waiting": {
-      "jjkppdb": 40126,
-      "method": "stats+name",
-      "similarity": 0.83
-    },
-    "illusory-alliance-battle-hidden-inventory": {
-      "jjkppdb": 40204,
-      "method": "stats+name",
-      "similarity": 0.82
-    },
-    "this-is-the-world-of-the-future": {
-      "jjkppdb": 40228,
-      "method": "stats+name",
-      "similarity": 0.82
-    },
-    "doctors-pride": {
-      "jjkppdb": 30083,
-      "method": "stats+name",
-      "similarity": 0.8
-    },
-    "doctors-turn": {
-      "jjkppdb": 40130,
-      "method": "stats+name",
-      "similarity": 0.8
-    },
-    "ice-sorcerer": {
-      "jjkppdb": 40242,
-      "method": "stats+name",
-      "similarity": 0.8
-    },
-    "intercept-the-calamity": {
-      "jjkppdb": 40292,
-      "method": "stats+name",
-      "similarity": 0.8
-    },
-    "morning-unraveling-in-the-mirror": {
-      "jjkppdb": 40218,
-      "method": "stats+name",
-      "similarity": 0.8
-    },
-    "the-fastest-game-of-tag": {
-      "jjkppdb": 40186,
-      "method": "stats+name",
-      "similarity": 0.8
-    },
-    "cursed-spirit-school-group": {
-      "jjkppdb": 40189,
-      "method": "stats+name",
-      "similarity": 0.77
-    },
-    "lets-rescue-satoru-gojo": {
-      "jjkppdb": 40161,
-      "method": "stats+name",
-      "similarity": 0.76
-    },
-    "isolated-cursed-prison-island": {
-      "jjkppdb": 40237,
-      "method": "stats+name",
-      "similarity": 0.75
-    },
-    "surrounded-by-amazing-seniors": {
-      "jjkppdb": 40236,
-      "method": "stats+name",
-      "similarity": 0.75
-    },
-    "annihilating-cross-counter": {
-      "jjkppdb": 40226,
-      "method": "stats+name",
-      "similarity": 0.75
-    },
-    "our-priorities": {
-      "jjkppdb": 40081,
-      "method": "stats+name",
-      "similarity": 0.74
-    },
-    "morning-practice-with-the-principal": {
-      "jjkppdb": 40152,
-      "method": "stats+name",
-      "similarity": 0.68
-    },
-    "noritoshi-kamos-archery-lessons": {
-      "jjkppdb": 30093,
-      "method": "stats+name",
-      "similarity": 0.68
-    },
-    "a-brief-moment-between-brothers": {
-      "jjkppdb": 40191,
-      "method": "stats+name",
-      "similarity": 0.67
-    },
-    "before-the-battle-for-kyushu": {
-      "jjkppdb": 40148,
-      "method": "stats+name",
-      "similarity": 0.67
-    },
-    "dead-mall-encounter": {
-      "jjkppdb": 20100,
-      "method": "stats+name",
-      "similarity": 0.67
-    },
-    "jujutsu-sorcerers-arrival": {
-      "jjkppdb": 40151,
-      "method": "stats+name",
-      "similarity": 0.67
-    },
-    "tokyo-fukuoka-exchange": {
-      "jjkppdb": 40120,
-      "method": "stats+name",
-      "similarity": 0.67
-    },
-    "knowledge-on-exorcising": {
-      "jjkppdb": 40199,
-      "method": "stats+name",
-      "similarity": 0.62
-    },
-    "defeat-cursed-spirits-rescue-non-sorcerers": {
-      "jjkppdb": 40165,
-      "method": "stats+name",
-      "similarity": 0.62
-    },
-    "nameless-cherry-blossom-blizzard": {
-      "jjkppdb": 40233,
-      "method": "stats+name",
-      "similarity": 0.59
-    },
-    "following-the-clue": {
-      "jjkppdb": 40164,
-      "method": "stats+name",
-      "similarity": 0.58
-    },
-    "clinical-record": {
-      "jjkppdb": 10055,
-      "method": "stats+name",
-      "similarity": 0.58
-    },
-    "encounter-and-anticipation": {
-      "jjkppdb": 40155,
-      "method": "stats+name",
-      "similarity": 0.57
-    },
-    "customary-task-game-center": {
-      "jjkppdb": 40172,
-      "method": "stats+name",
-      "similarity": 0.57
-    },
-    "irreconcilable-red-scale": {
-      "jjkppdb": 40239,
-      "method": "stats+name",
-      "similarity": 0.57
-    },
-    "nice-mid-air-catch": {
-      "jjkppdb": 40213,
-      "method": "stats+name",
-      "similarity": 0.57
-    },
-    "simple-pleasure": {
-      "jjkppdb": 20029,
-      "method": "stats+name",
-      "similarity": 0.57
-    },
-    "inheritance": {
-      "jjkppdb": 40144,
-      "method": "stats+name",
-      "similarity": 0.56
-    },
-    "archers-of-the-forest": {
-      "jjkppdb": 40192,
-      "method": "stats+name",
-      "similarity": 0.53
-    },
-    "hey-shisa": {
-      "jjkppdb": 40230,
-      "method": "stats+name",
-      "similarity": 0.53
-    },
-    "killing-puppet": {
-      "jjkppdb": 40240,
-      "method": "stats+name",
-      "similarity": 0.53
-    },
-    "behold-okinawa": {
-      "jjkppdb": 40231,
-      "method": "stats+name",
-      "similarity": 0.52
-    },
-    "price-for-applauding": {
-      "jjkppdb": 40162,
-      "method": "stats+name",
-      "similarity": 0.51
-    },
-    "to-the-super-luxurious-dinner-cruise": {
-      "jjkppdb": 40136,
-      "method": "stats+name",
-      "similarity": 0.51
-    },
-    "business-call": {
-      "jjkppdb": 10057,
-      "method": "stats+name",
-      "similarity": 0.51
-    },
-    "a-bear-is-approaching": {
-      "jjkppdb": 40188,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "activities-begin": {
-      "jjkppdb": 10060,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "blazing-magma": {
-      "jjkppdb": 40241,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "bonds-of-cooperation": {
-      "jjkppdb": 40156,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "day-of-awakening": {
-      "jjkppdb": 40176,
-      "method": "name-fuzzy",
-      "similarity": 1
-    },
-    "fleeting-warmth": {
-      "jjkppdb": 40185,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "lingering-summer-heat-and-blue-springtime": {
-      "jjkppdb": 40252,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "midsummer-spectators": {
-      "jjkppdb": 40117,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "my-best-battery": {
-      "jjkppdb": 40118,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "night-in-hakata": {
-      "jjkppdb": 40177,
-      "method": "name-fuzzy",
-      "similarity": 1
-    },
-    "siblings-bond": {
-      "jjkppdb": 30111,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "two-who-do-not-mesh": {
-      "jjkppdb": 40143,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "walk-in-shibuya": {
-      "jjkppdb": 40153,
-      "method": "name-fuzzy",
-      "similarity": 1
-    },
-    "who-is-tycoon": {
-      "jjkppdb": 40171,
-      "method": "stats+name",
-      "similarity": 0.5
-    },
-    "resolve-in-the-midst-of-a-storm": {
-      "jjkppdb": 40215,
-      "method": "stats+name",
-      "similarity": 0.49
-    },
-    "nimble-cursed-speech-user": {
-      "jjkppdb": 40125,
-      "method": "stats+name",
-      "similarity": 0.47
-    },
-    "firework-show-aboard": {
-      "jjkppdb": 40150,
-      "method": "stats+name",
-      "similarity": 0.45
-    },
-    "souvenir-pondering": {
-      "jjkppdb": 40159,
-      "method": "stats+name",
-      "similarity": 0.45
-    },
-    "siblings-vacation": {
-      "jjkppdb": 40163,
-      "method": "stats+name",
-      "similarity": 0.43
-    },
-    "phanpara-of-the-year": {
-      "jjkppdb": 40244,
-      "method": "stats+name",
-      "similarity": 0.42
-    },
-    "a-stingy-extra-bill": {
-      "jjkppdb": 40205,
-      "method": "stats+name",
-      "similarity": 0.41
-    },
-    "bedeviled-solicitation-refused": {
-      "jjkppdb": 40208,
-      "method": "stats+name",
-      "similarity": 0.41
-    },
-    "curses-and-bubbles": {
-      "jjkppdb": 30097,
-      "method": "name-fuzzy",
-      "similarity": 0.8
-    },
-    "innocence-seen-in-the-past": {
-      "jjkppdb": 40232,
-      "method": "stats+name",
-      "similarity": 0.4
-    },
-    "ordinary-time": {
-      "jjkppdb": 40193,
-      "method": "stats+name",
-      "similarity": 0.4
-    },
-    "reflection-of-trust": {
-      "jjkppdb": 40168,
-      "method": "stats+name",
-      "similarity": 0.4
-    },
-    "tea-party": {
-      "jjkppdb": 40134,
-      "method": "name-fuzzy",
-      "similarity": 0.8
-    },
-    "desire-behind-the-display": {
-      "jjkppdb": 40200,
-      "method": "stats+name",
-      "similarity": 0.38,
-      "review": true
-    },
-    "curse-born-from-the-land": {
-      "jjkppdb": 40147,
-      "method": "name-fuzzy",
-      "similarity": 0.77
-    },
-    "sorcerers-resolutions": {
-      "jjkppdb": 40178,
-      "method": "stats+name",
-      "similarity": 0.37,
-      "review": true
-    },
-    "serious-shuttlecock-competition": {
-      "jjkppdb": 40211,
-      "method": "stats+name",
-      "similarity": 0.35,
-      "review": true
-    },
-    "for-now-a-cola": {
-      "jjkppdb": 40142,
-      "method": "stats+name",
-      "similarity": 0.34,
-      "review": true
-    },
-    "a-drink-after-the-onsen": {
-      "jjkppdb": 40207,
-      "method": "stats+name",
-      "similarity": 0.34,
-      "review": true
-    },
-    "detainee-party": {
-      "jjkppdb": 40137,
-      "method": "stats+name",
-      "similarity": 0.34,
-      "review": true
-    },
-    "120-of-their-potential": {
-      "jjkppdb": 40238,
-      "method": "stats+name",
-      "similarity": 0.33,
-      "review": true
-    },
-    "play-a-catchy-tune": {
-      "jjkppdb": 40248,
-      "method": "stats+name",
-      "similarity": 0.33,
-      "review": true
-    },
-    "so-nice-to-meet-you": {
-      "jjkppdb": 40194,
-      "method": "stats+name",
-      "similarity": 0.33,
-      "review": true
-    },
-    "yeah-nice-job": {
-      "jjkppdb": 40141,
-      "method": "stats+name",
-      "similarity": 0.33,
-      "review": true
-    },
-    "blue-spring-set-off-the-firework": {
-      "jjkppdb": 40170,
-      "method": "stats+name",
-      "similarity": 0.32,
-      "review": true
-    }
-  },
+  "generatedAt": "2026-10-21T07:19:02.871Z",
+  "links": {},
   "unmatchedWiki": [
+    "120% Of Their Potential [SSR]",
+    "2 Problem Children, However The Strongest [SSR]",
+    "A Bear is Approaching! [SSR]",
+    "A Brief Moment Between Brothers [SSR]",
+    "A Drink After The Onsen [SSR]",
+    "A Girl Called Nobara Kugisaki [SR]",
+    "A Magnificent Stride Forward [SSR]",
+    "A Slight Gap [SSR]",
+    "A Stingy Extra Bill [SSR]",
+    "A Wish From The Past [SSR]",
+    "Activities Begin [R]",
+    "Adult Time [SSR]",
     "Adults' Afternoon [SSR]",
+    "After-School Activities [SR]",
+    "Annihilating Cross-Counter [SSR]",
+    "Aoi Todo's Youth Minerals [SSR]",
+    "Archers of The Forest [SSR]",
+    "Arrival Of Kyoto School [SR]",
+    "Art Museum At Night [SSR]",
+    "Battle For Second Place [SR]",
+    "Bedeviled Solicitation, Refused [SSR]",
+    "Before The Battle For Kyushu [SSR]",
+    "Behold, Okinawa [SSR]",
+    "Beware Of The Dog [R]",
+    "Bewildered [R]",
+    "Bewildering Dream [R]",
+    "Blazing Magma [SSR]",
+    "Blue Spring, Set Off The Firework [SSR]",
+    "Bonds Of Cooperation [SSR]",
+    "Brother And Sister [SR]",
+    "Business Call [R]",
+    "Casual Video Watching [SR]",
+    "Cat Rescue [SSR]",
+    "Childhood Promise [SSR]",
+    "Chit-chat [R]",
+    "Clinical Record [R]",
+    "Coffee Break in The Afternoon [SSR]",
+    "COOL Glasses [SSR]",
+    "Crêpes on Takeshita Street [SSR]",
+    "Curse Born From The Land [SSR]",
+    "Curse Each Other and Put Everything on the Line [SSR]",
+    "Cursed Nature [SR]",
+    "Cursed Spirit Beach [SSR]",
+    "Cursed Spirit School Group [SSR]",
+    "Curses And Bubbles [SSR]",
+    "Customary Task: Game Center [SSR]",
+    "Day of Awakening [SSR]",
+    "Dead Mall Encounter [SSR]",
+    "Death By Wasp [SR]",
+    "Deep In Thought [R]",
+    "Defeat Cursed Spirits, Rescue Non-Sorcerers [SSR]",
+    "Desire Behind The Display [SSR]",
+    "Desperate Resistance [SSR]",
+    "Detainee Party [SSR]",
+    "Die And Become A Sage [SSR]",
+    "Difference In Level [SSR]",
+    "Divine Dogs' Short Break [SSR]",
+    "Doctor's Pride [SSR]",
+    "Doctor's Turn [SSR]",
+    "Each On Their Own Path [SSR]",
+    "Educator [R]",
+    "Eight-Handled Sword Divergent Sila Divine General Mahoraga [SSR]",
+    "Encounter And Anticipation [SSR]",
+    "Encounter At Dusk [SR]",
+    "End Of The Scenery [SR]",
+    "Everyday Life [SR]",
+    "Exciting Stamp Rally [SSR]",
+    "Fake or Real? [SSR]",
+    "Favorite Toy [R]",
+    "Firework Show Aboard [SSR]",
+    "Fleeting Moments [SSR]",
+    "Fleeting Warmth [SSR]",
+    "Following The Clue [SSR]",
+    "For Myself [SR]",
+    "For Now, A Cola [SSR]",
+    "Girls School Sorcerer [SSR]",
+    "Gold Rush [SSR]",
+    "Good Mood [R]",
+    "Goodbye, Take Care [SSR]",
+    "Grade 1 Jujutsu Sorcerer of Breakwater [SSR]",
+    "Grand \"Exorcism\" [SSR]",
+    "Grand Stage [R]",
+    "Grandfather's Words [SR]",
+    "Hero's Conditions [SSR]",
+    "Hey, Shisa! [SSR]",
+    "Hidden Gem [SR]",
+    "Home Run! [SR]",
+    "Hot Pot Party [SSR]",
+    "Humans Or Curses, Who Will Have The Last Laugh [SSR]",
+    "I Bought Local Souvenirs [SSR]",
+    "I See, Then Die [SSR]",
+    "I Will Follow You, Nanami-san [SSR]",
+    "Ice Sorcerer [SSR]",
+    "Ignoring Orders [SSR]",
+    "Illusory Alliance Battle - Hidden Inventory [SSR]",
+    "Illusory Alliance Battle - Young Fish And Reverse Punishment [SSR]",
     "\"I'm glad I gave birth to you...\" [SSR]",
+    "Imaginary Youth [SSR]",
+    "In Excellent Shape [SSR]",
+    "Inheritance [SSR]",
+    "Innocence Seen in the Past [SSR]",
+    "Instincts Of A Curse [SSR]",
+    "Intercept the Calamity [SSR]",
+    "Investigation In The Rain [SSR]",
+    "Irreconcilable Red Scale [SSR]",
+    "Irreplaceable Moments [SSR]",
+    "Irretrievable Innocence [SSR]",
+    "Isolated Cursed Prison Island [SSR]",
+    "Jujutsu Sorcerers' Arrival [SSR]",
     "Kai [SSR]",
+    "Kept Waiting [SSR]",
+    "Kigurumi [R]",
+    "Killing Puppet [SSR]",
+    "Killing Time [R]",
+    "King of Curses [SSR]",
+    "Knowledge on Exorcising [SSR]",
+    "Lamentation [R]",
     "Laundry Time After the Mission [SSR]",
+    "Leaving Japan [SSR]",
+    "\"Let’s Have A Game Of Endurance\" [SR]",
+    "\"Let's Rescue Satoru Gojo!\" [SSR]",
+    "\"Liar… I Hate You!\" [SSR]",
+    "Like-Minded Sisters [SSR]",
+    "Lingering Summer Heat and Blue Springtime [SSR]",
+    "\"Live A Long Life\" [SR]",
+    "Louder Than Words [SSR]",
+    "Mad Dog & Divine Dog [SSR]",
+    "Malevolent Shrine [SR]",
+    "Meet Up [R]",
+    "Memories In A Nook [SSR]",
+    "Mensore! [SSR]",
+    "Midsummer Spectators [SSR]",
+    "Mission Start [SSR]",
+    "Morning Practice With The Principal [SSR]",
+    "Morning Unraveling in The Mirror [SSR]",
+    "Mutual Trust [SSR]",
+    "My Best Battery [SSR]",
+    "Nameless Cherry Blossom Blizzard [SSR]",
+    "Nameless Spring [SSR]",
+    "Nameless Youth [SSR]",
+    "Narrow Escape From Death [SSR]",
+    "Nice Mid-Air Catch [SSR]",
+    "Night In Hakata [SSR]",
+    "Night Of Jujutsu Sorcerers [SR]",
+    "Night of Spiritual Mountain Range [SSR]",
+    "Nimble Cursed Speech User [SSR]",
+    "Nonstandard [SSR]",
+    "Noritoshi Kamo's Archery Lessons [SSR]",
+    "Ordinary Time [SSR]",
+    "Our Priorities [SSR]",
+    "Panda The Fashionista [SSR]",
+    "Perfect Synchronization [SR]",
+    "Phanpara of the Year [SSR]",
+    "Phantom Journey [SSR]",
+    "Phantom Trails [SSR]",
     "Ping Pong!! [SSR]",
+    "Play a Catchy Tune [SSR]",
+    "Play Of The Strong [SSR]",
+    "Poolside Helper [SSR]",
+    "Preparation Activities [R]",
+    "Price for applauding [SSR]",
+    "Pride [SSR]",
+    "Quietness [R]",
+    "Reflection of Trust [SSR]",
+    "Reminiscence [R]",
     "Resolve and Curse, Within the Game of Death [SSR]",
+    "Resolve in The Midst of a Storm [SSR]",
+    "Respite For Adults [SSR]",
+    "Restored Silence [SSR]",
+    "Reunited After The Rain [SSR]",
+    "Rushing to a Mission on a Holy Night [SSR]",
+    "Sake for Blossom-Viewing on the Engawa [SSR]",
+    "Satoru Gojo's Solo Camping [SSR]",
+    "Scales Of Unfairness [SR]",
+    "Search [R]",
+    "Serious! Shuttlecock Competition [SSR]",
+    "Shopping [R]",
+    "Shopping & Eating Tour [SSR]",
+    "Siblings' Bond [SSR]",
+    "Siblings' Vacation [SSR]",
+    "Simple Pleasure [SR]",
+    "Snake God's Sacrifice [SSR]",
+    "So, nice to meet you [SSR]",
+    "Solo Mission [R]",
+    "Someday, I Want To Be With Everyone [SR]",
+    "Someone Like Me? [SSR]",
     "Something to Satisfy a Light Hunger [SSR]",
+    "Sorcerers' Resolutions [SSR]",
+    "Source Of Stress [SSR]",
+    "Souvenir Pondering [SSR]",
+    "Strawberry Parfait of Youth [SSR]",
+    "Strong Lineup [SSR]",
+    "Student's Duty [SSR]",
+    "Stylish Dress-Up Plan [SSR]",
+    "Sukuna’s Vessel [SR]",
+    "Super Freshman Welcoming Party [SSR]",
+    "Surrounded by Amazing Seniors [SSR]",
+    "Takada's Quiz: Beginner's Edition [SR]",
+    "Take A Break [R]",
+    "Tea Party [SSR]",
+    "Tension in the Grass Shade [SSR]",
+    "The City Where the Lights Went Out [SSR]",
     "The Clear Stream Duo [SSR]",
+    "The Famous Coffee Shop [SR]",
+    "The Fastest Game of Tag [SSR]",
+    "The Footage Left Behind [SSR]",
+    "The Intention Behind Charity [SSR]",
+    "The Kanto Dogs Vs Cats Battle [SSR]",
+    "The Last of My Cursed Energy [SR]",
+    "The Memories of Days Gone By [SSR]",
+    "The Mystery is In The Book [SSR]",
+    "The Panda and the Scarred Pillar [SSR]",
+    "The Sky Is Connected [SSR]",
+    "The Strongest Duo [SSR]",
+    "The Strongest Quarrel [SSR]",
     "The Super Classmate’s Debut Battle [SSR]",
     "The World Seen Through Ui Ui’s Eyes [SSR]",
+    "This is the World of the Future [SSR]",
+    "Though the Future May Differ [SSR]",
+    "Thousand-Year Master & Follower Relation [SSR]",
+    "To The Super Luxurious Dinner Cruise [SSR]",
+    "\"To Victory!\" [SR]",
+    "Tokyo Fukuoka Exchange [SSR]",
+    "True Essence Of The Soul [SSR]",
+    "Two Shadows Reflected in The Evening [SSR]",
+    "Two Who Do Not Mesh [SSR]",
     "Under the Cherry Tree [SSR]",
+    "Unity From Top To Bottom [SSR]",
+    "Unprecedented Gourmet Boom [SSR]",
+    "Utahime's Stress Relief Method [SSR]",
+    "Visit Fukuoka [SSR]",
+    "Walk In Shibuya [SSR]",
     "\"Watch Closely\" [SSR]",
+    "Wavering [R]",
     "Weaving Fantasies [SSR]",
+    "Web Of Schemes [SSR]",
+    "\"We’re Sisters!\" [SR]",
+    "White Waves and White Breath [SSR]",
+    "Who is Tycoon? [SSR]",
+    "Winter, New Step [SSR]",
+    "Wish Summer Would Never End [SSR]",
+    "With Wings in Hand [SSR]",
+    "Won't Admit To Being In Trouble [SSR]",
+    "Workaholic Holiday [SSR]",
+    "Yeah, Nice Job! [SSR]",
+    "\"You Always Die Alone\" [SR]",
+    "You Can Be Pretty! [SSR]",
+    "You Cryin'? [SSR]",
+    "Your Path Forward [SSR]",
+    "\"You're Late\" [SSR]",
     "Youth Graffiti [SSR]"
   ],
   "unmatchedJJ": []
