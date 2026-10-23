@@ -38,8 +38,6 @@ const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
     <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-ash via-ash/70 to-transparent lg:from-ash/95 lg:via-ash/35" aria-hidden="true"></div>
     <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-ash via-transparent to-ash/20" aria-hidden="true"></div>
     <Embers density={70} />
-    <!-- Tajo del Fuga -->
-    <div class="fuga-slash pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[2px] w-[160vw] -translate-x-1/2 -translate-y-1/2 -rotate-[18deg]" aria-hidden="true"></div>
 
     <div class="mx-auto flex min-h-[calc(92dvh-var(--nav-h))] max-w-7xl flex-col justify-center px-4 py-16 lg:px-6">
       <h1 class="hero-in" style="--d:0">
@@ -100,15 +98,6 @@ const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
 </BaseLayout>
 
 <style>
-  .fuga-slash {
-    background: linear-gradient(90deg, transparent 0%, rgb(200 16 46 / 0.5) 25%, var(--color-ember) 45%, var(--color-spark) 50%, var(--color-ember) 55%, rgb(200 16 46 / 0.5) 75%, transparent 100%);
-    box-shadow: 0 0 24px 4px rgb(255 90 31 / 0.45), 0 0 80px 20px rgb(200 16 46 / 0.25);
-    animation: slash-in 1.1s var(--ease-out-expo) 0.15s both;
-  }
-  @keyframes slash-in {
-    from { clip-path: inset(0 100% 0 0); opacity: 0; }
-    to { clip-path: inset(0 0 0 0); opacity: 0.9; }
-  }
   .hero-in {
     animation: hero-in 0.9s var(--ease-out-expo) both;
     animation-delay: calc(0.35s + var(--d) * 0.09s);
