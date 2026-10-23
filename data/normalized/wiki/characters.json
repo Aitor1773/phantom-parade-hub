@@ -2,7 +2,7 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-10-22T07:19:45.605Z",
+  "fetchedAt": "2026-10-23T07:17:25.867Z",
   "count": 111,
   "items": [
     {
@@ -2598,15 +2598,15 @@
             "name": "Cut Down",
             "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/4/44/RedSSRKusakabeNormalAttack1.png/revision/latest?cb=20261019104844",
             "levels": [
-              "Deals 150% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Deals 88.6% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 95.4% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 102.2% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 109.1% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 115.9% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 122.7% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 129.6% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 136.4% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
+              "Deals 143.2% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
               "Deals 150% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)"
             ]
           },
@@ -2614,15 +2614,15 @@
             "name": "New Shadow Style: Sword Drawing",
             "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/e/e1/RedSSRKusakabeS11.png/revision/latest?cb=20261019105035",
             "levels": [
-              "Deals 300% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 15% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Deals 177.2% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 8.5% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 190.8% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 9.2% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 204.5% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 9.9% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 218.1% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 10.7% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 231.8% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 11.4% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 245.4% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 12.1% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 259% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 12.8% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 272.7% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 13.5% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 286.3% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 14.3% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
               "Deals 300% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 15% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)"
             ],
             "cost": 30
@@ -2631,15 +2631,15 @@
             "name": "Continuous Slashes",
             "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/7/71/RedSSRKusakabeS21.png/revision/latest?cb=20261019105014",
             "levels": [
-              "Deals 450% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 15% (Kusakabe) (4 Turns)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Deals 265.8% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 8.5% (Kusakabe) (4 Turns)",
+              "Deals 286.3% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 9.2% (Kusakabe) (4 Turns)",
+              "Deals 306.7% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 9.9% (Kusakabe) (4 Turns)",
+              "Deals 327.2% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 10.7% (Kusakabe) (4 Turns)",
+              "Deals 347.7% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 11.4% (Kusakabe) (4 Turns)",
+              "Deals 368.2% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 12.1% (Kusakabe) (4 Turns)",
+              "Deals 388.6% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 12.8% (Kusakabe) (4 Turns)",
+              "Deals 409.1% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 13.5% (Kusakabe) (4 Turns)",
+              "Deals 429.6% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 14.3% (Kusakabe) (4 Turns)",
               "Deals 450% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 15% (Kusakabe) (4 Turns)"
             ],
             "cost": 25
@@ -2648,15 +2648,15 @@
             "name": "Frenetic Strike",
             "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/d/dd/RedSSRKusakabeUlt1.png/revision/latest?cb=20261019104917",
             "levels": [
-              "Deals 1500% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 15% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 20% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Deals 886% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 8.5% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 12.2% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 954.2% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 9.2% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 13.1% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1022.4% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 9.9% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 13.9% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1090.7% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 10.7% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 14.8% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1158.9% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 11.4% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 15.7% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1227.1% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 12.1% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 16.6% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1295.3% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 12.8% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 17.4% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1363.5% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 13.5% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 18.3% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
+              "Deals 1431.8% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 14.3% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 19.2% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
               "Deals 1500% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 15% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 20% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)"
             ]
           },
@@ -2699,8 +2699,8 @@
       "_source": {
         "source": "wiki",
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(Cold_Light_of_Dusk)_Atsuya_Kusakabe",
-        "revid": 11411,
-        "updated": "2026-10-19T10:49:51Z"
+        "revid": 11432,
+        "updated": "2026-10-22T11:38:49Z"
       }
     },
     {
