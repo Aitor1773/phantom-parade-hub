@@ -8,3 +8,6 @@ data/raw/
 *.log
 .DS_Store
 assets-src/
+
+# Notas privadas (correos, contactos): no se suben al repositorio público
+privado/

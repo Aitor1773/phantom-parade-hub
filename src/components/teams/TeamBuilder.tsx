@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import { assignMemories, effectiveRank, recommendTeam, slotScore, type Account, type ElementKey, type Role, type Team, type TeamChar, type TeamSlot } from '@/lib/team-recs';
 import { Readiness, Recommendations } from './ContentTeams';
-import { AffinityPicker, CopyTeamButton, ELEMENTS, SlotCard, fill, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
+import { AffinityPicker, CharPicker, CopyTeamButton, SlotCard, fill, roleOf, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
 
 const KEY = 'pp-teams';
 const SLOTS = 6; // 0–3 titulares, 4 suplente, 5 apoyo
@@ -20,13 +20,6 @@ function loadSaved(): Saved[] {
 }
 const teamToSlots = (t: Team) => [...t.main.map((s) => s?.c.id ?? null), t.sub?.c.id ?? null, t.helper?.c.id ?? null];
 
-/** Rol con el que cuenta un personaje en el equipo: el de su mejor rango. */
-const roleOf = (c: TeamChar, a: AffinityMap): 'dmg' | 'sup' | undefined => {
-  const d = slotScore(c, 'dmg', a), s = slotScore(c, 'sup', a);
-  if (d == null && s == null) return undefined;
-  return (d ?? -99) >= (s ?? -99) ? 'dmg' : 'sup';
-};
-
 export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPath }: { labels: Labels; basePath: string; accountPath: string; teamsPath: string }) {
   const data = useTeamData();
   const chars = data?.chars ?? null;
@@ -37,9 +30,6 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   const [roleSet, setRoleSet] = useState<(Role | null)[]>(Array(SLOTS).fill(null));
   const [affinity, setAffinity] = useState<AffinityMap>({});
   const [picking, setPicking] = useState<number | null>(null);
-  const [q, setQ] = useState('');
-  const [onlyOwned, setOnlyOwned] = useState(false);
-  const [color, setColor] = useState<ElementKey | null>(null);
   const [saved, setSaved] = useState<Saved[]>([]);
   const [name, setName] = useState('');
   useEffect(() => setSaved(loadSaved()), []);
@@ -95,14 +85,6 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
     resisted ? fill(L['tb.warn.resist'], { n: resisted }) : null,
   ].filter(Boolean) as string[];
 
-  const list = useMemo(() => {
-    const s = q.trim().toLowerCase();
-    return (chars ?? [])
-      .filter((c) => (!onlyOwned || owned?.has(c.id)) && (!color || c.element === color) && (!s || `${c.name} ${c.epithet ?? ''}`.toLowerCase().includes(s)))
-      .map((c) => ({ c, score: Math.max(slotScore(c, 'dmg', affinity) ?? 0, slotScore(c, 'sup', affinity) ?? 0) }))
-      .sort((a, b) => b.score - a.score);
-  }, [chars, q, onlyOwned, color, owned, affinity]);
-
   if (!chars) return <p className="text-sm text-smoke">{L['tm.loading']}</p>;
 
   return (
@@ -118,7 +100,7 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
           {team.map((c, i) => (
             <div key={i} className="min-w-0">
               <SlotCard slot={c ? builtSlots[i] : null} label={slotLabel(i)} labels={L} affinity={affinity}
-                onClick={() => { setPicking(i); setQ(''); }} onRemove={() => setSlot(i, null)} />
+                onClick={() => setPicking(i)} onRemove={() => setSlot(i, null)} />
               {c && c.dmg && c.sup && i < 5 && (
                 <button type="button" onClick={() => toggleRole(i)} className="mt-1 w-full rounded-md border border-line px-1 py-0.5 text-[10px] text-dust hover:text-bone">
                   ⇄ {L[builtSlots[i]?.as === 'dmg' ? 'tm.sup' : 'tm.dmg']}
@@ -198,39 +180,8 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
       </section>
 
       {picking != null && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-0 sm:items-center sm:p-6" role="dialog" aria-modal="true" aria-label={L['tb.pick']}
-          onClick={(e) => e.target === e.currentTarget && setPicking(null)} onKeyDown={(e) => e.key === 'Escape' && setPicking(null)}>
-          <div className="flex max-h-[85vh] w-full max-w-3xl flex-col rounded-t-2xl border border-line-strong bg-coal sm:rounded-2xl">
-            <div className="flex flex-wrap items-center gap-2 border-b border-line p-3">
-              <p className="mr-auto text-sm font-bold text-bone">{L['tb.pick']} · {slotLabel(picking)}</p>
-              <label className="flex items-center gap-1.5 text-xs text-dust">
-                <input type="checkbox" checked={onlyOwned} disabled={!owned} onChange={(e) => setOnlyOwned(e.target.checked)} className="size-4 accent-[#ff5a1f]" />
-                {L['tb.onlyowned']}
-              </label>
-              <button type="button" className="btn-ghost size-8 p-0" onClick={() => setPicking(null)} aria-label={L['tb.close']}>✕</button>
-              <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder={L['tb.search']} aria-label={L['tb.search']}
-                className="h-9 w-full rounded-lg border border-line bg-ash px-3 text-sm text-bone placeholder:text-smoke focus:border-ember/60 focus:outline-none" />
-              {/* Filtro por color */}
-              <div className="flex w-full flex-wrap gap-1.5" role="group" aria-label={L['tb.allcolors']}>
-                {[null, ...ELEMENTS].map((el) => (
-                  <button key={el ?? 'all'} type="button" aria-pressed={color === el} onClick={() => setColor(el)}
-                    className="flex h-8 items-center gap-1.5 rounded-full border border-line px-3 text-xs font-semibold text-dust transition aria-pressed:border-ember/70 aria-pressed:bg-ember/15 aria-pressed:text-bone">
-                    {el && <span className="size-2.5 rounded-full" style={{ background: ELEMENT_COLOR[el] }} />}
-                    {el ? L[`el.${el}`] : L['tb.allcolors']}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <ul className="grid grid-cols-4 gap-2 overflow-y-auto p-3 sm:grid-cols-6">
-              {list.map(({ c }) => (
-                <li key={c.id}>
-                  <SlotCard slot={{ c, as: roleOf(c, affinity) }} label={c.dmg || c.sup ? '' : L['tb.unranked']} labels={L} affinity={affinity}
-                    onClick={() => { setSlot(picking, c.id); setPicking(null); }} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <CharPicker chars={chars} owned={owned} affinity={affinity} title={slotLabel(picking)} labels={L}
+          onPick={(id) => { setSlot(picking, id); setPicking(null); }} onClose={() => setPicking(null)} />
       )}
     </div>
   );

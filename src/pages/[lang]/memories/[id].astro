@@ -5,7 +5,7 @@ import MemoryEffects from '@/components/memories/MemoryEffects';
 import { MEMORIES, illustSrc, type Memory } from '@/data/memories';
 import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
-import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
+import { LOCALES, LOCALE_META, localePath, type Locale } from '@/i18n/utils';
 
 export function getStaticPaths() {
   return LOCALES.flatMap((lang) => MEMORIES.map((m) => ({ params: { lang, id: m.id }, props: { m } })));
@@ -13,7 +13,6 @@ export function getStaticPaths() {
 
 const lang = Astro.params.lang as Locale;
 const { m } = Astro.props as { m: Memory };
-const t = useT(lang);
 const g = useG(lang);
 
 const date = (iso: string | null) =>

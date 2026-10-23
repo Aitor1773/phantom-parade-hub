@@ -16,11 +16,13 @@ export const TEAM_KEYS = [
   'st.title', 'st.type.taijutsu', 'st.type.jujutsu', 'st.type.mixed', 'st.only', 'st.banned', 'st.note', 'st.cut.warn', 'st.cut.ok',
   'st.weak', 'st.weak.none', 'st.resist', 'st.aoe', 'st.aoe.none', 'st.taunt', 'st.debuff', 'st.debuff.none', 'st.sustain',
   'st.sustain.none', 'st.counter', 'st.summon', 'st.enrage', 'st.order', 'st.break', 'st.coop', 'st.why',
+  'tm.edit.hint', 'tm.reset', 'tm.options', 'tm.options.hint', 'tm.options.general', 'tm.instead',
+  'tb.pick', 'tb.search', 'tb.onlyowned', 'tb.allcolors', 'tb.close', 'tb.unranked',
 ] as const satisfies readonly GameKey[];
 
 export const BUILDER_KEYS = [
   ...TEAM_KEYS,
-  'tb.pick', 'tb.search', 'tb.onlyowned', 'tb.allcolors', 'tb.fillAccount', 'tb.fillGeneral', 'tb.clear', 'tb.save', 'tb.name', 'tb.team', 'tb.saved',
-  'tb.load', 'tb.delete', 'tb.analysis', 'tb.roles', 'tb.avg', 'tb.warn.sup', 'tb.warn.dup', 'tb.warn.resist', 'tb.remove', 'tb.unranked',
-  'tb.close', 'tb.recs', 'tb.recs.desc', 'tb.copy.hint', 'tb.copy.where',
+  'tb.fillAccount', 'tb.fillGeneral', 'tb.clear', 'tb.save', 'tb.name', 'tb.team', 'tb.saved',
+  'tb.load', 'tb.delete', 'tb.analysis', 'tb.roles', 'tb.avg', 'tb.warn.sup', 'tb.warn.dup', 'tb.warn.resist', 'tb.remove',
+  'tb.recs', 'tb.recs.desc', 'tb.copy.hint', 'tb.copy.where',
 ] as const satisfies readonly GameKey[];

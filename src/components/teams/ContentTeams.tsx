@@ -2,11 +2,11 @@
 // y lo mejor en general, según las debilidades/resistencias (guardadas o marcadas por ti) y la tier list.
 // Para tu cuenta también dice qué te falta para pasarlo.
 import { useEffect, useMemo, useState } from 'react';
-import { readiness, recommendTeam, teamAdvice, type Account, type Advice, type ElementKey, type Team, type TeamChar, type TeamMemory } from '@/lib/team-recs';
+import { assignMemories, effectiveRank, readiness, recommendTeam, slotScore, teamAdvice, type Account, type Advice, type ElementKey, type Team, type TeamChar, type TeamMemory, type TeamSlot } from '@/lib/team-recs';
 import { stageNeeds, type DamageType, type Stage, type StageNeeds } from '@/lib/stage';
 import { strategyTips, type Tip } from '@/lib/strategy';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
-import { AffinityPicker, CopyTeamButton, TeamView, fill, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
+import { AffinityPicker, CharPicker, CopyTeamButton, SlotCard, fill, roleOf, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
 
 export interface AffinityRecord { weak?: ElementKey[]; resist?: ElementKey[]; note?: string; checked?: string; community?: number }
 
@@ -93,6 +93,133 @@ function StrategyPanel({ team, needs, stage, labels: L }: { team: Team; needs: S
   );
 }
 
+// ── Equipos modificables y alternativas ─────────────────────────
+const slotIds = (t: Team) => [...t.main.map((s) => s?.c.id ?? null), t.sub?.c.id ?? null, t.helper?.c.id ?? null];
+
+/**
+ * Equipo recomendado que el jugador puede cambiar hueco a hueco. Sin cambios devuelve el recomendado;
+ * con cambios, recalcula puntuación, rango y memorias con la cuenta (si es «para tu cuenta»).
+ */
+function useEditableTeam(base: Team, chars: TeamChar[], memories: TeamMemory[], affinity: AffinityMap, needs: StageNeeds | null | undefined, account: Account | null) {
+  const [ids, setIds] = useState<(string | null)[] | null>(null);
+  // Si cambia la recomendación (otra fase, otras debilidades), se vuelve a ella
+  useEffect(() => setIds(null), [base]);
+  const team = useMemo<Team>(() => {
+    if (!ids) return base;
+    const byId = new Map(chars.map((c) => [c.id, c]));
+    const baseSlots = [...base.main, base.sub, base.helper];
+    const maxLevel = Math.max(0, ...Object.values(account?.chars ?? {}).map((o) => o.level ?? 0));
+    const mk = (id: string | null, i: number): TeamSlot | null => {
+      const c = id ? byId.get(id) : undefined;
+      if (!c) return null;
+      const own = i < 5 && account ? account.chars[c.id] ?? null : null; // el apoyo es de otro jugador
+      const as = baseSlots[i]?.c.id === c.id ? baseSlots[i]!.as : roleOf(c, affinity, needs) ?? 'sup';
+      return { c, as, score: slotScore(c, as, affinity, own, maxLevel, needs) ?? 0, rank: effectiveRank(c, as, own) ?? 'D' };
+    };
+    const t: Team = { main: ids.slice(0, 4).map(mk), sub: mk(ids[4], 4), helper: mk(ids[5], 5) };
+    assignMemories([...t.main, t.sub], memories, account);
+    return t;
+  }, [ids, base, chars, memories, affinity, needs, account]);
+  const setSlot = (i: number, id: string | null) => setIds((prev) => (prev ?? slotIds(base)).map((x, j) => (j === i ? id : x)));
+  return { team, edited: !!ids, setSlot, reset: () => setIds(null) };
+}
+
+/** Equipo con huecos que se tocan para cambiarlos, botón para volver a la recomendación y alternativas. */
+function EditableTeam({ base, chars, memories, affinity, needs, account, owned, labels: L, children }: {
+  base: Team; chars: TeamChar[]; memories: TeamMemory[]; affinity: AffinityMap; needs?: StageNeeds | null;
+  /** Con cuenta: alternativas y puntuación según lo que tienes (y la ventana abre con «solo los míos») */
+  account: Account | null; owned?: Set<string> | null; labels: Labels; basePath: string;
+  children?: (team: Team) => React.ReactNode;
+}) {
+  const { team, edited, setSlot, reset } = useEditableTeam(base, chars, memories, affinity, needs, account);
+  const [picking, setPicking] = useState<number | null>(null);
+  const slots = [...team.main, team.sub, team.helper];
+  const slotLabel = (i: number) => L[i < 4 ? 'tm.main' : i === 4 ? 'tm.sub' : 'tm.helper'];
+  return (
+    <>
+      <div className="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">
+        {slots.map((s, i) => (
+          <SlotCard key={i} slot={s} label={slotLabel(i)} labels={L} affinity={affinity} onClick={() => setPicking(i)} />
+        ))}
+      </div>
+      <div className="mt-2 flex flex-wrap items-center gap-3 text-[11px]">
+        <span className="text-smoke">{L['tm.edit.hint']}</span>
+        {edited && <button type="button" onClick={reset} className="font-semibold text-flame underline underline-offset-2">{L['tm.reset']}</button>}
+      </div>
+      <TeamOptions team={team} chars={chars} affinity={affinity} needs={needs} account={account} labels={L} onPick={setSlot} />
+      {children?.(team)}
+      {picking != null && (
+        <CharPicker chars={chars} owned={owned} affinity={affinity} needs={needs} title={slotLabel(picking)} labels={L} defaultOwned={!!account && picking < 5}
+          onPick={(id) => { setSlot(picking, id); setPicking(null); }} onClose={() => setPicking(null)} />
+      )}
+    </>
+  );
+}
+
+/**
+ * Otras opciones para cada puesto (titulares y suplente): las 3 mejores que no están en el equipo.
+ * Con cuenta, solo personajes tuyos y puntuados con tu inversión, así que salen primero los que ya
+ * tienes subidos: no hace falta maxear a nadie para una sola fase.
+ */
+function TeamOptions({ team, chars, affinity, needs, account, labels: L, onPick }: {
+  team: Team; chars: TeamChar[]; affinity: AffinityMap; needs?: StageNeeds | null; account: Account | null; labels: Labels;
+  onPick: (i: number, id: string) => void;
+}) {
+  const rows = useMemo(() => {
+    const inTeam = new Set([...team.main, team.sub, team.helper].filter((s): s is TeamSlot => !!s).map((s) => s.c.name));
+    const pool = account ? chars.filter((c) => account.chars[c.id]) : chars;
+    const maxLevel = Math.max(0, ...Object.values(account?.chars ?? {}).map((o) => o.level ?? 0));
+    // Cada puesto recibe opciones distintas (si dos huecos son de daño, no repiten las mismas tres)
+    const shown = new Set<string>();
+    return [...team.main, team.sub].map((s, i) => {
+      const as = s?.as ?? (i < 2 ? 'dmg' : 'sup');
+      const alts = pool
+        .filter((c) => !inTeam.has(c.name) && !shown.has(c.name))
+        .map((c) => ({ c, own: account?.chars[c.id] ?? null, score: slotScore(c, as, affinity, account?.chars[c.id] ?? null, maxLevel, needs) }))
+        .filter((x): x is { c: TeamChar; own: OwnedLike; score: number } => x.score != null)
+        .sort((a, b) => b.score - a.score)
+        // Una sola versión de cada personaje (el juego no deja llevar dos)
+        .filter((x, k, arr) => arr.findIndex((y) => y.c.name === x.c.name) === k)
+        .slice(0, 3);
+      alts.forEach((x) => shown.add(x.c.name));
+      return { i, as, alts };
+    }).filter((r) => r.alts.length);
+  }, [team, chars, affinity, needs, account]);
+  if (!rows.length) return null;
+  return (
+    <details className="mt-3 rounded-xl border border-line bg-ash/40 p-3 text-xs">
+      <summary className="cursor-pointer font-bold text-bone">{L['tm.options']}</summary>
+      <p className="mt-1 text-smoke">{L[account ? 'tm.options.hint' : 'tm.options.general']}</p>
+      <ul className="mt-2 space-y-2">
+        {rows.map(({ i, as, alts }) => (
+          <li key={i}>
+            <p className="mb-1 font-semibold text-dust">{L[i === 4 ? 'tm.sub' : 'tm.main']} · {L[as === 'dmg' ? 'tm.dmg' : 'tm.sup']} <span className="text-smoke">({L['tm.instead']} {[...team.main, team.sub][i]?.c.name ?? '—'})</span></p>
+            <div className="flex flex-wrap gap-1.5">
+              {alts.map(({ c, own }) => {
+                const a = affinity[c.element as ElementKey];
+                const rank = effectiveRank(c, as, own);
+                const inv = own ? [own.level ? `Nv ${own.level}` : '', own.dupes ? `${own.dupes}★` : ''].filter(Boolean).join(' · ') : '';
+                return (
+                  <button key={c.id} type="button" onClick={() => onPick(i, c.id)} title={c.epithet ?? c.name}
+                    className="flex items-center gap-1.5 rounded-full border bg-coal py-0.5 pr-2 pl-0.5 text-left text-[11px] text-bone transition hover:border-line-strong"
+                    style={{ borderColor: `${ELEMENT_COLOR[c.element]}66` }}>
+                    {c.img && <img src={c.img} srcSet={c.srcset} sizes="40px" alt="" loading="lazy" className="size-6 rounded-full object-cover object-top" />}
+                    <span>{c.name}</span>
+                    {rank && <b className="text-flame">{rank}</b>}
+                    {a && <span className={a === 'weak' ? 'text-[#3fcf8e]' : 'text-[#ff6b7f]'}>{a === 'weak' ? '▲' : '▼'}</span>}
+                    {inv && <span className="text-smoke">{inv}</span>}
+                  </button>
+                );
+              })}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+type OwnedLike = Account['chars'][string] | null;
+
 /** Los dos equipos (cuenta y general) para unas debilidades y una fase dadas. */
 export function Recommendations({ chars, memories, affinity, labels: L, basePath, accountPath, post, needs, stage }: {
   chars: TeamChar[]; memories: TeamMemory[]; affinity: AffinityMap; labels: Labels; basePath: string; accountPath: string;
@@ -103,6 +230,7 @@ export function Recommendations({ chars, memories, affinity, labels: L, basePath
   stage?: Stage | null;
 }) {
   const account = useAccount();
+  const owned = useMemo(() => (account ? new Set(Object.keys(account.chars)) : null), [account]);
   const [dealers, setDealers] = useState<1 | 2>(2);
   const general = useMemo(() => recommendTeam(chars, { affinity, dealers, memories, needs }), [chars, affinity, dealers, memories, needs]);
   const mine = useMemo(() => (account ? recommendTeam(chars, { affinity, dealers, account, memories, needs }) : null), [chars, affinity, dealers, account, memories, needs]);
@@ -124,13 +252,16 @@ export function Recommendations({ chars, memories, affinity, labels: L, basePath
       <section className="card p-4 sm:p-5">
         <h3 className="mb-3 font-sans text-sm font-bold text-bone">{L['tm.account']}</h3>
         {account === undefined ? <p className="text-xs text-smoke">{L['tm.loading']}</p> : mine && account ? (
-          <>
-            <TeamView team={mine} labels={L} affinity={affinity} basePath={basePath} />
-            {gaps > 0 && <p className="mt-3 text-xs text-flame">{L['tm.missing']}</p>}
-            {showStrategy && <StrategyPanel team={mine} needs={needs ?? null} stage={stage ?? null} labels={L} />}
-            {post && <div className="mt-3"><CopyTeamButton text={teamPost(mine, affinity, L, post)} labels={L} /></div>}
-            <Readiness mine={mine} best={general} account={account} memories={memories} labels={L} basePath={basePath} />
-          </>
+          <EditableTeam base={mine} chars={chars} memories={memories} affinity={affinity} needs={needs} account={account} owned={owned} labels={L} basePath={basePath}>
+            {(team) => (
+              <>
+                {gaps > 0 && <p className="mt-3 text-xs text-flame">{L['tm.missing']}</p>}
+                {showStrategy && <StrategyPanel team={team} needs={needs ?? null} stage={stage ?? null} labels={L} />}
+                {post && <div className="mt-3"><CopyTeamButton text={teamPost(team, affinity, L, post)} labels={L} /></div>}
+                <Readiness mine={team} best={general} account={account} memories={memories} labels={L} basePath={basePath} />
+              </>
+            )}
+          </EditableTeam>
         ) : (
           <p className="text-sm text-dust">{L['tm.noinv']} <a href={accountPath} className="text-flame underline underline-offset-2">{L['tm.goaccount']}</a></p>
         )}
@@ -138,8 +269,9 @@ export function Recommendations({ chars, memories, affinity, labels: L, basePath
 
       <section className="card p-4 sm:p-5">
         <h3 className="mb-3 font-sans text-sm font-bold text-bone">{L['tm.general']}</h3>
-        <TeamView team={general} labels={L} affinity={affinity} basePath={basePath} />
-        {showStrategy && <StrategyPanel team={general} needs={needs ?? null} stage={stage ?? null} labels={L} />}
+        <EditableTeam base={general} chars={chars} memories={memories} affinity={affinity} needs={needs} account={null} owned={owned} labels={L} basePath={basePath}>
+          {(team) => showStrategy && <StrategyPanel team={team} needs={needs ?? null} stage={stage ?? null} labels={L} />}
+        </EditableTeam>
       </section>
 
       <details className="text-xs text-smoke">
