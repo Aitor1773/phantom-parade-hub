@@ -1,6 +1,6 @@
 {
   "_comment": "Tier list PROPIA, con 7 listas (blue, red, green, yellow, damage, support, sp). Para ajustar: en lists.<lista>.entries.<id> cambia \"rank\", pon \"manual\": true y, si quieres, una \"note\". Para fijar la fecha de revisión de una lista: \"reviewed\": \"AAAA-MM-DD\" y \"reviewedManual\": true. Con \"curated\": true en una lista, solo salen en ella los personajes con \"manual\": true (para añadir uno nuevo: rank, manual y \"lastRank\": null). El borrador nunca toca lo manual y registra cada cambio en \"changelog\". Después: npm run data:tierdraft && npm run build",
-  "updatedAt": "2026-10-23T07:17:58.760Z",
+  "updatedAt": "2026-10-24T07:12:35.930Z",
   "criteria": {
     "roleWeights": {
       "attacker": {
