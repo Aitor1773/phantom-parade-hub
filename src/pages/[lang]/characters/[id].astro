@@ -5,6 +5,7 @@ import KitViewer from '@/components/characters/KitViewer';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, kitVersions, resolveKit, srcsetOf, thumb, type Character, type KitVersion, type ResolvedKit } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
+import { guideOf, guideText } from '@/data/char-guides';
 import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
 
 export function getStaticPaths() {
@@ -24,6 +25,10 @@ const el = ELEMENT_COLOR[c.element] ?? '#ff5a1f';
 
 const versions = kitVersions(c);
 const kits = Object.fromEntries(versions.map((v) => [v, resolveKit(c, v)])) as Partial<Record<KitVersion, ResolvedKit>>;
+// Cómo jugarlo (con el kit vigente: el último ajuste)
+const guide = guideOf(c.id);
+const latest = kits[versions.at(-1)!];
+const partners = (guide?.partners ?? []).map((id) => CHARACTERS.find((x) => x.id === id)).filter((x): x is Character => !!x);
 
 const fmt = new Intl.NumberFormat(LOCALE_META[lang].htmlLang);
 const date = (iso: string | null) =>
@@ -135,11 +140,63 @@ const jsonLd = {
   </section>
 
   <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-6">
-    <!-- Habilidades -->
-    <section>
-      <h2 class="mb-5 text-2xl font-bold text-bone">{g('ch.skills')}</h2>
-      <KitViewer client:visible kits={kits} versions={versions} labels={labels} textLangNote={lang === 'en' ? null : g('ch.textlang')} />
-    </section>
+    <div class="min-w-0 space-y-10">
+      <!-- Cómo jugarlo: rotación, consejos y compañeros -->
+      {guide && (
+        <section id="how-to-play" class="card scroll-mt-24 p-5 sm:p-6">
+          <h2 class="text-2xl font-bold text-bone">{g('ch.howto')}</h2>
+          {guide.summary && <p class="mt-2 max-w-3xl text-dust">{guideText(guide.summary, lang)}</p>}
+          {guide.rotation.length > 0 && (
+            <>
+              <h3 class="mt-5 mb-3 font-sans text-sm font-bold text-bone">{g('ch.howto.rotation')}</h3>
+              <ol class="space-y-2.5">
+                {guide.rotation.map((step, i) => {
+                  const sk = step.skill !== 'other' ? latest?.[step.skill] : null;
+                  return (
+                    <li class="flex gap-3 rounded-lg border border-line bg-cinder/50 p-2.5">
+                      <span class="grid size-7 shrink-0 place-items-center rounded-full bg-ember/20 text-xs font-black text-flame">{i + 1}</span>
+                      {sk?.img ? <img src={sk.img} alt="" loading="lazy" class="size-9 shrink-0 rounded-md bg-coal object-cover" /> : <span class="size-9 shrink-0" />}
+                      <span class="min-w-0 text-sm">
+                        {step.skill !== 'other' && <span class="block text-[11px] font-semibold tracking-wide text-smoke uppercase">{g(`ch.${step.skill}` as GameKey)}{sk?.name ? ` · ${sk.name}` : ''}</span>}
+                        <span class="text-dust">{guideText(step, lang)}</span>
+                      </span>
+                    </li>
+                  );
+                })}
+              </ol>
+            </>
+          )}
+          {guide.tips.length > 0 && (
+            <>
+              <h3 class="mt-5 mb-2 font-sans text-sm font-bold text-bone">{g('ch.howto.tips')}</h3>
+              <ul class="space-y-1.5 text-sm text-dust">
+                {guide.tips.map((tip) => <li class="flex gap-2"><span class="text-ember">◆</span><span>{guideText(tip, lang)}</span></li>)}
+              </ul>
+            </>
+          )}
+          {partners.length > 0 && (
+            <>
+              <h3 class="mt-5 mb-2 font-sans text-sm font-bold text-bone">{g('ch.howto.partners')}</h3>
+              <div class="flex flex-wrap gap-2">
+                {partners.map((p) => (
+                  <a href={localePath(lang, `/characters/${p.id}`)} class="flex items-center gap-2 rounded-full border border-line bg-coal py-1 pr-3 pl-1 text-xs text-bone transition hover:border-line-strong" style={`border-color:${ELEMENT_COLOR[p.element] ?? '#555'}66`}>
+                    {p.art && <img src={thumb(p.art, 320)} srcset={srcsetOf(p.art, 640)} sizes="32px" alt="" loading="lazy" class="size-7 rounded-full object-cover object-top" />}
+                    {p.name}<span class="text-smoke">{p.epithet ? ` · ${p.epithet}` : ''}</span>
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
+          {guide.generated && <p class="mt-4 text-[11px] text-smoke">{g('ch.howto.generated')}</p>}
+        </section>
+      )}
+
+      <!-- Habilidades -->
+      <section>
+        <h2 class="mb-5 text-2xl font-bold text-bone">{g('ch.skills')}</h2>
+        <KitViewer client:visible kits={kits} versions={versions} labels={labels} textLangNote={lang === 'en' ? null : g('ch.textlang')} />
+      </section>
+    </div>
 
     <!-- Lateral -->
     <aside class="space-y-6 lg:sticky lg:top-[calc(var(--nav-h)+24px)] lg:self-start">
