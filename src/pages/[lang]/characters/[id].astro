@@ -5,7 +5,7 @@ import KitViewer from '@/components/characters/KitViewer';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, kitVersions, resolveKit, srcsetOf, thumb, type Character, type KitVersion, type ResolvedKit } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
-import { guideOf, guideText } from '@/data/char-guides';
+import { KIT_SLOT, SKILL_LABEL, guideOf, guideText, type GuideStep } from '@/data/char-guides';
 import { LOCALES, LOCALE_META, localePath, useT, type Locale } from '@/i18n/utils';
 
 export function getStaticPaths() {
@@ -25,9 +25,18 @@ const el = ELEMENT_COLOR[c.element] ?? '#ff5a1f';
 
 const versions = kitVersions(c);
 const kits = Object.fromEntries(versions.map((v) => [v, resolveKit(c, v)])) as Partial<Record<KitVersion, ResolvedKit>>;
-// Cómo jugarlo (con el kit vigente: el último ajuste)
+// Cómo jugarlo: la rotación usa el kit vigente (último ajuste, sin desbloqueo SP ni estados);
+// el bloque SP, el kit con el desbloqueo SP
 const guide = guideOf(c.id);
-const latest = kits[versions.at(-1)!];
+const mainKit = kits[versions.filter((v) => v !== 'sp' && v !== 'altered').at(-1)!];
+const stepsOf = (list: GuideStep[], kit: ResolvedKit | undefined) =>
+  list.map((step) => {
+    const sk = step.skill in KIT_SLOT ? kit?.[KIT_SLOT[step.skill as keyof typeof KIT_SLOT]] : null;
+    const label = step.skill === 'other' ? null : g(SKILL_LABEL[step.skill]);
+    return { label, name: sk?.name ?? null, img: sk?.img ?? null, text: guideText(step, lang) };
+  });
+const rotation = guide ? stepsOf(guide.rotation, mainKit) : [];
+const spRotation = guide?.sp ? stepsOf(guide.sp.rotation, kits.sp ?? mainKit) : [];
 const partners = (guide?.partners ?? []).map((id) => CHARACTERS.find((x) => x.id === id)).filter((x): x is Character => !!x);
 
 const fmt = new Intl.NumberFormat(LOCALE_META[lang].htmlLang);
@@ -146,23 +155,20 @@ const jsonLd = {
         <section id="how-to-play" class="card scroll-mt-24 p-5 sm:p-6">
           <h2 class="text-2xl font-bold text-bone">{g('ch.howto')}</h2>
           {guide.summary && <p class="mt-2 max-w-3xl text-dust">{guideText(guide.summary, lang)}</p>}
-          {guide.rotation.length > 0 && (
+          {rotation.length > 0 && (
             <>
               <h3 class="mt-5 mb-3 font-sans text-sm font-bold text-bone">{g('ch.howto.rotation')}</h3>
               <ol class="space-y-2.5">
-                {guide.rotation.map((step, i) => {
-                  const sk = step.skill !== 'other' ? latest?.[step.skill] : null;
-                  return (
-                    <li class="flex gap-3 rounded-lg border border-line bg-cinder/50 p-2.5">
-                      <span class="grid size-7 shrink-0 place-items-center rounded-full bg-ember/20 text-xs font-black text-flame">{i + 1}</span>
-                      {sk?.img ? <img src={sk.img} alt="" loading="lazy" class="size-9 shrink-0 rounded-md bg-coal object-cover" /> : <span class="size-9 shrink-0" />}
-                      <span class="min-w-0 text-sm">
-                        {step.skill !== 'other' && <span class="block text-[11px] font-semibold tracking-wide text-smoke uppercase">{g(`ch.${step.skill}` as GameKey)}{sk?.name ? ` · ${sk.name}` : ''}</span>}
-                        <span class="text-dust">{guideText(step, lang)}</span>
-                      </span>
-                    </li>
-                  );
-                })}
+                {rotation.map((step, i) => (
+                  <li class="flex gap-3 rounded-lg border border-line bg-cinder/50 p-2.5">
+                    <span class="grid size-7 shrink-0 place-items-center rounded-full bg-ember/20 text-xs font-black text-flame">{i + 1}</span>
+                    {step.img ? <img src={step.img} alt="" loading="lazy" class="size-9 shrink-0 rounded-md bg-coal object-cover" /> : <span class="size-9 shrink-0" />}
+                    <span class="min-w-0 text-sm">
+                      {step.label && <span class="block text-[11px] font-semibold tracking-wide text-smoke uppercase">{step.label}{step.name ? ` · ${step.name}` : ''}</span>}
+                      <span class="text-dust">{step.text}</span>
+                    </span>
+                  </li>
+                ))}
               </ol>
             </>
           )}
@@ -173,6 +179,34 @@ const jsonLd = {
                 {guide.tips.map((tip) => <li class="flex gap-2"><span class="text-ember">◆</span><span>{guideText(tip, lang)}</span></li>)}
               </ul>
             </>
+          )}
+          {guide.sp && (
+            <div class="mt-6 rounded-xl border border-ember/30 bg-ember/[0.05] p-4">
+              <h3 class="flex items-center gap-2 font-sans text-sm font-bold text-bone">
+                <span class="rounded border border-ember/60 px-1.5 py-0.5 text-[10px] font-black tracking-wide text-ember">SP</span>
+                {g('ch.howto.sp')}
+              </h3>
+              {guide.sp.summary && <p class="mt-2 text-sm text-dust">{guideText(guide.sp.summary, lang)}</p>}
+              {spRotation.length > 0 && (
+                <ol class="mt-3 space-y-2.5">
+                  {spRotation.map((step, i) => (
+                    <li class="flex gap-3 rounded-lg border border-line bg-cinder/50 p-2.5">
+                      <span class="grid size-7 shrink-0 place-items-center rounded-full bg-ember/20 text-xs font-black text-flame">{i + 1}</span>
+                      {step.img ? <img src={step.img} alt="" loading="lazy" class="size-9 shrink-0 rounded-md bg-coal object-cover" /> : <span class="size-9 shrink-0" />}
+                      <span class="min-w-0 text-sm">
+                        {step.label && <span class="block text-[11px] font-semibold tracking-wide text-smoke uppercase">{step.label}{step.name ? ` · ${step.name}` : ''}</span>}
+                        <span class="text-dust">{step.text}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+              {guide.sp.tips.length > 0 && (
+                <ul class="mt-3 space-y-1.5 text-sm text-dust">
+                  {guide.sp.tips.map((tip) => <li class="flex gap-2"><span class="text-ember">◆</span><span>{guideText(tip, lang)}</span></li>)}
+                </ul>
+              )}
+            </div>
           )}
           {partners.length > 0 && (
             <>
@@ -187,7 +221,6 @@ const jsonLd = {
               </div>
             </>
           )}
-          {guide.generated && <p class="mt-4 text-[11px] text-smoke">{g('ch.howto.generated')}</p>}
         </section>
       )}
 
