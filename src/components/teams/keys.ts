@@ -25,4 +25,6 @@ export const BUILDER_KEYS = [
   'tb.fillAccount', 'tb.fillGeneral', 'tb.clear', 'tb.save', 'tb.name', 'tb.team', 'tb.saved',
   'tb.load', 'tb.delete', 'tb.analysis', 'tb.roles', 'tb.avg', 'tb.warn.sup', 'tb.warn.dup', 'tb.warn.resist', 'tb.remove',
   'tb.recs', 'tb.recs.desc', 'tb.copy.hint', 'tb.copy.where',
+  'tp.title', 'tp.desc', 'tp.turn', 'tp.turnplus', 'tp.special', 'tp.special.order', 'tp.combo', 'tp.sp', 'tp.noguide', 'tp.guide', 'tp.reorder',
+  'ch.normal', 'ch.s1', 'ch.s2', 'ch.ult', 'ch.combo',
 ] as const satisfies readonly GameKey[];

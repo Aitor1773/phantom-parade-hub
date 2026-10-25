@@ -15,7 +15,15 @@ export interface CharGuide {
   tips: Text[];
   partners: string[];
   /** Qué cambia tras el desbloqueo SP (SP解放) */
-  sp?: { summary?: Text; rotation: GuideStep[]; tips: Text[] };
+  sp?: { summary?: Text; rotation: GuideStep[]; tips: Text[]; priority?: SpPriority };
+}
+/** Las 2 casillas de desbloqueo SP y cuál conviene primero ('both': las dos; 'awakening': llega con los despertares) */
+export type SpSlot = 'skill1' | 'skill2' | 'skill3' | 'special' | 'auto';
+export interface SpPriority extends Text {
+  /** Valoración de 1 a 5 de la mejora SP, si la hay */
+  rating: number | null;
+  first: SpSlot | 'both' | 'awakening';
+  nodes: { slot: SpSlot; name: string }[];
 }
 
 const GUIDES = (file as unknown as { characters: Record<string, CharGuide> }).characters;
@@ -23,7 +31,7 @@ const GUIDES = (file as unknown as { characters: Record<string, CharGuide> }).ch
 /** Casilla del kit (datos de la wiki) que corresponde a cada habilidad del juego */
 export const KIT_SLOT = { skill1: 'normal', skill2: 's1', skill3: 's2', special: 'ult' } as const;
 /** Clave de texto de cada habilidad */
-export const SKILL_LABEL = { skill1: 'ch.normal', skill2: 'ch.s1', skill3: 'ch.s2', special: 'ch.ult', combo: 'ch.combo' } as const;
+export const SKILL_LABEL = { skill1: 'ch.normal', skill2: 'ch.s1', skill3: 'ch.s2', special: 'ch.ult', combo: 'ch.combo', auto: 'ch.passive' } as const;
 
 /** Guía de un personaje, o null si aún no la hay. */
 export const guideOf = (id: string): CharGuide | null => GUIDES[id] ?? null;

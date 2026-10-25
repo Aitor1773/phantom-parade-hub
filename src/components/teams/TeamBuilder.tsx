@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import { assignMemories, effectiveRank, recommendTeam, slotScore, type Account, type ElementKey, type Role, type Team, type TeamChar, type TeamSlot } from '@/lib/team-recs';
 import { Readiness, Recommendations } from './ContentTeams';
+import { TeamPlan } from './TeamPlan';
 import { AffinityPicker, CharPicker, CopyTeamButton, SlotCard, fill, roleOf, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
 
 const KEY = 'pp-teams';
@@ -66,6 +67,12 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   const setSlot = (i: number, id: string | null) => {
     setSlots((s) => s.map((x, j) => (j === i ? id : x)));
     setRoleSet((r) => r.map((x, j) => (j === i ? null : x)));
+  };
+  /** Coloca a los titulares de apoyo a la izquierda (actúan antes y sus mejoras llegan al ataque) */
+  const supportsFirst = () => {
+    const order = [0, 1, 2, 3].sort((a, b) => Number(builtSlots[a]?.as === 'dmg') - Number(builtSlots[b]?.as === 'dmg') || a - b);
+    setSlots((s) => [...order.map((i) => s[i]), ...s.slice(4)]);
+    setRoleSet((r) => [...order.map((i) => builtSlots[i]?.as ?? r[i]), ...r.slice(4)]);
   };
   /** Cambia el rol de un hueco entre daño y apoyo (si el personaje tiene rango en ambos) */
   const toggleRole = (i: number) => setRoleSet((r) => r.map((x, j) => (j === i ? ((builtSlots[i]?.as ?? 'sup') === 'dmg' ? 'sup' : 'dmg') : x)));
@@ -130,6 +137,7 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
             {warnings.map((w) => <p key={w} className="mt-1 text-flame">⚠ {w}</p>)}
           </div>
         )}
+        {mainSlots.length > 0 && <TeamPlan slots={mainSlots} account={account} labels={L} basePath={basePath} onReorder={supportsFirst} />}
         {allMine && account && best && main.length > 0 && (
           <Readiness mine={built} best={best} account={account as Account} memories={memories} labels={L} basePath={basePath} />
         )}

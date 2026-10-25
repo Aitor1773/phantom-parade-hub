@@ -37,6 +37,15 @@ const stepsOf = (list: GuideStep[], kit: ResolvedKit | undefined) =>
   });
 const rotation = guide ? stepsOf(guide.rotation, mainKit) : [];
 const spRotation = guide?.sp ? stepsOf(guide.sp.rotation, kits.sp ?? mainKit) : [];
+// Las 2 casillas de desbloqueo SP, con la recomendada (o las dos) marcada
+const spP = guide?.sp?.priority;
+const spPriority = spP && {
+  ...spP,
+  nodes: spP.nodes.map((node) => {
+    const sk = node.slot in KIT_SLOT ? (kits.sp ?? mainKit)?.[KIT_SLOT[node.slot as keyof typeof KIT_SLOT]] : null;
+    return { ...node, label: g(SKILL_LABEL[node.slot]), img: sk?.img ?? null, first: spP.first === 'both' || spP.first === node.slot };
+  }),
+};
 const partners = (guide?.partners ?? []).map((id) => CHARACTERS.find((x) => x.id === id)).filter((x): x is Character => !!x);
 
 const fmt = new Intl.NumberFormat(LOCALE_META[lang].htmlLang);
@@ -187,6 +196,35 @@ const jsonLd = {
                 {g('ch.howto.sp')}
               </h3>
               {guide.sp.summary && <p class="mt-2 text-sm text-dust">{guideText(guide.sp.summary, lang)}</p>}
+              {spPriority && (
+                <div class="mt-3 rounded-lg border border-line bg-coal/70 p-3">
+                  <p class="flex flex-wrap items-center justify-between gap-2 text-xs font-bold tracking-wide text-bone uppercase">
+                    {g('ch.howto.sp.priority')}
+                    {spPriority.rating && (
+                      <span class="font-semibold tracking-normal text-smoke normal-case" title={g('ch.howto.sp.rating')}>
+                        {g('ch.howto.sp.rating')} <span class="text-flame">{'★'.repeat(spPriority.rating)}</span><span class="text-line-strong">{'★'.repeat(5 - spPriority.rating)}</span>
+                      </span>
+                    )}
+                  </p>
+                  {spPriority.first === 'awakening' ? (
+                    <p class="mt-2 inline-block rounded-md border border-ember/40 px-2 py-0.5 text-[11px] font-bold text-ember">{g('ch.howto.sp.awaken')}</p>
+                  ) : (
+                    <ol class="mt-2 flex flex-wrap gap-2">
+                      {spPriority.nodes.map((node) => (
+                        <li class:list={['flex items-center gap-2 rounded-lg border px-2 py-1.5 text-xs', node.first ? 'border-ember/60 bg-ember/10 text-bone' : 'border-line text-dust']}>
+                          {node.img ? <img src={node.img} alt="" loading="lazy" class="size-7 rounded bg-coal object-cover" /> : null}
+                          <span>
+                            <span class="block text-[10px] font-semibold tracking-wide text-smoke uppercase">{node.label}</span>
+                            {node.name}
+                          </span>
+                          {node.first && <span class="rounded bg-ember px-1.5 py-0.5 text-[10px] font-black text-ash uppercase">{spPriority.first === 'both' ? g('ch.howto.sp.both') : g('ch.howto.sp.first')}</span>}
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                  <p class="mt-2 text-sm text-dust">{guideText(spPriority, lang)}</p>
+                </div>
+              )}
               {spRotation.length > 0 && (
                 <ol class="mt-3 space-y-2.5">
                   {spRotation.map((step, i) => (

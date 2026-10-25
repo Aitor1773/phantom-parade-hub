@@ -133,7 +133,23 @@
             "es": "La Habilidad 3 mejorada aumenta el daño de técnica roja recibido hasta un 25 % con 6 clavos, lo que beneficia a todo el equipo rojo.",
             "en": "Upgraded Skill 3 raises Red Jujutsu Damage Received by up to 25% at 6 nails, helping the whole red team."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "skill3",
+          "nodes": [
+            {
+              "slot": "skill3",
+              "name": "Straw Doll Technique \"Hairpin\""
+            },
+            {
+              "slot": "auto",
+              "name": "Zone"
+            }
+          ],
+          "es": "Primero la Habilidad 3 (Hairpin): más daño, debilitamiento de daño de técnica recibido y más carga de especial. Después, la pasiva Zone, que da +daño con Destello Negro y encaja con su especial de Destello Negro seguro.",
+          "en": "Skill 3 (Hairpin) first: more damage, a Jujutsu damage-taken debuff and more special charge. Then the Zone passive, which adds damage on Black Flash and fits her guaranteed-Black-Flash Special."
+        }
       }
     },
     "a-clever-bullet-mai-zenin": {
@@ -708,7 +724,23 @@
             "es": "El debilitamiento de la Habilidad 3 solo afecta a ataques azules: rodéalo de atacantes azules.",
             "en": "Skill 3's debuff only applies to blue attacks: surround him with blue attackers."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 5,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "skill2",
+              "name": "Flowing Red Scale"
+            },
+            {
+              "slot": "skill3",
+              "name": "Slicing Exorcism"
+            }
+          ],
+          "es": "Desbloquea las dos: lo convierten en uno de los mejores debilitadores azules. La Habilidad 3 pasa a ser un ataque a todos con debilitamiento de daño recibido por muy poca energía, y la Habilidad 2 activa Flowing Red Scale desde el inicio y lo potencia más.",
+          "en": "Unlock both: they make him one of the best blue debuffers. Skill 3 becomes an all-enemy attack with a damage-taken debuff for very little energy, and Skill 2 starts Flowing Red Scale at battle start and makes it stronger."
+        }
       }
     },
     "blood-of-the-big-three-families-noritoshi-kamo": {
@@ -1261,7 +1293,23 @@
             "es": "Desbloquea primero la pasiva SP: es la mejora que más daño añade.",
             "en": "Unlock the SP passive first: it is the upgrade that adds the most damage."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "auto",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Zone"
+            },
+            {
+              "slot": "skill3",
+              "name": "Triple Kick"
+            }
+          ],
+          "es": "Primero la pasiva Zone: con cada Destello Negro gana +100 % de cuerpo a cuerpo, +50 % de daño y 10 de energía. Después, la Habilidad 3. Con las dos es el mejor atacante verde de cuerpo a cuerpo.",
+          "en": "Zone passive first: every Black Flash grants +100% Taijutsu, +50% damage and 10 energy. Skill 3 after. With both he is the best green Taijutsu attacker."
+        }
       }
     },
     "cursed-energy-melody-yoshinobu-gakuganji": {
@@ -1546,7 +1594,23 @@
             "es": "Con el desbloqueo SP rinde mejor en equipos azules de cuerpo a cuerpo.",
             "en": "After the SP unlock he fits best in blue Taijutsu teams."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "skill1",
+              "name": "Combination"
+            },
+            {
+              "slot": "auto",
+              "name": "Critical Enhancement"
+            }
+          ],
+          "es": "Desbloquea las dos. La Habilidad 1 añade un aumento del daño de cuerpo a cuerpo recibido por el enemigo mientras dura su mejora de la Habilidad 2; la pasiva reparte +cuerpo a cuerpo al equipo y le da crítico y esquiva.",
+          "en": "Unlock both. Skill 1 adds a Taijutsu damage-taken debuff while his Skill 2 buff is up; the passive spreads Taijutsu buffs to the team and gives him crit and evasion."
+        }
       }
     },
     "determined-counter-kasumi-miwa": {
@@ -2043,7 +2107,23 @@
             "es": "Tras el SP también sirve como buffer de daño para un atacante azul principal, no solo como atacante.",
             "en": "After SP he also works as a damage buffer for a main blue attacker, not just as a damage dealer."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "skill2",
+              "name": "I Hate Overtime"
+            },
+            {
+              "slot": "skill3",
+              "name": "Let's Just Finish This Quickly"
+            }
+          ],
+          "es": "Desbloquea las dos. La Habilidad 3 da +daño a todos los azules y energía con Destello Negro; la Habilidad 2 refuerza esa mejora y su propio cuerpo a cuerpo y técnica. Juntas lo convierten en un atacante mixto de primera.",
+          "en": "Unlock both. Skill 3 gives all blue allies more damage and energy on Black Flash; Skill 2 boosts that buff and his own Taijutsu and Jujutsu. Together they make him a top hybrid attacker."
+        }
       }
     },
     "fulfilling-his-duty-as-the-older-brother-choso": {
@@ -2290,7 +2370,23 @@
             "es": "Usa la Habilidad 3 justo antes del especial para que la baja de resistencia a críticos lo potencie.",
             "en": "Use Skill 3 right before the Special so the crit-resistance debuff boosts it."
           }
-        ]
+        ],
+        "priority": {
+          "rating": null,
+          "first": "special",
+          "nodes": [
+            {
+              "slot": "special",
+              "name": "Straw Doll Technique \"Hairpin\""
+            },
+            {
+              "slot": "skill3",
+              "name": "Straw Doll Technique \"Resonance\""
+            }
+          ],
+          "es": "Primero el especial: su bonus por clavos sube hasta +550 %, el golpe pasa del 500 % al 550 % y deja +40 % de daño amarillo recibido. Es lo que más daño suma. Después, la Habilidad 3 (Resonance).",
+          "en": "Special first: her nail bonus rises to +550%, the hit goes from 500% to 550% and it leaves +40% yellow damage taken. It is the biggest damage gain. Then Skill 3 (Resonance)."
+        }
       }
     },
     "hearts-resolve-saki-rindo": {
@@ -2364,7 +2460,23 @@
             "es": "Con SP puede ocupar el hueco de defensora en el equipo verde mientras sigue haciendo mucho daño en la segunda mitad del combate.",
             "en": "With SP she can fill the defender slot in a green team while still dealing big damage in the second half of the fight."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Able-Bodied"
+            },
+            {
+              "slot": "skill2",
+              "name": "Don't Get Carried Away!"
+            }
+          ],
+          "es": "Desbloquea las dos. La pasiva le sube cuerpo a cuerpo y técnica cada vez que recibe un golpe (hasta +150 %) y la Habilidad 2 le da provocar: se vuelve una tanque que se hace más fuerte al recibir daño, ideal en los últimos pisos de la Torre ilusoria.",
+          "en": "Unlock both. The passive raises her Taijutsu and Jujutsu every time she is hit (up to +150%) and Skill 2 gives her a taunt: she becomes a tank who grows stronger as she takes damage, ideal for the late Illusory Tower floors."
+        }
       }
     },
     "hollow-purple-satoru-gojo": {
@@ -2609,7 +2721,23 @@
             "es": "Su protección pasa a activarse con aliados al 60 % de vida: atrae ataques, -60 % de daño recibido y +10 de energía, y se puede repetir cada 3 turnos.",
             "en": "His guard now triggers with allies at 60% HP: he draws attacks, takes 60% less damage and gains 10 energy, and it can recur every 3 turns."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 3,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Rapid Fire Attacks"
+            },
+            {
+              "slot": "auto",
+              "name": "Searching For A \"Righteous Death\""
+            }
+          ],
+          "es": "Las dos son pasivas y no gastan cristales del caos, así que son fáciles de desbloquear: hazlas las dos. Rapid Fire Attacks sube su mejora de cuerpo a cuerpo al 140 % y añade −30 % de daño enemigo; la otra le da provocar cuando un aliado está a punto de caer y resurrección.",
+          "en": "Both are passives and need no Chaos Crystals, so they are cheap: get both. Rapid Fire Attacks raises his Taijutsu buff to 140% and adds −30% enemy damage; the other makes him taunt when an ally is near death and grants a revive."
+        }
       }
     },
     "inherited-cursed-technique-megumi-fushiguro": {
@@ -2683,7 +2811,23 @@
             "es": "Con SP también gana +10 % de técnica al inicio y +15 % de daño de técnica durante 3 turnos cada vez que derrota a un enemigo.",
             "en": "With SP he also gains +10% Jujutsu at battle start and +15% Jujutsu damage for 3 turns each time he defeats an enemy."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 2,
+          "first": "auto",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "I'll Surpass You"
+            },
+            {
+              "slot": "special",
+              "name": "Divine Dog: Totality"
+            }
+          ],
+          "es": "Primero la pasiva: su bonus de daño en Break pasa del 80 % al 150 % y gana +10 % de técnica. El especial, después: más daño y el perro absorbe el 20 % del daño que recibe.",
+          "en": "Passive first: his Break damage bonus goes from 80% to 150% and he gains +10% Jujutsu. The Special after: more damage, and the dog absorbs 20% of the damage he takes."
+        }
       }
     },
     "innate-talent-maki-zenin": {
@@ -3026,7 +3170,23 @@
             "es": "Los recuerdos de probabilidad de crítico ganan mucho valor tras el desbloqueo SP.",
             "en": "Critical Hit Rate memories gain a lot of value after the SP unlock."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "auto",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Critical Enhancement"
+            },
+            {
+              "slot": "skill3",
+              "name": "Follow My Lead, Rika"
+            }
+          ],
+          "es": "Primero la pasiva de crítico: con Destello Negro la mejora de técnica de Zone pasa del 20 % al 60 % y recupera 5 de energía y 110 de barra de especial; además cura a los aliados una vez más. Después, la Habilidad 3.",
+          "en": "Crit passive first: on Black Flash the Zone Jujutsu buff goes from 20% to 60% and he regains 5 energy and 110 special gauge; it also heals allies one extra time. Skill 3 after."
+        }
       }
     },
     "life-saver-shoko-ieiri": {
@@ -3211,7 +3371,23 @@
             "es": "Prioriza desbloquear la mejora SP de la Habilidad 1.",
             "en": "Unlock the Skill 1 SP upgrade first."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 1,
+          "first": "skill1",
+          "nodes": [
+            {
+              "slot": "skill1",
+              "name": "Sweep"
+            },
+            {
+              "slot": "special",
+              "name": "Dancing Cloud"
+            }
+          ],
+          "es": "Primero la Habilidad 1: añade +30 % de cuerpo a cuerpo y +20 % de carga de especial, así dispara el especial más a menudo. El especial, después. Aun con SP no es prioritaria si tienes otros atacantes.",
+          "en": "Skill 1 first: it adds +30% Taijutsu and +20% special charge, so she fires her Special more often. The Special after. Even with SP she is low priority if you have other attackers."
+        }
       }
     },
     "maximum-cursed-energy-output-yuji-itadori": {
@@ -3342,7 +3518,14 @@
             "es": "La pasiva SP se pierde cuando abandona el combate, así que alargar «Urgent Business» gana aún más valor.",
             "en": "The SP passive is lost when he leaves, so extending Urgent Business becomes even more valuable."
           }
-        ]
+        ],
+        "priority": {
+          "rating": null,
+          "first": "awakening",
+          "nodes": [],
+          "es": "Su SP no se elige: llega con los despertares. Con 1 despertar el especial da 5 de energía por turno a los amarillos y rellena 220 de su barra (lo más importante); con 3 despertares gana la pasiva Extracurricular Activities (+30 % de cuerpo a cuerpo, técnica y daño amarillo desde el inicio).",
+          "en": "His SP is not chosen: it comes with awakenings. At 1 awakening his Special gives yellow allies 5 energy per turn and refills 220 of his own gauge (the key one); at 3 awakenings he gains the Extracurricular Activities passive (+30% Taijutsu, Jujutsu and yellow damage from the start)."
+        }
       }
     },
     "meteor-of-fierceness-jogo": {
@@ -3518,7 +3701,23 @@
             "es": "Con la mejora SP su pasiva de especial también puede darle -5 % de daño recibido durante 3 turnos (30 % de probabilidad).",
             "en": "With the SP upgrade his Special auto can also give him -5% damage taken for 3 turns (30% chance)."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 1,
+          "first": "skill2",
+          "nodes": [
+            {
+              "slot": "skill2",
+              "name": "I'll Take It!"
+            },
+            {
+              "slot": "auto",
+              "name": "Damage Taken Boost"
+            }
+          ],
+          "es": "Primero la Habilidad 2: añade provocar para atraer todos los ataques y hasta −20 % de daño recibido al resto del equipo. La pasiva sube de 7 a 12 los golpes recibidos que cuentan para su bonus de daño (hasta +120 %).",
+          "en": "Skill 2 first: it adds a taunt to draw every attack and up to −20% damage taken for the rest of the team. The passive raises the hits-taken cap for his damage bonus from 7 to 12 (up to +120%)."
+        }
       }
     },
     "night-lurking-sorcerer-toge-inumaki": {
@@ -3953,7 +4152,23 @@
             "es": "Con la mejora SP su pasiva da hasta +30 % de daño con 60 de energía al inicio del turno y un 15 % de esquiva: conviene no vaciar la energía fuera del dominio.",
             "en": "With the SP unlock his passive grants up to +30% damage at 60 energy at the start of the turn plus a 15% evasion chance: avoid draining his energy outside the Domain."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 2,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "The Essence of Curses"
+            },
+            {
+              "slot": "special",
+              "name": "Domain Expansion \"Coffin of the Iron Mountain\""
+            }
+          ],
+          "es": "Mejor las dos. La pasiva le da cada turno un bonus de daño según su energía y esquiva; el especial alarga el dominio a 5 turnos y lo potencia, que es la base de cómo se juega.",
+          "en": "Ideally both. The passive gives him a damage bonus every turn based on his energy, plus evasion; the Special extends his domain to 5 turns and strengthens it, which is the core of how he plays."
+        }
       }
     },
     "promising-new-student-kento-nanami": {
@@ -4188,7 +4403,23 @@
             "es": "El debilitamiento del especial SP beneficia a atacantes verdes de cuerpo a cuerpo como Yuji (Cursed Energy Flashes Black).",
             "en": "The SP Special's debuff benefits green Taijutsu attackers like Yuji (Cursed Energy Flashes Black)."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 3,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Critical Enhancement"
+            },
+            {
+              "slot": "special",
+              "name": "Ratio Technique \"Collapse\""
+            }
+          ],
+          "es": "Mejor las dos. La pasiva sube del 50 % al 80 % la probabilidad de su mejora al hacer crítico o Destello Negro y la alarga; el especial gana daño y aplica aumento de daño de cuerpo a cuerpo recibido. Si eliges una, la pasiva.",
+          "en": "Ideally both. The passive raises the chance of his buff on crit or Black Flash from 50% to 80% and extends it; the Special gains damage and applies a Taijutsu damage-taken debuff. If you pick one, take the passive."
+        }
       }
     },
     "reckless-grade-1-aoi-todo": {
@@ -4576,7 +4807,14 @@
             "es": "La carga de especial extra de la nueva auto también llega al aliado de delante: pon ahí a otro personaje que dependa de su especial.",
             "en": "The new auto's extra Special charging also reaches the ally in front: put another Special-reliant character there."
           }
-        ]
+        ],
+        "priority": {
+          "rating": null,
+          "first": "awakening",
+          "nodes": [],
+          "es": "Su SP no se elige: llega con los despertares. Con 1 despertar el especial rellena 220 de barra y 15 de energía (lo más importante); con 3 despertares gana una pasiva de crítico.",
+          "en": "His SP is not chosen: it comes with awakenings. At 1 awakening his Special refills 220 gauge and 15 energy (the key one); at 3 awakenings he gains a crit passive."
+        }
       }
     },
     "sprinting-kasumi-miwa": {
@@ -4660,7 +4898,23 @@
             "es": "Tras el SP rinde mejor en equipos verdes, donde sus buffs llegan a todos.",
             "en": "After SP she is best in green teams, where her buffs reach everyone."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 5,
+          "first": "auto",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Batto Sword Drawing"
+            },
+            {
+              "slot": "special",
+              "name": "Full Power Triple Slash"
+            }
+          ],
+          "es": "Una de las mejores mejoras SP del juego. Primero la pasiva: la convierte en potenciadora que reparte +40 % de cuerpo a cuerpo y técnica y crítico mientras ataca. Después, el especial (sube a 1500 %).",
+          "en": "One of the best SP upgrades in the game. Passive first: it turns her into a buffer who hands out +40% Taijutsu and Jujutsu plus crit while attacking. Then the Special (up to 1500%)."
+        }
       }
     },
     "step-back-third-rate-uraume": {
@@ -4894,7 +5148,23 @@
             "es": "Con el SP ya no necesitas un recuerdo que atraiga ataques: puedes usar ese hueco para un recuerdo de daño.",
             "en": "With the SP you no longer need a taunt memory: use that slot for a damage memory."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 3,
+          "first": "skill2",
+          "nodes": [
+            {
+              "slot": "skill2",
+              "name": "Ultra Shield"
+            },
+            {
+              "slot": "special",
+              "name": "Ultra Spin & Ultra Cannon"
+            }
+          ],
+          "es": "Primero la Habilidad 2: añade +50 % de cuerpo a cuerpo y técnica, provocar, y su contraataque aplica hasta +100 % de daño recibido. El especial, después: más daño y más Break.",
+          "en": "Skill 2 first: it adds +50% Taijutsu and Jujutsu and a taunt, and his counter applies up to +100% damage taken. The Special after: more damage and more Break."
+        }
       }
     },
     "take-the-shortest-way-panda": {
@@ -5481,7 +5751,23 @@
             "es": "Lanza la Habilidad 3 justo antes del especial para que la debilidad azul lo potencie.",
             "en": "Cast Skill 3 right before the Special so the blue debuff boosts it."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 5,
+          "first": "skill3",
+          "nodes": [
+            {
+              "slot": "skill3",
+              "name": "Cursed Spirit Manipulation (2)"
+            },
+            {
+              "slot": "special",
+              "name": "Cursed Spirit Manipulation, Maximum: Uzumaki"
+            }
+          ],
+          "es": "Muy recomendable. Primero la Habilidad 3: por 20 de energía aplica a todos los enemigos un aumento de daño recibido de hasta +195 %, y como recupera 20 de energía por turno puedes repetirla sin parar. El especial, después.",
+          "en": "Highly recommended. Skill 3 first: for 20 energy it gives every enemy up to +195% damage taken, and since he regains 20 energy per turn you can repeat it nonstop. The Special comes after."
+        }
       }
     },
     "to-protect-non-sorcerers-suguru-geto": {
@@ -6023,7 +6309,23 @@
             "es": "Con más cargas puedes gastar varias en Habilidades 1 y 3 sin bajar del máximo de bonificación.",
             "en": "With more charges you can spend several on Skills 1 and 3 without dropping below the max bonus."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 2,
+          "first": "auto",
+          "nodes": [
+            {
+              "slot": "auto",
+              "name": "Takada-chan's Guidance (passive)"
+            },
+            {
+              "slot": "skill2",
+              "name": "Takada-chan's Guidance"
+            }
+          ],
+          "es": "Primero la pasiva: resurrección y, al empezar cada turno, +cuerpo a cuerpo y +daño crítico según los usos de Takada-chan que le queden. Después la Habilidad 2: esquiva y pasa de 4 a 6 usos de Takada-chan.",
+          "en": "Passive first: a revive and, every turn, +Taijutsu and +crit damage based on the Takada-chan charges left. Then Skill 2: evasion, and Takada-chan charges go from 4 to 6."
+        }
       }
     },
     "with-that-will-in-mind-kaito-yuki": {
@@ -6258,7 +6560,23 @@
             "es": "Coloca detrás de él al aliado más vulnerable al aturdimiento para aprovechar la nueva inmunidad.",
             "en": "Place the ally most vulnerable to stun right behind him to make use of the new immunity."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 4,
+          "first": "skill2",
+          "nodes": [
+            {
+              "slot": "skill2",
+              "name": "\"Moon Dregs\""
+            },
+            {
+              "slot": "skill3",
+              "name": "Poison Stab"
+            }
+          ],
+          "es": "Primero la Habilidad 2 (Moon Dregs): da a todo el equipo hasta −40 % de daño recibido y +45 % de cuerpo a cuerpo y técnica, e inmunidad al aturdimiento al aliado de detrás. Después la Habilidad 3, que aplica hasta +100 % de daño recibido.",
+          "en": "Skill 2 (Moon Dregs) first: the whole team gets up to −40% damage taken and +45% Taijutsu and Jujutsu, and the ally behind him gets stun immunity. Then Skill 3, which applies up to +100% damage taken."
+        }
       }
     },
     "zanshin-kasumi-miwa": {
@@ -6333,7 +6651,23 @@
             "es": "Tras el SP su pasiva mejora (-25 % de daño de Taijutsu recibido, +80 % de ruptura y daño crítico según cargas): úsala como buffer en equipos azules.",
             "en": "After SP her auto improves (-25% Taijutsu damage taken, +80% break and crit damage by count): use her as a buffer in blue teams."
           }
-        ]
+        ],
+        "priority": {
+          "rating": 5,
+          "first": "both",
+          "nodes": [
+            {
+              "slot": "skill3",
+              "name": "Sword Sheath"
+            },
+            {
+              "slot": "special",
+              "name": "Flash"
+            }
+          ],
+          "es": "Imprescindible: desbloquea las dos. Si solo puedes una, empieza por la Habilidad 3: da +50 % de cuerpo a cuerpo y técnica a todo el equipo y la convierte en potenciadora; el especial pasa a ser un ataque en área muy fuerte.",
+          "en": "Must-have: unlock both. If you can only afford one, start with Skill 3: it gives the whole team +50% Taijutsu and Jujutsu and turns her into a buffer; the Special becomes a very strong AoE hit."
+        }
       }
     },
     "zone-yuji-itadori": {
