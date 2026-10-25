@@ -2,7 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import BannerCard from '@/components/banners/BannerCard.astro';
-import { GLOBAL_BANNERS, GLOBAL_LAG, JP_BANNERS, JP_TIMELINE_META, type Banner } from '@/data/banners';
+import { GLOBAL_BANNERS, GLOBAL_LAG, JP_BANNERS, JP_TIMELINE_META, globalEstimate, type Banner } from '@/data/banners';
 import { useG } from '@/i18n/game';
 import { LOCALE_META, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
@@ -26,6 +26,19 @@ const split = (list: Banner[]) => {
 };
 const gl = split(GLOBAL_BANNERS);
 const jp = split(JP_BANNERS);
+
+// Lo que viene a Global según el retraso observado con JP (estimado; un banner por personaje)
+const seen = new Set<string>();
+const glNext = JP_BANNERS.map((b) => ({ b, est: globalEstimate(b, NOW) }))
+  .filter((x): x is { b: Banner; est: { from: string; to: string } } => !!x.est && +new Date(x.est.to) > NOW)
+  .sort((x, y) => x.est.from.localeCompare(y.est.from))
+  .filter(({ b }) => {
+    const fresh = b.characters.some((id) => !seen.has(id));
+    b.characters.forEach((id) => seen.add(id));
+    return fresh;
+  })
+  .slice(0, 6)
+  .map((x) => x.b);
 
 // Historial JP agrupado por mes
 const monthFmt = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { month: 'long', year: 'numeric', timeZone: 'Asia/Tokyo' });
@@ -58,7 +71,7 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
 
       <h2 class="mb-4 text-2xl font-bold text-bone">{g('bn.now')}</h2>
       {gl.now.length ? (
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{gl.now.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-list="now">{gl.now.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
       ) : (
         <div class="card flex items-start gap-3 p-5 text-sm text-dust">
           <Icon name="calendar" size={20} class="mt-0.5 shrink-0 text-flame" />
@@ -71,12 +84,20 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
       {gl.upcoming.length > 0 && (
         <>
           <h2 class="mt-12 mb-4 text-2xl font-bold text-bone">{g('bn.upcoming')}</h2>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{gl.upcoming.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-list="upcoming">{gl.upcoming.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
+        </>
+      )}
+
+      {glNext.length > 0 && (
+        <>
+          <h2 class="mt-12 mb-1 text-2xl font-bold text-bone">{g('bn.globalnext')}</h2>
+          {GLOBAL_LAG && <p class="mb-4 max-w-2xl text-xs text-smoke">{g('bn.est.help', { min: GLOBAL_LAG.min, max: GLOBAL_LAG.max })}</p>}
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{glNext.map((b) => <BannerCard banner={b} lang={lang} forecast />)}</div>
         </>
       )}
 
       <h2 class="mt-12 mb-4 text-2xl font-bold text-bone">{g('bn.past')}</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{gl.past.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-list="past">{gl.past.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
     </section>
 
     <!-- ── JP ── -->
@@ -91,12 +112,12 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
       </p>
 
       <h2 class="mb-4 text-2xl font-bold text-bone">{g('bn.now')}</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{jp.now.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-list="now">{jp.now.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
 
       {jp.upcoming.length > 0 && (
         <>
           <h2 class="mt-12 mb-4 text-2xl font-bold text-bone">{g('bn.upcoming')}</h2>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{jp.upcoming.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-list="upcoming">{jp.upcoming.map((b) => <BannerCard banner={b} lang={lang} />)}</div>
         </>
       )}
 
@@ -174,6 +195,13 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
         cd.textContent = end ? cd.dataset.lEnded! : '';
         badge.textContent = '';
         card.classList.add('opacity-60');
+        // La página se genera una vez al día: lo que ha terminado desde entonces baja a «Anteriores»
+        const list = card.parentElement!;
+        if (list.dataset.list === 'now' || list.dataset.list === 'upcoming') {
+          const past = list.closest('[data-server-view]')!.querySelector<HTMLElement>('[data-list="past"]');
+          if (past) past.prepend(card);
+          else list.append(card);
+        }
       }
     }
   };

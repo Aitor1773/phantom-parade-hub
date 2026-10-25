@@ -9,12 +9,16 @@ interface Props {
   banner: Banner;
   lang: Locale;
   compact?: boolean;
+  /** Vista Global de un banner JP que aún no ha llegado: solo la ventana estimada, sin estado ni cuenta atrás de JP */
+  forecast?: boolean;
 }
 
-const { banner: b, lang, compact = false } = Astro.props;
+const { banner: b, lang, compact = false, forecast = false } = Astro.props;
 const g = useG(lang);
 const chars = b.characters.map(getCharacter).filter((c): c is NonNullable<typeof c> => !!c);
 const art = chars.length ? null : bannerArt(b);
+// Si una imagen no carga (red o caché), se cambia por la ilustración oficial del juego
+const FALLBACK_JS = `this.onerror=null;this.removeAttribute('srcset');this.src='${BANNER_FALLBACK.src}'`;
 // Fecha en horario del juego (UTC+9) para el HTML; el script la pasa a la zona del usuario
 const fmt = (iso: string) =>
   new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'medium', timeStyle: b.approx ? undefined : 'short', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
@@ -47,7 +51,7 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
       <span class="hidden shrink-0 -space-x-2 sm:flex">
         {chars.slice(0, 3).map((c) => (
           <a href={localePath(lang, `/characters/${c.id}`)} title={c.name} class="block size-7 overflow-hidden rounded-full border-2 border-ash bg-cinder">
-            {c.art && <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="96px" alt="" loading="lazy" decoding="async" class="size-full object-cover object-top" />}
+            {c.art && <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="96px" alt="" loading="lazy" decoding="async" onerror={FALLBACK_JS} class="size-full object-cover object-top" />}
           </a>
         ))}
       </span>
@@ -55,18 +59,18 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
     <time class="local-date shrink-0 text-xs text-smoke tabular-nums" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>
   </li>
 ) : (
-  <article class="banner group card overflow-hidden" data-banner data-kind={b.kind} data-start={b.start} data-end={b.end ?? ''} data-permanent={b.permanent ? '1' : undefined} data-start-unknown={b.startUnknown ? '1' : undefined}>
+  <article class="banner group card overflow-hidden" data-banner={forecast ? undefined : true} data-kind={b.kind} data-start={b.start} data-end={b.end ?? ''} data-permanent={b.permanent ? '1' : undefined} data-start-unknown={b.startUnknown ? '1' : undefined}>
     <div class="relative flex h-40 overflow-hidden bg-gradient-to-br from-blood/40 via-coal to-coal">
       {chars.length > 0 ? (
         chars.slice(0, 3).map((c) => (
           <a href={localePath(lang, `/characters/${c.id}`)} class="relative min-w-0 flex-1 overflow-hidden" title={c.name}>
-            {c.art && <img src={thumb(c.art, 640)} srcset={srcsetOf(c.art)} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" alt={c.name} loading="lazy" decoding="async" class="h-full w-full object-cover object-[50%_20%] transition duration-500 group-hover:scale-105" />}
+            {c.art && <img src={thumb(c.art, 640)} srcset={srcsetOf(c.art)} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" alt={c.name} loading="lazy" decoding="async" onerror={FALLBACK_JS} class="h-full w-full object-cover object-[50%_20%] transition duration-500 group-hover:scale-105" />}
           </a>
         ))
       ) : (
         // Sin personajes: imagen oficial del banner o, si no hay, la ilustración oficial del juego
         <img src={(art ?? BANNER_FALLBACK).src} srcset={(art ?? BANNER_FALLBACK).srcset} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
-          alt="" loading="lazy" decoding="async"
+          alt="" loading="lazy" decoding="async" onerror={FALLBACK_JS}
           class:list={['h-full w-full object-cover transition duration-500 group-hover:scale-105', art ? 'object-center' : 'object-[70%_30%] opacity-70']} />
       )}
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-coal via-coal/10 to-transparent"></div>
@@ -81,6 +85,9 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
           {chars.map((c) => `${b.epithetsGlobal?.[c.id] ?? c.epithet ?? ''} ${c.name}`.trim()).join(' · ')}
         </p>
       )}
+      {forecast ? (
+        <p class="mt-3 text-xs text-smoke">JP · <time class="local-date" datetime={b.start} data-approx="1">{dayFmt(b.start)}</time></p>
+      ) : (<>
       <p class="mt-3 flex flex-wrap items-center gap-x-2 text-xs text-dust">
         {b.startUnknown ? <span class="text-smoke">{g('bn.startunknown')}</span> : <time class="local-date" datetime={b.start} data-approx={b.approx ? '1' : ''}>{fmt(b.start)}</time>}
         {b.permanent && <span class="text-smoke">· {g('bn.permanent')}</span>}
@@ -89,6 +96,7 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
       </p>
       <p class="countdown mt-2 text-sm font-semibold text-bone tabular-nums empty:hidden" data-l-now={g('bn.now')} data-l-ends={g('bn.ends')} data-l-starts={g('bn.starts')} data-l-ended={g('bn.ended')} data-l-days={g('bn.days')}></p>
       {b.approx && !b.startUnknown && <p class="mt-1 text-[11px] text-smoke">{g('bn.approx')}</p>}
+      </>)}
       {confirmed && (
         <p class="mt-3 rounded-lg border border-[#3fb27f]/40 bg-[#3fb27f]/10 px-3 py-2 text-xs text-[#5fd39b]">
           ✓ {g('bn.inglobal')} · {confirmed.startUnknown && confirmed.end ? <>{g('bn.until')} <time class="local-date" datetime={confirmed.end} data-approx="1">{dayFmt(confirmed.end)}</time></> : <time class="local-date" datetime={confirmed.start} data-approx="1">{dayFmt(confirmed.start)}</time>}
@@ -103,7 +111,7 @@ const dayFmt = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLa
           <p class="mt-1 text-sm font-semibold text-bone">
             <time class="local-date" datetime={estimate.from} data-approx="1">{dayFmt(estimate.from)}</time> – <time class="local-date" datetime={estimate.to} data-approx="1">{dayFmt(estimate.to)}</time>
           </p>
-          <p class="mt-1 text-[11px] leading-snug text-smoke">{estHelp}</p>
+          {!forecast && <p class="mt-1 text-[11px] leading-snug text-smoke">{estHelp}</p>}
         </div>
       )}
       {b.notes && <p class="mt-2 text-xs text-smoke">{b.notes}</p>}

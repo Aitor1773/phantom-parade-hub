@@ -49,7 +49,6 @@ export const NAV: NavEntry[] = [
     icon: 'cube',
     items: [
       { id: 'pulls', path: '/tools/pulls', label: 'nav.pulls', desc: 'nav.pulls.desc', icon: 'target', phase: 2 },
-      { id: 'simulator', path: '/tools/simulator', label: 'nav.simulator', desc: 'nav.simulator.desc', icon: 'sparkles', phase: 2 },
       { id: 'codes', path: '/codes', label: 'nav.codes', desc: 'nav.codes.desc', icon: 'gift', phase: 1 },
     ],
   },

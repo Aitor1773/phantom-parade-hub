@@ -6,7 +6,7 @@ import { CHARACTERS } from '@/data/characters';
 import { GLOBAL_BANNERS, characterGlobalEstimate } from '@/data/banners';
 import { GACHA } from '@/data/gacha';
 import { gameDict, type GameKey } from '@/i18n/game';
-import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+import { LOCALE_META, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
 export const getStaticPaths = staticLocalePaths;
 
@@ -43,7 +43,7 @@ const gacha = {
     <header class="mb-8">
       <p class="eyebrow flex items-center gap-1.5"><Icon name="target" size={13} /> {t('nav.tools')}</p>
       <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.pulls')}</h1>
-      <p class="mt-3 max-w-2xl text-dust">{t('nav.pulls.desc')}. <a href={localePath(lang, '/tools/simulator')} class="text-flame underline underline-offset-2">{t('nav.simulator')}</a></p>
+      <p class="mt-3 max-w-2xl text-dust">{t('nav.pulls.desc')}</p>
     </header>
     <PullPlanner client:only="react" gacha={gacha} targets={[...globalTargets, ...estimateTargets]} labels={labels} locale={LOCALE_META[lang].htmlLang} />
   </div>
