@@ -8,7 +8,7 @@ import { LOCALES, localePath, useT, type Locale } from '@/i18n/utils';
 
 export function getStaticPaths() {
   // Secciones que ya tienen página propia (no generan "próximamente")
-  const BUILT = new Set(['/characters', '/memories', '/banners', '/codes', '/account', '/tier-list', '/tools/pulls', '/tools/tier-maker', '/tools/collection', '/teams', '/team-builder']);
+  const BUILT = new Set(['/characters', '/memories', '/banners', '/codes', '/account', '/tier-list', '/tools/pulls', '/tools/tier-maker', '/tools/collection', '/guides/beginner', '/teams', '/team-builder']);
   return LOCALES.flatMap((lang) =>
     ALL_LINKS.filter((link) => !BUILT.has(link.path)).map((link) => ({
       params: { lang, section: link.path.slice(1) },

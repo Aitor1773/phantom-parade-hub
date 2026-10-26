@@ -1,0 +1,109 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
+import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
+import { tierCharacter, tierOf } from '@/data/gacha';
+import { GLOBAL_BANNERS, GLOBAL_LAG } from '@/data/banners';
+import { FAQ, INTRO, LABELS, REROLL, SECTIONS, txt } from '@/data/beginner-guide';
+import { useG, type GameKey } from '@/i18n/game';
+import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const g = useG(lang);
+
+// Objetivos de reroll: SSR no limitados que ya están en Global (en un banner Global o salidos en JP
+// hace más que el retraso máximo observado), por la puntuación de nuestra tier list
+const NOW = Date.now();
+const inGlobal = (c: (typeof CHARACTERS)[number]) =>
+  GLOBAL_BANNERS.some((b) => b.characters.includes(c.id)) ||
+  (!!c.releaseDateJP && !!GLOBAL_LAG && +new Date(`${c.releaseDateJP}T15:00:00+09:00`) + GLOBAL_LAG.max * 864e5 < NOW);
+const targets = CHARACTERS.filter((c) => c.rarity === 'SSR' && !['limited', 'collab', 'event', 'f2p'].includes(c.availability ?? '') && inGlobal(c))
+  .map((c) => ({ c, score: tierCharacter(c.id)?.score ?? 0, rank: tierOf(c.id, c.element).rank }))
+  .filter((x) => x.rank === 'S' || x.rank === 'A')
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 8);
+
+const all = [REROLL, ...SECTIONS];
+const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long' }).format(new Date());
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ.map((f) => ({ '@type': 'Question', name: txt(f.q, lang), acceptedAnswer: { '@type': 'Answer', text: txt(f.a, lang) } })),
+};
+---
+
+<BaseLayout lang={lang} title={t('nav.beginner')} description={txt(INTRO, lang)}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd)} />
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 pt-12 pb-8 lg:grid-cols-[minmax(0,1fr)_260px] lg:px-6">
+    <article class="min-w-0">
+      <header class="mb-8">
+        <p class="eyebrow flex items-center gap-1.5"><Icon name="book" size={13} /> {t('nav.guides')}</p>
+        <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.beginner')}</h1>
+        <p class="mt-3 max-w-2xl text-dust">{txt(INTRO, lang)}</p>
+        <p class="mt-2 text-xs text-smoke">{txt(LABELS.updated, lang)}: {updated}</p>
+      </header>
+
+      {all.map((s) => (
+        <section id={s.id} class="mb-10 scroll-mt-24">
+          <h2 class="mb-3 text-2xl font-bold text-bone">{txt(s.title, lang)}</h2>
+          <div class="max-w-3xl space-y-3 text-dust">{s.body.map((p) => <p>{txt(p, lang)}</p>)}</div>
+          {s.id === 'reroll' && targets.length > 0 && (
+            <div class="mt-6">
+              <h3 class="font-sans text-lg font-bold text-bone">{txt(LABELS.targets, lang)}</h3>
+              <p class="mt-1 mb-3 max-w-3xl text-xs text-smoke">{txt(LABELS.targetsNote, lang)}</p>
+              <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {targets.map(({ c, rank }) => (
+                  <a href={localePath(lang, `/characters/${c.id}`)} class="card-hover group overflow-hidden" style={`border-color:${ELEMENT_COLOR[c.element]}55`}>
+                    <span class="relative block aspect-square overflow-hidden bg-cinder">
+                      {c.art && <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="200px" alt={c.name} loading="lazy" class="size-full object-cover object-top transition group-hover:scale-105" />}
+                      <span class="absolute top-1.5 left-1.5 rounded bg-ember px-1.5 text-xs font-black text-ash">{rank}</span>
+                    </span>
+                    <span class="block p-2">
+                      <span class="block truncate text-sm font-semibold text-bone">{c.name}</span>
+                      <span class="block truncate text-[11px] text-smoke">{c.epithet}</span>
+                      <span class="mt-0.5 flex items-center gap-1 text-[11px] text-dust">
+                        <span class="size-2 rounded-full" style={`background:${ELEMENT_COLOR[c.element]}`} />
+                        {g(`el.${c.element}` as GameKey)}{c.role ? ` · ${g(`role.${c.role}` as GameKey)}` : ''}
+                      </span>
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+          {s.links && (
+            <div class="mt-4 flex flex-wrap gap-2">
+              {s.links.map((l) => <a href={localePath(lang, l.path)} class="btn-secondary h-8 px-3 text-xs">{txt(l.label, lang)} →</a>)}
+            </div>
+          )}
+        </section>
+      ))}
+
+      <section id="faq" class="mb-10 scroll-mt-24">
+        <h2 class="mb-3 text-2xl font-bold text-bone">{txt(LABELS.faq, lang)}</h2>
+        <div class="max-w-3xl space-y-2">
+          {FAQ.map((f) => (
+            <details class="card group px-4 py-3">
+              <summary class="cursor-pointer list-none font-semibold text-bone">{txt(f.q, lang)}</summary>
+              <p class="mt-2 text-sm text-dust">{txt(f.a, lang)}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    </article>
+
+    <aside class="lg:sticky lg:top-[calc(var(--nav-h)+24px)] lg:self-start">
+      <nav class="card p-4 text-sm" aria-label={txt(LABELS.toc, lang)}>
+        <p class="mb-2 text-xs font-bold tracking-wide text-smoke uppercase">{txt(LABELS.toc, lang)}</p>
+        <ol class="space-y-1.5">
+          {all.map((s) => <li><a href={`#${s.id}`} class="text-dust hover:text-flame">{txt(s.title, lang)}</a></li>)}
+          <li><a href="#faq" class="text-dust hover:text-flame">{txt(LABELS.faq, lang)}</a></li>
+        </ol>
+      </nav>
+    </aside>
+  </div>
+</BaseLayout>
