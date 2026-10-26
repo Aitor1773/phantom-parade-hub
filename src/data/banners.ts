@@ -173,3 +173,18 @@ function windowFrom(base: number, now: number) {
   if (to < now - 30 * 864e5) return null; // ya debería estar en Global: no se estima
   return { from: new Date(from).toISOString(), to: new Date(to).toISOString() };
 }
+
+/** Gachas de JP que deberían llegar pronto a Global (estimado), del más cercano al más lejano; uno por personaje. */
+export function globalUpcoming(now = Date.now(), limit = 6): Banner[] {
+  const seen = new Set<string>();
+  return JP_BANNERS.map((b) => ({ b, est: globalEstimate(b, now) }))
+    .filter((x): x is { b: Banner; est: { from: string; to: string } } => !!x.est && +new Date(x.est.to) > now)
+    .sort((x, y) => x.est.from.localeCompare(y.est.from))
+    .filter(({ b }) => {
+      const fresh = b.characters.some((id) => !seen.has(id));
+      b.characters.forEach((id) => seen.add(id));
+      return fresh;
+    })
+    .slice(0, limit)
+    .map((x) => x.b);
+}

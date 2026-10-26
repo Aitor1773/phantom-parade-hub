@@ -1,0 +1,102 @@
+---
+// Portada · «Ahora mismo»: banners Global activos con cuenta atrás, códigos activos para copiar
+// y lo próximo que llega a Global (estimado). Se genera a diario; el script ajusta las cuentas atrás.
+import codesFile from '../../../data/normalized/codes.json';
+import { GLOBAL_BANNERS, globalUpcoming, globalEstimate } from '@/data/banners';
+import { getCharacter, thumb } from '@/data/characters';
+import { useG } from '@/i18n/game';
+import { LOCALE_META, localePath, type Locale } from '@/i18n/utils';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const g = useG(lang);
+const NOW = Date.now();
+
+const active = GLOBAL_BANNERS.filter((b) => +new Date(b.start) <= NOW && (b.permanent || (b.end ? +new Date(b.end) > NOW : false))).slice(0, 4);
+const codes = (codesFile.codes as { code: string; reward: string | null; status: string }[]).filter((c) => ['tested', 'verified', 'single'].includes(c.status));
+const next = globalUpcoming(NOW, 3);
+const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { day: 'numeric', month: 'short', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+const avatars = (ids: string[]) => ids.map(getCharacter).filter((c): c is NonNullable<typeof c> => !!c).slice(0, 3);
+---
+
+<section class="mx-auto mt-16 max-w-7xl px-4 lg:px-6">
+  <h2 class="text-2xl font-bold text-bone sm:text-3xl">{g('hm.now')}</h2>
+  <div class="mt-6 grid gap-4 lg:grid-cols-3">
+    <!-- Banners Global activos -->
+    <div class="card p-5">
+      <p class="flex items-center justify-between text-sm font-bold text-bone">{g('hm.banners')} <a href={localePath(lang, '/banners')} class="text-xs font-normal text-flame">{g('hm.all')} →</a></p>
+      <ul class="mt-3 space-y-2.5">
+        {active.map((b) => (
+          <li class="flex items-center gap-2.5">
+            <span class="flex shrink-0 -space-x-2">
+              {avatars(b.characters).map((c) => c.art && <img src={thumb(c.art, 320)} alt="" loading="lazy" class="size-8 rounded-full border-2 border-coal object-cover object-top" />)}
+            </span>
+            <span class="min-w-0 flex-1">
+              <span class="block truncate text-sm text-bone">{b.name}</span>
+              <span class="block text-xs text-smoke" data-ends={b.permanent ? '' : b.end} data-tpl={g('hm.ends')}>{b.permanent ? g('hm.permanent') : ''}</span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- Códigos activos -->
+    <div class="card p-5">
+      <p class="flex items-center justify-between text-sm font-bold text-bone">{g('hm.codes')} <span class="text-xs font-normal text-smoke">{codes.length}</span></p>
+      <ul class="mt-3 space-y-1.5">
+        {codes.slice(0, 5).map((c) => (
+          <li class="flex items-center gap-2 rounded-lg border border-line bg-coal/60 px-2.5 py-1.5">
+            <code class="min-w-0 flex-1 truncate font-mono text-sm font-bold text-flame">{c.code}</code>
+            {c.reward && <span class="hidden truncate text-xs text-dust sm:inline">{c.reward}</span>}
+            <button type="button" class="copy-code rounded-md border border-line px-2 py-0.5 text-[11px] text-dust hover:text-bone" data-code={c.code} data-done="✓">{g('hm.copy')}</button>
+          </li>
+        ))}
+      </ul>
+      <a href={localePath(lang, '/codes')} class="mt-3 inline-block text-xs text-flame">{g('hm.all')} →</a>
+    </div>
+
+    <!-- Próximamente en Global -->
+    <div class="card p-5">
+      <p class="flex items-center justify-between text-sm font-bold text-bone">{g('hm.next')} <a href={localePath(lang, '/banners')} class="text-xs font-normal text-flame">{g('hm.all')} →</a></p>
+      <ul class="mt-3 space-y-2.5">
+        {next.map((b) => {
+          const est = globalEstimate(b, NOW)!;
+          return (
+            <li class="flex items-center gap-2.5">
+              <span class="flex shrink-0 -space-x-2">
+                {avatars(b.characters).map((c) => (
+                  <a href={localePath(lang, `/characters/${c.id}`)} title={c.name}>{c.art && <img src={thumb(c.art, 320)} alt={c.name} loading="lazy" class="size-8 rounded-full border-2 border-coal object-cover object-top" />}</a>
+                ))}
+              </span>
+              <span class="min-w-0 flex-1">
+                <span class="block truncate text-sm text-bone">{avatars(b.characters).map((c) => c.name).join(' · ') || b.name}</span>
+                <span class="block text-xs text-flame">≈ {day(est.from)} – {day(est.to)}</span>
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Cuentas atrás («termina en 3 d 4 h») y copiar códigos
+  const span = (ms: number) => {
+    const h = Math.max(0, Math.floor(ms / 36e5));
+    return h >= 48 ? `${Math.floor(h / 24)} d ${h % 24} h` : `${h} h ${Math.floor((ms % 36e5) / 6e4)} min`;
+  };
+  document.querySelectorAll<HTMLElement>('[data-ends]').forEach((el) => {
+    if (el.dataset.ends) el.textContent = el.dataset.tpl!.replace('{t}', span(+new Date(el.dataset.ends) - Date.now()));
+  });
+  document.querySelectorAll<HTMLButtonElement>('.copy-code').forEach((btn) =>
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.code!);
+        const prev = btn.textContent;
+        btn.textContent = btn.dataset.done!;
+        setTimeout(() => (btn.textContent = prev), 1500);
+      } catch { /* sin portapapeles */ }
+    }),
+  );
+</script>

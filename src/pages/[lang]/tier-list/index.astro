@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, getCharacter, srcsetOf, thumb } from '@/data/characters';
-import { TIER_CHANGELOG, TIER_CRITERIA, TIER_LISTS, TIER_LIST_KEYS, TIER_RANKS, type TierListKey } from '@/data/gacha';
+import { TIER_CHANGELOG, TIER_CRITERIA, TIER_LISTS, TIER_LIST_KEYS, TIER_RANKS, TIER_UPDATED, type TierListKey } from '@/data/gacha';
 import { useG, type GameKey } from '@/i18n/game';
 import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
@@ -25,6 +25,8 @@ const ROW_STYLE: Record<string, string> = {
 const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${iso}T00:00:00Z`));
 const byId = new Map(CHARACTERS.map((c) => [c.id, c]));
 
+// Mes y año de la última actualización, en el título (lo que más se busca: «tier list + mes»)
+const monthYear = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { month: 'long', year: 'numeric' }).format(new Date(iso));
 const lists = TIER_LIST_KEYS.map((key) => {
   const list = TIER_LISTS[key];
   const rows = TIER_RANKS.map((rank) => ({
@@ -42,7 +44,7 @@ const lists = TIER_LIST_KEYS.map((key) => {
 const ssPct = Math.round(TIER_CRITERIA.thresholds[0][1] * 100);
 ---
 
-<BaseLayout lang={lang} title={g('tl.title')} description={g('tl.intro')}>
+<BaseLayout lang={lang} title={`${g('tl.title')} (${monthYear(TIER_UPDATED)})`} description={g('tl.intro')}>
   <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
     <header class="mb-6">
       <p class="eyebrow">{t('nav.guides')}</p>

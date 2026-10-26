@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Embers from '@/components/Embers.astro';
+import NowPanel from '@/components/home/NowPanel.astro';
 import Icon from '@/components/Icon.astro';
 import { ALL_LINKS, ACCOUNT_LINK } from '@/config/nav';
 import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
@@ -76,6 +77,9 @@ const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
       ))}
     </div>
   </section>
+
+  <!-- Ahora mismo: banners, códigos y lo próximo en Global -->
+  <NowPanel lang={lang} />
 
   <!-- Secciones -->
   <section class="mx-auto mt-24 max-w-7xl px-4 lg:px-6">

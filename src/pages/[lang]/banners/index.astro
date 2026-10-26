@@ -2,7 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import BannerCard from '@/components/banners/BannerCard.astro';
-import { GLOBAL_BANNERS, GLOBAL_LAG, JP_BANNERS, JP_TIMELINE_META, globalEstimate, type Banner } from '@/data/banners';
+import { GLOBAL_BANNERS, GLOBAL_LAG, JP_BANNERS, JP_TIMELINE_META, globalUpcoming, type Banner } from '@/data/banners';
 import { useG } from '@/i18n/game';
 import { LOCALE_META, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
@@ -28,17 +28,7 @@ const gl = split(GLOBAL_BANNERS);
 const jp = split(JP_BANNERS);
 
 // Lo que viene a Global según el retraso observado con JP (estimado; un banner por personaje)
-const seen = new Set<string>();
-const glNext = JP_BANNERS.map((b) => ({ b, est: globalEstimate(b, NOW) }))
-  .filter((x): x is { b: Banner; est: { from: string; to: string } } => !!x.est && +new Date(x.est.to) > NOW)
-  .sort((x, y) => x.est.from.localeCompare(y.est.from))
-  .filter(({ b }) => {
-    const fresh = b.characters.some((id) => !seen.has(id));
-    b.characters.forEach((id) => seen.add(id));
-    return fresh;
-  })
-  .slice(0, 6)
-  .map((x) => x.b);
+const glNext = globalUpcoming(NOW, 6);
 
 // Historial JP agrupado por mes
 const monthFmt = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { month: 'long', year: 'numeric', timeZone: 'Asia/Tokyo' });
