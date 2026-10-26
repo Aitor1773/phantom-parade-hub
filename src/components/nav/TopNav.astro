@@ -365,14 +365,14 @@ const nameWords = SITE.name.split(' ');
   // ── Servidor Global / JP (compartido con el menú móvil) ───────
   const applyServer = (server: string) => {
     document.documentElement.dataset.server = server;
-    document.querySelectorAll<HTMLButtonElement>('[data-server]').forEach((b) =>
+    document.querySelectorAll<HTMLButtonElement>('button[data-server]').forEach((b) =>
       b.setAttribute('aria-checked', String(b.dataset.server === server)),
     );
     try {
       localStorage.setItem('pp-server', server);
     } catch {}
   };
-  document.querySelectorAll<HTMLButtonElement>('[data-server]').forEach((b) =>
+  document.querySelectorAll<HTMLButtonElement>('button[data-server]').forEach((b) =>
     b.addEventListener('click', () => applyServer(b.dataset.server!)),
   );
   applyServer(document.documentElement.dataset.server || 'global');

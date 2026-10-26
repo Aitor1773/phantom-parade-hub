@@ -37,6 +37,7 @@ export const NAV: NavEntry[] = [
     icon: 'book',
     items: [
       { id: 'beginner', path: '/guides/beginner', label: 'nav.beginner', desc: 'nav.beginner.desc', icon: 'book', phase: 1 },
+      { id: 'mechanics', path: '/guides/mechanics', label: 'nav.mechanics', desc: 'nav.mechanics.desc', icon: 'book', phase: 1 },
       { id: 'tier-list', path: '/tier-list', label: 'nav.tierlist', desc: 'nav.tierlist.desc', icon: 'trophy', phase: 1 },
       { id: 'teams', path: '/teams', label: 'nav.teams', desc: 'nav.teams.desc', icon: 'swords', phase: 1 },
       { id: 'team-builder', path: '/team-builder', label: 'nav.teambuilder', desc: 'nav.teambuilder.desc', icon: 'grid', phase: 2 },

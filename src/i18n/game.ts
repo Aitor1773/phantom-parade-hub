@@ -107,6 +107,7 @@ const T = {
   'cl.empty': ['Mark the characters and memories you own in My account to create your card.', 'Marca en Mi cuenta los personajes y memorias que tienes para crear tu tarjeta.', 'Marque em Minha conta os personagens e memórias que você tem para criar o cartão.', 'Cochez dans Mon compte vos personnages et souvenirs pour créer votre carte.', 'Markiere unter Mein Konto deine Figuren und Erinnerungen, um deine Karte zu erstellen.', 'マイアカウントで所持キャラ・メモリーを登録するとカードを作れます。', '내 계정에서 보유 캐릭터·메모리를 표시하면 카드가 만들어집니다.', '在我的账号中标记拥有的角色与记忆即可生成卡片。'],
   'cl.player': ['Player name (optional)', 'Nombre de jugador (opcional)', 'Nome do jogador (opcional)', 'Nom du joueur (facultatif)', 'Spielername (optional)', 'プレイヤー名（任意）', '플레이어 이름(선택)', '玩家名（可选）'],
   'cl.missing': ['Missing SSR characters', 'Personajes SSR que te faltan', 'Personagens SSR que faltam', 'Personnages SSR manquants', 'Fehlende SSR-Figuren', '未所持のSSRキャラ', '없는 SSR 캐릭터', '缺少的SSR角色'],
+  'cd.official': ['Official notice', 'Aviso oficial', 'Aviso oficial', 'Annonce officielle', 'Offizielle Ankündigung', '公式告知', '공식 공지', '官方公告'],
   'hm.now': ['Right now', 'Ahora mismo', 'Agora mesmo', 'En ce moment', 'Gerade jetzt', '開催中', '지금 진행 중', '当前'],
   'hm.banners': ['Active Global banners', 'Banners activos en Global', 'Banners ativos no Global', 'Bannières actives (Global)', 'Aktive Global-Banner', '開催中のグローバル版ガチャ', '진행 중인 글로벌 배너', '国际服当前卡池'],
   'hm.codes': ['Active codes', 'Códigos activos', 'Códigos ativos', 'Codes actifs', 'Aktive Codes', '有効なコード', '사용 가능한 코드', '可用兑换码'],

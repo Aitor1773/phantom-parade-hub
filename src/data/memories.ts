@@ -47,7 +47,11 @@ function orientation(s: Memory['stats']): Orientation {
 const completeness = (m: Memory) => m.effects.length * 10 + (m.stats.hp != null ? 5 : 0) + (m.releaseDateJP ? 2 : 0);
 
 type RawMemory = Omit<Memory, 'orientation' | 'icon' | 'illust' | 'illustWidths' | 'imageReview'>;
-const all: Memory[] = (wiki.items as unknown as RawMemory[]).map((m) => {
+const all: Memory[] = (wiki.items as unknown as RawMemory[]).map((raw) => {
+  // La wiki da a veces las stats de nivel 1 (o sin nivel y diminutas): no se muestran para no confundir
+  const s = raw.stats;
+  const lowLevel = s.level === 1 || (s.level == null && Math.max(s.hp ?? 0, s.taijutsu ?? 0, s.jujutsu ?? 0) < 10);
+  const m = lowLevel ? { ...raw, stats: { hp: null, taijutsu: null, jujutsu: null, level: null } } : raw;
   const link = LINKS[m.id];
   const local = link ? ICONS[link.jjkppdb] : undefined;
   return {

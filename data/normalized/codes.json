@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T07:26:46.119Z",
+  "fetchedAt": "2026-10-26T13:15:16.530Z",
   "server": "global",
   "sources": [
     {
@@ -46,6 +46,68 @@
     }
   ],
   "codes": [
+    {
+      "code": "MaxOutputYuji",
+      "reward": "10 [Maximum Output] Yuji Itadori Featured Gacha Tickets",
+      "status": "tested",
+      "activeIn": [
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T07:32:20+00:00"
+        }
+      ],
+      "expiredIn": [
+        {
+          "source": "pocketgamer",
+          "name": "Pocket Gamer",
+          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
+          "modified": null
+        },
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T01:53:55+05:30"
+        }
+      ],
+      "tested": {
+        "works": true,
+        "official": true,
+        "expires": "2026-12-18T12:00:00+09:00",
+        "reward": "10 [Maximum Output] Yuji Itadori Featured Gacha Tickets",
+        "source": "https://x.com/JJKPP_GL/status/2001966992585089103"
+      }
+    },
+    {
+      "code": "JJKPP1yearLuv",
+      "reward": "1,000,000 Beacon of Training",
+      "status": "tested",
+      "activeIn": [],
+      "expiredIn": [],
+      "tested": {
+        "works": true,
+        "official": true,
+        "expires": "2026-11-08T23:59:00+09:00",
+        "reward": "1,000,000 Beacon of Training",
+        "source": "https://x.com/JJKPP_GL/status/1987390192798605547"
+      }
+    },
+    {
+      "code": "JJKPPJoy",
+      "reward": "200,000 JP",
+      "status": "tested",
+      "activeIn": [],
+      "expiredIn": [],
+      "tested": {
+        "works": true,
+        "official": true,
+        "expires": "2026-11-10T23:59:00+09:00",
+        "reward": "200,000 JP",
+        "source": "https://x.com/JJKPP_GL/status/1988109434716123528"
+      }
+    },
     {
       "code": "CullingGame",
       "reward": "1k Cubes",
@@ -119,72 +181,6 @@
           "name": "BlueStacks",
           "url": "https://www.bluestacks.com/blog/redeem-codes/jujutsu-kaisen-phantom-parade-redeem-codes-en.html",
           "modified": "2026-10-01T07:23:47+00:00"
-        }
-      ],
-      "expiredIn": [],
-      "tested": null
-    },
-    {
-      "code": "JJKPP15CD1",
-      "reward": "300 Cubes",
-      "status": "verified",
-      "activeIn": [
-        {
-          "source": "pocketgamer",
-          "name": "Pocket Gamer",
-          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
-          "modified": null
-        },
-        {
-          "source": "beebom",
-          "name": "Beebom",
-          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
-        },
-        {
-          "source": "urgametips",
-          "name": "UrGameTips",
-          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T07:32:20+00:00"
-        },
-        {
-          "source": "gameguide",
-          "name": "Game.guide",
-          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-10-25T15:01:57.680Z"
-        }
-      ],
-      "expiredIn": [],
-      "tested": null
-    },
-    {
-      "code": "JJKPP1PT5ANNI",
-      "reward": "300 Cubes",
-      "status": "verified",
-      "activeIn": [
-        {
-          "source": "pocketgamer",
-          "name": "Pocket Gamer",
-          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
-          "modified": null
-        },
-        {
-          "source": "beebom",
-          "name": "Beebom",
-          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
-        },
-        {
-          "source": "urgametips",
-          "name": "UrGameTips",
-          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T07:32:20+00:00"
-        },
-        {
-          "source": "gameguide",
-          "name": "Game.guide",
-          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-10-25T15:01:57.680Z"
         }
       ],
       "expiredIn": [],
@@ -286,27 +282,6 @@
     {
       "code": "JJKPP15ANNI01",
       "reward": "Gojo Tickets",
-      "status": "verified",
-      "activeIn": [
-        {
-          "source": "beebom",
-          "name": "Beebom",
-          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
-        },
-        {
-          "source": "urgametips",
-          "name": "UrGameTips",
-          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T07:32:20+00:00"
-        }
-      ],
-      "expiredIn": [],
-      "tested": null
-    },
-    {
-      "code": "JJKPP15ANNI03",
-      "reward": "10 Megumi Tickets",
       "status": "verified",
       "activeIn": [
         {
@@ -1096,34 +1071,6 @@
       "tested": null
     },
     {
-      "code": "MaxOutputYuji",
-      "reward": "10 sukuna tickets",
-      "status": "conflict",
-      "activeIn": [
-        {
-          "source": "urgametips",
-          "name": "UrGameTips",
-          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T07:32:20+00:00"
-        }
-      ],
-      "expiredIn": [
-        {
-          "source": "pocketgamer",
-          "name": "Pocket Gamer",
-          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
-          "modified": null
-        },
-        {
-          "source": "beebom",
-          "name": "Beebom",
-          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
-        }
-      ],
-      "tested": null
-    },
-    {
       "code": "ValentinesDay",
       "reward": "1 Phantom Parade Gacha Tickets, 1 AP Supplementary Pack",
       "status": "conflict",
@@ -1150,6 +1097,108 @@
         }
       ],
       "tested": null
+    },
+    {
+      "code": "JJKPP15CD1",
+      "reward": "300 Cubes",
+      "status": "expired",
+      "activeIn": [
+        {
+          "source": "pocketgamer",
+          "name": "Pocket Gamer",
+          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
+          "modified": null
+        },
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T01:53:55+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T07:32:20+00:00"
+        },
+        {
+          "source": "gameguide",
+          "name": "Game.guide",
+          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
+          "modified": "2026-10-25T15:01:57.680Z"
+        }
+      ],
+      "expiredIn": [],
+      "tested": {
+        "works": false,
+        "official": true,
+        "expires": "2026-08-01T23:59:00+09:00",
+        "source": "https://x.com/JJKPP_GL/status/2057325515254415809"
+      }
+    },
+    {
+      "code": "JJKPP1PT5ANNI",
+      "reward": "300 Cubes",
+      "status": "expired",
+      "activeIn": [
+        {
+          "source": "pocketgamer",
+          "name": "Pocket Gamer",
+          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
+          "modified": null
+        },
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T01:53:55+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T07:32:20+00:00"
+        },
+        {
+          "source": "gameguide",
+          "name": "Game.guide",
+          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
+          "modified": "2026-10-25T15:01:57.680Z"
+        }
+      ],
+      "expiredIn": [],
+      "tested": {
+        "works": false,
+        "official": true,
+        "expires": "2026-08-01T23:59:00+09:00",
+        "source": "https://x.com/JJKPP_GL/status/2056630940760526922"
+      }
+    },
+    {
+      "code": "JJKPP15ANNI03",
+      "reward": "10 Megumi Tickets",
+      "status": "expired",
+      "activeIn": [
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T01:53:55+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-10-01T07:32:20+00:00"
+        }
+      ],
+      "expiredIn": [],
+      "tested": {
+        "works": false,
+        "official": true,
+        "expires": "2026-09-03T14:59:00+09:00",
+        "source": "https://x.com/JJKPP_GL/status/2085244485311627758"
+      }
     },
     {
       "code": "19VT36R5Y",

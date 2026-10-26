@@ -9,9 +9,15 @@
       "startUnknown": true,
       "end": "2026-10-22T14:59:00+09:00",
       "characters": [],
-      "jpEquivalent": { "title": "Featured Gacha: Illusory Tower: Diverse", "start": "2026-07-27" },
+      "jpEquivalent": {
+        "title": "Featured Gacha: Illusory Tower: Diverse",
+        "start": "2026-07-27"
+      },
       "notes": "Personajes destacados por confirmar (en la imagen: Megumi Fushiguro y Yoshinobu Gakuganji). Equivalente JP probable.",
-      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+      "source": {
+        "label": "Captura del juego (19/10/2026)",
+        "kind": "ingame"
+      }
     },
     {
       "id": "gl-2026-10-step-up",
@@ -22,19 +28,28 @@
       "end": "2026-10-26T14:59:00+09:00",
       "characters": [],
       "notes": "Personajes destacados por confirmar (en la imagen: Satoru Gojo y Yuji Itadori).",
-      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+      "source": {
+        "label": "Captura del juego (19/10/2026)",
+        "kind": "ingame"
+      }
     },
     {
       "id": "gl-2026-10-summer-daily-free",
       "name": "Summer Vacation: Once Daily Free Gacha (up to 31)",
       "kind": "gacha",
-      "start": "2026-10-20T03:20:00+09:00",
-      "startUnknown": true,
+      "start": "2026-10-16T15:00:00+09:00",
       "end": "2026-11-16T14:59:00+09:00",
       "characters": [],
-      "jpEquivalent": { "title": "Summer Vacation Gacha: Daily Free Pull (31 Total)", "start": "2026-08-01" },
+      "jpEquivalent": {
+        "title": "Summer Vacation Gacha: Daily Free Pull (31 Total)",
+        "start": "2026-08-01"
+      },
       "notes": "Una tirada gratis al día, hasta 31.",
-      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+      "source": {
+        "label": "Aviso oficial (X) y captura del juego",
+        "url": "https://x.com/JJKPP_GL",
+        "kind": "press"
+      }
     },
     {
       "id": "gl-standard-phantom-parade",
@@ -46,7 +61,10 @@
       "end": null,
       "characters": [],
       "notes": "Gacha estándar (permanente).",
-      "source": { "label": "Captura del juego (19/10/2026)", "kind": "ingame" }
+      "source": {
+        "label": "Captura del juego (19/10/2026)",
+        "kind": "ingame"
+      }
     },
     {
       "id": "gl-2025-12-anni-sukuna",
@@ -54,10 +72,17 @@
       "kind": "gacha",
       "start": "2025-12-24T15:00:00+09:00",
       "end": "2026-01-22T14:59:00+09:00",
-      "characters": ["battle-of-firepower-ryomen-sukuna"],
-      "epithetsGlobal": { "battle-of-firepower-ryomen-sukuna": "Firepower Battle" },
+      "characters": [
+        "battle-of-firepower-ryomen-sukuna"
+      ],
+      "epithetsGlobal": {
+        "battle-of-firepower-ryomen-sukuna": "Firepower Battle"
+      },
       "limited": true,
-      "source": { "label": "Nota de prensa oficial (Bilibili, 24/12/2025)", "url": "https://www.gamespress.com/Jujutsu-Kaisen-Phantom-Parade-Global-Edition-Anniversary-Celebration-T" }
+      "source": {
+        "label": "Nota de prensa oficial (Bilibili, 24/12/2025)",
+        "url": "https://www.gamespress.com/Jujutsu-Kaisen-Phantom-Parade-Global-Edition-Anniversary-Celebration-T"
+      }
     },
     {
       "id": "gl-2026-01-anni-mahito",
@@ -65,36 +90,55 @@
       "kind": "gacha",
       "start": "2026-01-04T15:00:00+09:00",
       "end": "2026-01-22T14:59:00+09:00",
-      "characters": ["unbridled-soul-mahito"],
-      "epithetsGlobal": { "unbridled-soul-mahito": "Bare Soul" },
+      "characters": [
+        "unbridled-soul-mahito"
+      ],
+      "epithetsGlobal": {
+        "unbridled-soul-mahito": "Bare Soul"
+      },
       "limited": true,
-      "source": { "label": "Nota de prensa oficial (Bilibili, 24/12/2025)", "url": "https://www.gamespress.com/Jujutsu-Kaisen-Phantom-Parade-Global-Edition-Anniversary-Celebration-T" }
+      "source": {
+        "label": "Nota de prensa oficial (Bilibili, 24/12/2025)",
+        "url": "https://www.gamespress.com/Jujutsu-Kaisen-Phantom-Parade-Global-Edition-Anniversary-Celebration-T"
+      }
     },
     {
       "id": "gl-2026-07-15anni-yuji",
-      "name": "1.5th Anniversary Featured Gacha: Yuji Itadori",
+      "name": "Azure Pulse by the Shore Gacha - Phase 1 -",
       "kind": "gacha",
       "start": "2026-07-23T15:00:00+09:00",
-      "startApprox": true,
       "end": "2026-09-03T14:59:00+09:00",
-      "characters": ["smash-it-into-the-summer-sky-yuji-itadori"],
-      "epithetsGlobal": { "smash-it-into-the-summer-sky-yuji-itadori": "Heaven-Piercing Strike" },
+      "characters": [
+        "smash-it-into-the-summer-sky-yuji-itadori"
+      ],
+      "epithetsGlobal": {
+        "smash-it-into-the-summer-sky-yuji-itadori": "Heaven-Piercing Strike"
+      },
       "limited": true,
       "notes": "Empieza tras el mantenimiento del 23/07 (hora exacta no publicada).",
-      "source": { "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)", "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-" }
+      "source": {
+        "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)",
+        "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-"
+      }
     },
     {
       "id": "gl-2026-07-15anni-gojo",
-      "name": "1.5th Anniversary Featured Gacha: Satoru Gojo",
+      "name": "Azure Pulse by the Shore Gacha - Phase 2 -",
       "kind": "gacha",
       "start": "2026-07-31T15:00:00+09:00",
-      "startApprox": true,
       "end": "2026-09-03T14:59:00+09:00",
-      "characters": ["melting-sweet-summer-treats-satoru-gojo"],
-      "epithetsGlobal": { "melting-sweet-summer-treats-satoru-gojo": "Savor the Melt" },
+      "characters": [
+        "melting-sweet-summer-treats-satoru-gojo"
+      ],
+      "epithetsGlobal": {
+        "melting-sweet-summer-treats-satoru-gojo": "Savor the Melt"
+      },
       "limited": true,
       "notes": "Hora de inicio no publicada.",
-      "source": { "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)", "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-" }
+      "source": {
+        "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)",
+        "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-"
+      }
     },
     {
       "id": "gl-2026-07-azure-pulse",
@@ -103,9 +147,252 @@
       "start": "2026-07-23T19:00:00+09:00",
       "end": "2026-09-03T14:59:00+09:00",
       "characters": [],
-      "memoriesGlobal": ["Okinawa Awaits", "The Lingering Heat of Youth"],
+      "memoriesGlobal": [
+        "Okinawa Awaits",
+        "The Lingering Heat of Youth"
+      ],
       "notes": "Recompensas: memorias SSR limitadas gratuitas y 10 tickets del gacha de Yuji Itadori.",
-      "source": { "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)", "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-" }
+      "source": {
+        "label": "Nota de prensa oficial (1.5.º aniversario, 3.ª ola)",
+        "url": "https://www.gamedeveloper.com/press-release/-jujutsu-kaisen-phantom-parade-1-5th-anniversary-celebration-third-wave-"
+      }
+    },
+    {
+      "id": "gl-2026-08-07-azure-pulse-by-the-shore-gacha-phase-3",
+      "name": "Azure Pulse by the Shore Gacha - Phase 3 -",
+      "kind": "gacha",
+      "start": "2026-08-07T15:00:00+09:00",
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": [
+        "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Aviso oficial (X)",
+        "url": "https://x.com/JJKPP_GL/status/2085244485311627758",
+        "kind": "press"
+      }
+    },
+    {
+      "id": "gl-2026-08-07-azure-pulse-by-the-shore-gacha-phase-4",
+      "name": "Azure Pulse by the Shore Gacha - Phase 4 -",
+      "kind": "gacha",
+      "start": "2026-08-07T15:00:00+09:00",
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": [
+        "striking-eternal-summer-nobara-kugisaki"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-07-23-azure-pulse-by-the-shore-daily-10-free-g",
+      "name": "Azure Pulse by the Shore Daily 10 Free Gacha",
+      "kind": "gacha",
+      "start": "2026-07-23T15:00:00+09:00",
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": [],
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-07-27-gen-attribute-character-featured-gacha",
+      "name": "Gen Attribute Character Featured Gacha",
+      "kind": "gacha",
+      "start": "2026-07-27T15:00:00+09:00",
+      "end": "2026-08-11T14:59:00+09:00",
+      "characters": [
+        "night-lurking-sorcerer-toge-inumaki",
+        "meteor-of-fierceness-jogo"
+      ],
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-08-03-limited-character-featured-gacha-rerun-t",
+      "name": "Limited Character Featured Gacha (rerun trio)",
+      "kind": "gacha",
+      "start": "2026-08-03T15:00:00+09:00",
+      "end": "2026-08-19T14:59:00+09:00",
+      "characters": [
+        "zone-yuji-itadori",
+        "within-infinity-satoru-gojo",
+        "genuine-jujutsu-ryomen-sukuna"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-08-10-limited-character-featured-gacha-rerun-t",
+      "name": "Limited Character Featured Gacha (rerun trio 2)",
+      "kind": "gacha",
+      "start": "2026-08-10T15:00:00+09:00",
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": [
+        "awakening-satoru-gojo",
+        "promising-new-student-kento-nanami",
+        "fwoo-hyoi-shoko-ieiri"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-08-21-ei-attribute-character-featured-gacha",
+      "name": "Ei Attribute Character Featured Gacha",
+      "kind": "gacha",
+      "start": "2026-08-21T15:00:00+09:00",
+      "end": "2026-09-03T14:59:00+09:00",
+      "characters": [
+        "zanshin-kasumi-miwa",
+        "first-grade-sorcerers-skill-kento-nanami"
+      ],
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-08-27-limited-character-featured-gacha-phase-1",
+      "name": "Limited Character Featured Gacha - Phase 1 -",
+      "kind": "gacha",
+      "start": "2026-08-27T15:00:00+09:00",
+      "end": "2026-09-28T14:59:00+09:00",
+      "characters": [
+        "maximum-cursed-energy-output-yuji-itadori"
+      ],
+      "limited": true,
+      "notes": "Fecha de inicio por confirmar.",
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-08-28-limited-character-featured-gacha-phase-2",
+      "name": "Limited Character Featured Gacha - Phase 2 -",
+      "kind": "gacha",
+      "start": "2026-08-28T15:00:00+09:00",
+      "end": "2026-09-28T14:59:00+09:00",
+      "characters": [
+        "are-you-satisfied-with-that-aoi-todo"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Aviso oficial (X)",
+        "url": "https://x.com/JJKPP_GL/status/2093232114388934658",
+        "kind": "press"
+      }
+    },
+    {
+      "id": "gl-2026-09-04-limited-character-featured-gacha-phase-3",
+      "name": "Limited Character Featured Gacha - Phase 3 -",
+      "kind": "gacha",
+      "start": "2026-09-04T15:00:00+09:00",
+      "end": "2026-10-08T14:59:00+09:00",
+      "characters": [
+        "battle-of-firepower-ryomen-sukuna"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-09-04-limited-character-featured-gacha-phase-4",
+      "name": "Limited Character Featured Gacha - Phase 4 -",
+      "kind": "gacha",
+      "start": "2026-09-04T15:00:00+09:00",
+      "end": "2026-10-08T14:59:00+09:00",
+      "characters": [
+        "unbridled-soul-mahito"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-09-04-ya-attribute-character-featured-gacha",
+      "name": "Ya Attribute Character Featured Gacha",
+      "kind": "gacha",
+      "start": "2026-09-04T15:00:00+09:00",
+      "end": "2026-09-21T14:59:00+09:00",
+      "characters": [
+        "sprinting-kasumi-miwa"
+      ],
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-09-11-limited-time-character-featured-gacha-ph",
+      "name": "Limited-Time Character Featured Gacha Phase 5",
+      "kind": "gacha",
+      "start": "2026-09-11T15:00:00+09:00",
+      "end": "2026-10-08T14:59:00+09:00",
+      "characters": [
+        "02-second-domain-expansion-satoru-gojo"
+      ],
+      "limited": true,
+      "source": {
+        "label": "Aviso oficial (X)",
+        "url": "https://x.com/JJKPP_GL/status/2098305544868004173",
+        "kind": "press"
+      }
+    },
+    {
+      "id": "gl-2026-09-17-ijichi-s-failed-vacation-gacha",
+      "name": "Ijichi's Failed Vacation Gacha",
+      "kind": "gacha",
+      "start": "2026-09-17T15:00:00+09:00",
+      "end": "2026-10-08T14:59:00+09:00",
+      "characters": [
+        "pick-up-after-hard-work-kiyotaka-ijichi"
+      ],
+      "source": {
+        "label": "Base de datos de la comunidad (datos del juego)",
+        "url": "https://phantom-parade-database.vercel.app/banners?lang=en",
+        "kind": "community"
+      }
+    },
+    {
+      "id": "gl-2026-09-17-story-event-ijichi-s-failed-vacation-lau",
+      "name": "Story Event: Ijichi's Failed Vacation (+ Launch Memo Login Bonus)",
+      "kind": "event",
+      "start": "2026-09-17T15:00:00+09:00",
+      "end": "2026-10-04T14:59:00+09:00",
+      "characters": [],
+      "source": {
+        "label": "Aviso oficial (X)",
+        "url": "https://x.com/JJKPP_GL/status/2100148938107965926",
+        "kind": "press"
+      }
     }
   ]
 }

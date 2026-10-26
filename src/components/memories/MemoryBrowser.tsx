@@ -107,7 +107,7 @@ export default function MemoryBrowser({ items, basePath, labels, tagLabels, opti
           </button>
           <label className="flex h-10 items-center gap-2 rounded-lg border border-line bg-coal pl-3 text-sm text-dust">
             <span className="hidden sm:inline">{labels['db.sort']}</span>
-            <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="h-full cursor-pointer rounded-r-lg bg-coal pr-3 text-bone focus:outline-none">
+            <select value={sort} aria-label={labels['db.sort']} onChange={(e) => setSort(e.target.value as Sort)} className="h-full cursor-pointer rounded-r-lg bg-coal pr-3 text-bone focus:outline-none">
               <option value="newest">{labels['db.sort.newest']}</option>
               <option value="oldest">{labels['db.sort.oldest']}</option>
               <option value="name">{labels['db.sort.name']}</option>

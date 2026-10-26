@@ -2,7 +2,7 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-10-26T07:26:28.096Z",
+  "fetchedAt": "2026-10-26T13:08:52.510Z",
   "count": 251,
   "items": [
     {
@@ -6559,14 +6559,15 @@
           "cdLv2": 5
         },
         {
-          "text": "Unchanged",
+          "text": "At the start of the turn, if own HP is 50.0% or below,\nIncreases own Damage Dealt by 30.0% (3 Times)\n(Up to 1 Time during battle)",
           "textLv2": null,
           "cd": null,
           "cdLv2": null
         }
       ],
       "tags": [
-        "jujutsu"
+        "jujutsu",
+        "damage"
       ],
       "adjusted": true,
       "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/1/19/PrideArt.gif/revision/latest?cb=20231124203659",
@@ -7763,7 +7764,7 @@
           "cdLv2": 4
         },
         {
-          "text": "Unchanged",
+          "text": "At the start of the battle,\nDecreases all allies' Damage Received by 9.0% (2 Times/Self excluded)",
           "textLv2": null,
           "cd": null,
           "cdLv2": null
@@ -9237,8 +9238,8 @@
       },
       "effects": [
         {
-          "text": "Unchanged",
-          "textLv2": "Unchanged",
+          "text": "When Command Skill or Ultimate Skill is activated,\nIncreases all allies' Ultimate Skill Gauge Charge Rate by 30.0% (2 Turns)",
+          "textLv2": "When Command Skill or Ultimate Skill is activated,\nIncreases all allies' Ultimate Skill Gauge Charge Rate by 35.0% (2 Turns)",
           "cd": 6,
           "cdLv2": 6
         },

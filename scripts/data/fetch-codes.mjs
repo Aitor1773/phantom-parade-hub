@@ -136,18 +136,20 @@ for (const r of results) {
 const manualFile = join(ROOT, 'data', 'manual', 'codes.json');
 const manual = existsSync(manualFile) ? JSON.parse(await readFile(manualFile, 'utf8')).codes ?? {} : {};
 const top = (o) => Object.entries(o).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
+// Un código a mano funciona si works y no ha pasado su fecha de caducidad (expires, de los avisos oficiales)
+const works = (t) => t.works && !(t.expires && Date.now() > Date.parse(t.expires));
 
 const list = [...codes.entries()].map(([key, c]) => {
   const tested = Object.entries(manual).find(([k]) => k.toUpperCase() === key)?.[1];
   // Si una web lo pone en ambas listas, cuenta como activo solo si está en la de activos
   const act = c.active.length, exp = c.expired.filter((e) => !c.active.some((a) => a.source === e.source)).length;
   let status = act >= 2 && !exp ? 'verified' : act === 1 && !exp ? 'single' : act && exp ? 'conflict' : 'expired';
-  if (tested) status = tested.works ? 'tested' : 'expired';
+  if (tested) status = works(tested) ? 'tested' : 'expired';
   return { code: top(c.spellings), reward: tested?.reward ?? top(c.rewards), status, activeIn: c.active, expiredIn: c.expired, tested: tested ?? null };
 });
 // Códigos probados a mano que ninguna web recoge todavía
 for (const [code, t] of Object.entries(manual)) {
-  if (!codes.has(code.toUpperCase())) list.push({ code, reward: t.reward ?? null, status: t.works ? 'tested' : 'expired', activeIn: [], expiredIn: [], tested: t });
+  if (!codes.has(code.toUpperCase())) list.push({ code, reward: t.reward ?? null, status: works(t) ? 'tested' : 'expired', activeIn: [], expiredIn: [], tested: t });
 }
 
 const ORDER = { tested: 0, verified: 1, single: 2, conflict: 3, expired: 4 };

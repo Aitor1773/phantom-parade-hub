@@ -517,7 +517,7 @@ export default function ContentTeams({ labels: L, contentName, basePath, account
         {options.length > 0 && (
           <label className="flex flex-wrap items-center gap-3">
             <span className="text-sm font-bold text-bone">{floors ? L['tm.floor'] : L['sh.phase']}</span>
-            <select value={phase} onChange={(e) => setPhase(e.target.value)}
+            <select value={phase} aria-label={floors ? L['tm.floor'] : L['sh.phase']} onChange={(e) => setPhase(e.target.value)}
               className="h-9 w-full max-w-full min-w-0 truncate rounded-lg border border-line bg-ash px-2 text-sm text-bone focus:border-ember/60 focus:outline-none sm:w-auto sm:max-w-md">
               {options.map((o) => <option key={o.k} value={o.k}>{o.label}{stages[o.k] || data[o.k] ? ' ✓' : ''}</option>)}
             </select>

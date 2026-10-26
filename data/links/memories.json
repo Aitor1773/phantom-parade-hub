@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T08:37:56.574Z",
+  "generatedAt": "2026-10-26T13:08:53.821Z",
   "links": {
     "2-problem-children-however-the-strongest": {
       "jjkppdb": 40251,
@@ -153,6 +153,16 @@
     },
     "your-path-forward": {
       "jjkppdb": 40123,
+      "method": "manual",
+      "similarity": 1
+    },
+    "sorcerers-resolutions": {
+      "jjkppdb": 40151,
+      "method": "manual",
+      "similarity": 1
+    },
+    "jujutsu-sorcerers-arrival": {
+      "jjkppdb": 40178,
       "method": "manual",
       "similarity": 1
     },
@@ -891,11 +901,6 @@
       "method": "stats+name",
       "similarity": 0.67
     },
-    "jujutsu-sorcerers-arrival": {
-      "jjkppdb": 40151,
-      "method": "stats+name",
-      "similarity": 0.67
-    },
     "tokyo-fukuoka-exchange": {
       "jjkppdb": 40120,
       "method": "stats+name",
@@ -1136,12 +1141,6 @@
       "jjkppdb": 40147,
       "method": "name-fuzzy",
       "similarity": 0.77
-    },
-    "sorcerers-resolutions": {
-      "jjkppdb": 40178,
-      "method": "stats+name",
-      "similarity": 0.37,
-      "review": true
     },
     "serious-shuttlecock-competition": {
       "jjkppdb": 40211,

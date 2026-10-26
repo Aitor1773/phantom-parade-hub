@@ -1,4 +1,44 @@
 {
-  "_comment": "Códigos probados en el juego (servidor Global). Tienen prioridad sobre lo que digan las webs. Formato: \"CODIGO\": { \"works\": true|false, \"tested\": \"AAAA-MM-DD\", \"reward\": \"opcional\", \"note\": \"opcional\" }. Después ejecuta: npm run data:codes",
-  "codes": {}
+  "_comment": "Códigos con la última palabra sobre lo que digan las webs (servidor Global). Formato: \"CODIGO\": { \"works\": true|false, \"tested\": \"AAAA-MM-DD\" (probado en el juego), \"official\": true (aviso oficial del juego), \"expires\": \"ISO\" (caduca sola), \"reward\", \"note\", \"source\" }. Después ejecuta: npm run data:codes",
+  "codes": {
+    "JJKPP15CD1": {
+      "works": false,
+      "official": true,
+      "expires": "2026-08-01T23:59:00+09:00",
+      "source": "https://x.com/JJKPP_GL/status/2057325515254415809"
+    },
+    "JJKPP1PT5ANNI": {
+      "works": false,
+      "official": true,
+      "expires": "2026-08-01T23:59:00+09:00",
+      "source": "https://x.com/JJKPP_GL/status/2056630940760526922"
+    },
+    "JJKPP15ANNI03": {
+      "works": false,
+      "official": true,
+      "expires": "2026-09-03T14:59:00+09:00",
+      "source": "https://x.com/JJKPP_GL/status/2085244485311627758"
+    },
+    "JJKPP1yearLuv": {
+      "works": true,
+      "official": true,
+      "expires": "2026-11-08T23:59:00+09:00",
+      "reward": "1,000,000 Beacon of Training",
+      "source": "https://x.com/JJKPP_GL/status/1987390192798605547"
+    },
+    "JJKPPJoy": {
+      "works": true,
+      "official": true,
+      "expires": "2026-11-10T23:59:00+09:00",
+      "reward": "200,000 JP",
+      "source": "https://x.com/JJKPP_GL/status/1988109434716123528"
+    },
+    "MaxOutputYuji": {
+      "works": true,
+      "official": true,
+      "expires": "2026-12-18T12:00:00+09:00",
+      "reward": "10 [Maximum Output] Yuji Itadori Featured Gacha Tickets",
+      "source": "https://x.com/JJKPP_GL/status/2001966992585089103"
+    }
+  }
 }

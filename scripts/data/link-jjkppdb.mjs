@@ -92,6 +92,9 @@ const MANUAL = [
   ['The Mystery is In The Book', 'Truth Is Stranger Than Fiction'], // 事実は小説より奇なり
   ['Phantom Trails', 'The Path of Illusions'],
   ['Your Path Forward', 'The Chosen Path'],
+  // Mismas stats; se distinguen por el efecto (daño + debilitamiento al empezar la oleada / recarga con poca vida)
+  ["Sorcerers' Resolutions", 'The Ambitions of a Jujutsu Sorcerer'],
+  ["Jujutsu Sorcerers' Arrival", 'Here Comes the Jujutsu Sorcerer'],
   // "Someone Like Me?" ⇄ "The Same?" descartada: perfiles de stats distintos
 ];
 

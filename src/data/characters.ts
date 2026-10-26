@@ -1,6 +1,7 @@
 // Capa de datos de personajes para la web. Hoy lee la wiki normalizada;
 // cuando haya más fuentes, leerá el conjunto publicado tras el comparador.
 import wiki from '../../data/normalized/wiki/characters.json';
+import fixesFile from '../../data/manual/character-fixes.json';
 import localImages from './local-images.json';
 import localIcons from './local-icons.json';
 import { REMOTE_IMAGES } from '@/config/site';
@@ -132,7 +133,21 @@ export const initials = (name: string) =>
   name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 
 /** Todos los personajes, del más reciente al más antiguo. */
+// Correcciones a mano sobre la wiki (data/manual/character-fixes.json): disponibilidad, rol y stats erróneas
+const FIXES = fixesFile as unknown as {
+  availability: Record<string, string>;
+  role: Record<string, string>;
+  stats: Record<string, Partial<Character['stats']>>;
+};
+const applyFixes = (c: Character): Character => ({
+  ...c,
+  availability: FIXES.availability[c.id] ?? c.availability,
+  role: FIXES.role[c.id] ?? c.role,
+  stats: FIXES.stats[c.id] ? { ...c.stats, ...FIXES.stats[c.id] } : c.stats,
+});
+
 export const CHARACTERS: Character[] = (wiki.items as unknown as Character[])
+  .map(applyFixes)
   .map((c) => (REMOTE_IMAGES ? c : localizeImages(c)))
   // El arte propio (npm run images) tiene prioridad sobre cualquier otro
   .map((c) => (LOCAL[c.id] ? { ...c, art: LOCAL_PREFIX + c.id } : c))

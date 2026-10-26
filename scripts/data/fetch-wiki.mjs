@@ -253,7 +253,11 @@ function memStat(s) {
 
 function normalizeMemory(page, tpl) {
   const p = tpl.params;
-  const pre = (k) => clean(p[`Post-Adjust ${k}`]) ?? clean(p[k]); // valores tras ajuste si existen
+  // Valores tras ajuste si existen; «Unchanged» significa que ese efecto no cambió con el ajuste
+  const pre = (k) => {
+    const post = clean(p[`Post-Adjust ${k}`]);
+    return post && !/^unchanged$/i.test(post.trim()) ? post : clean(p[k]);
+  };
   const cd = (k) => (p[k] && p[k] !== '/' ? num(p[k]) : null);
   const hp = memStat(p['Stat 1']), tai = memStat(p['Stat 2']), ju = memStat(p['Stat 3']);
   const effects = [

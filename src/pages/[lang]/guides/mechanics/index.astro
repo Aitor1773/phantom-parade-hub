@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import { GLOSSARY, GLOSSARY_INTRO } from '@/data/glossary';
+import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const tx = (x: { es: string; en: string }) => (lang === 'es' ? x.es : x.en);
+// Datos estructurados: conjunto de términos definidos (DefinedTermSet)
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTermSet',
+  name: t('nav.mechanics'),
+  hasDefinedTerm: GLOSSARY.flatMap((g) => g.terms.map((x) => ({ '@type': 'DefinedTerm', name: tx(x.name), alternateName: x.jp, description: tx(x.desc) }))),
+};
+---
+
+<BaseLayout lang={lang} title={t('nav.mechanics')} description={tx(GLOSSARY_INTRO)}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(ld)} />
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8">
+      <p class="eyebrow flex items-center gap-1.5"><Icon name="book" size={13} /> {t('nav.guides')}</p>
+      <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.mechanics')}</h1>
+      <p class="mt-3 max-w-2xl text-dust">{tx(GLOSSARY_INTRO)}</p>
+      <nav class="mt-5 flex flex-wrap gap-2">
+        {GLOSSARY.map((g) => <a href={`#${g.id}`} class="btn-secondary h-8 px-3 text-xs">{tx(g.title)}</a>)}
+        <a href={localePath(lang, '/guides/beginner')} class="btn-ghost h-8 px-3 text-xs">{t('nav.beginner')} →</a>
+      </nav>
+    </header>
+
+    {GLOSSARY.map((g) => (
+      <section id={g.id} class="mb-10 scroll-mt-24">
+        <h2 class="mb-4 text-2xl font-bold text-bone">{tx(g.title)}</h2>
+        <dl class="grid gap-3 md:grid-cols-2">
+          {g.terms.map((x) => (
+            <div id={x.id} class="card scroll-mt-24 p-4">
+              <dt class="flex flex-wrap items-baseline gap-x-2 font-semibold text-bone">{tx(x.name)} <span class="text-xs font-normal text-smoke">{x.jp}</span></dt>
+              <dd class="mt-1 text-sm leading-relaxed text-dust">{tx(x.desc)}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

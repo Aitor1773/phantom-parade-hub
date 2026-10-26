@@ -8,7 +8,7 @@ import { LOCALE_META, staticLocalePaths, useT, type Locale } from '@/i18n/utils'
 export const getStaticPaths = staticLocalePaths;
 
 type Src = { source: string; name: string; url: string; modified: string | null };
-type Code = { code: string; reward: string | null; status: string; activeIn: Src[]; expiredIn: Src[]; tested: { tested?: string; note?: string } | null };
+type Code = { code: string; reward: string | null; status: string; activeIn: Src[]; expiredIn: Src[]; tested: { tested?: string; note?: string; official?: boolean; expires?: string } | null };
 
 const lang = Astro.params.lang as Locale;
 const t = useT(lang);
@@ -19,6 +19,7 @@ const active = codes.filter((c) => ['tested', 'verified', 'single'].includes(c.s
 const conflict = codes.filter((c) => c.status === 'conflict');
 const expired = codes.filter((c) => c.status === 'expired');
 const checked = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long' }).format(new Date(data.fetchedAt));
+const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'medium', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
 ---
 
 <BaseLayout lang={lang} title={`${g('cd.title')} (${new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { month: 'long', year: 'numeric' }).format(new Date(data.fetchedAt))})`} description={g('cd.intro')}>
@@ -46,7 +47,9 @@ const checked = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
             <span>{g('cd.copy')}</span>
           </button>
           <div class="flex w-full flex-wrap items-center gap-1.5 text-[11px] text-smoke">
-            {c.status === 'tested' ? (
+            {c.status === 'tested' && c.tested?.official ? (
+              <span class="badge-verified"><Icon name="check" size={12} strokeWidth={2.5} /> {g('cd.official')}{c.tested.expires ? ` · ${g('bn.until')} ${day(c.tested.expires)}` : ''}</span>
+            ) : c.status === 'tested' ? (
               <span class="badge-verified"><Icon name="check" size={12} strokeWidth={2.5} /> {g('cd.tested')}{c.tested?.tested ? ` · ${c.tested.tested}` : ''}</span>
             ) : (
               <span class={c.activeIn.length >= 2 ? 'badge-verified' : 'badge-unverified'}>{g('cd.sources', { n: c.activeIn.length })}</span>

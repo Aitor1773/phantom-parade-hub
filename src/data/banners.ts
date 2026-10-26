@@ -35,7 +35,7 @@ const dayEnd = (d: string) => `${d}T14:59:00${JST}`;
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // Fuente de una entrada manual: nota de prensa, aviso/captura del juego (ambas oficiales)
-type ManualBanner = Omit<Banner, 'approx' | 'source'> & { startApprox?: boolean; source: { label: string; url?: string | null; kind?: 'press' | 'ingame' } };
+type ManualBanner = Omit<Banner, 'approx' | 'source'> & { startApprox?: boolean; source: { label: string; url?: string | null; kind?: 'press' | 'ingame' | 'community' } };
 type WikiBanner = { id: string; name: string; global: { start: string; end: string | null } | null; characters: string[]; _source: { url: string } };
 type WikiDay = { date: string; items: { title: string; kind: BannerKind; end: string | null; characters: string[] }[] };
 
@@ -47,7 +47,8 @@ export const GLOBAL_BANNERS: Banner[] = [
   ...(manual.banners as unknown as ManualBanner[]).map((b) => ({
     ...b,
     approx: !!b.startApprox || !!b.startUnknown,
-    source: { label: b.source.label, url: b.source.url ?? null, official: true },
+    // Las de la base de datos de la comunidad no cuentan como oficiales (ni para el retraso JP → Global)
+    source: { label: b.source.label, url: b.source.url ?? null, official: b.source.kind !== 'community' },
   })),
   // Fechas Global que recoge la wiki (solo día: hora aproximada)
   ...W.banners
