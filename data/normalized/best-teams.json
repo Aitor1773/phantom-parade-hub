@@ -1,0 +1,1102 @@
+{
+  "fetchedAt": "2026-10-26T17:41:01.332Z",
+  "source": "https://docs.google.com/spreadsheets/d/1Qpro4uWVGvTBK7mIWbYHhd82X2NjHhhu1kk-QPiCkyk/edit?gid=1101206588",
+  "teams": [
+    {
+      "color": "blue",
+      "style": "jujutsu",
+      "title": "MONO AZUL RITUAL",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER RITUAL",
+          "id": "shatter-to-pieces-toge-inumaki"
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "id": "first-grade-sorcerers-skill-kento-nanami"
+        },
+        {
+          "role": "SUB DPS / BUFFER RITUAL",
+          "id": "zanshin-kasumi-miwa"
+        },
+        {
+          "role": "DPS RITUAL",
+          "id": "striking-eternal-summer-nobara-kugisaki"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "pivotal-guardian-masamichi-yaga"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER RITUAL",
+          "ids": [
+            {
+              "id": "this-is-justice-suguru-geto"
+            },
+            {
+              "id": "blood-borne-resolve-noritoshi-kamo"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "this-is-justice-suguru-geto"
+            },
+            {
+              "id": "dont-look-down-on-me-momo-nishimiya"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER RITUAL",
+          "ids": [
+            {
+              "id": "pivotal-guardian-masamichi-yaga"
+            }
+          ]
+        },
+        {
+          "role": "DPS RITUAL",
+          "ids": [
+            {
+              "id": "queen-of-curses-yuta-okkotsu"
+            },
+            {
+              "id": "first-grade-sorcerers-skill-kento-nanami"
+            },
+            {
+              "id": "blood-borne-resolve-noritoshi-kamo"
+            },
+            {
+              "id": "no-conceit-takuma-ino"
+            },
+            {
+              "id": "genuine-jujutsu-ryomen-sukuna"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "zanshin-kasumi-miwa"
+            },
+            {
+              "id": "infuse-your-cursed-energy-yuji-itadori"
+            },
+            {
+              "id": "crushed-with-speed-naobito-zenin"
+            },
+            {
+              "id": "dont-look-down-on-me-momo-nishimiya"
+            },
+            {
+              "id": "02-second-domain-expansion-satoru-gojo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "blue",
+      "style": "taijutsu",
+      "title": "MONO AZUL FÍSICO",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER FÍSICO",
+          "id": "delayed-quota-miguel"
+        },
+        {
+          "role": "DPS FÍSICO / AUMENTO DAÑO + STATS",
+          "id": "02-second-domain-expansion-satoru-gojo"
+        },
+        {
+          "role": "SUB DPS / BUFFER FÍSICO",
+          "id": "zanshin-kasumi-miwa"
+        },
+        {
+          "role": "DPS FÍSICO",
+          "id": "smash-it-into-the-summer-sky-yuji-itadori"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "first-grade-sorcerers-skill-kento-nanami"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "shatter-to-pieces-toge-inumaki"
+            },
+            {
+              "id": "blood-borne-resolve-noritoshi-kamo"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "this-is-justice-suguru-geto"
+            },
+            {
+              "id": "dont-look-down-on-me-momo-nishimiya"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "pivotal-guardian-masamichi-yaga"
+            }
+          ]
+        },
+        {
+          "role": "DPS FÍSICO",
+          "ids": [
+            {
+              "id": "first-grade-sorcerers-skill-kento-nanami"
+            },
+            {
+              "id": "early-morning-departure-maki-zenin"
+            },
+            {
+              "id": "with-takada-chan-aoi-todo"
+            },
+            {
+              "id": "infuse-your-cursed-energy-yuji-itadori"
+            },
+            {
+              "id": "queen-of-curses-yuta-okkotsu"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "zanshin-kasumi-miwa"
+            },
+            {
+              "id": "infuse-your-cursed-energy-yuji-itadori"
+            },
+            {
+              "id": "crushed-with-speed-naobito-zenin"
+            },
+            {
+              "id": "dont-look-down-on-me-momo-nishimiya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "blue",
+      "style": "hybrid",
+      "title": "MONO AZUL HÍBRIDO",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER FÍSICO/RITUAL",
+          "id": "shatter-to-pieces-toge-inumaki"
+        },
+        {
+          "role": "SUB DPS / BUFFER FÍSICO/RITUAL",
+          "id": "pivotal-guardian-masamichi-yaga"
+        },
+        {
+          "role": "SUB DPS / BUFFER FÍSICO/RITUAL",
+          "id": "zanshin-kasumi-miwa"
+        },
+        {
+          "role": "DPS HÍBRIDO / AUMENTO DAÑO",
+          "id": "first-grade-sorcerers-skill-kento-nanami"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "this-is-justice-suguru-geto"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO/RITUAL",
+          "ids": [
+            {
+              "id": "blood-borne-resolve-noritoshi-kamo"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "this-is-justice-suguru-geto"
+            },
+            {
+              "id": "dont-look-down-on-me-momo-nishimiya"
+            },
+            {
+              "id": "02-second-domain-expansion-satoru-gojo"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "ids": [
+            {
+              "id": "pivotal-guardian-masamichi-yaga"
+            }
+          ]
+        },
+        {
+          "role": "DPS HÍBRIDO",
+          "ids": [
+            {
+              "id": "crushed-with-speed-naobito-zenin"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "zanshin-kasumi-miwa"
+            },
+            {
+              "id": "infuse-your-cursed-energy-yuji-itadori"
+            },
+            {
+              "id": "crushed-with-speed-naobito-zenin"
+            },
+            {
+              "id": "dont-look-down-on-me-momo-nishimiya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "red",
+      "style": "jujutsu",
+      "title": "MONO ROJO RITUAL",
+      "slots": [
+        {
+          "role": "DEBUFFER RITUAL",
+          "id": "rabbits-disruption-megumi-fushiguro"
+        },
+        {
+          "role": "SUB DPS / AUMENTO DE DAÑO",
+          "id": "unbridled-soul-mahito"
+        },
+        {
+          "role": "BUFFER RITUAL",
+          "id": "tool-manipulation-momo-nishimiya"
+        },
+        {
+          "role": "DPS RITUAL",
+          "id": "the-golden-age-of-jujutsu-noritoshi-kamo"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "promising-new-student-kento-nanami"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER RITUAL",
+          "ids": [
+            {
+              "id": "night-lurking-sorcerer-toge-inumaki"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "promising-new-student-kento-nanami"
+            },
+            {
+              "id": "within-infinity-satoru-gojo"
+            },
+            {
+              "id": "the-final-bullet-mai-zenin"
+            },
+            {
+              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER RITUAL",
+          "ids": [
+            {
+              "id": "ariadnes-thread-educator-masamichi-yaga"
+            }
+          ]
+        },
+        {
+          "role": "DPS RITUAL",
+          "ids": [
+            {
+              "id": "lend-me-your-power-yuta-okkotsu"
+            },
+            {
+              "id": "meteor-of-fierceness-jogo"
+            },
+            {
+              "id": "a-bad-match-nobara-kugisaki"
+            },
+            {
+              "id": "night-of-dancing-crows-mei-mei"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "need-some-help-panda"
+            },
+            {
+              "id": "night-lurking-sorcerer-toge-inumaki"
+            },
+            {
+              "id": "cursed-power-of-words-toge-inumaki"
+            },
+            {
+              "id": "within-infinity-satoru-gojo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "red",
+      "style": "taijutsu",
+      "title": "MONO ROJO FÍSICO",
+      "slots": [
+        {
+          "role": "DEBUFFER FÍSICO",
+          "id": "rabbits-disruption-megumi-fushiguro"
+        },
+        {
+          "role": "SUB DPS / AUMENTO DE DAÑO",
+          "id": "unbridled-soul-mahito"
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "id": "tool-manipulation-momo-nishimiya"
+        },
+        {
+          "role": "DPS FÍSICO",
+          "id": "maximum-cursed-energy-output-yuji-itadori"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "promising-new-student-kento-nanami"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "night-lurking-sorcerer-toge-inumaki"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "promising-new-student-kento-nanami"
+            },
+            {
+              "id": "within-infinity-satoru-gojo"
+            },
+            {
+              "id": "the-final-bullet-mai-zenin"
+            },
+            {
+              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "ariadnes-thread-educator-masamichi-yaga"
+            }
+          ]
+        },
+        {
+          "role": "DPS FÍSICO",
+          "ids": [
+            {
+              "id": "the-sorcerer-killer-toji-fushiguro"
+            },
+            {
+              "id": "nimble-body-yuji-itadori"
+            },
+            {
+              "id": "maverick-outcast-maki-zenin"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "need-some-help-panda"
+            },
+            {
+              "id": "night-lurking-sorcerer-toge-inumaki"
+            },
+            {
+              "id": "cursed-power-of-words-toge-inumaki"
+            },
+            {
+              "id": "within-infinity-satoru-gojo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "red",
+      "style": "hybrid",
+      "title": "MONO ROJO HÍBRIDO",
+      "slots": [
+        {
+          "role": "DEBUFFER FÍSICO/RITUAL",
+          "id": "rabbits-disruption-megumi-fushiguro"
+        },
+        {
+          "role": "SUB DPS / AUMENTO DE DAÑO",
+          "id": "promising-new-student-kento-nanami"
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "id": "tool-manipulation-momo-nishimiya"
+        },
+        {
+          "role": "DPS HÍBRIDO / AUMENTO DE DAÑO",
+          "id": "unbridled-soul-mahito"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "ariadnes-thread-educator-masamichi-yaga"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO/RITUAL",
+          "ids": [
+            {
+              "id": "night-lurking-sorcerer-toge-inumaki"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "promising-new-student-kento-nanami"
+            },
+            {
+              "id": "within-infinity-satoru-gojo"
+            },
+            {
+              "id": "the-final-bullet-mai-zenin"
+            },
+            {
+              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "ids": [
+            {
+              "id": "ariadnes-thread-educator-masamichi-yaga"
+            }
+          ]
+        },
+        {
+          "role": "DPS HÍBRIDO",
+          "ids": []
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "need-some-help-panda"
+            },
+            {
+              "id": "night-lurking-sorcerer-toge-inumaki"
+            },
+            {
+              "id": "cursed-power-of-words-toge-inumaki"
+            },
+            {
+              "id": "within-infinity-satoru-gojo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "green",
+      "style": "jujutsu",
+      "title": "MONO VERDE RITUAL",
+      "slots": [
+        {
+          "role": "DEBUFFER RITUAL",
+          "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+        },
+        {
+          "role": "SUB DPS / AUMENTO DE DAÑO",
+          "id": "fulfilling-his-duty-as-the-older-brother-choso"
+        },
+        {
+          "role": "BUFFER RITUAL",
+          "id": "pick-up-after-hard-work-kiyotaka-ijichi"
+        },
+        {
+          "role": "DPS RITUAL",
+          "id": "awakening-satoru-gojo"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "sprinting-kasumi-miwa"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER RITUAL",
+          "ids": [
+            {
+              "id": "to-protect-non-sorcerers-suguru-geto"
+            },
+            {
+              "id": "cursed-energy-melody-yoshinobu-gakuganji"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "cursed-energy-flashes-black-yuuji-itadori"
+            },
+            {
+              "id": "aerial-reconnaissance-momo-nishimiya"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER RITUAL",
+          "ids": [
+            {
+              "id": "fwoo-hyoi-shoko-ieiri"
+            },
+            {
+              "id": "sprinting-kasumi-miwa"
+            }
+          ]
+        },
+        {
+          "role": "DPS RITUAL",
+          "ids": [
+            {
+              "id": "bond-of-friendship-megumi-fushiguro"
+            },
+            {
+              "id": "ive-seen-it-all-kokichi-muta"
+            },
+            {
+              "id": "keep-hammering-at-them-nobara-kugisaki"
+            },
+            {
+              "id": "ratio-technique-kento-nanami"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
+            },
+            {
+              "id": "hearts-resolve-saki-rindo"
+            },
+            {
+              "id": "dont-underestimate-a-puppet-panda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "green",
+      "style": "taijutsu",
+      "title": "MONO VERDE FÍSICO",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER FÍSICO",
+          "id": "to-protect-non-sorcerers-suguru-geto"
+        },
+        {
+          "role": "SUB DPS / AUMENTO DE DAÑO",
+          "id": "cursed-energy-flashes-black-yuuji-itadori"
+        },
+        {
+          "role": "SUB DPS / BUFFER FÍSICO",
+          "id": "sprinting-kasumi-miwa"
+        },
+        {
+          "role": "DPS FÍSICO",
+          "id": "are-you-satisfied-with-that-aoi-todo"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "fulfilling-his-duty-as-the-older-brother-choso"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+            },
+            {
+              "id": "cursed-energy-melody-yoshinobu-gakuganji"
+            },
+            {
+              "id": "longsword-battle-maki-zenin"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "fulfilling-his-duty-as-the-older-brother-choso"
+            },
+            {
+              "id": "aerial-reconnaissance-momo-nishimiya"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "fwoo-hyoi-shoko-ieiri"
+            }
+          ]
+        },
+        {
+          "role": "DPS FÍSICO",
+          "ids": [
+            {
+              "id": "a-life-entrusted-to-me-yuji-itadori"
+            },
+            {
+              "id": "ratio-technique-kento-nanami"
+            },
+            {
+              "id": "hearts-resolve-saki-rindo"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "cursed-energy-melody-yoshinobu-gakuganji"
+            },
+            {
+              "id": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
+            },
+            {
+              "id": "hearts-resolve-saki-rindo"
+            },
+            {
+              "id": "dont-underestimate-a-puppet-panda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "green",
+      "style": "hybrid",
+      "title": "MONO VERDE HÍBRIDO",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER FÍSICO/RITUAL",
+          "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+        },
+        {
+          "role": "SUB DPS / AUMENTO DE DAÑO",
+          "id": "fulfilling-his-duty-as-the-older-brother-choso"
+        },
+        {
+          "role": "SUB DPS / BUFFER FÍSICO/RITUAL",
+          "id": "sprinting-kasumi-miwa"
+        },
+        {
+          "role": "DPS HÍBRIDO",
+          "id": null
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "fwoo-hyoi-shoko-ieiri"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO/RITUAL",
+          "ids": [
+            {
+              "id": "to-protect-non-sorcerers-suguru-geto"
+            },
+            {
+              "id": "cursed-energy-melody-yoshinobu-gakuganji"
+            },
+            {
+              "id": "longsword-battle-maki-zenin"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "fulfilling-his-duty-as-the-older-brother-choso"
+            },
+            {
+              "id": "aerial-reconnaissance-momo-nishimiya"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "ids": [
+            {
+              "id": "fwoo-hyoi-shoko-ieiri"
+            }
+          ]
+        },
+        {
+          "role": "DPS HÍBRIDO",
+          "ids": [
+            {
+              "id": "ratio-technique-kento-nanami"
+            },
+            {
+              "id": "hearts-resolve-saki-rindo"
+            },
+            {
+              "id": "to-protect-non-sorcerers-suguru-geto"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "cursed-energy-melody-yoshinobu-gakuganji"
+            },
+            {
+              "id": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
+            },
+            {
+              "id": "hearts-resolve-saki-rindo"
+            },
+            {
+              "id": "dont-underestimate-a-puppet-panda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "yellow",
+      "style": "jujutsu",
+      "title": "MONO AMARILLO RITUAL",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER RITUAL",
+          "id": "cursed-corpse-battle-masamichi-yaga"
+        },
+        {
+          "role": "BUFFER FÍSICO / AUMENTO DE DAÑO",
+          "id": "melting-sweet-summer-treats-satoru-gojo"
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "id": "life-saver-shoko-ieiri"
+        },
+        {
+          "role": "DPS RITUAL",
+          "id": "battle-of-firepower-ryomen-sukuna"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "incomplete-domain-megumi-fushiguro"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER RITUAL",
+          "ids": []
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "step-back-third-rate-uraume"
+            },
+            {
+              "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
+            },
+            {
+              "id": "incomplete-domain-megumi-fushiguro"
+            },
+            {
+              "id": "young-fish-and-reverse-punishment-junpei-yoshino"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER RITUAL",
+          "ids": []
+        },
+        {
+          "role": "DPS RITUAL",
+          "ids": [
+            {
+              "id": "executioner-yuta-okkotsu"
+            },
+            {
+              "id": "melting-sweet-summer-treats-satoru-gojo"
+            },
+            {
+              "id": "sword-option-ultimate-mechamaru"
+            },
+            {
+              "id": "girl-of-steel-nobara-kugisaki"
+            },
+            {
+              "id": "unlimited-shikigami-dagon"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "cursed-technique-boost-kaito-yuki"
+            },
+            {
+              "id": "with-that-will-in-mind-kaito-yuki"
+            },
+            {
+              "id": "sword-option-ultimate-mechamaru"
+            },
+            {
+              "id": "young-fish-and-reverse-punishment-junpei-yoshino"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "yellow",
+      "style": "taijutsu",
+      "title": "MONO AMARILLO FÍSICO",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER FÍSICO",
+          "id": "cursed-corpse-battle-masamichi-yaga"
+        },
+        {
+          "role": "BUFFER FÍSICO / AUMENTO DE DAÑO",
+          "id": "melting-sweet-summer-treats-satoru-gojo"
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "id": "life-saver-shoko-ieiri"
+        },
+        {
+          "role": "DPS FÍSICO",
+          "id": "zone-yuji-itadori"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO",
+          "ids": [
+            {
+              "id": "incomplete-domain-megumi-fushiguro"
+            }
+          ]
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
+            },
+            {
+              "id": "step-back-third-rate-uraume"
+            },
+            {
+              "id": "incomplete-domain-megumi-fushiguro"
+            },
+            {
+              "id": "young-fish-and-reverse-punishment-junpei-yoshino"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO",
+          "ids": []
+        },
+        {
+          "role": "DPS FÍSICO",
+          "ids": [
+            {
+              "id": "executioner-yuta-okkotsu"
+            },
+            {
+              "id": "chain-mark-full-throttle-eiji-urushi"
+            },
+            {
+              "id": "seance-toji-fushiguro"
+            },
+            {
+              "id": "sword-option-ultimate-mechamaru"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "cursed-technique-boost-kaito-yuki"
+            },
+            {
+              "id": "with-that-will-in-mind-kaito-yuki"
+            },
+            {
+              "id": "sword-option-ultimate-mechamaru"
+            },
+            {
+              "id": "young-fish-and-reverse-punishment-junpei-yoshino"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "color": "yellow",
+      "style": "hybrid",
+      "title": "MONO AMARILLO HÍBRIDO",
+      "slots": [
+        {
+          "role": "SUB DPS / DEBUFFER FÍSICO/RITUAL",
+          "id": "cursed-corpse-battle-masamichi-yaga"
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "id": "life-saver-shoko-ieiri"
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "id": "melting-sweet-summer-treats-satoru-gojo"
+        },
+        {
+          "role": "DPS HÍBRIDO",
+          "id": "executioner-yuta-okkotsu"
+        },
+        {
+          "role": "BANQUILLO",
+          "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
+        }
+      ],
+      "subs": [
+        {
+          "role": "DEBUFFER FÍSICO/RITUAL",
+          "ids": []
+        },
+        {
+          "role": "AUMENTO DE DAÑO",
+          "ids": [
+            {
+              "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
+            },
+            {
+              "id": "step-back-third-rate-uraume"
+            },
+            {
+              "id": "incomplete-domain-megumi-fushiguro"
+            },
+            {
+              "id": "young-fish-and-reverse-punishment-junpei-yoshino"
+            }
+          ]
+        },
+        {
+          "role": "BUFFER FÍSICO/RITUAL",
+          "ids": []
+        },
+        {
+          "role": "DPS HÍBRIDO",
+          "ids": [
+            {
+              "id": "working-overtime-kento-nanami"
+            },
+            {
+              "id": "sword-option-ultimate-mechamaru"
+            }
+          ]
+        },
+        {
+          "role": "UTILIDAD",
+          "ids": [
+            {
+              "id": "cursed-technique-boost-kaito-yuki"
+            },
+            {
+              "id": "with-that-will-in-mind-kaito-yuki"
+            },
+            {
+              "id": "sword-option-ultimate-mechamaru"
+            },
+            {
+              "id": "young-fish-and-reverse-punishment-junpei-yoshino"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unknownIcons": []
+}

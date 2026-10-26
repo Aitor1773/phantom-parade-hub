@@ -108,6 +108,7 @@ const T = {
   'cl.player': ['Player name (optional)', 'Nombre de jugador (opcional)', 'Nome do jogador (opcional)', 'Nom du joueur (facultatif)', 'Spielername (optional)', 'プレイヤー名（任意）', '플레이어 이름(선택)', '玩家名（可选）'],
   'cl.missing': ['Missing SSR characters', 'Personajes SSR que te faltan', 'Personagens SSR que faltam', 'Personnages SSR manquants', 'Fehlende SSR-Figuren', '未所持のSSRキャラ', '없는 SSR 캐릭터', '缺少的SSR角色'],
   'cd.official': ['Official notice', 'Aviso oficial', 'Aviso oficial', 'Annonce officielle', 'Offizielle Ankündigung', '公式告知', '공식 공지', '官方公告'],
+  'cr.bestteams': ['Best teams by color and style, with substitutes (community team sheet).', 'Mejores equipos por color y estilo, con sustitutos (hoja de equipos de la comunidad).', 'Melhores equipes por cor e estilo, com substitutos (planilha da comunidade).', 'Meilleures équipes par couleur et style, avec remplaçants (tableur de la communauté).', 'Beste Teams nach Farbe und Stil mit Ersatz (Community-Tabelle).', '属性・タイプ別の最強編成と代用キャラ（コミュニティの編成表）。', '색상·스타일별 최강 편성과 대체 캐릭터(커뮤니티 편성표).', '各颜色与风格的最强阵容及替补（社区阵容表）。'],
   'hm.now': ['Right now', 'Ahora mismo', 'Agora mesmo', 'En ce moment', 'Gerade jetzt', '開催中', '지금 진행 중', '当前'],
   'hm.banners': ['Active Global banners', 'Banners activos en Global', 'Banners ativos no Global', 'Bannières actives (Global)', 'Aktive Global-Banner', '開催中のグローバル版ガチャ', '진행 중인 글로벌 배너', '国际服当前卡池'],
   'hm.codes': ['Active codes', 'Códigos activos', 'Códigos ativos', 'Codes actifs', 'Aktive Codes', '有効なコード', '사용 가능한 코드', '可用兑换码'],
