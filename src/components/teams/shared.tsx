@@ -15,7 +15,7 @@ export function useTeamData() {
   useEffect(() => {
     let alive = true;
     const get = (u: string) => fetch(u).then((r) => r.json()).catch(() => []);
-    Promise.all([get('/data/team-chars.json'), get('/data/team-memories.json')]).then(([chars, memories]) => alive && setData({ chars, memories }));
+    Promise.all([get(`/data/team-chars.json?v=${__DATA_V__}`), get(`/data/team-memories.json?v=${__DATA_V__}`)]).then(([chars, memories]) => alive && setData({ chars, memories }));
     return () => { alive = false; };
   }, []);
   return data;

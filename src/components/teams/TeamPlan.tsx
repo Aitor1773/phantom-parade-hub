@@ -12,7 +12,7 @@ const SKILL_KEY: Record<PlanSkill, string> = { skill1: 'ch.normal', skill2: 'ch.
 let cache: Promise<Record<string, PlanGuide>> | null = null;
 const loadGuides = () => {
   const lang = document.documentElement.lang.startsWith('es') ? 'es' : 'en';
-  cache ??= fetch(`/data/team-guides-${lang}.json`).then((r) => r.json()).catch(() => ({}));
+  cache ??= fetch(`/data/team-guides-${lang}.json?v=${__DATA_V__}`).then((r) => r.json()).catch(() => ({}));
   return cache;
 };
 

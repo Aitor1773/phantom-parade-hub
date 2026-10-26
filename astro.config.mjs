@@ -17,6 +17,9 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    // Versión de cada compilación: se añade a /data/*.json para que el navegador no use datos
+    // de una publicación anterior guardados en caché
+    define: { __DATA_V__: JSON.stringify(Date.now().toString(36)) },
     // Precompila siempre el runtime de React: evita el error "_jsxDEV is not a function"
     // en desarrollo cuando se añade un componente nuevo con el servidor arrancado
     optimizeDeps: {
