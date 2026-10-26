@@ -51,6 +51,12 @@ const jj = [
   return { id: Number(m[1]), name, rarity: m[3], profile: profile(+m[4], +m[5], +m[6]) };
 });
 console.log(`wiki: ${wiki.length} memorias · jjkppdb: ${jj.length}`);
+// Si la página no trae la lista (cambio de formato o bloqueo desde el servidor de GitHub),
+// se conservan las parejas anteriores: sin esto se borraban todas y desaparecían las imágenes.
+if (jj.length < 100) {
+  console.warn(`⚠ jjkppdb devolvió solo ${jj.length} memorias: se conservan data/links sin cambios.`);
+  process.exit(0);
+}
 
 // Parejas revisadas a mano por significado (misma rareza y mismo perfil de stats).
 // Tienen prioridad sobre las automáticas. Formato: [nombre en la wiki, nombre en jjkppdb].

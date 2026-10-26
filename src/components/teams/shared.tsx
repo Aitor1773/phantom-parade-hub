@@ -66,6 +66,8 @@ export function AffinityPicker({ value, onChange, labels: L }: { value: Affinity
 
 const RANK_CLS: Record<string, string> = { S: 'bg-flame text-ash', A: 'bg-ember text-ash', B: 'bg-crimson text-bone', C: 'bg-cinder text-bone', D: 'bg-coal text-dust' };
 
+const MEM_RARITY: Record<string, string> = { SSR: '#f4c34d', SR: '#b58cff', R: '#7ab8ff' };
+
 /** Un hueco del equipo. */
 export function SlotCard({ slot, label, labels: L, affinity, basePath, onClick, onRemove }: {
   slot: TeamSlot | { c: TeamChar; as?: 'dmg' | 'sup'; mem?: TeamMemory | null } | null; label: string; labels: Labels; affinity?: AffinityMap; basePath?: string;
@@ -89,9 +91,18 @@ export function SlotCard({ slot, label, labels: L, affinity, basePath, onClick, 
       <span className="block truncate text-[10px] text-smoke">{c ? (c.epithet ?? '') : label}</span>
       {c && <span className="block truncate text-[10px] text-dust">{label}{as ? ` · ${L[as === 'dmg' ? 'tm.dmg' : 'tm.sup']}` : ''}</span>}
       {mem !== undefined && c && (
-        <span className="mt-1 flex items-center gap-1 rounded-md border border-line bg-ash/50 p-0.5 pr-1" title={mem ? `${L['tm.memory']}: ${mem.name}` : L['tm.nomem']}>
-          {mem?.img ? <img src={mem.img} alt="" loading="lazy" className="size-6 shrink-0 rounded object-cover" /> : <span className="grid size-6 shrink-0 place-items-center rounded bg-cinder text-[9px] text-smoke">—</span>}
-          <span className="min-w-0 truncate text-[9px] leading-tight text-dust">{mem ? mem.name : L['tm.nomem']}</span>
+        // Memoria equipada: su ilustración a lo ancho, con rareza y nombre encima
+        <span className="relative mt-1.5 block aspect-[16/10] overflow-hidden rounded-md border border-line bg-cinder" style={{ borderColor: mem ? MEM_RARITY[mem.rarity] : undefined }}
+          title={mem ? `${L['tm.memory']}: ${mem.name}` : L['tm.nomem']}>
+          {mem?.art || mem?.img ? (
+            <img src={mem.art ?? mem.img!} srcSet={mem.artSet} sizes="160px" alt="" loading="lazy" decoding="async" className="size-full object-cover" />
+          ) : (
+            <span className="grid size-full place-items-center text-[10px] text-smoke">—</span>
+          )}
+          {mem && <span className="absolute top-0.5 left-0.5 rounded px-1 text-[9px] font-black text-ash" style={{ background: MEM_RARITY[mem.rarity] }}>{mem.rarity}</span>}
+          <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ash via-ash/80 to-transparent px-1 pt-3 pb-0.5 text-[10px] leading-tight text-bone">
+            <span className="line-clamp-2">{mem ? mem.name : L['tm.nomem']}</span>
+          </span>
         </span>
       )}
     </>

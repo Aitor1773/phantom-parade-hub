@@ -34,7 +34,11 @@ export interface TeamChar {
   traits?: { aoe: boolean; taunt: boolean; heal: boolean; guard: boolean; cleanse: boolean };
 }
 
-export interface TeamMemory { id: string; name: string; rarity: 'SSR' | 'SR' | 'R'; img: string | null; tags: string[]; orientation: string }
+export interface TeamMemory {
+  id: string; name: string; rarity: 'SSR' | 'SR' | 'R'; img: string | null; tags: string[]; orientation: string;
+  /** Ilustración (más vistosa que el icono) y sus tamaños para srcset */
+  art?: string | null; artSet?: string;
+}
 
 /** Lo que guarda Mi cuenta de cada personaje y memoria */
 export interface OwnedChar { level?: number; dupes?: number; skills?: Partial<Record<'normal' | 's1' | 's2' | 'ult', number>>; sp?: boolean }
