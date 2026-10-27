@@ -1,0 +1,670 @@
+{
+  "_comment": "Memorias recomendadas por personaje (hasta 4, de mejor a peor), sacadas de las guías de cada personaje. _review: nombres japoneses emparejados por imagen que hay que revisar y pasar a jp-memories.json.",
+  "updated": "2026-10-27",
+  "characters": {
+    "02-second-domain-expansion-satoru-gojo": [
+      "bedeviled-solicitation-refused",
+      "irreplaceable-moments",
+      "play-of-the-strong",
+      "tokyo-fukuoka-exchange"
+    ],
+    "a-bad-match-nobara-kugisaki": [
+      "nonstandard",
+      "siblings-vacation",
+      "pride",
+      "the-strongest-duo"
+    ],
+    "a-clever-bullet-mai-zenin": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "a-life-entrusted-to-me-yuji-itadori": [
+      "walk-in-shibuya",
+      "irreplaceable-moments",
+      "nameless-spring",
+      "like-minded-sisters"
+    ],
+    "aerial-reconnaissance-momo-nishimiya": [
+      "archers-of-the-forest",
+      "were-sisters",
+      "morning-unraveling-in-the-mirror",
+      "strawberry-parfait-of-youth"
+    ],
+    "are-you-satisfied-with-that-aoi-todo": [
+      "irreplaceable-moments",
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange",
+      "fleeting-warmth"
+    ],
+    "ariadnes-thread-educator-masamichi-yaga": [
+      "unity-from-top-to-bottom",
+      "wont-admit-to-being-in-trouble",
+      "irretrievable-innocence"
+    ],
+    "awakening-satoru-gojo": [
+      "wish-summer-would-never-end",
+      "cursed-spirit-beach",
+      "your-path-forward",
+      "nonstandard"
+    ],
+    "background-support-kiyotaka-ijichi": [
+      "unity-from-top-to-bottom",
+      "wont-admit-to-being-in-trouble",
+      "irretrievable-innocence"
+    ],
+    "battle-of-firepower-ryomen-sukuna": [
+      "illusory-alliance-battle-hidden-inventory",
+      "nonstandard",
+      "pride",
+      "the-strongest-duo"
+    ],
+    "blast-from-the-past-aoi-todo": [
+      "walk-in-shibuya",
+      "tokyo-fukuoka-exchange",
+      "like-minded-sisters",
+      "inheritance"
+    ],
+    "blood-borne-resolve-noritoshi-kamo": [
+      "fleeting-moments",
+      "nimble-cursed-speech-user",
+      "arrival-of-kyoto-school",
+      "nonstandard"
+    ],
+    "blood-of-the-big-three-families-noritoshi-kamo": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "bond-of-friendship-megumi-fushiguro": [
+      "nonstandard",
+      "cursed-spirit-beach",
+      "the-strongest-duo",
+      "grand-exorcism"
+    ],
+    "burning-passion-yu-haibara": [
+      "youth-graffiti",
+      "sake-for-blossom-viewing-on-the-engawa",
+      "i-see-then-die",
+      "siblings-vacation"
+    ],
+    "chain-mark-full-throttle-eiji-urushi": [
+      "annihilating-cross-counter",
+      "like-minded-sisters",
+      "fleeting-warmth",
+      "tokyo-fukuoka-exchange"
+    ],
+    "cold-light-of-dusk-atsuya-kusakabe": [
+      "like-minded-sisters",
+      "i-will-follow-you-nanami-san",
+      "adults-afternoon",
+      "memories-in-a-nook"
+    ],
+    "crafty-rock-yoshinobu-gakuganji": [
+      "intercept-the-calamity",
+      "imaginary-youth",
+      "super-freshman-welcoming-party",
+      "rushing-to-a-mission-on-a-holy-night"
+    ],
+    "crushed-with-speed-naobito-zenin": [
+      "sake-for-blossom-viewing-on-the-engawa",
+      "ignoring-orders",
+      "gold-rush",
+      "walk-in-shibuya"
+    ],
+    "cursed-corpse-battle-masamichi-yaga": [
+      "unity-from-top-to-bottom",
+      "mutual-trust",
+      "a-wish-from-the-past",
+      "perfect-synchronization"
+    ],
+    "cursed-energy-catastrophe-saki-rindo": [
+      "curse-born-from-the-land",
+      "goodbye-take-care",
+      "midsummer-spectators",
+      "cool-glasses"
+    ],
+    "cursed-energy-flashes-black-yuuji-itadori": [
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange",
+      "fleeting-warmth",
+      "play-of-the-strong"
+    ],
+    "cursed-energy-melody-yoshinobu-gakuganji": [
+      "mutual-trust",
+      "visit-fukuoka",
+      "a-wish-from-the-past",
+      "a-slight-gap"
+    ],
+    "cursed-power-of-words-toge-inumaki": [
+      "detainee-party",
+      "mutual-trust",
+      "were-sisters",
+      "preparation-activities"
+    ],
+    "cursed-technique-boost-kaito-yuki": [
+      "rushing-to-a-mission-on-a-holy-night",
+      "the-sky-is-connected",
+      "humans-or-curses-who-will-have-the-last-laugh",
+      "customary-task-game-center"
+    ],
+    "dance-of-the-beautiful-blades-mei-mei": [
+      "like-minded-sisters",
+      "lets-rescue-satoru-gojo",
+      "youth-graffiti",
+      "divine-dogs-short-break"
+    ],
+    "delayed-quota-miguel": [
+      "imaginary-youth",
+      "grand-exorcism",
+      "liar-i-hate-you",
+      "visit-fukuoka"
+    ],
+    "determined-counter-kasumi-miwa": [
+      "memories-in-a-nook",
+      "strong-lineup",
+      "shopping-eating-tour",
+      "liar-i-hate-you"
+    ],
+    "dont-look-down-on-me-momo-nishimiya": [
+      "mutual-trust",
+      "imaginary-youth",
+      "doctors-pride",
+      "detainee-party"
+    ],
+    "dont-underestimate-a-puppet-panda": [
+      "like-minded-sisters",
+      "nameless-youth",
+      "visit-fukuoka",
+      "a-slight-gap"
+    ],
+    "early-morning-departure-maki-zenin": [
+      "tokyo-fukuoka-exchange",
+      "like-minded-sisters",
+      "play-of-the-strong",
+      "nameless-youth"
+    ],
+    "effective-range-mai-zenin": [
+      "intercept-the-calamity",
+      "imaginary-youth",
+      "im-glad-i-gave-birth-to-you",
+      "sake-for-blossom-viewing-on-the-engawa"
+    ],
+    "enjoying-the-cool-summer-breeze-megumi-fushiguro": [
+      "a-brief-moment-between-brothers",
+      "wish-summer-would-never-end",
+      "illusory-alliance-battle-hidden-inventory",
+      "rushing-to-a-mission-on-a-holy-night"
+    ],
+    "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "executioner-yuta-okkotsu": [
+      "leaving-japan",
+      "grand-exorcism",
+      "for-now-a-cola",
+      "illusory-alliance-battle-hidden-inventory"
+    ],
+    "first-grade-sorcerers-skill-kento-nanami": [
+      "grand-exorcism",
+      "divine-dogs-short-break",
+      "adult-time",
+      "mission-start"
+    ],
+    "fulfilling-his-duty-as-the-older-brother-choso": [
+      "a-brief-moment-between-brothers",
+      "nonstandard",
+      "cursed-spirit-beach",
+      "doctors-pride"
+    ],
+    "fwoo-hyoi-shoko-ieiri": [
+      "customary-task-game-center",
+      "imaginary-youth",
+      "mutual-trust",
+      "doctors-pride"
+    ],
+    "genuine-jujutsu-ryomen-sukuna": [
+      "king-of-curses",
+      "nonstandard",
+      "pride",
+      "in-excellent-shape"
+    ],
+    "girl-of-steel-nobara-kugisaki": [
+      "nonstandard",
+      "for-now-a-cola",
+      "the-strongest-duo",
+      "adult-time"
+    ],
+    "hearts-resolve-saki-rindo": [
+      "your-path-forward",
+      "grand-exorcism",
+      "satoru-gojos-solo-camping",
+      "desperate-resistance"
+    ],
+    "hollow-purple-satoru-gojo": [
+      "pride",
+      "nonstandard",
+      "your-path-forward",
+      "cursed-spirit-beach"
+    ],
+    "incomplete-domain-megumi-fushiguro": [
+      "unity-from-top-to-bottom",
+      "in-excellent-shape",
+      "respite-for-adults",
+      "detainee-party"
+    ],
+    "indomitable-auspicious-beasts-takuma-ino": [
+      "sake-for-blossom-viewing-on-the-engawa",
+      "intercept-the-calamity",
+      "a-brief-moment-between-brothers",
+      "imaginary-youth"
+    ],
+    "infuse-your-cursed-energy-yuji-itadori": [
+      "like-minded-sisters",
+      "play-of-the-strong",
+      "unity-from-top-to-bottom",
+      "nameless-youth"
+    ],
+    "inherited-cursed-technique-megumi-fushiguro": [
+      "nonstandard",
+      "the-strongest-duo",
+      "cursed-spirit-school-group",
+      "in-excellent-shape"
+    ],
+    "innate-talent-maki-zenin": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "inspiration-from-death-mahito": [
+      "nonstandard",
+      "the-strongest-duo",
+      "in-excellent-shape",
+      "unity-from-top-to-bottom"
+    ],
+    "ive-seen-it-all-kokichi-muta": [
+      "encounter-and-anticipation",
+      "pride",
+      "imaginary-youth",
+      "nimble-cursed-speech-user"
+    ],
+    "just-bring-it-saki-rindo": [
+      "curse-born-from-the-land",
+      "goodbye-take-care",
+      "midsummer-spectators",
+      "cool-glasses"
+    ],
+    "keep-hammering-at-them-nobara-kugisaki": [
+      "cursed-spirit-beach",
+      "nonstandard",
+      "your-path-forward",
+      "grand-exorcism"
+    ],
+    "lend-me-your-power-yuta-okkotsu": [
+      "pride",
+      "grand-exorcism",
+      "nonstandard",
+      "lets-rescue-satoru-gojo"
+    ],
+    "life-saver-shoko-ieiri": [
+      "imaginary-youth",
+      "doctors-pride",
+      "a-slight-gap",
+      "mutual-trust"
+    ],
+    "longsword-battle-maki-zenin": [
+      "tokyo-fukuoka-exchange",
+      "like-minded-sisters",
+      "play-of-the-strong",
+      "girls-school-sorcerer"
+    ],
+    "maverick-outcast-maki-zenin": [
+      "tokyo-fukuoka-exchange",
+      "like-minded-sisters",
+      "fleeting-warmth",
+      "two-shadows-reflected-in-the-evening"
+    ],
+    "maximum-cursed-energy-output-yuji-itadori": [
+      "irreplaceable-moments",
+      "play-of-the-strong",
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange"
+    ],
+    "melting-sweet-summer-treats-satoru-gojo": [
+      "behold-okinawa",
+      "in-excellent-shape",
+      "ordinary-time",
+      "unity-from-top-to-bottom"
+    ],
+    "meteor-of-fierceness-jogo": [
+      "nonstandard",
+      "pride",
+      "cursed-spirit-school-group",
+      "cat-rescue"
+    ],
+    "mode-albatross-ultimate-mechamaru": [
+      "stylish-dress-up-plan",
+      "the-footage-left-behind",
+      "ice-sorcerer",
+      "irreconcilable-red-scale"
+    ],
+    "need-some-help-panda": [
+      "midsummer-spectators",
+      "visit-fukuoka",
+      "strong-lineup",
+      "though-the-future-may-differ"
+    ],
+    "night-lurking-sorcerer-toge-inumaki": [
+      "nonstandard",
+      "cat-rescue",
+      "imaginary-youth",
+      "a-magnificent-stride-forward"
+    ],
+    "night-of-dancing-crows-mei-mei": [
+      "siblings-vacation",
+      "play-of-the-strong",
+      "grand-exorcism",
+      "nimble-cursed-speech-user"
+    ],
+    "nimble-body-yuji-itadori": [
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange",
+      "play-of-the-strong",
+      "noritoshi-kamos-archery-lessons"
+    ],
+    "no-conceit-takuma-ino": [
+      "coffee-break-in-the-afternoon",
+      "nonstandard",
+      "king-of-curses",
+      "pride"
+    ],
+    "panda-is-not-a-panda-panda": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "pick-up-after-hard-work-kiyotaka-ijichi": [
+      "imaginary-youth",
+      "doctors-pride",
+      "ordinary-time",
+      "unity-from-top-to-bottom"
+    ],
+    "pivotal-guardian-masamichi-yaga": [
+      "the-panda-and-the-scarred-pillar",
+      "imaginary-youth",
+      "doctors-pride",
+      "ordinary-time"
+    ],
+    "pride-of-a-cursed-spirit-jogo": [
+      "nonstandard",
+      "pride",
+      "cursed-spirit-school-group",
+      "king-of-curses"
+    ],
+    "promising-new-student-kento-nanami": [
+      "imaginary-youth",
+      "doctors-pride",
+      "super-freshman-welcoming-party",
+      "wont-admit-to-being-in-trouble"
+    ],
+    "queen-of-curses-yuta-okkotsu": [
+      "cursed-spirit-school-group",
+      "knowledge-on-exorcising",
+      "nonstandard",
+      "pride"
+    ],
+    "rabbits-disruption-megumi-fushiguro": [
+      "students-duty",
+      "super-freshman-welcoming-party",
+      "siblings-vacation",
+      "nonstandard"
+    ],
+    "ratio-technique-kento-nanami": [
+      "grand-exorcism",
+      "mission-start",
+      "cursed-spirit-beach",
+      "lets-rescue-satoru-gojo"
+    ],
+    "reckless-grade-1-aoi-todo": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "resolved-cursed-speech-toge-inumaki": [
+      "nonstandard",
+      "for-now-a-cola",
+      "reunited-after-the-rain",
+      "a-magnificent-stride-forward"
+    ],
+    "reverse-cursed-technique-shoko-ieiri": [
+      "morning-unraveling-in-the-mirror",
+      "strawberry-parfait-of-youth",
+      "die-and-become-a-sage",
+      "instincts-of-a-curse"
+    ],
+    "seance-toji-fushiguro": [
+      "fleeting-warmth",
+      "tokyo-fukuoka-exchange",
+      "like-minded-sisters",
+      "two-shadows-reflected-in-the-evening"
+    ],
+    "shatter-to-pieces-toge-inumaki": [
+      "youre-late",
+      "a-magnificent-stride-forward",
+      "fleeting-moments",
+      "imaginary-youth"
+    ],
+    "silent-suppression-kento-nanami": [
+      "restored-silence",
+      "irreplaceable-moments",
+      "i-will-follow-you-nanami-san",
+      "like-minded-sisters"
+    ],
+    "smash-it-into-the-summer-sky-yuji-itadori": [
+      "hey-shisa",
+      "irreplaceable-moments",
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange"
+    ],
+    "sprinting-kasumi-miwa": [
+      "shopping-eating-tour",
+      "liar-i-hate-you",
+      "memories-in-a-nook",
+      "strong-lineup"
+    ],
+    "step-back-third-rate-uraume": [
+      "imaginary-youth",
+      "doctors-pride",
+      "a-slight-gap",
+      "thousand-year-master-follower-relation"
+    ],
+    "striking-eternal-summer-nobara-kugisaki": [
+      "knowledge-on-exorcising",
+      "king-of-curses",
+      "cursed-spirit-school-group"
+    ],
+    "sukunas-vessel-yuji-itadori": [
+      "my-best-battery",
+      "ping-pong",
+      "mad-dog-divine-dog",
+      "annihilating-cross-counter"
+    ],
+    "sword-option-ultimate-mechamaru": [
+      "for-now-a-cola",
+      "walk-in-shibuya",
+      "lets-rescue-satoru-gojo",
+      "reunited-after-the-rain"
+    ],
+    "take-the-shortest-way-panda": [
+      "like-minded-sisters",
+      "nameless-youth",
+      "play-of-the-strong",
+      "grand-exorcism"
+    ],
+    "team-up-if-they-are-weak-maki-zenin": [
+      "like-minded-sisters",
+      "play-of-the-strong",
+      "malevolent-shrine",
+      "nameless-youth"
+    ],
+    "the-baton-of-counterattack-toge-inumaki": [
+      "memories-in-a-nook",
+      "shopping-eating-tour",
+      "a-slight-gap",
+      "strong-lineup"
+    ],
+    "the-final-bullet-mai-zenin": [
+      "unity-from-top-to-bottom",
+      "in-excellent-shape",
+      "source-of-stress",
+      "i-will-follow-you-nanami-san"
+    ],
+    "the-golden-age-of-jujutsu-noritoshi-kamo": [
+      "this-is-the-world-of-the-future",
+      "nonstandard",
+      "pride",
+      "cursed-spirit-school-group"
+    ],
+    "the-resolve-of-being-a-sorcerer-kaito-yuuki": [
+      "rushing-to-a-mission-on-a-holy-night",
+      "the-sky-is-connected",
+      "humans-or-curses-who-will-have-the-last-laugh",
+      "customary-task-game-center"
+    ],
+    "the-sorcerer-killer-toji-fushiguro": [
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange",
+      "two-shadows-reflected-in-the-evening",
+      "unity-from-top-to-bottom"
+    ],
+    "the-strongest-blue-satoru-gojo": [
+      "nonstandard",
+      "for-now-a-cola",
+      "the-strongest-duo",
+      "pride"
+    ],
+    "the-strongest-satoru-gojo": [
+      "nonstandard",
+      "pride",
+      "shopping-eating-tour",
+      "king-of-curses"
+    ],
+    "the-thrill-of-the-fight-hanami": [
+      "imaginary-youth",
+      "in-excellent-shape",
+      "doctors-pride",
+      "a-slight-gap"
+    ],
+    "this-is-justice-suguru-geto": [
+      "our-priorities",
+      "king-of-curses",
+      "yeah-nice-job",
+      "doctors-pride"
+    ],
+    "to-protect-non-sorcerers-suguru-geto": [
+      "i-see-then-die",
+      "grand-exorcism",
+      "the-strongest-quarrel",
+      "nonstandard"
+    ],
+    "to-stay-true-to-myself-nobara-kugisaki": [
+      "stylish-dress-up-plan",
+      "the-footage-left-behind",
+      "ice-sorcerer",
+      "irreconcilable-red-scale"
+    ],
+    "tool-manipulation-momo-nishimiya": [
+      "morning-unraveling-in-the-mirror",
+      "imaginary-youth",
+      "doctors-pride",
+      "ordinary-time"
+    ],
+    "unbridled-soul-mahito": [
+      "cursed-spirit-school-group",
+      "imaginary-youth",
+      "doctors-pride",
+      "curses-and-bubbles"
+    ],
+    "unfair-salvation-megumi-fushiguro": [
+      "web-of-schemes",
+      "satoru-gojos-solo-camping",
+      "rushing-to-a-mission-on-a-holy-night",
+      "the-sky-is-connected"
+    ],
+    "unlimited-shikigami-dagon": [
+      "cursed-spirit-school-group",
+      "cat-rescue",
+      "nonstandard",
+      "a-slight-gap"
+    ],
+    "value-of-life-junpei-yoshino": [
+      "memories-in-a-nook",
+      "strong-lineup",
+      "shopping-eating-tour",
+      "liar-i-hate-you"
+    ],
+    "ward-off-with-sharp-blade-atsuya-kusakabe": [
+      "imaginary-youth",
+      "shopping-eating-tour",
+      "walk-in-shibuya",
+      "sake-for-blossom-viewing-on-the-engawa"
+    ],
+    "what-lies-at-the-end-suguru-geto": [
+      "watch-closely",
+      "cursed-spirit-school-group",
+      "illusory-alliance-battle-hidden-inventory",
+      "for-now-a-cola"
+    ],
+    "with-takada-chan-aoi-todo": [
+      "tokyo-fukuoka-exchange",
+      "like-minded-sisters",
+      "play-of-the-strong",
+      "nameless-youth"
+    ],
+    "with-that-will-in-mind-kaito-yuki": [
+      "respite-for-adults",
+      "noritoshi-kamos-archery-lessons",
+      "imaginary-youth",
+      "visit-fukuoka"
+    ],
+    "within-infinity-satoru-gojo": [
+      "in-excellent-shape",
+      "respite-for-adults",
+      "like-minded-sisters",
+      "live-a-long-life"
+    ],
+    "working-overtime-kento-nanami": [
+      "divine-dogs-short-break",
+      "for-now-a-cola",
+      "reunited-after-the-rain",
+      "grand-exorcism"
+    ],
+    "young-fish-and-reverse-punishment-junpei-yoshino": [
+      "imaginary-youth",
+      "curses-and-bubbles",
+      "a-slight-gap",
+      "doctors-pride"
+    ],
+    "zanshin-kasumi-miwa": [
+      "ignoring-orders",
+      "intercept-the-calamity",
+      "imaginary-youth",
+      "unity-from-top-to-bottom"
+    ],
+    "zone-yuji-itadori": [
+      "like-minded-sisters",
+      "tokyo-fukuoka-exchange",
+      "play-of-the-strong",
+      "reunited-after-the-rain"
+    ]
+  },
+  "_review": {}
+}

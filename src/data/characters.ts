@@ -5,7 +5,10 @@ import fixesFile from '../../data/manual/character-fixes.json';
 import localImages from './local-images.json';
 import localIcons from './local-icons.json';
 import { REMOTE_IMAGES } from '@/config/site';
-import { memoryByCharacterName } from './memories';
+import { getMemory, memoryByCharacterName } from './memories';
+import charMemoriesFile from '../../data/manual/char-memories.json';
+
+const CHAR_MEMORIES = (charMemoriesFile as unknown as { characters: Record<string, string[]> }).characters;
 
 type LocalImage = { width: number; height: number; widths: number[] };
 const LOCAL = localImages as Record<string, LocalImage>;
@@ -119,12 +122,19 @@ function localizeImages(c: Character): Character {
       if (sk && !sk.img) sk.img = kits.map((k) => k[slot]?.img).find(Boolean) ?? null;
     }
   }
-  out.memories = out.memories
+  const fromWiki = out.memories
     .filter((m) => !/^placeholder/i.test(m.name)) // huecos vacíos de la plantilla de la wiki
     .map((m) => {
       const mem = memoryByCharacterName(m.name);
       return { name: mem?.name ?? m.name, img: mem?.icon ?? null, id: mem?.id ?? null };
     });
+  // Las 4 mejores según las guías de cada personaje (data/manual/char-memories.json) van primero;
+  // se completan con las de la wiki hasta 4
+  const best = (CHAR_MEMORIES[c.id] ?? []).map(getMemory).filter((m): m is NonNullable<typeof m> => !!m)
+    .map((m) => ({ name: m.name, img: m.icon, id: m.id }));
+  out.memories = best.length
+    ? [...best, ...fromWiki.filter((m) => !best.some((b) => b.id === m.id))].slice(0, 4)
+    : fromWiki;
   return out;
 }
 
