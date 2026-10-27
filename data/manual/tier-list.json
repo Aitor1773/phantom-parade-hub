@@ -1,6 +1,6 @@
 {
   "_comment": "Tier list PROPIA, con 7 listas (blue, red, green, yellow, damage, support, sp). Para ajustar: en lists.<lista>.entries.<id> cambia \"rank\", pon \"manual\": true y, si quieres, una \"note\". Para fijar la fecha de revisión de una lista: \"reviewed\": \"AAAA-MM-DD\" y \"reviewedManual\": true. Con \"curated\": true en una lista, solo salen en ella los personajes con \"manual\": true (para añadir uno nuevo: rank, manual y \"lastRank\": null). El borrador nunca toca lo manual y registra cada cambio en \"changelog\". Después: npm run data:tierdraft && npm run build",
-  "updatedAt": "2026-10-26T07:26:46.725Z",
+  "updatedAt": "2026-10-27T07:22:06.611Z",
   "criteria": {
     "roleWeights": {
       "attacker": {
@@ -287,7 +287,7 @@
       }
     },
     "red": {
-      "reviewed": "2026-10-19",
+      "reviewed": "2026-10-27",
       "entries": {
         "the-sorcerer-killer-toji-fushiguro": {
           "rank": "A",
@@ -363,7 +363,7 @@
           "rank": "A",
           "draftRank": "B",
           "score": 65,
-          "lastRank": "B",
+          "lastRank": "A",
           "manual": true,
           "note": "Potenciador recién salido (19/10/2026); subido a A al revisar las guías publicadas."
         },
@@ -1284,7 +1284,7 @@
       }
     },
     "support": {
-      "reviewed": "2026-10-19",
+      "reviewed": "2026-10-27",
       "curated": true,
       "entries": {
         "a-life-entrusted-to-me-yuji-itadori": {
@@ -1398,6 +1398,14 @@
           "score": 66,
           "lastRank": "S",
           "manual": true
+        },
+        "cold-light-of-dusk-atsuya-kusakabe": {
+          "rank": "A",
+          "draftRank": "B",
+          "score": 65,
+          "lastRank": "A",
+          "manual": true,
+          "note": "Potenciador: añadido a la lista de apoyo."
         },
         "are-you-satisfied-with-that-aoi-todo": {
           "rank": "B",
@@ -1553,14 +1561,6 @@
           "score": 8,
           "lastRank": "A",
           "manual": true
-        },
-        "cold-light-of-dusk-atsuya-kusakabe": {
-          "rank": "A",
-          "draftRank": "B",
-          "score": 65,
-          "lastRank": null,
-          "manual": true,
-          "note": "Potenciador: añadido a la lista de apoyo."
         }
       }
     },
@@ -4026,6 +4026,22 @@
     },
     {
       "date": "2026-10-26",
+      "list": "support",
+      "id": "cold-light-of-dusk-atsuya-kusakabe",
+      "from": null,
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-27",
+      "list": "red",
+      "id": "cold-light-of-dusk-atsuya-kusakabe",
+      "from": "B",
+      "to": "A",
+      "by": "manual"
+    },
+    {
+      "date": "2026-10-27",
       "list": "support",
       "id": "cold-light-of-dusk-atsuya-kusakabe",
       "from": null,
