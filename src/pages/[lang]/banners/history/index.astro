@@ -1,0 +1,141 @@
+---
+// Historial de reediciones: cada personaje con sus banners destacados en JP y Global y cuánto hace del último.
+// Los «hace N días» y los estados (en banner / próximamente) se recalculan en el navegador.
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Icon from '@/components/Icon.astro';
+import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
+import { HISTORY, type Appearance } from '@/data/banner-history';
+import { thumb } from '@/data/characters';
+import { gameDict, useG, type GameKey } from '@/i18n/game';
+import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
+
+export const getStaticPaths = staticLocalePaths;
+
+const lang = Astro.params.lang as Locale;
+const t = useT(lang);
+const g = useG(lang);
+const L = gameDict(lang, [
+  'bh.intro', 'bh.char', 'bh.ago', 'bh.never', 'bh.live', 'bh.soon', 'bh.sort', 'bh.sort.global',
+  'bh.sort.jp', 'bh.sort.count', 'bh.sort.new', 'bh.note', 'tl.all', 'el.red', 'el.blue', 'el.green', 'el.yellow',
+] as const);
+const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'medium', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
+const ts = (a: Appearance | undefined) => (a ? +new Date(a.start) : 0);
+const ELS = ['red', 'blue', 'green', 'yellow'] as const;
+const rows = HISTORY.map(({ c, h }) => ({ c, h, img: c.icon ?? thumb(c.art, 320) }));
+// Por defecto: lo que más tiempo lleva sin banner en JP, la cronología completa. Los estándar (siempre en el gacha
+// normal) y los que nunca han tenido banner van al final
+const wait = (c: (typeof rows)[number]['c'], t: number) => (t || 9e15) + (c.availability === 'standard' ? 1e16 : 0);
+rows.sort((a, b) => wait(a.c, ts(a.h.jp[0])) - wait(b.c, ts(b.h.jp[0])));
+---
+
+<BaseLayout lang={lang} title={t('nav.history')} description={L['bh.intro']}>
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+    <header class="mb-8">
+      <p class="eyebrow flex items-center gap-1.5"><Icon name="calendar" size={13} /> <a href={localePath(lang, '/banners')} class="hover:text-bone">{t('nav.banners')}</a></p>
+      <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.history')}</h1>
+      <p class="mt-3 max-w-2xl text-dust">{L['bh.intro']}</p>
+    </header>
+
+    <div class="mb-5 flex flex-wrap items-center gap-3">
+      <label class="flex items-center gap-2 text-sm text-dust">
+        {L['bh.sort']}
+        <select id="bh-sort" class="rounded-lg border border-line bg-coal px-3 py-1.5 text-sm text-bone">
+          <option value="jp">{L['bh.sort.jp']}</option>
+          <option value="global">{L['bh.sort.global']}</option>
+          <option value="count">{L['bh.sort.count']}</option>
+          <option value="new">{L['bh.sort.new']}</option>
+        </select>
+      </label>
+      <div class="flex flex-wrap gap-1.5" role="group">
+        <button type="button" data-el="" class="bh-el rounded-full border border-ember/60 bg-ember/10 px-3 py-1 text-xs font-semibold text-bone" aria-pressed="true">{L['tl.all']}</button>
+        {ELS.map((e) => (
+          <button type="button" data-el={e} class="bh-el flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs font-semibold text-dust" aria-pressed="false">
+            <span class="size-2 rounded-full" style={`background:${ELEMENT_COLOR[e]}`}></span>{L[`el.${e}`]}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div class="hidden grid-cols-[minmax(0,1.4fr)_1fr_1fr] gap-4 px-3 pb-2 text-xs font-semibold tracking-wide text-smoke uppercase sm:grid">
+      <span>{L['bh.char']}</span><span>JP</span><span>Global</span>
+    </div>
+    <ul id="bh-list" class="space-y-2">
+      {rows.map(({ c, h, img }) => (
+        <li
+          class="card p-3"
+          data-el={c.element}
+          data-jp={ts(h.jp[0])}
+          data-gl={ts(h.global[0])}
+          data-count={h.jp.length + h.global.length}
+          data-rel={c.releaseDateJP ?? ''}
+          data-std={c.availability === 'standard' ? 1 : 0}
+        >
+          <div class="grid gap-3 sm:grid-cols-[minmax(0,1.4fr)_1fr_1fr] sm:items-center sm:gap-4">
+            <a href={localePath(lang, `/characters/${c.id}`)} class="group flex min-w-0 items-center gap-3">
+              {img ? <img src={img} alt="" loading="lazy" class="size-11 shrink-0 rounded-lg bg-coal object-cover object-top" style={`box-shadow:0 0 0 2px ${ELEMENT_COLOR[c.element]}88`} /> : <span class="size-11 shrink-0 rounded-lg bg-coal" />}
+              <span class="min-w-0">
+                <span class="block truncate text-sm font-semibold text-bone group-hover:text-flame">{c.name}</span>
+                <span class="block truncate text-xs text-smoke">{c.epithet ?? ''}{c.availability ? ` · ${g(`av.${c.availability}` as GameKey)}` : ''}</span>
+              </span>
+            </a>
+            {[{ k: 'JP', list: h.jp }, { k: 'Global', list: h.global }].map(({ k, list }) => (
+              <div class="flex items-center gap-3 text-sm">
+                <span class="w-12 shrink-0 text-xs font-semibold text-smoke sm:hidden">{k}</span>
+                {list.length ? (
+                  <details class="min-w-0 flex-1">
+                    <summary class="cursor-pointer list-none">
+                      <span class="font-semibold text-bone tabular-nums">{list.length}×</span>
+                      <span class="ml-2 text-dust">{day(list[0].start)}</span>
+                      <span class="bh-ago ml-1 text-xs text-smoke" data-start={list[0].start} data-end={list[0].end ?? ''}></span>
+                    </summary>
+                    <ol class="mt-2 space-y-1 border-l border-line pl-3 text-xs text-dust">
+                      {list.map((a) => <li><span class="text-smoke tabular-nums">{day(a.start)}</span> · {a.name}</li>)}
+                    </ol>
+                  </details>
+                ) : (
+                  <span class="text-xs text-smoke">{L['bh.never']}</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-6 max-w-3xl text-xs text-smoke">{L['bh.note']}</p>
+  </div>
+</BaseLayout>
+
+<script is:inline define:vars={{ ago: L['bh.ago'], live: L['bh.live'], soon: L['bh.soon'] }}>
+  (() => {
+    const now = Date.now();
+    // Estado de la última aparición: en banner ahora, próximamente o hace N días
+    document.querySelectorAll('.bh-ago').forEach((el) => {
+      const s = +new Date(el.dataset.start), e = el.dataset.end ? +new Date(el.dataset.end) : Infinity;
+      if (s > now) { el.textContent = `· ${soon}`; el.style.color = '#ff7a3d'; }
+      else if (e >= now) { el.textContent = `· ${live}`; el.style.color = '#3fcf8e'; }
+      else el.textContent = `· ${ago.replace('{n}', String(Math.floor((now - s) / 864e5)))}`;
+    });
+    const list = document.getElementById('bh-list');
+    const rows = [...list.children];
+    const key = {
+      // Sin banner en ese servidor → al final
+      global: (r) => (+r.dataset.gl || 9e15) + r.dataset.std * 1e16,
+      jp: (r) => (+r.dataset.jp || 9e15) + r.dataset.std * 1e16,
+      count: (r) => -r.dataset.count,
+      new: (r) => -(+new Date(r.dataset.rel || 0)),
+    };
+    document.getElementById('bh-sort').addEventListener('change', (ev) => {
+      const k = key[ev.target.value];
+      rows.sort((a, b) => k(a) - k(b)).forEach((r) => list.appendChild(r));
+    });
+    document.querySelectorAll('.bh-el').forEach((b) => b.addEventListener('click', () => {
+      document.querySelectorAll('.bh-el').forEach((x) => {
+        const on = x === b;
+        x.setAttribute('aria-pressed', String(on));
+        x.classList.toggle('border-ember/60', on); x.classList.toggle('bg-ember/10', on); x.classList.toggle('text-bone', on);
+        x.classList.toggle('border-line', !on); x.classList.toggle('text-dust', !on);
+      });
+      rows.forEach((r) => { r.hidden = !!b.dataset.el && r.dataset.el !== b.dataset.el; });
+    }));
+  })();
+</script>
