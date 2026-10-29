@@ -5,6 +5,7 @@ import manual from '../../data/manual/content.json';
 import community from '../../data/community.json';
 import stagesFile from '../../data/manual/stages.json';
 import eventGuides from '../../data/normalized/event-guides.json';
+import stageLive from '../../data/normalized/stage-live.json';
 import type { Stage } from '@/lib/stage';
 import { GLOBAL_BANNERS, JP_BANNERS } from './banners';
 import type { ElementKey } from '@/lib/team-recs';
@@ -96,6 +97,9 @@ export const getContent = (id: string) => CONTENT.find((c) => c.id === id) ?? nu
 
 // ── Fichas de fases (transcritas de capturas del juego) ──
 const STAGES = (stagesFile as unknown as { stages: Record<string, Stage> }).stages;
+// Poder recomendado y colores leídos a diario de la fuente (npm run data:stages): mandan sobre la ficha
+type LiveStage = Pick<Stage, 'power' | 'recommended' | 'unfavorable'> & { modified?: string | null };
+const LIVE = (stageLive as unknown as { stages: Record<string, LiveStage> }).stages;
 /**
  * Fichas de un contenido: la propia ("<id>") y las de sus fases ("<id>/<fase>").
  * Sin fuente ni enlace: la web no nombra ni enlaza otras webs (las fuentes están en Créditos).
@@ -103,8 +107,10 @@ const STAGES = (stagesFile as unknown as { stages: Record<string, Stage> }).stag
 export const stagesOf = (id: string): Record<string, Stage> => {
   const own = Object.fromEntries(Object.entries(STAGES).filter(([k]) => k === id || k.startsWith(`${id}/`)).map(([k, s]) => {
     const { source: _s, url: _u, cleared, guide, ...rest } = s;
+    const { modified: _m, ...live } = LIVE[k] ?? {};
     return [k, {
       ...rest,
+      ...live,
       ...(cleared ? { cleared: { ...cleared, source: undefined, url: undefined } } : {}),
       ...(guide ? { guide: { ...guide, source: undefined, url: undefined } } : {}),
     }];

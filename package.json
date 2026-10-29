@@ -21,7 +21,8 @@
     "data:banner-art": "node scripts/data/fetch-banner-art.mjs",
     "data:best-teams": "node scripts/data/fetch-best-teams.mjs",
     "data:char-memories": "node scripts/data/fetch-char-memories.mjs",
-    "data:daily": "npm run data:fetch && npm run data:banners && npm run data:codes && npm run data:link && npm run data:tierdraft && npm run data:community && npm run data:events && npm run data:banner-art && npm run data:best-teams"
+    "data:stages": "node scripts/data/check-stages.mjs",
+    "data:daily": "npm run data:fetch && npm run data:banners && npm run data:codes && npm run data:link && npm run data:tierdraft && npm run data:community && npm run data:events && npm run data:banner-art && npm run data:best-teams && npm run data:stages"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.0",

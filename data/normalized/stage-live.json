@@ -1,0 +1,1351 @@
+{
+ "fetchedAt": "2026-10-29T10:29:38.690Z",
+ "stages": {
+  "illusory-tower-diverse/1": {
+   "power": 78300,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-15T13:00:33.000+09:00"
+  },
+  "illusory-tower-diverse/2": {
+   "power": 83300,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "blue"
+   ],
+   "modified": "2026-10-15T13:01:40.000+09:00"
+  },
+  "illusory-tower-diverse/3": {
+   "power": 88400,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "green"
+   ],
+   "modified": "2026-10-15T13:01:48.000+09:00"
+  },
+  "illusory-tower-diverse/4": {
+   "power": 93400,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-15T13:02:18.000+09:00"
+  },
+  "illusory-tower-diverse/5": {
+   "power": 98500,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "green"
+   ],
+   "modified": "2026-10-15T13:03:20.000+09:00"
+  },
+  "illusory-tower-diverse/6": {
+   "power": 103600,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "yellow"
+   ],
+   "modified": "2026-10-15T13:04:19.000+09:00"
+  },
+  "illusory-tower-diverse/7": {
+   "power": 108600,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "blue"
+   ],
+   "modified": "2026-10-15T13:05:13.000+09:00"
+  },
+  "illusory-tower-diverse/8": {
+   "power": 113700,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "green"
+   ],
+   "modified": "2026-10-15T13:05:38.000+09:00"
+  },
+  "illusory-tower-diverse/9": {
+   "power": 118800,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-15T13:06:06.000+09:00"
+  },
+  "illusory-tower-diverse/10": {
+   "power": 128900,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "blue"
+   ],
+   "modified": "2026-10-15T13:06:54.000+09:00"
+  },
+  "illusory-tower-diverse/11": {
+   "power": 133900,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "yellow"
+   ],
+   "modified": "2026-10-15T13:30:28.000+09:00"
+  },
+  "illusory-tower-diverse/12": {
+   "power": 139000,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "green"
+   ],
+   "modified": "2026-10-15T13:32:04.000+09:00"
+  },
+  "illusory-tower-diverse/13": {
+   "power": 141000,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-16T11:11:49.000+09:00"
+  },
+  "illusory-tower-diverse/14": {
+   "power": 143000,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "yellow"
+   ],
+   "modified": "2026-10-15T13:34:16.000+09:00"
+  },
+  "illusory-tower-diverse/15": {
+   "power": 152000,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-15T13:34:54.000+09:00"
+  },
+  "illusory-tower-diverse/16": {
+   "power": 161000,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-16T11:45:46.000+09:00"
+  },
+  "illusory-tower-diverse/17": {
+   "power": 176000,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-15T13:39:35.000+09:00"
+  },
+  "illusory-tower-diverse/18": {
+   "power": 192400,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "green"
+   ],
+   "modified": "2026-10-15T13:44:24.000+09:00"
+  },
+  "illusory-tower-diverse/20": {
+   "power": 213500,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red"
+   ],
+   "modified": "2026-10-15T13:47:32.000+09:00"
+  },
+  "illusory-tower/20": {
+   "power": 85338,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:22.000+09:00"
+  },
+  "illusory-tower/21": {
+   "power": 80275,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:47.000+09:00"
+  },
+  "illusory-tower/22": {
+   "power": 90400,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:39.000+09:00"
+  },
+  "illusory-tower/23": {
+   "power": 90400,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:34.000+09:00"
+  },
+  "illusory-tower/24": {
+   "power": 90400,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:27.000+09:00"
+  },
+  "illusory-tower/25": {
+   "power": 93438,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2026-05-29T12:24:40.000+09:00"
+  },
+  "illusory-tower/26": {
+   "power": 90400,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:25.000+09:00"
+  },
+  "illusory-tower/27": {
+   "power": 91413,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:19.000+09:00"
+  },
+  "illusory-tower/28": {
+   "power": 92425,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:15.000+09:00"
+  },
+  "illusory-tower/29": {
+   "power": 94450,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:08.000+09:00"
+  },
+  "illusory-tower/30": {
+   "power": 99513,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:35.000+09:00"
+  },
+  "illusory-tower/31": {
+   "power": 96475,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:05.000+09:00"
+  },
+  "illusory-tower/32": {
+   "power": 96475,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:02.000+09:00"
+  },
+  "illusory-tower/33": {
+   "power": 97488,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:59.000+09:00"
+  },
+  "illusory-tower/34": {
+   "power": 99513,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:56.000+09:00"
+  },
+  "illusory-tower/35": {
+   "power": 104575,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:40.000+09:00"
+  },
+  "illusory-tower/36": {
+   "power": 101538,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:53.000+09:00"
+  },
+  "illusory-tower/37": {
+   "power": 101538,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:48.000+09:00"
+  },
+  "illusory-tower/38": {
+   "power": 102550,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:46.000+09:00"
+  },
+  "illusory-tower/39": {
+   "power": 104575,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:45.000+09:00"
+  },
+  "illusory-tower/40": {
+   "power": 109638,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:50.000+09:00"
+  },
+  "illusory-tower/41": {
+   "power": 106600,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:45.000+09:00"
+  },
+  "illusory-tower/42": {
+   "power": 106600,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:48.000+09:00"
+  },
+  "illusory-tower/43": {
+   "power": 107613,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:54.000+09:00"
+  },
+  "illusory-tower/44": {
+   "power": 109638,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:54.000+09:00"
+  },
+  "illusory-tower/45": {
+   "power": 114700,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:02.000+09:00"
+  },
+  "illusory-tower/46": {
+   "power": 115713,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:22.000+09:00"
+  },
+  "illusory-tower/47": {
+   "power": 116725,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:20.000+09:00"
+  },
+  "illusory-tower/48": {
+   "power": 117738,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:12.000+09:00"
+  },
+  "illusory-tower/49": {
+   "power": 119763,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:06.000+09:00"
+  },
+  "illusory-tower/50": {
+   "power": 124825,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:03.000+09:00"
+  },
+  "illusory-tower/51": {
+   "power": 121788,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:41.000+09:00"
+  },
+  "illusory-tower/52": {
+   "power": 122800,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:38.000+09:00"
+  },
+  "illusory-tower/53": {
+   "power": 124825,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:29.000+09:00"
+  },
+  "illusory-tower/54": {
+   "power": 126850,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "green",
+    "yellow",
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:24.000+09:00"
+  },
+  "illusory-tower/55": {
+   "power": 131913,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:20.000+09:00"
+  },
+  "illusory-tower/56": {
+   "power": 130900,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "green",
+    "yellow",
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:15.000+09:00"
+  },
+  "illusory-tower/57": {
+   "power": 132925,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:11.000+09:00"
+  },
+  "illusory-tower/58": {
+   "power": 135963,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:06.000+09:00"
+  },
+  "illusory-tower/59": {
+   "power": 137988,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:02.000+09:00"
+  },
+  "illusory-tower/60": {
+   "power": 140600,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "green",
+    "yellow",
+    "red"
+   ],
+   "modified": "2025-12-29T17:34:58.000+09:00"
+  },
+  "illusory-tower/61": {
+   "power": 144800,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:16.000+09:00"
+  },
+  "illusory-tower/62": {
+   "power": 146600,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:12.000+09:00"
+  },
+  "illusory-tower/63": {
+   "power": 148400,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:09.000+09:00"
+  },
+  "illusory-tower/64": {
+   "power": 150200,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "green",
+    "yellow",
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:05.000+09:00"
+  },
+  "illusory-tower/65": {
+   "power": 153800,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2026-05-29T12:24:43.000+09:00"
+  },
+  "illusory-tower/66": {
+   "power": 155600,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:58.000+09:00"
+  },
+  "illusory-tower/67": {
+   "power": 159200,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:53.000+09:00"
+  },
+  "illusory-tower/68": {
+   "power": 162500,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:53.000+09:00"
+  },
+  "illusory-tower/69": {
+   "power": 165500,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:50.000+09:00"
+  },
+  "illusory-tower/70": {
+   "power": 171500,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:44.000+09:00"
+  },
+  "illusory-tower/71": {
+   "power": 171500,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:11.000+09:00"
+  },
+  "illusory-tower/72": {
+   "power": 174500,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:08.000+09:00"
+  },
+  "illusory-tower/73": {
+   "power": 177600,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:03.000+09:00"
+  },
+  "illusory-tower/74": {
+   "power": 180900,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:01.000+09:00"
+  },
+  "illusory-tower/75": {
+   "power": 184200,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2026-05-16T19:41:58.000+09:00"
+  },
+  "illusory-tower/76": {
+   "power": 187500,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:51.000+09:00"
+  },
+  "illusory-tower/77": {
+   "power": 190800,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:47.000+09:00"
+  },
+  "illusory-tower/78": {
+   "power": 194100,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:44.000+09:00"
+  },
+  "illusory-tower/79": {
+   "power": 197400,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2026-05-28T12:17:31.000+09:00"
+  },
+  "illusory-tower/80": {
+   "power": 200700,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:44.000+09:00"
+  },
+  "illusory-tower/81": {
+   "power": 202400,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:27.000+09:00"
+  },
+  "illusory-tower/82": {
+   "power": 204100,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:34.000+09:00"
+  },
+  "illusory-tower/83": {
+   "power": 205800,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:39.000+09:00"
+  },
+  "illusory-tower/84": {
+   "power": 207500,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2026-05-26T17:57:46.000+09:00"
+  },
+  "illusory-tower/85": {
+   "power": 209200,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2026-05-22T19:02:06.000+09:00"
+  },
+  "illusory-tower/86": {
+   "power": 210900,
+   "recommended": [
+    "red"
+   ],
+   "unfavorable": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "modified": "2026-03-18T11:27:40.000+09:00"
+  },
+  "illusory-tower/87": {
+   "power": 212600,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:44.000+09:00"
+  },
+  "illusory-tower/88": {
+   "power": 214300,
+   "recommended": [
+    "green"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:01.000+09:00"
+  },
+  "illusory-tower/89": {
+   "power": 216000,
+   "recommended": [
+    "blue"
+   ],
+   "unfavorable": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:34:51.000+09:00"
+  },
+  "illusory-tower/90": {
+   "power": 217700,
+   "recommended": [
+    "yellow"
+   ],
+   "unfavorable": [
+    "red",
+    "blue",
+    "green"
+   ],
+   "modified": "2026-05-26T17:09:26.000+09:00"
+  },
+  "formidable-foe-back/sea-slug-normal": {
+   "power": 40800,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2026-07-07T15:54:46.000+09:00"
+  },
+  "formidable-foe-back/sea-slug-hard": {
+   "power": 67000,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2026-07-07T18:03:59.000+09:00"
+  },
+  "formidable-foe-back/sea-slug-very-hard": {
+   "power": 87600,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2026-07-08T11:37:37.000+09:00"
+  },
+  "formidable-foe-back/sea-slug-extreme": {
+   "power": 100600,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2026-07-08T10:07:01.000+09:00"
+  },
+  "formidable-foe-back/carnivorous-plant-normal": {
+   "power": 40800,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2026-07-07T18:13:49.000+09:00"
+  },
+  "formidable-foe-back/carnivorous-plant-hard": {
+   "power": 67000,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2026-07-07T18:35:17.000+09:00"
+  },
+  "formidable-foe-back/carnivorous-plant-very-hard": {
+   "power": 87600,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2026-07-08T12:14:54.000+09:00"
+  },
+  "formidable-foe-back/carnivorous-plant-extreme": {
+   "power": 100600,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2026-07-08T23:53:02.000+09:00"
+  },
+  "formidable-foe-back/sludge-shikigami-normal": {
+   "power": 40800,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2026-07-07T17:06:05.000+09:00"
+  },
+  "formidable-foe-back/sludge-shikigami-hard": {
+   "power": 67000,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2026-07-07T19:10:30.000+09:00"
+  },
+  "formidable-foe-back/sludge-shikigami-very-hard": {
+   "power": 87600,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2026-07-08T12:42:24.000+09:00"
+  },
+  "formidable-foe-back/sludge-shikigami-extreme": {
+   "power": 100600,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2026-07-09T21:52:49.000+09:00"
+  },
+  "formidable-foe-back/blue-haired-ape-normal": {
+   "power": 40800,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2026-07-07T17:38:53.000+09:00"
+  },
+  "formidable-foe-back/blue-haired-ape-hard": {
+   "power": 67000,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2026-07-07T19:28:57.000+09:00"
+  },
+  "formidable-foe-back/blue-haired-ape-very-hard": {
+   "power": 87600,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2026-07-08T13:17:38.000+09:00"
+  },
+  "formidable-foe-back/blue-haired-ape-extreme": {
+   "power": 100600,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2026-07-08T23:09:11.000+09:00"
+  },
+  "formidable-foe-back/hososhin": {
+   "power": 118900,
+   "modified": "2026-07-08T00:18:58.000+09:00"
+  },
+  "sp-battle/jogo": {
+   "modified": "2026-10-11T00:24:47.000+09:00"
+  },
+  "sp-battle/choso": {
+   "modified": "2026-05-01T18:39:38.000+09:00"
+  },
+  "sp-battle/toji-seance": {
+   "modified": "2026-06-11T10:35:49.000+09:00"
+  },
+  "sp-battle/geto": {
+   "modified": "2026-03-11T16:04:27.000+09:00"
+  },
+  "sp-battle/mahito-instant-spirit-body": {
+   "modified": "2026-07-13T18:54:05.000+09:00"
+  },
+  "sp-battle/uraume": {
+   "modified": "2026-08-10T16:52:36.000+09:00"
+  },
+  "sp-battle/geto-training": {
+   "modified": "2026-09-07T16:50:34.000+09:00"
+  },
+  "main-quest/ex-1": {
+   "power": 78000,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2025-12-29T17:36:02.000+09:00"
+  },
+  "main-quest/ex-2": {
+   "power": 78200,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2025-12-29T17:34:44.000+09:00"
+  },
+  "main-quest/ex-3": {
+   "power": 78200,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2025-12-29T17:35:54.000+09:00"
+  },
+  "main-quest/ex-4": {
+   "power": 78200,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:52.000+09:00"
+  },
+  "main-quest/ex-5": {
+   "power": 85700,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:07.000+09:00"
+  },
+  "main-quest/ex-6": {
+   "power": 85700,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:56.000+09:00"
+  },
+  "main-quest/ex-7": {
+   "power": 100600,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2025-12-29T17:34:54.000+09:00"
+  },
+  "main-quest/ex-8": {
+   "power": 108900,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2025-12-29T17:35:47.000+09:00"
+  },
+  "main-quest/ex-9": {
+   "power": 113900,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2025-12-29T17:34:48.000+09:00"
+  },
+  "main-quest/ex-10": {
+   "power": 113900,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:20.000+09:00"
+  },
+  "main-quest/ex-11": {
+   "power": 118900,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:22.000+09:00"
+  },
+  "main-quest/ex-12": {
+   "power": 123900,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:08.000+09:00"
+  },
+  "main-quest/ex-13": {
+   "power": 123900,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2025-12-29T17:35:11.000+09:00"
+  },
+  "main-quest/ex-14": {
+   "power": 126400,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2025-12-29T17:36:04.000+09:00"
+  },
+  "main-quest/ex-15": {
+   "power": 128900,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:33.000+09:00"
+  },
+  "main-quest/ex-16": {
+   "power": 126400,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2025-12-29T17:35:25.000+09:00"
+  },
+  "main-quest/ex-17": {
+   "power": 126400,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2025-12-29T17:35:27.000+09:00"
+  },
+  "main-quest/ex-18": {
+   "power": 127400,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2026-04-14T12:23:43.000+09:00"
+  },
+  "main-quest/ex-19": {
+   "power": 128400,
+   "recommended": [
+    "blue"
+   ],
+   "modified": "2026-04-15T12:45:28.000+09:00"
+  },
+  "main-quest/ex-20": {
+   "power": 128400,
+   "recommended": [
+    "yellow"
+   ],
+   "modified": "2026-04-15T14:06:16.000+09:00"
+  },
+  "main-quest/ex-21": {
+   "power": 129400,
+   "recommended": [
+    "red"
+   ],
+   "modified": "2026-07-21T18:48:30.000+09:00"
+  },
+  "main-quest/ex-22": {
+   "power": 129400,
+   "recommended": [
+    "green"
+   ],
+   "modified": "2026-07-17T17:42:41.000+09:00"
+  }
+ },
+ "changed": [],
+ "fresh": [
+  {
+   "content": "illusory-tower-diverse",
+   "url": "https://game8.jp/jujutsuphanpara/802021",
+   "title": "▶︎異相19階層S2の攻略"
+  },
+  {
+   "content": "formidable-foe-back",
+   "url": "https://game8.jp/jujutsuphanpara/578629",
+   "title": "強敵邂逅の攻略"
+  }
+ ]
+}

@@ -2778,6 +2778,223 @@
         "ariadnes-thread-educator-masamichi-yaga"
       ]
     },
+    "illusory-tower-diverse/19": {
+      "name": "Anomalous Form · fase 19",
+      "server": "jp",
+      "checked": "2026-10-29",
+      "source": "Game8",
+      "power": 209200,
+      "recommended": [
+        "yellow"
+      ],
+      "unfavorable": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "rules": {
+        "only": [
+          "yellow"
+        ],
+        "notes": [
+          "Las mejoras que reciben tus personajes tienen un 90 % menos de efecto (salvo las que no tienen límite de usos ni de turnos)",
+          "Los enemigos reciben un 60 % menos de daño basado en porcentaje de PV"
+        ]
+      },
+      "enemies": [
+        {
+          "name": "Jogo",
+          "level": 235,
+          "hp": 102382700,
+          "ultCount": 8,
+          "actions": 3,
+          "boss": true,
+          "cut": {
+            "taijutsu": 90
+          },
+          "immune": [
+            "stun",
+            "blind",
+            "bind",
+            "confusion"
+          ],
+          "skills": [
+            {
+              "name": "Actúa 3 veces por turno; 4 veces cuando caen todos los Insectos de roca ardiente",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Con la vida al 50 % o menos, al empezar cada turno reduce un 40 % el daño híbrido que recibe",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Se refuerza cuando su vida baja de cierto punto",
+              "kind": "enrage",
+              "text": ""
+            },
+            {
+              "name": "Resistente a los ataques de hielo",
+              "kind": "other",
+              "text": ""
+            },
+            {
+              "name": "Su especial es la Expansión de Dominio «Montaña de Hierro Ataúd»: mucho daño a todo el equipo, golpes que no fallan y anula la invulnerabilidad",
+              "kind": "aoe",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "name": "Insecto de roca ardiente",
+          "level": 235,
+          "hp": 12851990,
+          "ultCount": 2,
+          "count": 2,
+          "cut": {
+            "taijutsu": 90
+          },
+          "immune": [
+            "stun",
+            "blind",
+            "bind",
+            "confusion"
+          ],
+          "skills": [
+            {
+              "name": "Al empezar el combate reduce un 90 % el daño de Taijutsu (físico) que recibe (no se puede quitar ni debilitar)",
+              "kind": "buff",
+              "text": ""
+            },
+            {
+              "name": "Aumenta el daño de Jujutsu (ritual) que reciben tus personajes",
+              "kind": "debuff",
+              "text": ""
+            },
+            {
+              "name": "Si cae por un ataque cuerpo a cuerpo individual, explota y daña también al atacante",
+              "kind": "counter",
+              "text": ""
+            }
+          ]
+        }
+      ],
+      "url": "https://game8.jp/jujutsuphanpara/802021",
+      "cleared": {
+        "source": "Game8",
+        "url": "https://game8.jp/jujutsuphanpara/802021",
+        "chars": [
+          {
+            "id": "melting-sweet-summer-treats-satoru-gojo",
+            "name": "五条悟",
+            "dupes": 3,
+            "level": 140
+          },
+          {
+            "id": "step-back-third-rate-uraume",
+            "name": "裏梅",
+            "dupes": 0,
+            "level": 140
+          },
+          {
+            "id": "cursed-corpse-battle-masamichi-yaga",
+            "name": "夜蛾正道",
+            "dupes": 5,
+            "level": 140
+          },
+          {
+            "id": "what-lies-at-the-end-suguru-geto",
+            "name": "夏油傑",
+            "dupes": 0,
+            "level": 140
+          },
+          {
+            "id": "life-saver-shoko-ieiri",
+            "name": "家入硝子",
+            "dupes": 5,
+            "level": 140
+          }
+        ],
+        "mems": [
+          {
+            "id": "ordinary-time",
+            "name": "等身大の時間"
+          },
+          {
+            "id": "doctors-pride",
+            "name": "医師の矜持"
+          },
+          {
+            "id": "like-minded-sisters",
+            "name": "同気連枝"
+          },
+          {
+            "id": "cursed-spirit-school-group",
+            "name": "呪霊登校班"
+          },
+          {
+            "id": "a-wish-from-the-past",
+            "name": "いつかの願い"
+          }
+        ],
+        "note": "El hueco de Geto también puede ocuparlo el Sukuna del aniversario («Battle of Firepower»). Como las mejoras pierden un 90 % de efecto, el equipo se basa en debilitar al enemigo; Gojo de verano compensa porque su mejora con 3 copias y la que deja al retirarse no se ven afectadas, y al retirarse entra Shoko para curar en la parte final."
+      },
+      "guide": {
+        "source": "Game8",
+        "url": "https://game8.jp/jujutsuphanpara/802021",
+        "points": [
+          {
+            "title": "Debilitadores en vez de potenciadores",
+            "text": "Las mejoras de tu equipo pierden un 90 % de efecto, pero los aumentos de daño recibido que aplicas al enemigo funcionan con normalidad. Acumula los de Uraume (congelación: hasta +120 % de daño recibido) y los de Yaga (Jujutsu) para multiplicar el daño del atacante.",
+            "chars": [
+              "step-back-third-rate-uraume",
+              "cursed-corpse-battle-masamichi-yaga",
+              "young-fish-and-reverse-punishment-junpei-yoshino"
+            ]
+          },
+          {
+            "title": "Ataca con Jujutsu: el Taijutsu se reduce un 90 %",
+            "text": "Todos los enemigos reducen un 90 % el daño de Taijutsu, así que el atacante principal debe hacer daño de Jujutsu. Geto («What Lies at the End») golpea a todos con Jujutsu y alcanza a la vez a los insectos y a Jogo. Yuta del tipo híbrido rinde peor: con Jogo por debajo del 50 % pierde daño.",
+            "chars": [
+              "what-lies-at-the-end-suguru-geto",
+              "battle-of-firepower-ryomen-sukuna"
+            ]
+          },
+          {
+            "title": "Cuidado con la explosión de los insectos y con el turno extra de Jogo",
+            "text": "Si un insecto cae por un ataque cuerpo a cuerpo individual, explota y daña al atacante; y si caen los dos, Jogo pasa de 3 a 4 acciones por turno. Desgástalos con ataques a distancia o en área y remátalos a la vez que a Jogo o durante su Break.",
+            "chars": [
+              "what-lies-at-the-end-suguru-geto"
+            ]
+          },
+          {
+            "title": "Tras su Expansión de Dominio, acaba rápido",
+            "text": "Con la vida al 50 % o menos Jogo reduce un 40 % el daño híbrido y despliega su dominio, que golpea a todo el equipo cada turno sin fallar. Mantén la vida alta con las curas de Shoko (entra cuando se retira Gojo de verano) y termina con especiales combinados con todos los debilitamientos activos: tiene solo unos 100 millones de PV.",
+            "chars": [
+              "life-saver-shoko-ieiri",
+              "melting-sweet-summer-treats-satoru-gojo"
+            ]
+          }
+        ]
+      },
+      "picks": [
+        "what-lies-at-the-end-suguru-geto",
+        "step-back-third-rate-uraume",
+        "cursed-corpse-battle-masamichi-yaga",
+        "melting-sweet-summer-treats-satoru-gojo",
+        "life-saver-shoko-ieiri",
+        "battle-of-firepower-ryomen-sukuna",
+        "the-strongest-blue-satoru-gojo",
+        "incomplete-domain-megumi-fushiguro",
+        "young-fish-and-reverse-punishment-junpei-yoshino"
+      ]
+    },
     "illusory-tower-diverse/20": {
       "name": "Anomalous Form · fase 20",
       "server": "jp",

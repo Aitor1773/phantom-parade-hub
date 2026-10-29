@@ -13,6 +13,7 @@ on:
 permissions:
   contents: write # guardar los datos actualizados
   discussions: read # leer el foro (Giscus)
+  issues: write # aviso de fichas de fases por revisar
 
 concurrency:
   group: daily-update
@@ -68,6 +69,31 @@ jobs:
       - name: Mejores equipos (hoja de la comunidad)
         run: npm run data:best-teams
         continue-on-error: true # si la hoja o sus imágenes fallan, se conservan los equipos de ayer
+
+      - name: Fichas de fases (poder y colores al día; detecta cambios y fases nuevas)
+        run: npm run data:stages
+        continue-on-error: true # si la fuente no responde, se conservan los datos de ayer
+        env:
+          STAGE_REVIEW_OUT: ${{ runner.temp }}/stage-review.md
+
+      - name: Aviso de fichas por revisar (una sola incidencia que se actualiza cada día)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          f="$RUNNER_TEMP/stage-review.md"
+          n=$(gh issue list --state open --label fichas-fases --json number -q '.[0].number')
+          if [ ! -s "$f" ]; then
+            # Todo al día: se cierra el aviso si lo había
+            if [ -n "$n" ]; then gh issue close "$n" --comment "Todas las fichas de fases están al día."; fi
+            exit 0
+          fi
+          if [ -n "$n" ]; then
+            gh issue edit "$n" --body-file "$f"
+          else
+            gh label create fichas-fases --color f4a63a --description "Fichas de fases que revisar" --force
+            gh issue create --title "Fichas de fases por revisar" --label fichas-fases --body-file "$f"
+          fi
 
       - name: Día de la semana
         id: dow
