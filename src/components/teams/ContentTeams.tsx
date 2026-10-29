@@ -2,10 +2,12 @@
 // y lo mejor en general, según las debilidades/resistencias (guardadas o marcadas por ti) y la tier list.
 // Para tu cuenta también dice qué te falta para pasarlo.
 import { useEffect, useMemo, useState } from 'react';
+import ElementIcon from '@/components/ElementIcon';
 import { assignMemories, effectiveRank, readiness, recommendTeam, slotScore, teamAdvice, type Account, type Advice, type ElementKey, type Team, type TeamChar, type TeamMemory, type TeamSlot } from '@/lib/team-recs';
 import { stageNeeds, type DamageType, type Stage, type StageNeeds } from '@/lib/stage';
 import { strategyTips, type Tip } from '@/lib/strategy';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
+import { TeamAnalysis, orderedPhases, seriesOf } from './TeamAnalysis';
 import { AffinityPicker, CharPicker, CopyTeamButton, SlotCard, fill, roleOf, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
 
 export interface AffinityRecord { weak?: ElementKey[]; resist?: ElementKey[]; note?: string; checked?: string; community?: number }
@@ -129,7 +131,7 @@ function EditableTeam({ base, chars, memories, affinity, needs, account, owned, 
   base: Team; chars: TeamChar[]; memories: TeamMemory[]; affinity: AffinityMap; needs?: StageNeeds | null;
   /** Con cuenta: alternativas y puntuación según lo que tienes (y la ventana abre con «solo los míos») */
   account: Account | null; owned?: Set<string> | null; labels: Labels; basePath: string;
-  children?: (team: Team) => React.ReactNode;
+  children?: (team: Team, setSlot: (i: number, id: string | null) => void) => React.ReactNode;
 }) {
   const { team, edited, setSlot, reset } = useEditableTeam(base, chars, memories, affinity, needs, account);
   const [picking, setPicking] = useState<number | null>(null);
@@ -147,7 +149,7 @@ function EditableTeam({ base, chars, memories, affinity, needs, account, owned, 
         {edited && <button type="button" onClick={reset} className="font-semibold text-flame underline underline-offset-2">{L['tm.reset']}</button>}
       </div>
       <TeamOptions team={team} chars={chars} affinity={affinity} needs={needs} account={account} labels={L} onPick={setSlot} />
-      {children?.(team)}
+      {children?.(team, setSlot)}
       {picking != null && (
         <CharPicker chars={chars} owned={owned} affinity={affinity} needs={needs} title={slotLabel(picking)} labels={L} defaultOwned={!!account && picking < 5}
           onPick={(id) => { setSlot(picking, id); setPicking(null); }} onClose={() => setPicking(null)} />
@@ -221,13 +223,18 @@ function TeamOptions({ team, chars, affinity, needs, account, labels: L, onPick 
 type OwnedLike = Account['chars'][string] | null;
 
 /** Los dos equipos (cuenta y general) para unas debilidades y una fase dadas. */
-export function Recommendations({ chars, memories, affinity, labels: L, basePath, accountPath, post, needs, stage }: {
+export function Recommendations({ chars, memories, affinity, labels: L, basePath, accountPath, post, needs, stage, phases = [], noHelper, builderLink }: {
   chars: TeamChar[]; memories: TeamMemory[]; affinity: AffinityMap; labels: Labels; basePath: string; accountPath: string;
   /** Para el texto del foro: nombre del contenido y piso */
   post?: { content: string; floor?: number };
   /** Lo que exige la fase (reglas, tipo de daño, número de enemigos…) y su ficha */
   needs?: StageNeeds | null;
   stage?: Stage | null;
+  /** Fases en serie con esta (para «hasta dónde llegas») y si se puede llevar apoyo de otro jugador */
+  phases?: [string, Stage][];
+  noHelper?: boolean;
+  /** Enlace al creador de equipos con este contenido y fase ya elegidos */
+  builderLink?: string;
 }) {
   const account = useAccount();
   const owned = useMemo(() => (account ? new Set(Object.keys(account.chars)) : null), [account]);
@@ -253,10 +260,11 @@ export function Recommendations({ chars, memories, affinity, labels: L, basePath
         <h3 className="mb-3 font-sans text-sm font-bold text-bone">{L['tm.account']}</h3>
         {account === undefined ? <p className="text-xs text-smoke">{L['tm.loading']}</p> : mine && account ? (
           <EditableTeam base={mine} chars={chars} memories={memories} affinity={affinity} needs={needs} account={account} owned={owned} labels={L} basePath={basePath}>
-            {(team) => (
+            {(team, setSlot) => (
               <>
                 {gaps > 0 && <p className="mt-3 text-xs text-flame">{L['tm.missing']}</p>}
-                {showStrategy && <StrategyPanel team={team} needs={needs ?? null} stage={stage ?? null} labels={L} />}
+                {showStrategy && <TeamAnalysis team={team} stage={stage ?? null} needs={needs ?? null} phases={phases} chars={chars} account={account} labels={L} basePath={basePath} noHelper={noHelper} onApply={setSlot} />}
+                {showStrategy && builderLink && <p className="mt-2 text-xs"><a href={builderLink} className="font-semibold text-flame underline underline-offset-2">{L['an.open']}</a></p>}
                 {post && <div className="mt-3"><CopyTeamButton text={teamPost(team, affinity, L, post)} labels={L} /></div>}
                 <Readiness mine={team} best={general} account={account} memories={memories} labels={L} basePath={basePath} />
               </>
@@ -270,7 +278,8 @@ export function Recommendations({ chars, memories, affinity, labels: L, basePath
       <section className="card p-4 sm:p-5">
         <h3 className="mb-3 font-sans text-sm font-bold text-bone">{L['tm.general']}</h3>
         <EditableTeam base={general} chars={chars} memories={memories} affinity={affinity} needs={needs} account={null} owned={owned} labels={L} basePath={basePath}>
-          {(team) => showStrategy && <StrategyPanel team={team} needs={needs ?? null} stage={stage ?? null} labels={L} />}
+          {(team, setSlot) => showStrategy && (account ? <StrategyPanel team={team} needs={needs ?? null} stage={stage ?? null} labels={L} />
+            : <TeamAnalysis team={team} stage={stage ?? null} needs={needs ?? null} phases={phases} chars={chars} account={null} labels={L} basePath={basePath} noHelper={noHelper} onApply={setSlot} />)}
         </EditableTeam>
       </section>
 
@@ -296,7 +305,7 @@ const ElChips = ({ els, kind, L }: { els?: ElementKey[]; kind: 'weak' | 'resist'
       <span className="text-smoke">{L[kind === 'weak' ? 'sh.weak' : 'sh.resist']}:</span>
       {els.map((e) => (
         <span key={e} className="flex items-center gap-1 rounded-full border border-line px-2 py-0.5 text-bone">
-          <span className="size-2 rounded-full" style={{ background: ELEMENT_COLOR[e] }} />{L[`el.${e}`]} {kind === 'weak' ? '▲' : '▼'}
+          <ElementIcon el={e} size={16} />{L[`el.${e}`]} {kind === 'weak' ? '▲' : '▼'}
         </span>
       ))}
     </span>
@@ -507,6 +516,9 @@ export default function ContentTeams({ labels: L, contentName, basePath, account
     };
   }, [stage, affinity, cut]);
 
+  // Fases que van en serie con la elegida (para «hasta dónde llegas»)
+  const series = useMemo(() => seriesOf(orderedPhases(stages, contentId), key), [stages, contentId, key]);
+
   const options = floors
     ? Array.from({ length: floors }, (_, i) => ({ k: `${contentId}/${i + 1}`, label: `${L['tm.floor']} ${i + 1}` }))
     : phaseKeys.map((k) => ({ k, label: stages[k]?.name ?? k.slice(contentId.length + 1) }));
@@ -544,7 +556,8 @@ export default function ContentTeams({ labels: L, contentName, basePath, account
       </section>
       {team && stage ? <ProvenPanels stage={stage} chars={team.chars} memories={team.memories} labels={L} basePath={basePath} /> : null}
       {team ? <Recommendations chars={team.chars} memories={team.memories} affinity={affinity} labels={L} basePath={basePath} accountPath={accountPath}
-        post={{ content: contentName, floor: floors ? Number(phase.split('/')[1]) : undefined }} needs={needs} stage={stage} /> : <p className="text-sm text-smoke">{L['tm.loading']}</p>}
+        post={{ content: contentName, floor: floors ? Number(phase.split('/')[1]) : undefined }} needs={needs} stage={stage}
+        phases={series} noHelper={contentId === 'illusory-tower-diverse'} builderLink={`${basePath}/team-builder/?c=${encodeURIComponent(contentId)}&p=${encodeURIComponent(key)}`} /> : <p className="text-sm text-smoke">{L['tm.loading']}</p>}
     </div>
   );
 }

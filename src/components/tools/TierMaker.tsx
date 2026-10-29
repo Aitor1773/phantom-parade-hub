@@ -1,6 +1,7 @@
 // Creador de tier list: coloca personajes en S/A/B/C/D tocando o arrastrando. Se guarda en el
 // navegador ("pp-tiermaker"), se comparte con un enlace (#t=…) y se descarga como imagen PNG.
 import { useEffect, useMemo, useState } from 'react';
+import ElementIcon from '@/components/ElementIcon';
 
 export interface TmChar { id: string; name: string; ep: string | null; el: string; img: string | null }
 type Rank = 'S' | 'A' | 'B' | 'C' | 'D';
@@ -118,7 +119,7 @@ export default function TierMaker({ chars, preset, labels: L, colors, siteName }
           {[null, 'red', 'blue', 'green', 'yellow'].map((k) => (
             <button key={k ?? 'all'} type="button" onClick={() => setEl(k)} aria-pressed={el === k}
               className={`flex h-8 items-center gap-1 rounded-lg border px-2 text-xs ${el === k ? 'border-ember/60 bg-ember/10 text-bone' : 'border-line text-dust'}`}>
-              {k && <span className="size-2 rounded-full" style={{ background: EL_COLOR[k] }} />}{k ? colors[k] : L['tk.all']}
+              {k && <ElementIcon el={k} size={16} />}{k ? colors[k] : L['tk.all']}
             </button>
           ))}
         </div>

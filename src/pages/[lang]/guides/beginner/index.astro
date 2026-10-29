@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ElementIcon from '@/components/ElementIcon';
 import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
@@ -66,7 +67,7 @@ const faqLd = {
                       <span class="block truncate text-sm font-semibold text-bone">{c.name}</span>
                       <span class="block truncate text-[11px] text-smoke">{c.epithet}</span>
                       <span class="mt-0.5 flex items-center gap-1 text-[11px] text-dust">
-                        <span class="size-2 rounded-full" style={`background:${ELEMENT_COLOR[c.element]}`} />
+                        <ElementIcon el={c.element} size={16} />
                         {g(`el.${c.element}` as GameKey)}{c.role ? ` · ${g(`role.${c.role}` as GameKey)}` : ''}
                       </span>
                     </span>

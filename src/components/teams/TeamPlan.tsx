@@ -16,7 +16,7 @@ const loadGuides = () => {
   return cache;
 };
 
-export function TeamPlan({ slots, account, labels: L, basePath, onReorder }: { slots: TeamSlot[]; account: Account | null | undefined; labels: Labels; basePath: string; onReorder?: () => void }) {
+export function TeamPlan({ slots, account, labels: L, basePath }: { slots: TeamSlot[]; account: Account | null | undefined; labels: Labels; basePath: string }) {
   const [guides, setGuides] = useState<Record<string, PlanGuide> | null>(null);
   useEffect(() => { loadGuides().then(setGuides); }, []);
   if (!guides || !slots.length) return null;
@@ -45,20 +45,11 @@ export function TeamPlan({ slots, account, labels: L, basePath, onReorder }: { s
   while (restS.length && restD.length) pairs.push([restS.shift()!.s.c.name, restD.shift()!.s.c.name]);
   const rest = [...restS, ...restD];
   for (let i = 0; i + 1 < rest.length; i += 2) pairs.push([rest[i].s.c.name, rest[i + 1].s.c.name]);
-  // ¿Algún apoyo actúa después de un atacante? Los apoyos deberían ir a la izquierda
-  const firstDmg = members.findIndex((m) => m.s.as === 'dmg');
-  const lateSup = firstDmg >= 0 && sups.some((m) => members.indexOf(m) > firstDmg);
 
   return (
     <div className="rounded-xl border border-line bg-ash/40 p-3 sm:p-4">
       <p className="text-sm font-bold text-bone">{L['tp.title']}</p>
       <p className="mt-0.5 text-xs text-smoke">{L['tp.desc']}</p>
-      {lateSup && (
-        <p className="mt-2 flex flex-wrap items-center gap-2 text-xs text-flame">
-          <span>⚠ {fill(L['st.order'], { names: sups.map((m) => m.s.c.name).join(', ') })}</span>
-          {onReorder && <button type="button" onClick={onReorder} className="btn-secondary h-7 px-2 text-[11px]">{L['tp.reorder']}</button>}
-        </p>
-      )}
 
       {phases.map((ph) => (
         <div key={ph.title} className="mt-4">

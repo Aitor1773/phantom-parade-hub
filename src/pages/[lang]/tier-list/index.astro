@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ElementIcon from '@/components/ElementIcon';
 import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, getCharacter, srcsetOf, thumb } from '@/data/characters';
@@ -61,7 +62,7 @@ const ssPct = Math.round(TIER_CRITERIA.thresholds[0][1] * 100);
           {i === 4 && <span class="mx-1 my-2 w-px shrink-0 bg-line" aria-hidden="true"></span>}
           <button type="button" role="tab" data-tab={key} aria-selected={i === 0 ? 'true' : 'false'}
             class="relative flex shrink-0 items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-dust transition hover:text-bone aria-selected:text-bone">
-            {ELEMENT_KEYS.includes(key) && <span class="size-2.5 rounded-full" style={`background:${ELEMENT_COLOR[key]}`}></span>}
+            {ELEMENT_KEYS.includes(key) && <ElementIcon el={key} size={18} />}
             {tabLabel(key)}
             <span class="tab-line absolute inset-x-2 -bottom-px hidden h-0.5 rounded-full bg-gradient-to-r from-ember to-flame"></span>
           </button>
@@ -115,7 +116,7 @@ const ssPct = Math.round(TIER_CRITERIA.thresholds[0][1] * 100);
                       <span class="relative block aspect-[3/4] bg-cinder">
                         {c.art ? <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="(min-width: 640px) 120px, 24vw" alt="" loading="lazy" decoding="async" class="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
                         <span class="absolute inset-0 bg-gradient-to-t from-ash/90 via-transparent to-transparent"></span>
-                        <span class="absolute top-1 left-1 size-2 rounded-full ring-1 ring-ash" style="background: var(--el)"></span>
+                        <ElementIcon el={c.element} size={18} className="absolute top-0.5 left-0.5" />
                         {e.manual && <span class="absolute top-0.5 right-1 text-[10px] text-flame" title={g('tl.manual')}>✎</span>}
                         <span class="absolute inset-x-0 bottom-0 truncate px-1 pb-0.5 text-center text-[9px] font-semibold text-bone sm:text-[10px]">{c.name.split(' ').at(-1)}</span>
                       </span>

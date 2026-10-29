@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ElementIcon from '@/components/ElementIcon';
 import Icon from '@/components/Icon.astro';
 import KitViewer from '@/components/characters/KitViewer';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
@@ -114,7 +115,7 @@ const jsonLd = {
         <div class="mt-5 flex flex-wrap gap-2">
           <span class={rarityClass}>{c.rarity}</span>
           <span class="badge border-line-strong bg-cinder text-bone">
-            <span class="size-2 rounded-full" style="background: var(--el)"></span>
+            <ElementIcon el={c.element} size={18} />
             {g(`el.${c.element}` as GameKey)}
           </span>
           {c.role && <span class="badge border-line-strong bg-cinder text-dust">{g(`role.${c.role}` as GameKey)}</span>}

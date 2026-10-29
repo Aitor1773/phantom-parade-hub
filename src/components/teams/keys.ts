@@ -18,6 +18,16 @@ export const TEAM_KEYS = [
   'st.sustain.none', 'st.counter', 'st.summon', 'st.enrage', 'st.order', 'st.break', 'st.coop', 'st.why',
   'tm.edit.hint', 'tm.reset', 'tm.options', 'tm.options.hint', 'tm.options.general', 'tm.instead',
   'tb.pick', 'tb.search', 'tb.onlyowned', 'tb.allcolors', 'tb.close', 'tb.unranked',
+  // Análisis de tu equipo para una fase (TeamAnalysis)
+  'an.title', 'an.content', 'an.content.none', 'an.stage', 'an.power', 'an.power.hint', 'an.v.easy', 'an.v.ok',
+  'an.v.tight', 'an.v.hard', 'an.v.nopower', 'an.v.nodata', 'an.ratio', 'an.factor', 'an.reach', 'an.reach.last',
+  'an.reach.all', 'an.reach.none', 'an.reach.wall', 'an.reach.gaps', 'an.phases', 'an.swaps', 'an.swaps.own', 'an.swaps.pull', 'an.swaps.general',
+  'an.swaps.none', 'an.swap', 'an.swap.empty', 'an.apply', 'an.r.weak', 'an.r.notresist', 'an.r.nocut', 'an.r.aoe',
+  'an.r.cleanse', 'an.r.sustain', 'an.r.proven', 'an.r.rank', 'an.plan', 'an.turn.t1', 'an.turn.mid', 'an.turn.break',
+  'an.turn.ult', 'an.turn.end', 'an.nohelper', 'an.open', 'an.why', 'pl.t1.buffs', 'pl.t1.nosup', 'pl.taunt',
+  'pl.taunt.aoe', 'pl.adds', 'pl.adds.aoe', 'pl.break', 'pl.break.weak', 'pl.break.gate', 'pl.burst', 'pl.burst.any',
+  'pl.ult', 'pl.ult.def', 'pl.cleanse', 'pl.cleanse.none', 'pl.sustain', 'pl.regen', 'pl.actions', 'pl.counter',
+  'pl.summon', 'pl.immune', 'pl.enrage', 'pl.sub',
 ] as const satisfies readonly GameKey[];
 
 export const BUILDER_KEYS = [
@@ -25,6 +35,6 @@ export const BUILDER_KEYS = [
   'tb.fillAccount', 'tb.fillGeneral', 'tb.clear', 'tb.save', 'tb.name', 'tb.team', 'tb.saved',
   'tb.load', 'tb.delete', 'tb.analysis', 'tb.roles', 'tb.avg', 'tb.warn.sup', 'tb.warn.dup', 'tb.warn.resist', 'tb.remove',
   'tb.recs', 'tb.recs.desc', 'tb.copy.hint', 'tb.copy.where',
-  'tp.title', 'tp.desc', 'tp.turn', 'tp.turnplus', 'tp.special', 'tp.special.order', 'tp.combo', 'tp.sp', 'tp.noguide', 'tp.guide', 'tp.reorder',
+  'tp.title', 'tp.desc', 'tp.turn', 'tp.turnplus', 'tp.special', 'tp.special.order', 'tp.combo', 'tp.sp', 'tp.noguide', 'tp.guide',
   'ch.normal', 'ch.s1', 'ch.s2', 'ch.ult', 'ch.combo',
 ] as const satisfies readonly GameKey[];

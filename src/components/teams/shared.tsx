@@ -1,5 +1,6 @@
 // Piezas comunes del creador de equipos y de los equipos por contenido.
 import { useEffect, useMemo, useState } from 'react';
+import ElementIcon from '@/components/ElementIcon';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import { slotScore, type Account, type Affinity, type ElementKey, type Team, type TeamChar, type TeamMemory, type TeamSlot } from '@/lib/team-recs';
 import type { StageNeeds } from '@/lib/stage';
@@ -54,7 +55,7 @@ export function AffinityPicker({ value, onChange, labels: L }: { value: Affinity
         return (
           <button key={el} type="button" onClick={() => cycle(el)} aria-pressed={!!a}
             className={`flex h-9 items-center gap-2 rounded-lg border px-3 text-sm font-semibold transition ${a === 'weak' ? 'border-[#3fcf8e]/70 bg-[#3fcf8e]/10 text-bone' : a === 'resist' ? 'border-[#ff6b7f]/70 bg-[#ff6b7f]/10 text-bone' : 'border-line bg-coal text-dust hover:text-bone'}`}>
-            <span className="size-2.5 rounded-full" style={{ background: ELEMENT_COLOR[el] }} />
+            <ElementIcon el={el} size={18} />
             {L[`el.${el}`]}
             <span className="text-xs">{a === 'weak' ? `▲ ${L['tm.weak']}` : a === 'resist' ? `▼ ${L['tm.resist']}` : ''}</span>
           </button>
@@ -213,7 +214,7 @@ export function CharPicker({ chars, owned, affinity, needs, title, labels: L, on
             {[null, ...ELEMENTS].map((el) => (
               <button key={el ?? 'all'} type="button" aria-pressed={color === el} onClick={() => setColor(el)}
                 className="flex h-8 items-center gap-1.5 rounded-full border border-line px-3 text-xs font-semibold text-dust transition aria-pressed:border-ember/70 aria-pressed:bg-ember/15 aria-pressed:text-bone">
-                {el && <span className="size-2.5 rounded-full" style={{ background: ELEMENT_COLOR[el] }} />}
+                {el && <ElementIcon el={el} size={18} />}
                 {el ? L[`el.${el}`] : L['tb.allcolors']}
               </button>
             ))}

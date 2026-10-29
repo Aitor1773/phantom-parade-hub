@@ -1,9 +1,11 @@
 // Creador de equipos: 4 titulares, suplente y apoyo. Elige a mano o rellena con lo mejor
 // de tu cuenta / lo mejor en general. Los equipos se guardan en localStorage ("pp-teams").
 import { useEffect, useMemo, useState } from 'react';
-import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
+import ElementIcon from '@/components/ElementIcon';
 import { assignMemories, effectiveRank, recommendTeam, slotScore, type Account, type ElementKey, type Role, type Team, type TeamChar, type TeamSlot } from '@/lib/team-recs';
+import { stageNeeds, type Stage, type StageNeeds } from '@/lib/stage';
 import { Readiness, Recommendations } from './ContentTeams';
+import { TeamAnalysis, orderedPhases, seriesOf } from './TeamAnalysis';
 import { TeamPlan } from './TeamPlan';
 import { AffinityPicker, CharPicker, CopyTeamButton, SlotCard, fill, roleOf, teamPost, useAccount, useTeamData, type AffinityMap, type Labels } from './shared';
 
@@ -21,7 +23,9 @@ function loadSaved(): Saved[] {
 }
 const teamToSlots = (t: Team) => [...t.main.map((s) => s?.c.id ?? null), t.sub?.c.id ?? null, t.helper?.c.id ?? null];
 
-export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPath }: { labels: Labels; basePath: string; accountPath: string; teamsPath: string }) {
+export interface BuilderContent { id: string; name: string }
+
+export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPath, contents }: { labels: Labels; basePath: string; accountPath: string; teamsPath: string; contents: BuilderContent[] }) {
   const data = useTeamData();
   const chars = data?.chars ?? null;
   const memories = data?.memories ?? [];
@@ -34,6 +38,41 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   const [saved, setSaved] = useState<Saved[]>([]);
   const [name, setName] = useState('');
   useEffect(() => setSaved(loadSaved()), []);
+
+  // Contenido y fase para analizar el equipo (también llegan del enlace ?c=…&p=… de cada contenido)
+  const [contentId, setContentId] = useState('');
+  const [phase, setPhase] = useState('');
+  const [stages, setStages] = useState<Record<string, Stage>>({});
+  useEffect(() => {
+    const q = new URLSearchParams(location.search);
+    const c = q.get('c');
+    if (c && contents.some((x) => x.id === c)) { setContentId(c); setPhase(q.get('p') ?? ''); }
+  }, [contents]);
+  useEffect(() => {
+    if (!contentId) { setStages({}); return; }
+    let alive = true;
+    fetch(`/data/stages/${contentId}.json?v=${__DATA_V__}`).then((r) => r.json()).catch(() => ({})).then((st: Record<string, Stage>) => {
+      if (!alive) return;
+      setStages(st);
+      // Si la fase no es de este contenido, la primera con ficha
+      setPhase((p) => (st[p] ? p : orderedPhases(st, contentId)[0]?.[0] ?? Object.keys(st)[0] ?? ''));
+    });
+    return () => { alive = false; };
+  }, [contentId]);
+  const phases = useMemo(() => orderedPhases(stages, contentId), [stages, contentId]);
+  const stage = (contentId && stages[phase]) || null;
+  // Al elegir fase, sus debilidades y resistencias (se pueden retocar a mano)
+  useEffect(() => {
+    const n = stageNeeds(stage);
+    if (n) setAffinity(Object.fromEntries([...n.weak.map((e) => [e, 'weak']), ...n.resist.map((e) => [e, 'resist'])]) as AffinityMap);
+  }, [stage]);
+  const needs = useMemo<StageNeeds | null>(() => {
+    const n = stageNeeds(stage);
+    if (!n) return null;
+    const els = Object.entries(affinity) as [ElementKey, 'weak' | 'resist'][];
+    return { ...n, weak: els.filter(([, v]) => v === 'weak').map(([e]) => e), resist: els.filter(([, v]) => v === 'resist').map(([e]) => e) };
+  }, [stage, affinity]);
+  const noHelper = contentId === 'illusory-tower-diverse';
   const persist = (list: Saved[]) => {
     setSaved(list);
     try { localStorage.setItem(KEY, JSON.stringify(list)); } catch { /* sin almacenamiento */ }
@@ -48,31 +87,25 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   // Rol de cada hueco: el que le dio la recomendación o, si lo eliges tú, el de su mejor rango
   const mk = (c: TeamChar | null, i: number): TeamSlot | null => {
     if (!c) return null;
-    const as = roleSet[i] ?? roleOf(c, affinity) ?? 'sup';
-    return { c, as, rank: effectiveRank(c, as, ownOf(c)) ?? 'D', score: slotScore(c, as, affinity, ownOf(c)) ?? 0 };
+    const as = roleSet[i] ?? roleOf(c, affinity, needs) ?? 'sup';
+    return { c, as, rank: effectiveRank(c, as, ownOf(c)) ?? 'D', score: slotScore(c, as, affinity, ownOf(c), 0, needs) ?? 0 };
   };
   const built: Team = { main: team.slice(0, 4).map(mk), sub: mk(team[4], 4), helper: mk(team[5], 5) };
   // Memorias: las tuyas si todo el equipo es tuyo; si no, las mejores en general
   const allMine = !!account && [...built.main, built.sub].every((s) => !s || account.chars[s.c.id]);
   assignMemories([...built.main, built.sub], memories, allMine ? account : null);
   const builtSlots = [...built.main, built.sub, built.helper];
-  const best = useMemo(() => (chars ? recommendTeam(chars, { affinity, memories }) : null), [chars, affinity, memories]);
+  const best = useMemo(() => (chars ? recommendTeam(chars, { affinity, memories, needs }) : null), [chars, affinity, memories, needs]);
 
   const fillWith = (useOwnedOnly: boolean) => {
     if (!chars) return;
-    const t = recommendTeam(chars, { affinity, account: useOwnedOnly ? account : null });
+    const t = recommendTeam(chars, { affinity, account: useOwnedOnly ? account : null, needs });
     setSlots(teamToSlots(t));
     setRoleSet([...t.main.map((s) => s?.as ?? null), t.sub?.as ?? null, t.helper?.as ?? null]);
   };
   const setSlot = (i: number, id: string | null) => {
     setSlots((s) => s.map((x, j) => (j === i ? id : x)));
     setRoleSet((r) => r.map((x, j) => (j === i ? null : x)));
-  };
-  /** Coloca a los titulares de apoyo a la izquierda (actúan antes y sus mejoras llegan al ataque) */
-  const supportsFirst = () => {
-    const order = [0, 1, 2, 3].sort((a, b) => Number(builtSlots[a]?.as === 'dmg') - Number(builtSlots[b]?.as === 'dmg') || a - b);
-    setSlots((s) => [...order.map((i) => s[i]), ...s.slice(4)]);
-    setRoleSet((r) => [...order.map((i) => builtSlots[i]?.as ?? r[i]), ...r.slice(4)]);
   };
   /** Cambia el rol de un hueco entre daño y apoyo (si el personaje tiene rango en ambos) */
   const toggleRole = (i: number) => setRoleSet((r) => r.map((x, j) => (j === i ? ((builtSlots[i]?.as ?? 'sup') === 'dmg' ? 'sup' : 'dmg') : x)));
@@ -97,6 +130,28 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
   return (
     <div className="space-y-8">
       <section className="card space-y-5 p-4 sm:p-6">
+        {/* Contenido y fase */}
+        <div className="flex flex-wrap items-end gap-3">
+          <label className="flex min-w-0 flex-col gap-1">
+            <span className="text-sm font-bold text-bone">{L['an.content']}</span>
+            <select value={contentId} onChange={(e) => { setContentId(e.target.value); setPhase(''); }} aria-label={L['an.content']}
+              className="h-9 max-w-full min-w-0 rounded-lg border border-line bg-ash px-2 text-sm text-bone focus:border-ember/60 focus:outline-none">
+              <option value="">{L['an.content.none']}</option>
+              {contents.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
+            </select>
+          </label>
+          {contentId && phases.length > 0 && (
+            <label className="flex min-w-0 flex-col gap-1">
+              <span className="text-sm font-bold text-bone">{L['an.stage']}</span>
+              <select value={phase} onChange={(e) => setPhase(e.target.value)} aria-label={L['an.stage']}
+                className="h-9 max-w-full min-w-0 rounded-lg border border-line bg-ash px-2 text-sm text-bone focus:border-ember/60 focus:outline-none sm:max-w-xs">
+                {phases.map(([k, st]) => <option key={k} value={k}>{st.name ?? k}{st.power ? ` · ${st.power.toLocaleString()}` : ''}</option>)}
+              </select>
+            </label>
+          )}
+          {contentId && <a href={`${teamsPath}/${contentId}`} className="pb-2 text-xs text-flame underline underline-offset-2">{L['sh.title']}</a>}
+        </div>
+
         <div>
           <p className="text-sm font-bold text-bone">{L['tm.affinity']}</p>
           <p className="mt-0.5 mb-2 text-xs text-smoke">{L['tm.affinity.hint']}</p>
@@ -131,13 +186,17 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
             <div className="mt-1 flex flex-wrap gap-1.5">
               {(['red', 'blue', 'green', 'yellow'] as const).map((el) => {
                 const n = main.filter((c) => c.element === el).length;
-                return n ? <span key={el} className="flex items-center gap-1 text-dust"><span className="size-2 rounded-full" style={{ background: ELEMENT_COLOR[el] }} />{L[`el.${el}`]} ×{n}</span> : null;
+                return n ? <span key={el} className="flex items-center gap-1 text-dust"><ElementIcon el={el} size={16} />{L[`el.${el}`]} ×{n}</span> : null;
               })}
             </div>
             {warnings.map((w) => <p key={w} className="mt-1 text-flame">⚠ {w}</p>)}
           </div>
         )}
-        {mainSlots.length > 0 && <TeamPlan slots={mainSlots} account={account} labels={L} basePath={basePath} onReorder={supportsFirst} />}
+        {stage && chars && main.length > 0 && (
+          <TeamAnalysis team={built} stage={stage} needs={needs} phases={seriesOf(phases, phase)} chars={chars} account={account} labels={L} basePath={basePath}
+            noHelper={noHelper} onApply={(i, id) => setSlot(i, id)} />
+        )}
+        {mainSlots.length > 0 && <TeamPlan slots={mainSlots} account={account} labels={L} basePath={basePath} />}
         {allMine && account && best && main.length > 0 && (
           <Readiness mine={built} best={best} account={account as Account} memories={memories} labels={L} basePath={basePath} />
         )}
@@ -184,11 +243,12 @@ export default function TeamBuilder({ labels: L, basePath, accountPath, teamsPat
       <section>
         <h2 className="mb-1 text-2xl font-bold text-bone">{L['tb.recs']}</h2>
         <p className="mb-4 text-sm text-dust">{L['tb.recs.desc']}</p>
-        <Recommendations chars={chars} memories={memories} affinity={affinity} labels={L} basePath={basePath} accountPath={accountPath} />
+        <Recommendations chars={chars} memories={memories} affinity={affinity} labels={L} basePath={basePath} accountPath={accountPath}
+          {...(stage ? { needs, stage, phases: seriesOf(phases, phase), noHelper } : {})} />
       </section>
 
       {picking != null && (
-        <CharPicker chars={chars} owned={owned} affinity={affinity} title={slotLabel(picking)} labels={L}
+        <CharPicker chars={chars} owned={owned} affinity={affinity} needs={needs} title={slotLabel(picking)} labels={L}
           onPick={(id) => { setSlot(picking, id); setPicking(null); }} onClose={() => setPicking(null)} />
       )}
     </div>

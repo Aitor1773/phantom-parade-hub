@@ -2,6 +2,7 @@
 // Historial de reediciones: cada personaje con sus banners destacados en JP y Global y cuánto hace del último.
 // Los «hace N días» y los estados (en banner / próximamente) se recalculan en el navegador.
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ElementIcon from '@/components/ElementIcon';
 import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import { HISTORY, type Appearance } from '@/data/banner-history';
@@ -50,7 +51,7 @@ rows.sort((a, b) => wait(a.c, ts(a.h.jp[0])) - wait(b.c, ts(b.h.jp[0])));
         <button type="button" data-el="" class="bh-el rounded-full border border-ember/60 bg-ember/10 px-3 py-1 text-xs font-semibold text-bone" aria-pressed="true">{L['tl.all']}</button>
         {ELS.map((e) => (
           <button type="button" data-el={e} class="bh-el flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs font-semibold text-dust" aria-pressed="false">
-            <span class="size-2 rounded-full" style={`background:${ELEMENT_COLOR[e]}`}></span>{L[`el.${e}`]}
+            <ElementIcon el={e} size={16} />{L[`el.${e}`]}
           </button>
         ))}
       </div>

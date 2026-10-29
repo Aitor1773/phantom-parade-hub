@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState, useDeferredValue } from 'react';
+import ElementIcon from '@/components/ElementIcon';
 
 export interface BrowserItem {
   id: string;
@@ -180,7 +181,7 @@ export default function CharacterBrowser({ items, basePath, labels, options }: P
                       on ? 'border-ember/70 bg-ember/15 text-bone' : 'border-line bg-coal text-dust hover:border-line-strong hover:text-bone'
                     }`}
                   >
-                    {g.key === 'element' && <span className="size-2.5 rounded-full" style={{ background: ELEMENT_COLOR[o.value] }} />}
+                    {g.key === 'element' && <ElementIcon el={o.value} size={18} />}
                     {o.label}
                   </button>
                 );
@@ -230,7 +231,7 @@ export default function CharacterBrowser({ items, basePath, labels, options }: P
                     style={{ boxShadow: 'inset 0 0 0 1px var(--el), inset 0 -60px 60px -40px color-mix(in srgb, var(--el) 45%, transparent)' }}
                   />
                   <span className={`${RARITY_CLASS[c.rarity] ?? 'badge'} absolute top-2 left-2 backdrop-blur-sm`}>{c.rarity}</span>
-                  <span className="absolute top-2.5 right-2.5 size-3 rounded-full ring-2 ring-ash/80" style={{ background: 'var(--el)' }} />
+                  <ElementIcon el={c.element} size={26} className="absolute top-1.5 right-1.5" />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-3">
                   {c.epithet && <p className="line-clamp-1 text-[11px] font-medium text-flame/90">{c.epithet}</p>}

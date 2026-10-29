@@ -1,6 +1,7 @@
 // Recomendaciones calculadas en el navegador a partir del inventario del usuario.
 // Cada consejo dice en qué se basa; nada se envía fuera del dispositivo.
 import { useMemo, type ReactNode } from 'react';
+import ElementIcon from '@/components/ElementIcon';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import type { Inventory } from '@/lib/inventory';
 
@@ -163,7 +164,7 @@ export default function Advice({ inv, chars, banners, estimates, gacha, tierSour
           {teams.map((t) => (
             <div key={t.el}>
               <p className="mb-2 flex items-center gap-2 text-xs font-bold tracking-wider text-dust uppercase">
-                <span className="size-2.5 rounded-full" style={{ background: ELEMENT_COLOR[t.el] }} /> {elLabel(t.el)}
+                <ElementIcon el={t.el} size={18} /> {elLabel(t.el)}
               </p>
               {t.members.length ? (
                 <div className="grid gap-1.5">

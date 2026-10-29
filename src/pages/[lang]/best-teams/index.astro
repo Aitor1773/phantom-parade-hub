@@ -2,6 +2,7 @@
 // Mejores equipos por color y estilo (técnica / físico / híbrido), de la hoja de la comunidad
 // (npm run data:best-teams, a diario). Fuente citada en Créditos.
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ElementIcon from '@/components/ElementIcon';
 import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR } from '@/components/characters/CharacterBrowser';
 import data from '../../../../data/normalized/best-teams.json';
@@ -56,7 +57,7 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
     <div class="color-tabs mb-8 inline-flex flex-wrap gap-1 rounded-xl border border-line bg-coal p-1" role="tablist">
       {COLORS.map((c, i) => (
         <button type="button" role="tab" data-color={c} aria-selected={i === 0 ? 'true' : 'false'} class="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-bold transition">
-          <span class="size-2.5 rounded-full" style={`background:${ELEMENT_COLOR[c]}`} />{g(`el.${c}` as GameKey)}
+          <ElementIcon el={c} size={18} />{g(`el.${c}` as GameKey)}
         </button>
       ))}
     </div>
@@ -66,7 +67,7 @@ const updated = new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle:
         {teams.filter((tm) => tm.color === c).map((tm) => (
           <article class="card p-4" style={`border-color:${ELEMENT_COLOR[c]}55`}>
             <h2 class="flex items-center gap-2 font-sans text-lg font-bold text-bone">
-              <span class="size-3 rounded-full" style={`background:${ELEMENT_COLOR[c]}`} />
+              <ElementIcon el={c} size={24} />
               {g(`el.${c}` as GameKey)} · {es ? STYLE[tm.style].es : STYLE[tm.style].en}
             </h2>
             <ol class="mt-3 grid grid-cols-5 gap-1.5">

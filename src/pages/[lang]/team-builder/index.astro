@@ -3,7 +3,8 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import TeamBuilder from '@/components/teams/TeamBuilder';
 import { BUILDER_KEYS } from '@/components/teams/keys';
-import { gameDict } from '@/i18n/game';
+import { CONTENT, stagesOf } from '@/data/content';
+import { gameDict, useG, type GameKey } from '@/i18n/game';
 import { localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
 export const getStaticPaths = staticLocalePaths;
@@ -12,6 +13,10 @@ const lang = Astro.params.lang as Locale;
 const t = useT(lang);
 const labels = gameDict(lang, BUILDER_KEYS);
 const g = gameDict(lang, ['ct.title'] as const);
+const tg = useG(lang);
+// Contenidos con fichas de fases (modos permanentes y eventos en curso), para analizar el equipo
+const contents = CONTENT.filter((c) => Object.keys(stagesOf(c.id)).length)
+  .map((c) => ({ id: c.id, name: c.kind === 'mode' ? tg(`ct.m.${c.id}` as GameKey) : `${c.name}${c.server ? ` (${c.server === 'jp' ? 'JP' : 'Global'})` : ''}` }));
 ---
 
 <BaseLayout lang={lang} title={t('nav.teambuilder')} description={t('nav.teambuilder.desc')}>
@@ -21,6 +26,6 @@ const g = gameDict(lang, ['ct.title'] as const);
       <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{t('nav.teambuilder')}</h1>
       <p class="mt-3 max-w-2xl text-dust">{t('nav.teambuilder.desc')}. <a href={localePath(lang, '/teams')} class="text-flame underline underline-offset-2">{g['ct.title']}</a></p>
     </header>
-    <TeamBuilder client:only="react" labels={labels} basePath={localePath(lang)} accountPath={localePath(lang, '/account')} teamsPath={localePath(lang, '/teams')} />
+    <TeamBuilder client:only="react" labels={labels} basePath={localePath(lang)} accountPath={localePath(lang, '/account')} teamsPath={localePath(lang, '/teams')} contents={contents} />
   </div>
 </BaseLayout>

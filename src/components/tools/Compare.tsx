@@ -1,6 +1,7 @@
 // Comparador: hasta 3 personajes lado a lado (perfil, rango, estadísticas, habilidades y memorias).
 // La selección va en el enlace (#c=id1,id2,id3) para poder compartirla.
 import { useEffect, useState, type ReactNode } from 'react';
+import ElementIcon from '@/components/ElementIcon';
 
 export interface CmpSkill { label: string; name: string | null; cost: number | null; img: string | null }
 export interface CmpChar {
@@ -104,7 +105,7 @@ export default function Compare({ chars, labels: L, locale }: { chars: CmpChar[]
         <div className="mt-6 space-y-6">
           <Section title={L['cmp.profile']}>
             {textRow(L['cmp.rarity'], (c) => c.rarity)}
-            {textRow(L['cmp.element'], (c) => <span className="inline-flex items-center gap-1.5"><span className="size-2 rounded-full" style={{ background: EL_COLOR[c.el] }} />{c.elLabel}</span>)}
+            {textRow(L['cmp.element'], (c) => <span className="inline-flex items-center gap-1.5"><ElementIcon el={c.el} size={18} />{c.elLabel}</span>)}
             {textRow(L['cmp.role'], (c) => [c.role, c.focus].filter(Boolean).join(' · '))}
             {textRow(L['cmp.tier'], (c) => c.tier && <span className={`font-black ${c.tier === tierBest && shown.length > 1 ? 'text-flame' : 'text-bone'}`}>{c.tier}</span>)}
             {textRow(L['cmp.avail'], (c) => c.av)}
