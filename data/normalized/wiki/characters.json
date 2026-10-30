@@ -2,8 +2,8 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-10-29T10:32:49.079Z",
-  "count": 111,
+  "fetchedAt": "2026-10-30T07:33:58.928Z",
+  "count": 112,
   "items": [
     {
       "id": "02-second-domain-expansion-satoru-gojo",
@@ -8564,6 +8564,134 @@
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(Longsword_Battle)_Maki_Zen'in",
         "revid": 9481,
         "updated": "2025-09-19T17:02:01Z"
+      }
+    },
+    {
+      "id": "mastery-of-24-frames-per-second-naoya-zenin",
+      "name": "Naoya Zen'in",
+      "epithet": "Mastery of 24 Frames Per Second",
+      "rarity": "SSR",
+      "element": "blue",
+      "role": "Debuffer",
+      "focus": "Mixed",
+      "availability": null,
+      "affiliation": "Special Grade 1 Sorcerer",
+      "releaseDateJP": "2026-10-30",
+      "art": null,
+      "art2": null,
+      "stats": {
+        "hp": 37146,
+        "attack": 11276,
+        "jujutsu": 13565,
+        "ceInitial": 50,
+        "ceMax": 100,
+        "specialGauge": 1558
+      },
+      "characteristic": null,
+      "blackFlash": null,
+      "kits": {
+        "base": {
+          "normal": {
+            "name": "Instant Combo",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/4/4d/BlueSSRNaoyaNormalAttack1.png/revision/latest?cb=20261030073110",
+            "levels": [
+              "Deals melee Mixed Damage equal to 100% Taijutsu and 100% Jujutsu to the selected enemy (2 Hits)\n\"Projection Sorcery\" State Count +3 (Up to 24)\nRecovers own Cursed Energy by 5",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Deals melee Mixed Damage equal to 100% Taijutsu and 100% Jujutsu to the selected enemy (2 Hits)\n\"Projection Sorcery\" State Count +3 (Up to 24)\nRecovers own Cursed Energy by 5"
+            ]
+          },
+          "s1": {
+            "name": "Projection Sorcery",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/8/8c/BlueSSRNaoyaS11.png/revision/latest?cb=20261030073119",
+            "levels": [
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 275% Taijutsu and 275% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30%  (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 275% Taijutsu and 275% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30%  (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)"
+            ],
+            "cost": 15
+          },
+          "s2": {
+            "name": "Overwhelming Speed",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/b/b1/BlueSSRNaoyaS21.png/revision/latest?cb=20261030073127",
+            "levels": [
+              "Deals melee Mixed Damage equal to 75% Taijutsu and 75% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 250% Taijutsu and 250% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Deals melee Mixed Damage equal to 75% Taijutsu and 75% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 250% Taijutsu and 250% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)"
+            ],
+            "cost": 25
+          },
+          "ult": {
+            "name": "I'll Punch Through You at Top Speed",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/c/c7/BlueSSRNaoyaUlt1.png/revision/latest?cb=20261030073137",
+            "levels": [
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 400% Taijutsu and 400% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 450% Taijutsu and 450% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 400% Taijutsu and 400% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 450% Taijutsu and 450% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)"
+            ]
+          },
+          "comboUlt": "Deals melee Mixed Damage equal to 96% Taijutsu & 96% Jujutsu to the selected enemy\nIncreases own and Combo Ally's Damage Dealt by 30% (3 Turns)",
+          "comboUltBuffed": "Deals melee Mixed Damage equal to 160% Taijutsu & 160% Jujutsu to the selected enemy\nIncreases own and Combo Ally's Damage Dealt by 40% (3 Turns)\nRecovers own and Combo Ally's Critical Hit Rate by 30% (3 Turns)",
+          "autos": [
+            {
+              "n": 1,
+              "name": "Instant Combo (Follow-Up)",
+              "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/2/29/InstantComboFollowUp.png/revision/latest?cb=20261030072050",
+              "effect": "If \"Projection Sorcery\" or \"Instant Combo\" was used and dealt damage: (40% Chance/Scaled with S1 Level)\nDeals melee Mixed Damage equal to 150% Taijutsu & 150% Jujutsu to the selected enemy (2 Hits)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 15% (2 Turns/Cannot be Buffed)\nIncreases \"影\" (Blue) Damage Received by 10% (2 Turns/Cannot be Buffed)\n\"Projection Sorcery\" State Count +2 (Up to 24)"
+            },
+            {
+              "n": 2,
+              "name": "Projection Sorcery (Counter)",
+              "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/e/e2/ProjectionSorcery%28Counter%29.png/revision/latest?cb=20250903084351",
+              "effect": "At the start of battle, grants Counter State to self\n\nIf receiving a melee attack (Once per Turn): (Scaled with S2 Level),\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\nDeals melee Mixed Damage equal to 75% Taijutsu & 75% Jujutsu to the selected enemy\nDecreases Critical Hit Resistance by 5% (2 Turns)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 10% (2 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)"
+            },
+            {
+              "n": 3,
+              "name": "Projection Sorcery (Auto)",
+              "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/9/93/YouAreTooSlow.png/revision/latest?cb=20250903084418",
+              "effect": "Immune to melee attack counters when attacking\n\nAt the start of turn: (All cannot be stacked)\nIncreases own Taijutsu & Jujutsu Stat by 6% (Projection Sorcery) (Up to 30% with 16 Counts)\n5% Chance to Evade & Increases own Ultimate Gauge Charging Rate by 5% (Up to 20% with 24 Counts)\nDarkness Immunity & Chance of performing Instant Combo (Follow-Up) increased to 60% (Activated with 8+ Counts)\nGuaranteed-Hit Effect (Activated with 16+ Counts)\nGuaranteed to perform Instant Combo (Follow-Up) (Activated with 24 Counts)\n\nAfter evading an attack:\nRecovers own Cursed Energy by 5 (Bypass Limit)\n\"Projection Sorcery\" State Count +1 (Up to 24)"
+            }
+          ]
+        },
+        "adjusted": null,
+        "adjustedV2": null,
+        "altered": null,
+        "sp": null
+      },
+      "memories": [],
+      "variant": "Character Page",
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/(Mastery_of_24_Frames_Per_Second)_Naoya_Zen'in",
+        "revid": 11441,
+        "updated": "2026-10-30T07:14:40Z"
       }
     },
     {

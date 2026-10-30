@@ -1,6 +1,6 @@
 {
   "_comment": "Tier list PROPIA, con 7 listas (blue, red, green, yellow, damage, support, sp). Para ajustar: en lists.<lista>.entries.<id> cambia \"rank\", pon \"manual\": true y, si quieres, una \"note\". Para fijar la fecha de revisión de una lista: \"reviewed\": \"AAAA-MM-DD\" y \"reviewedManual\": true. Con \"curated\": true en una lista, solo salen en ella los personajes con \"manual\": true (para añadir uno nuevo: rank, manual y \"lastRank\": null). El borrador nunca toca lo manual y registra cada cambio en \"changelog\". Después: npm run data:tierdraft && npm run build",
-  "updatedAt": "2026-10-29T10:33:20.754Z",
+  "updatedAt": "2026-10-30T07:34:32.226Z",
   "criteria": {
     "roleWeights": {
       "attacker": {
@@ -71,7 +71,7 @@
   },
   "lists": {
     "blue": {
-      "reviewed": "2026-10-19",
+      "reviewed": "2026-10-30",
       "entries": {
         "02-second-domain-expansion-satoru-gojo": {
           "rank": "S",
@@ -123,18 +123,18 @@
           "lastRank": "C",
           "manual": true
         },
-        "first-grade-sorcerers-skill-kento-nanami": {
-          "rank": "S",
-          "draftRank": "A",
-          "score": 64,
-          "lastRank": "S",
-          "manual": true
-        },
         "genuine-jujutsu-ryomen-sukuna": {
           "rank": "B",
           "draftRank": "A",
           "score": 64,
           "lastRank": "B",
+          "manual": true
+        },
+        "first-grade-sorcerers-skill-kento-nanami": {
+          "rank": "S",
+          "draftRank": "A",
+          "score": 63,
+          "lastRank": "S",
           "manual": true
         },
         "dont-look-down-on-me-momo-nishimiya": {
@@ -147,14 +147,14 @@
         "blood-borne-resolve-noritoshi-kamo": {
           "rank": "A",
           "draftRank": "B",
-          "score": 52,
+          "score": 51,
           "lastRank": "A",
           "manual": true
         },
         "this-is-justice-suguru-geto": {
           "rank": "S",
           "draftRank": "B",
-          "score": 51,
+          "score": 50,
           "lastRank": "S",
           "manual": true
         },
@@ -209,7 +209,7 @@
         },
         "striking-eternal-summer-nobara-kugisaki": {
           "rank": "S",
-          "draftRank": "C",
+          "draftRank": "B",
           "score": 39,
           "lastRank": "S",
           "manual": true
@@ -224,9 +224,15 @@
         "shatter-to-pieces-toge-inumaki": {
           "rank": "A",
           "draftRank": "C",
-          "score": 35,
+          "score": 34,
           "lastRank": "A",
           "manual": true
+        },
+        "mastery-of-24-frames-per-second-naoya-zenin": {
+          "rank": "C",
+          "draftRank": "C",
+          "score": 32,
+          "lastRank": "C"
         },
         "sukunas-vessel-yuji-itadori": {
           "rank": "D",
@@ -391,7 +397,7 @@
         "meteor-of-fierceness-jogo": {
           "rank": "B",
           "draftRank": "B",
-          "score": 59,
+          "score": 58,
           "lastRank": "B",
           "manual": true
         },
@@ -494,14 +500,14 @@
         "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
           "rank": "S",
           "draftRank": "S",
-          "score": 86,
+          "score": 85,
           "lastRank": "S",
           "manual": true
         },
         "indomitable-auspicious-beasts-takuma-ino": {
           "rank": "A",
           "draftRank": "S",
-          "score": 82,
+          "score": 81,
           "lastRank": "A",
           "manual": true
         },
@@ -585,7 +591,7 @@
         "ive-seen-it-all-kokichi-muta": {
           "rank": "A",
           "draftRank": "B",
-          "score": 52,
+          "score": 51,
           "lastRank": "A",
           "manual": true
         },
@@ -599,14 +605,14 @@
         "hearts-resolve-saki-rindo": {
           "rank": "B",
           "draftRank": "B",
-          "score": 45,
+          "score": 44,
           "lastRank": "B",
           "manual": true
         },
         "inspiration-from-death-mahito": {
           "rank": "A",
           "draftRank": "B",
-          "score": 45,
+          "score": 44,
           "lastRank": "A",
           "manual": true
         },
@@ -755,18 +761,18 @@
           "lastRank": "B",
           "manual": true
         },
-        "zone-yuji-itadori": {
-          "rank": "S",
-          "draftRank": "B",
-          "score": 64,
-          "lastRank": "S",
-          "manual": true
-        },
         "young-fish-and-reverse-punishment-junpei-yoshino": {
           "rank": "B",
           "draftRank": "B",
           "score": 63,
           "lastRank": "B",
+          "manual": true
+        },
+        "zone-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 63,
+          "lastRank": "S",
           "manual": true
         },
         "with-that-will-in-mind-kaito-yuki": {
@@ -801,7 +807,7 @@
         "seance-toji-fushiguro": {
           "rank": "B",
           "draftRank": "B",
-          "score": 49,
+          "score": 48,
           "lastRank": "B",
           "manual": true
         },
@@ -815,7 +821,7 @@
         "reckless-grade-1-aoi-todo": {
           "rank": "D",
           "draftRank": "C",
-          "score": 37,
+          "score": 36,
           "lastRank": "D",
           "manual": true
         },
@@ -843,7 +849,7 @@
         "girl-of-steel-nobara-kugisaki": {
           "rank": "C",
           "draftRank": "D",
-          "score": 31,
+          "score": 30,
           "lastRank": "C",
           "manual": true
         },
@@ -1022,13 +1028,6 @@
           "lastRank": "C",
           "manual": true
         },
-        "first-grade-sorcerers-skill-kento-nanami": {
-          "rank": "S",
-          "draftRank": "B",
-          "score": 64,
-          "lastRank": "S",
-          "manual": true
-        },
         "genuine-jujutsu-ryomen-sukuna": {
           "rank": "B",
           "draftRank": "B",
@@ -1036,14 +1035,14 @@
           "lastRank": "B",
           "manual": true
         },
-        "zone-yuji-itadori": {
+        "are-you-satisfied-with-that-aoi-todo": {
           "rank": "S",
           "draftRank": "B",
-          "score": 64,
+          "score": 63,
           "lastRank": "S",
           "manual": true
         },
-        "are-you-satisfied-with-that-aoi-todo": {
+        "first-grade-sorcerers-skill-kento-nanami": {
           "rank": "S",
           "draftRank": "B",
           "score": 63,
@@ -1055,6 +1054,13 @@
           "draftRank": "B",
           "score": 63,
           "lastRank": "C",
+          "manual": true
+        },
+        "zone-yuji-itadori": {
+          "rank": "S",
+          "draftRank": "B",
+          "score": 63,
+          "lastRank": "S",
           "manual": true
         },
         "a-bad-match-nobara-kugisaki": {
@@ -1081,7 +1087,7 @@
         "meteor-of-fierceness-jogo": {
           "rank": "B",
           "draftRank": "B",
-          "score": 59,
+          "score": 58,
           "lastRank": "B",
           "manual": true
         },
@@ -1092,20 +1098,6 @@
           "lastRank": "B",
           "manual": true
         },
-        "blood-borne-resolve-noritoshi-kamo": {
-          "rank": "C",
-          "draftRank": "B",
-          "score": 52,
-          "lastRank": "C",
-          "manual": true
-        },
-        "ive-seen-it-all-kokichi-muta": {
-          "rank": "B",
-          "draftRank": "B",
-          "score": 52,
-          "lastRank": "B",
-          "manual": true
-        },
         "maximum-cursed-energy-output-yuji-itadori": {
           "rank": "S",
           "draftRank": "B",
@@ -1113,18 +1105,18 @@
           "lastRank": "S",
           "manual": true
         },
-        "seance-toji-fushiguro": {
-          "rank": "B",
-          "draftRank": "B",
-          "score": 49,
-          "lastRank": "B",
-          "manual": true
-        },
-        "zanshin-kasumi-miwa": {
+        "blood-borne-resolve-noritoshi-kamo": {
           "rank": "C",
           "draftRank": "B",
-          "score": 49,
+          "score": 51,
           "lastRank": "C",
+          "manual": true
+        },
+        "ive-seen-it-all-kokichi-muta": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 51,
+          "lastRank": "B",
           "manual": true
         },
         "infuse-your-cursed-energy-yuji-itadori": {
@@ -1134,7 +1126,21 @@
           "lastRank": "C",
           "manual": true
         },
+        "seance-toji-fushiguro": {
+          "rank": "B",
+          "draftRank": "B",
+          "score": 48,
+          "lastRank": "B",
+          "manual": true
+        },
         "the-strongest-satoru-gojo": {
+          "rank": "C",
+          "draftRank": "B",
+          "score": 48,
+          "lastRank": "C",
+          "manual": true
+        },
+        "zanshin-kasumi-miwa": {
           "rank": "C",
           "draftRank": "C",
           "score": 48,
@@ -1158,14 +1164,14 @@
         "hearts-resolve-saki-rindo": {
           "rank": "C",
           "draftRank": "C",
-          "score": 45,
+          "score": 44,
           "lastRank": "C",
           "manual": true
         },
         "inspiration-from-death-mahito": {
           "rank": "D",
           "draftRank": "C",
-          "score": 45,
+          "score": 44,
           "lastRank": "D",
           "manual": true
         },
@@ -1249,7 +1255,7 @@
         "girl-of-steel-nobara-kugisaki": {
           "rank": "C",
           "draftRank": "D",
-          "score": 31,
+          "score": 30,
           "lastRank": "C",
           "manual": true
         },
@@ -1297,7 +1303,7 @@
         "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
           "rank": "S",
           "draftRank": "S",
-          "score": 86,
+          "score": 85,
           "lastRank": "S",
           "manual": true
         },
@@ -1311,7 +1317,7 @@
         "indomitable-auspicious-beasts-takuma-ino": {
           "rank": "A",
           "draftRank": "S",
-          "score": 82,
+          "score": 81,
           "lastRank": "A",
           "manual": true
         },
@@ -1495,7 +1501,7 @@
         "blood-borne-resolve-noritoshi-kamo": {
           "rank": "A",
           "draftRank": "C",
-          "score": 41,
+          "score": 40,
           "lastRank": "A",
           "manual": true
         },
@@ -1506,14 +1512,14 @@
           "lastRank": "A",
           "manual": true
         },
-        "shatter-to-pieces-toge-inumaki": {
+        "incomplete-domain-megumi-fushiguro": {
           "rank": "A",
           "draftRank": "C",
-          "score": 35,
+          "score": 34,
           "lastRank": "A",
           "manual": true
         },
-        "incomplete-domain-megumi-fushiguro": {
+        "shatter-to-pieces-toge-inumaki": {
           "rank": "A",
           "draftRank": "C",
           "score": 34,
@@ -1599,7 +1605,7 @@
         "first-grade-sorcerers-skill-kento-nanami": {
           "rank": "S",
           "draftRank": "A",
-          "score": 64,
+          "score": 63,
           "lastRank": "S",
           "manual": true
         },
@@ -1641,14 +1647,14 @@
         "blood-borne-resolve-noritoshi-kamo": {
           "rank": "S",
           "draftRank": "B",
-          "score": 52,
+          "score": 51,
           "lastRank": "S",
           "manual": true
         },
         "this-is-justice-suguru-geto": {
           "rank": "S",
           "draftRank": "B",
-          "score": 51,
+          "score": 50,
           "lastRank": "S",
           "manual": true
         },
@@ -1669,7 +1675,7 @@
         "hearts-resolve-saki-rindo": {
           "rank": "B",
           "draftRank": "C",
-          "score": 45,
+          "score": 44,
           "lastRank": "B",
           "manual": true
         },
@@ -1697,7 +1703,7 @@
         "girl-of-steel-nobara-kugisaki": {
           "rank": "C",
           "draftRank": "D",
-          "score": 31,
+          "score": 30,
           "lastRank": "C",
           "manual": true
         },
@@ -1733,7 +1739,7 @@
       }
     },
     "enjoying-the-cool-summer-breeze-megumi-fushiguro": {
-      "score": 86,
+      "score": 85,
       "group": "debuffer",
       "metrics": {
         "ultDmg": 1800,
@@ -1763,7 +1769,7 @@
       }
     },
     "indomitable-auspicious-beasts-takuma-ino": {
-      "score": 82,
+      "score": 81,
       "group": "debuffer",
       "metrics": {
         "ultDmg": 1400,
@@ -2062,16 +2068,6 @@
         "sustain": 39
       }
     },
-    "first-grade-sorcerers-skill-kento-nanami": {
-      "score": 64,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1120,
-        "maxBuff": 0,
-        "maxDebuff": 45,
-        "sustain": 0
-      }
-    },
     "genuine-jujutsu-ryomen-sukuna": {
       "score": 64,
       "group": "attacker",
@@ -2082,16 +2078,6 @@
         "sustain": 0
       }
     },
-    "zone-yuji-itadori": {
-      "score": 64,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1500,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 9
-      }
-    },
     "are-you-satisfied-with-that-aoi-todo": {
       "score": 63,
       "group": "attacker",
@@ -2100,6 +2086,16 @@
         "maxBuff": 0,
         "maxDebuff": 0,
         "sustain": 10
+      }
+    },
+    "first-grade-sorcerers-skill-kento-nanami": {
+      "score": 63,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1120,
+        "maxBuff": 0,
+        "maxDebuff": 45,
+        "sustain": 0
       }
     },
     "ratio-technique-kento-nanami": {
@@ -2120,6 +2116,16 @@
         "maxBuff": 0,
         "maxDebuff": 48,
         "sustain": 12
+      }
+    },
+    "zone-yuji-itadori": {
+      "score": 63,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1500,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 9
       }
     },
     "crafty-rock-yoshinobu-gakuganji": {
@@ -2202,16 +2208,6 @@
         "sustain": 8
       }
     },
-    "meteor-of-fierceness-jogo": {
-      "score": 59,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1920,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 10
-      }
-    },
     "with-that-will-in-mind-kaito-yuki": {
       "score": 59,
       "group": "attacker",
@@ -2220,6 +2216,16 @@
         "maxBuff": 80,
         "maxDebuff": 27,
         "sustain": 26
+      }
+    },
+    "meteor-of-fierceness-jogo": {
+      "score": 58,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1920,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 10
       }
     },
     "night-lurking-sorcerer-toge-inumaki": {
@@ -2272,26 +2278,6 @@
         "sustain": 0
       }
     },
-    "blood-borne-resolve-noritoshi-kamo": {
-      "score": 52,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1353,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 3
-      }
-    },
-    "ive-seen-it-all-kokichi-muta": {
-      "score": 52,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1201,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 0
-      }
-    },
     "maximum-cursed-energy-output-yuji-itadori": {
       "score": 52,
       "group": "attacker",
@@ -2302,24 +2288,34 @@
         "sustain": 6
       }
     },
-    "this-is-justice-suguru-geto": {
+    "blood-borne-resolve-noritoshi-kamo": {
       "score": 51,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1353,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 3
+      }
+    },
+    "ive-seen-it-all-kokichi-muta": {
+      "score": 51,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1201,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "this-is-justice-suguru-geto": {
+      "score": 50,
       "group": "attacker",
       "metrics": {
         "ultDmg": 912,
         "maxBuff": 0,
         "maxDebuff": 28,
         "sustain": 0
-      }
-    },
-    "seance-toji-fushiguro": {
-      "score": 49,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1300,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 9
       }
     },
     "infuse-your-cursed-energy-yuji-itadori": {
@@ -2340,6 +2336,16 @@
         "maxBuff": 0,
         "maxDebuff": 45,
         "sustain": 1
+      }
+    },
+    "seance-toji-fushiguro": {
+      "score": 48,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1300,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 9
       }
     },
     "the-strongest-satoru-gojo": {
@@ -2392,26 +2398,6 @@
         "sustain": 20
       }
     },
-    "hearts-resolve-saki-rindo": {
-      "score": 45,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1109,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 30
-      }
-    },
-    "inspiration-from-death-mahito": {
-      "score": 45,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 1331,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 40
-      }
-    },
     "resolved-cursed-speech-toge-inumaki": {
       "score": 45,
       "group": "support",
@@ -2430,6 +2416,26 @@
         "maxBuff": 0,
         "maxDebuff": 30,
         "sustain": 0
+      }
+    },
+    "hearts-resolve-saki-rindo": {
+      "score": 44,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1109,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 30
+      }
+    },
+    "inspiration-from-death-mahito": {
+      "score": 44,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 1331,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 40
       }
     },
     "within-infinity-satoru-gojo": {
@@ -2502,21 +2508,21 @@
         "sustain": 36
       }
     },
-    "reckless-grade-1-aoi-todo": {
-      "score": 37,
-      "group": "support",
-      "metrics": {
-        "ultDmg": 667,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 0
-      }
-    },
     "no-conceit-takuma-ino": {
       "score": 36,
       "group": "attacker",
       "metrics": {
         "ultDmg": 900,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "reckless-grade-1-aoi-todo": {
+      "score": 36,
+      "group": "support",
+      "metrics": {
+        "ultDmg": 667,
         "maxBuff": 0,
         "maxDebuff": 0,
         "sustain": 0
@@ -2533,7 +2539,7 @@
       }
     },
     "shatter-to-pieces-toge-inumaki": {
-      "score": 35,
+      "score": 34,
       "group": "support",
       "metrics": {
         "ultDmg": 1800,
@@ -2562,6 +2568,16 @@
         "sustain": 0
       }
     },
+    "mastery-of-24-frames-per-second-naoya-zenin": {
+      "score": 32,
+      "group": "debuffer",
+      "metrics": {
+        "ultDmg": 1700,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
     "sprinting-kasumi-miwa": {
       "score": 32,
       "group": "attacker",
@@ -2582,21 +2598,21 @@
         "sustain": 0
       }
     },
-    "girl-of-steel-nobara-kugisaki": {
-      "score": 31,
-      "group": "attacker",
-      "metrics": {
-        "ultDmg": 600,
-        "maxBuff": 0,
-        "maxDebuff": 0,
-        "sustain": 0
-      }
-    },
     "dont-underestimate-a-puppet-panda": {
       "score": 30,
       "group": "sustain",
       "metrics": {
         "ultDmg": 1000,
+        "maxBuff": 0,
+        "maxDebuff": 0,
+        "sustain": 0
+      }
+    },
+    "girl-of-steel-nobara-kugisaki": {
+      "score": 30,
+      "group": "attacker",
+      "metrics": {
+        "ultDmg": 600,
         "maxBuff": 0,
         "maxDebuff": 0,
         "sustain": 0
@@ -4047,6 +4063,14 @@
       "from": null,
       "to": "A",
       "by": "manual"
+    },
+    {
+      "date": "2026-10-30",
+      "list": "blue",
+      "id": "mastery-of-24-frames-per-second-naoya-zenin",
+      "from": null,
+      "to": "C",
+      "by": "draft"
     }
   ]
 }
