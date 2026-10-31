@@ -2,8 +2,8 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-10-30T07:34:11.888Z",
-  "count": 251,
+  "fetchedAt": "2026-10-31T07:27:45.962Z",
+  "count": 253,
   "items": [
     {
       "id": "120-of-their-potential",
@@ -524,7 +524,7 @@
         "taijutsu"
       ],
       "adjusted": false,
-      "art": null,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/7/77/AdultsAfternoon.gif/revision/latest?cb=20261030121610",
       "variant": "Memory Page",
       "_source": {
         "source": "wiki",
@@ -1887,6 +1887,49 @@
         "url": "https://jjk-phantom-parade.fandom.com/wiki/Day_of_Awakening",
         "revid": 7915,
         "updated": "2025-04-05T09:56:23Z"
+      }
+    },
+    {
+      "id": "dazzled-by-the-distant-day",
+      "name": "Dazzled By The Distant Day",
+      "title": "Dazzled By The Distant Day",
+      "rarity": "SSR",
+      "releaseDateJP": "2026-10-30",
+      "availability": "gacha",
+      "stats": {
+        "hp": 30.22,
+        "taijutsu": 41.2,
+        "jujutsu": 41.2,
+        "level": 80
+      },
+      "effects": [
+        {
+          "text": "When Command Skill or Ultimate Skill is activated,\nIncreases all allies' Taijutsu & Jujutsu Stat by 10% (2 Turns)\n\nIf self is receiving Increases of \"Damage Dealt for Mixed Attack (Distant Day)\",\nFills own Ultimate Gauge by 60\nRecovers own Cursed Energy by 10",
+          "textLv2": "When Command Skill or Ultimate Skill is activated,\nIncreases all allies' Taijutsu & Jujutsu Stat by 15% (2 Turns)\n\nIf self is receiving Increases of \"Damage Dealt for Mixed Attack (Distant Day)\",\nFills own Ultimate Gauge by 60\nRecovers own Cursed Energy by 10",
+          "cd": 6,
+          "cdLv2": 6
+        },
+        {
+          "text": "If the equipped character is \"影\" (Blue), is in Counter State and dealt damage with a Mixed Attack (Once Per Turn)\nIncreases own Damage Dealt for Mixed Attacks by 5% (Distant Day) (2 Turns)",
+          "textLv2": null,
+          "cd": null,
+          "cdLv2": null
+        }
+      ],
+      "tags": [
+        "ce",
+        "gauge",
+        "jujutsu",
+        "damage"
+      ],
+      "adjusted": false,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/5/5b/DazzledByDistantDay.gif/revision/latest?cb=20261030124313",
+      "variant": "Memory Page",
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Dazzled_By_The_Distant_Day",
+        "revid": 11477,
+        "updated": "2026-10-30T12:41:37Z"
       }
     },
     {
@@ -6327,7 +6370,7 @@
         "damage"
       ],
       "adjusted": false,
-      "art": null,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/0/08/PingPongArt.gif/revision/latest?cb=20261030122700",
       "variant": "Memory Page",
       "_source": {
         "source": "wiki",
@@ -8223,7 +8266,7 @@
         "damage"
       ],
       "adjusted": false,
-      "art": null,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/e/e3/ClearStreamDuo.gif/revision/latest?cb=20261030121912",
       "variant": "Memory Page",
       "_source": {
         "source": "wiki",
@@ -8475,6 +8518,47 @@
         "url": "https://jjk-phantom-parade.fandom.com/wiki/The_Last_of_My_Cursed_Energy",
         "revid": 7491,
         "updated": "2025-02-21T11:36:19Z"
+      }
+    },
+    {
+      "id": "the-man-who-breaks-one-second",
+      "name": "The Man Who Breaks One Second",
+      "title": "The Man Who Breaks One Second",
+      "rarity": "SSR",
+      "releaseDateJP": "2026-10-30",
+      "availability": "f2p",
+      "stats": {
+        "hp": 36.6,
+        "taijutsu": 36.6,
+        "jujutsu": 36.6,
+        "level": 80
+      },
+      "effects": [
+        {
+          "text": "When Command Skill or Ultimate Skill is activated,\nIncreases own and Ally Behind's \"影\" (Blue) Damage Dealt by 15% (2 Turns)",
+          "textLv2": "When Command Skill or Ultimate Skill is activated,\nIncreases own and Ally Behind's \"影\" (Blue) Damage Dealt by 20% (2 Turns)",
+          "cd": 8,
+          "cdLv2": 8
+        },
+        {
+          "text": "At the start of battle,\nRecovers own Ultimate Gauge by 110",
+          "textLv2": null,
+          "cd": null,
+          "cdLv2": null
+        }
+      ],
+      "tags": [
+        "gauge",
+        "damage"
+      ],
+      "adjusted": false,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/c/c7/ManBreaksOneSecond.gif/revision/latest?cb=20261030124852",
+      "variant": "Memory Page",
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/The_Man_Who_Breaks_One_Second",
+        "revid": 11480,
+        "updated": "2026-10-30T12:48:15Z"
       }
     },
     {
@@ -8800,7 +8884,7 @@
         "defense"
       ],
       "adjusted": false,
-      "art": null,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/5/55/WorldSeenThroughUiUiEyesArt.gif/revision/latest?cb=20261030123108",
       "variant": "Memory Page",
       "_source": {
         "source": "wiki",

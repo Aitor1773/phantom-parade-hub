@@ -2,7 +2,7 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-10-30T07:33:58.928Z",
+  "fetchedAt": "2026-10-31T07:27:32.671Z",
   "count": 112,
   "items": [
     {
@@ -2596,7 +2596,7 @@
         "base": {
           "normal": {
             "name": "Cut Down",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/4/44/RedSSRKusakabeNormalAttack1.png/revision/latest?cb=20261019104844",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/4/44/RedSSRKusakabeNormalAttack1.png/revision/latest?cb=20261030121442",
             "levels": [
               "Deals 88.6% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
               "Deals 95.4% Melee Taijutsu Damage to the selected enemy (2 Hits)\nRecovers own Cursed Energy by 10 (Bypass Limit)\n\nExtends the following effect by 1 Turn: (CD: 3 Turns)\nIncreases \"幻\" (Red) Damage Received (Kusakabe)",
@@ -2612,7 +2612,7 @@
           },
           "s1": {
             "name": "New Shadow Style: Sword Drawing",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/e/e1/RedSSRKusakabeS11.png/revision/latest?cb=20261019105035",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/e/e1/RedSSRKusakabeS11.png/revision/latest?cb=20261030121457",
             "levels": [
               "Deals 177.2% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 8.5% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
               "Deals 190.8% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 9.2% (Kusakabe) (4 Turns/Simple Domain Exclusive)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
@@ -2629,7 +2629,7 @@
           },
           "s2": {
             "name": "Continuous Slashes",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/7/71/RedSSRKusakabeS21.png/revision/latest?cb=20261019105014",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/7/71/RedSSRKusakabeS21.png/revision/latest?cb=20261030121513",
             "levels": [
               "Deals 265.8% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 8.5% (Kusakabe) (4 Turns)",
               "Deals 286.3% Melee Taijutsu Damage to the selected enemy (3 Hits)\nIncreases the selected enemy's \"幻\" (Red) Damage Received by 9.2% (Kusakabe) (4 Turns)",
@@ -2646,7 +2646,7 @@
           },
           "ult": {
             "name": "Frenetic Strike",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/d/dd/RedSSRKusakabeUlt1.png/revision/latest?cb=20261019104917",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/d/dd/RedSSRKusakabeUlt1.png/revision/latest?cb=20261030121528",
             "levels": [
               "Deals 886% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 8.5% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 12.2% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
               "Deals 954.2% Melee Taijutsu Damage to all enemies\nIncreases all enemies' \"幻\" (Red) Damage Received by 9.2% (Kusakabe) (4 Turns)\nDecreases all enemies' Critical Hit Resistance by 13.1% (Kusakabe) (4 Turns/Cannot be Stacked)\nReduces own Cursed Energy Cost (4 Turns)\nTaunt all enemies (1 Turn)\nGrants \"Simple Domain\" State (4 Turns/Effective if Simple Domain isn't activated)",
@@ -3785,7 +3785,7 @@
       "availability": null,
       "affiliation": "Tokyo Jujutsu High Officials",
       "releaseDateJP": "2026-09-30",
-      "art": null,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/2/21/GreenMeiMeiSSRArt1.gif/revision/latest?cb=20261030122226",
       "art2": null,
       "stats": {
         "hp": 38255,
@@ -3801,7 +3801,7 @@
         "base": {
           "normal": {
             "name": "Sever",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/0/0c/GreenMeiMeiSSRNormalAttack1.png/revision/latest?cb=20261006052945",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/0/0c/GreenMeiMeiSSRNormalAttack1.png/revision/latest?cb=20261030121747",
             "levels": [
               "Deals 177.2% melee Taijutsu Damage to the selected enemy\n\nIf Critical Hit is performed,\n“Crow Manipulation” Count +1 (Up to 15)",
               "Deals 190.8% melee Taijutsu Damage to the selected enemy\n\nIf Critical Hit is performed,\n“Crow Manipulation” Count +1 (Up to 15)",
@@ -3817,7 +3817,7 @@
           },
           "s1": {
             "name": "Vision Sharing",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/f/f8/GreenMeiMeiSSRS11.png/revision/latest?cb=20261006052954",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/f/f8/GreenMeiMeiSSRS11.png/revision/latest?cb=20261030121803",
             "levels": [
               "Increases own Critical Hit Rate by 27% (4 Turns/Cannot be Stacked)\nIncreases own Damage Dealt by 23.7% (4 Turns/Cannot be Stacked)\nIncreases own Break Damage by 11.1% (4 Turns/Cannot be Stacked)\n“Crow Manipulation” Count +3 (Up to 15)",
               "Increases own Critical Hit Rate by 29.5% (4 Turns/Cannot be Stacked)\nIncreases own Damage Dealt by 25% (4 Turns/Cannot be Stacked)\nIncreases own Break Damage by 11.5% (4 Turns/Cannot be Stacked)\n“Crow Manipulation” Count +3 (Up to 15)",
@@ -3834,7 +3834,7 @@
           },
           "s2": {
             "name": "Magnificent Strike",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/3/30/GreenMeiMeiSSRS21.png/revision/latest?cb=20261006053004",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/3/30/GreenMeiMeiSSRS21.png/revision/latest?cb=20261030121828",
             "levels": [
               "Deals 303.4% Melee Taijutsu Damage to all enemies (2 Hits)\nIncreases all enemies’ \"夜\" (Green) Damage Received by 11.1% (2 Turns)\nIncreases all enemies’ Damage Received from \"夜\" (Green) Mixed Damage by 11.1% (2 Turns)",
               "Deals 325.2% Melee Taijutsu Damage to all enemies (2 Hits)\nIncreases all enemies’ \"夜\" (Green) Damage Received by 11.5% (2 Turns)\nIncreases all enemies’ Damage Received from \"夜\" (Green) Mixed Damage by 11.5% (2 Turns)",
@@ -3851,7 +3851,7 @@
           },
           "ult": {
             "name": "I measure lives by their potential assets",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/0/02/GreenMeiMeiSSRUlt1.png/revision/latest?cb=20261006053014",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/0/02/GreenMeiMeiSSRUlt1.png/revision/latest?cb=20261030121843",
             "levels": [
               "“Crow Manipulation” Count +1 (Up to 15)\nIncreases own Damage Dealt by 50% (Removed after activation)\n\nDeals 603.5% Melee Taijutsu Damage to the selected enemy (Darkness & Melee Counter Immunity)\nIncreases the selected enemy’s \"夜\" (Green) Damage Received by 11.1% (2 Turns)\nIncreases the selected enemy’s Damage received from \"夜\" (Green) Mixed Damage by 11.1% (2 Turns)\n\nDeals an additional ranged Mixed Damage equal to 151.7% Taijutsu & 151.7% Jujutsu to the selected enemy (Darkness Immunity)\n(The more “Crow Manipulation” counts, the greater damage dealt/Up to 100% of the original effect with 10 counts)\nIncreases the selected enemy’s Break Damage Received by 10% (2 Turns)\n\n“Crow Manipulation” Count -1",
               "“Crow Manipulation” Count +1 (Up to 15)\nIncreases own Damage Dealt by 50% (Removed after activation)\n\nDeals 647.6% Melee Taijutsu Damage to the selected enemy (Darkness & Melee Counter Immunity)\nIncreases the selected enemy’s \"夜\" (Green) Damage Received by 11.5% (2 Turns)\nIncreases the selected enemy’s Damage received from \"夜\" (Green) Mixed Damage by 11.5% (2 Turns)\n\nDeals an additional ranged Mixed Damage equal to 162.6% Taijutsu & 162.6% Jujutsu to the selected enemy (Darkness Immunity)\n(The more “Crow Manipulation” counts, the greater damage dealt/Up to 100% of the original effect with 10 counts)\nIncreases the selected enemy’s Break Damage Received by 10% (2 Turns)\n\n“Crow Manipulation” Count -1",
@@ -8577,7 +8577,7 @@
       "availability": null,
       "affiliation": "Special Grade 1 Sorcerer",
       "releaseDateJP": "2026-10-30",
-      "art": null,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/1/1b/BlueSSRNaoyaArt1.gif/revision/latest?cb=20261030121109",
       "art2": null,
       "stats": {
         "hp": 37146,
@@ -8593,67 +8593,67 @@
         "base": {
           "normal": {
             "name": "Instant Combo",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/4/4d/BlueSSRNaoyaNormalAttack1.png/revision/latest?cb=20261030073110",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/4/4d/BlueSSRNaoyaNormalAttack1.png/revision/latest?cb=20261030120740",
             "levels": [
-              "Deals melee Mixed Damage equal to 100% Taijutsu and 100% Jujutsu to the selected enemy (2 Hits)\n\"Projection Sorcery\" State Count +3 (Up to 24)\nRecovers own Cursed Energy by 5",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Deals melee Mixed Damage equal to 85.4% Taijutsu and 85.4% Jujutsu to the selected enemy (2 Hits)\n\"Projection Sorcery\" State Count +3 (Up to 24)\nRecovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 87% Taijutsu and 87% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 88.6% Taijutsu and 88.6% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 90.3% Taijutsu and 90.3% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 91.9% Taijutsu and 91.9% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 93.5% Taijutsu and 93.5% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 95.1% Taijutsu and 95.1% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 96.8% Taijutsu and 96.8% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
+              "Deals melee Mixed Damage equal to 98.4% Taijutsu and 98.4% Jujutsu to the selected enemy (2 Hits) \"Projection Sorcery\" State Count +3 (Up to 24) Recovers own Cursed Energy by 5",
               "Deals melee Mixed Damage equal to 100% Taijutsu and 100% Jujutsu to the selected enemy (2 Hits)\n\"Projection Sorcery\" State Count +3 (Up to 24)\nRecovers own Cursed Energy by 5"
             ]
           },
           "s1": {
             "name": "Projection Sorcery",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/8/8c/BlueSSRNaoyaS11.png/revision/latest?cb=20261030073119",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/8/8c/BlueSSRNaoyaS11.png/revision/latest?cb=20261030120757",
             "levels": [
-              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 275% Taijutsu and 275% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30%  (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 173.5% Taijutsu and 173.5% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 14.3%  (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 14.3% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 184.8% Taijutsu and 184.8% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 16% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 16% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 196.1% Taijutsu and 196.1% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 17.8% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 17.8% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 207.3% Taijutsu and 207.3% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 19.5% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 19.5% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 218.6% Taijutsu and 218.6% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 21.3% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 21.3% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 229.9% Taijutsu and 229.9% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 23% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 23% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 241.2% Taijutsu and 241.2% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 24.7% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 24.7% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 252.5% Taijutsu and 252.5% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 26.5% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 26.5% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 263.7% Taijutsu and 263.7% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 28.2% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 28.2% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)",
               "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +2 (Up to 24)\n\nDeals melee Mixed Damage equal to 275% Taijutsu and 275% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30%  (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 50%)"
             ],
             "cost": 15
           },
           "s2": {
             "name": "Overwhelming Speed",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/b/b1/BlueSSRNaoyaS21.png/revision/latest?cb=20261030073127",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/b/b1/BlueSSRNaoyaS21.png/revision/latest?cb=20261030120813",
             "levels": [
-              "Deals melee Mixed Damage equal to 75% Taijutsu and 75% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 250% Taijutsu and 250% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 151.7% Taijutsu and 151.7% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 14.3% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 14.3% (3 Turns)\nDecreases Critical Hit Resistance by 6.1% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 156.3% Taijutsu and 156.3% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 16% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 16% (3 Turns)\nDecreases Critical Hit Resistance by 6.5% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 160.8% Taijutsu and 160.8% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 17.8% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 17.8% (3 Turns)\nDecreases Critical Hit Resistance by 7% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 165.4% Taijutsu and 165.4% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 19.5% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 19.5% (3 Turns)\nDecreases Critical Hit Resistance by 7.4% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 169.9% Taijutsu and 169.9% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 21.3% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 21.3% (3 Turns)\nDecreases Critical Hit Resistance by 7.4% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 174.5% Taijutsu and 174.5% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 23% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 23% (3 Turns)\nDecreases Critical Hit Resistance by 8.3% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 178.9% Taijutsu and 178.9% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 24.7% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 24.7% (3 Turns)\nDecreases Critical Hit Resistance by 8.7% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 183.6% Taijutsu and 183.6% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 26.5% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 26.5% (3 Turns)\nDecreases Critical Hit Resistance by 9.1% (2 Turns)",
+              "Deals melee Mixed Damage equal to 34% Taijutsu and 34% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 188.2% Taijutsu and 188.2% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 28.2% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 28.2% (3 Turns)\nDecreases Critical Hit Resistance by 9.5% (2 Turns)",
               "Deals melee Mixed Damage equal to 75% Taijutsu and 75% Jujutsu to the selected enemy (5 Hits)\n\nIncreases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\nDeals an additional melee Mixed Damage equal to 250% Taijutsu and 250% Jujutsu to the selected enemy\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)"
             ],
             "cost": 25
           },
           "ult": {
             "name": "I'll Punch Through You at Top Speed",
-            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/c/c7/BlueSSRNaoyaUlt1.png/revision/latest?cb=20261030073137",
+            "img": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/c/c7/BlueSSRNaoyaUlt1.png/revision/latest?cb=20261030120829",
             "levels": [
-              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 400% Taijutsu and 400% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 450% Taijutsu and 450% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 241.4% Taijutsu and 241.4% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 14.3% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 14.3% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 14.3% (3 Turns)\nDecreases Critical Hit Resistance by 6.1% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 265.8% Taijutsu and 265.8% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 259.0% Taijutsu and 259.0% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 16% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 16% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 16% (3 Turns)\nDecreases Critical Hit Resistance by 6.5% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 286.3% Taijutsu and 286.3% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 276.6% Taijutsu and 276.6% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 17.8% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 17.8% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 17.8% (3 Turns)\nDecreases Critical Hit Resistance by 7% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 306.7% Taijutsu and 306.7% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 294.3% Taijutsu and 294.3% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 19.5% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 19.5% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 19.5% (3 Turns)\nDecreases Critical Hit Resistance by 7.4% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 327.2% Taijutsu and 327.2% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 312% Taijutsu and 312% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 21.3% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 21.3% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 21.3% (3 Turns)\nDecreases Critical Hit Resistance by 7.4% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 347.7% Taijutsu and 347.7% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 329.5% Taijutsu and 329.5% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 23% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 23% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 23% (3 Turns)\nDecreases Critical Hit Resistance by 8.3% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 368.2% Taijutsu and 368.2% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 347.1% Taijutsu and 347.1% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 24.7% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 24.7% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 24.7% (3 Turns)\nDecreases Critical Hit Resistance by 8.7% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 388.6% Taijutsu and 388.6% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 364.8% Taijutsu and 364.8% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 26.5% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 26.5% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 26.5% (3 Turns)\nDecreases Critical Hit Resistance by 9.1% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 409.1% Taijutsu and 409.1% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
+              "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 382.4% Taijutsu and 382.4% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 28.2% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 28.2% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 28.2% (3 Turns)\nDecreases Critical Hit Resistance by 9.5% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 429.6% Taijutsu and 429.6% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)",
               "Increases own Break Damage by 50% (Removed after activation)\n(Increases further based on \"Projection Sorcery\" Count, up to 200% with 24 Counts)\n\"Projection Sorcery\" State Count +5 (Up to 24)\n\nDeals melee Mixed Damage equal to 400% Taijutsu and 400% Jujutsu to the selected enemy\nIncreases the effectiveness of \"影\" (Blue) Weakness Attribute by 30% (3 Turns/Cannot be Stacked/Buffed/Nerfed)\nIncreases \"影\" (Blue) Damage Received by 30% (3 Turns/Cannot be Stacked)\nIncreases \"影\" (Blue) Jujutsu Damage Received by 30% (3 Turns)\nDecreases Critical Hit Resistance by 10% (2 Turns)\n\nDeals an additional melee Mixed Damage equal to 450% Taijutsu and 450% Jujutsu to the selected enemy\nInflicts Disruption (Special) (2 Turns/2 Times/Chance: 90%)"
             ]
           },
@@ -8690,8 +8690,8 @@
       "_source": {
         "source": "wiki",
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(Mastery_of_24_Frames_Per_Second)_Naoya_Zen'in",
-        "revid": 11441,
-        "updated": "2026-10-30T07:14:40Z"
+        "revid": 11452,
+        "updated": "2026-10-30T08:00:21Z"
       }
     },
     {

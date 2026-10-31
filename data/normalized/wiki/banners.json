@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-10-30T07:34:16.440Z",
+  "fetchedAt": "2026-10-31T07:27:50.541Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-10-20T06:34:40Z",
+    "updated": "2026-10-30T13:04:40Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -5382,6 +5382,34 @@
         ],
         "newCharacters": [],
         "newMemories": []
+      },
+      {
+        "date": "2026-10-30",
+        "items": [
+          {
+            "title": "Featured Gacha: The World on the Other Side",
+            "kind": "gacha",
+            "end": "2026-11-29",
+            "characters": [
+              "mastery-of-24-frames-per-second-naoya-zenin"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: The World on the Other Side",
+            "kind": "event",
+            "end": "2026-11-15",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [
+          "mastery-of-24-frames-per-second-naoya-zenin"
+        ],
+        "newMemories": [
+          "Dazzled By The Distant Day",
+          "The Man Who Breaks One Second"
+        ]
       }
     ]
   },
