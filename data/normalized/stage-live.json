@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-03T07:51:46.924Z",
+ "fetchedAt": "2026-11-04T07:54:28.629Z",
  "stages": {
   "illusory-tower-diverse/1": {
    "power": 78300,
@@ -1173,7 +1173,7 @@
    "modified": "2026-10-11T00:24:47.000+09:00"
   },
   "sp-battle/choso": {
-   "modified": "2026-05-01T18:39:38.000+09:00"
+   "modified": "2026-11-04T16:28:57.000+09:00"
   },
   "sp-battle/toji-seance": {
    "modified": "2026-06-11T10:35:49.000+09:00"
@@ -1345,6 +1345,15 @@
    "modified": "2026-07-17T17:42:41.000+09:00"
   }
  },
- "changed": [],
+ "changed": [
+  {
+   "key": "sp-battle/choso",
+   "name": "Choso",
+   "url": "https://game8.jp/jujutsuphanpara/710279",
+   "why": [
+    "página actualizada el 2026-11-04"
+   ]
+  }
+ ],
  "fresh": []
 }

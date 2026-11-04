@@ -1,6 +1,20 @@
 {
- "fetchedAt": "2026-11-03T07:44:46.578Z",
+ "fetchedAt": "2026-11-04T07:47:26.386Z",
  "items": [
+  {
+   "key": "b47ff3a1e4d6",
+   "title": "幻境戦vs脹相",
+   "kind": "event",
+   "start": "2026-11-05T15:00:00+09:00",
+   "end": null,
+   "chars": [
+    "pivotal-guardian-masamichi-yaga"
+   ],
+   "widths": [
+    400,
+    439
+   ]
+  },
   {
    "key": "7d9da10e9047",
    "title": "向こう側の世界ガチャ",

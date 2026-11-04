@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-03T07:44:20.134Z",
+  "fetchedAt": "2026-11-04T07:47:02.265Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-10-30T13:04:40Z",
+    "updated": "2026-11-04T07:43:13Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -5410,6 +5410,30 @@
           "Dazzled By The Distant Day",
           "The Man Who Breaks One Second"
         ]
+      },
+      {
+        "date": "2026-11-05",
+        "items": [
+          {
+            "title": "Formidable Battle: VS -Choso- Rerun",
+            "kind": "event",
+            "end": "2026-11-15",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Blue Type PickUp Gacha: Pivotal Guardian & No Conceit",
+            "kind": "gacha",
+            "end": "2026-11-20",
+            "characters": [
+              "no-conceit-takuma-ino",
+              "pivotal-guardian-masamichi-yaga"
+            ],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
       }
     ]
   },
