@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T07:48:23.927Z",
+  "fetchedAt": "2026-11-05T07:50:22.377Z",
   "source": "https://docs.google.com/spreadsheets/d/1Qpro4uWVGvTBK7mIWbYHhd82X2NjHhhu1kk-QPiCkyk/edit?gid=1101206588",
   "teams": [
     {
@@ -21,11 +21,13 @@
         },
         {
           "role": "DPS RITUAL",
-          "id": "striking-eternal-summer-nobara-kugisaki"
+          "id": "striking-eternal-summer-nobara-kugisaki",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
-          "id": "pivotal-guardian-masamichi-yaga"
+          "id": "pivotal-guardian-masamichi-yaga",
+          "auto": true
         }
       ],
       "subs": [
@@ -55,7 +57,8 @@
           "role": "BUFFER RITUAL",
           "ids": [
             {
-              "id": "pivotal-guardian-masamichi-yaga"
+              "id": "pivotal-guardian-masamichi-yaga",
+              "auto": true
             }
           ]
         },
@@ -63,7 +66,8 @@
           "role": "DPS RITUAL",
           "ids": [
             {
-              "id": "queen-of-curses-yuta-okkotsu"
+              "id": "queen-of-curses-yuta-okkotsu",
+              "auto": true
             },
             {
               "id": "first-grade-sorcerers-skill-kento-nanami"
@@ -95,7 +99,8 @@
               "id": "dont-look-down-on-me-momo-nishimiya"
             },
             {
-              "id": "02-second-domain-expansion-satoru-gojo"
+              "id": "02-second-domain-expansion-satoru-gojo",
+              "auto": true
             }
           ]
         }
@@ -112,7 +117,8 @@
         },
         {
           "role": "DPS FÍSICO / AUMENTO DAÑO + STATS",
-          "id": "02-second-domain-expansion-satoru-gojo"
+          "id": "02-second-domain-expansion-satoru-gojo",
+          "auto": true
         },
         {
           "role": "SUB DPS / BUFFER FÍSICO",
@@ -120,7 +126,8 @@
         },
         {
           "role": "DPS FÍSICO",
-          "id": "smash-it-into-the-summer-sky-yuji-itadori"
+          "id": "blood-borne-resolve-noritoshi-kamo",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
@@ -154,7 +161,8 @@
           "role": "BUFFER FÍSICO",
           "ids": [
             {
-              "id": "pivotal-guardian-masamichi-yaga"
+              "id": "pivotal-guardian-masamichi-yaga",
+              "auto": true
             }
           ]
         },
@@ -174,7 +182,8 @@
               "id": "infuse-your-cursed-energy-yuji-itadori"
             },
             {
-              "id": "queen-of-curses-yuta-okkotsu"
+              "id": "queen-of-curses-yuta-okkotsu",
+              "auto": true
             }
           ]
         },
@@ -208,7 +217,8 @@
         },
         {
           "role": "SUB DPS / BUFFER FÍSICO/RITUAL",
-          "id": "pivotal-guardian-masamichi-yaga"
+          "id": "pivotal-guardian-masamichi-yaga",
+          "auto": true
         },
         {
           "role": "SUB DPS / BUFFER FÍSICO/RITUAL",
@@ -242,7 +252,8 @@
               "id": "dont-look-down-on-me-momo-nishimiya"
             },
             {
-              "id": "02-second-domain-expansion-satoru-gojo"
+              "id": "02-second-domain-expansion-satoru-gojo",
+              "auto": true
             }
           ]
         },
@@ -250,7 +261,8 @@
           "role": "BUFFER FÍSICO/RITUAL",
           "ids": [
             {
-              "id": "pivotal-guardian-masamichi-yaga"
+              "id": "pivotal-guardian-masamichi-yaga",
+              "auto": true
             }
           ]
         },
@@ -288,19 +300,23 @@
       "slots": [
         {
           "role": "DEBUFFER RITUAL",
-          "id": "rabbits-disruption-megumi-fushiguro"
+          "id": "rabbits-disruption-megumi-fushiguro",
+          "auto": true
         },
         {
           "role": "SUB DPS / AUMENTO DE DAÑO",
-          "id": "unbridled-soul-mahito"
+          "id": "unbridled-soul-mahito",
+          "auto": true
         },
         {
           "role": "BUFFER RITUAL",
-          "id": "tool-manipulation-momo-nishimiya"
+          "id": "tool-manipulation-momo-nishimiya",
+          "auto": true
         },
         {
           "role": "DPS RITUAL",
-          "id": "the-golden-age-of-jujutsu-noritoshi-kamo"
+          "id": "the-golden-age-of-jujutsu-noritoshi-kamo",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
@@ -329,7 +345,8 @@
               "id": "the-final-bullet-mai-zenin"
             },
             {
-              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami"
+              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+              "auto": true
             }
           ]
         },
@@ -337,7 +354,8 @@
           "role": "BUFFER RITUAL",
           "ids": [
             {
-              "id": "ariadnes-thread-educator-masamichi-yaga"
+              "id": "ariadnes-thread-educator-masamichi-yaga",
+              "auto": true
             }
           ]
         },
@@ -348,7 +366,8 @@
               "id": "lend-me-your-power-yuta-okkotsu"
             },
             {
-              "id": "meteor-of-fierceness-jogo"
+              "id": "meteor-of-fierceness-jogo",
+              "auto": true
             },
             {
               "id": "a-bad-match-nobara-kugisaki"
@@ -384,19 +403,23 @@
       "slots": [
         {
           "role": "DEBUFFER FÍSICO",
-          "id": "rabbits-disruption-megumi-fushiguro"
+          "id": "rabbits-disruption-megumi-fushiguro",
+          "auto": true
         },
         {
           "role": "SUB DPS / AUMENTO DE DAÑO",
-          "id": "unbridled-soul-mahito"
+          "id": "unbridled-soul-mahito",
+          "auto": true
         },
         {
           "role": "BUFFER FÍSICO",
-          "id": "tool-manipulation-momo-nishimiya"
+          "id": "tool-manipulation-momo-nishimiya",
+          "auto": true
         },
         {
           "role": "DPS FÍSICO",
-          "id": "maximum-cursed-energy-output-yuji-itadori"
+          "id": "maximum-cursed-energy-output-yuji-itadori",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
@@ -425,7 +448,8 @@
               "id": "the-final-bullet-mai-zenin"
             },
             {
-              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami"
+              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+              "auto": true
             }
           ]
         },
@@ -433,7 +457,8 @@
           "role": "BUFFER FÍSICO",
           "ids": [
             {
-              "id": "ariadnes-thread-educator-masamichi-yaga"
+              "id": "ariadnes-thread-educator-masamichi-yaga",
+              "auto": true
             }
           ]
         },
@@ -477,7 +502,8 @@
       "slots": [
         {
           "role": "DEBUFFER FÍSICO/RITUAL",
-          "id": "rabbits-disruption-megumi-fushiguro"
+          "id": "rabbits-disruption-megumi-fushiguro",
+          "auto": true
         },
         {
           "role": "SUB DPS / AUMENTO DE DAÑO",
@@ -485,15 +511,18 @@
         },
         {
           "role": "BUFFER FÍSICO/RITUAL",
-          "id": "tool-manipulation-momo-nishimiya"
+          "id": "tool-manipulation-momo-nishimiya",
+          "auto": true
         },
         {
           "role": "DPS HÍBRIDO / AUMENTO DE DAÑO",
-          "id": "unbridled-soul-mahito"
+          "id": "unbridled-soul-mahito",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
-          "id": "ariadnes-thread-educator-masamichi-yaga"
+          "id": "ariadnes-thread-educator-masamichi-yaga",
+          "auto": true
         }
       ],
       "subs": [
@@ -518,7 +547,8 @@
               "id": "the-final-bullet-mai-zenin"
             },
             {
-              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami"
+              "id": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+              "auto": true
             }
           ]
         },
@@ -526,7 +556,8 @@
           "role": "BUFFER FÍSICO/RITUAL",
           "ids": [
             {
-              "id": "ariadnes-thread-educator-masamichi-yaga"
+              "id": "ariadnes-thread-educator-masamichi-yaga",
+              "auto": true
             }
           ]
         },
@@ -560,15 +591,18 @@
       "slots": [
         {
           "role": "DEBUFFER RITUAL",
-          "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+          "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+          "auto": true
         },
         {
           "role": "SUB DPS / AUMENTO DE DAÑO",
-          "id": "fulfilling-his-duty-as-the-older-brother-choso"
+          "id": "are-you-satisfied-with-that-aoi-todo",
+          "auto": true
         },
         {
           "role": "BUFFER RITUAL",
-          "id": "pick-up-after-hard-work-kiyotaka-ijichi"
+          "id": "the-resolve-of-being-a-sorcerer-kaito-yuuki",
+          "auto": true
         },
         {
           "role": "DPS RITUAL",
@@ -595,7 +629,8 @@
           "role": "AUMENTO DE DAÑO",
           "ids": [
             {
-              "id": "cursed-energy-flashes-black-yuuji-itadori"
+              "id": "cursed-energy-melody-yoshinobu-gakuganji",
+              "auto": true
             },
             {
               "id": "aerial-reconnaissance-momo-nishimiya"
@@ -657,7 +692,8 @@
         },
         {
           "role": "SUB DPS / AUMENTO DE DAÑO",
-          "id": "cursed-energy-flashes-black-yuuji-itadori"
+          "id": "cursed-energy-melody-yoshinobu-gakuganji",
+          "auto": true
         },
         {
           "role": "SUB DPS / BUFFER FÍSICO",
@@ -665,11 +701,13 @@
         },
         {
           "role": "DPS FÍSICO",
-          "id": "are-you-satisfied-with-that-aoi-todo"
+          "id": "are-you-satisfied-with-that-aoi-todo",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
-          "id": "fulfilling-his-duty-as-the-older-brother-choso"
+          "id": "are-you-satisfied-with-that-aoi-todo",
+          "auto": true
         }
       ],
       "subs": [
@@ -677,7 +715,8 @@
           "role": "DEBUFFER FÍSICO",
           "ids": [
             {
-              "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+              "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+              "auto": true
             },
             {
               "id": "cursed-energy-melody-yoshinobu-gakuganji"
@@ -691,7 +730,8 @@
           "role": "AUMENTO DE DAÑO",
           "ids": [
             {
-              "id": "fulfilling-his-duty-as-the-older-brother-choso"
+              "id": "are-you-satisfied-with-that-aoi-todo",
+              "auto": true
             },
             {
               "id": "aerial-reconnaissance-momo-nishimiya"
@@ -746,11 +786,13 @@
       "slots": [
         {
           "role": "SUB DPS / DEBUFFER FÍSICO/RITUAL",
-          "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
+          "id": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+          "auto": true
         },
         {
           "role": "SUB DPS / AUMENTO DE DAÑO",
-          "id": "fulfilling-his-duty-as-the-older-brother-choso"
+          "id": "are-you-satisfied-with-that-aoi-todo",
+          "auto": true
         },
         {
           "role": "SUB DPS / BUFFER FÍSICO/RITUAL",
@@ -784,7 +826,8 @@
           "role": "AUMENTO DE DAÑO",
           "ids": [
             {
-              "id": "fulfilling-his-duty-as-the-older-brother-choso"
+              "id": "are-you-satisfied-with-that-aoi-todo",
+              "auto": true
             },
             {
               "id": "aerial-reconnaissance-momo-nishimiya"
@@ -843,7 +886,8 @@
         },
         {
           "role": "BUFFER FÍSICO / AUMENTO DE DAÑO",
-          "id": "melting-sweet-summer-treats-satoru-gojo"
+          "id": "melting-sweet-summer-treats-satoru-gojo",
+          "auto": true
         },
         {
           "role": "BUFFER FÍSICO",
@@ -851,7 +895,8 @@
         },
         {
           "role": "DPS RITUAL",
-          "id": "battle-of-firepower-ryomen-sukuna"
+          "id": "battle-of-firepower-ryomen-sukuna",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
@@ -888,7 +933,8 @@
           "role": "DPS RITUAL",
           "ids": [
             {
-              "id": "executioner-yuta-okkotsu"
+              "id": "executioner-yuta-okkotsu",
+              "auto": true
             },
             {
               "id": "melting-sweet-summer-treats-satoru-gojo"
@@ -897,10 +943,12 @@
               "id": "sword-option-ultimate-mechamaru"
             },
             {
-              "id": "girl-of-steel-nobara-kugisaki"
+              "id": "girl-of-steel-nobara-kugisaki",
+              "auto": true
             },
             {
-              "id": "unlimited-shikigami-dagon"
+              "id": "battle-of-firepower-ryomen-sukuna",
+              "auto": true
             }
           ]
         },
@@ -934,7 +982,8 @@
         },
         {
           "role": "BUFFER FÍSICO / AUMENTO DE DAÑO",
-          "id": "melting-sweet-summer-treats-satoru-gojo"
+          "id": "melting-sweet-summer-treats-satoru-gojo",
+          "auto": true
         },
         {
           "role": "BUFFER FÍSICO",
@@ -983,13 +1032,15 @@
           "role": "DPS FÍSICO",
           "ids": [
             {
-              "id": "executioner-yuta-okkotsu"
+              "id": "executioner-yuta-okkotsu",
+              "auto": true
             },
             {
               "id": "chain-mark-full-throttle-eiji-urushi"
             },
             {
-              "id": "seance-toji-fushiguro"
+              "id": "seance-toji-fushiguro",
+              "auto": true
             },
             {
               "id": "sword-option-ultimate-mechamaru"
@@ -1030,11 +1081,13 @@
         },
         {
           "role": "BUFFER FÍSICO/RITUAL",
-          "id": "melting-sweet-summer-treats-satoru-gojo"
+          "id": "melting-sweet-summer-treats-satoru-gojo",
+          "auto": true
         },
         {
           "role": "DPS HÍBRIDO",
-          "id": "executioner-yuta-okkotsu"
+          "id": "executioner-yuta-okkotsu",
+          "auto": true
         },
         {
           "role": "BANQUILLO",
@@ -1098,5 +1151,230 @@
       ]
     }
   ],
-  "unknownIcons": []
+  "unknownIcons": [
+    {
+      "hash": "e773af7aca591fba",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbzhiGLgA3fkSDCNy6suIxFZtvouH8xsSWzh76tr_6k7UovljbkNERMc_coiI8VO0E-z0VQvxVyKR3ElCrgReZO0qZEmp4lrp5vCr3jImfCrNHFP2IvbMkkNTlvBMWES9xCMCKar78EdEE=w100-h100",
+      "guess": "striking-eternal-summer-nobara-kugisaki",
+      "score": 0.4,
+      "second": "queen-of-curses-yuta-okkotsu"
+    },
+    {
+      "hash": "e21f0f52b3db9bb4",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLa7xdWL52S9aqWR53QTf2vhKtlu6yL4QbeQuBlgqipY1r_bZSr1JVfaWIQ3GZSNF84EApKrgu9jyIjl8JTuiGmCRaXVQO5mNezvXPX_UvTxAgyk9O-lqWCvLkXbcOw02BLJSYqcyICR4CowHQ=w100-h100",
+      "guess": "pivotal-guardian-masamichi-yaga",
+      "score": 0.996,
+      "second": "dont-look-down-on-me-momo-nishimiya"
+    },
+    {
+      "hash": "a509401e3330aee0",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLYjf33IREJA-CP3jX-p5asU5Gitrr8eYOjS64yD_BtIL8adBxAp2KJKS7aSWGx7vtqo3FlGKO0a_rcwzc37IcwOI86u2x2lrJBssASKF1fEBRfo0K9FqAC1_K9KQ4997HcaWBVQUP1vfK9WNw=w100-h100",
+      "guess": "queen-of-curses-yuta-okkotsu",
+      "score": 0.995,
+      "second": "early-morning-departure-maki-zenin"
+    },
+    {
+      "hash": "499ca04045c4b673",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZOAF5CixsxVfLJfAktbrUWIX-s0lkO9FAreVuoE6l4fcJAvyDa4fr4hyqacx_DKukWNnNnhkWStQ8qOSQdjSsjFBmSymWsP4neXkLSSk_RVb0OIZUnrVs7-A4clOb4EtDca_u3ZbD2nQ558A=w100-h100",
+      "guess": "02-second-domain-expansion-satoru-gojo",
+      "score": 0.998,
+      "second": "shatter-to-pieces-toge-inumaki"
+    },
+    {
+      "hash": "68b5e6f027839c1d",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZgn89aF3nNj5bgH7pdV2AG7oojcWAFSuM2jmYm4drJrZf-1ljnAL6Zz9kG8pE2uPiXffwc2sEE4vvyrYtkjNMY2us8mvAGd_jgW3ug7RaxmisQ52VInGNCZW8rPYx84hTHj1Vb0KzFO3o1IA=w100-h100",
+      "guess": "blood-borne-resolve-noritoshi-kamo",
+      "score": 0.377,
+      "second": "genuine-jujutsu-ryomen-sukuna"
+    },
+    {
+      "hash": "e21f0f52b3db9bb4",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLa7xdWL52S9aqWR53QTf2vhKtlu6yL4QbeQuBlgqipY1r_bZSr1JVfaWIQ3GZSNF84EApKrgu9jyIjl8JTuiGmCRaXVQO5mNezvXPX_UvTxAgyk9O-lqWCvLkXbcOw02BLJSYqcyICR4CowHQ=w102-h100",
+      "guess": "pivotal-guardian-masamichi-yaga",
+      "score": 0.996,
+      "second": "dont-look-down-on-me-momo-nishimiya"
+    },
+    {
+      "hash": "00c93f4ec7ae45e9",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbegh-Tb1GQ8QlsLmLTI0_F2mtW-N4YCsuGf0uFLIMAt-utfABgJKtW0F8Qrt3zHIoqTsIbrpVjWWGxGIBI1A9wLhF4_MCnQZaX8blApNLJDtdcwaeMfnGtGjJo6uJrQySkw9mmrQhwLwWhbw=w100-h100",
+      "guess": "rabbits-disruption-megumi-fushiguro",
+      "score": 0.997,
+      "second": "the-final-bullet-mai-zenin"
+    },
+    {
+      "hash": "a8e335538354f30e",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbZnjIRbe5c8kggLL63n8SG830wOqe2q4MPDRDRzuX0vlclsFU8-XriWcYhlajkzbgXZH1gWxWESg2cuT_YoLUZgXObVyCFdOzqQ_XDgArgvQNJboe-3HWsBJYS8GXeCAAHHkYMKVm2dpB_3w=w100-h100",
+      "guess": "unbridled-soul-mahito",
+      "score": 0.995,
+      "second": "tool-manipulation-momo-nishimiya"
+    },
+    {
+      "hash": "2e4f23acf216e83a",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZAsowINy7i0Rvto4Jh6pakOhlnPjf7DWnLOFTxLz4_DYJZwklgCL5olAHWliewReT-zS4BDOz89XciB7KrDVcUIFpn4Q8jFj5RBjlY9huKAIVkR3HCVfkASNEt5PMR3TX5w142RXBD23M=w100-h100",
+      "guess": "tool-manipulation-momo-nishimiya",
+      "score": 0.997,
+      "second": "a-bad-match-nobara-kugisaki"
+    },
+    {
+      "hash": "17a62f8c631a4131",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbe_7nGG6-wJcZXCRDOv5Itv-IR_D3W6zIKEUxxdzs-sDpN_Z-rioBPUuqU7UTz7ICblGuSSfHQsmsIyNb6glII3mSFV4Tsj0mPjmVP2Ru5KRaHX4jmXCLgUUnket84PjUUR74WGALVqeh81Q=w100-h100",
+      "guess": "the-golden-age-of-jujutsu-noritoshi-kamo",
+      "score": 0.997,
+      "second": "rabbits-disruption-megumi-fushiguro"
+    },
+    {
+      "hash": "f9b08f42bf37691b",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLaZJA-BDZIRS5bck6LdUNwIenkEYZWa6ZZISO37_ySiPCVA-W4KMYD2LyrUI4xW2WWlMAlXwJB10VsPQztfkKWU2RsTZGr8S_TQJc0AASocW5UQAKkvzvr_dkSn1Uvsl6jw3n3OivBiO5Y=w100-h100",
+      "guess": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
+      "score": 0.996,
+      "second": "the-sorcerer-killer-toji-fushiguro"
+    },
+    {
+      "hash": "de81fb132adb869b",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLb2ha0ZCcLL1rxdomPutsuo3ubuJhWhUk-1jwVIpBNj0RAxmEWcF4K6caHXVoo0HeZU8VZrf8KDy6PPlSylOebmAlNK27bvkPdGEyzyY9gTKOGcuJTsxfE4JJb08dwlrXHOlP-jRW6Vu2jNOQ=w100-h100",
+      "guess": "ariadnes-thread-educator-masamichi-yaga",
+      "score": 0.997,
+      "second": "the-sorcerer-killer-toji-fushiguro"
+    },
+    {
+      "hash": "607286113e92177f",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLYJlRYFfHHrrVYTiptXGk7e2tX2BKdwa5dyjcptlV68MH89_gUy3mvUc0WJ1D6MMX1F47QWSl7lc9rI7OlnGnI0WdkSv0ixHj9kA5sG8yJfZRy5JlVWzz-Cis-lIyxTsfXXSiztKUWbyFgCrA=w100-h100",
+      "guess": "meteor-of-fierceness-jogo",
+      "score": 0.998,
+      "second": "crafty-rock-yoshinobu-gakuganji"
+    },
+    {
+      "hash": "5b08d5fbc7aa2453",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLb5TBubSi9xT0jYpde-w4ljk9QjIX8Ht7Ii44M4_zpRToOfm93vkzz2NLJiKoYoHKhNzUv3ndRLrPOFFiFMzHSL40Ja_e5DGTmuO-McOexfFbG7UUCPnS5pT_2XwfsFIja_dJ6WcIwCd3E=w100-h100",
+      "guess": "maximum-cursed-energy-output-yuji-itadori",
+      "score": 0.997,
+      "second": "a-bad-match-nobara-kugisaki"
+    },
+    {
+      "hash": "00c93f4ec7ae45e9",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbegh-Tb1GQ8QlsLmLTI0_F2mtW-N4YCsuGf0uFLIMAt-utfABgJKtW0F8Qrt3zHIoqTsIbrpVjWWGxGIBI1A9wLhF4_MCnQZaX8blApNLJDtdcwaeMfnGtGjJo6uJrQySkw9mmrQhwLwWhbw=w98-h100",
+      "guess": "rabbits-disruption-megumi-fushiguro",
+      "score": 0.997,
+      "second": "the-final-bullet-mai-zenin"
+    },
+    {
+      "hash": "2e4f23acf216e83a",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZAsowINy7i0Rvto4Jh6pakOhlnPjf7DWnLOFTxLz4_DYJZwklgCL5olAHWliewReT-zS4BDOz89XciB7KrDVcUIFpn4Q8jFj5RBjlY9huKAIVkR3HCVfkASNEt5PMR3TX5w142RXBD23M=w102-h100",
+      "guess": "tool-manipulation-momo-nishimiya",
+      "score": 0.997,
+      "second": "a-bad-match-nobara-kugisaki"
+    },
+    {
+      "hash": "a8e335538354f30e",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbZnjIRbe5c8kggLL63n8SG830wOqe2q4MPDRDRzuX0vlclsFU8-XriWcYhlajkzbgXZH1gWxWESg2cuT_YoLUZgXObVyCFdOzqQ_XDgArgvQNJboe-3HWsBJYS8GXeCAAHHkYMKVm2dpB_3w=w101-h100",
+      "guess": "unbridled-soul-mahito",
+      "score": 0.995,
+      "second": "tool-manipulation-momo-nishimiya"
+    },
+    {
+      "hash": "de81fb132adb869b",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLb2ha0ZCcLL1rxdomPutsuo3ubuJhWhUk-1jwVIpBNj0RAxmEWcF4K6caHXVoo0HeZU8VZrf8KDy6PPlSylOebmAlNK27bvkPdGEyzyY9gTKOGcuJTsxfE4JJb08dwlrXHOlP-jRW6Vu2jNOQ=w102-h100",
+      "guess": "ariadnes-thread-educator-masamichi-yaga",
+      "score": 0.997,
+      "second": "the-sorcerer-killer-toji-fushiguro"
+    },
+    {
+      "hash": "0a263e3694721c17",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZ5ERCqAryVIoBk7KQXL-gt93zavrXBI2J4KUxmNq4S7xXtYiQ6HTdCCeMEOIfVegzTC0QLEpW-Dj77JAil2t-bxtAz8iJQG3BVQhad2ES3d7N3TQYWtF-c4jIzxceRu_WwW3juRAGdUkY6Pg=w100-h100",
+      "guess": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+      "score": 0.997,
+      "second": "sprinting-kasumi-miwa"
+    },
+    {
+      "hash": "a926bd6ec9c4e66f",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLaOCnGFh4IFZ4x1IpDBRgBzy_1zu5ImUfZxl85y_G8yTqwhw3WTRow07I_jZv0_E32j6jeVvO0X1SqX_yr88ehD3Ak9OG8kapRcdnQ8LYWOuRsIFM5feoLGLMUt7hYjEE_RazubnhRY0LEexg=w100-h100",
+      "guess": "are-you-satisfied-with-that-aoi-todo",
+      "score": 0.465,
+      "second": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
+    },
+    {
+      "hash": "3ba0fd5787fc8d60",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLY8kN9esaGf4DQcuE5ujNSsNUA6PHrwHZxoWhFeT0EDpvXU0ebf2odrZJ47sdD1nB4H7-sAt3Obc7PJBkuMEUbJPRlE38b8JHDe8iVOowNoCdGB7fKPQ5TrgcrVepVpr_GIiuO2tANMBCmWTg=w100-h100",
+      "guess": "the-resolve-of-being-a-sorcerer-kaito-yuuki",
+      "score": 0.522,
+      "second": "inspiration-from-death-mahito"
+    },
+    {
+      "hash": "f61352fedc91cf4f",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLYKkER1RZ1fuKjWY0ezGc45oe8pXTUcxxfTGzkXsd6ke4dZ0kXkrSYLRHLos_x_MBWtpQGzewI9lnpRGw53sD91j_WRpOTRpGv1xECdBrtqmdQyLACB4lkrNSbMakiUmfeKPb7nfkfo2w_yrg=w100-h100",
+      "guess": "cursed-energy-melody-yoshinobu-gakuganji",
+      "score": 0.516,
+      "second": "a-life-entrusted-to-me-yuji-itadori"
+    },
+    {
+      "hash": "a19289cd5ad76ec3",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLYSwcPBWF4omsWSNwagXIB7rjStCF-xourjZSrmMQEwBOXFtW5yw1Lnn8QDXKRPZAxj8HU70KVPneC6unQdYh2sdjaTYFiB0_DPGMcjMASuSKeBeWXepuHza6oCAgxS8FWgQ3isF5g4DkE=w100-h100",
+      "guess": "are-you-satisfied-with-that-aoi-todo",
+      "score": 0.997,
+      "second": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
+    },
+    {
+      "hash": "0a263e3694721c17",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZ5ERCqAryVIoBk7KQXL-gt93zavrXBI2J4KUxmNq4S7xXtYiQ6HTdCCeMEOIfVegzTC0QLEpW-Dj77JAil2t-bxtAz8iJQG3BVQhad2ES3d7N3TQYWtF-c4jIzxceRu_WwW3juRAGdUkY6Pg=w98-h100",
+      "guess": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
+      "score": 0.997,
+      "second": "sprinting-kasumi-miwa"
+    },
+    {
+      "hash": "f4e4520fa83e8a3b",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZ4xxL1MigbUWKHWSLWSmYf0xmcPxymfrwyJQB39brV_ZZ8YGPYCQcmD_ku9JaJAbGVzDzjF5pHTSnGPjAYhK8goYKuRUGB4K8exUPGUNnD3hpPZQ3j05W_lzqHMFRiteDuVtQ-KWUsQ6M=w100-h100",
+      "guess": "melting-sweet-summer-treats-satoru-gojo",
+      "score": 0.215,
+      "second": "the-strongest-blue-satoru-gojo"
+    },
+    {
+      "hash": "e395c6e8fdd3eb29",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbueViKKVsoLm0skOyjI7b0deonpPj_-0ep71uODyJY-cl5ZzCOFhw5hLlYxh8m8jNn_I-IJaJ1zlPKnMSF_endoobFi6Ii4W0tirkVJR7kBC8DC0MQ_KlV57q_pJsgOJ3I5rBVnv4m83D4ag=w100-h100",
+      "guess": "battle-of-firepower-ryomen-sukuna",
+      "score": 0.996,
+      "second": "zone-yuji-itadori"
+    },
+    {
+      "hash": "882fbf32bb42b7c5",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZ7U_WzNdiP-oM5fxtZ-K-98LRD99NrH8B96yE_oNArBAj1uDwkg3TNKwuQrhBtSP0WrJrDtwCL-MKHoC1O2kEWjj7_etqk53Ss4F1UZyvv09YcF0V_hKl0eWmwFnObSbz-xJVP1a9rfNk45g=w100-h100",
+      "guess": "executioner-yuta-okkotsu",
+      "score": 0.997,
+      "second": "with-that-will-in-mind-kaito-yuki"
+    },
+    {
+      "hash": "3e034f9990fca1e0",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLbfc8CkXqHQiRHEyemFSqjDUMBYbL-6VQ2ML3h78tDNSMUIg6F34dMBK2s5gUTfM9eeDW9su8Kdq6uvSAtoQW6gT3ZrF6Us5KQdNlLmRW2uktFwLK3avIkkC3OlPFSBZaBGN--dVZVjBG5DZg=w100-h100",
+      "guess": "girl-of-steel-nobara-kugisaki",
+      "score": 0.996,
+      "second": "zone-yuji-itadori"
+    },
+    {
+      "hash": "0d4b82fc4e373eb5",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLaFww1JeODKxT1KeNgxF4ep91gVc8BCwxlW3yeVSlQFphiS602OP6Tb4O1ptz8qXIcfnQG_80zn9jdf24HrKBl54u-n7lG9PzX-oGtCrFgqpHb5rpoZ7LYxeHp6pc77M_6cd4wKCIXuURQwGw=w100-h100",
+      "guess": "battle-of-firepower-ryomen-sukuna",
+      "score": 0.528,
+      "second": "zone-yuji-itadori"
+    },
+    {
+      "hash": "0d28d189b361241c",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLYbdZiJtVPTXo1K4g1sggK-3eA-tYaym0b1Tmy5JrvGqbYPbFVlRhZTcQbE61rqpLT3In-FEVkAcR5FWdvfjD9hgeULMU0s9LoSwwFqeAN6B3lK1_TvrRc_wpdOYORIxT9H5DVjw8rC7SQ=w100-h100",
+      "guess": "seance-toji-fushiguro",
+      "score": 0.996,
+      "second": "cursed-technique-boost-kaito-yuki"
+    },
+    {
+      "hash": "f4e4520fa83e8a3b",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZ4xxL1MigbUWKHWSLWSmYf0xmcPxymfrwyJQB39brV_ZZ8YGPYCQcmD_ku9JaJAbGVzDzjF5pHTSnGPjAYhK8goYKuRUGB4K8exUPGUNnD3hpPZQ3j05W_lzqHMFRiteDuVtQ-KWUsQ6M=w102-h100",
+      "guess": "melting-sweet-summer-treats-satoru-gojo",
+      "score": 0.215,
+      "second": "the-strongest-blue-satoru-gojo"
+    },
+    {
+      "hash": "882fbf32bb42b7c5",
+      "url": "https://docs.google.com/sheets-images-rt/AO43MLZ7U_WzNdiP-oM5fxtZ-K-98LRD99NrH8B96yE_oNArBAj1uDwkg3TNKwuQrhBtSP0WrJrDtwCL-MKHoC1O2kEWjj7_etqk53Ss4F1UZyvv09YcF0V_hKl0eWmwFnObSbz-xJVP1a9rfNk45g=w101-h100",
+      "guess": "executioner-yuta-okkotsu",
+      "score": 0.997,
+      "second": "with-that-will-in-mind-kaito-yuki"
+    }
+  ]
 }
