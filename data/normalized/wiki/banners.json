@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-05T07:49:08.719Z",
+  "fetchedAt": "2026-11-06T07:45:37.553Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-11-05T06:37:30Z",
+    "updated": "2026-11-05T12:19:04Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -1902,15 +1902,7 @@
       },
       {
         "date": "2025-01-07",
-        "items": [
-          {
-            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 2",
-            "kind": "event",
-            "end": "2025-01-20",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -1929,16 +1921,9 @@
             "link": null
           },
           {
-            "title": "Fomidable Battle: VS Jogo Rerun",
+            "title": "End Date: 17/1/2025",
             "kind": "event",
             "end": "2025-01-20",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Strengthening Quest Campaign: Double Drops",
-            "kind": "campaign",
-            "end": "2024-01-17",
             "characters": [],
             "link": null
           }
@@ -1971,16 +1956,9 @@
             "link": null
           },
           {
-            "title": "Main Story: Shibuya Incident -Prelude-",
+            "title": "End Date: 21/2/2025",
             "kind": "event",
             "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Main Story, Shibuya Incident Release Gift: 3,000 Cubes",
-            "kind": "event",
-            "end": "2025-02-21",
             "characters": [],
             "link": null
           }
@@ -1994,19 +1972,10 @@
         "date": "2025-01-23",
         "items": [
           {
-            "title": "Map Event: Great Exorcism Battle - Abandoned Village Arc - 1",
+            "title": "End Date: 4/2/2025",
             "kind": "event",
             "end": "2025-01-30",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Sprinting",
-            "kind": "gacha",
-            "end": "2025-02-04",
-            "characters": [
-              "sprinting-kasumi-miwa"
-            ],
             "link": null
           }
         ],
@@ -2022,25 +1991,9 @@
         "date": "2025-01-31",
         "items": [
           {
-            "title": "Story Event: The False Hero",
+            "title": "End Date: 18/2/2025",
             "kind": "event",
             "end": "2025-02-11",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: The False Hero",
-            "kind": "gacha",
-            "end": "2025-02-18",
-            "characters": [
-              "ive-seen-it-all-kokichi-muta"
-            ],
-            "link": null
-          },
-          {
-            "title": "Event Marathon Campaign 3",
-            "kind": "campaign",
-            "end": "2025-02-27",
             "characters": [],
             "link": null
           }
@@ -2057,16 +2010,9 @@
         "date": "2025-02-12",
         "items": [
           {
-            "title": "Imaginary Realm: VS Eso & Kechizu Rerun",
+            "title": "End Date: 15/2/2025",
             "kind": "event",
             "end": "2025-02-18",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Cursed Object Collection: Double Drops Campaign",
-            "kind": "campaign",
-            "end": "2025-02-15",
             "characters": [],
             "link": null
           },
@@ -2088,19 +2034,10 @@
         "date": "2025-02-19",
         "items": [
           {
-            "title": "Map Event: Grand Exorcism Battle - Abandoned Village Arc - 2",
+            "title": "End Date: 4/3/2025",
             "kind": "event",
             "end": "2025-02-27",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Night-Lurking Sorcerer",
-            "kind": "gacha",
-            "end": "2025-03-04",
-            "characters": [
-              "night-lurking-sorcerer-toge-inumaki"
-            ],
             "link": null
           }
         ],
@@ -2116,19 +2053,10 @@
         "date": "2025-02-28",
         "items": [
           {
-            "title": "Story Event: Shoko Ieiri's Longest Day",
+            "title": "End Date: 20/3/2025",
             "kind": "event",
             "end": "2025-03-13",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Shoko Ieiri's Longest Day",
-            "kind": "gacha",
-            "end": "2025-03-20",
-            "characters": [
-              "life-saver-shoko-ieiri"
-            ],
             "link": null
           },
           {
@@ -2162,16 +2090,9 @@
             "link": null
           },
           {
-            "title": "Fomidable Battle VS -Hanami- Rerun: SP Battle",
+            "title": "End Date: 17/5/2025",
             "kind": "event",
             "end": "2025-03-20",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Strengthening Quest Campaign: Double Drops",
-            "kind": "campaign",
-            "end": "2025-05-17",
             "characters": [],
             "link": null
           }
@@ -2192,16 +2113,9 @@
             "link": null
           },
           {
-            "title": "Map Event: Abandoned Village Part 3",
+            "title": "End Date: 25/3/2025",
             "kind": "event",
             "end": "2025-03-30",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Domain Investigation Campaign: Double Drops",
-            "kind": "campaign",
-            "end": "2025-03-25",
             "characters": [],
             "link": null
           },
@@ -2259,15 +2173,8 @@
             "link": null
           },
           {
-            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 3",
+            "title": "End Date: 1/4/2025",
             "kind": "event",
-            "end": "2025-04-01",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Shibuya Incident New Chapter Celebration GSSR Gacha (Character&Memory)",
-            "kind": "gacha",
             "end": "2025-04-01",
             "characters": [],
             "link": null
@@ -2289,16 +2196,9 @@
             "link": null
           },
           {
-            "title": "Story Event: Time= Money + Lie",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-04-13",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "SP Hidden Potential: Second Batch",
-            "kind": "event",
-            "end": null,
             "characters": [],
             "link": null
           }
@@ -2316,16 +2216,9 @@
         "date": "2025-04-03",
         "items": [
           {
-            "title": "500 Days Celebration Login Bonus",
-            "kind": "campaign",
+            "title": "End Date: 20/4/2025",
+            "kind": "event",
             "end": "2025-04-16",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "500 Days Celebration Paid Gacha",
-            "kind": "gacha",
-            "end": "2025-04-20",
             "characters": [],
             "link": null
           }
@@ -2337,19 +2230,10 @@
         "date": "2025-04-14",
         "items": [
           {
-            "title": "Formidable Battle VS -Mahito- Rerun: SP Battle",
+            "title": "End Date: 25/4/2025",
             "kind": "event",
             "end": "2025-04-20",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Sorcerer Killer & The Final Bullet",
-            "kind": "gacha",
-            "end": "2025-04-25",
-            "characters": [
-              "the-final-bullet-mai-zenin"
-            ],
             "link": null
           },
           {
@@ -2367,28 +2251,14 @@
         "date": "2025-04-21",
         "items": [
           {
-            "title": "Main Story: Shibuya Incident: -Seance-",
+            "title": "End Date: 24/4/2025",
             "kind": "event",
             "end": null,
             "characters": [],
             "link": null
           },
           {
-            "title": "Enhancement Quest Campaign: Double Drops",
-            "kind": "campaign",
-            "end": "2025-04-24",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Illusory Tower Update: Floor 61-80",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "New Feature: Profile Icon",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": null,
             "characters": [],
@@ -2402,16 +2272,9 @@
         "date": "2025-04-23",
         "items": [
           {
-            "title": "Map Event: Grand Exorcism Battle - Ghost Town Arc - 1",
+            "title": "End Date: 7/5/2025",
             "kind": "event",
             "end": "2025-05-02",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Pickup Gacha: \"Let's Rescue Satoru Gojo!\"",
-            "kind": "gacha",
-            "end": "2025-05-07",
             "characters": [],
             "link": null
           }
@@ -2435,23 +2298,9 @@
             "link": null
           },
           {
-            "title": "Story Event: \"Ino&Nanami\" and \"Nanami&Ino\"",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-05-13",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Official Web Shop",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Golden Week Campaign",
-            "kind": "campaign",
-            "end": "2025-05-11",
             "characters": [],
             "link": null
           }
@@ -2482,19 +2331,10 @@
         "date": "2025-05-07",
         "items": [
           {
-            "title": "Fomidable Battle: VS Jogo Rerun",
+            "title": "End Date: 18/5/2025",
             "kind": "event",
             "end": "2025-05-13",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Blue Type PickUp Gacha: Shatter To Pieces",
-            "kind": "gacha",
-            "end": "2025-05-18",
-            "characters": [
-              "shatter-to-pieces-toge-inumaki"
-            ],
             "link": null
           }
         ],
@@ -2505,19 +2345,10 @@
         "date": "2025-05-14",
         "items": [
           {
-            "title": "Map Event: Grand Exorcism Battle - Ghost Town Arc - 2",
+            "title": "End Date: 20/5/2025",
             "kind": "event",
             "end": "2025-05-20",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "PickUp Gacha: With That Will In Mind",
-            "kind": "gacha",
-            "end": "2025-05-20",
-            "characters": [
-              "with-that-will-in-mind-kaito-yuki"
-            ],
             "link": null
           }
         ],
@@ -2530,32 +2361,16 @@
         "date": "2025-05-21",
         "items": [
           {
-            "title": "Story Event: Mystic of Hundred and Blue",
+            "title": "End Date: 3/7/2025",
             "kind": "event",
             "end": "2025-06-19",
             "characters": [],
             "link": null
           },
           {
-            "title": "Limited-Time Gacha: Awakening",
-            "kind": "gacha",
-            "end": "2025-07-03",
-            "characters": [
-              "awakening-satoru-gojo"
-            ],
-            "link": null
-          },
-          {
-            "title": "1.5th Anniversary Login Bonus(Part 1)",
-            "kind": "campaign",
-            "end": "2025-06-03",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Standard Update 2",
+            "title": "End Date: N/A",
             "kind": "event",
-            "end": null,
+            "end": "2025-06-03",
             "characters": [],
             "link": null
           },
@@ -2630,16 +2445,9 @@
             "link": null
           },
           {
-            "title": "Event Marathon 4",
+            "title": "End Date: 3/7/2025",
             "kind": "event",
             "end": "2025-06-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "1.5th Anniversary: Free 3K Cubes",
-            "kind": "event",
-            "end": "2025-07-03",
             "characters": [],
             "link": null
           }
@@ -2678,15 +2486,8 @@
             "link": null
           },
           {
-            "title": "Memory Quest: Hidden Inventory / Premature Death Rerun",
+            "title": "End Date: 3/7/2025",
             "kind": "event",
-            "end": "2025-07-03",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "PickUp Gacha: 0.5th Anniversary Rerun",
-            "kind": "gacha",
             "end": "2025-07-03",
             "characters": [],
             "link": null
@@ -2701,32 +2502,16 @@
         "date": "2025-06-11",
         "items": [
           {
-            "title": "Formidable Battle: VS -Toji Fushiguro-",
+            "title": "End Date: 3/7/2025",
             "kind": "event",
             "end": "2025-06-19",
             "characters": [],
             "link": null
           },
           {
-            "title": "Limited-Time Gacha: Within Infinity",
-            "kind": "gacha",
-            "end": "2025-07-03",
-            "characters": [
-              "within-infinity-satoru-gojo"
-            ],
-            "link": null
-          },
-          {
             "title": "Enhancement Quest Campaign: Double Drops",
             "kind": "campaign",
             "end": "2025-06-17",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "1.5th Anniversary Login Bonus(Part 2)",
-            "kind": "campaign",
-            "end": "2025-06-24",
             "characters": [],
             "link": null
           }
@@ -2749,16 +2534,9 @@
             "link": null
           },
           {
-            "title": "Map Event: Grand Exorcism Battle - Ghost Town Arc - 3",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-06-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "New Feature: Score Attack Statistic",
-            "kind": "event",
-            "end": null,
             "characters": [],
             "link": null
           },
@@ -2795,23 +2573,9 @@
             "link": null
           },
           {
-            "title": "Story Event: The Mystery is In The Book",
+            "title": "End Date: 6/7/2025",
             "kind": "event",
             "end": "2025-07-21",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Free AP Recovery: 3 Times Per Day",
-            "kind": "event",
-            "end": "2025-07-06",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "1.5th Anniversary Login Bonus(Part 3)",
-            "kind": "campaign",
-            "end": "2025-07-30",
             "characters": [],
             "link": null
           }
@@ -2842,26 +2606,9 @@
         "date": "2025-07-14",
         "items": [
           {
-            "title": "Formidable Battle VS -Mahito- Rerun",
+            "title": "End Date: 26/7/2025",
             "kind": "event",
             "end": "2025-07-21",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Red Type PickUp Gacha: Night Of Dancing Crows & Night-Lurking Sorcerer",
-            "kind": "gacha",
-            "end": "2025-07-26",
-            "characters": [
-              "night-lurking-sorcerer-toge-inumaki",
-              "night-of-dancing-crows-mei-mei"
-            ],
-            "link": null
-          },
-          {
-            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 4",
-            "kind": "event",
-            "end": "2025-07-27",
             "characters": [],
             "link": null
           }
@@ -2873,28 +2620,14 @@
         "date": "2025-07-22",
         "items": [
           {
-            "title": "Map Event: Ijichi's Struggle Part 1",
+            "title": "End Date: 4/8/2025",
             "kind": "event",
             "end": "2025-07-30",
             "characters": [],
             "link": null
           },
           {
-            "title": "Featured Gacha: Cursed Spirit School Group",
-            "kind": "gacha",
-            "end": "2025-08-04",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Intermediate & Advanced Missions",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "SP Hidden Potential: Third Batch",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": null,
             "characters": [],
@@ -2918,14 +2651,7 @@
         "date": "2025-07-24",
         "items": [
           {
-            "title": "Main Story: Shibuya Incident: -Red Scale & Fluctuations-",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Phantom Medal Exchange Update: Dagon Released",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": null,
             "characters": [],
@@ -2948,13 +2674,6 @@
               "fulfilling-his-duty-as-the-older-brother-choso"
             ],
             "link": null
-          },
-          {
-            "title": "Story Event: The Days of Cursed Spirits",
-            "kind": "event",
-            "end": "2025-08-13",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [
@@ -2969,20 +2688,10 @@
         "date": "2025-08-12",
         "items": [
           {
-            "title": "Formidable Battle: VS -Choso-",
+            "title": "End Date: 23/8/2025",
             "kind": "event",
             "end": "2025-08-18",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Yellow Type PickUp Gacha: Cursed Corpse Battle & With That Will In Mind",
-            "kind": "gacha",
-            "end": "2025-08-23",
-            "characters": [
-              "cursed-corpse-battle-masamichi-yaga",
-              "with-that-will-in-mind-kaito-yuki"
-            ],
             "link": null
           }
         ],
@@ -3016,16 +2725,9 @@
             "link": null
           },
           {
-            "title": "Map Event: Ijichi's Struggle Part 2",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-08-28",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Main Story: Shibuya Incident: -Thunderclap-",
-            "kind": "event",
-            "end": null,
             "characters": [],
             "link": null
           }
@@ -3051,16 +2753,9 @@
             "link": null
           },
           {
-            "title": "Story Event: As Fast as a Fleeing Rabbit",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-09-15",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Story Reminiscence Update",
-            "kind": "event",
-            "end": null,
             "characters": [],
             "link": null
           }
@@ -3100,16 +2795,9 @@
             "link": null
           },
           {
-            "title": "Formidable Battle: VS -Toji Fushiguro (Seance)-",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-09-18",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "SP Battle Update (Rework)",
-            "kind": "event",
-            "end": null,
             "characters": [],
             "link": null
           }
@@ -3132,16 +2820,9 @@
             "link": null
           },
           {
-            "title": "Map Event: Ijichi's Struggle Part 3",
+            "title": "End Date: 16/10/2025",
             "kind": "event",
             "end": "2025-09-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "25 Million Milestone SSR-Character-Guaranteed Paid Gacha",
-            "kind": "gacha",
-            "end": "2025-10-16",
             "characters": [],
             "link": null
           },
@@ -3184,15 +2865,7 @@
       },
       {
         "date": "2025-09-25",
-        "items": [
-          {
-            "title": "Domain Investigation Event: \"Demonic Land Trailblazing\"",
-            "kind": "event",
-            "end": "2025-10-06",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -3206,13 +2879,6 @@
             "characters": [
               "ward-off-with-sharp-blade-atsuya-kusakabe"
             ],
-            "link": null
-          },
-          {
-            "title": "Story Event: Slob around...",
-            "kind": "event",
-            "end": "2025-10-17",
-            "characters": [],
             "link": null
           }
         ],
@@ -3228,20 +2894,10 @@
         "date": "2025-10-08",
         "items": [
           {
-            "title": "Formidable Battle: VS -Jogo-",
+            "title": "End Date: 22/10/2025",
             "kind": "event",
             "end": "2025-10-17",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Yellow Type PickUp Gacha: Cursed Corpse Battle & Life Saver",
-            "kind": "gacha",
-            "end": "2025-10-22",
-            "characters": [
-              "cursed-corpse-battle-masamichi-yaga",
-              "life-saver-shoko-ieiri"
-            ],
             "link": null
           }
         ],
@@ -3255,13 +2911,6 @@
             "title": "Movie-Limited Gacha: Arrived! Gourmet Boom!",
             "kind": "gacha",
             "end": "2025-11-20",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Story Event: Arrived! Gourmet Boom!",
-            "kind": "event",
-            "end": "2025-10-30",
             "characters": [],
             "link": null
           }
@@ -3279,20 +2928,10 @@
         "date": "2025-10-24",
         "items": [
           {
-            "title": "Formidable Battle: VS -Suguru Geto-",
+            "title": "End Date: 9/11/2025",
             "kind": "event",
             "end": "2025-11-04",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Blue Type PickUp Gacha: Early Morning Departure & No Conceit",
-            "kind": "gacha",
-            "end": "2025-11-09",
-            "characters": [
-              "early-morning-departure-maki-zenin",
-              "no-conceit-takuma-ino"
-            ],
             "link": null
           },
           {
@@ -3310,15 +2949,8 @@
         "date": "2025-10-31",
         "items": [
           {
-            "title": "Story Event: Jujutsu Kaisen 0 - Part 1 Rerun",
+            "title": "End Date: 20/11/2025",
             "kind": "event",
-            "end": "2025-11-20",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Movie-Limited Gacha: Jujutsu Kaisen 0",
-            "kind": "gacha",
             "end": "2025-11-20",
             "characters": [],
             "link": null
@@ -3350,15 +2982,7 @@
       },
       {
         "date": "2025-11-05",
-        "items": [
-          {
-            "title": "Phanpara of the Year Login Bonus",
-            "kind": "campaign",
-            "end": "2025-12-28",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": [
           "Phanpara of the Year"
@@ -3368,16 +2992,9 @@
         "date": "2025-11-07",
         "items": [
           {
-            "title": "\"Jujutsu Kaisen: Execution\" Movie Release Login Bonus",
-            "kind": "campaign",
+            "title": "End Date: 20/11/2025",
+            "kind": "event",
             "end": "2025-11-21",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Main Story 0 AP Cost Campaign",
-            "kind": "campaign",
-            "end": "2025-11-20",
             "characters": [],
             "link": null
           }
@@ -3387,15 +3004,7 @@
       },
       {
         "date": "2025-11-11",
-        "items": [
-          {
-            "title": "Map Event: Jujutsu Kaisen 0 - Part 2 Rerun",
-            "kind": "event",
-            "end": "2025-11-20",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -3434,28 +3043,14 @@
             "link": null
           },
           {
-            "title": "Main Story: Shibuya Incident: \n-Right & Wrong-",
+            "title": "End Date: 10/12/2025",
             "kind": "event",
             "end": null,
             "characters": [],
             "link": null
           },
           {
-            "title": "Story Event: The End of Illusory Dream Part 1",
-            "kind": "event",
-            "end": "2025-12-10",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "2nd Anniversary Login Bonus",
-            "kind": "campaign",
-            "end": "2025-12-10",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "2nd Anniversary Gift: 3000 Cubes",
+            "title": "End Date: 10/12/2025",
             "kind": "event",
             "end": "2025-12-10",
             "characters": [],
@@ -3504,16 +3099,9 @@
             "link": null
           },
           {
-            "title": "Event Marathon 5",
+            "title": "End Date: 20/5/2026",
             "kind": "event",
             "end": "2025-12-25",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Friend Invitation Reset",
-            "kind": "event",
-            "end": "2026-05-20",
             "characters": [],
             "link": null
           }
@@ -3555,14 +3143,7 @@
             "link": null
           },
           {
-            "title": "Main Story: Shibuya Incident: -Gate Closed-",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Main Story Pass: Shibuya Incident",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": null,
             "characters": [],
@@ -3609,13 +3190,6 @@
             "end": "2026-01-08",
             "characters": [],
             "link": null
-          },
-          {
-            "title": "Raid Battle Event: VS -Mahoraga-",
-            "kind": "event",
-            "end": "2025-12-14",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [
@@ -3639,7 +3213,7 @@
             "link": null
           },
           {
-            "title": "Formidable Battle: VS -Choso- Rerun",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2025-12-18",
             "characters": [],
@@ -3663,16 +3237,9 @@
             "link": null
           },
           {
-            "title": "Map Event: Cursed Object Exhibition Part 1",
+            "title": "End Date: 15/1/2026",
             "kind": "event",
             "end": "2025-12-25",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "New Year! Phantom Parade Grand Lottery Campaign",
-            "kind": "campaign",
-            "end": "2026-01-15",
             "characters": [],
             "link": null
           }
@@ -3707,13 +3274,6 @@
             "characters": [
               "02-second-domain-expansion-satoru-gojo"
             ],
-            "link": null
-          },
-          {
-            "title": "Story Event: GTG Style: How to Spend Your Day Off",
-            "kind": "event",
-            "end": "2026-01-08",
-            "characters": [],
             "link": null
           }
         ],
@@ -3773,20 +3333,10 @@
         "date": "2026-01-03",
         "items": [
           {
-            "title": "Formidable Battle: VS -Toji Fushiguro (Seance)- Rerun",
+            "title": "End Date: 20/1/2026",
             "kind": "event",
             "end": "2026-01-15",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Blue Type PickUp Gacha: Crushed With Speed & No Conceit",
-            "kind": "gacha",
-            "end": "2026-01-20",
-            "characters": [
-              "crushed-with-speed-naobito-zenin",
-              "no-conceit-takuma-ino"
-            ],
             "link": null
           }
         ],
@@ -3813,16 +3363,9 @@
             "link": null
           },
           {
-            "title": "Anime Broadcast Collaboration Missions Part 1",
+            "title": "End Date: 2/4/2026",
             "kind": "event",
             "end": "2026-02-05",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Anime Broadcast Collaboration Free Gacha: 120 Pulls Total & Character Exchange",
-            "kind": "gacha",
-            "end": "2026-04-02",
             "characters": [],
             "link": null
           },
@@ -3837,13 +3380,6 @@
             "title": "Anime Broadcast Collaboration Growth Campaign: Weekly Rotating Double Drops",
             "kind": "campaign",
             "end": "2026-04-02",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Chiki Chiki! Cursed Corpse Explorers! Stage 5",
-            "kind": "event",
-            "end": "2026-01-28",
             "characters": [],
             "link": null
           }
@@ -3899,15 +3435,8 @@
         "date": "2026-01-23",
         "items": [
           {
-            "title": "Domain Investigation Event: \"Ominous Land Reclamation\" Rerun",
+            "title": "End Date: 8/2/2026",
             "kind": "event",
-            "end": "2026-02-08",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Ominous Land Reclamation Part 1",
-            "kind": "gacha",
             "end": "2026-02-08",
             "characters": [],
             "link": null
@@ -3945,7 +3474,7 @@
             "link": null
           },
           {
-            "title": "Map Event: Cursed Object Exhibition Part 2",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2026-02-08",
             "characters": [],
@@ -3985,16 +3514,9 @@
             "link": null
           },
           {
-            "title": "Anime Broadcast Collaboration Missions Part 2",
+            "title": "End Date: 23/2/2026",
             "kind": "event",
             "end": "2026-03-06",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Main Story 0 AP Cost Campaign",
-            "kind": "campaign",
-            "end": "2026-02-23",
             "characters": [],
             "link": null
           }
@@ -4006,21 +3528,10 @@
         "date": "2026-02-09",
         "items": [
           {
-            "title": "Formidable Battle: VS -Mahito (Awakened)-",
+            "title": "End Date: 23/2/2026",
             "kind": "event",
             "end": "2026-02-18",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Yellow Type PickUp Gacha: Incomplete Domain & The Strongest Blue",
-            "kind": "gacha",
-            "end": "2026-02-23",
-            "characters": [
-              "incomplete-domain-megumi-fushiguro",
-              "the-strongest-blue-satoru-gojo",
-              "the-strongest-satoru-gojo"
-            ],
             "link": null
           }
         ],
@@ -4039,13 +3550,6 @@
             "characters": [
               "tool-manipulation-momo-nishimiya"
             ],
-            "link": null
-          },
-          {
-            "title": "Map Event: Cursed Object Exhibition Part 3",
-            "kind": "event",
-            "end": "2026-02-26",
-            "characters": [],
             "link": null
           }
         ],
@@ -4071,23 +3575,9 @@
             "link": null
           },
           {
-            "title": "Story Event: The Quiet Cursed Holiday",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2026-03-16",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Story Reminiscence Update",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Event Marathon 6",
-            "kind": "event",
-            "end": "2026-03-26",
             "characters": [],
             "link": null
           }
@@ -4109,13 +3599,6 @@
             "end": "2026-04-02",
             "characters": [],
             "link": null
-          },
-          {
-            "title": "Anime Broadcast Collaboration Missions Part 3",
-            "kind": "event",
-            "end": "2026-04-02",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [],
@@ -4125,20 +3608,10 @@
         "date": "2026-03-12",
         "items": [
           {
-            "title": "Formidable Battle: VS -Uraume-",
+            "title": "End Date: 23/3/2026",
             "kind": "event",
             "end": "2026-03-18",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Green Type PickUp Gacha: To Protect Non-Sorcerers & Bond of Friendship",
-            "kind": "gacha",
-            "end": "2026-03-23",
-            "characters": [
-              "bond-of-friendship-megumi-fushiguro",
-              "to-protect-non-sorcerers-suguru-geto"
-            ],
             "link": null
           }
         ],
@@ -4157,13 +3630,6 @@
             "characters": [
               "pivotal-guardian-masamichi-yaga"
             ],
-            "link": null
-          },
-          {
-            "title": "Map Event: Tokyo Fukuoka: Dogs Vs Cats Battle Arc Part 1",
-            "kind": "event",
-            "end": "2026-03-26",
-            "characters": [],
             "link": null
           }
         ],
@@ -4202,16 +3668,9 @@
             "link": null
           },
           {
-            "title": "Story Event: Garden of Echoes",
+            "title": "End Date: 23/4/2026",
             "kind": "event",
             "end": "2026-04-13",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Anime Final Episode Broadcast SSR-Character-Guaranteed Paid Gacha",
-            "kind": "gacha",
-            "end": "2026-04-23",
             "characters": [],
             "link": null
           },
@@ -4249,20 +3708,10 @@
         "date": "2026-04-06",
         "items": [
           {
-            "title": "Formidable Battle: VS -Jogo- Rerun",
+            "title": "End Date: 18/4/2026",
             "kind": "event",
             "end": "2026-04-13",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Yellow Type PickUp Gacha: Cursed Corpse Battle & With That Will In Mind",
-            "kind": "gacha",
-            "end": "2026-04-18",
-            "characters": [
-              "cursed-corpse-battle-masamichi-yaga",
-              "with-that-will-in-mind-kaito-yuki"
-            ],
             "link": null
           }
         ],
@@ -4284,7 +3733,7 @@
             "link": null
           },
           {
-            "title": "Map Event: Tokyo Fukuoka: Dogs Vs Cats Battle Arc Part 2",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2026-04-23",
             "characters": [],
@@ -4312,16 +3761,9 @@
             "link": null
           },
           {
-            "title": "Story Event: Peering into the Dim Abyss",
+            "title": "End Date: N/A",
             "kind": "event",
             "end": "2026-05-11",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "SP Hidden Potential: Fifth Batch",
-            "kind": "event",
-            "end": null,
             "characters": [],
             "link": null
           }
@@ -4338,15 +3780,8 @@
         "date": "2026-04-27",
         "items": [
           {
-            "title": "Domain Investigation Event: \"Ominous Land Reclamation\" Rerun",
+            "title": "End Date: 13/5/2026",
             "kind": "event",
-            "end": "2026-05-13",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Ominous Land Reclamation",
-            "kind": "gacha",
             "end": "2026-05-13",
             "characters": [],
             "link": null
@@ -4359,26 +3794,9 @@
         "date": "2026-05-01",
         "items": [
           {
-            "title": "Formidable Battle: VS -Choso- Rerun",
+            "title": "End Date: 16/5/2026",
             "kind": "event",
             "end": "2026-05-11",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Red Type PickUp Gacha: Night-Lurking Sorcerer & Meteor of Fierceness",
-            "kind": "gacha",
-            "end": "2026-05-16",
-            "characters": [
-              "meteor-of-fierceness-jogo",
-              "night-lurking-sorcerer-toge-inumaki"
-            ],
-            "link": null
-          },
-          {
-            "title": "Golden Week Campaign",
-            "kind": "campaign",
-            "end": "2026-05-15",
             "characters": [],
             "link": null
           }
@@ -4390,26 +3808,9 @@
         "date": "2026-05-12",
         "items": [
           {
-            "title": "Map Event: Tokyo Fukuoka: Dogs Vs Cats Battle Arc Part 3",
+            "title": "End Date: 28/5/2026",
             "kind": "event",
             "end": "2026-05-20",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Limited-Time Gacha: Zone, Within Infinity & Genuine Jujutsu",
-            "kind": "gacha",
-            "end": "2026-05-28",
-            "characters": [
-              "genuine-jujutsu-ryomen-sukuna",
-              "within-infinity-satoru-gojo"
-            ],
-            "link": null
-          },
-          {
-            "title": "Exploration Event: Cursed Corpse Explorers!",
-            "kind": "event",
-            "end": "2026-05-28",
             "characters": [],
             "link": null
           }
@@ -4460,16 +3861,9 @@
             "link": null
           },
           {
-            "title": "Story Event: Blue Splashing by the Shore",
+            "title": "End Date: 8/6/2026",
             "kind": "event",
             "end": "2026-06-17",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "2.5th Anniversary Login Bonus",
-            "kind": "campaign",
-            "end": "2026-06-08",
             "characters": [],
             "link": null
           },
@@ -4523,16 +3917,9 @@
             "link": null
           },
           {
-            "title": "Event Marathon 7",
+            "title": "End Date: 20/11/2026",
             "kind": "event",
             "end": "2026-06-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Friend Invitation Reset",
-            "kind": "event",
-            "end": "2026-11-20",
             "characters": [],
             "link": null
           }
@@ -4598,15 +3985,7 @@
       },
       {
         "date": "2026-05-31",
-        "items": [
-          {
-            "title": "2.5th Anniversary Missions Part 2",
-            "kind": "event",
-            "end": "2026-06-20",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -4668,20 +4047,10 @@
         "date": "2026-06-09",
         "items": [
           {
-            "title": "Formidable Battle: VS -Toji Fushiguro (Seance)- Rerun",
+            "title": "End Date: 22/6/2026",
             "kind": "event",
             "end": "2026-06-17",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Blue Type PickUp Gacha: Zanshin & First-Grade Sorcerer's Skill",
-            "kind": "gacha",
-            "end": "2026-06-22",
-            "characters": [
-              "first-grade-sorcerers-skill-kento-nanami",
-              "zanshin-kasumi-miwa"
-            ],
             "link": null
           },
           {
@@ -4703,16 +4072,9 @@
             "link": null
           },
           {
-            "title": "2.5th Anniversary Login Bonus Part 2",
-            "kind": "campaign",
+            "title": "End Date: 17/6/2026",
+            "kind": "event",
             "end": "2026-06-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Enhancement Quest Campaign: Double Drops",
-            "kind": "campaign",
-            "end": "2026-06-17",
             "characters": [],
             "link": null
           }
@@ -4738,19 +4100,10 @@
         "date": "2026-06-18",
         "items": [
           {
-            "title": "Map Event: Kyoto Dead School Part 1",
+            "title": "End Date: 4/7/2026",
             "kind": "event",
             "end": "2026-06-29",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Green Type PickUp Gacha: Sprinting",
-            "kind": "gacha",
-            "end": "2026-07-04",
-            "characters": [
-              "sprinting-kasumi-miwa"
-            ],
             "link": null
           },
           {
@@ -4779,15 +4132,7 @@
       },
       {
         "date": "2026-06-20",
-        "items": [
-          {
-            "title": "2.5th Anniversary Missions Part 4",
-            "kind": "event",
-            "end": "2026-07-09",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -4795,19 +4140,10 @@
         "date": "2026-06-24",
         "items": [
           {
-            "title": "Raid Battle Event: VS -Mahoraga- Rerun",
+            "title": "End Date: 20/7/2026",
             "kind": "event",
             "end": "2026-07-02",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Limited-Time Gacha Part 5: 0.2-Second Domain Expansion",
-            "kind": "gacha",
-            "end": "2026-07-20",
-            "characters": [
-              "02-second-domain-expansion-satoru-gojo"
-            ],
             "link": null
           }
         ],
@@ -4825,13 +4161,6 @@
               "pick-up-after-hard-work-kiyotaka-ijichi"
             ],
             "link": null
-          },
-          {
-            "title": "Story Event: Ijichi's Unrelenting Vacation",
-            "kind": "event",
-            "end": "2026-07-16",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [
@@ -4844,15 +4173,7 @@
       },
       {
         "date": "2026-07-07",
-        "items": [
-          {
-            "title": "New Content: Formidable Foe: Back",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -4860,20 +4181,10 @@
         "date": "2026-07-13",
         "items": [
           {
-            "title": "Formidable Battle: VS -Mahito (Awakened)- Rerun",
+            "title": "End Date: 25/7/2026",
             "kind": "event",
             "end": "2026-07-20",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Green Type PickUp Gacha: Silent Suppression & Fulfilling His Duty as the Older Brother",
-            "kind": "gacha",
-            "end": "2026-07-25",
-            "characters": [
-              "fulfilling-his-duty-as-the-older-brother-choso",
-              "silent-suppression-kento-nanami"
-            ],
             "link": null
           }
         ],
@@ -4897,13 +4208,6 @@
               "crafty-rock-yoshinobu-gakuganji"
             ],
             "link": null
-          },
-          {
-            "title": "Map Event: Kyoto Dead School Part 2",
-            "kind": "event",
-            "end": "2026-07-31",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [
@@ -4918,16 +4222,9 @@
         "date": "2026-07-27",
         "items": [
           {
-            "title": "New Content: Illusory Tower: Diverse",
+            "title": "End Date: 9/8/2026",
             "kind": "event",
             "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Illusory Tower: Diverse",
-            "kind": "gacha",
-            "end": "2026-08-09",
             "characters": [],
             "link": null
           }
@@ -4945,13 +4242,6 @@
             "characters": [
               "effective-range-mai-zenin"
             ],
-            "link": null
-          },
-          {
-            "title": "Story Event: Ephemeral Family",
-            "kind": "event",
-            "end": "2026-08-18",
-            "characters": [],
             "link": null
           }
         ],
@@ -5002,20 +4292,10 @@
         "date": "2026-08-10",
         "items": [
           {
-            "title": "Formidable Battle: VS -Uraume- Rerun",
+            "title": "End Date: 23/8/2026",
             "kind": "event",
             "end": "2026-08-18",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Blue Type PickUp Gacha: Blood Borne Resolve & Shatter To Pieces",
-            "kind": "gacha",
-            "end": "2026-08-23",
-            "characters": [
-              "blood-borne-resolve-noritoshi-kamo",
-              "shatter-to-pieces-toge-inumaki"
-            ],
             "link": null
           }
         ],
@@ -5040,16 +4320,9 @@
         "date": "2026-08-17",
         "items": [
           {
-            "title": "1000 Days Campaign: Login Bonus, Missions & Twitter Campaign",
-            "kind": "campaign",
+            "title": "End Date: 10/9/2026",
+            "kind": "event",
             "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "1000 Days Commemoration Selective Gacha",
-            "kind": "gacha",
-            "end": "2026-09-10",
             "characters": [],
             "link": null
           },
@@ -5074,13 +4347,6 @@
             "characters": [
               "indomitable-auspicious-beasts-takuma-ino"
             ],
-            "link": null
-          },
-          {
-            "title": "Map Event: Kyoto Dead School Part 3",
-            "kind": "event",
-            "end": "2026-08-30",
-            "characters": [],
             "link": null
           }
         ],
@@ -5108,15 +4374,7 @@
       },
       {
         "date": "2026-08-25",
-        "items": [
-          {
-            "title": "All-Out Battle Event: VS\n-Phantom Calamity: Thunder Beast-",
-            "kind": "event",
-            "end": "2026-09-01",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       },
@@ -5133,14 +4391,7 @@
             "link": null
           },
           {
-            "title": "Story Event: The Steam Sorcerer",
-            "kind": "event",
-            "end": "2026-09-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Hidden Inventory/Premature Death Panel Missions",
+            "title": "End Date: 29/9/2026",
             "kind": "event",
             "end": "2026-09-29",
             "characters": [],
@@ -5166,20 +4417,10 @@
         "date": "2026-09-07",
         "items": [
           {
-            "title": "Formidable Battle: Suguru Geto's Special Training",
+            "title": "End Date: 4/10/2026",
             "kind": "event",
             "end": "2026-09-29",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Red Type PickUp Gacha: Tool Manipulation & The Final Bullet",
-            "kind": "gacha",
-            "end": "2026-10-04",
-            "characters": [
-              "the-final-bullet-mai-zenin",
-              "tool-manipulation-momo-nishimiya"
-            ],
             "link": null
           }
         ],
@@ -5197,13 +4438,6 @@
               "what-lies-at-the-end-suguru-geto"
             ],
             "link": null
-          },
-          {
-            "title": "Map Event: Blue Footprints Part 1",
-            "kind": "event",
-            "end": "2026-09-29",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [],
@@ -5216,16 +4450,9 @@
         "date": "2026-09-18",
         "items": [
           {
-            "title": "Domain Investigation Event: \"Ominous Land Reclamation\"",
+            "title": "End Date: 4/10/2026",
             "kind": "event",
             "end": "2026-09-29",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Ominous Land Reclamation",
-            "kind": "gacha",
-            "end": "2026-10-04",
             "characters": [],
             "link": null
           },
@@ -5253,16 +4480,9 @@
             "link": null
           },
           {
-            "title": "Story Event: With Love From The Depths Of Darkness",
+            "title": "End Date: 29/10/2026",
             "kind": "event",
             "end": "2026-10-18",
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Event Marathon 8",
-            "kind": "event",
-            "end": "2026-10-29",
             "characters": [],
             "link": null
           }
@@ -5284,13 +4504,6 @@
             "end": null,
             "characters": [],
             "link": null
-          },
-          {
-            "title": "Curse Sweep Battle Update: Very Hard Difficulty Added",
-            "kind": "event",
-            "end": null,
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [],
@@ -5300,20 +4513,10 @@
         "date": "2026-10-09",
         "items": [
           {
-            "title": "Formidable Battle: VS -Jogo- Rerun",
+            "title": "End Date: 23/10/2026",
             "kind": "event",
             "end": "2026-10-18",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Green Type PickUp Gacha: Pick Up After Hard Work & Sprinting",
-            "kind": "gacha",
-            "end": "2026-10-23",
-            "characters": [
-              "pick-up-after-hard-work-kiyotaka-ijichi",
-              "sprinting-kasumi-miwa"
-            ],
             "link": null
           }
         ],
@@ -5324,16 +4527,9 @@
         "date": "2026-10-14",
         "items": [
           {
-            "title": "Illusory Tower: Diverse Stage Update",
+            "title": "End Date: 29/10/2026",
             "kind": "event",
             "end": null,
-            "characters": [],
-            "link": null
-          },
-          {
-            "title": "Featured Gacha: Illusory Tower: Diverse",
-            "kind": "gacha",
-            "end": "2026-10-29",
             "characters": [],
             "link": null
           }
@@ -5351,13 +4547,6 @@
             "characters": [
               "cold-light-of-dusk-atsuya-kusakabe"
             ],
-            "link": null
-          },
-          {
-            "title": "Map Event: Blue Footprints Part 2",
-            "kind": "event",
-            "end": "2026-10-29",
-            "characters": [],
             "link": null
           }
         ],
@@ -5394,13 +4583,6 @@
               "mastery-of-24-frames-per-second-naoya-zenin"
             ],
             "link": null
-          },
-          {
-            "title": "Story Event: The World on the Other Side",
-            "kind": "event",
-            "end": "2026-11-15",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [
@@ -5415,20 +4597,10 @@
         "date": "2026-11-05",
         "items": [
           {
-            "title": "Formidable Battle: VS -Choso- Rerun",
+            "title": "End Date: 20/11/2026",
             "kind": "event",
             "end": "2026-11-15",
             "characters": [],
-            "link": null
-          },
-          {
-            "title": "Blue Type PickUp Gacha: Pivotal Guardian & No Conceit",
-            "kind": "gacha",
-            "end": "2026-11-20",
-            "characters": [
-              "no-conceit-takuma-ino",
-              "pivotal-guardian-masamichi-yaga"
-            ],
             "link": null
           }
         ],
@@ -5437,15 +4609,7 @@
       },
       {
         "date": "2026-11-05",
-        "items": [
-          {
-            "title": "Phanpara Grand Thanksgiving Festival 2026 Login Bonus",
-            "kind": "campaign",
-            "end": "2026-12-07",
-            "characters": [],
-            "link": null
-          }
-        ],
+        "items": [],
         "newCharacters": [],
         "newMemories": [
           "Phanpara Grand Thanksgiving Festival 2026"
