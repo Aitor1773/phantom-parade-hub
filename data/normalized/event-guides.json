@@ -1,4 +1,28 @@
 {
-  "fetchedAt": "2026-11-09T07:53:40.767Z",
-  "events": []
+  "fetchedAt": "2026-11-10T07:43:37.251Z",
+  "events": [
+    {
+      "id": "841272",
+      "listTitle": "大討祓戦青の足跡編参&幻楽巌寺再実装",
+      "start": "2026-11-11T15:00:00+09:00",
+      "end": "2026-11-20T14:59:00+09:00",
+      "url": "https://game8.jp/jujutsuphanpara/841272",
+      "title": "【ファンパレ】イベント大討祓戦青の足跡編参の攻略と報酬【呪術廻戦ファントムパレード】",
+      "parties": [],
+      "bonusMemories": [
+        {
+          "jp": "暗夜に光る友情",
+          "id": null
+        },
+        {
+          "jp": "大人達の午後",
+          "id": "adults-afternoon"
+        }
+      ],
+      "eventMemory": {
+        "jp": "暗夜に光る友情",
+        "id": null
+      }
+    }
+  ]
 }

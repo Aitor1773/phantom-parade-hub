@@ -1,6 +1,49 @@
 {
- "fetchedAt": "2026-11-09T07:53:46.024Z",
+ "fetchedAt": "2026-11-10T07:43:47.799Z",
  "items": [
+  {
+   "key": "d8be7bbe4be4",
+   "title": "強敵連戦",
+   "kind": "event",
+   "start": "2026-11-11T15:00:00+09:00",
+   "end": "2026-11-20T14:59:00+09:00",
+   "chars": [
+    "cold-light-of-dusk-atsuya-kusakabe",
+    "crafty-rock-yoshinobu-gakuganji"
+   ],
+   "widths": [
+    400,
+    960
+   ]
+  },
+  {
+   "key": "f5b13c14de8e",
+   "title": "大討祓戦青の足跡編参",
+   "kind": "event",
+   "start": "2026-11-11T15:00:00+09:00",
+   "end": "2026-11-20T14:59:00+09:00",
+   "chars": [
+    "crafty-rock-yoshinobu-gakuganji"
+   ],
+   "widths": [
+    400,
+    600
+   ]
+  },
+  {
+   "key": "7acb5e4c0bc4",
+   "title": "幻影夜行ピックアップ45",
+   "kind": "gacha",
+   "start": "2026-11-11T15:00:00+09:00",
+   "end": "2026-11-25T14:59:00+09:00",
+   "chars": [
+    "crafty-rock-yoshinobu-gakuganji"
+   ],
+   "widths": [
+    400,
+    960
+   ]
+  },
   {
    "key": "b47ff3a1e4d6",
    "title": "幻境戦vs脹相",
@@ -39,20 +82,6 @@
    "widths": [
     400,
     600
-   ]
-  },
-  {
-   "key": "d8be7bbe4be4",
-   "title": "強敵連戦",
-   "kind": "event",
-   "start": "2026-10-19T15:00:00+09:00",
-   "end": "2026-10-29T14:59:00+09:00",
-   "chars": [
-    "cold-light-of-dusk-atsuya-kusakabe"
-   ],
-   "widths": [
-    400,
-    960
    ]
   },
   {

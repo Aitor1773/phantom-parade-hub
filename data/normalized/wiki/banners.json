@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-09T07:53:25.328Z",
+  "fetchedAt": "2026-11-10T07:43:16.939Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-11-05T12:19:04Z",
+    "updated": "2026-11-10T07:13:45Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -4614,6 +4614,20 @@
         "newMemories": [
           "Phanpara Grand Thanksgiving Festival 2026"
         ]
+      },
+      {
+        "date": "2026-11-11",
+        "items": [
+          {
+            "title": "End Date: 25/11/2026",
+            "kind": "event",
+            "end": "2026-11-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
       }
     ]
   },
