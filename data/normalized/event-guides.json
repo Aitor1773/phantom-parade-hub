@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-10T07:43:37.251Z",
+  "fetchedAt": "2026-11-11T07:46:18.892Z",
   "events": [
     {
       "id": "841272",
@@ -8,7 +8,51 @@
       "end": "2026-11-20T14:59:00+09:00",
       "url": "https://game8.jp/jujutsuphanpara/841272",
       "title": "【ファンパレ】イベント大討祓戦青の足跡編参の攻略と報酬【呪術廻戦ファントムパレード】",
-      "parties": [],
+      "parties": [
+        {
+          "label": "EXフルオート1ターン周回パーティ",
+          "chars": [
+            {
+              "jp": "「砕け散れ」狗巻棘",
+              "id": "shatter-to-pieces-toge-inumaki"
+            },
+            {
+              "jp": "「血に宿る決意」加茂憲紀",
+              "id": "blood-borne-resolve-noritoshi-kamo"
+            },
+            {
+              "jp": "「早朝の出発」禪院真希",
+              "id": "early-morning-departure-maki-zenin"
+            },
+            {
+              "jp": "「呪骸臨戦」夜蛾正道",
+              "id": "cursed-corpse-battle-masamichi-yaga"
+            }
+          ],
+          "memories": [
+            {
+              "jp": "加茂憲紀の弓道指南",
+              "id": "noritoshi-kamos-archery-lessons"
+            },
+            {
+              "jp": "優先すべきもの",
+              "id": "our-priorities"
+            },
+            {
+              "jp": "強者の戯れ",
+              "id": "play-of-the-strong"
+            },
+            {
+              "jp": "暗夜に光る友情",
+              "id": null
+            }
+          ],
+          "elements": [
+            "blue"
+          ],
+          "auto": true
+        }
+      ],
       "bonusMemories": [
         {
           "jp": "暗夜に光る友情",

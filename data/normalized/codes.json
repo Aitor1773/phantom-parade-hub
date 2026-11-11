@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-10T07:43:31.152Z",
+  "fetchedAt": "2026-11-11T07:46:13.617Z",
   "server": "global",
   "sources": [
     {
@@ -12,7 +12,7 @@
       "id": "beebom",
       "name": "Beebom",
       "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-      "modified": "2026-10-01T01:53:55+05:30"
+      "modified": "2026-11-11T09:21:01+05:30"
     },
     {
       "id": "urgametips",
@@ -69,7 +69,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": {
@@ -78,20 +78,6 @@
         "expires": "2026-12-18T12:00:00+09:00",
         "reward": "10 [Maximum Output] Yuji Itadori Featured Gacha Tickets",
         "source": "https://x.com/JJKPP_GL/status/2001966992585089103"
-      }
-    },
-    {
-      "code": "JJKPPJoy",
-      "reward": "200,000 JP",
-      "status": "tested",
-      "activeIn": [],
-      "expiredIn": [],
-      "tested": {
-        "works": true,
-        "official": true,
-        "expires": "2026-11-10T23:59:00+09:00",
-        "reward": "200,000 JP",
-        "source": "https://x.com/JJKPP_GL/status/1988109434716123528"
       }
     },
     {
@@ -109,7 +95,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "urgametips",
@@ -148,73 +134,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
-        },
-        {
-          "source": "urgametips",
-          "name": "UrGameTips",
-          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
-        },
-        {
-          "source": "gameguide",
-          "name": "Game.guide",
-          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
-        },
-        {
-          "source": "bluestacks",
-          "name": "BlueStacks",
-          "url": "https://www.bluestacks.com/blog/redeem-codes/jujutsu-kaisen-phantom-parade-redeem-codes-en.html",
-          "modified": "2026-11-01T07:07:55+00:00"
-        }
-      ],
-      "expiredIn": [],
-      "tested": null
-    },
-    {
-      "code": "JJKPP20260520",
-      "reward": "300 Cubes",
-      "status": "verified",
-      "activeIn": [
-        {
-          "source": "pocketgamer",
-          "name": "Pocket Gamer",
-          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
-          "modified": null
-        },
-        {
-          "source": "beebom",
-          "name": "Beebom",
-          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
-        },
-        {
-          "source": "urgametips",
-          "name": "UrGameTips",
-          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
-        },
-        {
-          "source": "gameguide",
-          "name": "Game.guide",
-          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
-        }
-      ],
-      "expiredIn": [],
-      "tested": null
-    },
-    {
-      "code": "JJKshimetsu",
-      "reward": "Chaotic Jujutsu Crystal",
-      "status": "verified",
-      "activeIn": [
-        {
-          "source": "beebom",
-          "name": "Beebom",
-          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "urgametips",
@@ -250,6 +170,12 @@
           "modified": null
         },
         {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T09:21:01+05:30"
+        },
+        {
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
@@ -266,6 +192,72 @@
       "tested": null
     },
     {
+      "code": "JJKPP20260520",
+      "reward": "300 Cubes",
+      "status": "verified",
+      "activeIn": [
+        {
+          "source": "pocketgamer",
+          "name": "Pocket Gamer",
+          "url": "https://www.pocketgamer.com/jujutsu-kaisen-phantom-parade/codes/",
+          "modified": null
+        },
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T09:21:01+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-02T03:03:03+00:00"
+        },
+        {
+          "source": "gameguide",
+          "name": "Game.guide",
+          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
+          "modified": "2026-11-09T22:32:10.531Z"
+        }
+      ],
+      "expiredIn": [],
+      "tested": null
+    },
+    {
+      "code": "JJKshimetsu",
+      "reward": "Chaotic Jujutsu Crystal",
+      "status": "verified",
+      "activeIn": [
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T09:21:01+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-02T03:03:03+00:00"
+        },
+        {
+          "source": "gameguide",
+          "name": "Game.guide",
+          "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
+          "modified": "2026-11-09T22:32:10.531Z"
+        },
+        {
+          "source": "bluestacks",
+          "name": "BlueStacks",
+          "url": "https://www.bluestacks.com/blog/redeem-codes/jujutsu-kaisen-phantom-parade-redeem-codes-en.html",
+          "modified": "2026-11-01T07:07:55+00:00"
+        }
+      ],
+      "expiredIn": [],
+      "tested": null
+    },
+    {
       "code": "JJKPP15ANNI01",
       "reward": "Gojo Tickets",
       "status": "verified",
@@ -274,13 +266,43 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
           "modified": "2026-11-02T03:03:03+00:00"
+        }
+      ],
+      "expiredIn": [],
+      "tested": null
+    },
+    {
+      "code": "JJKPP365fix",
+      "reward": "100,000 Beacon of Recollection",
+      "status": "single",
+      "activeIn": [
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T09:21:01+05:30"
+        }
+      ],
+      "expiredIn": [],
+      "tested": null
+    },
+    {
+      "code": "JJKPPanni",
+      "reward": "5x AP Supplementary Pack",
+      "status": "single",
+      "activeIn": [
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "expiredIn": [],
@@ -315,7 +337,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -349,7 +371,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -411,7 +433,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -445,7 +467,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -479,7 +501,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -513,7 +535,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -547,7 +569,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -581,7 +603,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -615,7 +637,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -649,7 +671,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -683,7 +705,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -717,7 +739,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -751,7 +773,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -785,7 +807,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -819,7 +841,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -853,7 +875,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -887,7 +909,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -921,7 +943,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -949,7 +971,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -983,7 +1005,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -1017,7 +1039,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -1051,7 +1073,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -1079,7 +1101,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -1099,7 +1121,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "urgametips",
@@ -1137,7 +1159,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "urgametips",
@@ -1169,7 +1191,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "urgametips",
@@ -1187,6 +1209,27 @@
       }
     },
     {
+      "code": "JJKPP1yearLuv",
+      "reward": "1,000,000 Beacon of Training",
+      "status": "expired",
+      "activeIn": [
+        {
+          "source": "beebom",
+          "name": "Beebom",
+          "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T09:21:01+05:30"
+        }
+      ],
+      "expiredIn": [],
+      "tested": {
+        "works": true,
+        "official": true,
+        "expires": "2026-11-08T23:59:00+09:00",
+        "reward": "1,000,000 Beacon of Training",
+        "source": "https://x.com/JJKPP_GL/status/1987390192798605547"
+      }
+    },
+    {
       "code": "19VT36R5Y",
       "reward": null,
       "status": "expired",
@@ -1196,7 +1239,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "gameguide",
@@ -1217,7 +1260,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "gameguide",
@@ -1238,7 +1281,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "gameguide",
@@ -1259,7 +1302,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "gameguide",
@@ -1292,17 +1335,17 @@
       "tested": null
     },
     {
-      "code": "JJKPP1yearLuv",
-      "reward": "1,000,000 Beacon of Training",
+      "code": "JJKPPJoy",
+      "reward": "200,000 JP",
       "status": "expired",
       "activeIn": [],
       "expiredIn": [],
       "tested": {
         "works": true,
         "official": true,
-        "expires": "2026-11-08T23:59:00+09:00",
-        "reward": "1,000,000 Beacon of Training",
-        "source": "https://x.com/JJKPP_GL/status/1987390192798605547"
+        "expires": "2026-11-10T23:59:00+09:00",
+        "reward": "200,000 JP",
+        "source": "https://x.com/JJKPP_GL/status/1988109434716123528"
       }
     },
     {
@@ -1315,7 +1358,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         }
       ],
       "tested": null
@@ -1330,7 +1373,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "gameguide",
@@ -1351,7 +1394,7 @@
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-10-01T01:53:55+05:30"
+          "modified": "2026-11-11T09:21:01+05:30"
         },
         {
           "source": "gameguide",
