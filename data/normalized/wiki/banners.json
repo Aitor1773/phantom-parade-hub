@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-11T07:45:58.168Z",
+  "fetchedAt": "2026-11-12T07:48:46.136Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-11-10T07:13:45Z",
+    "updated": "2026-11-11T10:27:29Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -4626,6 +4626,12 @@
             "link": null
           }
         ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-12-11",
+        "items": [],
         "newCharacters": [],
         "newMemories": []
       }

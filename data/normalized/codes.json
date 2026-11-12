@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T07:46:13.617Z",
+  "fetchedAt": "2026-11-12T07:48:58.978Z",
   "server": "global",
   "sources": [
     {
@@ -18,13 +18,13 @@
       "id": "urgametips",
       "name": "UrGameTips",
       "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-      "modified": "2026-11-02T03:03:03+00:00"
+      "modified": "2026-11-11T08:20:05+00:00"
     },
     {
       "id": "gameguide",
       "name": "Game.guide",
       "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-      "modified": "2026-11-09T22:32:10.531Z"
+      "modified": "2026-11-10T23:02:11.121Z"
     },
     {
       "id": "9to5gaming",
@@ -55,7 +55,7 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [
@@ -101,13 +101,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         },
         {
           "source": "bluestacks",
@@ -140,13 +140,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         },
         {
           "source": "bluestacks",
@@ -179,13 +179,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [],
@@ -212,13 +212,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [],
@@ -239,13 +239,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         },
         {
           "source": "bluestacks",
@@ -272,7 +272,7 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [],
@@ -281,13 +281,19 @@
     {
       "code": "JJKPP365fix",
       "reward": "100,000 Beacon of Recollection",
-      "status": "single",
+      "status": "verified",
       "activeIn": [
         {
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
           "modified": "2026-11-11T09:21:01+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [],
@@ -296,13 +302,19 @@
     {
       "code": "JJKPPanni",
       "reward": "5x AP Supplementary Pack",
-      "status": "single",
+      "status": "verified",
       "activeIn": [
         {
           "source": "beebom",
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
           "modified": "2026-11-11T09:21:01+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [],
@@ -317,13 +329,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -351,13 +363,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -385,13 +397,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -413,13 +425,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -447,13 +459,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -481,13 +493,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -515,13 +527,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -549,13 +561,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -583,13 +595,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -617,13 +629,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -651,13 +663,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -685,13 +697,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -719,13 +731,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -753,13 +765,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -787,13 +799,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -821,13 +833,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -855,13 +867,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -889,13 +901,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -923,13 +935,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -957,13 +969,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -985,13 +997,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -1019,13 +1031,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -1053,13 +1065,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [
@@ -1087,7 +1099,7 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [
@@ -1127,13 +1139,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [],
@@ -1165,13 +1177,13 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         },
         {
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "expiredIn": [],
@@ -1197,7 +1209,7 @@
           "source": "urgametips",
           "name": "UrGameTips",
           "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
-          "modified": "2026-11-02T03:03:03+00:00"
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [],
@@ -1218,6 +1230,12 @@
           "name": "Beebom",
           "url": "https://beebom.com/jujutsu-kaisen-phantom-parade-codes/",
           "modified": "2026-11-11T09:21:01+05:30"
+        },
+        {
+          "source": "urgametips",
+          "name": "UrGameTips",
+          "url": "https://urgametips.com/jujutsu-kaisen-phantom-parade-codes/",
+          "modified": "2026-11-11T08:20:05+00:00"
         }
       ],
       "expiredIn": [],
@@ -1245,7 +1263,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
@@ -1266,7 +1284,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
@@ -1287,7 +1305,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
@@ -1308,7 +1326,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
@@ -1329,7 +1347,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
@@ -1379,7 +1397,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
@@ -1400,7 +1418,7 @@
           "source": "gameguide",
           "name": "Game.guide",
           "url": "https://www.game.guide/jujutsu-kaisen-phantom-parade-codes",
-          "modified": "2026-11-09T22:32:10.531Z"
+          "modified": "2026-11-10T23:02:11.121Z"
         }
       ],
       "tested": null
