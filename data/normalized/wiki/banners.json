@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-12T07:48:46.136Z",
+  "fetchedAt": "2026-11-13T07:48:03.510Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-11-11T10:27:29Z",
+    "updated": "2026-11-13T06:12:31Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -4621,6 +4621,13 @@
           {
             "title": "End Date: 25/11/2026",
             "kind": "event",
+            "end": "2026-11-20",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "3rd anniversary countdown login bouns: 1000 Cubes (100 cubes per day)",
+            "kind": "campaign",
             "end": "2026-11-20",
             "characters": [],
             "link": null
