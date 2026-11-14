@@ -2,8 +2,8 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-13T07:47:58.955Z",
-  "count": 254,
+  "fetchedAt": "2026-11-14T07:36:15.849Z",
+  "count": 255,
   "items": [
     {
       "id": "120-of-their-potential",
@@ -3066,6 +3066,48 @@
         "url": "https://jjk-phantom-parade.fandom.com/wiki/For_Now%2C_A_Cola",
         "revid": 4371,
         "updated": "2024-10-20T16:05:20Z"
+      }
+    },
+    {
+      "id": "friendship-that-shines-in-the-darkness",
+      "name": "Friendship That Shines in the Darkness",
+      "title": "Friendship That Shines in the Darkness",
+      "rarity": "SSR",
+      "releaseDateJP": "2026-11-11",
+      "availability": "f2p",
+      "stats": {
+        "hp": 44.02,
+        "taijutsu": 31.21,
+        "jujutsu": 31.21,
+        "level": 80
+      },
+      "effects": [
+        {
+          "text": "When Command Skill or Ultimate skill is activated,\nRecovers own HP by 3.5% Each Turn (3 Turns)",
+          "textLv2": "When Command Skill or Ultimate skill is activated,\nRecovers own HP by 7.5% Each Turn (3 Turns)",
+          "cd": 8,
+          "cdLv2": 8
+        },
+        {
+          "text": "At the start of turn, if there is an enemy with the Max Ultimate Attack Count,\nDecreases own Jujutsu Damage Received by 20% (1 Turn)\n(Only Twice per Battle)",
+          "textLv2": null,
+          "cd": null,
+          "cdLv2": null
+        }
+      ],
+      "tags": [
+        "heal",
+        "defense",
+        "jujutsu"
+      ],
+      "adjusted": false,
+      "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/9/9b/FriendshipShineDarkness.gif/revision/latest?cb=20261113122710",
+      "variant": "Memory Page",
+      "_source": {
+        "source": "wiki",
+        "url": "https://jjk-phantom-parade.fandom.com/wiki/Friendship_That_Shines_in_the_Darkness",
+        "revid": 11512,
+        "updated": "2026-11-13T11:09:05Z"
       }
     },
     {

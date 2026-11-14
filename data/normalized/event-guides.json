@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T07:48:23.648Z",
+  "fetchedAt": "2026-11-14T07:36:39.344Z",
   "events": [
     {
       "id": "841272",
@@ -44,7 +44,7 @@
             },
             {
               "jp": "暗夜に光る友情",
-              "id": null
+              "id": "friendship-that-shines-in-the-darkness"
             }
           ],
           "elements": [
@@ -56,7 +56,7 @@
       "bonusMemories": [
         {
           "jp": "暗夜に光る友情",
-          "id": null
+          "id": "friendship-that-shines-in-the-darkness"
         },
         {
           "jp": "大人達の午後",
@@ -65,7 +65,7 @@
       ],
       "eventMemory": {
         "jp": "暗夜に光る友情",
-        "id": null
+        "id": "friendship-that-shines-in-the-darkness"
       }
     }
   ]

@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-13T07:48:03.510Z",
+  "fetchedAt": "2026-11-14T07:36:20.134Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-11-13T06:12:31Z",
+    "updated": "2026-11-13T12:51:53Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -4624,17 +4624,12 @@
             "end": "2026-11-20",
             "characters": [],
             "link": null
-          },
-          {
-            "title": "3rd anniversary countdown login bouns: 1000 Cubes (100 cubes per day)",
-            "kind": "campaign",
-            "end": "2026-11-20",
-            "characters": [],
-            "link": null
           }
         ],
         "newCharacters": [],
-        "newMemories": []
+        "newMemories": [
+          "Friendship That Shines in the Darkness"
+        ]
       },
       {
         "date": "2026-12-11",

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T07:49:14.659Z",
+  "fetchedAt": "2026-11-14T07:37:26.334Z",
   "source": "https://docs.google.com/spreadsheets/d/1Qpro4uWVGvTBK7mIWbYHhd82X2NjHhhu1kk-QPiCkyk/edit?gid=1101206588",
   "teams": [
     {
@@ -49,8 +49,7 @@
               "id": "this-is-justice-suguru-geto"
             },
             {
-              "id": "dont-look-down-on-me-momo-nishimiya",
-              "auto": true
+              "id": "dont-look-down-on-me-momo-nishimiya"
             }
           ]
         },
@@ -94,12 +93,10 @@
               "id": "infuse-your-cursed-energy-yuji-itadori"
             },
             {
-              "id": "crushed-with-speed-naobito-zenin",
-              "auto": true
+              "id": "crushed-with-speed-naobito-zenin"
             },
             {
-              "id": "dont-look-down-on-me-momo-nishimiya",
-              "auto": true
+              "id": "dont-look-down-on-me-momo-nishimiya"
             },
             {
               "id": "02-second-domain-expansion-satoru-gojo",
@@ -156,8 +153,7 @@
               "id": "this-is-justice-suguru-geto"
             },
             {
-              "id": "dont-look-down-on-me-momo-nishimiya",
-              "auto": true
+              "id": "dont-look-down-on-me-momo-nishimiya"
             }
           ]
         },
@@ -201,12 +197,10 @@
               "id": "infuse-your-cursed-energy-yuji-itadori"
             },
             {
-              "id": "crushed-with-speed-naobito-zenin",
-              "auto": true
+              "id": "crushed-with-speed-naobito-zenin"
             },
             {
-              "id": "dont-look-down-on-me-momo-nishimiya",
-              "auto": true
+              "id": "dont-look-down-on-me-momo-nishimiya"
             }
           ]
         }
@@ -255,8 +249,7 @@
               "id": "this-is-justice-suguru-geto"
             },
             {
-              "id": "dont-look-down-on-me-momo-nishimiya",
-              "auto": true
+              "id": "dont-look-down-on-me-momo-nishimiya"
             },
             {
               "id": "02-second-domain-expansion-satoru-gojo",
@@ -277,8 +270,7 @@
           "role": "DPS HÍBRIDO",
           "ids": [
             {
-              "id": "crushed-with-speed-naobito-zenin",
-              "auto": true
+              "id": "crushed-with-speed-naobito-zenin"
             }
           ]
         },
@@ -292,12 +284,10 @@
               "id": "infuse-your-cursed-energy-yuji-itadori"
             },
             {
-              "id": "crushed-with-speed-naobito-zenin",
-              "auto": true
+              "id": "crushed-with-speed-naobito-zenin"
             },
             {
-              "id": "dont-look-down-on-me-momo-nishimiya",
-              "auto": true
+              "id": "dont-look-down-on-me-momo-nishimiya"
             }
           ]
         }
@@ -662,10 +652,6 @@
           "role": "DPS RITUAL",
           "ids": [
             {
-              "id": "sprinting-kasumi-miwa",
-              "auto": true
-            },
-            {
               "id": "bond-of-friendship-megumi-fushiguro"
             },
             {
@@ -767,10 +753,6 @@
               "id": "a-life-entrusted-to-me-yuji-itadori"
             },
             {
-              "id": "sprinting-kasumi-miwa",
-              "auto": true
-            },
-            {
               "id": "ratio-technique-kento-nanami"
             },
             {
@@ -818,8 +800,7 @@
         },
         {
           "role": "DPS HÍBRIDO",
-          "id": "sprinting-kasumi-miwa",
-          "auto": true
+          "id": null
         },
         {
           "role": "BANQUILLO",
@@ -931,12 +912,10 @@
           "role": "AUMENTO DE DAÑO",
           "ids": [
             {
-              "id": "what-lies-at-the-end-suguru-geto",
-              "auto": true
+              "id": "step-back-third-rate-uraume"
             },
             {
-              "id": "ward-off-with-sharp-blade-atsuya-kusakabe",
-              "auto": true
+              "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
             },
             {
               "id": "incomplete-domain-megumi-fushiguro"
@@ -1016,8 +995,7 @@
         },
         {
           "role": "BANQUILLO",
-          "id": "ward-off-with-sharp-blade-atsuya-kusakabe",
-          "auto": true
+          "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
         }
       ],
       "subs": [
@@ -1033,12 +1011,10 @@
           "role": "AUMENTO DE DAÑO",
           "ids": [
             {
-              "id": "ward-off-with-sharp-blade-atsuya-kusakabe",
-              "auto": true
+              "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
             },
             {
-              "id": "what-lies-at-the-end-suguru-geto",
-              "auto": true
+              "id": "step-back-third-rate-uraume"
             },
             {
               "id": "incomplete-domain-megumi-fushiguro"
@@ -1060,8 +1036,7 @@
               "auto": true
             },
             {
-              "id": "chain-mark-full-throttle-eiji-urushi",
-              "auto": true
+              "id": "chain-mark-full-throttle-eiji-urushi"
             },
             {
               "id": "seance-toji-fushiguro",
@@ -1116,8 +1091,7 @@
         },
         {
           "role": "BANQUILLO",
-          "id": "ward-off-with-sharp-blade-atsuya-kusakabe",
-          "auto": true
+          "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
         }
       ],
       "subs": [
@@ -1129,12 +1103,10 @@
           "role": "AUMENTO DE DAÑO",
           "ids": [
             {
-              "id": "ward-off-with-sharp-blade-atsuya-kusakabe",
-              "auto": true
+              "id": "ward-off-with-sharp-blade-atsuya-kusakabe"
             },
             {
-              "id": "what-lies-at-the-end-suguru-geto",
-              "auto": true
+              "id": "step-back-third-rate-uraume"
             },
             {
               "id": "incomplete-domain-megumi-fushiguro"
@@ -1182,280 +1154,224 @@
   "unknownIcons": [
     {
       "hash": "e773af7aca591fba",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-aw2sSPnuKS2yRpiB6d7rHQnqLSr4ARTTmgBayw3N_qjAazvKEqst5wNOHgeOxCF__eg9RPV9bsyE0wjc4mfw1BnurVvYg18BOY1KeibBC4rqiA3RaiqESl6UKd54CL9BrjcqD7UmLue2NU=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-azWP8MBY46jH4S8Zw-lJQFe3NHbj0P24_bcHP2_HL63q7BDvYuIgprqw5F3ZnEvuVjLFpq-OjgBlk8iOmSNHJFojsS__j25KjTr0CSMDy5GrVp7rHl4kPXPWyRX3uml6e4fnMaebaDIHO8=w100-h100",
       "guess": "striking-eternal-summer-nobara-kugisaki",
       "score": 0.4,
       "second": "queen-of-curses-yuta-okkotsu"
     },
     {
       "hash": "e21f0f52b3db9bb4",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ax3xPUiI6gGjKyI3DmYRDwQc1YBHAItKgX6xpErBdxUdxRupRwxo09RBimjuAe7FMG51QbZh4WzbZ2crZTk4bH07f22LA032kOoZoy-XLppGwWB4yxB0bumolHg_QVg82MkxKEpRp2YlMzgdg=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayTTpRg3eAqHPhL4Qgv9UgygkZcoO8Tw_0Sby9rUqCoNhnyKyPuErvLPTBfLZaBbEgpG9bwAPcfjcU1q5C-Jy3LY_gxN0BWJahGDDVcqZWD01fNrlx46g7pfXKNYOhzk4kLvlbqnI1eGnGWdA=w100-h100",
       "guess": "pivotal-guardian-masamichi-yaga",
       "score": 0.996,
       "second": "dont-look-down-on-me-momo-nishimiya"
     },
     {
-      "hash": "4e025fac5b2cc8bf",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ax7K1oI6bEuuAL1HN8J74hzkJQ3Yk7wItQE4PEV78NzsMmJTkNNZJwupbEng6lxVnJRn06lnlaepJtDwrt2huHY00lb2BnjnTttl7xR5H6UOGrpbn25btekB0MjdP8eQOYXHAtRO6bWkGk=w100-h100",
-      "guess": "dont-look-down-on-me-momo-nishimiya",
-      "score": 0.996,
-      "second": "pivotal-guardian-masamichi-yaga"
-    },
-    {
       "hash": "a509401e3330aee0",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayn1zHPRmoD8KFW0PTaKlCNOIeMEGk1uQ4xmVIkgO3LAccE2uO0OUFad0tUbI_ElRiiCZdFxY6Zi87E-aH4RfTv7X9u3FzE-yYEp6LXtjB4pi5yTQu7Z9sRcZ-IGHMPGvz7YQQnmoamDW8Afg=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ay9zp40dvlGhnvy2yYZDwoWcCUMR1fedxUT8ogeS2Me8OVw4idxjT3lDLweYKD87dTLQFPeOPW10u_P66-4MW13ftMUzFtGtasw7cZy33tlYxrJ_6dOYETH8T-ddCpKMOb1eF--1Kop_2aa6Q=w100-h100",
       "guess": "queen-of-curses-yuta-okkotsu",
       "score": 0.995,
       "second": "early-morning-departure-maki-zenin"
     },
     {
-      "hash": "44e8350c53f67915",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awLHmoFHlzqotbRR4ebIOxNRfFokZHH6vOzOOyHJSns7sW_yNUDk8LJQbPB026h6pEgUdYLiPqO3PNJ_pQN9HK0xw_Iyo6uDiLRuCihNTH-l3Gi219snGwF4-zwv_UmsE2VAwGPBro9XBA=w100-h100",
-      "guess": "crushed-with-speed-naobito-zenin",
-      "score": 0.995,
-      "second": "genuine-jujutsu-ryomen-sukuna"
-    },
-    {
       "hash": "499ca04045c4b673",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayI_uCM0qR2TqKpSVZYQiDI99PsN4WucUQncK5K_FcD5T-UO4yRipGY9IqI75DQIKwoSGXXARCjJV03RM33fTSbgVnm1DI6pbmg2tUyJ7kolo14q2EKnYTepW1smKf5SUTCfmRC3FyyI4WlIA=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayOB-CNGB2CXm8YTA-7uEjkER0wEKRw_VBNQqFmNSYUmAkgm47cYI2MhXmS3VXfy2HUrNmBxrT0j5jJZHAog_nY0IJ_hq3RfiEqQNlwi7dSxs1kFdaUU2p6n2co7n6tfpCgOczgWCnEy0AC1g=w100-h100",
       "guess": "02-second-domain-expansion-satoru-gojo",
       "score": 0.998,
       "second": "shatter-to-pieces-toge-inumaki"
     },
     {
       "hash": "68b5e6f027839c1d",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayESqX79sFb8ACADuSfgG4k1laRoZf4joB8lWeq-rfAaHmc2T_kiXcr-roUJPMJvPusAvHwBsMBrEs5IHZW78_WrZokPwgRlNs6-YL1mNZAZ6bJYLtt_C_z2bzo72smXkyXF5zvCzQ0PMTQrQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-azIgj3hhk0lNAJSwF4umuyJScQedlG8FuijZO79IhASPZLixKyaCju6aJbtQG91XXz398_PojT5XY8U3t3RX_WOKxHOYBDQFOTZKKVPGmuA_3lyBuooDM45NnsD6wm3zdsE0blFjQzUPID1pQ=w100-h100",
       "guess": "blood-borne-resolve-noritoshi-kamo",
       "score": 0.377,
       "second": "genuine-jujutsu-ryomen-sukuna"
     },
     {
       "hash": "e21f0f52b3db9bb4",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ax3xPUiI6gGjKyI3DmYRDwQc1YBHAItKgX6xpErBdxUdxRupRwxo09RBimjuAe7FMG51QbZh4WzbZ2crZTk4bH07f22LA032kOoZoy-XLppGwWB4yxB0bumolHg_QVg82MkxKEpRp2YlMzgdg=w102-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayTTpRg3eAqHPhL4Qgv9UgygkZcoO8Tw_0Sby9rUqCoNhnyKyPuErvLPTBfLZaBbEgpG9bwAPcfjcU1q5C-Jy3LY_gxN0BWJahGDDVcqZWD01fNrlx46g7pfXKNYOhzk4kLvlbqnI1eGnGWdA=w102-h100",
       "guess": "pivotal-guardian-masamichi-yaga",
       "score": 0.996,
       "second": "dont-look-down-on-me-momo-nishimiya"
     },
     {
-      "hash": "44e8350c53f67915",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awLHmoFHlzqotbRR4ebIOxNRfFokZHH6vOzOOyHJSns7sW_yNUDk8LJQbPB026h6pEgUdYLiPqO3PNJ_pQN9HK0xw_Iyo6uDiLRuCihNTH-l3Gi219snGwF4-zwv_UmsE2VAwGPBro9XBA=w101-h100",
-      "guess": "crushed-with-speed-naobito-zenin",
-      "score": 0.995,
-      "second": "genuine-jujutsu-ryomen-sukuna"
-    },
-    {
       "hash": "00c93f4ec7ae45e9",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axNRWvC-drP4x6uF6tQZoUc4XubUqmOY3zAKFxJRMqKKhZExhzFND_Va0m4LuJjF75ekH1mOHcWYMCwjKuoHUv1VqH3bcBsn27PENtMAjLAqPmbccHRsrLrJXG-mGwtu0NKWzaGM-cvzG6I6Q=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awXgc8EIluMlCCoWI13V3jhRKFeWWLenRa_sUWr-EUIiLgSk7D1fCCur95sB1qe0x7TcwdYQ9AH9vsEktCEQkK-ffftQkQdE-Md4d942W8A1aNhohQzw5_y_Clat0wris6vi22m8ZUc_VaoqA=w100-h100",
       "guess": "rabbits-disruption-megumi-fushiguro",
       "score": 0.997,
       "second": "the-final-bullet-mai-zenin"
     },
     {
       "hash": "a8e335538354f30e",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awF53VAnlh32oNBePMbu53V7QlVxKBx3mYVXMbeeIM2OIzRq5vc9q87Pj-MkN0yeAa7HhUht1rxVI6q-1JO7JZPJWItH_juPGpLBTEdB_dSBi5tW-0rscyroZqkGPSYuKiWU1oJBzznVuIV0w=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-axt2nWtztcr8xu_zc4KyRWj0xmnO09xYVmsm4Ex6d_BI4SUyBnI8MPa5fGhfRQZJs372obj0y8KGfhoOh-_xQxVWAe5jqiW6u8_dxUbyTeP_IeiPqOfpx7JzdOROgkeLX-mCz2fM2hqjRun5Q=w100-h100",
       "guess": "unbridled-soul-mahito",
       "score": 0.995,
       "second": "tool-manipulation-momo-nishimiya"
     },
     {
       "hash": "2e4f23acf216e83a",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awRd2W8vTG307LPx_0zzLiKKtg11bpQM1Qf1bp-NZ2KdpiE5WFXelbowd8HNU55Hn6KLzI5Z9ibq0ebYKhWvwebeN6MHXcES9-KfvFuOnMJ7HpXXSEapBBMnlGay0nQJ6W_FaTULcZIXhI=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awru5ujtE-f-8Hq9KWjJt2vNyYyBMow2kmatpSvELzKIs2yKImIqnlH6ZdT0_MKfahDITUIMC5biQ82MsSjcggzJE_rAxaN_7AR4KCqLlvHwfW7K6iLv_MEVitU_bxwl4Rz1S9Lmi4s5HQ=w100-h100",
       "guess": "tool-manipulation-momo-nishimiya",
       "score": 0.997,
       "second": "a-bad-match-nobara-kugisaki"
     },
     {
       "hash": "17a62f8c631a4131",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awC_BU_AkhaqrJzC2437OEVgD6615k4YcVD4b2pMNckq4gbrTnuZzpB_TDVjtPWFyopr4qguxBXMPWD5LPNQE-msoAB3LEUvRER6FetnmjmgAL7z5dw6KqGmtW3Cdkr56jvur1EElTsczjp4g=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-azWSIx-Ujp_c2gc0b2MxudKlKi_4oWQvQY6OXlW9k_Xc_gvsYBAnvUp6g_tXLiZHLa-lK5opIglnSOjY0gz0qCpHTCy-Qrjhplo1HeJp0yjOD-p81R1YLgld1glSOceziLDCzR4nHecYzI_UQ=w100-h100",
       "guess": "the-golden-age-of-jujutsu-noritoshi-kamo",
       "score": 0.997,
       "second": "rabbits-disruption-megumi-fushiguro"
     },
     {
       "hash": "f9b08f42bf37691b",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-az7ltw42MqTvqBCYqBYVcG4OediXj-TE1QBFerZrowCcS82q8CHW5PVISHRUreGEyfQK_RHQ95EN1Hq8LS8iozTBUEtC89QSRKk5vAiqCmhDW91xp0ed03QmNxgTDVvNtzD3kvl0fzQMdY=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-axECrrZTtX9cuQg9TrnitfkTl08duTkVFcV8FZ23DxDwj4-_j6ciinXP4OEniCCcq3LY6S_bwzHFy37BA8pqO0Hmt9ZldO_7EhoeGyOCuu1JmZkZx5yuYEJiYXkjQ4gweS0L4UzN6DUxDE=w100-h100",
       "guess": "ex-office-worker-turned-jujutsu-sorcerer-kento-nanami",
       "score": 0.996,
       "second": "the-sorcerer-killer-toji-fushiguro"
     },
     {
       "hash": "de81fb132adb869b",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-aw1afqxZTQsGewu_GxPgEY4GTuvWXHC-pRrikvFnSZddOzeV7puvzKjIV0fdU2k0bGxwkikiVrZochoXS7diF7Ea09b07RZcEGuWHiUqbYk9jgzUUiozFxvgFFQweqXFNfy-Ehh-I9zprwvsQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awwUCSETI33Bpr1C3LP4LAJMkZjIH1kNoAeowSLsndrfbnVVOjKUlg2BPcz8CkMxDWhKjp9quzqGQuSqHFlS-aKnx4D-Mije8AJ_mPFfLfLT5YjmRXLBJA9EAUBufqnRwOlJHNtptNuwEbQJg=w100-h100",
       "guess": "ariadnes-thread-educator-masamichi-yaga",
       "score": 0.997,
       "second": "the-sorcerer-killer-toji-fushiguro"
     },
     {
       "hash": "607286113e92177f",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayffLFfO1FDwFH8ntjwEk6Q1kPhjvb7si9LVOZ6lm_zu04YotF6dGQEA_1RHU3byH_wUiWpubC6L61HtJuYg5U9-JgnsdrEJPzYE6NO4fp8GrkeE7LqJu8MW7j3LA5TkqJGlncaOYtaJAlvBQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-axkCtQKfLuJobcfuvzRR4iZh4PA8kL3DPl40jvl6YOeiMIUDKlsqXHu-M9pe47n4VOOh7QeqERn8RyKRV5ZuXV-os_FuovjrRJDYDKxJLDREw8qirpq33cdJdWjJC0KYkMX20i8KsWAIqx-fw=w100-h100",
       "guess": "meteor-of-fierceness-jogo",
       "score": 0.998,
       "second": "crafty-rock-yoshinobu-gakuganji"
     },
     {
       "hash": "5b08d5fbc7aa2453",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-azlDh1xPc3RqbozeDuByoO0afk4DgF7UqV0Ns08akozY-KJwjMh-VHji8yY_pSU6UI5ZjDskN5CviyuTr98Wd0zEeip-EURABFXpNLR6Tk5whoGI5XNKGBHUd0AFkDd56ZASW1J-6Xm0As=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-azIE-rtHgjTPfEDjWhakfaKrVYJpoQaGKkOOyKK7vO0clEOeEyHlGbuzlgPX7cTFXKmVgVAKgh5VH8Bji-O9Q2gcX6pfonFIdi6ZkTeyfE5BDvakfL41BzvyLA-mpdvurSlvTeamzXi2fs=w100-h100",
       "guess": "maximum-cursed-energy-output-yuji-itadori",
       "score": 0.997,
       "second": "a-bad-match-nobara-kugisaki"
     },
     {
       "hash": "00c93f4ec7ae45e9",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axNRWvC-drP4x6uF6tQZoUc4XubUqmOY3zAKFxJRMqKKhZExhzFND_Va0m4LuJjF75ekH1mOHcWYMCwjKuoHUv1VqH3bcBsn27PENtMAjLAqPmbccHRsrLrJXG-mGwtu0NKWzaGM-cvzG6I6Q=w98-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awXgc8EIluMlCCoWI13V3jhRKFeWWLenRa_sUWr-EUIiLgSk7D1fCCur95sB1qe0x7TcwdYQ9AH9vsEktCEQkK-ffftQkQdE-Md4d942W8A1aNhohQzw5_y_Clat0wris6vi22m8ZUc_VaoqA=w98-h100",
       "guess": "rabbits-disruption-megumi-fushiguro",
       "score": 0.997,
       "second": "the-final-bullet-mai-zenin"
     },
     {
       "hash": "2e4f23acf216e83a",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awRd2W8vTG307LPx_0zzLiKKtg11bpQM1Qf1bp-NZ2KdpiE5WFXelbowd8HNU55Hn6KLzI5Z9ibq0ebYKhWvwebeN6MHXcES9-KfvFuOnMJ7HpXXSEapBBMnlGay0nQJ6W_FaTULcZIXhI=w102-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awru5ujtE-f-8Hq9KWjJt2vNyYyBMow2kmatpSvELzKIs2yKImIqnlH6ZdT0_MKfahDITUIMC5biQ82MsSjcggzJE_rAxaN_7AR4KCqLlvHwfW7K6iLv_MEVitU_bxwl4Rz1S9Lmi4s5HQ=w102-h100",
       "guess": "tool-manipulation-momo-nishimiya",
       "score": 0.997,
       "second": "a-bad-match-nobara-kugisaki"
     },
     {
       "hash": "a8e335538354f30e",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awF53VAnlh32oNBePMbu53V7QlVxKBx3mYVXMbeeIM2OIzRq5vc9q87Pj-MkN0yeAa7HhUht1rxVI6q-1JO7JZPJWItH_juPGpLBTEdB_dSBi5tW-0rscyroZqkGPSYuKiWU1oJBzznVuIV0w=w101-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-axt2nWtztcr8xu_zc4KyRWj0xmnO09xYVmsm4Ex6d_BI4SUyBnI8MPa5fGhfRQZJs372obj0y8KGfhoOh-_xQxVWAe5jqiW6u8_dxUbyTeP_IeiPqOfpx7JzdOROgkeLX-mCz2fM2hqjRun5Q=w101-h100",
       "guess": "unbridled-soul-mahito",
       "score": 0.995,
       "second": "tool-manipulation-momo-nishimiya"
     },
     {
       "hash": "de81fb132adb869b",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-aw1afqxZTQsGewu_GxPgEY4GTuvWXHC-pRrikvFnSZddOzeV7puvzKjIV0fdU2k0bGxwkikiVrZochoXS7diF7Ea09b07RZcEGuWHiUqbYk9jgzUUiozFxvgFFQweqXFNfy-Ehh-I9zprwvsQ=w102-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awwUCSETI33Bpr1C3LP4LAJMkZjIH1kNoAeowSLsndrfbnVVOjKUlg2BPcz8CkMxDWhKjp9quzqGQuSqHFlS-aKnx4D-Mije8AJ_mPFfLfLT5YjmRXLBJA9EAUBufqnRwOlJHNtptNuwEbQJg=w102-h100",
       "guess": "ariadnes-thread-educator-masamichi-yaga",
       "score": 0.997,
       "second": "the-sorcerer-killer-toji-fushiguro"
     },
     {
       "hash": "0a263e3694721c17",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ax9rZbweMM89uAT2J9MNw74hPmg7OOQYQD3Z0BOTI2LK9M_1eg-h2YL1F0asFwBG2zOB526Qv0Pr701w__Ry_o3ju-BcdqcU1MmR2gOCU4_zY7fIzpou5j8wSL4T7F-v-nYv7-FEfGWsdezCQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayOzuDdFdP-2ilNwZQ8KSh0Cf-s9xvBZMW2DNnbr2R0cdv-SUmMm40Ua813DvXcEgGcCQ_DrTVrVwAgoEHUw3W7OwLHmsXrzN9WPUnWZRFmKz-4o_7jcbeXJFjXQz2tkFdOigcuLb7iBqju3Q=w100-h100",
       "guess": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
       "score": 0.997,
       "second": "sprinting-kasumi-miwa"
     },
     {
       "hash": "a926bd6ec9c4e66f",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-azlZmiAnPsxqPRq61VKQ9Do7PBdMW_sTAfWVaRR50Wwo7gND9MFJ5Pqn6cxVPcwN9fOooBYXYhJGSaoeqG8SmrYQZGgDNUCZ2NhEbBrZ5pugI1ri29VnN6Qg9O66TbrXIO6_Ypiauzeb_XCQQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ay0xPA-mUaNuQAm20wYvMDdIQ2_ip6lVz1t5BC3r__MTOfc07E-Q2SdVr2UNoOMsh96aJJKqoLkTTAKPjFBlR3kPAREs4JLHnkCClDWwsy9fDeaqDPWPY25JlHNK9h2kmHNqs7eqvga_y0k4g=w100-h100",
       "guess": "are-you-satisfied-with-that-aoi-todo",
       "score": 0.465,
       "second": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
     },
     {
       "hash": "3ba0fd5787fc8d60",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ay0Ll3sTrNKPKZRAK03ZfLL4ABTxy_wiu5ILoSKmc_fXYfrRqjAzZ-45tubLSftXLyRLlliCaUghz94kbBRUkpH7kscL9xyMeSs0j4E5XsA3aQ6HwgCJLc6Ale2cEbaYYp-LLDWu52KvmnWBw=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awdgEDsJIhAofw52fm3AriWCs66DLw-tDdgBLkWdZZ84qn7VirZWvt5ZcmnQA2t3liRxEZgtB0kSp2U95rW9g0Qw_buKRWOawDMrF4q6uf7N4BVYip4KDzdiUYPl-E-SQJoY1__UZbcun8-UA=w100-h100",
       "guess": "the-resolve-of-being-a-sorcerer-kaito-yuuki",
       "score": 0.522,
       "second": "inspiration-from-death-mahito"
     },
     {
       "hash": "f61352fedc91cf4f",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awruZuMMvXxA-mVR4_H8P3T4E8VpHpQKQ-yhjtzXvixIW8LOqhzS2IzXn0O27jEkHgqDdDz9Er7DfEJ7urcapxM6MPREOh2j6e56AuHFxqxbTCaRzbmz3Drwk0ZfX3v7MF40AnQdEBCZTM4Kw=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awUQfdx5fcLmMxMMYIxptx02lTPB-C7ByMa4SnNG8361D7JypJkXqsM4BOcEdhV9af5EFqkX4GuVg-48g1oSdxXjUQCukd9qNZ_z1fIRfOTW6jGqsbnd2uWAamwjwaabZp154SFD-TXBpPn3g=w100-h100",
       "guess": "cursed-energy-melody-yoshinobu-gakuganji",
       "score": 0.516,
       "second": "a-life-entrusted-to-me-yuji-itadori"
     },
     {
-      "hash": "d96b298e988c5fdd",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-azUYpLcRx3heH8obkYxoqfhO0RvO8hPpEasNj6LTKiyclmwSBcJGF2mKLb2pm4JpK9Vv5DuAwFkkWLN9kEUkTJ6kd6XI76HtQThbBLkraPmDO7F-RX1lY5pdJgPy3CBGBOaVZzSUGpJLaaJvQ=w100-h100",
-      "guess": "sprinting-kasumi-miwa",
-      "score": 0.285,
-      "second": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
-    },
-    {
       "hash": "a19289cd5ad76ec3",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-aycICTNoUMifC8IWvOXyJcnGO8eNzOhjVpMK3MKjRagxonxb2IP4q7BoyEMG-YVxL_lZ29k9sb9q2ChL3uMkAOpvIyon14ZPoui-DTQDZlcn4eN1R5KABmg4ERxb_rdGv2Z4gGB5U2HmSQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-aw-wEtYiVJ-HDCiU0TAHHzIuZaypx-0xX2tQXgGQB2YrbM7oOM8oJiC8qV3oghwgNPAusDVYM8FJDE9POAJmKmYEHZPjsbrGLad7qt9Nk2KNoAd3HfUD2qguT0DpACt_BEaOwRTCjddcyA=w100-h100",
       "guess": "are-you-satisfied-with-that-aoi-todo",
       "score": 0.997,
       "second": "the-resolve-of-being-a-sorcerer-kaito-yuuki"
     },
     {
       "hash": "0a263e3694721c17",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ax9rZbweMM89uAT2J9MNw74hPmg7OOQYQD3Z0BOTI2LK9M_1eg-h2YL1F0asFwBG2zOB526Qv0Pr701w__Ry_o3ju-BcdqcU1MmR2gOCU4_zY7fIzpou5j8wSL4T7F-v-nYv7-FEfGWsdezCQ=w98-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayOzuDdFdP-2ilNwZQ8KSh0Cf-s9xvBZMW2DNnbr2R0cdv-SUmMm40Ua813DvXcEgGcCQ_DrTVrVwAgoEHUw3W7OwLHmsXrzN9WPUnWZRFmKz-4o_7jcbeXJFjXQz2tkFdOigcuLb7iBqju3Q=w98-h100",
       "guess": "enjoying-the-cool-summer-breeze-megumi-fushiguro",
       "score": 0.997,
       "second": "sprinting-kasumi-miwa"
     },
     {
-      "hash": "d96b298e988c5fdd",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-azUYpLcRx3heH8obkYxoqfhO0RvO8hPpEasNj6LTKiyclmwSBcJGF2mKLb2pm4JpK9Vv5DuAwFkkWLN9kEUkTJ6kd6XI76HtQThbBLkraPmDO7F-RX1lY5pdJgPy3CBGBOaVZzSUGpJLaaJvQ=w101-h100",
-      "guess": "sprinting-kasumi-miwa",
-      "score": 0.285,
-      "second": "enjoying-the-cool-summer-breeze-megumi-fushiguro"
-    },
-    {
       "hash": "f4e4520fa83e8a3b",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axBmAHaUpfzim-luLrfVp7UUa3yeX-WvKITOEwbdY_ZfM_X7YGnHgWmdzhGjZ1xEog0CIci4SVyVH-Xyr-hNHO0DM4jBwpg71f_AGvJXkpzetkp3cKof47awbL3KupUoy9d0XyuFYPiDOA=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awaRNy3Cs291IIeydFHZ5X_FE6PsH_VVW4KXx5lUb1MUn69VD377cq7Nzb9fA6X9WboPEPEX2_v0_pmzALn7b4DzGib7fgove2wNU-A2oqBxFYYtfT4iz_6A7_JN1_ysOjQneDHLBJ1QTA=w100-h100",
       "guess": "melting-sweet-summer-treats-satoru-gojo",
       "score": 0.215,
       "second": "the-strongest-blue-satoru-gojo"
     },
     {
       "hash": "e395c6e8fdd3eb29",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayDSklJk76bhXPF8c0V87l-AT_iAnqHbGJc1aaePO1VC_D22GSrUcqkDp4rqJ7ccqpT1TnuERxqzAEiZVtYfkAtwsg6FuAdYkT7jrvexS7rQza9EsxS0U_FB357U7frDo3KgRqoxHarzid3jQ=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-axhtlSM8g2be8WrnA4shhguDx-D8ugLNrwK0EHeJ1C7ba23dGGpNzRjO4IIcuRrVzW7JZ-pOPdBBMQ1tO0vv_wk5ptf2ggSFbWjncpmQCwaQmacAaMaem-xM2UptVFddKCNi1mxluWTzGFmbw=w100-h100",
       "guess": "battle-of-firepower-ryomen-sukuna",
       "score": 0.996,
       "second": "zone-yuji-itadori"
     },
     {
-      "hash": "d0a5d03d9cea7713",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awy2Gu0vppZC1gmkQXNVtbPTj3NMq60OVOfP5z_PNIkn6ztGBP3NMELUOGxnHaDFVa38ASVX8kfbj3Ex9OjAvna_hJLFhEL3Y50Db3Z0OTFpl-wuDEv9Wih08YxC0qRaecUP7bzFYOmun9nsw=w100-h100",
-      "guess": "what-lies-at-the-end-suguru-geto",
-      "score": 0.344,
-      "second": "with-that-will-in-mind-kaito-yuki"
-    },
-    {
-      "hash": "cfb87caa1751178a",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-azqjl_s6tZOduZyngBNtv3-NqxDqbURSxI1alB5pvFEZGaRAzb7LbgtsR0jp_tG1tpeNqdLWXhMld6DlayCcbibc7aWomA6lr5_2TjVPhLh7TIRTh0xgo0oI65w4rVg0M8mk-XyH7BZ7XI=w100-h100",
-      "guess": "ward-off-with-sharp-blade-atsuya-kusakabe",
-      "score": 0.996,
-      "second": "zone-yuji-itadori"
-    },
-    {
       "hash": "882fbf32bb42b7c5",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axwNyeDkkzmRp-TqyAZugXSoauLR-6FuUVJUWVbjAZ8uK3AvmC2k_Kahtfez83NlPdR9c3VVX2d8lJVK-nlbaG0UUBL5VSTZPIWtYynDeqwbN4VwzupwgVQS_V_6PEXEmo9mPfq7oPErDh-8w=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awzPTPr49Sgr-LFRolxGwFPiUWo0I1Y4M3w2wct5F9tDNJfMGmqOs42s7CIogmghmTxbclb_PKiWZQ0tb83Afd9tbxyG-CS_0BydbVJuMO5oHBVITqJ6xxxHMyi6XdbBlSjp61-qP1X5xTxSA=w100-h100",
       "guess": "executioner-yuta-okkotsu",
       "score": 0.997,
       "second": "with-that-will-in-mind-kaito-yuki"
     },
     {
       "hash": "3e034f9990fca1e0",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axMW1wy4pdoxjdU5N_23-xpfDH91DAtoi90UdMApPcfSX0RHFMMPILzZCx1cJb_6z4fl26FHZpL090KzU9IGpA1nCdyfMQ8oYJuu32YbZLsVxSDVnIg407uhgb01T_YM2wPng7PNEgnNSMUQw=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayHo_B5W2xqrhJricohLY_JFahgcj8pMLD_6dCQjrNY9JOvO5JlOHa0W-6C7dcJsAw_lIE_f0iC_5V-yTDqFjhvmTRUUCjsnZuY7fGvjjbwsuK2XQ86L9bV8G5L5rJtXXy74w1c5p56-DnW6Q=w100-h100",
       "guess": "girl-of-steel-nobara-kugisaki",
       "score": 0.996,
       "second": "zone-yuji-itadori"
     },
     {
       "hash": "0d4b82fc4e373eb5",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-awOLihLkWZGQdxBkxf6wRLqwm7T0xqwuTi7_AMQrqT8imF5dcANk5EO00GneONGLQw5TaqxU-jhmfMH94qZ7PnMkIAJbGSYjyUgKmwPO9o8vaOLyiISw-H5WfkKvqdf_6iyg8IwxShiqLjgsw=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-ax6sm45PfVtw3f8YEO1BVkEHZI0SeUYsm6DeUAqtUoH7qicaLJIL-pQc6JdXhV6ByIubqm75BBwnwpXZvG3d9F3FOTL-sjO4C9BVTyZsvoa7KtJGk9NL8UeVxpuwkzyEuVROnUuAKk-XyAu7A=w100-h100",
       "guess": "battle-of-firepower-ryomen-sukuna",
       "score": 0.528,
       "second": "zone-yuji-itadori"
     },
     {
-      "hash": "a9e74bbb5d8cf9f4",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-ayGrfoYmWHhQsmvUL3ZouHdN7Jwq0V1KDjNd8dKcFsRWNP8xv8cdve5wJY7LCV3DDj-uar0PM5lDd4gmY35n0_tS9TGZccsK9-0qRqY1m_c53OFDBqnabXg_MBVkqWtuPloFuDfj1b8WKUkHg=w100-h100",
-      "guess": "chain-mark-full-throttle-eiji-urushi",
-      "score": 0.996,
-      "second": "young-fish-and-reverse-punishment-junpei-yoshino"
-    },
-    {
       "hash": "0d28d189b361241c",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-aym_1QJC5p2nbxx15P0chAbbdadEZPie6sMnTAJxVszY311OKcZdJDpg90njMgy890gOvfWa9cLwSmfwoy0L71lpIoK93PnKBkozfthRVPukeFLV8vOiv_aFvoGYRgd3BFeL3tsl4t4ldo=w100-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awGf9EL9qOXtKF0Z-s4d8xxthneYxkmGjAi_gHC4xD0OlqMKGjy2F1wcMBV0jujBYa7uXzWFlbBWwcHI-mlVeM_1DRC5pez9ZTPvzEdTMUQT4clVurqZdaMx8-1DoU12tpMqIxLQYydjl0=w100-h100",
       "guess": "seance-toji-fushiguro",
       "score": 0.996,
       "second": "cursed-technique-boost-kaito-yuki"
     },
     {
       "hash": "f4e4520fa83e8a3b",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axBmAHaUpfzim-luLrfVp7UUa3yeX-WvKITOEwbdY_ZfM_X7YGnHgWmdzhGjZ1xEog0CIci4SVyVH-Xyr-hNHO0DM4jBwpg71f_AGvJXkpzetkp3cKof47awbL3KupUoy9d0XyuFYPiDOA=w102-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awaRNy3Cs291IIeydFHZ5X_FE6PsH_VVW4KXx5lUb1MUn69VD377cq7Nzb9fA6X9WboPEPEX2_v0_pmzALn7b4DzGib7fgove2wNU-A2oqBxFYYtfT4iz_6A7_JN1_ysOjQneDHLBJ1QTA=w102-h100",
       "guess": "melting-sweet-summer-treats-satoru-gojo",
       "score": 0.215,
       "second": "the-strongest-blue-satoru-gojo"
     },
     {
       "hash": "882fbf32bb42b7c5",
-      "url": "https://docs.google.com/sheets-images-rt/ADdU-axwNyeDkkzmRp-TqyAZugXSoauLR-6FuUVJUWVbjAZ8uK3AvmC2k_Kahtfez83NlPdR9c3VVX2d8lJVK-nlbaG0UUBL5VSTZPIWtYynDeqwbN4VwzupwgVQS_V_6PEXEmo9mPfq7oPErDh-8w=w101-h100",
+      "url": "https://docs.google.com/sheets-images-rt/ADdU-awzPTPr49Sgr-LFRolxGwFPiUWo0I1Y4M3w2wct5F9tDNJfMGmqOs42s7CIogmghmTxbclb_PKiWZQ0tb83Afd9tbxyG-CS_0BydbVJuMO5oHBVITqJ6xxxHMyi6XdbBlSjp61-qP1X5xTxSA=w101-h100",
       "guess": "executioner-yuta-okkotsu",
       "score": 0.997,
       "second": "with-that-will-in-mind-kaito-yuki"
