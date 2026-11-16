@@ -2,10 +2,10 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-15T07:38:52.704Z",
+  "fetchedAt": "2026-11-16T09:17:42.927Z",
   "timelineJP": {
     "url": "https://jjk-phantom-parade.fandom.com/wiki/Timeline_Of_Events_(JP)",
-    "updated": "2026-11-13T12:51:53Z",
+    "updated": "2026-11-16T01:28:35Z",
     "days": [
       {
         "date": "2023-11-21",
@@ -3953,6 +3953,13 @@
             "link": null
           },
           {
+            "title": "Story Event: Blue Splashing by the Shore Part 2",
+            "kind": "event",
+            "end": "2026-06-17",
+            "characters": [],
+            "link": null
+          },
+          {
             "title": "2.5th Anniversary Character/Memory Selectable Ticket Pack",
             "kind": "event",
             "end": "2026-06-29",
@@ -4632,8 +4639,221 @@
         ]
       },
       {
+        "date": "2026-11-15",
+        "items": [
+          {
+            "title": "Limited-Time Character Selective Gacha",
+            "kind": "gacha",
+            "end": "2026-12-07",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-11-16",
+        "items": [
+          {
+            "title": "3rd Anniversary Selective Gacha: Daily Free 10 Pull",
+            "kind": "gacha",
+            "end": "2026-12-23",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "End Date: 14/12/2026",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Limited-Time Gacha Part 2: Executioner",
+            "kind": "gacha",
+            "end": "2026-12-14",
+            "characters": [
+              "executioner-yuta-okkotsu"
+            ],
+            "link": null
+          },
+          {
+            "title": "Story Event: Overlapping Twin Shadows",
+            "kind": "event",
+            "end": "2026-12-23",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Main Story 0 AP Cost Campaign",
+            "kind": "campaign",
+            "end": "2026-11-26",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-11-21",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: 3rd Anniversary Part 1",
+            "kind": "gacha",
+            "end": "2027-01-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Part 1 Tickets: Login Bonus & Serial Code",
+            "kind": "campaign",
+            "end": "2027-01-03",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Where Reality and Illusion Intertwine Part 1",
+            "kind": "event",
+            "end": "2026-12-05",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "3rd Anniversary Login Bonus",
+            "kind": "campaign",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "3rd Anniversary Gift: 3000 Cubes",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "\"Movie-Limited\" Category Removal",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Standard Banner Update 5",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "3rd Anniversary Paid Gacha: SSR Character/Memory Guaranteed",
+            "kind": "gacha",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "SP Hidden Potential: Sixth Batch",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Reminiscence Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Free AP Recovery: 3 Times Per Day",
+            "kind": "event",
+            "end": "2026-12-07",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Friend Invitation Reset",
+            "kind": "event",
+            "end": "2027-05-20",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-11-30",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: 3rd Anniversary Part 2",
+            "kind": "gacha",
+            "end": "2027-01-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Part 2 Tickets: Login Bonus & Serial Code",
+            "kind": "campaign",
+            "end": "2027-01-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Event: Where Reality and Illusion Intertwine Part 2",
+            "kind": "event",
+            "end": "2027-01-11",
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "Story Reminiscence Update",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          },
+          {
+            "title": "3rd Anniversary Character/Memory Selectable Ticket Pack",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
+        "date": "2026-12-08",
+        "items": [
+          {
+            "title": "Limited-Time Gacha: 3rd Anniversary Part 3",
+            "kind": "gacha",
+            "end": "2027-01-11",
+            "characters": [],
+            "link": null
+          }
+        ],
+        "newCharacters": [],
+        "newMemories": []
+      },
+      {
         "date": "2026-12-11",
-        "items": [],
+        "items": [
+          {
+            "title": "End Date: N/A",
+            "kind": "event",
+            "end": null,
+            "characters": [],
+            "link": null
+          }
+        ],
         "newCharacters": [],
         "newMemories": []
       }

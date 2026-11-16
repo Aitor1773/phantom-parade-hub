@@ -1,6 +1,54 @@
 {
- "fetchedAt": "2026-11-15T07:39:19.092Z",
+ "fetchedAt": "2026-11-16T09:18:21.370Z",
  "items": [
+  {
+   "key": "8f07df7b1932",
+   "title": "３ストーリーイベント",
+   "kind": "event",
+   "start": "2026-11-16T15:00:00+09:00",
+   "end": null,
+   "chars": [],
+   "widths": [
+    400,
+    960
+   ]
+  },
+  {
+   "key": "4826e4f73f51",
+   "title": "限定キャラピックアップガチャ1弾",
+   "kind": "gacha",
+   "start": "2026-11-16T15:00:00+09:00",
+   "end": null,
+   "chars": [],
+   "widths": [
+    400,
+    897
+   ]
+  },
+  {
+   "key": "514a09031f7a",
+   "title": "限定ガチャ",
+   "kind": "gacha",
+   "start": "2026-11-16T15:00:00+09:00",
+   "end": null,
+   "chars": [],
+   "widths": [
+    400,
+    896
+   ]
+  },
+  {
+   "key": "fc4b9ccb35be",
+   "title": "毎日無料セレクトガチャ",
+   "kind": "gacha",
+   "start": "2026-11-16T15:00:00+09:00",
+   "end": null,
+   "chars": [],
+   "widths": [
+    400,
+    960
+   ]
+  },
   {
    "key": "d8be7bbe4be4",
    "title": "強敵連戦",
@@ -42,6 +90,19 @@
    "widths": [
     400,
     960
+   ]
+  },
+  {
+   "key": "1a10b417f1f9",
+   "title": "ファンパレガチャ",
+   "kind": "gacha",
+   "start": "2026-11-11T15:00:00+09:00",
+   "end": "2026-11-25T14:59:00+09:00",
+   "chars": [],
+   "standard": true,
+   "widths": [
+    400,
+    900
    ]
   },
   {
@@ -137,19 +198,6 @@
    "widths": [
     400,
     960
-   ]
-  },
-  {
-   "key": "1a10b417f1f9",
-   "title": "ファンパレガチャ",
-   "kind": "gacha",
-   "start": null,
-   "end": null,
-   "chars": [],
-   "standard": true,
-   "widths": [
-    400,
-    900
    ]
   },
   {

@@ -2,7 +2,7 @@
   "source": "wiki",
   "license": "CC BY-SA 3.0",
   "attribution": "JJK Phantom Parade Wiki (Fandom)",
-  "fetchedAt": "2026-11-15T07:38:36.296Z",
+  "fetchedAt": "2026-11-16T09:17:25.132Z",
   "count": 112,
   "items": [
     {
@@ -3910,7 +3910,7 @@
       "element": "blue",
       "role": "Obstructor",
       "focus": "Mixed",
-      "availability": "collab",
+      "availability": "limited",
       "affiliation": "Curse Users",
       "releaseDateJP": "2024-12-13",
       "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/9/91/BlueSSRMiguelArt1.gif/revision/latest?cb=20241213194837",
@@ -4115,8 +4115,8 @@
       "_source": {
         "source": "wiki",
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(Delayed_Quota)_Miguel",
-        "revid": 9730,
-        "updated": "2025-10-31T13:45:46Z"
+        "revid": 11550,
+        "updated": "2026-11-16T01:07:51Z"
       }
     },
     {
@@ -8051,7 +8051,7 @@
       "element": "red",
       "role": "Attacker",
       "focus": "Mixed",
-      "availability": "collab",
+      "availability": "limited",
       "affiliation": "Year 1 Tokyo Jujutsu High",
       "releaseDateJP": "2023-12-15",
       "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/d/de/RedYutaSSRArt1.gif/revision/latest?cb=20231218002327",
@@ -8281,8 +8281,8 @@
       "_source": {
         "source": "wiki",
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(Lend_Me_Your_Power)_Yuta_Okkotsu",
-        "revid": 10792,
-        "updated": "2026-05-07T16:47:59Z"
+        "revid": 11548,
+        "updated": "2026-11-16T01:07:27Z"
       }
     },
     {
@@ -11133,7 +11133,7 @@
       "element": "blue",
       "role": "Attacker",
       "focus": "Mixed",
-      "availability": "collab",
+      "availability": "limited",
       "affiliation": "Tokyo Jujutsu High Year 1",
       "releaseDateJP": "2025-10-18",
       "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/b/b3/BlueSSRYutaArt1.gif/revision/latest?cb=20251020184359",
@@ -11290,8 +11290,8 @@
       "_source": {
         "source": "wiki",
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(Queen_of_Curses)_Yuta_Okkotsu",
-        "revid": 10561,
-        "updated": "2026-03-26T09:36:54Z"
+        "revid": 11551,
+        "updated": "2026-11-16T01:08:05Z"
       }
     },
     {
@@ -15254,7 +15254,7 @@
       "element": "blue",
       "role": "Attacker",
       "focus": "Mixed",
-      "availability": "collab",
+      "availability": "limited",
       "affiliation": "Curse Users",
       "releaseDateJP": "2023-12-18",
       "art": "https://static.wikia.nocookie.net/jjk-phantom-parade/images/3/3b/BlueGetoSSRArt1.gif/revision/latest?cb=20231218002326",
@@ -15476,8 +15476,8 @@
       "_source": {
         "source": "wiki",
         "url": "https://jjk-phantom-parade.fandom.com/wiki/(This_Is_Justice)_Suguru_Geto",
-        "revid": 9725,
-        "updated": "2025-10-31T10:59:40Z"
+        "revid": 11549,
+        "updated": "2026-11-16T01:07:39Z"
       }
     },
     {

@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-15T07:46:09.716Z",
+ "fetchedAt": "2026-11-16T09:26:31.721Z",
  "stages": {
   "illusory-tower-diverse/1": {
    "power": 78300,
@@ -871,7 +871,7 @@
     "blue",
     "yellow"
    ],
-   "modified": "2026-05-16T19:41:58.000+09:00"
+   "modified": "2026-11-15T19:42:28.000+09:00"
   },
   "illusory-tower/76": {
    "power": 187500,
@@ -1346,6 +1346,14 @@
   }
  },
  "changed": [
+  {
+   "key": "illusory-tower/75",
+   "name": "Piso 75",
+   "url": "https://game8.jp/jujutsuphanpara/684052",
+   "why": [
+    "página actualizada el 2026-11-15"
+   ]
+  },
   {
    "key": "sp-battle/choso",
    "name": "Choso",
