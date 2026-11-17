@@ -45,7 +45,7 @@ export function Placeholder({ name, size = 'md' }: { name: string; size?: 'md' |
   return (
     <div
       className="relative h-full w-full overflow-hidden"
-      style={{ background: 'radial-gradient(120% 80% at 70% 15%, color-mix(in srgb, var(--el) 38%, transparent), transparent 60%), linear-gradient(160deg, #22130e, #0b0605)' }}
+      style={{ background: 'radial-gradient(120% 80% at 70% 15%, color-mix(in srgb, var(--el) 38%, transparent), transparent 60%), linear-gradient(160deg, #22130e, #08060d)' }}
       aria-hidden="true"
     >
       <div
@@ -151,7 +151,7 @@ export default function CharacterBrowser({ items, basePath, labels, options }: P
           </label>
           <button type="button" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters} className="btn-secondary h-10 lg:hidden">
             {labels['db.filters']}
-            {activeCount > 0 && <span className="grid size-5 place-items-center rounded-full bg-ember text-[11px] text-ash">{activeCount}</span>}
+            {activeCount > 0 && <span className="grid size-5 place-items-center rounded-full bg-ember text-[11px] text-bone">{activeCount}</span>}
           </button>
           <label className="flex h-10 items-center gap-2 rounded-lg border border-line bg-coal pl-3 text-sm text-dust">
             <span className="hidden sm:inline">{labels['db.sort']}</span>
@@ -208,7 +208,7 @@ export default function CharacterBrowser({ items, basePath, labels, options }: P
               <a
                 href={`${basePath}/${c.id}`}
                 className="group relative block overflow-hidden rounded-xl border border-line bg-coal transition duration-300 hover:-translate-y-1 hover:border-line-strong"
-                style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#ff5a1f' }}
+                style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#e3263f' }}
               >
                 <div className="relative aspect-[3/4] overflow-hidden bg-cinder">
                   {c.img ? (

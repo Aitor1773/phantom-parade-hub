@@ -2,28 +2,29 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/cinzel';
 
-/* ─── Design system "Fuga" ─────────────────────────────────────────
-   Inspirado en el Fuga de Sukuna: ceniza casi negra, brasas naranjas,
-   llama dorada y rojo carmesí. Los tokens viven aquí y Tailwind los
-   expone como utilidades (bg-ember, text-flame, border-line…). */
+/* ─── Design system "Jardín de sombras" ───────────────────────────
+   Inspirado en el Dominio incompleto de Megumi Fushiguro: negro violáceo de
+   las sombras, carmesí de la sangre, violeta del agua de sombra y el blanco
+   lila de sus salpicaduras. Los nombres de los tokens (ember, flame, spark…)
+   se conservan; sus valores son los de esta paleta. */
 @theme {
-  --color-ash: #0b0605;
-  --color-coal: #160c09;
-  --color-cinder: #22130e;
-  --color-char: #2d1a12;
-  --color-line: #3a1f16;
-  --color-line-strong: #5a3121;
+  --color-ash: #08060d;
+  --color-coal: #110c18;
+  --color-cinder: #191222;
+  --color-char: #21182b;
+  --color-line: #2c2138;
+  --color-line-strong: #463352;
 
-  --color-ember: #ff5a1f;
-  --color-ember-deep: #d9420f;
-  --color-flame: #ffb627;
-  --color-spark: #ffe27a;
+  --color-ember: #e3263f;
+  --color-ember-deep: #a8142a;
+  --color-flame: #a78bfa;
+  --color-spark: #e9e2f7;
   --color-crimson: #c8102e;
-  --color-blood: #7a0f1c;
+  --color-blood: #6b0a1c;
 
-  --color-bone: #f5e9e0;
-  --color-dust: #b89a8a;
-  --color-smoke: #7d6458;
+  --color-bone: #ece7f4;
+  --color-dust: #aca1bf;
+  --color-smoke: #786b8a;
 
   /* Rarezas del juego */
   --color-rarity-ssr: #ffb627;
@@ -63,14 +64,14 @@
   body {
     min-height: 100dvh;
     background:
-      radial-gradient(1200px 600px at 85% -10%, rgb(255 90 31 / 0.10), transparent 60%),
-      radial-gradient(900px 500px at -10% 110%, rgb(200 16 46 / 0.08), transparent 60%),
+      radial-gradient(1200px 600px at 85% -10%, rgb(124 92 196 / 0.14), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgb(200 16 46 / 0.09), transparent 60%),
       var(--color-ash);
     background-attachment: fixed;
   }
 
   ::selection {
-    background: rgb(255 90 31 / 0.35);
+    background: rgb(227 38 63 / 0.35);
     color: var(--color-bone);
   }
 
@@ -101,11 +102,12 @@
   }
   :is(.btn, .btn-primary, .btn-secondary, .btn-ghost):active { transform: scale(0.97); }
   .btn-primary {
-    @apply text-ash;
-    background: linear-gradient(135deg, var(--color-ember) 0%, var(--color-flame) 100%);
-    box-shadow: 0 0 0 1px rgb(255 182 39 / 0.25) inset, 0 8px 24px -10px rgb(255 90 31 / 0.7);
+    @apply text-bone;
+    /* Carmesí → violeta oscuro: el texto blanco se lee bien en todo el degradado (≥ 4,5:1) */
+    background: linear-gradient(135deg, var(--color-ember-deep) 0%, var(--color-ember) 50%, #7c5cc4 100%);
+    box-shadow: 0 0 0 1px rgb(167 139 250 / 0.25) inset, 0 8px 24px -10px rgb(227 38 63 / 0.7);
   }
-  .btn-primary:hover { filter: brightness(1.08); box-shadow: 0 0 0 1px rgb(255 226 122 / 0.4) inset, 0 10px 30px -8px rgb(255 90 31 / 0.85); }
+  .btn-primary:hover { filter: brightness(1.08); box-shadow: 0 0 0 1px rgb(233 226 247 / 0.4) inset, 0 10px 30px -8px rgb(227 38 63 / 0.85); }
   .btn-secondary { @apply border border-line bg-coal text-bone; }
   .btn-secondary:hover { @apply border-line-strong bg-cinder; }
   .btn-ghost { @apply text-dust; }
@@ -118,7 +120,7 @@
   .card-hover { @apply transition duration-300; }
   .card-hover:hover {
     @apply border-line-strong bg-cinder/80;
-    box-shadow: 0 0 0 1px rgb(255 90 31 / 0.15), 0 20px 40px -20px rgb(255 90 31 / 0.35);
+    box-shadow: 0 0 0 1px rgb(227 38 63 / 0.15), 0 20px 40px -20px rgb(227 38 63 / 0.35);
   }
 
   /* Insignias */
@@ -152,7 +154,7 @@
     position: absolute;
     inset: -20% -10%;
     z-index: -1;
-    background: linear-gradient(115deg, transparent 46%, rgb(255 90 31 / 0.55) 49.6%, rgb(255 226 122 / 0.9) 50%, rgb(255 90 31 / 0.55) 50.4%, transparent 54%);
+    background: linear-gradient(115deg, transparent 46%, rgb(227 38 63 / 0.55) 49.6%, rgb(233 226 247 / 0.9) 50%, rgb(227 38 63 / 0.55) 50.4%, transparent 54%);
     filter: blur(0.5px);
     pointer-events: none;
   }
@@ -176,7 +178,7 @@
   height: 18px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--color-spark), var(--color-ember));
-  box-shadow: 0 0 0 3px rgb(255 90 31 / 0.25), 0 0 14px rgb(255 90 31 / 0.6);
+  box-shadow: 0 0 0 3px rgb(227 38 63 / 0.25), 0 0 14px rgb(227 38 63 / 0.6);
 }
 .fuga-range::-moz-range-thumb {
   width: 18px;
@@ -184,7 +186,7 @@
   border: 0;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--color-spark), var(--color-ember));
-  box-shadow: 0 0 0 3px rgb(255 90 31 / 0.25), 0 0 14px rgb(255 90 31 / 0.6);
+  box-shadow: 0 0 0 3px rgb(227 38 63 / 0.25), 0 0 14px rgb(227 38 63 / 0.6);
 }
 
 @media (prefers-reduced-motion: reduce) {

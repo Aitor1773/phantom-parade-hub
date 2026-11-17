@@ -20,7 +20,7 @@ const [titleA, titleB] = cut > 0 ? [title.slice(0, cut), title.slice(cut + 1)] :
 
 // Logo oficial (web Global): inglés para los idiomas latinos y japonés, propio en coreano y chino
 const LOGO = `/img/brand/logo-${lang === 'ko' ? 'ko-kr' : lang === 'zh' ? 'zh-cn' : 'en-us'}`;
-const HERO = '/img/characters/battle-of-firepower-ryomen-sukuna';
+const HERO = '/img/characters/incomplete-domain-megumi-fushiguro';
 
 const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
   { icon: 'check', title: 'home.trust.title', desc: 'home.trust.desc' },
@@ -30,12 +30,12 @@ const PILLARS: { icon: IconName; title: UIKey; desc: UIKey }[] = [
 ---
 
 <BaseLayout lang={lang} description={t('home.subtitle')}>
-  <!-- Hero: Sukuna desatando el fuego (Fuga) y el logo oficial del juego -->
+  <!-- Hero: Megumi en su Dominio incompleto (Jardín de sombras) y el logo oficial del juego -->
   <section class="relative isolate overflow-hidden">
     <picture class="pointer-events-none absolute inset-0 -z-20" aria-hidden="true">
-      <img src={`${HERO}-960.webp`} srcset={`${HERO}-960.webp 960w, ${HERO}-1440.webp 1440w`} sizes="100vw" alt="" fetchpriority="high" class="hero-art size-full object-cover object-[72%_35%]" />
+      <img src={`${HERO}-960.webp`} srcset={`${HERO}-960.webp 960w, ${HERO}-1440.webp 1440w`} sizes="100vw" alt="" fetchpriority="high" class="hero-art size-full object-cover object-[68%_40%]" />
     </picture>
-    <!-- Oscurece el lado del texto para que se lea sobre el fuego -->
+    <!-- Oscurece el lado del texto para que se lea sobre las sombras -->
     <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-ash via-ash/70 to-transparent lg:from-ash/95 lg:via-ash/35" aria-hidden="true"></div>
     <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-ash via-transparent to-ash/20" aria-hidden="true"></div>
     <Embers density={70} />

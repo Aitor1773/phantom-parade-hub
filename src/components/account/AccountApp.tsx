@@ -109,7 +109,7 @@ function EditPanel({ char, owned, labels, onChange, onToggle, onClose }: {
         aria-label={`${char.epithet ?? ''} ${char.name}`}
         className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-t-2xl border border-line-strong bg-coal shadow-2xl shadow-black/70 focus:outline-none sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
-        style={{ ['--el' as string]: ELEMENT_COLOR[char.element] ?? '#ff5a1f' }}
+        style={{ ['--el' as string]: ELEMENT_COLOR[char.element] ?? '#e3263f' }}
       >
         <header className="flex items-center gap-3 border-b border-line p-4">
           <span className="size-14 shrink-0 overflow-hidden rounded-lg bg-cinder">
@@ -159,7 +159,7 @@ function EditPanel({ char, owned, labels, onChange, onToggle, onClose }: {
 
             {char.hasSP && (
               <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-line bg-cinder/50 px-3 py-2.5 text-sm text-bone">
-                <input type="checkbox" checked={!!c.sp} onChange={(e) => set({ sp: e.target.checked || undefined })} className="size-4 accent-[#ff5a1f]" />
+                <input type="checkbox" checked={!!c.sp} onChange={(e) => set({ sp: e.target.checked || undefined })} className="size-4 accent-[#e3263f]" />
                 {labels['acc.sp']}
               </label>
             )}
@@ -410,7 +410,7 @@ export default function AccountApp({ characters, memories, labels, advice }: Pro
               {shownChars.map((c) => {
                 const o = inv.characters[c.id];
                 return (
-                  <li key={c.id} className="relative" style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#ff5a1f' }}>
+                  <li key={c.id} className="relative" style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#e3263f' }}>
                     <button type="button" aria-pressed={!!o} onClick={() => toggleChar(c.id)} title={`${c.epithet ?? ''} ${c.name}`}
                       className={`group block w-full overflow-hidden rounded-xl border-2 text-left transition duration-200 ${o ? 'border-[color:var(--el)] shadow-[0_0_18px_-6px_var(--el)]' : 'border-line opacity-50 grayscale hover:opacity-80 hover:grayscale-0'}`}>
                       <span className="relative block aspect-[3/4] bg-cinder">
@@ -457,7 +457,7 @@ export default function AccountApp({ characters, memories, labels, advice }: Pro
                       className={`relative block aspect-[2/1] w-full bg-cinder transition ${o ? '' : 'opacity-50 grayscale hover:opacity-80 hover:grayscale-0'}`}>
                       {m.img ? <img src={m.img} alt="" loading="lazy" className="size-full object-cover" /> : <span className="grid size-full place-items-center px-2 text-center text-[10px] text-smoke">{m.name}</span>}
                       <span className={`${RARITY_CLASS[m.rarity] ?? 'badge'} absolute top-1.5 left-1.5 px-1.5 text-[9px]`}>{m.rarity}</span>
-                      {o && <span className="absolute top-1.5 right-1.5 grid size-5 place-items-center rounded-full bg-ember text-[11px] font-bold text-ash">✓</span>}
+                      {o && <span className="absolute top-1.5 right-1.5 grid size-5 place-items-center rounded-full bg-ember text-[11px] font-bold text-bone">✓</span>}
                     </button>
                     <div className="flex items-center justify-between gap-2 bg-coal p-2">
                       <span className="min-w-0 truncate text-[11px] font-medium text-bone">{m.name}</span>

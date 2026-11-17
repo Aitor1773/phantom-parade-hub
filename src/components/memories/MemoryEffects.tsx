@@ -25,7 +25,7 @@ export default function MemoryEffects({ effects, labels, textLangNote }: Props) 
               aria-selected={lv2 === v}
               onClick={() => setLv2(v)}
               className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
-                lv2 === v ? 'bg-gradient-to-br from-ember to-ember-deep text-ash' : 'text-dust hover:bg-cinder hover:text-bone'
+                lv2 === v ? 'bg-gradient-to-br from-ember to-ember-deep text-bone' : 'text-dust hover:bg-cinder hover:text-bone'
               }`}
             >
               {labels[v ? 'mem.lv2' : 'mem.lv1']}

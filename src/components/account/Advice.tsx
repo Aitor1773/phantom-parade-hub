@@ -53,7 +53,7 @@ function Card({ title, hint, children }: { title: string; hint?: string; childre
 function Mini({ c, base, owned, extra }: { c: AdvChar; base: string; owned?: boolean; extra?: ReactNode }) {
   return (
     <a href={`${base}/characters/${c.id}`} className="group flex items-center gap-3 rounded-lg border border-line bg-cinder/40 p-2 transition hover:border-line-strong"
-      style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#ff5a1f' }}>
+      style={{ ['--el' as string]: ELEMENT_COLOR[c.element] ?? '#e3263f' }}>
       <span className={`size-11 shrink-0 overflow-hidden rounded-md bg-cinder ${owned === false ? 'opacity-60 grayscale' : ''}`}>
         {c.img ? <img src={c.img} srcSet={c.srcset} sizes="(min-width: 640px) 120px, 30vw" alt="" loading="lazy" decoding="async" className="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
       </span>

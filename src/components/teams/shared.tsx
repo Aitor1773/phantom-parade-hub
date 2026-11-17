@@ -65,7 +65,7 @@ export function AffinityPicker({ value, onChange, labels: L }: { value: Affinity
   );
 }
 
-const RANK_CLS: Record<string, string> = { S: 'bg-flame text-ash', A: 'bg-ember text-ash', B: 'bg-crimson text-bone', C: 'bg-cinder text-bone', D: 'bg-coal text-dust' };
+const RANK_CLS: Record<string, string> = { S: 'bg-flame text-bone', A: 'bg-ember text-bone', B: 'bg-crimson text-bone', C: 'bg-cinder text-bone', D: 'bg-coal text-dust' };
 
 const MEM_RARITY: Record<string, string> = { SSR: '#f4c34d', SR: '#b58cff', R: '#7ab8ff' };
 
@@ -203,7 +203,7 @@ export function CharPicker({ chars, owned, affinity, needs, title, labels: L, on
         <div className="flex flex-wrap items-center gap-2 border-b border-line p-3">
           <p className="mr-auto text-sm font-bold text-bone">{L['tb.pick']} · {title}</p>
           <label className="flex items-center gap-1.5 text-xs text-dust">
-            <input type="checkbox" checked={onlyOwned} disabled={!owned} onChange={(e) => setOnlyOwned(e.target.checked)} className="size-4 accent-[#ff5a1f]" />
+            <input type="checkbox" checked={onlyOwned} disabled={!owned} onChange={(e) => setOnlyOwned(e.target.checked)} className="size-4 accent-[#e3263f]" />
             {L['tb.onlyowned']}
           </label>
           <button type="button" className="btn-ghost size-8 p-0" onClick={onClose} aria-label={L['tb.close']}>✕</button>

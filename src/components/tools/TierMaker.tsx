@@ -6,7 +6,7 @@ import ElementIcon from '@/components/ElementIcon';
 export interface TmChar { id: string; name: string; ep: string | null; el: string; img: string | null }
 type Rank = 'S' | 'A' | 'B' | 'C' | 'D';
 const RANKS: Rank[] = ['S', 'A', 'B', 'C', 'D'];
-const RANK_COLOR: Record<Rank, string> = { S: '#ff5a1f', A: '#f4a63a', B: '#e7d26a', C: '#7fc77a', D: '#7ab8ff' };
+const RANK_COLOR: Record<Rank, string> = { S: '#e3263f', A: '#f4a63a', B: '#e7d26a', C: '#7fc77a', D: '#7ab8ff' };
 const EL_COLOR: Record<string, string> = { red: '#ff4d5e', blue: '#4d8dff', green: '#3fcf8e', yellow: '#f4c34d' };
 const KEY = 'pp-tiermaker';
 type Rows = Record<Rank, string[]>;
@@ -140,7 +140,7 @@ async function renderPng(rows: Rows, title: string, byId: Map<string, TmChar>, s
   const cv = document.createElement('canvas');
   cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d')!;
-  ctx.fillStyle = '#0b0605'; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#08060d'; ctx.fillRect(0, 0, W, H);
   ctx.fillStyle = '#f5e9e0'; ctx.font = 'bold 30px system-ui, sans-serif'; ctx.textBaseline = 'middle';
   ctx.fillText(title, PAD, HEAD / 2 + 4);
   const load = (src: string) => new Promise<HTMLImageElement | null>((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; });
@@ -148,7 +148,7 @@ async function renderPng(rows: Rows, title: string, byId: Map<string, TmChar>, s
   for (const [ri, r] of RANKS.entries()) {
     const h = heights[ri];
     ctx.fillStyle = RANK_COLOR[r]; ctx.fillRect(PAD, y, LABEL, h - 2);
-    ctx.fillStyle = '#0b0605'; ctx.font = 'bold 40px system-ui, sans-serif'; ctx.textAlign = 'center';
+    ctx.fillStyle = '#08060d'; ctx.font = 'bold 40px system-ui, sans-serif'; ctx.textAlign = 'center';
     ctx.fillText(r, PAD + LABEL / 2, y + h / 2); ctx.textAlign = 'left';
     ctx.fillStyle = '#1a1110'; ctx.fillRect(PAD + LABEL, y, W - PAD * 2 - LABEL, h - 2);
     const list = rows[r].map((id) => byId.get(id)).filter((c): c is TmChar => !!c);

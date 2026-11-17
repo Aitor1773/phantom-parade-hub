@@ -84,7 +84,7 @@ export default function KitViewer({ kits, versions, labels, textLangNote }: Prop
                 aria-selected={v === version}
                 onClick={() => setVersion(v)}
                 className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
-                  v === version ? 'bg-gradient-to-br from-ember to-ember-deep text-ash' : 'text-dust hover:bg-cinder hover:text-bone'
+                  v === version ? 'bg-gradient-to-br from-ember to-ember-deep text-bone' : 'text-dust hover:bg-cinder hover:text-bone'
                 }`}
               >
                 {labels[`ch.v.${v}`]}

@@ -1,5 +1,5 @@
 ---
-// Partículas de brasa que suben. Ligero (canvas 2D), pausado fuera de
+// Gotas del agua de sombra que suben (tema «Jardín de sombras»). Ligero (canvas 2D), pausado fuera de
 // pantalla y desactivado con prefers-reduced-motion.
 interface Props {
   class?: string;
@@ -11,7 +11,8 @@ const { class: className, density = 60 } = Astro.props;
 <canvas class:list={['embers pointer-events-none absolute inset-0 h-full w-full', className]} data-density={density} aria-hidden="true"></canvas>
 
 <script>
-  const COLORS = ['255,226,122', '255,182,39', '255,90,31', '200,16,46'];
+  // Gotas del agua de sombra: blanco lila, violeta y algún destello carmesí
+  const COLORS = ['233,226,247', '233,226,247', '167,139,250', '124,92,196', '227,38,63'];
 
   document.querySelectorAll<HTMLCanvasElement>('canvas.embers').forEach((canvas) => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;

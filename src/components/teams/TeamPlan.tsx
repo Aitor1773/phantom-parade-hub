@@ -89,7 +89,7 @@ function Move({ n, m, steps, labels: L, basePath }: { n: number; m: { s: TeamSlo
     <li className="flex gap-2.5 rounded-lg border border-line bg-cinder/50 p-2">
       <a href={`${basePath}/characters/${c.id}`} className="relative shrink-0" title={L['tp.guide']}>
         {c.img ? <img src={c.img} alt="" loading="lazy" className="size-10 rounded-md object-cover object-top" /> : <span className="block size-10 rounded-md bg-coal" />}
-        <span className="absolute -top-1 -left-1 grid size-4 place-items-center rounded-full bg-ember text-[9px] font-black text-ash">{n}</span>
+        <span className="absolute -top-1 -left-1 grid size-4 place-items-center rounded-full bg-ember text-[9px] font-black text-bone">{n}</span>
       </a>
       <div className="min-w-0 flex-1 text-xs">
         <p className="truncate font-semibold text-bone">{c.name}{c.epithet ? <span className="font-normal text-smoke"> · {c.epithet}</span> : null}</p>

@@ -40,7 +40,7 @@ export default function CollectionCard({ chars, memories, labels: L, colors, acc
     mems: [ownMem.length, memories.length] as const,
   };
 
-  const Bar = ({ label, have, total, color = '#ff5a1f' }: { label: string; have: number; total: number; color?: string }) => (
+  const Bar = ({ label, have, total, color = '#e3263f' }: { label: string; have: number; total: number; color?: string }) => (
     <div>
       <p className="flex justify-between text-xs"><span className="text-dust">{label}</span><span className="font-semibold text-bone tabular-nums">{have}/{total} · {pct(have, total)}%</span></p>
       <span className="mt-1 block h-2 overflow-hidden rounded-full bg-cinder"><span className="block h-full rounded-full" style={{ width: `${pct(have, total)}%`, background: color }} /></span>
@@ -102,9 +102,9 @@ async function renderCard({ player, stats, byEl, best, inv, L, colors, siteName 
   cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d')!;
   const grad = ctx.createLinearGradient(0, 0, W, H);
-  grad.addColorStop(0, '#1d0d0a'); grad.addColorStop(1, '#0b0605');
+  grad.addColorStop(0, '#1d0d0a'); grad.addColorStop(1, '#08060d');
   ctx.fillStyle = grad; ctx.fillRect(0, 0, W, H);
-  ctx.fillStyle = '#ff5a1f'; ctx.fillRect(0, 0, W, 6);
+  ctx.fillStyle = '#e3263f'; ctx.fillRect(0, 0, W, 6);
   ctx.textBaseline = 'alphabetic';
   ctx.fillStyle = '#f5e9e0'; ctx.font = 'bold 40px system-ui, sans-serif';
   ctx.fillText(player || 'JJK Phantom Parade', 48, 80);
@@ -117,7 +117,7 @@ async function renderCard({ player, stats, byEl, best, inv, L, colors, siteName 
     ctx.fillStyle = '#2a1d1b'; ctx.fillRect(x, y + 10, w, 12);
     ctx.fillStyle = color; ctx.fillRect(x, y + 10, (w * pct(have, total)) / 100, 12);
   };
-  bar(L['cl.chars'], stats.chars, 48, 180, 500, '#ff5a1f');
+  bar(L['cl.chars'], stats.chars, 48, 180, 500, '#e3263f');
   bar(L['cl.ssr'], stats.ssr, 48, 240, 500, '#f4c34d');
   bar(L['cl.mems'], stats.mems, 48, 300, 500, '#b58cff');
   byEl.forEach((x, i) => bar(colors[x.el], [x.have, x.total], 48 + (i % 2) * 260, 380 + Math.floor(i / 2) * 60, 240, EL_COLOR[x.el]));

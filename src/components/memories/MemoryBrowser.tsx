@@ -103,7 +103,7 @@ export default function MemoryBrowser({ items, basePath, labels, tagLabels, opti
           </label>
           <button type="button" onClick={() => setShowFilters((v) => !v)} aria-expanded={showFilters} className="btn-secondary h-10 lg:hidden">
             {labels['db.filters']}
-            {active > 0 && <span className="grid size-5 place-items-center rounded-full bg-ember text-[11px] text-ash">{active}</span>}
+            {active > 0 && <span className="grid size-5 place-items-center rounded-full bg-ember text-[11px] text-bone">{active}</span>}
           </button>
           <label className="flex h-10 items-center gap-2 rounded-lg border border-line bg-coal pl-3 text-sm text-dust">
             <span className="hidden sm:inline">{labels['db.sort']}</span>

@@ -25,7 +25,7 @@ const lang = Astro.params.lang as Locale;
 const { c, prev, next } = Astro.props as { c: Character; prev: Character | null; next: Character | null };
 const t = useT(lang);
 const g = useG(lang);
-const el = ELEMENT_COLOR[c.element] ?? '#ff5a1f';
+const el = ELEMENT_COLOR[c.element] ?? '#e3263f';
 
 const versions = kitVersions(c);
 const kits = Object.fromEntries(versions.map((v) => [v, resolveKit(c, v)])) as Partial<Record<KitVersion, ResolvedKit>>;
@@ -227,7 +227,7 @@ const jsonLd = {
                             <span class="block text-[10px] font-semibold tracking-wide text-smoke uppercase">{node.label}</span>
                             {node.name}
                           </span>
-                          {node.first && <span class="rounded bg-ember px-1.5 py-0.5 text-[10px] font-black text-ash uppercase">{spPriority.first === 'both' ? g('ch.howto.sp.both') : g('ch.howto.sp.first')}</span>}
+                          {node.first && <span class="rounded bg-ember px-1.5 py-0.5 text-[10px] font-black text-bone uppercase">{spPriority.first === 'both' ? g('ch.howto.sp.both') : g('ch.howto.sp.first')}</span>}
                         </li>
                       ))}
                     </ol>
