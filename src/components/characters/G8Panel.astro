@@ -1,0 +1,193 @@
+---
+// Valoración y análisis de un personaje (Game8, fuente principal; citado en Créditos).
+// Lo que no depende del idioma (rangos, prioridad, iconos de equipos y memorias) se ve siempre;
+// los textos, en japonés y en los idiomas ya traducidos. Si falta la traducción se avisa.
+import Icon from '@/components/Icon.astro';
+import { CHARACTERS, thumb, type Character } from '@/data/characters';
+import { getMemory } from '@/data/memories';
+import { g8Of, g8t, memoryIdOfJp, webIdOfG8, webIdOfJp } from '@/data/game8';
+import { useG } from '@/i18n/game';
+import { localePath, type Locale } from '@/i18n/utils';
+
+interface Props { c: Character; lang: Locale }
+const { c, lang } = Astro.props;
+const g = useG(lang);
+const d = g8Of(c.id);
+
+const tr = (s: string | null | undefined) => g8t(s, lang);
+const list = (xs: string[] | undefined) => (xs ?? []).map(tr).filter((x): x is string => !!x);
+
+const RANK_STYLE: Record<string, string> = {
+  SSS: 'border-rarity-ssr/70 bg-rarity-ssr/15 text-rarity-ssr',
+  SS: 'border-ember/60 bg-ember/10 text-ember',
+  S: 'border-rarity-sr/60 bg-rarity-sr/10 text-rarity-sr',
+  A: 'border-rarity-r/60 bg-rarity-r/10 text-rarity-r',
+};
+const ratings = d ? ([['overall', 'g8.overall'], ['hard', 'g8.hard'], ['auto', 'g8.auto'], ['reroll', 'g8.reroll']] as const)
+  .map(([k, label]) => ({ label: g(label), rank: d.ratings[k] ?? null })).filter((r) => r.rank) : [];
+
+// En la web las habilidades se llaman normal / s1 / s2 (Habilidad 1, 2 y 3); en Game8, スキル1–3
+const SLOT_LABEL = { s1: 'ch.normal', s2: 'ch.s1', s3: 'ch.s2', ult: 'ch.ult' } as const;
+// Sin traducción todavía: el nombre de la habilidad que ya tiene la web
+const OUR_SLOT = { s1: 'normal', s2: 's1', s3: 's2', ult: 'ult' } as const;
+const priority = d ? (['s1', 's2', 's3', 'ult'] as const).filter((k) => d.priority[k] != null).map((k) => {
+  const sk = d.skills[k];
+  return { label: g(SLOT_LABEL[k]), name: tr(sk?.name) ?? c.kits.base[OUR_SLOT[k]]?.name ?? null, stars: d.priority[k] ?? 0 };
+}) : [];
+
+const byId = (id: string | null) => (id ? CHARACTERS.find((x) => x.id === id) ?? null : null);
+/** Personaje de un equipo: por su nombre japonés y, si no, por el enlace de Game8 */
+const charOf = (m: { g8id: string | null; name: string }) => (m.name === d?.full || m.g8id === d?.g8id ? c : byId(webIdOfJp(m.name)) ?? byId(webIdOfG8(m.g8id)));
+const memOf = (name: string) => { const id = memoryIdOfJp(name); return id ? getMemory(id) : null; };
+
+const summary = list(d?.summary);
+const pros = list(d?.pros);
+const cons = list(d?.cons);
+const review = (d?.review ?? []).map((r) => ({ title: tr(r.title), text: list(r.text) })).filter((r) => r.title && r.text.length);
+const memories = (d?.memories ?? []).map((m) => ({ mem: memOf(m.name), name: m.name, points: list(m.points) }));
+const teams = (d?.teams ?? []).map((t) => ({
+  title: tr(t.title),
+  members: t.members.map((m) => ({ ch: charOf(m), role: tr(m.role) })),
+  memories: t.memories.map((m) => (m ? memOf(m.name) : null)),
+  note: list(t.note),
+}));
+const obtain = (d?.acquisition ?? []).map((r) => ({ title: tr(r.title), text: list(r.text) })).filter((r) => r.title);
+const potential = (d?.potentialTips ?? []).map((r) => ({ title: tr(r.title), text: list(r.text) })).filter((r) => r.title);
+const folds = [{ k: 'g8.review', blocks: review }, { k: 'g8.potential', blocks: potential }, { k: 'g8.obtain', blocks: obtain }] as const;
+// Hay textos sin traducir todavía: se avisa una vez
+const pending = !!d && lang !== 'ja' && (d.summary.length > summary.length || d.review.length > review.length || d.pros.length > pros.length);
+---
+
+{d && (
+  <section id="analysis" class="card scroll-mt-24 p-5 sm:p-6">
+    <h2 class="text-2xl font-bold text-bone">{g('g8.title')}</h2>
+
+    {ratings.length > 0 && (
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {ratings.map((r, i) => (
+          <li class:list={['flex items-center gap-2 rounded-lg border px-3 py-1.5', RANK_STYLE[r.rank!] ?? 'border-line bg-cinder text-dust']}>
+            <span class="text-[11px] font-semibold tracking-wide uppercase opacity-80">{r.label}</span>
+            <span class:list={['font-display font-black', i === 0 ? 'text-xl' : 'text-base']}>{r.rank}</span>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {summary.length > 0 && (
+      <ul class="mt-4 space-y-1.5 text-sm text-dust">
+        {summary.map((s) => s.startsWith('└')
+          ? <li class="pl-6 text-smoke">{s.replace(/^└\s*/, '↳ ')}</li>
+          : <li class="flex gap-2"><span class="text-ember">◆</span><span>{s}</span></li>)}
+      </ul>
+    )}
+
+    {(pros.length > 0 || cons.length > 0) && (
+      <div class="mt-5 grid gap-3 sm:grid-cols-2">
+        {pros.length > 0 && (
+          <div class="rounded-lg border border-[#3fb27f]/30 bg-[#3fb27f]/[0.06] p-3">
+            <h3 class="font-sans text-xs font-bold tracking-wide text-[#5fd39b] uppercase">{g('g8.pros')}</h3>
+            <ul class="mt-2 space-y-1 text-sm text-dust">{pros.map((p) => <li class="flex gap-2"><span class="text-[#5fd39b]">＋</span><span class="whitespace-pre-line">{p}</span></li>)}</ul>
+          </div>
+        )}
+        {cons.length > 0 && (
+          <div class="rounded-lg border border-crimson/30 bg-crimson/[0.06] p-3">
+            <h3 class="font-sans text-xs font-bold tracking-wide text-[#ff6b7f] uppercase">{g('g8.cons')}</h3>
+            <ul class="mt-2 space-y-1 text-sm text-dust">{cons.map((p) => <li class="flex gap-2"><span class="text-[#ff6b7f]">－</span><span class="whitespace-pre-line">{p}</span></li>)}</ul>
+          </div>
+        )}
+      </div>
+    )}
+
+    {priority.length > 0 && (
+      <>
+        <h3 class="mt-6 mb-2 font-sans text-sm font-bold text-bone">{g('g8.priority')}</h3>
+        <ul class="grid gap-2 sm:grid-cols-2">
+          {priority.map((p) => (
+            <li class="flex items-center justify-between gap-3 rounded-lg border border-line bg-cinder/50 px-3 py-2 text-sm">
+              <span class="min-w-0">
+                <span class="block text-[11px] font-semibold tracking-wide text-smoke uppercase">{p.label}</span>
+                {p.name && <span class="block truncate text-bone">{p.name}</span>}
+              </span>
+              <span class="shrink-0 tracking-tight" aria-label={`${p.stars}/5`}><span class="text-flame">{'★'.repeat(p.stars)}</span><span class="text-line-strong">{'★'.repeat(5 - p.stars)}</span></span>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {memories.length > 0 && (
+      <>
+        <h3 class="mt-6 mb-2 font-sans text-sm font-bold text-bone">{g('g8.memories')}</h3>
+        <ul class="space-y-2">
+          {memories.map(({ mem, name, points }) => (
+            <li class="flex gap-3 rounded-lg border border-line bg-cinder/50 p-2.5">
+              <span class="grid size-12 shrink-0 place-items-center overflow-hidden rounded-md bg-coal">
+                {mem?.icon ? <img src={thumb(mem.icon, 96)} alt="" loading="lazy" class="size-full object-cover" /> : <Icon name="layers" size={16} class="text-smoke" />}
+              </span>
+              <span class="min-w-0 text-sm">
+                {mem ? <a href={localePath(lang, `/memories/${mem.id}`)} class="font-semibold text-bone hover:text-flame">{mem.name}</a> : <span class="font-semibold text-bone">{name}</span>}
+                {points.length > 0 && <ul class="mt-1 space-y-0.5 text-dust">{points.map((p) => <li>· {p}</li>)}</ul>}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {teams.length > 0 && (
+      <>
+        <h3 class="mt-6 mb-2 font-sans text-sm font-bold text-bone">{g('g8.teams')}</h3>
+        <div class="space-y-3">
+          {teams.map((t) => (
+            <div class="rounded-lg border border-line bg-cinder/40 p-3">
+              {t.title && <p class="text-sm font-semibold text-bone">{t.title}</p>}
+              <ul class="mt-2 grid gap-2" style={`grid-template-columns:repeat(${Math.max(4, t.members.length)},minmax(0,1fr))`}>
+                {t.members.map((m, i) => {
+                  const mem = t.memories[i];
+                  return (
+                    <li class="min-w-0 text-center">
+                      {m.ch ? (
+                        <a href={localePath(lang, `/characters/${m.ch.id}`)} class="group block" title={`${m.ch.epithet ? `${m.ch.epithet} · ` : ''}${m.ch.name}`}>
+                          {m.ch.icon || m.ch.art
+                            ? <img src={m.ch.icon ?? thumb(m.ch.art, 320)} alt="" loading="lazy" class:list={['mx-auto aspect-square w-full max-w-16 rounded-lg object-cover object-top ring-1 transition group-hover:ring-ember/60', m.ch.id === c.id ? 'ring-ember' : 'ring-line']} />
+                            : <span class="mx-auto block aspect-square w-full max-w-16 rounded-lg bg-coal" />}
+                          <span class="mt-1 block truncate text-[11px] text-bone">{m.ch.name}</span>
+                        </a>
+                      ) : <span class="mx-auto block aspect-square w-full max-w-16 rounded-lg bg-coal" />}
+                      {m.role && <span class="block truncate text-[10px] text-smoke">{m.role}</span>}
+                      {mem && (
+                        <a href={localePath(lang, `/memories/${mem.id}`)} title={`${g('g8.team.memories')}: ${mem.name}`} class="mx-auto mt-1 block size-8 overflow-hidden rounded bg-coal">
+                          {mem.icon && <img src={thumb(mem.icon, 96)} alt={mem.name} loading="lazy" class="size-full object-cover" />}
+                        </a>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+              {t.note.length > 0 && <p class="mt-2 text-xs text-dust">{t.note.join(' ')}</p>}
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+
+    {folds.filter((s) => s.blocks.length).map((s) => (
+      <details class="group mt-4 rounded-lg border border-line bg-coal/50">
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-2 px-3 py-2.5 text-sm font-bold text-bone">
+          {g(s.k)}
+          <Icon name="arrowRight" size={14} class="rotate-90 text-smoke transition group-open:-rotate-90" />
+        </summary>
+        <div class="space-y-4 px-3 pb-3">
+          {s.blocks.map((b) => (
+            <div>
+              <h4 class="text-sm font-semibold text-flame">{b.title}</h4>
+              {b.text.map((p) => <p class="mt-1 text-sm text-dust">{p}</p>)}
+            </div>
+          ))}
+        </div>
+      </details>
+    ))}
+
+    {pending && <p class="mt-4 rounded-lg border border-line bg-cinder/50 px-3 py-2 text-xs text-smoke">{g('g8.pending')}</p>}
+  </section>
+)}

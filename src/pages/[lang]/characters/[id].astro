@@ -3,6 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import ElementIcon from '@/components/ElementIcon';
 import Icon from '@/components/Icon.astro';
 import KitViewer from '@/components/characters/KitViewer';
+import G8Panel from '@/components/characters/G8Panel.astro';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
 import { CHARACTERS, kitVersions, resolveKit, srcsetOf, thumb, type Character, type KitVersion, type ResolvedKit } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
@@ -270,6 +271,8 @@ const jsonLd = {
           )}
         </section>
       )}
+
+      <G8Panel c={c} lang={lang} />
 
       <!-- Habilidades -->
       <section>

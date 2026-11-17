@@ -4,6 +4,30 @@ Todo se genera con scripts. Los resultados van a `data/` y la web los lee al com
 
 **Una vez publicada, todo esto lo hace solo cada día** el proceso `.github/workflows/daily.yml` (`npm run data:daily` + imágenes los lunes + compilar + publicar). Cómo activarlo: [PUBLICAR.md](PUBLICAR.md). `npm run data:community` lee el foro (Giscus) y genera `data/community.json`. `npm run data:events` lee los eventos abiertos (JP) y guarda su equipo recomendado, elemento y memorias en `data/normalized/event-guides.json`; las memorias nuevas se emparejan por fecha y se aprenden en `data/manual/jp-memories.json`. `npm run data:banner-art` descarga las imágenes oficiales de los banners abiertos (WebP de 400 px y tamaño real) en `public/img/banners/` con su índice `data/normalized/banner-art.json`; las que ya estaban se conservan. Modos con fichas: Torre ilusoria (y Anomalous Form), Enemigo poderoso enmascarado (強敵邂逅・裏), Batalla SP y Modo historia EX (`data/manual/stages.json`).
 
+## Game8, fuente principal (desde el 2026-11-17)
+
+Toda la información sale de Game8 (permiso total desde el 2026-10-20, ver [EMAILS_PERMISO.md](EMAILS_PERMISO.md)); solo los banners y códigos del servidor **Global** siguen aparte. Se migra por fases:
+
+| Fase | Qué | Estado |
+|---|---|---|
+| 1 | Personajes: valoración, resumen, puntos fuertes y débiles, prioridad de habilidades, memorias y equipos recomendados, potencial, cómo conseguirlo, estadísticas y habilidades | En marcha |
+| 2 | Memorias | Pendiente |
+| 3 | Tier list de Game8 (sustituye a la propia) | Pendiente |
+| 4 | Contenido (torre, Anomalous Form, barrido, enemigo enmascarado, historia EX…) | Pendiente |
+| 5 | Eventos, gachas JP, materiales, títulos y guías | Pendiente |
+| 6 | Quitar la wiki y las demás fuentes | Pendiente |
+
+- `npm run data:g8chars` → `data/normalized/game8/characters.json` (en japonés). Cada ficha se enlaza con su personaje de la web por `data/manual/jp-names.json` («「epíteto」nombre» → id). Si sale un personaje nuevo sin emparejar, añádelo ahí.
+- `npm run data:translate` → `data/i18n/game8.json`: traduce al resto de idiomas lo que aún no esté traducido, con **Cloudflare Workers AI (plan gratuito)**. Cada texto se traduce una vez. Se para antes de pasar de 9.000 «neuronas» al día (el plan gratis da 10.000), así que lo pendiente se reparte en varios días. Para corregir una traducción a mano, cámbiala y pon `"by": "manual"`: no se vuelve a tocar.
+- Las imágenes siguen siendo las nuestras: las de Game8 son más pequeñas (arte de 500 px frente a 1.440 px). Solo se usarán para lo que no tengamos.
+
+### Clave de Cloudflare para traducir (una vez)
+
+1. Entra en [dash.cloudflare.com](https://dash.cloudflare.com) (la misma cuenta donde está la web). Copia tu **Account ID** (está en la página de inicio de la cuenta, columna derecha, o en *Workers & Pages*).
+2. Ve a *My Profile → API Tokens → Create Token → Create Custom Token*. Nombre: `phantom-parade-traducir`. Permisos: **Account · Workers AI · Read** y **Account · Workers AI · Edit**. Crea el token y cópialo (solo se ve una vez).
+3. En GitHub, en el repositorio: *Settings → Secrets and variables → Actions → New repository secret*. Crea `CF_ACCOUNT_ID` con el Account ID y `CF_API_TOKEN` con el token.
+4. Listo: la actualización diaria empezará a traducir. Para probarlo ya: *Actions → Actualización diaria → Run workflow*.
+
 ## Orden recomendado
 
 ```

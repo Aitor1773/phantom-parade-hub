@@ -38,6 +38,10 @@ jobs:
       - name: Personajes y memorias (wiki)
         run: npm run data:fetch
 
+      - name: Personajes (Game8)
+        run: npm run data:g8chars
+        continue-on-error: true # si Game8 no responde, se conservan las fichas de ayer
+
       - name: Banners y eventos
         run: npm run data:banners
 
@@ -94,6 +98,13 @@ jobs:
             gh label create fichas-fases --color f4a63a --description "Fichas de fases que revisar" --force
             gh issue create --title "Fichas de fases por revisar" --label fichas-fases --body-file "$f"
           fi
+
+      - name: Traducir lo nuevo de Game8 (Cloudflare Workers AI, plan gratuito)
+        run: npm run data:translate
+        continue-on-error: true # sin cuota o sin clave: se sigue mañana; la web enseña lo ya traducido
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
       - name: Día de la semana
         id: dow

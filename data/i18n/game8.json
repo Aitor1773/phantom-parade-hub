@@ -1,0 +1,4 @@
+{
+ "_comment": "Traducciones de los textos de Game8 (japonés → en, es, pt, fr, de, ko, zh). Las genera scripts/data/translate.mjs; las corregidas a mano llevan \"by\": \"manual\" y no se sobrescriben.",
+ "strings": {}
+}
