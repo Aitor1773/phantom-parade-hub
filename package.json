@@ -22,12 +22,13 @@
     "data:best-teams": "node scripts/data/fetch-best-teams.mjs",
     "data:char-memories": "node scripts/data/fetch-char-memories.mjs",
     "data:stages": "node scripts/data/check-stages.mjs",
-    "data:daily": "npm run data:fetch && npm run data:g8chars && npm run data:g8memories && npm run data:g8link && npm run data:g8tier && npm run data:banners && npm run data:codes && npm run data:link && npm run data:tierdraft && npm run data:community && npm run data:events && npm run data:banner-art && npm run data:best-teams && npm run data:stages && npm run data:translate",
+    "data:daily": "npm run data:fetch && npm run data:g8chars && npm run data:g8memories && npm run data:g8link && npm run data:g8tier && npm run data:g8guides && npm run data:banners && npm run data:codes && npm run data:link && npm run data:tierdraft && npm run data:community && npm run data:events && npm run data:banner-art && npm run data:best-teams && npm run data:stages && npm run data:translate",
     "data:g8chars": "node scripts/data/fetch-game8-chars.mjs",
     "data:translate": "node scripts/data/translate.mjs",
     "data:g8memories": "node scripts/data/fetch-game8-memories.mjs",
     "data:g8tier": "node scripts/data/fetch-game8-tier.mjs",
-    "data:g8link": "node scripts/data/link-game8-memories.mjs"
+    "data:g8link": "node scripts/data/link-game8-memories.mjs",
+    "data:g8guides": "node scripts/data/fetch-game8-guides.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.0",

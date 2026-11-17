@@ -7,6 +7,7 @@ import jpMemFile from '../../data/manual/jp-memories.json';
 import i18nFile from '../../data/i18n/game8.json';
 import g8tier from '../../data/normalized/game8/tier.json';
 import g8mems from '../../data/normalized/game8/memories.json';
+import g8guides from '../../data/normalized/game8/guides.json';
 import type { Locale } from '@/i18n/utils';
 
 export interface G8Skill { name: string; img: string | null; element: string | null; effect: string; combo?: string }
@@ -112,6 +113,13 @@ const MEM_POINTS = new Map<string, { rank: string; entry: G8TierEntry }>();
 for (const [rank, list] of Object.entries(G8_TIER.memories.ranks)) for (const e of list) if (!MEM_POINTS.has(e.name)) MEM_POINTS.set(e.name, { rank, entry: e });
 /** Puntos clave de una memoria en la tier list de Game8 (solo las SS y S los tienen) */
 export const memTierPoints = (jpName: string) => MEM_POINTS.get(jpName) ?? null;
+
+// ── Guías de recomendaciones (reroll, ticket, SR, rareza baja, gacha permanente) ──
+export interface G8GuideEntry { name: string; g8id: string | null; rank: string | null; points: string[]; related?: { name: string; g8id: string | null }[] }
+export interface G8Guide { url: string; title: string; modified: string | null; sections: { title: string; blocks: { title: string | null; entries: G8GuideEntry[]; text: string[] }[] }[] }
+const GUIDES_RAW = g8guides as unknown as { fetchedAt: string; guides: Record<string, G8Guide> };
+export const G8_GUIDES = GUIDES_RAW.guides;
+export const G8_GUIDES_AT = GUIDES_RAW.fetchedAt;
 
 /**
  * Texto de Game8 en el idioma pedido: el original en japonés, la traducción si existe,

@@ -39,7 +39,7 @@ jobs:
         run: npm run data:fetch
 
       - name: Personajes, memorias y tier list (Game8)
-        run: npm run data:g8chars && npm run data:g8memories && npm run data:g8link && npm run data:g8tier
+        run: npm run data:g8chars && npm run data:g8memories && npm run data:g8link && npm run data:g8tier && npm run data:g8guides
         continue-on-error: true # si Game8 no responde, se conservan las fichas de ayer
 
       - name: Banners y eventos

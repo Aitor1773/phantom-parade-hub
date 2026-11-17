@@ -14,7 +14,8 @@ Toda la información sale de Game8 (permiso total desde el 2026-10-20, ver [EMAI
 | 2 | Memorias: valoración, cómo conseguirla, personajes recomendados, efectos y estadísticas (`npm run data:g8memories`; `npm run data:g8link` empareja las nuevas por estadísticas y números de sus efectos) | Hecho |
 | 3 | Tier list de Game8 de personajes y memorias, con puntos clave, los mejores por papel e historial (`npm run data:g8tier`). La página `/tier-list` ya es la de Game8; la tier list propia (`data/manual/tier-list.json`) solo la siguen usando por dentro las recomendaciones de cuenta y el creador de equipos | Hecho |
 | 4 | Contenido (torre, Anomalous Form, barrido, enemigo enmascarado, historia EX…) | Pendiente |
-| 5 | Eventos, gachas JP, materiales, títulos y guías | Pendiente |
+| 5 | Recomendaciones (`/guides/picks`, `npm run data:g8guides`): reroll, ticket de SSR, pase al gacha permanente, ranking de SR y rareza baja. Eventos y arte de banners ya venían de Game8 | Hecho |
+| 5b | Gachas JP, materiales, títulos y guías de sistema | Pendiente |
 | 6 | Quitar la wiki y las demás fuentes | Pendiente |
 
 - `npm run data:g8chars` → `data/normalized/game8/characters.json` (en japonés). Cada ficha se enlaza con su personaje de la web por `data/manual/jp-names.json` («「epíteto」nombre» → id). Si sale un personaje nuevo sin emparejar, añádelo ahí.

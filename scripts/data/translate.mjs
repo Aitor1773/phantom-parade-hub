@@ -68,6 +68,7 @@ async function collect() {
     if (f === 'characters.json') for (const c of Object.values(d.characters)) out.push(...charStrings(c));
     else if (f === 'memories.json') for (const m of Object.values(d.memories)) out.push(...memStrings(m));
     else if (f === 'tier.json') out.push(...tierStrings(d));
+    else if (f === 'guides.json') for (const g of Object.values(d.guides)) out.push(g.title, ...g.sections.flatMap((s) => [s.title, ...s.blocks.flatMap((b) => [b.title, ...b.text, ...b.entries.flatMap((e) => e.points)])]));
   }
   return [...new Set(out.filter(isJa))];
 }
