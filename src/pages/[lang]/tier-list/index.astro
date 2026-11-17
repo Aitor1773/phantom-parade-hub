@@ -1,10 +1,12 @@
 ---
+// Tier list de Game8 (fuente principal desde el 2026-11-17; citada en Créditos): personajes y memorias.
+// Rango de cada personaje = el de la tier list de Game8 o, si no sale, el de su ficha (src/data/game8.ts).
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ElementIcon from '@/components/ElementIcon';
-import Icon from '@/components/Icon.astro';
 import { ELEMENT_COLOR, Placeholder } from '@/components/characters/CharacterBrowser';
-import { CHARACTERS, getCharacter, srcsetOf, thumb } from '@/data/characters';
-import { TIER_CHANGELOG, TIER_CRITERIA, TIER_LISTS, TIER_LIST_KEYS, TIER_RANKS, TIER_UPDATED, type TierListKey } from '@/data/gacha';
+import { CHARACTERS, thumb, type Character } from '@/data/characters';
+import { MEMORIES } from '@/data/memories';
+import { G8_RANKS, G8_TIER, charTier, g8MemOf, g8t, memTierPoints, webIdOfJp } from '@/data/game8';
 import { useG, type GameKey } from '@/i18n/game';
 import { LOCALE_META, localePath, staticLocalePaths, useT, type Locale } from '@/i18n/utils';
 
@@ -13,171 +15,264 @@ export const getStaticPaths = staticLocalePaths;
 const lang = Astro.params.lang as Locale;
 const t = useT(lang);
 const g = useG(lang);
-
-const ELEMENT_KEYS = ['blue', 'red', 'green', 'yellow'];
-const tabLabel = (k: TierListKey) => g((ELEMENT_KEYS.includes(k) ? `el.${k}` : `tl.tab.${k}`) as GameKey);
-const ROW_STYLE: Record<string, string> = {
-  S: 'from-flame to-ember text-ash',
-  A: 'from-ember to-ember-deep text-ash',
-  B: 'from-crimson to-blood text-bone',
-  C: 'from-char to-cinder text-bone',
-  D: 'from-cinder to-coal text-dust',
-};
-const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${iso}T00:00:00Z`));
-const byId = new Map(CHARACTERS.map((c) => [c.id, c]));
-
-// Mes y año de la última actualización, en el título (lo que más se busca: «tier list + mes»)
+const tr = (s: string) => g8t(s, lang);
+const day = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { dateStyle: 'long', timeZone: 'Asia/Tokyo' }).format(new Date(iso));
 const monthYear = (iso: string) => new Intl.DateTimeFormat(LOCALE_META[lang].htmlLang, { month: 'long', year: 'numeric' }).format(new Date(iso));
-const lists = TIER_LIST_KEYS.map((key) => {
-  const list = TIER_LISTS[key];
-  const rows = TIER_RANKS.map((rank) => ({
-    rank,
-    items: Object.entries(list.entries)
-      .filter(([, e]) => e.rank === rank)
-      .sort((a, b) => b[1].score - a[1].score)
-      .map(([id, e]) => ({ c: byId.get(id)!, e }))
-      .filter((x) => x.c),
-  }));
-  const pending = Object.values(list.entries).filter((e) => !e.manual).length;
-  const changes = TIER_CHANGELOG.filter((ch) => ch.list === key).slice(0, 40);
-  return { key, list, rows, pending, changes };
-});
-const ssPct = Math.round(TIER_CRITERIA.thresholds[0][1] * 100);
+
+const ROW_STYLE: Record<string, string> = {
+  SSS: 'from-spark to-flame text-ash',
+  SS: 'from-flame to-ember text-ash',
+  S: 'from-ember to-ember-deep text-ash',
+  A: 'from-crimson to-blood text-bone',
+  B: 'from-char to-cinder text-bone',
+  C: 'from-cinder to-coal text-dust',
+  D: 'from-coal to-ash text-smoke',
+};
+const ELEMENTS = ['red', 'blue', 'green', 'yellow'] as const;
+
+// ── Personajes: en el orden de Game8 dentro de cada rango ────────────
+const order = new Map<string, number>();
+Object.values(G8_TIER.characters.ranks).flat().forEach((e, i) => { const id = webIdOfJp(e.name); if (id && !order.has(id)) order.set(id, i); });
+const charRows = G8_RANKS.map((rank) => ({
+  rank,
+  items: CHARACTERS.filter((c) => charTier(c.id)?.rank === rank).sort((a, b) => (order.get(a.id) ?? 999) - (order.get(b.id) ?? 999)),
+})).filter((r) => r.items.length);
+
+const byJp = (jp: string) => { const id = webIdOfJp(jp); return id ? CHARACTERS.find((x) => x.id === id) ?? null : null; };
+// Puntos clave por rango (solo los ya traducidos al idioma de la página)
+const why = Object.entries(G8_TIER.characters.ranks).map(([rank, list]) => ({
+  rank,
+  items: list.map((e) => ({ c: byJp(e.name), points: e.points.map(tr).filter((p): p is string => !!p) }))
+    .filter((x): x is { c: Character; points: string[] } => !!x.c && x.points.length > 0),
+})).filter((r) => r.items.length);
+const whyTotal = Object.values(G8_TIER.characters.ranks).flat().length;
+const whyShown = why.reduce((a, r) => a + r.items.length, 0);
+
+const roles = G8_TIER.characters.roles.map((r) => ({
+  title: tr(r.title) ?? r.title,
+  rows: r.rows.map((row) => ({ label: tr(row.label) ?? row.label, cells: row.cells.map((cell) => ({ element: cell.element, chars: cell.characters.map(byJp).filter((x): x is Character => !!x) })) })),
+}));
+const latest = G8_TIER.characters.latest.map((l) => ({ c: byJp(l.name), name: l.name, release: l.release, points: l.points.map(tr).filter((p): p is string => !!p) }));
+const history = G8_TIER.characters.history.map((h) => ({ date: h.date, changes: h.changes.map(tr).filter((p): p is string => !!p) })).filter((h) => h.changes.length);
+const criteria = G8_TIER.characters.criteria.map((c) => ({ rank: c.rank, text: c.text.map(tr).filter((p): p is string => !!p) })).filter((c) => c.text.length);
+
+// ── Memorias ─────────────────────────────────────────────────────────
+const RAR: Record<string, number> = { SSR: 0, SR: 1, R: 2 };
+const memRows = G8_RANKS.map((rank) => ({
+  rank,
+  items: MEMORIES.filter((m) => g8MemOf(m.id)?.ratings.overall === rank).sort((a, b) => (RAR[a.rarity] ?? 3) - (RAR[b.rarity] ?? 3)),
+})).filter((r) => r.items.length);
+const memWhy = MEMORIES.map((m) => {
+  const g8 = g8MemOf(m.id);
+  const p = g8 ? memTierPoints(g8.name) : null;
+  return p ? { m, rank: p.rank, points: p.entry.points.map(tr).filter((x): x is string => !!x) } : null;
+}).filter((x): x is NonNullable<typeof x> => !!x && x.points.length > 0);
+
+const chip = (c: Character) => ({ href: localePath(lang, `/characters/${c.id}`), title: `${c.epithet ? `${c.epithet} · ` : ''}${c.name}`, img: c.icon ?? (c.art ? thumb(c.art, 320) : null) });
 ---
 
-<BaseLayout lang={lang} title={`${g('tl.title')} (${monthYear(TIER_UPDATED)})`} description={g('tl.intro')}>
-  <div class="mx-auto max-w-7xl px-4 pt-12 pb-8 lg:px-6">
+<BaseLayout lang={lang} title={`${g('tl.title')} (${monthYear(G8_TIER.fetchedAt)})`} description={g('tl.intro')}>
+  <div class="mx-auto max-w-7xl px-4 pt-12 pb-16 lg:px-6">
     <header class="mb-6">
       <p class="eyebrow">{t('nav.guides')}</p>
       <h1 class="mt-2 text-4xl font-black text-bone sm:text-5xl">{g('tl.title')}</h1>
       <p class="mt-3 max-w-2xl text-dust">{g('tl.intro')}</p>
-      <a href="#criteria" class="mt-2 inline-block text-xs text-smoke underline underline-offset-2 hover:text-dust">{g('tl.criteria')}</a>
+      <p class="mt-1 text-xs text-smoke">{g('tl.updated')}: {day(G8_TIER.fetchedAt)}</p>
     </header>
 
-
-    <!-- Pestañas: elementos | funciones -->
-    <div role="tablist" class="tl-tabs mb-5 flex gap-1 overflow-x-auto border-b border-line">
-      {lists.map(({ key }, i) => (
-        <>
-          {i === 4 && <span class="mx-1 my-2 w-px shrink-0 bg-line" aria-hidden="true"></span>}
-          <button type="button" role="tab" data-tab={key} aria-selected={i === 0 ? 'true' : 'false'}
-            class="relative flex shrink-0 items-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-dust transition hover:text-bone aria-selected:text-bone">
-            {ELEMENT_KEYS.includes(key) && <ElementIcon el={key} size={18} />}
-            {tabLabel(key)}
-            <span class="tab-line absolute inset-x-2 -bottom-px hidden h-0.5 rounded-full bg-gradient-to-r from-ember to-flame"></span>
-          </button>
-        </>
+    <div role="tablist" class="tl-tabs mb-5 flex gap-1 border-b border-line">
+      {(['chars', 'mems'] as const).map((k, i) => (
+        <button type="button" role="tab" data-tab={k} aria-selected={i === 0 ? 'true' : 'false'} class="-mb-px border-b-2 border-transparent px-4 py-2.5 text-sm font-semibold text-dust transition hover:text-bone aria-selected:border-ember aria-selected:text-bone">
+          {g(`tl.tab.${k}` as GameKey)}
+        </button>
       ))}
     </div>
 
-    {lists.map(({ key, list, rows, pending, changes }, i) => (
-      <section class="tl-panel" data-panel={key} hidden={i !== 0}>
-        <div class="mb-3 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <p class="text-smoke">{g('tl.reviewed')}: <span class="font-semibold text-dust">{day(list.reviewed)}</span>
-            {pending > 0 && <span class="badge-unverified ml-2">{g('tl.draft', { n: pending })}</span>}
-          </p>
-          <details class="group relative">
-            <summary class="btn-secondary h-8 cursor-pointer list-none px-3 text-xs">
-              <Icon name="calendar" size={14} /> {tabLabel(key)} · {g('tl.changelog')}
-            </summary>
-            <div class="absolute right-0 z-20 mt-2 max-h-80 w-80 overflow-y-auto rounded-xl border border-line-strong bg-coal p-3 shadow-2xl shadow-black/60">
-              {changes.length ? (
-                <ul class="space-y-1.5">
-                  {changes.map((ch) => {
-                    const c = getCharacter(ch.id);
+    <!-- Personajes -->
+    <section class="tl-panel" data-panel="chars">
+      <div class="mb-4 flex flex-wrap gap-2" role="group">
+        <button type="button" data-el="all" aria-pressed="true" class="tl-el rounded-full border border-line px-3 py-1.5 text-xs font-semibold text-dust transition aria-pressed:border-ember aria-pressed:bg-ember/10 aria-pressed:text-bone">{g('tl.all')}</button>
+        {ELEMENTS.map((el) => (
+          <button type="button" data-el={el} aria-pressed="false" class="tl-el inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-xs font-semibold text-dust transition aria-pressed:border-ember aria-pressed:bg-ember/10 aria-pressed:text-bone">
+            <ElementIcon el={el} size={16} /> {g(`el.${el}` as GameKey)}
+          </button>
+        ))}
+      </div>
+
+      <div class="overflow-hidden rounded-[var(--radius-card)] border border-line">
+        {charRows.map(({ rank, items }) => (
+          <div class="tl-row flex border-b border-line last:border-b-0">
+            <div class:list={['grid w-14 shrink-0 place-items-center bg-gradient-to-b font-display text-xl font-black sm:w-20 sm:text-2xl', ROW_STYLE[rank]]}>{rank}</div>
+            <ul class="flex min-w-0 flex-1 flex-wrap gap-1.5 bg-coal/60 p-2">
+              {items.map((c) => {
+                const ch = chip(c);
+                return (
+                  <li data-el={c.element}>
+                    <a href={ch.href} title={ch.title} class="group relative block size-14 overflow-hidden rounded-lg ring-1 ring-line transition hover:ring-ember/70 sm:size-16" style={`--el:${ELEMENT_COLOR[c.element] ?? '#555'}`}>
+                      {ch.img ? <img src={ch.img} alt={ch.title} loading="lazy" class="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
+                      <span class="absolute right-0.5 bottom-0.5"><ElementIcon el={c.element} size={14} /></span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {roles.length > 0 && (
+        <section class="mt-10">
+          <h2 class="text-2xl font-bold text-bone">{g('tl.roles')}</h2>
+          <div class="mt-4 grid gap-4 lg:grid-cols-3">
+            {roles.map((r) => (
+              <div class="card min-w-0 p-4">
+                <h3 class="font-sans text-sm font-bold text-bone">{r.title}</h3>
+                <div class="mt-3 space-y-3">
+                  {r.rows.map((row) => (
+                    <div>
+                      <p class="text-[11px] font-semibold tracking-wide text-smoke uppercase">{row.label}</p>
+                      <div class="mt-1 grid grid-cols-4 gap-1.5">
+                        {row.cells.map((cell) => (
+                          <div class="flex min-w-0 flex-col items-center gap-1 rounded-md border border-line bg-cinder/40 p-1">
+                            {cell.element && <ElementIcon el={cell.element} size={14} />}
+                            {cell.chars.map((c) => {
+                              const ch = chip(c);
+                              return <a href={ch.href} title={ch.title} class="block size-10 overflow-hidden rounded-md ring-1 ring-line hover:ring-ember/60">{ch.img && <img src={ch.img} alt={ch.title} loading="lazy" class="size-full object-cover object-top" />}</a>;
+                            })}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <section class="min-w-0">
+          <h2 class="text-2xl font-bold text-bone">{g('tl.why')}</h2>
+          {why.length === 0 && <p class="mt-3 rounded-lg border border-line bg-cinder/50 px-3 py-2 text-sm text-smoke">{g('g8.pending')}</p>}
+          <div class="mt-4 space-y-3">
+            {why.map((r) => (
+              <details class="card" open={r.rank === 'SSS'}>
+                <summary class="flex cursor-pointer list-none items-center gap-3 p-3">
+                  <span class:list={['grid size-9 place-items-center rounded-md bg-gradient-to-b font-display text-sm font-black', ROW_STYLE[r.rank]]}>{r.rank}</span>
+                  <span class="text-sm font-semibold text-bone">{r.items.length}</span>
+                </summary>
+                <ul class="space-y-3 px-3 pb-3">
+                  {r.items.map(({ c, points }) => {
+                    const ch = chip(c);
                     return (
-                      <li class="text-[11px] leading-snug text-dust">
-                        <span class="text-smoke">{day(ch.date)}</span> · <span class="text-bone">{c ? `${c.epithet ?? ''} ${c.name}` : ch.id}</span>{' '}
-                        {ch.from ? <span>{ch.from} → <b class="text-flame">{ch.to}</b></span> : <span><b class="text-flame">{ch.to}</b> ({g('tl.new')})</span>}
-                        <span class="text-smoke"> · {g(ch.by === 'manual' ? 'tl.by.manual' : 'tl.by.draft')}</span>
+                      <li class="flex gap-3 rounded-lg border border-line bg-cinder/40 p-2.5">
+                        <a href={ch.href} class="size-12 shrink-0 overflow-hidden rounded-md">{ch.img && <img src={ch.img} alt="" loading="lazy" class="size-full object-cover object-top" />}</a>
+                        <div class="min-w-0 text-sm">
+                          <a href={ch.href} class="font-semibold text-bone hover:text-flame">{ch.title}</a>
+                          <ul class="mt-1 space-y-0.5 text-dust">{points.map((p) => (p.startsWith('└') ? <li class="pl-4 text-smoke">{p.replace(/^└\s*/, '↳ ')}</li> : <li>· {p}</li>))}</ul>
+                        </div>
                       </li>
                     );
                   })}
                 </ul>
-              ) : (
-                <p class="text-xs text-smoke">{g('tl.changelog.empty')}</p>
-              )}
-            </div>
-          </details>
-        </div>
+              </details>
+            ))}
+          </div>
+          {why.length > 0 && whyShown < whyTotal && <p class="mt-3 text-xs text-smoke">{g('g8.pending')}</p>}
+        </section>
 
-        <div class="space-y-2">
-          {rows.map((row) => (
-            <div class="flex overflow-hidden rounded-xl border border-line bg-coal/70">
-              <div class:list={['grid w-14 shrink-0 place-items-center bg-gradient-to-b font-display text-2xl font-black sm:w-20 sm:text-3xl', ROW_STYLE[row.rank]]}>{row.rank}</div>
-              <ul class="flex min-h-24 flex-1 flex-wrap content-start gap-2 p-2.5">
-                {row.items.map(({ c, e }) => (
-                  <li style={`--el:${ELEMENT_COLOR[c.element] ?? '#ff5a1f'}`}>
-                    <a
-                      href={localePath(lang, `/characters/${c.id}`)}
-                      class="relative block w-[68px] overflow-hidden rounded-lg border-2 border-line transition hover:-translate-y-0.5 hover:border-[color:var(--el)] sm:w-20"
-                      title={`${c.epithet ?? ''} ${c.name}${e.note ? ` · ${e.note}` : ''}`}
-                    >
-                      <span class="relative block aspect-[3/4] bg-cinder">
-                        {c.art ? <img src={thumb(c.art, 320)} srcset={srcsetOf(c.art, 640)} sizes="(min-width: 640px) 120px, 24vw" alt="" loading="lazy" decoding="async" class="size-full object-cover object-top" /> : <Placeholder name={c.name} />}
-                        <span class="absolute inset-0 bg-gradient-to-t from-ash/90 via-transparent to-transparent"></span>
-                        <ElementIcon el={c.element} size={18} className="absolute top-0.5 left-0.5" />
-                        {e.manual && <span class="absolute top-0.5 right-1 text-[10px] text-flame" title={g('tl.manual')}>✎</span>}
-                        <span class="absolute inset-x-0 bottom-0 truncate px-1 pb-0.5 text-center text-[9px] font-semibold text-bone sm:text-[10px]">{c.name.split(' ').at(-1)}</span>
-                      </span>
-                    </a>
+        <aside class="min-w-0 space-y-6">
+          {latest.length > 0 && (
+            <section class="card p-4">
+              <h2 class="font-sans text-sm font-bold text-bone">{g('tl.latest')}</h2>
+              <ul class="mt-3 space-y-2">
+                {latest.map((l) => (
+                  <li class="text-sm">
+                    <span class="font-semibold text-bone">{l.c ? chip(l.c).title : l.name}</span>
+                    {l.release && <span class="ml-1 text-xs text-smoke">· {l.release}</span>}
+                    {l.points.length > 0 && <ul class="mt-0.5 text-xs text-dust">{l.points.map((p) => <li>· {p}</li>)}</ul>}
                   </li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-    ))}
+            </section>
+          )}
+          {history.length > 0 && (
+            <section class="card p-4">
+              <h2 class="font-sans text-sm font-bold text-bone">{g('tl.history')}</h2>
+              <ol class="mt-3 space-y-2 text-xs">
+                {history.map((h) => <li><span class="text-smoke tabular-nums">{h.date}</span> <span class="text-dust">{h.changes.join(' · ')}</span></li>)}
+              </ol>
+            </section>
+          )}
+          {criteria.length > 0 && (
+            <section id="criteria" class="card scroll-mt-24 p-4">
+              <h2 class="font-sans text-sm font-bold text-bone">{g('tl.rankcrit')}</h2>
+              <dl class="mt-3 space-y-3 text-xs">
+                {criteria.map((c) => (
+                  <div>
+                    <dt class:list={['inline-grid min-w-9 place-items-center rounded bg-gradient-to-b px-1.5 py-0.5 font-display font-black', ROW_STYLE[c.rank] ?? '']}>{c.rank}</dt>
+                    <dd class="mt-1 space-y-0.5 text-dust">{c.text.map((p) => (/^【.*】$/.test(p) ? <p class="font-semibold text-bone">{p.replace(/[【】]/g, '')}</p> : <p>· {p}</p>))}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
+        </aside>
+      </div>
+    </section>
 
-    <div class="mt-12 grid gap-6">
-      <section id="criteria" class="card min-w-0 scroll-mt-24 p-6">
-        <h2 class="text-2xl font-bold text-bone">{g('tl.criteria')}</h2>
-        <ol class="mt-4 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-dust marker:text-ember">
-          <li>{g('tl.c1')}</li>
-          <li>{g('tl.c2', { aoe: TIER_CRITERIA.aoeFactor })}</li>
-          <li>{g('tl.c3')}</li>
-          <li>{g('tl.c4', { ss: ssPct })}</li>
-        </ol>
-        <h3 class="mt-6 mb-2 font-sans text-sm font-bold text-bone">{g('tl.weights')}</h3>
-        <div class="overflow-x-auto">
-          <table class="w-full min-w-[420px] text-left text-xs">
-            <thead class="text-smoke">
-              <tr><th class="py-1.5 pr-3"></th><th class="px-2">{g('tl.m.dmg')}</th><th class="px-2">{g('tl.m.buff')}</th><th class="px-2">{g('tl.m.debuff')}</th><th class="px-2">{g('tl.m.sustain')}</th></tr>
-            </thead>
-            <tbody>
-              {(['attacker', 'support', 'debuffer', 'sustain'] as const).map((gr) => {
-                const w = TIER_CRITERIA.roleWeights[gr];
-                return (
-                  <tr class="border-t border-line">
-                    <td class="py-1.5 pr-3 font-semibold text-bone">{g(`tl.g.${gr}` as GameKey)}</td>
-                    {[w.dmg, w.buff, w.debuff, w.sustain].map((v) => <td class="px-2 text-dust tabular-nums">{Math.round(v * 100)}%</td>)}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </div>
+    <!-- Memorias -->
+    <section class="tl-panel" data-panel="mems" hidden>
+      <div class="overflow-hidden rounded-[var(--radius-card)] border border-line">
+        {memRows.map(({ rank, items }) => (
+          <div class="flex border-b border-line last:border-b-0">
+            <div class:list={['grid w-14 shrink-0 place-items-center bg-gradient-to-b font-display text-xl font-black sm:w-20 sm:text-2xl', ROW_STYLE[rank]]}>{rank}</div>
+            <ul class="flex min-w-0 flex-1 flex-wrap gap-1.5 bg-coal/60 p-2">
+              {items.map((m) => (
+                <li>
+                  <a href={localePath(lang, `/memories/${m.id}`)} title={`${m.name} (${m.rarity})`} class="block size-14 overflow-hidden rounded-lg ring-1 ring-line transition hover:ring-ember/70 sm:size-16">
+                    {m.icon ? <img src={thumb(m.icon, 96)} alt={m.name} loading="lazy" class="size-full object-cover" /> : <span class="block size-full bg-cinder" />}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      {memWhy.length > 0 && (
+        <section class="mt-10">
+          <h2 class="text-2xl font-bold text-bone">{g('tl.why')}</h2>
+          <ul class="mt-4 grid gap-3 md:grid-cols-2">
+            {memWhy.map(({ m, rank, points }) => (
+              <li class="flex gap-3 rounded-lg border border-line bg-cinder/40 p-2.5">
+                <a href={localePath(lang, `/memories/${m.id}`)} class="size-12 shrink-0 overflow-hidden rounded-md">{m.icon && <img src={thumb(m.icon, 96)} alt="" loading="lazy" class="size-full object-cover" />}</a>
+                <div class="min-w-0 text-sm">
+                  <p><span class:list={['mr-1.5 rounded bg-gradient-to-b px-1.5 py-0.5 font-display text-xs font-black', ROW_STYLE[rank]]}>{rank}</span><a href={localePath(lang, `/memories/${m.id}`)} class="font-semibold text-bone hover:text-flame">{m.name}</a></p>
+                  <ul class="mt-1 space-y-0.5 text-dust">{points.map((p) => <li>· {p}</li>)}</ul>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {memWhy.length === 0 && <p class="mt-6 rounded-lg border border-line bg-cinder/50 px-3 py-2 text-sm text-smoke">{g('g8.pending')}</p>}
+    </section>
   </div>
 </BaseLayout>
 
-<style>
-  .tl-tabs button[aria-selected='true'] .tab-line { display: block; }
-  summary::-webkit-details-marker { display: none; }
-</style>
-
 <script>
-  // Pestañas enlazables (#blue, #damage…)
-  const tabs = [...document.querySelectorAll<HTMLButtonElement>('.tl-tabs [data-tab]')];
-  const panels = [...document.querySelectorAll<HTMLElement>('.tl-panel')];
-  const show = (key: string, push = true) => {
-    if (!panels.some((p) => p.dataset.panel === key)) return;
-    tabs.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === key)));
-    panels.forEach((p) => (p.hidden = p.dataset.panel !== key));
-    if (push) history.replaceState(null, '', `#${key}`);
-  };
-  tabs.forEach((b) => b.addEventListener('click', () => show(b.dataset.tab!)));
-  show(location.hash.slice(1), false);
-  window.addEventListener('hashchange', () => show(location.hash.slice(1), false));</script>
+  // Pestañas (personajes / memorias) y filtro por color
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.tl-tabs [data-tab]');
+  tabs.forEach((b) => b.addEventListener('click', () => {
+    tabs.forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+    document.querySelectorAll<HTMLElement>('.tl-panel').forEach((p) => { p.hidden = p.dataset.panel !== b.dataset.tab; });
+  }));
+  const els = document.querySelectorAll<HTMLButtonElement>('.tl-el');
+  els.forEach((b) => b.addEventListener('click', () => {
+    els.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const el = b.dataset.el;
+    document.querySelectorAll<HTMLElement>('.tl-row li[data-el]').forEach((li) => { li.hidden = el !== 'all' && li.dataset.el !== el; });
+    document.querySelectorAll<HTMLElement>('.tl-row').forEach((row) => { row.hidden = ![...row.querySelectorAll<HTMLElement>('li[data-el]')].some((li) => !li.hidden); });
+  }));
+</script>

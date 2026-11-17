@@ -38,8 +38,8 @@ jobs:
       - name: Personajes y memorias (wiki)
         run: npm run data:fetch
 
-      - name: Personajes (Game8)
-        run: npm run data:g8chars
+      - name: Personajes, memorias y tier list (Game8)
+        run: npm run data:g8chars && npm run data:g8memories && npm run data:g8link && npm run data:g8tier
         continue-on-error: true # si Game8 no responde, se conservan las fichas de ayer
 
       - name: Banners y eventos

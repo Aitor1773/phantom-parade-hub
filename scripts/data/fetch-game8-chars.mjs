@@ -14,17 +14,17 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const OUT = join(ROOT, 'data/normalized/game8/characters.json');
-const BASE = 'https://game8.jp/jujutsuphanpara/';
+export const BASE = 'https://game8.jp/jujutsuphanpara/';
 const LIST = '572997';
 const UA = 'PhantomParadeHub-chars/1.0 (fan site; daily, low-rate; +https://phantom-parade-hub.pages.dev/en/credits/)';
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const EL = { '幻': 'red', '影': 'blue', '夜': 'green', '行': 'yellow' };
+export const EL = { '幻': 'red', '影': 'blue', '夜': 'green', '行': 'yellow' };
 const FOCUS = { '体術': 'taijutsu', '体': 'taijutsu', '術式': 'jujutsu', '術': 'jujutsu', '複合': 'hybrid', '複': 'hybrid' };
 const ROLE = { '攻撃': 'attack', '防衛': 'defense', '強化': 'buff', '弱体': 'debuff', '妨害': 'disrupt', '回復': 'heal' };
-const RANKS = ['SSS', 'SS', 'S', 'A', 'B', 'C', 'D'];
+export const RANKS = ['SSS', 'SS', 'S', 'A', 'B', 'C', 'D'];
 
-async function get(url) {
+export async function get(url) {
   for (let i = 0; i < 3; i++) {
     try {
       const res = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -45,18 +45,19 @@ export const text = (html = '') => decode(html
   .replace(/<br\b[^>]*>|<hr\b[^>]*>|<\/(p|div|li|tr|h\d)>/gi, '\n')
   .replace(/<[^>]+>/g, ''))
   .split('\n').map((l) => l.replace(/[ \t　]+/g, ' ').trim()).filter(Boolean).join('\n');
-const imgs = (html = '') => [...html.matchAll(/<img\b[^>]*>/g)].map((m) => ({
-  alt: decode(m[0].match(/alt="([^"]*)"/)?.[1] ?? '').replace(/(の画像|画像)$/, ''),
+export const imgs = (html = '') => [...html.matchAll(/<img\b[^>]*>/g)].map((m) => ({
+  // «…の画像» / «…画像»; las memorias que acaban en «もの» («優先すべきもの画像») conservan su «の»
+  alt: decode(m[0].match(/alt="([^"]*)"/)?.[1] ?? '').replace(/(?<!も)の画像$/, '').replace(/画像$/, ''),
   src: (m[0].match(/data-src="([^"]+)"/) ?? m[0].match(/\ssrc="(https[^"]+)"/))?.[1]?.replace(/\/show$/, '/original') ?? null,
 }));
-const links = (html = '') => [...html.matchAll(/<a\b[^>]*href="(?:https:\/\/game8\.jp)?\/jujutsuphanpara\/(\d+)"[^>]*>([\s\S]*?)<\/a>/g)]
+export const links = (html = '') => [...html.matchAll(/<a\b[^>]*href="(?:https:\/\/game8\.jp)?\/jujutsuphanpara\/(\d+)"[^>]*>([\s\S]*?)<\/a>/g)]
   .map((m) => ({ id: m[1], text: text(m[2]), img: imgs(m[2])[0] ?? null }));
-const tables = (html = '') => [...html.matchAll(/<table\b[\s\S]*?<\/table>/g)].map((m) => m[0]);
-const rows = (table) => [...table.matchAll(/<tr\b[\s\S]*?<\/tr>/g)].map((r) =>
+export const tables = (html = '') => [...html.matchAll(/<table\b[\s\S]*?<\/table>/g)].map((m) => m[0]);
+export const rows = (table) => [...table.matchAll(/<tr\b[\s\S]*?<\/tr>/g)].map((r) =>
   [...r[0].matchAll(/<(th|td)\b[^>]*>([\s\S]*?)<\/\1>/g)].map((c) => ({ th: c[1] === 'th', html: c[2] })));
 
 /** Trozos de la página: cada <h2> con su HTML hasta el siguiente <h2> */
-function sections(body) {
+export function sections(body) {
   const out = [];
   const re = /<h2\b[^>]*>([\s\S]*?)<\/h2>/g;
   let m, last = null;
@@ -69,16 +70,16 @@ function sections(body) {
   return out;
 }
 /** Dentro de un trozo: cada <h3> con su HTML */
-function subsections(html) {
+export function subsections(html) {
   const parts = html.split(/<h3\b[^>]*>/);
   return parts.slice(1).map((p) => {
     const i = p.indexOf('</h3>');
     return { title: text(p.slice(0, i)), html: p.slice(i + 5) };
   });
 }
-const rankOf = (html) => imgs(html).map((i) => i.alt).find((a) => RANKS.includes(a)) ?? null;
+export const rankOf = (html) => imgs(html).map((i) => i.alt).find((a) => RANKS.includes(a)) ?? null;
 /** Párrafos de texto corrido (sin tablas ni enlaces de «ver más») */
-const paras = (html) => [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/g)].map((m) => text(m[1])).filter((t) => t && !t.startsWith('▶'));
+export const paras = (html) => [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/g)].map((m) => text(m[1])).filter((t) => t && !t.startsWith('▶'));
 
 // ── Ficha de un personaje ─────────────────────────────────────────────
 export function parseCharacter(html) {

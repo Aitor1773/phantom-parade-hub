@@ -5,6 +5,8 @@ import g8chars from '../../data/normalized/game8/characters.json';
 import jpNamesFile from '../../data/manual/jp-names.json';
 import jpMemFile from '../../data/manual/jp-memories.json';
 import i18nFile from '../../data/i18n/game8.json';
+import g8tier from '../../data/normalized/game8/tier.json';
+import g8mems from '../../data/normalized/game8/memories.json';
 import type { Locale } from '@/i18n/utils';
 
 export interface G8Skill { name: string; img: string | null; element: string | null; effect: string; combo?: string }
@@ -62,6 +64,54 @@ export const webIdOfJp = (full: string) => ID_BY_JP.get(norm(full)) ?? null;
 export const memoryIdOfJp = (jp: string) => JP_MEMS[jp] ?? JP_MEMS[jp.replace(/&amp;/g, '&')] ?? null;
 /** Fichas de Game8 que aún no tienen personaje en la web */
 export const g8Unmatched = () => ALL.filter((c) => !webIdOf(c));
+
+// ── Tier list ────────────────────────────────────────────────────────
+export interface G8TierEntry { name: string; g8id: string | null; points: string[]; related: { g8id: string; name: string }[] }
+export interface G8RoleGrid { title: string; rows: { label: string; cells: { element: string | null; characters: string[] }[] }[] }
+export interface G8Tier {
+  fetchedAt: string;
+  characters: {
+    url: string; ranks: Record<string, G8TierEntry[]>; roles: G8RoleGrid[];
+    latest: { name: string; release: string | null; points: string[] }[];
+    history: { date: string; changes: string[] }[];
+    criteria: { rank: string; text: string[] }[];
+  };
+  memories: { url: string; ranks: Record<string, G8TierEntry[]> };
+}
+export const G8_TIER = g8tier as unknown as G8Tier;
+export const G8_RANKS = ['SSS', 'SS', 'S', 'A', 'B', 'C', 'D'] as const;
+export type G8Rank = (typeof G8_RANKS)[number];
+
+/** Rango de un personaje de la web: el de la tier list de Game8 y, si no sale, el de su propia ficha */
+const CHAR_TIER = new Map<string, { rank: G8Rank; entry: G8TierEntry | null }>();
+for (const [rank, list] of Object.entries(G8_TIER.characters.ranks)) {
+  for (const e of list) { const id = webIdOfJp(e.name); if (id && !CHAR_TIER.has(id)) CHAR_TIER.set(id, { rank: rank as G8Rank, entry: e }); }
+}
+for (const [id, c] of BY_WEB) if (!CHAR_TIER.has(id) && c.ratings.overall) CHAR_TIER.set(id, { rank: c.ratings.overall as G8Rank, entry: null });
+export const charTier = (webId: string) => CHAR_TIER.get(webId) ?? null;
+
+// ── Memorias ─────────────────────────────────────────────────────────
+export interface G8Memory {
+  g8id: string; url: string; name: string; rarity: string | null; icon: string | null;
+  ratings: { overall: string | null; auto: string | null };
+  obtain: string | null;
+  groups: { title: string | null; characters: { g8id: string; name: string }[] }[];
+  active: { cooldown: number | null; effect: string } | null;
+  auto: { cooldown: number | null; effect: string } | null;
+  stats: { max: Partial<Record<'hp' | 'taijutsu' | 'jujutsu', number | null>>; base: Partial<Record<'hp' | 'taijutsu' | 'jujutsu', number | null>>; maxLevel: number | null; baseLevel: number | null };
+  tags: string[];
+  modified: string | null;
+}
+const G8_MEMS = Object.values((g8mems as unknown as { memories: Record<string, G8Memory> }).memories);
+export const g8MemoriesAll = () => G8_MEMS;
+const MEM_BY_WEB = new Map<string, G8Memory>();
+for (const m of G8_MEMS) { const id = memoryIdOfJp(m.name); if (id && !MEM_BY_WEB.has(id)) MEM_BY_WEB.set(id, m); }
+/** Ficha de Game8 de una memoria de la web */
+export const g8MemOf = (webId: string) => MEM_BY_WEB.get(webId) ?? null;
+const MEM_POINTS = new Map<string, { rank: string; entry: G8TierEntry }>();
+for (const [rank, list] of Object.entries(G8_TIER.memories.ranks)) for (const e of list) if (!MEM_POINTS.has(e.name)) MEM_POINTS.set(e.name, { rank, entry: e });
+/** Puntos clave de una memoria en la tier list de Game8 (solo las SS y S los tienen) */
+export const memTierPoints = (jpName: string) => MEM_POINTS.get(jpName) ?? null;
 
 /**
  * Texto de Game8 en el idioma pedido: el original en japonés, la traducción si existe,

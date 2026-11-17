@@ -2,6 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Icon from '@/components/Icon.astro';
 import MemoryEffects from '@/components/memories/MemoryEffects';
+import G8MemoryPanel from '@/components/memories/G8MemoryPanel.astro';
 import { MEMORIES, illustSrc, type Memory } from '@/data/memories';
 import { CHARACTERS, srcsetOf, thumb } from '@/data/characters';
 import { gameDict, useG, type GameKey } from '@/i18n/game';
@@ -68,6 +69,7 @@ const description = `${m.name} — ${m.rarity} ${g('mem.title')}. ${m.effects[0]
 
   <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-6">
     <section>
+      <G8MemoryPanel m={m} lang={lang} />
       <h2 class="mb-5 text-2xl font-bold text-bone">{g('mem.effects')}</h2>
       {m.effects.length ? (
         <MemoryEffects client:visible effects={m.effects} labels={labels} textLangNote={lang === 'en' ? null : g('ch.textlang')} />

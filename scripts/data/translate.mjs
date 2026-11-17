@@ -44,15 +44,32 @@ export function charStrings(c) {
   ].filter((x) => typeof x === 'string' && /[぀-ヿ一-鿿]/.test(x));
 }
 
+/** Textos de una memoria */
+export const memStrings = (m) => [
+  m.obtain, m.active?.effect, m.auto?.effect, ...(m.tags ?? []), ...(m.groups ?? []).map((g) => g.title),
+];
+/** Textos de la tier list */
+export const tierStrings = (t) => [
+  ...Object.values(t.characters?.ranks ?? {}).flat().flatMap((e) => e.points),
+  ...Object.values(t.memories?.ranks ?? {}).flat().flatMap((e) => e.points),
+  ...(t.characters?.roles ?? []).flatMap((r) => [r.title, ...r.rows.map((x) => x.label)]),
+  ...(t.characters?.latest ?? []).flatMap((l) => l.points),
+  ...(t.characters?.history ?? []).flatMap((h) => h.changes),
+  ...(t.characters?.criteria ?? []).flatMap((c) => c.text),
+];
+const isJa = (x) => typeof x === 'string' && /[぀-ヿ一-鿿]/.test(x);
+
 async function collect() {
   const out = [];
   if (!existsSync(SRC)) return out;
   for (const f of await readdir(SRC)) {
     if (!f.endsWith('.json')) continue;
     const d = JSON.parse(await readFile(join(SRC, f), 'utf8'));
-    if (d.characters) for (const c of Object.values(d.characters)) out.push(...charStrings(c));
+    if (f === 'characters.json') for (const c of Object.values(d.characters)) out.push(...charStrings(c));
+    else if (f === 'memories.json') for (const m of Object.values(d.memories)) out.push(...memStrings(m));
+    else if (f === 'tier.json') out.push(...tierStrings(d));
   }
-  return [...new Set(out)];
+  return [...new Set(out.filter(isJa))];
 }
 
 async function glossary() {
